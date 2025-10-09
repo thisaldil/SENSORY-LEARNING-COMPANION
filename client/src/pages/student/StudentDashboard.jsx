@@ -187,13 +187,33 @@ const StudentDashboard = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl px-6 py-3 shadow-lg">
+            <button
+              className="flex items-center gap-3 bg-blue-500 rounded-2xl px-8 py-4 shadow-xl text-white font-bold text-lg
+  hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden"
+              style={{
+                animation: "blinkGlow 1.8s infinite",
+              }}
+            >
               <Trophy className="w-8 h-8 text-white" />
-              <div className="text-white">
-                <p className="text-sm font-semibold">Total Points</p>
-                <p className="text-2xl font-bold">{progress.points}</p>
-              </div>
-            </div>
+              <span>Learn Now</span>
+            </button>
+
+            <style>
+              {`
+@keyframes blinkGlow {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(59,130,246,0.6), 0 0 30px rgba(37,99,235,0.5);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    box-shadow: 0 0 25px rgba(147,197,253,0.8), 0 0 45px rgba(59,130,246,0.6);
+    transform: scale(1.06);
+  }
+}
+`}
+            </style>
           </div>
         </div>
       </div>
