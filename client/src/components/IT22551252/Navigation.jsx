@@ -1,12 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { BookOpenIcon, CloudIcon, HomeIcon } from "lucide-react";
 
 export function Navigation() {
   const isOffline = !navigator.onLine;
+  const navigate = useNavigate();
 
   return (
     <div className="bg-white shadow-md">
+      {/* Offline banner */}
       {isOffline && (
         <div className="bg-[#FFD580] py-2 px-4 text-center text-sm font-medium">
           You are currently offline. Some features may be limited.
@@ -15,27 +17,29 @@ export function Navigation() {
 
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <span className="text-xl font-bold text-gray-800">
-              Educational Scene Generator
-            </span>
-          </div>
+          {/* Title → now clickable to go back to Student Dashboard */}
+          <button
+            onClick={() => navigate("/student/dashboard")}
+            className="text-xl font-bold text-gray-800 hover:text-[#1E7038] transition-colors cursor-pointer"
+          >
+            Back to the Dashboard
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <NavItem
-                to="/input"
+                to="/student/generator/input"
                 icon={<HomeIcon size={18} />}
                 label="Generate Scene & Script"
               />
               <NavItem
-                to="/output"
+                to="/student/generator/output"
                 icon={<BookOpenIcon size={18} />}
                 label="View Generated Scene"
               />
               <NavItem
-                to="/offline"
+                to="/student/generator/offline"
                 icon={<CloudIcon size={18} />}
                 label="Offline Mode"
               />
@@ -63,12 +67,18 @@ export function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu (Hidden by default) */}
+      {/* Mobile Navigation Menu (hidden by default) */}
       <div className="hidden md:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <MobileNavItem to="/input" label="Generate Scene & Script" />
-          <MobileNavItem to="/output" label="View Generated Scene" />
-          <MobileNavItem to="/offline" label="Offline Mode" />
+          <MobileNavItem
+            to="/student/generator/input"
+            label="Generate Scene & Script"
+          />
+          <MobileNavItem
+            to="/student/generator/output"
+            label="View Generated Scene"
+          />
+          <MobileNavItem to="/student/generator/offline" label="Offline Mode" />
         </div>
       </div>
     </div>

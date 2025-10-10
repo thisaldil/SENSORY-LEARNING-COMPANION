@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { SceneGraph } from "../components/SceneGraph";
-import { NarrationScript } from "../components/NarrationScript";
+import { SceneGraph } from "../../components/IT22551252/SceneGraph";
+import { NarrationScript } from "../../components/IT22551252/NarrationScript";
 import { DownloadIcon, Share2Icon } from "lucide-react";
 
 export function OutputPage() {
@@ -17,7 +17,7 @@ export function OutputPage() {
       setData(location.state.result);
     } else {
       // Redirect to input page if no data found
-      navigate("/input");
+      navigate("/student/generator/input");
     }
   }, [location.state, navigate]);
 
@@ -126,3 +126,4 @@ export function OutputPage() {
     </div>
   );
 }
+export default OutputPage;

@@ -190,7 +190,7 @@ const StudentDashboard = () => {
               </div>
             </div>
             <button
-              onClick={() => navigate("/learn")}
+              onClick={() => navigate("/student/generator/input")}
               className="flex items-center gap-3 bg-blue-500 rounded-2xl px-8 py-4 shadow-xl text-white font-bold text-lg
         hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden"
               style={{ animation: "blinkGlow 1.8s infinite" }}

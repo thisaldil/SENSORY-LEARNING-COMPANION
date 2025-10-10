@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { IndexedDBService } from "../services/IndexedDBService";
+import { IndexedDBService } from "../../services/IT22551252/IndexedDBService";
 import { CloudOffIcon, TrashIcon, ExternalLinkIcon } from "lucide-react";
 
 export function OfflineModePage() {
@@ -34,7 +34,7 @@ export function OfflineModePage() {
       links: lesson.links,
       script: lesson.script,
     };
-    navigate("/output", { state: { result } });
+    navigate("/student/generator/output", { state: { result } });
   };
 
   const handleDeleteLesson = async (id, e) => {
@@ -92,7 +92,7 @@ export function OfflineModePage() {
                 className="px-4 py-2 bg-[#1E7038] hover:bg-[#16542B] text-white rounded-md"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => navigate("/input")}
+                onClick={() => navigate("/student/generator/input")}
               >
                 Create New Lesson
               </motion.button>
@@ -138,3 +138,4 @@ export function OfflineModePage() {
     </div>
   );
 }
+export default OfflineModePage;

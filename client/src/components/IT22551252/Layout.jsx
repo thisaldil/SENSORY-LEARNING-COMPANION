@@ -1,8 +1,9 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Navigation } from "./Navigation";
 
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -12,7 +13,8 @@ export default function Layout({ children }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        {children}
+        {/* 👇 This is where the nested route content (InputPage, OutputPage, etc.) will be injected */}
+        <Outlet />
       </motion.main>
     </div>
   );

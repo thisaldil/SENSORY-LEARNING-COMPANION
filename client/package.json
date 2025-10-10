@@ -10,11 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "d3": "^7.9.0",
+    "framer-motion": "^12.23.24",
     "lucide-react": "^0.545.0",
     "prop-types": "^15.8.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.3"
+    "react-router-dom": "^7.9.3",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
