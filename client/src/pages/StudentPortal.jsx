@@ -17,6 +17,7 @@ const StudentPortal = () => {
     <StudentLayout>
       <Routes>
         <Route path="dashboard" element={<StudentDashboard />} />
+        <Route path="learn" element={<StudentDashboard />} />
         {/* <Route path="profile" element={<StudentProfile />} /> */}
         <Route path="*" element={<Navigate to="dashboard" replace />} />
       </Routes>

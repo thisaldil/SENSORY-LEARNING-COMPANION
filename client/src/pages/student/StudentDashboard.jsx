@@ -12,6 +12,7 @@ import {
   Clock,
   CheckCircle,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const API_BASE_URL = "http://localhost:5000";
 
@@ -25,6 +26,7 @@ const StudentDashboard = () => {
     points: 0,
   });
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchLessons = async () => {
@@ -188,11 +190,10 @@ const StudentDashboard = () => {
               </div>
             </div>
             <button
+              onClick={() => navigate("/learn")}
               className="flex items-center gap-3 bg-blue-500 rounded-2xl px-8 py-4 shadow-xl text-white font-bold text-lg
-  hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden"
-              style={{
-                animation: "blinkGlow 1.8s infinite",
-              }}
+        hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden"
+              style={{ animation: "blinkGlow 1.8s infinite" }}
             >
               <Trophy className="w-8 h-8 text-white" />
               <span>Learn Now</span>
