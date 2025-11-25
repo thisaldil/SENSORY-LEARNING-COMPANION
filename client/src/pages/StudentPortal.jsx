@@ -10,6 +10,10 @@ import OutputPage from "./IT22551252/OutputPage";
 import OfflineModePage from "./IT22551252/OfflineModePage";
 import Layout from "../components/IT22551252/Layout";
 
+
+import SensoryLearningUI from "../pages/IT22213662/SensoryLearningUI";
+
+
 const StudentPortal = () => {
   const { isAuthenticated, userRole } = useAuth();
 
@@ -23,6 +27,7 @@ const StudentPortal = () => {
       {/* Student Section */}
       <Route path="/" element={<StudentLayout />}>
         <Route path="dashboard" element={<StudentDashboard />} />
+        <Route path="SensoryLearningUI" element={<SensoryLearningUI />} />
         <Route path="*" element={<Navigate to="dashboard" replace />} />
       </Route>
 
