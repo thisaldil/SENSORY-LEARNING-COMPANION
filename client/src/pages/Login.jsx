@@ -72,11 +72,13 @@ const Login = () => {
       if (!data.user || !data.token) {
         throw new Error("Invalid server response: missing user or token");
       }
-
+    localStorage.setItem("token", data.token);
+    localStorage.setItem("userId", data.user._id);
       // Use AuthContext login to update state instantly
       login(data.user, data.token);
 
       alert(`Welcome ${data.user.username}! Redirecting to dashboard...`);
+      
 
       // ✅ Role-based redirect
       if (data.user.role === "teacher") {
