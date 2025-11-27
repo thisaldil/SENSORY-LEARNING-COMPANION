@@ -17,7 +17,7 @@ import { useNavigate } from "react-router-dom";
 const API_BASE_URL = "http://localhost:5000";
 
 const StudentDashboard = () => {
-  const [user, setUser] = useState({ name: "Student", grade: "6" });
+  const [user, setUser] = useState(null);
   const [lessons, setLessons] = useState([]);
   const [progress, setProgress] = useState({
     completed: 0,
@@ -28,10 +28,37 @@ const StudentDashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
+  // Load user
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const id = localStorage.getItem("userId");
+        const token = localStorage.getItem("token");
+
+        if (!id || !token) {
+          navigate("/login");
+          return;
+        }
+
+        const res = await fetch(`${API_BASE_URL}/api/auth/users/${id}`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
+        const data = await res.json();
+        setUser(data);
+      } catch (err) {
+        console.log("User fetch error", err);
+      }
+    };
+
+    fetchUser();
+  }, [navigate]);
+
+  // Load lessons
   useEffect(() => {
     const fetchLessons = async () => {
       try {
-        // Simulated data - replace with actual API call
+        // Replace with backend later
         const mockLessons = [
           {
             _id: "1",
@@ -69,54 +96,14 @@ const StudentDashboard = () => {
             duration: "18 min",
             points: 70,
           },
-          {
-            _id: "4",
-            title: "Force and Motion",
-            subject: "Physical Science",
-            hasVideo: true,
-            hasAudio: true,
-            hasHaptics: true,
-            progress: 45,
-            status: "in-progress",
-            duration: "20 min",
-            points: 80,
-          },
-          {
-            _id: "5",
-            title: "The Solar System",
-            subject: "Earth Science",
-            hasVideo: true,
-            hasAudio: true,
-            hasHaptics: false,
-            progress: 0,
-            status: "not-started",
-            duration: "25 min",
-            points: 90,
-          },
-          {
-            _id: "6",
-            title: "Photosynthesis",
-            subject: "Life Science",
-            hasVideo: true,
-            hasAudio: true,
-            hasHaptics: true,
-            progress: 100,
-            status: "completed",
-            duration: "16 min",
-            points: 65,
-          },
         ];
 
         setLessons(mockLessons);
 
-        const completed = mockLessons.filter(
-          (l) => l.status === "completed"
-        ).length;
-        const inProgress = mockLessons.filter(
-          (l) => l.status === "in-progress"
-        ).length;
+        const completed = mockLessons.filter(l => l.status === "completed").length;
+        const inProgress = mockLessons.filter(l => l.status === "in-progress").length;
         const totalPoints = mockLessons
-          .filter((l) => l.status === "completed")
+          .filter(l => l.status === "completed")
           .reduce((sum, l) => sum + l.points, 0);
 
         setProgress({
@@ -126,7 +113,7 @@ const StudentDashboard = () => {
           points: totalPoints,
         });
       } catch (err) {
-        console.error("Error fetching lessons:", err);
+        console.error("Lessons error", err);
       } finally {
         setLoading(false);
       }
@@ -136,43 +123,28 @@ const StudentDashboard = () => {
   }, []);
 
   const getStatusColor = (status) => {
-    switch (status) {
-      case "completed":
-        return "bg-green-100 text-green-700 border-green-300";
-      case "in-progress":
-        return "bg-blue-100 text-blue-700 border-blue-300";
-      default:
-        return "bg-gray-100 text-gray-700 border-gray-300";
-    }
+    if (status === "completed") return "bg-green-100 text-green-700 border-green-300";
+    if (status === "in-progress") return "bg-blue-100 text-blue-700 border-blue-300";
+    return "bg-gray-100 text-gray-700 border-gray-300";
   };
 
   const getStatusText = (status) => {
-    switch (status) {
-      case "completed":
-        return "Completed ✓";
-      case "in-progress":
-        return "In Progress";
-      default:
-        return "Start Learning";
-    }
+    if (status === "completed") return "Completed ✓";
+    if (status === "in-progress") return "In Progress";
+    return "Start Learning";
   };
 
-  if (loading) {
+  if (loading || !user) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-purple-600 mx-auto mb-4"></div>
-          <p className="text-xl font-bold text-purple-600">
-            Loading your learning journey...
-          </p>
-        </div>
+      <div className="min-h-screen flex items-center justify-center bg-purple-100">
+        <p className="text-xl font-bold text-purple-700">Loading...</p>
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 p-6">
-      {/* Header Section */}
+      {/* Header */}
       <div className="mb-8">
         <div className="bg-white rounded-3xl shadow-xl p-8 border-4 border-purple-200">
           <div className="flex items-center justify-between flex-wrap gap-4">
@@ -181,122 +153,66 @@ const StudentDashboard = () => {
                 <Brain className="w-12 h-12 text-white" />
               </div>
               <div>
-                <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  Welcome Back, {user.name}! 🎉
+                <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                  Welcome Back, {user.fullname}
                 </h1>
                 <p className="text-gray-600 text-lg mt-1">
-                  Grade {user.grade} Science Explorer
+                  Grade 6 Science Explorer
                 </p>
               </div>
             </div>
+
             <button
               onClick={() => navigate("/student/generator/input")}
-              className="flex items-center gap-3 bg-blue-500 rounded-2xl px-8 py-4 shadow-xl text-white font-bold text-lg
-        hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden"
-              style={{ animation: "blinkGlow 1.8s infinite" }}
+              className="flex items-center gap-3 bg-blue-500 rounded-2xl px-8 py-4 text-white font-bold text-lg shadow-xl"
             >
               <Trophy className="w-8 h-8 text-white" />
-              <span>Learn Now</span>
+              Learn Now
             </button>
-
-            <style>
-              {`
-@keyframes blinkGlow {
-  0%, 100% {
-    opacity: 1;
-    box-shadow: 0 0 15px rgba(59,130,246,0.6), 0 0 30px rgba(37,99,235,0.5);
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.85;
-    box-shadow: 0 0 25px rgba(147,197,253,0.8), 0 0 45px rgba(59,130,246,0.6);
-    transform: scale(1.06);
-  }
-}
-`}
-            </style>
           </div>
         </div>
       </div>
 
-      {/* Progress Stats */}
+      {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-green-200">
+        <div className="bg-white rounded-2xl p-6 border-2 border-green-200 shadow-lg">
           <div className="flex items-center gap-4">
             <div className="bg-green-100 rounded-full p-3">
               <CheckCircle className="w-8 h-8 text-green-600" />
             </div>
             <div>
               <p className="text-gray-600 text-sm font-semibold">Completed</p>
-              <p className="text-3xl font-bold text-green-600">
-                {progress.completed}
-              </p>
+              <p className="text-3xl font-bold text-green-600">{progress.completed}</p>
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-blue-200">
+        <div className="bg-white rounded-2xl p-6 border-2 border-blue-200 shadow-lg">
           <div className="flex items-center gap-4">
             <div className="bg-blue-100 rounded-full p-3">
               <TrendingUp className="w-8 h-8 text-blue-600" />
             </div>
             <div>
               <p className="text-gray-600 text-sm font-semibold">In Progress</p>
-              <p className="text-3xl font-bold text-blue-600">
-                {progress.inProgress}
-              </p>
+              <p className="text-3xl font-bold text-blue-600">{progress.inProgress}</p>
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-purple-200">
+        <div className="bg-white rounded-2xl p-6 border-2 border-purple-200 shadow-lg">
           <div className="flex items-center gap-4">
             <div className="bg-purple-100 rounded-full p-3">
               <BookOpen className="w-8 h-8 text-purple-600" />
             </div>
             <div>
-              <p className="text-gray-600 text-sm font-semibold">
-                Total Lessons
-              </p>
-              <p className="text-3xl font-bold text-purple-600">
-                {progress.total}
-              </p>
+              <p className="text-gray-600 text-sm font-semibold">Total Lessons</p>
+              <p className="text-3xl font-bold text-purple-600">{progress.total}</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Learning Modes Info */}
-      <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border-2 border-pink-200">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <Sparkles className="text-pink-500" /> Your Learning Superpowers
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-4">
-            <Video className="w-8 h-8 text-blue-600" />
-            <div>
-              <p className="font-bold text-blue-700">Watch Videos</p>
-              <p className="text-sm text-blue-600">See concepts come alive!</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-4">
-            <Headphones className="w-8 h-8 text-green-600" />
-            <div>
-              <p className="font-bold text-green-700">Listen & Learn</p>
-              <p className="text-sm text-green-600">Audio explanations</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-4">
-            <Hand className="w-8 h-8 text-purple-600" />
-            <div>
-              <p className="font-bold text-purple-700">Feel It!</p>
-              <p className="text-sm text-purple-600">Haptic feedback</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Lessons Grid */}
+      {/* Lessons */}
       <div className="mb-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-2">
           <Star className="text-yellow-500" /> Your Science Lessons
@@ -308,24 +224,23 @@ const StudentDashboard = () => {
           {lessons.map((lesson) => (
             <div
               key={lesson._id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-100 hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-white rounded-2xl shadow-lg border-2 border-purple-100 overflow-hidden"
             >
-              {/* Progress Bar */}
               {lesson.status !== "not-started" && (
                 <div className="w-full bg-gray-200 h-2">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-green-600 h-2 transition-all duration-500"
+                    className="bg-green-500 h-2"
                     style={{ width: `${lesson.progress}%` }}
                   ></div>
                 </div>
               )}
 
               <div className="p-6">
-                {/* Subject Badge */}
                 <div className="flex items-center justify-between mb-3">
                   <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     {lesson.subject}
                   </span>
+
                   <span
                     className={`text-xs font-bold px-3 py-1 rounded-full border-2 ${getStatusColor(
                       lesson.status
@@ -335,49 +250,43 @@ const StudentDashboard = () => {
                   </span>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-xl font-bold text-gray-800 mb-3">
-                  {lesson.title}
-                </h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{lesson.title}</h3>
 
-                {/* Learning Modes Available */}
                 <div className="flex gap-2 mb-4">
                   {lesson.hasVideo && (
-                    <div className="bg-blue-100 rounded-lg p-2">
+                    <div className="bg-blue-100 p-2 rounded-lg">
                       <Video className="w-5 h-5 text-blue-600" />
                     </div>
                   )}
                   {lesson.hasAudio && (
-                    <div className="bg-green-100 rounded-lg p-2">
+                    <div className="bg-green-100 p-2 rounded-lg">
                       <Headphones className="w-5 h-5 text-green-600" />
                     </div>
                   )}
                   {lesson.hasHaptics && (
-                    <div className="bg-purple-100 rounded-lg p-2">
+                    <div className="bg-purple-100 p-2 rounded-lg">
                       <Hand className="w-5 h-5 text-purple-600" />
                     </div>
                   )}
                 </div>
 
-                {/* Duration and Points */}
                 <div className="flex items-center justify-between mb-4 text-sm text-gray-600">
                   <div className="flex items-center gap-1">
                     <Clock className="w-4 h-4" />
-                    <span>{lesson.duration}</span>
+                    {lesson.duration}
                   </div>
                   <div className="flex items-center gap-1 text-yellow-600 font-bold">
                     <Star className="w-4 h-4" />
-                    <span>{lesson.points} pts</span>
+                    {lesson.points} pts
                   </div>
                 </div>
 
-                {/* Action Button */}
-                <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-4 rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg">
+                <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-4 rounded-xl shadow-lg">
                   {lesson.status === "completed"
-                    ? "Review Lesson 🔄"
+                    ? "Review Lesson"
                     : lesson.status === "in-progress"
-                    ? "Continue Learning 🚀"
-                    : "Start Lesson 🎯"}
+                    ? "Continue Learning"
+                    : "Start Lesson"}
                 </button>
               </div>
             </div>
@@ -386,9 +295,7 @@ const StudentDashboard = () => {
       ) : (
         <div className="bg-white rounded-2xl shadow-lg p-12 text-center">
           <BookOpen className="w-20 h-20 text-gray-400 mx-auto mb-4" />
-          <p className="text-xl text-gray-500">
-            No lessons available yet. Check back soon!
-          </p>
+          <p className="text-xl text-gray-500">No lessons available yet</p>
         </div>
       )}
     </div>
