@@ -1,11 +1,11 @@
-# API Application
+# This file defines the FastAPI routes
 
-# Goal: Create two endpoints
-# 1. /process-image
-# 2. /process-text
-#
+# Endpoints:
+#   POST /process-text
+#   POST /process-image
+
 # For now:
-# Both endpoints will return the mock_output.json
-#
+# Both return the mock_output.json via the mock loader
+
 # Later:
-# They will call functions from pipeline_controller
+# They will call the pipeline_controller for real processing
