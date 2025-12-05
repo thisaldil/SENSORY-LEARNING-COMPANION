@@ -129,3 +129,4 @@ Same structure as **POST /process-image**.
 ---
 
 
+Node backend acts as the API gateway. It forwards user content to the OCR/NLP microservice through secure internal API calls
