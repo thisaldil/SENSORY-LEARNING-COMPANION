@@ -5,6 +5,7 @@ import { connectDB } from "./config/db.js";
 
 // Routes
 import authRoutes from "./routes/authRoutes.js";
+import nlpRoutes from "./routes/nlp.js";
 
 dotenv.config();
 connectDB();
@@ -15,7 +16,9 @@ app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
-app.use("/nlp", require("./routes/nlp"));
+app.use("/nlp", nlpRoutes);
+
+
 
 
 const PORT = process.env.PORT || 5000;
