@@ -1,11 +1,19 @@
-# This file defines the FastAPI routes
+from fastapi import APIRouter
+import json
+import os
 
-# Endpoints:
-#   POST /process-text
-#   POST /process-image
+router = APIRouter()
 
-# For now:
-# Both return the mock_output.json via the mock loader
+MOCK_PATH = os.path.join(os.path.dirname(__file__), "mock_output.json")
 
-# Later:
-# They will call the pipeline_controller for real processing
+def load_mock():
+    with open(MOCK_PATH, "r") as f:
+        return json.load(f)
+
+@router.post("/process-text")
+def process_text():
+    return load_mock()
+
+@router.post("/process-image")
+def process_image():
+    return load_mock()
