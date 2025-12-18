@@ -1,0 +1,8 @@
+flask
+flask-cors
+transformers>=4.35.0
+accelerate
+torch
+sentencepiece
+# optionally:
+# bitsandbytes
