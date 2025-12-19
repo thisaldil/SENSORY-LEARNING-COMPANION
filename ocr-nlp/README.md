@@ -130,3 +130,17 @@ Same structure as **POST /process-image**.
 
 
 Node backend acts as the API gateway. It forwards user content to the OCR/NLP microservice through secure internal API calls
+
+Phase 1.1: Define cleaning rules
+1. Convert multiple spaces → single space
+2. Remove non-text garbage
+
+(for example OCR noise: © ©, ~, broken unicode)
+
+3. Strip newlines
+4. Normalize punctuation
+5. Ensure proper sentence boundaries
+6. Lowercasing (but keep option to disable)
+
+This step will produce clean, readable input for all future modules.
+

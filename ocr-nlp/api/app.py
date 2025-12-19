@@ -1,19 +1,12 @@
 from fastapi import APIRouter
-import json
-import os
+from pipeline.pipeline_controller import handle_text, handle_image
 
 router = APIRouter()
 
-MOCK_PATH = os.path.join(os.path.dirname(__file__), "mock_output.json")
-
-def load_mock():
-    with open(MOCK_PATH, "r") as f:
-        return json.load(f)
-
 @router.post("/process-text")
-def process_text():
-    return load_mock()
+def process_text(payload: dict):
+    return handle_text(payload.get("text", ""))
 
 @router.post("/process-image")
 def process_image():
-    return load_mock()
+    return handle_image()
