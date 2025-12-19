@@ -13,8 +13,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-const API_BASE_URL = "http://localhost:5000";
+import api from "../../services/api";
 
 const StudentDashboard = () => {
   const [user, setUser] = useState(null);
@@ -33,21 +32,19 @@ const StudentDashboard = () => {
     const fetchUser = async () => {
       try {
         const id = localStorage.getItem("userId");
-        const token = localStorage.getItem("token");
 
-        if (!id || !token) {
+        if (!id) {
           navigate("/login");
           return;
         }
 
-        const res = await fetch(`${API_BASE_URL}/api/auth/users/${id}`, {
-          headers: { Authorization: `Bearer ${token}` },
-        });
-
-        const data = await res.json();
+        const { data } = await api.get(`/api/auth/users/${id}`);
         setUser(data);
       } catch (err) {
-        console.log("User fetch error", err);
+        console.error("User fetch error", err);
+        if (err.response?.status === 401) {
+          navigate("/login");
+        }
       }
     };
 

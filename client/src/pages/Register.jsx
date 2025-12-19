@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import api from "../services/api";
 
 const Register = () => {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("customer");
+  const [role, setRole] = useState("student");
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
 
@@ -14,17 +15,13 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fullname, email, username, password, role }),
+      const { data } = await api.post("/api/auth/register", {
+        fullname,
+        email,
+        username,
+        password,
+        role,
       });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Registration failed");
-      }
 
       setMessage("✅ User registered successfully!");
 
@@ -33,14 +30,17 @@ const Register = () => {
       setEmail("");
       setUsername("");
       setPassword("");
-      setRole("customer");
+      setRole("student");
 
       // redirect back after 1.5s
       setTimeout(() => {
         navigate(-1);
       }, 1500);
     } catch (err) {
-      setMessage("❌ " + err.message);
+      setMessage(
+        "❌ " +
+          (err.response?.data?.error || err.message || "Registration failed")
+      );
     }
   };
 
@@ -131,8 +131,8 @@ const Register = () => {
               onChange={(e) => setRole(e.target.value)}
               className="w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
             >
-              <option value="customer">Customer</option>
-              <option value="admin">Admin</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
             </select>
           </div>
 

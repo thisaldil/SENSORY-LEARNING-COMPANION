@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import api from "../services/api";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -38,56 +39,50 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const endpoint = isRegister ? "/api/auth/register" : "/api/auth/login";
-      const body = isRegister
-        ? { username, password, fullname, role: "student" }
-        : { username, password };
-
-      const apiBase = import.meta.env.VITE_API_URL;
-
-      const res = await fetch(`${apiBase}${endpoint}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(
-          data.error || `${isRegister ? "Registration" : "Login"} failed`
-        );
-      }
-
-      // ✅ Registration flow
       if (isRegister) {
+        // Registration flow
+        const { data } = await api.post("/api/auth/register", {
+          username,
+          password,
+          fullname,
+          role: "student",
+        });
+
         alert(data.message || "✅ Account created! Please login now.");
         setIsRegister(false);
         setFullname("");
         setPassword("");
+        setUsername("");
         return;
       }
 
-      // ✅ Login flow
+      // Login flow
+      const { data } = await api.post("/api/auth/login", {
+        username,
+        password,
+      });
+
       if (!data.user || !data.token) {
         throw new Error("Invalid server response: missing user or token");
       }
-    localStorage.setItem("token", data.token);
-    localStorage.setItem("userId", data.user._id);
+
+      // Store auth data
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("userId", data.user._id);
+
       // Use AuthContext login to update state instantly
       login(data.user, data.token);
 
       alert(`Welcome ${data.user.username}! Redirecting to dashboard...`);
-      
 
-      // ✅ Role-based redirect
+      // Role-based redirect
       if (data.user.role === "teacher") {
         navigate("/teacher-dashboard");
       } else {
         navigate("/student/dashboard");
       }
     } catch (err) {
-      alert(err.message);
+      alert(err.response?.data?.error || err.message || "An error occurred");
     } finally {
       setLoading(false);
     }

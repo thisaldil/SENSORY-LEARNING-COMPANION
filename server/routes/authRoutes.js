@@ -46,6 +46,11 @@ router.post("/login", async (req, res) => {
   try {
     const { username, password } = req.body;
 
+    // Validate JWT_SECRET is set
+    if (!process.env.JWT_SECRET) {
+      return res.status(500).json({ error: "Server configuration error" });
+    }
+
     // Find user in DB
     const user = await User.findOne({ username });
     if (!user) return res.status(400).json({ error: "User not found" });
