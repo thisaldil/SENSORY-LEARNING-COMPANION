@@ -1,4 +1,9 @@
 fastapi
 uvicorn
 python-multipart
-
+opencv-python
+numpy
+pillow
+pytesseract
+spacy
+en_core_web_sm
