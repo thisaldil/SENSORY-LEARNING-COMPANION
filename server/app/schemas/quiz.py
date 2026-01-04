@@ -55,17 +55,29 @@ class BehaviorDataSchema(BaseModel):
 
 
 class CognitiveLoadFeaturesSchema(BaseModel):
-    """Raw cognitive load features schema - direct features for model prediction"""
+    """Raw cognitive load features schema - direct features for model prediction
+    
+    All 9 features are required for the cognitive load model:
+    - answerChanges: Number of times the user changed their answer
+    - currentErrorStreak: Current consecutive errors
+    - totalScore: Total score achieved (can be calculated from quiz results)
+    - accuracyRate: Accuracy rate (0.0 to 1.0) (can be calculated from quiz results)
+    - errors: Total number of errors
+    - idleGapsOverThreshold: Number of idle periods over threshold
+    - responseTimeVariability: Variability in response times
+    - completionTime: Total time to complete (in milliseconds)
+    - avgResponseTime: Average response time (in milliseconds)
+    """
     
     answerChanges: float
     currentErrorStreak: float
+    totalScore: float
+    accuracyRate: float
+    errors: float
     idleGapsOverThreshold: float
     responseTimeVariability: float
     completionTime: float
     avgResponseTime: float
-    # Note: 'errors' is optional - it's not used by the model (removed as data leakage during training)
-    # but can be included in requests for logging/analytics purposes
-    errors: Optional[float] = None
 
 
 class QuizSubmitRequest(BaseModel):

@@ -1,1 +1,1 @@
-["answerChanges", "currentErrorStreak", "idleGapsOverThreshold", "responseTimeVariability", "completionTime", "avgResponseTime"]
+["answerChanges", "currentErrorStreak", "totalScore", "accuracyRate", "errors", "idleGapsOverThreshold", "responseTimeVariability", "completionTime", "avgResponseTime"]
