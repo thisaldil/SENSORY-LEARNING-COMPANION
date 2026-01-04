@@ -1,7 +1,7 @@
 """
 Application Configuration
 """
-from pydantic import field_validator
+from pydantic import field_validator, model_validator
 from pydantic_settings import BaseSettings
 from typing import List
 
@@ -26,12 +26,26 @@ class Settings(BaseSettings):
 
     # MongoDB Atlas
     MONGODB_URL: str = "mongodb+srv://tdimith10_db_user:4InGHnwr5lDqFSUx@cluster0.fbhfkmu.mongodb.net/"
+    MONGO_URI: str = ""  # Alias for MONGODB_URL from environment
     MONGODB_DB_NAME: str = "edusense"
+
+    # Server
+    PORT: int = 8000
 
     # JWT
     SECRET_KEY: str = "your-secret-key-change-in-production"
+    JWT_SECRET: str = ""  # Alias for SECRET_KEY from environment
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
+
+    @model_validator(mode="after")
+    def sync_aliases(self):
+        """Sync environment variable aliases with main fields"""
+        if self.MONGO_URI:
+            self.MONGODB_URL = self.MONGO_URI
+        if self.JWT_SECRET:
+            self.SECRET_KEY = self.JWT_SECRET
+        return self
 
     # CORS
     CORS_ORIGINS: str = "http://localhost:3000,http://localhost:8081,exp://localhost:8081"
