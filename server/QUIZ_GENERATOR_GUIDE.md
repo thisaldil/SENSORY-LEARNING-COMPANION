@@ -19,15 +19,37 @@ The Quiz Generator creates multiple-choice and true/false questions from lesson 
 pip install -r requirements.txt
 ```
 
-### 2. Download spaCy English Model
+### 2. Download ML Models (Recommended)
+
+Pre-download all models to avoid slow first-run downloads:
 
 ```bash
+python scripts/download_models.py
+```
+
+This script will download:
+
+- **spaCy English model** (`en_core_web_sm`) - ~12MB
+- **SentenceTransformer model** (`all-MiniLM-L6-v2`) - ~80MB
+- **T5-small model** (optional) - ~240MB
+
+**Alternative: Manual Download**
+
+If you prefer to download manually:
+
+```bash
+# Download spaCy model
 python -m spacy download en_core_web_sm
+
+# SentenceTransformer and T5 models will auto-download on first use
+# Or download them programmatically (they'll be cached)
 ```
 
 ### 3. Verify Installation
 
 The system will automatically detect available ML libraries and use them if installed. If ML libraries are missing, it will fall back to rule-based methods automatically.
+
+**Note:** Models are cached in `~/.cache/` (HuggingFace models) and system spaCy data directory. Once downloaded, they won't need to be downloaded again.
 
 ## Usage
 
@@ -224,8 +246,20 @@ If you see warnings like:
 Solution:
 
 ```bash
+# Use the download script (recommended)
+python scripts/download_models.py
+
+# Or download manually
 python -m spacy download en_core_web_sm
 ```
+
+### Models Downloading Every Time
+
+If models seem to download on every request:
+
+1. **Check cache location**: Models should be cached in `~/.cache/huggingface/` (SentenceTransformer/T5) and spaCy data directory
+2. **Run download script**: Pre-download all models with `python scripts/download_models.py`
+3. **Check permissions**: Ensure you have write permissions to cache directories
 
 ### Out of Memory Errors
 
@@ -244,8 +278,17 @@ If T5 or DistilBERT cause memory issues:
 ## Performance
 
 - **Rule-based only**: Fast (~0.1-0.5 seconds for 10 questions)
-- **With ML**: Slower first run (~2-5 seconds due to model loading), then ~1-2 seconds per batch
-- Models are loaded once and reused
+- **With ML (first run)**: Slower (~10-30 seconds due to model download, one-time only)
+- **With ML (subsequent runs)**: Fast (~1-3 seconds per batch, models are cached and reused)
+- **Model caching**: Models are loaded once at module level and reused across all requests
+- **Faster model**: Uses `all-MiniLM-L6-v2` (~80MB) instead of larger models for better performance
+
+### Performance Tips
+
+1. **First run is slow**: Models download on first use (~80MB for sentence transformer, one-time only)
+2. **Subsequent runs are fast**: Models are cached and reused across requests
+3. **For fastest generation**: Use `use_ml=False` for rule-based only mode (no model loading)
+4. **T5 is disabled by default**: Question rewriting is optional and disabled for performance
 
 ## Research Notes
 
