@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api.app import router
+from ocr_nlp.api.app import router
 
 app = FastAPI()
 

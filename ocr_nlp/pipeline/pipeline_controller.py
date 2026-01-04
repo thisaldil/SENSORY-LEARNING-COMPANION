@@ -1,14 +1,15 @@
 import os
 import json
 
-from pipeline.nlp.clean_text import clean
-from pipeline.ocr.preprocess import preprocess_image
-from pipeline.ocr.extract import extract_text
-from pipeline.nlp.concept_extraction import extract_concepts
-from pipeline.nlp.relation_extraction import extract_relations
-from pipeline.graph.scene_graph import build_scene_graph
-from pipeline.nlp.example_mapping import map_examples
-from pipeline.narration.script_generator import generate_script
+from ocr_nlp.pipeline.nlp.clean_text import clean
+from ocr_nlp.pipeline.ocr.preprocess import preprocess_image
+from ocr_nlp.pipeline.ocr.extract import extract_text
+from ocr_nlp.pipeline.nlp.concept_extraction import extract_concepts
+from ocr_nlp.pipeline.nlp.relation_extraction import extract_relations
+from ocr_nlp.pipeline.graph.scene_graph import build_scene_graph
+from ocr_nlp.pipeline.nlp.example_mapping import map_examples
+from ocr_nlp.pipeline.narration.script_generator import generate_script
+
 
 
 
