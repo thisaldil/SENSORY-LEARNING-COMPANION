@@ -2,8 +2,10 @@
 FastAPI Application Entry Point
 """
 from contextlib import asynccontextmanager
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
 
 from app.config import settings
 from app.database import connect_to_mongo, close_mongo_connection
@@ -29,13 +31,49 @@ app = FastAPI(
 )
 
 # CORS Middleware
+# Ensure localhost:5173 and 127.0.0.1:5173 are both allowed for development
+cors_origins = settings.cors_origins_list.copy()
+if settings.DEBUG or settings.ENVIRONMENT == "development":
+    # Add common development origins if not already present
+    dev_origins = [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ]
+    for origin in dev_origins:
+        if origin not in cors_origins:
+            cors_origins.append(origin)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins_list,
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.exception_handler(RequestValidationError)
+async def validation_exception_handler(request: Request, exc: RequestValidationError):
+    """Custom handler for validation errors to provide clearer error messages"""
+    errors = []
+    for error in exc.errors():
+        field = " -> ".join(str(loc) for loc in error["loc"])
+        errors.append({
+            "field": field,
+            "message": error["msg"],
+            "type": error["type"]
+        })
+    
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+        content={
+            "detail": "Validation error",
+            "errors": errors,
+            "body": "Expected format: {\"email\": \"user@example.com\", \"password\": \"password123\"}"
+        }
+    )
 
 
 @app.get("/")

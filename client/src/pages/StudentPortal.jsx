@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import StudentDashboard from "./student/StudentDashboard";
+import StudentProfile from "./student/StudentProfile";
 import StudentLayout from "../layouts/StudentLayout";
 import { useAuth } from "../context/AuthContext";
 
@@ -23,6 +24,7 @@ const StudentPortal = () => {
       {/* Student Section */}
       <Route path="/" element={<StudentLayout />}>
         <Route path="dashboard" element={<StudentDashboard />} />
+        <Route path="profile" element={<StudentProfile />} />
         <Route path="*" element={<Navigate to="dashboard" replace />} />
       </Route>
 

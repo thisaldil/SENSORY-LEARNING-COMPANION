@@ -1,12 +1,16 @@
 """
 Authentication API Routes
 """
-from fastapi import APIRouter, HTTPException, status
+import logging
+from fastapi import APIRouter, HTTPException, status, Request
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
 from app.schemas.user import UserSignup, UserResponse, UserLogin, LoginResponse
 from app.services.auth_service import register_user, login_user
 from app.models.user import User
 from app.utils.security import create_access_token
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
@@ -50,6 +54,12 @@ async def login(credentials: UserLogin):
     User login endpoint
     
     Authenticates a user with email and password, returns JWT token and user data.
+    
+    Expected request body:
+    {
+        "email": "user@example.com",
+        "password": "password123"
+    }
     """
     try:
         # Authenticate user
@@ -73,6 +83,7 @@ async def login(credentials: UserLogin):
             detail=str(e)
         )
     except Exception as e:
+        logger.error(f"Login error: {str(e)}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"An error occurred during login: {str(e)}"

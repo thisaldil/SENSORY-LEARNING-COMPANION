@@ -17,13 +17,19 @@ export const AuthProvider = ({ children }) => {
 
     if (storedUser && storedToken) {
       const parsedUser = JSON.parse(storedUser);
-      setUser(parsedUser);
-      setUserRole(parsedUser.role || null);
+      // Default role to "student" if not provided
+      const userWithRole = {
+        ...parsedUser,
+        role: parsedUser.role || "student"
+      };
+      setUser(userWithRole);
+      setUserRole(userWithRole.role);
       setIsAuthenticated(true);
       
       // Ensure userId is also in localStorage if missing
-      if (!storedUserId && parsedUser._id) {
-        localStorage.setItem("userId", parsedUser._id);
+      // FastAPI uses 'id' instead of '_id'
+      if (!storedUserId && (parsedUser.id || parsedUser._id)) {
+        localStorage.setItem("userId", parsedUser.id || parsedUser._id);
       }
     }
 
@@ -32,13 +38,22 @@ export const AuthProvider = ({ children }) => {
 
   // ✅ Login
   const login = (userData, token) => {
+    // Default role to "student" if not provided (backend doesn't return role in login response)
+    const userWithRole = {
+      ...userData,
+      role: userData.role || "student"
+    };
+    
     setIsAuthenticated(true);
-    setUser(userData);
-    setUserRole(userData.role || null);
+    setUser(userWithRole);
+    setUserRole(userWithRole.role);
 
-    localStorage.setItem("user", JSON.stringify(userData));
+    localStorage.setItem("user", JSON.stringify(userWithRole));
     if (token) localStorage.setItem("token", token);
-    if (userData._id) localStorage.setItem("userId", userData._id);
+    // FastAPI uses 'id' instead of '_id'
+    if (userData.id || userData._id) {
+      localStorage.setItem("userId", userData.id || userData._id);
+    }
   };
 
   // ✅ Logout
