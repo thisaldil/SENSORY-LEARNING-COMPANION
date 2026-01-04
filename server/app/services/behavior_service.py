@@ -116,7 +116,7 @@ async def create_behavior_log(
     try:
         behavior_dict = behavior_log.model_dump()
         features = extract_features_from_behavior_log(behavior_dict)
-        predicted_load, confidence = predict_cognitive_load(features)
+        predicted_load, confidence, _ = predict_cognitive_load(features)
         
         behavior_log.predicted_cognitive_load = predicted_load
         behavior_log.cognitive_load_confidence = confidence
@@ -191,7 +191,7 @@ async def update_behavior_log_with_results(
         try:
             behavior_dict = behavior_log.model_dump()
             features = extract_features_from_behavior_log(behavior_dict)
-            predicted_load, confidence = predict_cognitive_load(features)
+            predicted_load, confidence, _ = predict_cognitive_load(features)
             
             behavior_log.predicted_cognitive_load = predicted_load
             behavior_log.cognitive_load_confidence = confidence

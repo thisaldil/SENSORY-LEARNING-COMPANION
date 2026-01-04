@@ -156,11 +156,17 @@ async def submit_quiz_answers(
             else:
                 features_dict = cognitive_load_features
             
+            # Calculate totalScore and accuracyRate from quiz results if not provided
+            # or override with calculated values to ensure consistency
+            features_dict['totalScore'] = float(correct_count)
+            features_dict['accuracyRate'] = float(correct_count / total_questions) if total_questions > 0 else 0.0
+            
             # Predict cognitive load using the model
-            predicted_load, confidence = predict_cognitive_load(features_dict)
+            predicted_load, confidence, confidence_scores = predict_cognitive_load(features_dict)
             cognitive_load = predicted_load
             cognitive_load_confidence = confidence
             print(f"✅ Predicted cognitive load: {cognitive_load} (confidence: {confidence:.4f})")
+            print(f"   Confidence scores: Low={confidence_scores['Low']:.2%}, Medium={confidence_scores['Medium']:.2%}, High={confidence_scores['High']:.2%}")
         except Exception as e:
             print(f"⚠️  Error predicting cognitive load: {str(e)}")
             # Continue without prediction if model fails
