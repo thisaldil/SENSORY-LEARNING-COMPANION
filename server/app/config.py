@@ -48,12 +48,12 @@ class Settings(BaseSettings):
         return self
 
     # CORS
-    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:8081,exp://localhost:8081"
+    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:8081,exp://localhost:8081,http://localhost:5173,http://127.0.0.1:5173"
     
     @property
     def cors_origins_list(self) -> List[str]:
         """Parse CORS origins from comma-separated string"""
-        return [origin.strip() for origin in self.CORS_ORIGINS.split(",")]
+        return [origin.strip() for origin in self.CORS_ORIGINS.split(",") if origin.strip()]
 
     # File Storage
     UPLOAD_DIR: str = "uploads"

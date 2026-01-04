@@ -8,6 +8,7 @@ import {
   Eye,
   Hand,
   User,
+  Mail,
   Key,
   ArrowRight,
 } from "lucide-react";
@@ -16,7 +17,7 @@ import { useAuth } from "../context/AuthContext";
 import api from "../services/api";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [showWelcome, setShowWelcome] = useState(true);
@@ -40,43 +41,52 @@ const Login = () => {
 
     try {
       if (isRegister) {
-        // Registration flow
-        const { data } = await api.post("/api/auth/register", {
-          username,
-          password,
-          fullname,
-          role: "student",
-        });
-
-        alert(data.message || "✅ Account created! Please login now.");
+        // Registration flow - Note: Full registration requires more fields (first_name, last_name, date_of_birth)
+        // For now, redirect to registration page or show error
+        alert("Please use the full registration page. This form is for login only.");
         setIsRegister(false);
         setFullname("");
         setPassword("");
-        setUsername("");
+        setEmail("");
         return;
       }
 
-      // Login flow
+      // Login flow - FastAPI expects email and password
       const { data } = await api.post("/api/auth/login", {
-        username,
+        email,
         password,
       });
 
-      if (!data.user || !data.token) {
+      // FastAPI returns access_token and user object
+      const token = data.access_token || data.token;
+      const userData = data.user || data;
+
+      if (!userData || !token) {
         throw new Error("Invalid server response: missing user or token");
       }
 
-      // Store auth data
-      localStorage.setItem("token", data.token);
-      localStorage.setItem("userId", data.user._id);
+      // Transform user data to include fullname from first_name + last_name
+      // Default role to "student" if not provided (since backend doesn't return role in login response)
+      const user = {
+        ...userData,
+        fullname: userData.fullname || 
+                 (userData.first_name && userData.last_name 
+                  ? `${userData.first_name} ${userData.last_name}` 
+                  : userData.username || userData.email || 'User'),
+        role: userData.role || "student" // Default to student if role not provided
+      };
+
+      // Store auth data - FastAPI uses 'id' instead of '_id'
+      localStorage.setItem("token", token);
+      localStorage.setItem("userId", user.id || user._id);
 
       // Use AuthContext login to update state instantly
-      login(data.user, data.token);
+      login(user, token);
 
-      alert(`Welcome ${data.user.username}! Redirecting to dashboard...`);
+      alert(`Welcome ${user.fullname || user.username || user.email || 'User'}! Redirecting to dashboard...`);
 
-      // Role-based redirect
-      if (data.user.role === "teacher") {
+      // Role-based redirect - default to student dashboard
+      if (user.role === "teacher") {
         navigate("/teacher-dashboard");
       } else {
         navigate("/student/dashboard");
@@ -242,25 +252,25 @@ const Login = () => {
                 </div>
               )}
 
-              {/* Username */}
+              {/* Email */}
               <div>
                 <label
-                  htmlFor="username"
+                  htmlFor="email"
                   className="block text-sm font-bold text-gray-700 mb-2"
                 >
-                  👤 Username
+                  📧 Email
                 </label>
                 <div className="relative">
-                  <User className="absolute left-4 top-3.5 h-5 w-5 text-purple-500" />
+                  <Mail className="absolute left-4 top-3.5 h-5 w-5 text-purple-500" />
                   <input
-                    id="username"
-                    name="username"
-                    type="text"
+                    id="email"
+                    name="email"
+                    type="email"
                     required
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="block w-full pl-12 pr-4 py-3 border-2 rounded-xl shadow-sm focus:ring-4 focus:ring-purple-300 focus:border-purple-500 border-gray-300 transition-all text-gray-800 font-medium outline-none"
-                    placeholder="Enter your username"
+                    placeholder="Enter your email"
                   />
                 </div>
               </div>
@@ -317,6 +327,7 @@ const Login = () => {
                     setIsRegister(!isRegister);
                     setFullname("");
                     setPassword("");
+                    setEmail("");
                   }}
                   className="text-purple-600 hover:text-pink-600 font-semibold text-sm transition-colors underline"
                 >

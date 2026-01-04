@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // Get server URL from environment variable (defined in .env file)
-// Format: VITE_API_URL=http://localhost:5001
-const SERVER_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
+// Format: VITE_API_URL=http://127.0.0.1:8000
+const SERVER_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 // Create axios instance with base configuration
 // All API calls will be prefixed with this baseURL

@@ -8,6 +8,7 @@ import {
 import StudentPortal from "./pages/StudentPortal";
 // import AdminPortal from "./pages/AdminPortal";
 import Login from "./pages/Login";
+import Home from "./pages/Home";
 
 import { AuthProvider, useAuth } from "./context/AuthContext";
 
@@ -25,10 +26,10 @@ const AppRoutes = () => {
 
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/student/*" element={<StudentPortal />} />
       {/* <Route path="/admin/*" element={<AdminPortal />} /> */}
-      <Route path="/" element={<Navigate to="/login" replace />} />
     </Routes>
   );
 };

@@ -31,20 +31,23 @@ const StudentDashboard = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const id = localStorage.getItem("userId");
-
-        if (!id) {
-          navigate("/login");
-          return;
-        }
-
-        const { data } = await api.get(`/api/auth/users/${id}`);
-        setUser(data);
+        const { data } = await api.get("/api/users/me");
+        // Transform user data to include fullname from first_name + last_name
+        const userData = {
+          ...data,
+          fullname: data.fullname || 
+                   (data.first_name && data.last_name 
+                    ? `${data.first_name} ${data.last_name}` 
+                    : data.username || data.email || 'User')
+        };
+        setUser(userData);
       } catch (err) {
         console.error("User fetch error", err);
         if (err.response?.status === 401) {
           navigate("/login");
         }
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -111,8 +114,6 @@ const StudentDashboard = () => {
         });
       } catch (err) {
         console.error("Lessons error", err);
-      } finally {
-        setLoading(false);
       }
     };
 
