@@ -6,7 +6,7 @@ import StudentLayout from "../layouts/StudentLayout";
 import { useAuth } from "../context/AuthContext";
 
 // Educational Scene Generator Imports
-import InputPage from "./IT22551252/InputPage";
+import InputPage from "./IT22551252/InputPageReal";
 import OutputPage from "./IT22551252/OutputPage";
 import OfflineModePage from "./IT22551252/OfflineModePage";
 import Layout from "../components/IT22551252/Layout";
