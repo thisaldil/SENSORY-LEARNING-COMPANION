@@ -1,13 +1,13 @@
 """
-Improved Quiz Generator - Hybrid Rule-Based + ML Approach
-Generates high-quality quiz questions with better answer extraction and validation
+Enhanced Quiz Generator - Production Quality
+Generates well-formed, grammatically correct quiz questions
 """
 import re
 import random
 import uuid
 import logging
-from typing import List, Dict, Tuple, Optional, Set
-from collections import defaultdict, Counter
+from typing import List, Dict, Optional, Set
+from collections import defaultdict
 
 # ML Libraries - Lazy imports
 SPACY_AVAILABLE = False
@@ -21,40 +21,35 @@ logger = logging.getLogger(__name__)
 
 class QuizGenerator:
     """
-    Improved Hybrid Quiz Generator with quality validation
+    Production-ready Quiz Generator with strict quality controls
     """
     
     def __init__(self, use_ml: bool = True):
         self.use_ml = use_ml
         
-        # Question templates with better structure
+        # Simple, reliable question templates
         self.question_templates = {
             "definition": [
                 "What is {concept}?",
-                "Which best describes {concept}?",
-                "What does the term '{concept}' refer to?",
+                "Which of the following best describes {concept}?",
+                "According to the lesson, what is {concept}?",
             ],
             "property": [
-                "What is a key characteristic of {concept}?",
                 "Which statement about {concept} is correct?",
-                "What is true about {concept}?",
-            ],
-            "relationship": [
-                "How does {concept1} affect {concept2}?",
-                "What is the relationship between {concept1} and {concept2}?",
-            ],
-            "cause_effect": [
-                "What causes {effect}?",
-                "What is the effect of {cause}?",
+                "What is true about {concept} according to the lesson?",
+                "Which best describes a characteristic of {concept}?",
             ],
         }
         
-        # Common words to filter out
+        # Words to filter
         self.stopwords = {
             'the', 'this', 'that', 'with', 'from', 'when', 'what', 
             'where', 'which', 'there', 'their', 'these', 'those',
             'have', 'has', 'had', 'will', 'would', 'could', 'should',
-            'more', 'most', 'very', 'also', 'just', 'only', 'about'
+            'more', 'most', 'very', 'also', 'just', 'only', 'about',
+            'some', 'such', 'into', 'through', 'during', 'before',
+            'after', 'above', 'below', 'between', 'under', 'again',
+            'each', 'other', 'being', 'been', 'both', 'same'
         }
         
         self.spacy_nlp = None
@@ -65,38 +60,31 @@ class QuizGenerator:
             self._initialize_ml_components()
     
     def _initialize_ml_components(self):
-        """Initialize ML models with lazy imports"""
+        """Initialize ML models"""
         global SPACY_AVAILABLE, SENTENCE_TRANSFORMERS_AVAILABLE, T5_AVAILABLE
         
-        # Initialize spaCy
         try:
             import spacy
             SPACY_AVAILABLE = True
             try:
                 self.spacy_nlp = spacy.load("en_core_web_sm")
-                logger.info("✅ spaCy model loaded")
+                logger.info("✅ spaCy loaded")
             except OSError:
-                logger.warning("⚠️  spaCy model not found. Install: python -m spacy download en_core_web_sm")
                 self.spacy_nlp = None
-        except Exception as e:
-            logger.warning(f"⚠️  spaCy not available: {e}")
+        except Exception:
             self.spacy_nlp = None
         
-        # Initialize DistilBERT
         try:
             from sentence_transformers import SentenceTransformer
             SENTENCE_TRANSFORMERS_AVAILABLE = True
             try:
                 self.distilbert_model = SentenceTransformer('distilbert-base-nli-mean-tokens')
-                logger.info("✅ DistilBERT model loaded")
-            except Exception as e:
-                logger.warning(f"⚠️  DistilBERT failed: {e}")
+                logger.info("✅ DistilBERT loaded")
+            except Exception:
                 self.distilbert_model = None
-        except Exception as e:
-            logger.warning(f"⚠️  sentence-transformers not available: {e}")
+        except Exception:
             self.distilbert_model = None
         
-        # Initialize T5
         try:
             from transformers import pipeline
             T5_AVAILABLE = True
@@ -107,519 +95,466 @@ class QuizGenerator:
                     max_length=64,
                     do_sample=False
                 )
-                logger.info("✅ T5-small model loaded")
-            except Exception as e:
-                logger.warning(f"⚠️  T5 failed: {e}")
+                logger.info("✅ T5 loaded")
+            except Exception:
                 self.t5_pipeline = None
-        except Exception as e:
-            logger.warning(f"⚠️  T5 not available: {e}")
+        except Exception:
             self.t5_pipeline = None
     
     # ============================================================================
-    # IMPROVED TEXT PROCESSING
+    # TEXT PROCESSING
     # ============================================================================
     
     def clean_text(self, text: str) -> str:
-        """Clean and normalize text"""
-        # Remove extra whitespace
+        """Clean text"""
         text = re.sub(r'\s+', ' ', text)
-        # Fix common issues
         text = re.sub(r'\s+([.,!?])', r'\1', text)
         return text.strip()
     
-    def split_into_sentences(self, text: str) -> List[str]:
-        """Split text into clean sentences"""
-        # Split on sentence boundaries
+    def split_sentences(self, text: str) -> List[str]:
+        """Split into quality sentences"""
         sentences = re.split(r'(?<=[.!?])\s+', text)
         
-        # Clean and filter sentences
-        clean_sentences = []
+        clean = []
         for sent in sentences:
             sent = self.clean_text(sent)
-            # Keep sentences that are substantial and complete
-            if (len(sent) >= 30 and 
-                len(sent.split()) >= 5 and
+            if (len(sent) >= 40 and 
+                len(sent.split()) >= 7 and
                 sent[0].isupper() and
                 sent[-1] in '.!?'):
-                clean_sentences.append(sent)
+                clean.append(sent)
         
-        return clean_sentences
+        return clean
     
-    def extract_complete_answer(self, sentence: str, concept: str) -> Optional[str]:
-        """
-        Extract a complete, meaningful answer from a sentence
+    def is_valid_subject(self, subject: str) -> bool:
+        """Check if subject is valid for question generation"""
+        subject_lower = subject.lower().strip()
         
-        Returns the part of the sentence that explains the concept
-        """
-        sentence = sentence.strip()
+        # Length checks
+        if len(subject_lower) < 3 or len(subject_lower) > 40:
+            return False
         
-        # Pattern 1: "X is Y" or "X are Y" - extract Y
-        is_pattern = re.search(
-            rf'\b{re.escape(concept)}\s+(?:is|are|was|were)\s+(.+?)(?:\.|,|$)',
-            sentence,
-            re.IGNORECASE
-        )
-        if is_pattern:
-            answer = is_pattern.group(1).strip()
-            # Make sure answer is substantial
-            if len(answer.split()) >= 3:
-                return answer
+        # Filter invalid starters
+        invalid_starters = [
+            'the ', 'a ', 'an ', 'this ', 'that ', 'these ', 'those ',
+            'in ', 'on ', 'at ', 'by ', 'for ', 'of ', 'to ', 'from ',
+            'with ', 'about ', 'into ', 'through ', 'during ', 'before ',
+            'after ', 'above ', 'below ', 'under ', 'between '
+        ]
         
-        # Pattern 2: Full sentence containing the concept
-        if concept.lower() in sentence.lower():
-            # Return the complete sentence as context
-            return sentence
+        for starter in invalid_starters:
+            if subject_lower.startswith(starter):
+                return False
         
-        return None
+        # Must not end with conjunctions or prepositions
+        invalid_enders = [' and', ' or', ' but', ' of', ' in', ' on', ' at']
+        for ender in invalid_enders:
+            if subject_lower.endswith(ender):
+                return False
+        
+        # Must contain at least one letter
+        if not re.search(r'[a-zA-Z]', subject):
+            return False
+        
+        # Must not be all stopwords
+        words = subject_lower.split()
+        if all(word in self.stopwords for word in words):
+            return False
+        
+        return True
+    
+    def clean_subject(self, subject: str) -> str:
+        """Clean and standardize a subject"""
+        # Remove leading articles
+        subject = re.sub(r'^(?:the|a|an)\s+', '', subject, flags=re.IGNORECASE)
+        
+        # Remove trailing punctuation except for valid cases
+        subject = subject.rstrip('.,;:')
+        
+        # Capitalize first letter
+        if subject:
+            subject = subject[0].upper() + subject[1:]
+        
+        return subject.strip()
     
     # ============================================================================
-    # IMPROVED CONCEPT EXTRACTION
+    # CONCEPT EXTRACTION
     # ============================================================================
     
-    def extract_key_concepts_spacy(self, text: str) -> List[Dict[str, any]]:
-        """
-        Extract key concepts with metadata using spaCy
-        
-        Returns: List of dicts with 'text', 'type', 'frequency'
-        """
+    def extract_concepts_spacy(self, text: str) -> List[Dict]:
+        """Extract concepts using spaCy"""
         if not self.spacy_nlp:
-            return self.extract_key_concepts_rule_based(text)
+            return self.extract_concepts_rule_based(text)
         
         try:
             doc = self.spacy_nlp(text)
-            concept_freq = defaultdict(int)
-            concept_info = {}
+            concepts = {}
             
-            # Extract noun phrases with context
-            for chunk in doc.noun_chunks:
-                # Filter quality
-                text_clean = chunk.text.strip()
-                if (len(text_clean) > 3 and 
-                    text_clean.lower() not in self.stopwords and
-                    not text_clean.lower().startswith(('the ', 'a ', 'an '))):
-                    
-                    concept_freq[text_clean] += 1
-                    if text_clean not in concept_info:
-                        concept_info[text_clean] = {
-                            'text': text_clean,
-                            'type': 'noun_phrase',
-                            'frequency': 0
-                        }
-            
-            # Extract named entities
+            # Extract named entities (highest priority)
             for ent in doc.ents:
-                if ent.label_ in ['PERSON', 'ORG', 'GPE', 'EVENT', 'PRODUCT']:
-                    text_clean = ent.text.strip()
-                    concept_freq[text_clean] += 1
-                    if text_clean not in concept_info:
-                        concept_info[text_clean] = {
+                if ent.label_ in ['PERSON', 'ORG', 'GPE', 'EVENT', 'PRODUCT', 'LOC']:
+                    text_clean = self.clean_subject(ent.text)
+                    if self.is_valid_subject(text_clean):
+                        if text_clean not in concepts:
+                            concepts[text_clean] = {
+                                'text': text_clean,
+                                'frequency': 0,
+                                'importance': 5
+                            }
+                        concepts[text_clean]['frequency'] += 2
+            
+            # Extract noun phrases
+            for chunk in doc.noun_chunks:
+                text_clean = self.clean_subject(chunk.text)
+                if self.is_valid_subject(text_clean):
+                    if text_clean not in concepts:
+                        concepts[text_clean] = {
                             'text': text_clean,
-                            'type': 'named_entity',
-                            'frequency': 0
+                            'frequency': 0,
+                            'importance': 2
                         }
+                    concepts[text_clean]['frequency'] += 1
             
-            # Update frequencies
-            for concept in concept_info:
-                concept_info[concept]['frequency'] = concept_freq[concept]
-            
-            # Sort by frequency and quality
-            concepts = sorted(
-                concept_info.values(),
-                key=lambda x: (x['frequency'], len(x['text'])),
+            # Sort by score
+            concept_list = sorted(
+                concepts.values(),
+                key=lambda x: (x['frequency'] * x['importance']),
                 reverse=True
             )
             
-            return concepts[:20]
+            return concept_list[:12]
             
-        except Exception as e:
-            logger.warning(f"spaCy extraction failed: {e}")
-            return self.extract_key_concepts_rule_based(text)
+        except Exception:
+            return self.extract_concepts_rule_based(text)
     
-    def extract_key_concepts_rule_based(self, text: str) -> List[Dict[str, any]]:
-        """Improved rule-based concept extraction"""
-        concepts = []
-        concept_freq = defaultdict(int)
+    def extract_concepts_rule_based(self, text: str) -> List[Dict]:
+        """Rule-based concept extraction"""
+        concepts = {}
         
-        # Extract capitalized terms
-        cap_terms = re.findall(r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\b', text)
+        # Capitalized terms (proper nouns)
+        cap_pattern = r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,2}\b'
+        cap_terms = re.findall(cap_pattern, text)
+        
         for term in cap_terms:
-            if len(term) > 3 and term.lower() not in self.stopwords:
-                concept_freq[term] += 1
+            clean = self.clean_subject(term)
+            if self.is_valid_subject(clean):
+                if clean not in concepts:
+                    concepts[clean] = {'text': clean, 'frequency': 0, 'importance': 3}
+                concepts[clean]['frequency'] += 1
         
-        # Extract quoted terms
-        quoted = re.findall(r'"([^"]+)"', text)
-        quoted += re.findall(r"'([^']+)'", text)
+        # Quoted terms
+        quoted = re.findall(r'["\']([^"\']{3,40})["\']', text)
         for term in quoted:
-            if len(term) > 3:
-                concept_freq[term] += 2  # Higher weight for quoted terms
+            clean = self.clean_subject(term)
+            if self.is_valid_subject(clean):
+                if clean not in concepts:
+                    concepts[clean] = {'text': clean, 'frequency': 0, 'importance': 5}
+                concepts[clean]['frequency'] += 2
         
-        # Extract defined terms (terms being defined)
-        definitions = re.findall(
-            r'\b([A-Z][a-z]+(?:\s+[a-z]+)?)\s+(?:is|are|means?|refers?\s+to)',
-            text
+        # Subjects being defined
+        def_pattern = r'\b([A-Z][a-zA-Z\s]{2,35}?)\s+(?:is|are)\s+(?:a|an|the)\s+'
+        subjects = re.findall(def_pattern, text)
+        
+        for subj in subjects:
+            clean = self.clean_subject(subj)
+            if self.is_valid_subject(clean):
+                if clean not in concepts:
+                    concepts[clean] = {'text': clean, 'frequency': 0, 'importance': 4}
+                concepts[clean]['frequency'] += 3
+        
+        # Sort by score
+        concept_list = sorted(
+            concepts.values(),
+            key=lambda x: (x['frequency'] * x['importance']),
+            reverse=True
         )
-        for term in definitions:
-            concept_freq[term] += 3  # Highest weight for defined terms
         
-        # Convert to list with metadata
-        for concept, freq in sorted(concept_freq.items(), key=lambda x: x[1], reverse=True):
-            concepts.append({
-                'text': concept,
-                'type': 'rule_based',
-                'frequency': freq
-            })
-        
-        return concepts[:20]
+        return concept_list[:12]
     
-    def extract_key_concepts(self, text: str) -> List[Dict[str, any]]:
-        """Hybrid concept extraction"""
+    def extract_concepts(self, text: str) -> List[Dict]:
+        """Hybrid extraction"""
         if self.use_ml and self.spacy_nlp:
-            return self.extract_key_concepts_spacy(text)
-        return self.extract_key_concepts_rule_based(text)
+            return self.extract_concepts_spacy(text)
+        return self.extract_concepts_rule_based(text)
     
     # ============================================================================
-    # IMPROVED FACT EXTRACTION
+    # FACT EXTRACTION - IMPROVED
     # ============================================================================
     
-    def extract_facts_improved(self, text: str) -> List[Dict[str, any]]:
+    def extract_facts(self, text: str) -> List[Dict]:
         """
-        Extract facts with complete context and validation
+        Extract well-formed facts with complete subjects and predicates
         """
         facts = []
-        sentences = self.split_into_sentences(text)
+        sentences = self.split_sentences(text)
         
         for sentence in sentences:
-            # Skip if too short
-            if len(sentence.split()) < 6:
-                continue
+            # Pattern: "Subject is/are predicate"
+            # More restrictive - subject must be a proper noun phrase
+            pattern = r'^([A-Z][a-zA-Z]+(?:\s+[A-Z]?[a-z]+){0,3})\s+(is|are)\s+(.+?)(?:\.\s*$|$)'
+            match = re.search(pattern, sentence)
             
-            # Pattern 1: Definition - "X is/are Y"
-            def_match = re.search(
-                r'\b([A-Z][a-zA-Z\s]+?)\s+(is|are)\s+(.+?)(?:\.|,\s+(?:and|but|which))',
-                sentence
-            )
-            if def_match:
-                subject = def_match.group(1).strip()
-                predicate = def_match.group(3).strip()
+            if match:
+                subject = match.group(1).strip()
+                predicate = match.group(3).strip()
                 
-                # Validate quality
-                if len(predicate.split()) >= 3 and len(predicate) < 150:
-                    facts.append({
-                        'type': 'definition',
-                        'subject': subject,
-                        'predicate': predicate,
-                        'full_sentence': sentence,
-                        'quality_score': len(predicate.split())
-                    })
+                # Clean subject
+                subject = self.clean_subject(subject)
+                
+                # Validate subject
+                if not self.is_valid_subject(subject):
+                    continue
+                
+                # Validate predicate - must be complete and meaningful
+                if (len(predicate.split()) >= 5 and
+                    len(predicate) >= 30 and
+                    len(predicate) < 200 and
+                    predicate[0].islower() and  # Should start with lowercase after "is/are"
+                    not predicate.startswith(tuple(self.stopwords))):
+                    
+                    # Additional check - predicate should have substance
+                    predicate_words = [w for w in predicate.split() if w.lower() not in self.stopwords]
+                    if len(predicate_words) >= 3:
+                        facts.append({
+                            'type': 'definition',
+                            'subject': subject,
+                            'predicate': predicate,
+                            'sentence': sentence,
+                            'score': len(predicate.split())
+                        })
+        
+        # Sort by quality
+        facts.sort(key=lambda x: x['score'], reverse=True)
+        
+        return facts
+    
+    # ============================================================================
+    # DISTRACTOR GENERATION
+    # ============================================================================
+    
+    def create_distractors(
+        self,
+        correct_answer: str,
+        all_facts: List[Dict],
+        sentences: List[str]
+    ) -> List[str]:
+        """Create plausible distractors from other facts"""
+        distractors = []
+        used = {correct_answer.lower()}
+        
+        # Use predicates from other facts
+        for fact in all_facts:
+            if len(distractors) >= 5:
+                break
             
-            # Pattern 2: Cause/Effect
-            cause_patterns = [
-                r'(.+?)\s+(?:causes?|leads?\s+to|results?\s+in)\s+(.+)',
-                r'(?:because|since|due to)\s+(.+?),\s+(.+)',
+            if 'predicate' in fact:
+                pred = fact['predicate'].strip()
+                
+                if (pred.lower() not in used and
+                    len(pred.split()) >= 5 and
+                    len(pred) >= 30 and
+                    len(pred) < 200):
+                    
+                    distractors.append(pred)
+                    used.add(pred.lower())
+        
+        # Extract additional meaningful phrases from sentences
+        for sentence in sentences:
+            if len(distractors) >= 5:
+                break
+            
+            # Look for clauses after "because", "since", "as"
+            clause_patterns = [
+                r'because\s+(.+?)(?:\.|$)',
+                r'since\s+(.+?)(?:\.|$)',
+                r',\s+which\s+(.+?)(?:\.|$)',
             ]
             
-            for pattern in cause_patterns:
+            for pattern in clause_patterns:
                 match = re.search(pattern, sentence, re.IGNORECASE)
                 if match:
-                    cause = match.group(1).strip()
-                    effect = match.group(2).strip()
-                    
-                    if len(cause.split()) >= 3 and len(effect.split()) >= 3:
-                        facts.append({
-                            'type': 'cause_effect',
-                            'cause': cause,
-                            'effect': effect,
-                            'full_sentence': sentence,
-                            'quality_score': len(sentence.split())
-                        })
-                    break
-            
-            # Pattern 3: Property/Characteristic
-            property_patterns = [
-                r'([A-Z][a-zA-Z\s]+?)\s+(?:has|have|contains?|includes?)\s+(.+)',
-                r'([A-Z][a-zA-Z\s]+?)\s+(?:can|could|may|might)\s+(.+)',
-            ]
-            
-            for pattern in property_patterns:
-                match = re.search(pattern, sentence)
-                if match:
-                    subject = match.group(1).strip()
-                    property_desc = match.group(2).strip()
-                    
-                    if len(property_desc.split()) >= 3:
-                        facts.append({
-                            'type': 'property',
-                            'subject': subject,
-                            'property': property_desc,
-                            'full_sentence': sentence,
-                            'quality_score': len(property_desc.split())
-                        })
-                    break
-        
-        # Sort by quality score
-        facts.sort(key=lambda x: x['quality_score'], reverse=True)
-        
-        return facts[:20]
-    
-    # ============================================================================
-    # IMPROVED DISTRACTOR GENERATION
-    # ============================================================================
-    
-    def create_smart_distractors(
-        self, 
-        correct_answer: str, 
-        concepts: List[Dict], 
-        all_sentences: List[str],
-        question_type: str
-    ) -> List[str]:
-        """
-        Create plausible distractors that are wrong but seem reasonable
-        """
-        distractors = []
-        used_texts = {correct_answer.lower()}
-        
-        # Strategy 1: Use similar sentences/phrases from the text
-        for sentence in all_sentences:
-            if len(distractors) >= 3:
-                break
-            
-            # Skip if too similar to correct answer
-            if sentence.lower() == correct_answer.lower():
-                continue
-            
-            # Extract meaningful phrases
-            phrases = re.findall(r'[^.!?,]+[.!?]?', sentence)
-            for phrase in phrases:
-                phrase = phrase.strip(' .,!?')
-                
-                # Check if it's a good distractor
-                if (len(phrase.split()) >= 3 and 
-                    len(phrase.split()) <= 20 and
-                    phrase.lower() not in used_texts and
-                    phrase.lower() != correct_answer.lower()):
-                    
-                    distractors.append(phrase)
-                    used_texts.add(phrase.lower())
-                    
-                    if len(distractors) >= 3:
+                    clause = match.group(1).strip()
+                    if (clause.lower() not in used and
+                        len(clause.split()) >= 5 and
+                        len(clause) >= 30 and
+                        len(clause) < 150):
+                        distractors.append(clause)
+                        used.add(clause.lower())
                         break
         
-        # Strategy 2: Use other concept definitions
-        for concept_info in concepts:
-            if len(distractors) >= 3:
+        # Generic fallback distractors
+        generic = [
+            "a temporary phenomenon that only occurs under specific conditions in rare circumstances",
+            "an outdated concept that has been replaced by more modern understanding and research",
+            "a collection of independent elements that do not interact with each other significantly",
+            "primarily a theoretical construct with limited practical application in real situations",
+            "something that varies dramatically depending on external factors and environmental conditions",
+        ]
+        
+        for g in generic:
+            if len(distractors) >= 5:
                 break
-            
-            concept = concept_info['text']
-            if concept.lower() not in used_texts:
-                distractors.append(concept)
-                used_texts.add(concept.lower())
+            if g.lower() not in used:
+                distractors.append(g)
+                used.add(g.lower())
         
-        # Strategy 3: Create plausible wrong answers based on type
-        generic_by_type = {
-            'definition': [
-                "A type of measurement used in scientific calculations",
-                "A process that occurs naturally without external influence",
-                "A fundamental principle that applies in all situations",
-            ],
-            'property': [
-                "It has no measurable effect on the system",
-                "It varies depending on environmental conditions only",
-                "It remains constant regardless of other factors",
-            ],
-            'cause_effect': [
-                "There is no direct relationship between these factors",
-                "The opposite effect occurs under normal conditions",
-                "Multiple factors combine to produce unpredictable results",
-            ],
-        }
-        
-        generic_distractors = generic_by_type.get(question_type, [
-            "This cannot be determined from the given information",
-            "All of the above factors contribute equally",
-            "None of these factors are relevant",
-        ])
-        
-        # Add generic distractors if needed
-        for distractor in generic_distractors:
-            if len(distractors) >= 3:
-                break
-            if distractor.lower() not in used_texts:
-                distractors.append(distractor)
-                used_texts.add(distractor.lower())
-        
-        return distractors[:3]
+        return distractors
     
-    def rank_distractors_with_distilbert(
-        self, 
-        correct_answer: str, 
-        candidate_distractors: List[str]
-    ) -> List[str]:
-        """Rank distractors using DistilBERT similarity"""
-        if not self.distilbert_model or len(candidate_distractors) < 3:
-            return candidate_distractors[:3]
+    def rank_distractors(self, correct: str, candidates: List[str]) -> List[str]:
+        """Rank distractors by semantic similarity"""
+        if not self.distilbert_model or len(candidates) < 3:
+            return candidates[:3]
         
         try:
-            all_texts = [correct_answer] + candidate_distractors
+            all_texts = [correct] + candidates
             embeddings = self.distilbert_model.encode(all_texts)
             
             correct_emb = embeddings[0]
             
-            similarities = []
-            for i, dist_emb in enumerate(embeddings[1:]):
-                similarity = np.dot(correct_emb, dist_emb) / (
-                    np.linalg.norm(correct_emb) * np.linalg.norm(dist_emb)
+            scores = []
+            for i, emb in enumerate(embeddings[1:]):
+                sim = np.dot(correct_emb, emb) / (
+                    np.linalg.norm(correct_emb) * np.linalg.norm(emb)
                 )
-                similarities.append((candidate_distractors[i], similarity))
+                # Want medium similarity (around 0.4-0.6)
+                ideal_dist = abs(sim - 0.5)
+                scores.append((candidates[i], ideal_dist))
             
-            # Sort by similarity - we want medium similarity (plausible but wrong)
-            similarities.sort(key=lambda x: abs(x[1] - 0.5))  # Closest to 0.5 similarity
+            scores.sort(key=lambda x: x[1])
+            return [s[0] for s in scores[:3]]
             
-            return [d[0] for d in similarities[:3]]
-            
-        except Exception as e:
-            logger.warning(f"DistilBERT ranking failed: {e}")
-            return candidate_distractors[:3]
-    
-    # ============================================================================
-    # QUESTION VALIDATION
-    # ============================================================================
-    
-    def validate_question(self, question_dict: Dict) -> bool:
-        """
-        Validate question quality before adding to quiz
-        """
-        # Check required fields
-        if not all(key in question_dict for key in ['question', 'options', 'correct_index']):
-            return False
-        
-        question_text = question_dict['question']
-        options = question_dict['options']
-        correct_index = question_dict['correct_index']
-        
-        # Validate question text
-        if (len(question_text) < 10 or 
-            len(question_text) > 200 or
-            not question_text.strip() or
-            question_text.lower().startswith('not_') or
-            question_text.endswith('?') == False):
-            return False
-        
-        # Validate options
-        if len(options) != 4:
-            return False
-        
-        # Check all options are unique and substantial
-        if len(set(opt.lower() for opt in options)) != 4:
-            return False
-        
-        for opt in options:
-            if len(opt.strip()) < 3 or len(opt) > 200:
-                return False
-        
-        # Validate correct index
-        if correct_index < 0 or correct_index >= len(options):
-            return False
-        
-        # Check correct answer is substantial
-        correct_answer = options[correct_index]
-        if len(correct_answer.split()) < 2:
-            return False
-        
-        return True
+        except Exception:
+            return candidates[:3]
     
     # ============================================================================
     # QUESTION GENERATION
     # ============================================================================
     
-    def generate_multiple_choice_question(
+    def create_multiple_choice(
         self,
-        question_text: str,
-        correct_answer: str,
-        distractors: List[str],
-        question_type: str = "definition"
+        question: str,
+        correct: str,
+        distractors: List[str]
     ) -> Optional[Dict]:
-        """Generate validated multiple choice question"""
+        """Generate MC question with validation"""
         
-        # Clean inputs
-        question_text = self.clean_text(question_text)
-        correct_answer = self.clean_text(correct_answer)
-        distractors = [self.clean_text(d) for d in distractors]
+        question = self.clean_text(question)
+        correct = self.clean_text(correct)
+        distractors = [self.clean_text(d) for d in distractors if d]
         
-        # Ensure we have exactly 3 unique distractors
-        unique_distractors = []
+        # Ensure question ends with ?
+        if not question.endswith('?'):
+            question += '?'
+        
+        # Filter distractors
+        unique = []
         for d in distractors:
-            if d.lower() != correct_answer.lower() and d not in unique_distractors:
-                unique_distractors.append(d)
+            if (d.lower() != correct.lower() and
+                d not in unique and
+                len(d.split()) >= 4 and
+                len(d) >= 20):
+                unique.append(d)
         
-        while len(unique_distractors) < 3:
-            unique_distractors.append("This information is not provided in the lesson")
+        if len(unique) < 3:
+            return None
         
-        # Combine and shuffle
-        options = [correct_answer] + unique_distractors[:3]
+        # Create options
+        options = [correct] + unique[:3]
         random.shuffle(options)
-        correct_index = options.index(correct_answer)
         
-        question_dict = {
+        result = {
             'id': str(uuid.uuid4()),
             'type': 'multiple',
-            'question': question_text,
+            'question': question,
             'options': options,
-            'correct_index': correct_index
+            'correct_index': options.index(correct)
         }
         
-        # Validate before returning
-        if self.validate_question(question_dict):
-            return question_dict
-        
-        return None
+        return result if self.validate_question(result) else None
     
-    def generate_true_false_question(
-        self,
-        statement: str,
-        is_true: bool
-    ) -> Optional[Dict]:
-        """Generate validated true/false question"""
-        
+    def create_true_false(self, statement: str, is_true: bool) -> Optional[Dict]:
+        """Generate T/F question"""
         statement = self.clean_text(statement)
         
-        # Remove trailing period for cleaner format
         if statement.endswith('.'):
             statement = statement[:-1]
         
-        question_text = f"True or False: {statement}?"
+        question = f"True or False: {statement}?"
         
-        question_dict = {
+        result = {
             'id': str(uuid.uuid4()),
             'type': 'truefalse',
-            'question': question_text,
+            'question': question,
             'options': ['True', 'False'],
             'correct_index': 0 if is_true else 1
         }
         
-        # Validate
-        if (len(statement.split()) >= 5 and 
+        if (len(statement.split()) >= 7 and
+            len(statement) >= 35 and
             len(statement) < 200 and
             statement[0].isupper()):
-            return question_dict
+            return result
         
         return None
     
+    def validate_question(self, q: Dict) -> bool:
+        """Strict validation"""
+        if not all(k in q for k in ['question', 'options', 'correct_index']):
+            return False
+        
+        question = q['question']
+        options = q['options']
+        
+        # Question checks
+        if (len(question) < 20 or
+            len(question) > 200 or
+            not question.endswith('?') or
+            not question[0].isupper()):
+            return False
+        
+        # Invalid patterns
+        invalid = [
+            r'\b(?:and|or|but|of|in|on|at)\s*\?$',  # Ends with conjunction/preposition
+            r'\s{2,}',  # Multiple spaces
+        ]
+        
+        for pattern in invalid:
+            if re.search(pattern, question):
+                return False
+        
+        # Options checks
+        if len(options) != 4:
+            return False
+        
+        if len(set(o.lower() for o in options)) != 4:
+            return False
+        
+        for opt in options:
+            if len(opt.split()) < 3 or len(opt) < 15:
+                return False
+        
+        return True
+    
     def generate_questions(
-        self, 
-        lesson_content: str, 
+        self,
+        content: str,
         num_questions: int = 10
     ) -> List[Dict]:
         """
-        Generate high-quality quiz questions with validation
+        Generate high-quality quiz questions
         """
+        # Extract
+        concepts = self.extract_concepts(content)
+        facts = self.extract_facts(content)
+        sentences = self.split_sentences(content)
+        
+        if not facts:
+            logger.warning("No quality facts extracted")
+            return []
+        
         questions = []
+        used_subjects = set()
         
-        # Extract components
-        concepts = self.extract_key_concepts(lesson_content)
-        facts = self.extract_facts_improved(lesson_content)
-        sentences = self.split_into_sentences(lesson_content)
-        
-        # Target distribution
         target_mc = int(num_questions * 0.6)
         target_tf = num_questions - target_mc
         
@@ -631,94 +566,60 @@ class QuizGenerator:
             if mc_count >= target_mc and tf_count >= target_tf:
                 break
             
-            # Multiple choice from definitions
-            if fact['type'] == 'definition' and mc_count < target_mc:
-                subject = fact['subject']
-                predicate = fact['predicate']
-                
-                question_text = f"What is {subject}?"
-                
-                distractors = self.create_smart_distractors(
-                    predicate, concepts, sentences, 'definition'
-                )
-                
-                if self.use_ml and self.distilbert_model:
-                    distractors = self.rank_distractors_with_distilbert(predicate, distractors)
-                
-                question = self.generate_multiple_choice_question(
-                    question_text, predicate, distractors, 'definition'
-                )
-                
-                if question:
-                    questions.append(question)
-                    mc_count += 1
+            subject = fact['subject']
             
-            # True/False from full sentences
-            elif fact['type'] in ['definition', 'property'] and tf_count < target_tf:
-                full_sentence = fact['full_sentence']
-                
-                question = self.generate_true_false_question(full_sentence, True)
-                
-                if question:
-                    questions.append(question)
-                    tf_count += 1
-        
-        # Fill remaining slots with concept-based questions
-        used_concepts = set()
-        
-        while mc_count < target_mc and concepts:
-            concept_info = concepts.pop(0)
-            concept = concept_info['text']
-            
-            if concept in used_concepts:
+            # Avoid duplicates
+            if subject.lower() in used_subjects:
                 continue
             
-            used_concepts.add(concept)
-            
-            # Find sentences mentioning this concept
-            relevant_sents = [s for s in sentences if concept.lower() in s.lower()]
-            
-            if relevant_sents:
-                sent = relevant_sents[0]
-                answer = self.extract_complete_answer(sent, concept)
+            # Multiple choice
+            if mc_count < target_mc:
+                predicate = fact['predicate']
                 
-                if answer and len(answer.split()) >= 4:
-                    question_text = f"According to the lesson, which statement about {concept} is correct?"
-                    
-                    distractors = self.create_smart_distractors(
-                        answer, concepts, sentences, 'property'
-                    )
-                    
-                    if self.use_ml and self.distilbert_model:
-                        distractors = self.rank_distractors_with_distilbert(answer, distractors)
-                    
-                    question = self.generate_multiple_choice_question(
-                        question_text, answer, distractors, 'property'
-                    )
-                    
-                    if question:
-                        questions.append(question)
-                        mc_count += 1
+                # Simple, reliable question
+                q_text = f"What is {subject}?"
+                
+                # Get distractors
+                distractors = self.create_distractors(predicate, facts, sentences)
+                
+                if self.use_ml and self.distilbert_model:
+                    distractors = self.rank_distractors(predicate, distractors)
+                
+                question = self.create_multiple_choice(q_text, predicate, distractors)
+                
+                if question:
+                    questions.append(question)
+                    used_subjects.add(subject.lower())
+                    mc_count += 1
+            
+            # True/False
+            if tf_count < target_tf:
+                sentence = fact['sentence']
+                q = self.create_true_false(sentence, True)
+                
+                if q:
+                    questions.append(q)
+                    tf_count += 1
         
-        # Shuffle final questions
+        # Shuffle
         random.shuffle(questions)
         
         return questions[:num_questions]
 
 
 def generate_quiz_from_content(
-    content: str, 
-    num_questions: int = 10, 
+    content: str,
+    num_questions: int = 10,
     use_ml: bool = True
 ) -> List[Dict]:
     """
-    Generate high-quality quiz questions from lesson content
+    Generate quiz questions from lesson content
     
     Args:
-        content: Lesson content text
-        num_questions: Number of questions to generate
-        use_ml: Whether to use ML enhancements
-        
+        content: Lesson text
+        num_questions: Number of questions (default: 10)
+        use_ml: Use ML enhancements (default: True)
+    
     Returns:
         List of validated question dictionaries
     """
