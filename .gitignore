@@ -5,6 +5,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 package-lock.json
+venv
+.venv
 
 # --- Environment Files ---
 .env
