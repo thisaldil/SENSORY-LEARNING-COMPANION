@@ -1,0 +1,21 @@
+{
+  "extracted_text": "Gravity pulls objects toward Earth.",
+  "concepts": ["gravity", "objects", "earth"],
+  "relations": [
+    { "from": "gravity", "to": "objects", "relation": "pulls" }
+  ],
+  "example_mapping": {
+    "gravity": "An apple falling from a tree"
+  },
+  "scene_graph": {
+    "nodes": [
+      { "id": "gravity", "type": "concept", "example": "An apple falling from a tree" },
+      { "id": "objects", "type": "concept" },
+      { "id": "earth", "type": "concept" }
+    ],
+    "edges": [
+      { "from": "gravity", "to": "objects", "relation": "pulls" }
+    ]
+  },
+  "narration_script": "Gravity pulls things toward Earth. For example, when an apple falls from a tree, gravity causes it to drop."
+}

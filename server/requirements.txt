@@ -31,6 +31,12 @@ sentence-transformers>=2.2.0
 # NLP Processing
 spacy>=3.7.0
 
+# OCR / Speech
+opencv-python
+pillow
+pytesseract
+openai-whisper
+
 # Utilities
 python-dateutil==2.8.2
 

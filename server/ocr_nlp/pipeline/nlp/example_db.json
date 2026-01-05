@@ -1,0 +1,901 @@
+{
+  "metadata": {
+    "grade": 6,
+    "subject": "Science",
+    "curriculum": "Sri Lanka",
+    "language": "English"
+  },
+
+  "concepts": {
+    "living_organisms": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Living organisms are things that can grow, move, reproduce, and respond to their surroundings.",
+      "examples": [
+        "A child grows taller each year.",
+        "A plant grows new leaves when watered.",
+        "A puppy becomes a dog over time."
+      ],
+      "keywords": ["life", "growth", "reproduction"]
+    },
+
+    "non_living_things": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Non-living things do not grow, reproduce, or respond like living things.",
+      "examples": [
+        "A pencil stays the same size forever.",
+        "A stone does not need food or water.",
+        "A chair cannot move by itself."
+      ],
+      "keywords": ["inanimate", "no growth", "no life"]
+    },
+
+    "growth": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Growth is the increase in size, height, or amount of a living thing.",
+      "examples": [
+        "A green gram seed becomes a tall plant.",
+        "Your shoes become too small as you grow.",
+        "A kitten grows into a cat."
+      ],
+      "keywords": ["size", "development", "increase"]
+    },
+
+    "nutrition": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Nutrition is how living organisms get and use food for survival.",
+      "examples": [
+        "Eating rice and curry gives you energy.",
+        "A cow eats grass to stay healthy.",
+        "Plants make food from sunlight."
+      ],
+      "keywords": ["food", "energy", "feeding"]
+    },
+
+    "photosynthesis": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Photosynthesis is how green plants make their own food using sunlight, water, and carbon dioxide.",
+      "examples": [
+        "A mango tree makes food in its green leaves.",
+        "Plants need sunlight to stay green and healthy.",
+        "Leaves turn yellow when they cannot make food."
+      ],
+      "keywords": ["plants", "sunlight", "food production"]
+    },
+
+    "respiration": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Respiration is the process of taking in oxygen and releasing carbon dioxide to produce energy.",
+      "examples": [
+        "Your chest moves up and down when you breathe.",
+        "You breathe faster after running in the playground.",
+        "A dog pants with its tongue out after playing."
+      ],
+      "keywords": ["breathing", "oxygen", "energy"]
+    },
+
+    "movement": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Movement is the ability of living things to change position or show motion.",
+      "examples": [
+        "A mimosa plant closes its leaves when you touch it.",
+        "A butterfly flies from flower to flower.",
+        "A fish swims in the tank."
+      ],
+      "keywords": ["motion", "locomotion", "change position"]
+    },
+
+    "reproduction": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Reproduction is when living organisms produce new members of their own kind.",
+      "examples": [
+        "A hen lays eggs that hatch into chicks.",
+        "A coconut tree grows from a coconut seed.",
+        "A cat gives birth to kittens."
+      ],
+      "keywords": ["offspring", "new generation", "breeding"]
+    },
+
+    "micro_organisms": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Micro-organisms are tiny living things that cannot be seen with the naked eye.",
+      "examples": [
+        "Germs in dirty water can make you sick.",
+        "Yeast makes bread dough rise and become fluffy.",
+        "Bacteria in yogurt help digestion."
+      ],
+      "keywords": ["tiny", "microscopic", "bacteria"]
+    },
+
+    "autotrophic": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Autotrophic organisms can make their own food.",
+      "examples": [
+        "A coconut tree makes its own food in the leaves.",
+        "Green plants do not need to eat other living things.",
+        "A mango tree gets food from sunlight, not from soil."
+      ],
+      "keywords": ["self-feeding", "plants", "food production"]
+    },
+
+    "heterotrophic": {
+      "lesson": "Wonders of the Living World",
+      "definition": "Heterotrophic organisms cannot make their own food and must eat other organisms.",
+      "examples": [
+        "A cow eats grass to get energy.",
+        "You eat rice and vegetables for food.",
+        "A lion hunts deer for its meals."
+      ],
+      "keywords": ["feeding", "dependent", "consuming"]
+    },
+
+    "matter": {
+      "lesson": "Things Around Us",
+      "definition": "Matter is anything that has mass and occupies space.",
+      "examples": [
+        "A book has weight and takes up space on the desk.",
+        "Water fills the bottle and has mass.",
+        "Air inside a balloon has weight."
+      ],
+      "keywords": ["mass", "space", "substance"]
+    },
+
+    "energy": {
+      "lesson": "Things Around Us",
+      "definition": "Energy is the ability to do work and does not have mass or occupy space.",
+      "examples": [
+        "Sunlight helps you see but has no weight.",
+        "The sound of a bell travels but has no mass.",
+        "Heat from fire warms you but takes no space."
+      ],
+      "keywords": ["work", "power", "force"]
+    },
+
+    "solid": {
+      "lesson": "Things Around Us",
+      "definition": "A solid has a definite shape and a definite volume.",
+      "examples": [
+        "A brick keeps its rectangular shape.",
+        "A cricket bat does not change shape when you hold it.",
+        "A stone stays the same size and shape."
+      ],
+      "keywords": ["fixed shape", "definite volume", "rigid"]
+    },
+
+    "liquid": {
+      "lesson": "Things Around Us",
+      "definition": "A liquid has a definite volume but takes the shape of its container.",
+      "examples": [
+        "Water poured into a cup takes the cup's shape.",
+        "Milk in a bottle becomes bottle-shaped.",
+        "Coconut oil spreads flat in a plate."
+      ],
+      "keywords": ["flows", "container shape", "definite volume"]
+    },
+
+    "gas": {
+      "lesson": "Things Around Us",
+      "definition": "A gas has no definite shape or volume and fills its entire container.",
+      "examples": [
+        "Air fills the whole room evenly.",
+        "Smoke from incense spreads everywhere.",
+        "The smell of food cooking reaches every corner."
+      ],
+      "keywords": ["spreads", "no shape", "no fixed volume"]
+    },
+
+    "hardness": {
+      "lesson": "Things Around Us",
+      "definition": "Hardness is the property of a material to resist scratching or cutting.",
+      "examples": [
+        "A diamond can scratch glass easily.",
+        "An iron nail is harder than wood.",
+        "You cannot scratch a stone with your fingernail."
+      ],
+      "keywords": ["scratch resistant", "strong", "tough"]
+    },
+
+    "malleability": {
+      "lesson": "Things Around Us",
+      "definition": "Malleability is the ability of a metal to be hammered into thin sheets.",
+      "examples": [
+        "Gold is beaten into thin sheets for jewelry.",
+        "Aluminum foil is made by rolling aluminum flat.",
+        "Copper sheets are made by hammering copper."
+      ],
+      "keywords": ["metal", "sheet", "hammering"]
+    },
+
+    "ductility": {
+      "lesson": "Things Around Us",
+      "definition": "Ductility is the ability of a metal to be drawn into thin wires.",
+      "examples": [
+        "Copper is pulled into thin wires for electrical cables.",
+        "Gold can be made into very thin threads.",
+        "Aluminum wires are drawn from aluminum metal."
+      ],
+      "keywords": ["wire", "stretching", "metal"]
+    },
+
+    "elasticity": {
+      "lesson": "Things Around Us",
+      "definition": "Elasticity is the property of a material to return to its original shape after stretching.",
+      "examples": [
+        "A rubber band stretches and comes back to normal.",
+        "A balloon shrinks back after you release the air.",
+        "An elastic in your hair can be stretched and relaxed."
+      ],
+      "keywords": ["stretchy", "rubber", "spring back"]
+    },
+
+    "brittleness": {
+      "lesson": "Things Around Us",
+      "definition": "Brittleness is the tendency of a material to break easily under force.",
+      "examples": [
+        "A glass bottle shatters when dropped on the floor.",
+        "Chalk breaks into pieces when pressed hard.",
+        "A clay pot cracks easily if hit."
+      ],
+      "keywords": ["fragile", "breaks easily", "shatters"]
+    },
+
+    "precipitation": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Precipitation is water falling from the sky in forms like rain, snow, or hail.",
+      "examples": [
+        "Rain falls during the monsoon season.",
+        "Morning dew appears on grass.",
+        "Water drops fall from clouds onto the ground."
+      ],
+      "keywords": ["rain", "falling water", "weather"]
+    },
+
+    "surface_water": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Surface water is water that remains on top of the ground in rivers, lakes, and ponds.",
+      "examples": [
+        "A river flows above the ground.",
+        "The tank near your school stores water on the surface.",
+        "A puddle forms on the road after rain."
+      ],
+      "keywords": ["rivers", "lakes", "above ground"]
+    },
+
+    "ground_water": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Ground water is water that flows and is stored beneath the earth's surface.",
+      "examples": [
+        "Well water comes from underground.",
+        "A tube well pumps water from below the ground.",
+        "Water seeps into the soil and collects underground."
+      ],
+      "keywords": ["underground", "wells", "beneath"]
+    },
+
+    "fresh_water": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Fresh water has very little dissolved salt and is suitable for drinking.",
+      "examples": [
+        "River water is fresh and drinkable.",
+        "Well water tastes clean and not salty.",
+        "Rain water is fresh when collected."
+      ],
+      "keywords": ["drinkable", "low salt", "clean"]
+    },
+
+    "marine_water": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Marine water has a high amount of dissolved salt and is found in seas and oceans.",
+      "examples": [
+        "Sea water tastes very salty.",
+        "Ocean water cannot be drunk directly.",
+        "Salt is made by drying sea water in salterns."
+      ],
+      "keywords": ["salty", "ocean", "sea"]
+    },
+
+    "brackish_water": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Brackish water has salt content between fresh water and marine water.",
+      "examples": [
+        "Lagoon water is slightly salty.",
+        "Batticaloa lagoon has brackish water.",
+        "Water where rivers meet the sea is brackish."
+      ],
+      "keywords": ["lagoon", "mixed", "medium salt"]
+    },
+
+    "water_pollution": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Water pollution is the addition of harmful substances that make water unsafe to use.",
+      "examples": [
+        "Throwing plastic bottles into the river makes it dirty.",
+        "Factory waste makes the water smell bad.",
+        "Washing clothes in the tank pollutes the water."
+      ],
+      "keywords": ["contamination", "dirty", "unsafe"]
+    },
+
+    "evaporation": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Evaporation is when liquid water changes into water vapor due to heat.",
+      "examples": [
+        "Wet clothes dry in the sun.",
+        "Puddles disappear on a hot day.",
+        "Water in a pan reduces when boiled."
+      ],
+      "keywords": ["drying", "water vapor", "heat"]
+    },
+
+    "condensation": {
+      "lesson": "Water as a Natural Resource",
+      "definition": "Condensation is when water vapor cools and changes back into liquid water.",
+      "examples": [
+        "Water drops form outside a cold glass.",
+        "Morning dew appears on leaves.",
+        "Bathroom mirrors fog up during a hot shower."
+      ],
+      "keywords": ["cooling", "water drops", "fog"]
+    },
+
+    "solar_energy": {
+      "lesson": "Energy in Day to Day Life",
+      "definition": "Solar energy is the energy we get from the sun.",
+      "examples": [
+        "Clothes dry faster in sunlight.",
+        "Solar panels on rooftops heat water.",
+        "Plants need sunlight to make food."
+      ],
+      "keywords": ["sun", "light", "renewable"]
+    },
+
+    "biomass": {
+      "lesson": "Energy in Day to Day Life",
+      "definition": "Biomass is plant or animal material used as fuel to produce energy.",
+      "examples": [
+        "Firewood from trees is used for cooking.",
+        "Coconut shells burn to heat water.",
+        "Saw dust can be used in a stove."
+      ],
+      "keywords": ["wood", "organic", "fuel"]
+    },
+
+    "fossil_fuel": {
+      "lesson": "Energy in Day to Day Life",
+      "definition": "Fossil fuels are fuels formed from ancient plants and animals buried underground.",
+      "examples": [
+        "Petrol in vehicles comes from fossil fuels.",
+        "Coal is used in some power plants.",
+        "Kerosene oil is a fossil fuel used in lamps."
+      ],
+      "keywords": ["coal", "petroleum", "non-renewable"]
+    },
+
+    "wind_energy": {
+      "lesson": "Energy in Day to Day Life",
+      "definition": "Wind energy is power generated by moving air.",
+      "examples": [
+        "Wind makes a kite fly high.",
+        "Windmills in Puttalam generate electricity.",
+        "Wind dries paddy spread on mats."
+      ],
+      "keywords": ["air", "windmill", "renewable"]
+    },
+
+    "hydropower": {
+      "lesson": "Energy in Day to Day Life",
+      "definition": "Hydropower is electricity generated using the energy of flowing water.",
+      "examples": [
+        "Victoria dam produces electricity from water.",
+        "Waterfalls can turn turbines to make power.",
+        "River water flowing fast has energy."
+      ],
+      "keywords": ["water", "dam", "electricity"]
+    },
+
+    "geothermal_energy": {
+      "lesson": "Energy in Day to Day Life",
+      "definition": "Geothermal energy is heat energy from inside the earth.",
+      "examples": [
+        "Hot springs have naturally warm water.",
+        "Geysers shoot hot water from underground.",
+        "Some countries use underground heat for electricity."
+      ],
+      "keywords": ["underground", "heat", "hot springs"]
+    },
+
+    "nuclear_energy": {
+      "lesson": "Energy in Day to Day Life",
+      "definition": "Nuclear energy is energy released from splitting atoms.",
+      "examples": [
+        "Some countries use nuclear power plants for electricity.",
+        "The sun produces energy through nuclear reactions.",
+        "Nuclear energy produces very high amounts of power."
+      ],
+      "keywords": ["atoms", "powerful", "nuclear"]
+    },
+
+    "light": {
+      "lesson": "Light and Vision",
+      "definition": "Light is a form of energy that helps us see things.",
+      "examples": [
+        "Sunlight helps you read during the day.",
+        "A bulb lights up the room at night.",
+        "A torch beam shows the path in darkness."
+      ],
+      "keywords": ["brightness", "vision", "energy"]
+    },
+
+    "luminous_objects": {
+      "lesson": "Light and Vision",
+      "definition": "Luminous objects are things that produce their own light.",
+      "examples": [
+        "The sun shines brightly in the sky.",
+        "A candle flame gives light in the dark.",
+        "Fireflies glow at night."
+      ],
+      "keywords": ["glowing", "light source", "shining"]
+    },
+
+    "non_luminous_objects": {
+      "lesson": "Light and Vision",
+      "definition": "Non-luminous objects do not produce their own light but reflect light from other sources.",
+      "examples": [
+        "The moon shines because of sunlight falling on it.",
+        "A book is visible when light falls on it.",
+        "Your face reflects light from a bulb."
+      ],
+      "keywords": ["reflecting", "no light", "visible"]
+    },
+
+    "transparent": {
+      "lesson": "Light and Vision",
+      "definition": "Transparent materials allow light to pass through clearly so you can see through them.",
+      "examples": [
+        "You can see through a glass window clearly.",
+        "Clear water lets you see fish in the tank.",
+        "Clean plastic wrap is transparent."
+      ],
+      "keywords": ["clear", "see-through", "light passes"]
+    },
+
+    "translucent": {
+      "lesson": "Light and Vision",
+      "definition": "Translucent materials allow some light to pass through but you cannot see clearly through them.",
+      "examples": [
+        "Bathroom window glass lets light in but you cannot see outside clearly.",
+        "Tissue paper lets light through but is not clear.",
+        "Oiled paper glows when light falls on it."
+      ],
+      "keywords": ["blurry", "partial light", "not clear"]
+    },
+
+    "opaque": {
+      "lesson": "Light and Vision",
+      "definition": "Opaque materials do not allow light to pass through them.",
+      "examples": [
+        "A cardboard sheet blocks light completely.",
+        "A wooden door stops sunlight from entering.",
+        "Your hand creates a shadow because it is opaque."
+      ],
+      "keywords": ["blocks light", "no light", "shadow"]
+    },
+
+    "light_ray": {
+      "lesson": "Light and Vision",
+      "definition": "A light ray is the narrow path along which light travels in a straight line.",
+      "examples": [
+        "Sunlight comes through a small hole in a straight line.",
+        "A laser pointer shows a straight beam of light.",
+        "Light through window blinds forms straight lines."
+      ],
+      "keywords": ["straight", "beam", "path"]
+    },
+
+    "reflection": {
+      "lesson": "Light and Vision",
+      "definition": "Reflection is when light bounces back from a surface.",
+      "examples": [
+        "You see your face in a mirror.",
+        "Sunlight reflects off a puddle of water.",
+        "A shiny spoon reflects light."
+      ],
+      "keywords": ["bounce", "mirror", "shiny"]
+    },
+
+    "sound": {
+      "lesson": "Sound and Hearing",
+      "definition": "Sound is energy produced by vibrations that we can hear.",
+      "examples": [
+        "You hear a bell ring when someone calls you.",
+        "A drum makes sound when beaten.",
+        "Birds chirp in the morning."
+      ],
+      "keywords": ["hearing", "vibration", "noise"]
+    },
+
+    "vibration": {
+      "lesson": "Sound and Hearing",
+      "definition": "Vibration is the rapid back and forth movement that produces sound.",
+      "examples": [
+        "A ringing bell shakes quickly.",
+        "Your throat vibrates when you speak.",
+        "Guitar strings move back and forth when plucked."
+      ],
+      "keywords": ["shaking", "movement", "oscillation"]
+    },
+
+    "music": {
+      "lesson": "Sound and Hearing",
+      "definition": "Music is sound that is pleasant and rhythmic.",
+      "examples": [
+        "A flute plays a sweet tune.",
+        "Children sing songs at school assembly.",
+        "A violin creates beautiful melodies."
+      ],
+      "keywords": ["rhythm", "melody", "pleasant"]
+    },
+
+    "noise": {
+      "lesson": "Sound and Hearing",
+      "definition": "Noise is unpleasant or unwanted sound.",
+      "examples": [
+        "Traffic makes loud noise on the road.",
+        "A factory produces disturbing sounds.",
+        "Loud horns create uncomfortable noise."
+      ],
+      "keywords": ["loud", "unpleasant", "disturbing"]
+    },
+
+    "magnetism": {
+      "lesson": "Magnets",
+      "definition": "Magnetism is the force that attracts certain metals like iron to a magnet.",
+      "examples": [
+        "A magnet picks up iron nails from the floor.",
+        "Fridge magnets stick to the steel door.",
+        "A compass needle is attracted to Earth's magnetic poles."
+      ],
+      "keywords": ["attraction", "force", "iron"]
+    },
+
+    "magnetic_poles": {
+      "lesson": "Magnets",
+      "definition": "Magnetic poles are the two ends of a magnet where the magnetic force is strongest.",
+      "examples": [
+        "More iron filings stick at the ends of a bar magnet.",
+        "A compass needle points to the North pole.",
+        "The two ends of a magnet attract the most clips."
+      ],
+      "keywords": ["ends", "North", "South"]
+    },
+
+    "attraction": {
+      "lesson": "Magnets",
+      "definition": "Attraction is when two opposite magnetic poles pull towards each other.",
+      "examples": [
+        "North pole of one magnet pulls the South pole of another.",
+        "A magnet attracts iron nails.",
+        "Two different poles of magnets come together."
+      ],
+      "keywords": ["pull", "together", "opposite poles"]
+    },
+
+    "repulsion": {
+      "lesson": "Magnets",
+      "definition": "Repulsion is when two similar magnetic poles push away from each other.",
+      "examples": [
+        "North pole pushes away another North pole.",
+        "Two South poles of magnets do not come together.",
+        "Same poles of magnets move apart."
+      ],
+      "keywords": ["push", "apart", "same poles"]
+    },
+
+    "electricity": {
+      "lesson": "Electricity for a Comfortable Life",
+      "definition": "Electricity is a form of energy that powers electrical appliances.",
+      "examples": [
+        "A bulb lights up when you switch it on.",
+        "Your television runs on electricity.",
+        "Fans rotate using electrical energy."
+      ],
+      "keywords": ["power", "current", "energy"]
+    },
+
+    "electric_circuit": {
+      "lesson": "Electricity for a Comfortable Life",
+      "definition": "An electric circuit is a complete path through which electric current flows.",
+      "examples": [
+        "A bulb glows when wires connect it to a battery.",
+        "A torch works when the circuit is complete.",
+        "Switch closes the circuit to turn on lights."
+      ],
+      "keywords": ["path", "current", "connection"]
+    },
+
+    "conductor": {
+      "lesson": "Electricity for a Comfortable Life",
+      "definition": "A conductor is a material that allows electricity to flow through it easily.",
+      "examples": [
+        "Copper wires carry electricity in your house.",
+        "An iron rod conducts electricity well.",
+        "Aluminum foil allows current to pass through."
+      ],
+      "keywords": ["copper", "metal", "allows current"]
+    },
+
+    "insulator": {
+      "lesson": "Electricity for a Comfortable Life",
+      "definition": "An insulator is a material that does not allow electricity to flow through it.",
+      "examples": [
+        "Plastic coating protects electric wires.",
+        "Rubber slippers keep you safe from electric shocks.",
+        "Wood does not conduct electricity."
+      ],
+      "keywords": ["plastic", "rubber", "blocks current"]
+    },
+
+    "dry_cell": {
+      "lesson": "Electricity for a Comfortable Life",
+      "definition": "A dry cell is a portable device that produces electricity using chemicals.",
+      "examples": [
+        "Your remote control uses dry cells.",
+        "Wall clocks run on dry cell batteries.",
+        "Torches need dry cells to produce light."
+      ],
+      "keywords": ["battery", "portable", "chemical"]
+    },
+
+    "solar_cell": {
+      "lesson": "Electricity for a Comfortable Life",
+      "definition": "A solar cell converts sunlight directly into electricity.",
+      "examples": [
+        "Calculators work using small solar panels.",
+        "Rooftop solar panels generate electricity from sunlight.",
+        "Garden lights charge during the day using solar cells."
+      ],
+      "keywords": ["sunlight", "panel", "renewable"]
+    },
+
+    "heat": {
+      "lesson": "Heat and Its Effects",
+      "definition": "Heat is a form of energy that makes things hot and increases temperature.",
+      "examples": [
+        "Fire from a stove heats the cooking pot.",
+        "Sunlight warms your body on a sunny day.",
+        "Rubbing your palms together makes them warm."
+      ],
+      "keywords": ["warmth", "temperature", "energy"]
+    },
+
+    "temperature": {
+      "lesson": "Heat and Its Effects",
+      "definition": "Temperature is the measure of how hot or cold something is.",
+      "examples": [
+        "Your body temperature is normally 37 degrees Celsius.",
+        "Boiling water has a high temperature.",
+        "Ice cream is very cold with low temperature."
+      ],
+      "keywords": ["hot", "cold", "thermometer"]
+    },
+
+    "expansion": {
+      "lesson": "Heat and Its Effects",
+      "definition": "Expansion is when materials become larger when heated.",
+      "examples": [
+        "A balloon becomes bigger when left in the sun.",
+        "Railway tracks have gaps to allow expansion in heat.",
+        "A metal lid expands when heated with hot water."
+      ],
+      "keywords": ["enlargement", "heating", "bigger"]
+    },
+
+    "contraction": {
+      "lesson": "Heat and Its Effects",
+      "definition": "Contraction is when materials become smaller when cooled.",
+      "examples": [
+        "A balloon shrinks when kept in cold water.",
+        "Metal becomes slightly smaller when cooled.",
+        "Puddles reduce in size on a cold night."
+      ],
+      "keywords": ["shrinking", "cooling", "smaller"]
+    },
+
+    "melting": {
+      "lesson": "Heat and Its Effects",
+      "definition": "Melting is when a solid changes to liquid due to heat.",
+      "examples": [
+        "Ice cubes melt and become water.",
+        "Butter melts in a hot pan.",
+        "Chocolate becomes soft and liquid in your hand."
+      ],
+      "keywords": ["solid to liquid", "heating", "melting"]
+    },
+
+    "freezing": {
+      "lesson": "Heat and Its Effects",
+      "definition": "Freezing is when a liquid changes to solid due to cold.",
+      "examples": [
+        "Water becomes ice in the freezer.",
+        "Popsicles freeze and become solid.",
+        "Milk becomes ice cream when frozen."
+      ],
+      "keywords": ["liquid to solid", "cooling", "ice"]
+    },
+
+    "boiling": {
+      "lesson": "Heat and Its Effects",
+      "definition": "Boiling is when a liquid changes to gas due to intense heating.",
+      "examples": [
+        "Water in a kettle boils and becomes steam.",
+        "Bubbles form when water boils on the stove.",
+        "Hot water turns to vapor when boiling."
+      ],
+      "keywords": ["liquid to gas", "steam", "bubbles"]
+    },
+
+    "herbivores": {
+      "lesson": "Food Related Interactions",
+      "definition": "Herbivores are animals that eat only plants.",
+      "examples": [
+        "A cow eats grass from the field.",
+        "Rabbits feed on leaves and vegetables.",
+        "Elephants eat tree bark and plants."
+      ],
+      "keywords": ["plant eaters", "grass", "vegetables"]
+    },
+
+    "carnivores": {
+      "lesson": "Food Related Interactions",
+      "definition": "Carnivores are animals that eat only meat.",
+      "examples": [
+        "A lion hunts and eats deer.",
+        "Snakes catch and eat rats.",
+        "Eagles hunt small animals for food."
+      ],
+      "keywords": ["meat eaters", "hunters", "predators"]
+    },
+
+    "omnivores": {
+      "lesson": "Food Related Interactions",
+      "definition": "Omnivores are animals that eat both plants and meat.",
+      "examples": [
+        "Humans eat both rice and chicken.",
+        "Crows eat fruits and insects.",
+        "Bears eat berries and fish."
+      ],
+      "keywords": ["mixed diet", "plants and meat", "variety"]
+    },
+
+    "food_chain": {
+      "lesson": "Food Related Interactions",
+      "definition": "A food chain shows how energy passes from plants to animals in a sequence.",
+      "examples": [
+        "Grass is eaten by a rabbit, which is eaten by a fox.",
+        "Leaves feed caterpillars, which birds eat.",
+        "Rice plants feed mice, which snakes catch."
+      ],
+      "keywords": ["sequence", "energy flow", "feeding"]
+    },
+
+    "food_web": {
+      "lesson": "Food Related Interactions",
+      "definition": "A food web shows multiple connected food chains in an ecosystem.",
+      "examples": [
+        "Many animals in a forest depend on the same plants.",
+        "Different predators hunt the same prey animals.",
+        "Plants feed several types of herbivores in a field."
+      ],
+      "keywords": ["interconnected", "complex", "ecosystem"]
+    },
+
+    "producer": {
+      "lesson": "Food Related Interactions",
+      "definition": "A producer is a green plant that makes its own food using sunlight.",
+      "examples": [
+        "A mango tree produces food in its leaves.",
+        "Grass makes its own food using sunlight.",
+        "Paddy plants create food through photosynthesis."
+      ],
+      "keywords": ["plants", "photosynthesis", "first link"]
+    },
+
+    "consumer": {
+      "lesson": "Food Related Interactions",
+      "definition": "A consumer is an animal that eats plants or other animals for food.",
+      "examples": [
+        "A goat eats grass and is a consumer.",
+        "A frog eats insects for energy.",
+        "You are a consumer when you eat rice."
+      ],
+      "keywords": ["animals", "eaters", "dependent"]
+    },
+
+    "weather": {
+      "lesson": "Weather and Climate",
+      "definition": "Weather is the condition of the atmosphere at a specific place and time.",
+      "examples": [
+        "It is raining heavily today in Colombo.",
+        "The morning is sunny but afternoon may be cloudy.",
+        "Today is very hot compared to yesterday."
+      ],
+      "keywords": ["rain", "temperature", "short term"]
+    },
+
+    "climate": {
+      "lesson": "Weather and Climate",
+      "definition": "Climate is the average weather pattern of a place over a long period of time.",
+      "examples": [
+        "Nuwara Eliya has a cool climate all year.",
+        "Hambantota is usually hot and dry.",
+        "The hill country gets more rain than the dry zone."
+      ],
+      "keywords": ["average", "long term", "pattern"]
+    },
+
+    "rainfall": {
+      "lesson": "Weather and Climate",
+      "definition": "Rainfall is the amount of water that falls from clouds as rain.",
+      "examples": [
+        "Yesterday we had 50 mm of rain.",
+        "Heavy rainfall causes puddles on roads.",
+        "Monsoon season brings high rainfall."
+      ],
+      "keywords": ["rain", "water", "measurement"]
+    },
+
+    "humidity": {
+      "lesson": "Weather and Climate",
+      "definition": "Humidity is the amount of water vapor in the air.",
+      "examples": [
+        "Your clothes take longer to dry on humid days.",
+        "Coastal areas feel sticky due to high humidity.",
+        "Low humidity makes your skin feel dry."
+      ],
+      "keywords": ["moisture", "water vapor", "air"]
+    },
+
+    "cyclone": {
+      "lesson": "Weather and Climate",
+      "definition": "A cyclone is a violent storm with very strong winds rotating around a low pressure area.",
+      "examples": [
+        "Cyclones bring heavy rain and strong winds.",
+        "Trees fall down during a cyclone.",
+        "Fishermen stay ashore when cyclones are predicted."
+      ],
+      "keywords": ["storm", "strong winds", "dangerous"]
+    },
+
+    "flood": {
+      "lesson": "Weather and Climate",
+      "definition": "A flood is when water overflows and covers normally dry land.",
+      "examples": [
+        "Heavy rain causes the river to flood nearby villages.",
+        "Roads get covered with water during floods.",
+        "Houses near rivers get flooded during monsoons."
+      ],
+      "keywords": ["overflow", "water", "disaster"]
+    },
+
+    "drought": {
+      "lesson": "Weather and Climate",
+      "definition": "A drought is a long period with very little or no rain.",
+      "examples": [
+        "Wells dry up during a drought.",
+        "Crops fail when there is a drought.",
+        "Tanks become empty in a drought season."
+      ],
+      "keywords": ["no rain", "dry", "water shortage"]
+    },
+
+    "landslide": {
+      "lesson": "Weather and Climate",
+      "definition": "A landslide is when soil and rocks slide down from higher ground after heavy rain.",
+      "examples": [
+        "Heavy rain causes landslides in hilly areas.",
+        "Soil from the mountain slides down and blocks the road.",
+        "Houses on slopes are at risk during landslides."
+      ],
+      "keywords": ["sliding", "soil", "hills"]
+    }
+  }
+}
