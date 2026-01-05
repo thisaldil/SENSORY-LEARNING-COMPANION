@@ -39,6 +39,10 @@ class QuizGenerator:
                 "What is true about {concept} according to the lesson?",
                 "Which best describes a characteristic of {concept}?",
             ],
+            "general": [
+                "What does the lesson say about {concept}?",
+                "According to the text, what is a key fact about {concept}?",
+            ]
         }
         
         # Words to filter
@@ -130,16 +134,14 @@ class QuizGenerator:
         """Check if subject is valid for question generation"""
         subject_lower = subject.lower().strip()
         
-        # Length checks
-        if len(subject_lower) < 3 or len(subject_lower) > 40:
+        # Length checks - RELAXED
+        if len(subject_lower) < 2 or len(subject_lower) > 50:
             return False
         
-        # Filter invalid starters
+        # Filter invalid starters - REDUCED LIST
         invalid_starters = [
-            'the ', 'a ', 'an ', 'this ', 'that ', 'these ', 'those ',
-            'in ', 'on ', 'at ', 'by ', 'for ', 'of ', 'to ', 'from ',
-            'with ', 'about ', 'into ', 'through ', 'during ', 'before ',
-            'after ', 'above ', 'below ', 'under ', 'between '
+            'the ', 'a ', 'an ', 'this ', 'that ',
+            'in ', 'on ', 'at ', 'by ', 'for ', 'of ', 'to ', 'from '
         ]
         
         for starter in invalid_starters:
@@ -154,11 +156,6 @@ class QuizGenerator:
         
         # Must contain at least one letter
         if not re.search(r'[a-zA-Z]', subject):
-            return False
-        
-        # Must not be all stopwords
-        words = subject_lower.split()
-        if all(word in self.stopwords for word in words):
             return False
         
         return True
@@ -178,7 +175,7 @@ class QuizGenerator:
         return subject.strip()
     
     # ============================================================================
-    # CONCEPT EXTRACTION
+    # CONCEPT EXTRACTION - IMPROVED
     # ============================================================================
     
     def extract_concepts_spacy(self, text: str) -> List[Dict]:
@@ -192,7 +189,7 @@ class QuizGenerator:
             
             # Extract named entities (highest priority)
             for ent in doc.ents:
-                if ent.label_ in ['PERSON', 'ORG', 'GPE', 'EVENT', 'PRODUCT', 'LOC']:
+                if ent.label_ in ['PERSON', 'ORG', 'GPE', 'EVENT', 'PRODUCT', 'LOC', 'FAC']:
                     text_clean = self.clean_subject(ent.text)
                     if self.is_valid_subject(text_clean):
                         if text_clean not in concepts:
@@ -215,6 +212,19 @@ class QuizGenerator:
                         }
                     concepts[text_clean]['frequency'] += 1
             
+            # Extract single important nouns
+            for token in doc:
+                if token.pos_ == 'NOUN' and len(token.text) > 3:
+                    text_clean = token.text.capitalize()
+                    if self.is_valid_subject(text_clean):
+                        if text_clean not in concepts:
+                            concepts[text_clean] = {
+                                'text': text_clean,
+                                'frequency': 0,
+                                'importance': 1
+                            }
+                        concepts[text_clean]['frequency'] += 1
+            
             # Sort by score
             concept_list = sorted(
                 concepts.values(),
@@ -222,17 +232,17 @@ class QuizGenerator:
                 reverse=True
             )
             
-            return concept_list[:12]
+            return concept_list[:20]
             
         except Exception:
             return self.extract_concepts_rule_based(text)
     
     def extract_concepts_rule_based(self, text: str) -> List[Dict]:
-        """Rule-based concept extraction"""
+        """Rule-based concept extraction - IMPROVED"""
         concepts = {}
         
         # Capitalized terms (proper nouns)
-        cap_pattern = r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,2}\b'
+        cap_pattern = r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3}\b'
         cap_terms = re.findall(cap_pattern, text)
         
         for term in cap_terms:
@@ -262,6 +272,22 @@ class QuizGenerator:
                     concepts[clean] = {'text': clean, 'frequency': 0, 'importance': 4}
                 concepts[clean]['frequency'] += 3
         
+        # Important common nouns (planets, gravity, etc.)
+        common_nouns = re.findall(r'\b([a-z]{4,})\b', text)
+        noun_counts = defaultdict(int)
+        for noun in common_nouns:
+            if noun not in self.stopwords:
+                noun_counts[noun] += 1
+        
+        # Add frequently mentioned nouns
+        for noun, count in noun_counts.items():
+            if count >= 2:  # Mentioned at least twice
+                clean = noun.capitalize()
+                if self.is_valid_subject(clean):
+                    if clean not in concepts:
+                        concepts[clean] = {'text': clean, 'frequency': 0, 'importance': 2}
+                    concepts[clean]['frequency'] += count
+        
         # Sort by score
         concept_list = sorted(
             concepts.values(),
@@ -269,7 +295,7 @@ class QuizGenerator:
             reverse=True
         )
         
-        return concept_list[:12]
+        return concept_list[:20]
     
     def extract_concepts(self, text: str) -> List[Dict]:
         """Hybrid extraction"""
@@ -289,10 +315,9 @@ class QuizGenerator:
         sentences = self.split_sentences(text)
         
         for sentence in sentences:
-            # Pattern: "Subject is/are predicate"
-            # More restrictive - subject must be a proper noun phrase
-            pattern = r'^([A-Z][a-zA-Z]+(?:\s+[A-Z]?[a-z]+){0,3})\s+(is|are)\s+(.+?)(?:\.\s*$|$)'
-            match = re.search(pattern, sentence)
+            # Pattern 1: "Subject is/are predicate"
+            pattern1 = r'^([A-Z][a-zA-Z]+(?:\s+[A-Z]?[a-z]+){0,4})\s+(is|are)\s+(.+?)(?:\.\s*$|$)'
+            match = re.search(pattern1, sentence)
             
             if match:
                 subject = match.group(1).strip()
@@ -305,23 +330,39 @@ class QuizGenerator:
                 if not self.is_valid_subject(subject):
                     continue
                 
-                # Validate predicate - must be complete and meaningful
-                if (len(predicate.split()) >= 5 and
-                    len(predicate) >= 30 and
-                    len(predicate) < 200 and
-                    predicate[0].islower() and  # Should start with lowercase after "is/are"
-                    not predicate.startswith(tuple(self.stopwords))):
+                # Validate predicate - RELAXED
+                if (len(predicate.split()) >= 4 and
+                    len(predicate) >= 20 and
+                    len(predicate) < 250):
                     
-                    # Additional check - predicate should have substance
-                    predicate_words = [w for w in predicate.split() if w.lower() not in self.stopwords]
-                    if len(predicate_words) >= 3:
-                        facts.append({
-                            'type': 'definition',
-                            'subject': subject,
-                            'predicate': predicate,
-                            'sentence': sentence,
-                            'score': len(predicate.split())
-                        })
+                    facts.append({
+                        'type': 'definition',
+                        'subject': subject,
+                        'predicate': predicate,
+                        'sentence': sentence,
+                        'score': len(predicate.split()) + 5  # Boost definition facts
+                    })
+            
+            # Pattern 2: Extract facts about specific concepts
+            # "X has/have/includes/contains Y"
+            pattern2 = r'([A-Z][a-zA-Z\s]{2,35}?)\s+(has|have|includes|contains|consists of)\s+(.+?)(?:\.|$)'
+            match = re.search(pattern2, sentence)
+            
+            if match:
+                subject = self.clean_subject(match.group(1).strip())
+                predicate = match.group(3).strip()
+                
+                if (self.is_valid_subject(subject) and
+                    len(predicate.split()) >= 4 and
+                    len(predicate) >= 20):
+                    
+                    facts.append({
+                        'type': 'property',
+                        'subject': subject,
+                        'predicate': predicate,
+                        'sentence': sentence,
+                        'score': len(predicate.split()) + 3
+                    })
         
         # Sort by quality
         facts.sort(key=lambda x: x['score'], reverse=True)
@@ -329,45 +370,51 @@ class QuizGenerator:
         return facts
     
     # ============================================================================
-    # DISTRACTOR GENERATION
+    # DISTRACTOR GENERATION - IMPROVED
     # ============================================================================
     
     def create_distractors(
         self,
         correct_answer: str,
         all_facts: List[Dict],
-        sentences: List[str]
+        sentences: List[str],
+        concept: str = ""
     ) -> List[str]:
         """Create plausible distractors from other facts"""
         distractors = []
         used = {correct_answer.lower()}
         
-        # Use predicates from other facts
+        # Use predicates from other facts (prioritize different subjects)
         for fact in all_facts:
-            if len(distractors) >= 5:
+            if len(distractors) >= 7:
                 break
+            
+            # Skip facts about the same subject to make better distractors
+            if 'subject' in fact and concept and fact['subject'].lower() == concept.lower():
+                continue
             
             if 'predicate' in fact:
                 pred = fact['predicate'].strip()
                 
                 if (pred.lower() not in used and
-                    len(pred.split()) >= 5 and
-                    len(pred) >= 30 and
-                    len(pred) < 200):
+                    len(pred.split()) >= 4 and
+                    len(pred) >= 20 and
+                    len(pred) < 250):
                     
                     distractors.append(pred)
                     used.add(pred.lower())
         
         # Extract additional meaningful phrases from sentences
         for sentence in sentences:
-            if len(distractors) >= 5:
+            if len(distractors) >= 7:
                 break
             
-            # Look for clauses after "because", "since", "as"
+            # Look for clauses
             clause_patterns = [
                 r'because\s+(.+?)(?:\.|$)',
                 r'since\s+(.+?)(?:\.|$)',
                 r',\s+which\s+(.+?)(?:\.|$)',
+                r'as\s+(.+?)(?:\.|$)',
             ]
             
             for pattern in clause_patterns:
@@ -375,24 +422,29 @@ class QuizGenerator:
                 if match:
                     clause = match.group(1).strip()
                     if (clause.lower() not in used and
-                        len(clause.split()) >= 5 and
-                        len(clause) >= 30 and
-                        len(clause) < 150):
+                        len(clause.split()) >= 4 and
+                        len(clause) >= 20 and
+                        len(clause) < 180):
                         distractors.append(clause)
                         used.add(clause.lower())
                         break
         
-        # Generic fallback distractors
+        # Generic fallback distractors - MORE OPTIONS
         generic = [
             "a temporary phenomenon that only occurs under specific conditions in rare circumstances",
             "an outdated concept that has been replaced by more modern understanding and research",
             "a collection of independent elements that do not interact with each other significantly",
             "primarily a theoretical construct with limited practical application in real situations",
             "something that varies dramatically depending on external factors and environmental conditions",
+            "a recently discovered feature that scientists are still studying and trying to understand fully",
+            "an ancient theory that has been disproven by modern scientific methods and observations",
+            "a complex process that requires specialized equipment and training to observe directly",
+            "a rare occurrence that happens only once every several decades under unique circumstances",
+            "an abstract concept that exists only in theoretical models without physical manifestation",
         ]
         
         for g in generic:
-            if len(distractors) >= 5:
+            if len(distractors) >= 7:
                 break
             if g.lower() not in used:
                 distractors.append(g)
@@ -427,7 +479,7 @@ class QuizGenerator:
             return candidates[:3]
     
     # ============================================================================
-    # QUESTION GENERATION
+    # QUESTION GENERATION - IMPROVED
     # ============================================================================
     
     def create_multiple_choice(
@@ -446,13 +498,13 @@ class QuizGenerator:
         if not question.endswith('?'):
             question += '?'
         
-        # Filter distractors
+        # Filter distractors - RELAXED
         unique = []
         for d in distractors:
             if (d.lower() != correct.lower() and
                 d not in unique and
-                len(d.split()) >= 4 and
-                len(d) >= 20):
+                len(d.split()) >= 3 and
+                len(d) >= 15):
                 unique.append(d)
         
         if len(unique) < 3:
@@ -491,7 +543,7 @@ class QuizGenerator:
         
         if (len(statement.split()) >= 7 and
             len(statement) >= 35 and
-            len(statement) < 200 and
+            len(statement) < 250 and
             statement[0].isupper()):
             return result
         
@@ -505,17 +557,17 @@ class QuizGenerator:
         question = q['question']
         options = q['options']
         
-        # Question checks
-        if (len(question) < 20 or
-            len(question) > 200 or
+        # Question checks - RELAXED
+        if (len(question) < 15 or
+            len(question) > 250 or
             not question.endswith('?') or
             not question[0].isupper()):
             return False
         
         # Invalid patterns
         invalid = [
-            r'\b(?:and|or|but|of|in|on|at)\s*\?$',  # Ends with conjunction/preposition
-            r'\s{2,}',  # Multiple spaces
+            r'\b(?:and|or|but|of|in|on|at)\s*\?$',
+            r'\s{2,}',
         ]
         
         for pattern in invalid:
@@ -530,7 +582,7 @@ class QuizGenerator:
             return False
         
         for opt in options:
-            if len(opt.split()) < 3 or len(opt) < 15:
+            if len(opt.split()) < 3 or len(opt) < 12:
                 return False
         
         return True
@@ -541,70 +593,125 @@ class QuizGenerator:
         num_questions: int = 10
     ) -> List[Dict]:
         """
-        Generate high-quality quiz questions
+        Generate high-quality quiz questions - IMPROVED ALGORITHM
         """
+        # Ensure minimum 7 questions
+        if num_questions < 7:
+            num_questions = 7
+        
         # Extract
         concepts = self.extract_concepts(content)
         facts = self.extract_facts(content)
         sentences = self.split_sentences(content)
+        
+        logger.info(f"Extracted {len(concepts)} concepts and {len(facts)} facts")
         
         if not facts:
             logger.warning("No quality facts extracted")
             return []
         
         questions = []
-        used_subjects = set()
+        used_questions = set()  # Track question text to avoid duplicates
         
-        target_mc = int(num_questions * 0.6)
+        # Target distribution: 60% MC, 40% TF
+        target_mc = max(4, int(num_questions * 0.6))
         target_tf = num_questions - target_mc
         
         mc_count = 0
         tf_count = 0
         
-        # Generate from facts
+        # PHASE 1: Generate from facts (primary source)
         for fact in facts:
             if mc_count >= target_mc and tf_count >= target_tf:
                 break
             
             subject = fact['subject']
             
-            # Avoid duplicates
-            if subject.lower() in used_subjects:
-                continue
-            
-            # Multiple choice
+            # Multiple choice from this fact
             if mc_count < target_mc:
                 predicate = fact['predicate']
                 
-                # Simple, reliable question
-                q_text = f"What is {subject}?"
+                # Try different question templates
+                templates = self.question_templates.get(fact['type'], self.question_templates['definition'])
                 
-                # Get distractors
-                distractors = self.create_distractors(predicate, facts, sentences)
-                
-                if self.use_ml and self.distilbert_model:
-                    distractors = self.rank_distractors(predicate, distractors)
-                
-                question = self.create_multiple_choice(q_text, predicate, distractors)
-                
-                if question:
-                    questions.append(question)
-                    used_subjects.add(subject.lower())
-                    mc_count += 1
+                for template in templates:
+                    q_text = template.format(concept=subject)
+                    
+                    if q_text.lower() in used_questions:
+                        continue
+                    
+                    # Get distractors
+                    distractors = self.create_distractors(predicate, facts, sentences, subject)
+                    
+                    if self.use_ml and self.distilbert_model:
+                        distractors = self.rank_distractors(predicate, distractors)
+                    
+                    question = self.create_multiple_choice(q_text, predicate, distractors)
+                    
+                    if question:
+                        questions.append(question)
+                        used_questions.add(q_text.lower())
+                        mc_count += 1
+                        break
             
-            # True/False
+            # True/False from this fact
             if tf_count < target_tf:
                 sentence = fact['sentence']
+                
+                if sentence.lower() not in used_questions:
+                    q = self.create_true_false(sentence, True)
+                    
+                    if q:
+                        questions.append(q)
+                        used_questions.add(sentence.lower())
+                        tf_count += 1
+        
+        # PHASE 2: Generate from standalone sentences if we don't have enough
+        if len(questions) < num_questions:
+            for sentence in sentences:
+                if len(questions) >= num_questions:
+                    break
+                
+                if sentence.lower() in used_questions:
+                    continue
+                
+                # Create T/F question
                 q = self.create_true_false(sentence, True)
                 
                 if q:
                     questions.append(q)
-                    tf_count += 1
+                    used_questions.add(sentence.lower())
+        
+        # PHASE 3: If still not enough, try extracting more concepts
+        if len(questions) < 7:
+            logger.warning(f"Only generated {len(questions)} questions, attempting to extract more")
+            
+            # Try to create questions about each major concept
+            for concept in concepts[:15]:
+                if len(questions) >= num_questions:
+                    break
+                
+                concept_text = concept['text']
+                
+                # Find sentences mentioning this concept
+                for sentence in sentences:
+                    if concept_text.lower() in sentence.lower():
+                        if sentence.lower() not in used_questions:
+                            q = self.create_true_false(sentence, True)
+                            if q:
+                                questions.append(q)
+                                used_questions.add(sentence.lower())
+                                break
         
         # Shuffle
         random.shuffle(questions)
         
-        return questions[:num_questions]
+        # Ensure we return between 7 and num_questions
+        final_count = max(7, min(len(questions), num_questions))
+        
+        logger.info(f"Generated {len(questions)} questions, returning {final_count}")
+        
+        return questions[:final_count]
 
 
 def generate_quiz_from_content(
@@ -617,11 +724,11 @@ def generate_quiz_from_content(
     
     Args:
         content: Lesson text
-        num_questions: Number of questions (default: 10)
+        num_questions: Number of questions (default: 10, minimum: 7)
         use_ml: Use ML enhancements (default: True)
     
     Returns:
-        List of validated question dictionaries
+        List of validated question dictionaries (minimum 7, maximum num_questions)
     """
     generator = QuizGenerator(use_ml=use_ml)
     return generator.generate_questions(content, num_questions)
