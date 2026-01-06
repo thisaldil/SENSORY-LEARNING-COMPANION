@@ -1,42 +1,44 @@
-import React, { useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
   Brain,
   FileAudio,
   FileImage,
+  Mic,
   Sparkles,
+  Square,
+  Trash2,
   Type,
   UploadCloud,
 } from "lucide-react";
-import {
-  processImage,
-  processText,
-  processVoice,
-} from "../../services/IT22551252/OcrNlpService";
 
 function InputPageReal() {
-  const navigate = useNavigate();
-
-  const [activeTab, setActiveTab] = useState("text"); // text | image | voice
+  const [activeTab, setActiveTab] = useState("text"); // text | image | audio | mic
   const [text, setText] = useState("");
   const [imageFile, setImageFile] = useState(null);
-  const [voiceFile, setVoiceFile] = useState(null);
+  const [audioFile, setAudioFile] = useState(null);
+
   const [isDragging, setIsDragging] = useState(false);
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [isRecording, setIsRecording] = useState(false);
+  const [micError, setMicError] = useState(null);
+  const [micBlob, setMicBlob] = useState(null);
+  const [micUrl, setMicUrl] = useState("");
 
-  const canSubmit = useMemo(() => {
-    if (loading) return false;
-    if (activeTab === "text") return text.trim().length > 0;
-    if (activeTab === "image") return Boolean(imageFile);
-    if (activeTab === "voice") return Boolean(voiceFile);
-    return false;
-  }, [activeTab, imageFile, loading, text, voiceFile]);
+  const mediaRecorderRef = useRef(null);
+  const micStreamRef = useRef(null);
+  const chunksRef = useRef([]);
 
-  const resetErrors = () => setError(null);
+  useEffect(() => {
+    return () => {
+      if (micUrl) URL.revokeObjectURL(micUrl);
+      if (micStreamRef.current) {
+        micStreamRef.current.getTracks().forEach((t) => t.stop());
+        micStreamRef.current = null;
+      }
+    };
+  }, [micUrl]);
 
   const onDragOver = (e) => {
     e.preventDefault();
@@ -52,41 +54,68 @@ function InputPageReal() {
     const file = e.dataTransfer.files?.[0];
     if (!file) return;
 
-    resetErrors();
     if (activeTab === "image") setImageFile(file);
-    if (activeTab === "voice") setVoiceFile(file);
+    if (activeTab === "audio") setAudioFile(file);
   };
 
-  const submit = async () => {
+  const startRecording = async () => {
     try {
-      resetErrors();
-      setLoading(true);
-
-      let result;
-      if (activeTab === "text") {
-        const trimmed = text.trim();
-        if (!trimmed) throw new Error("Please enter some text to process.");
-        result = await processText(trimmed);
-      } else if (activeTab === "image") {
-        if (!imageFile) throw new Error("Please choose an image to process.");
-        result = await processImage(imageFile);
-      } else if (activeTab === "voice") {
-        if (!voiceFile) throw new Error("Please choose an audio file to process.");
-        result = await processVoice(voiceFile);
+      setMicError(null);
+      setMicBlob(null);
+      if (micUrl) {
+        URL.revokeObjectURL(micUrl);
+        setMicUrl("");
       }
 
-      navigate("/student/generator/output", { state: { result } });
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      micStreamRef.current = stream;
+
+      const recorder = new MediaRecorder(stream);
+      mediaRecorderRef.current = recorder;
+      chunksRef.current = [];
+
+      recorder.ondataavailable = (e) => {
+        if (e.data && e.data.size > 0) chunksRef.current.push(e.data);
+      };
+
+      recorder.onstop = () => {
+        const mimeType = recorder.mimeType || "audio/webm";
+        const blob = new Blob(chunksRef.current, { type: mimeType });
+        setMicBlob(blob);
+        setMicUrl(URL.createObjectURL(blob));
+
+        if (micStreamRef.current) {
+          micStreamRef.current.getTracks().forEach((t) => t.stop());
+          micStreamRef.current = null;
+        }
+      };
+
+      recorder.start();
+      setIsRecording(true);
     } catch (err) {
-      setError(
+      setIsRecording(false);
+      setMicError(
         typeof err?.message === "string" && err.message
           ? err.message
-          : "Failed to process your input. Please try again."
+          : "Microphone access failed. Please allow mic permission."
       );
-      // eslint-disable-next-line no-console
-      console.error(err);
-    } finally {
-      setLoading(false);
     }
+  };
+
+  const stopRecording = () => {
+    try {
+      const recorder = mediaRecorderRef.current;
+      if (recorder && recorder.state !== "inactive") recorder.stop();
+    } finally {
+      setIsRecording(false);
+    }
+  };
+
+  const clearMicRecording = () => {
+    setMicError(null);
+    setMicBlob(null);
+    if (micUrl) URL.revokeObjectURL(micUrl);
+    setMicUrl("");
   };
 
   const containerVariants = {
@@ -143,8 +172,8 @@ function InputPageReal() {
             </span>
           </h1>
           <p className="mt-3 text-gray-700 text-lg max-w-2xl mx-auto">
-            Paste text, upload an image, or upload voice audio — we’ll generate a
-            scene graph and narration script.
+            Add your lesson input as text, image, an audio file, or by recording
+            your voice using the microphone.
           </p>
         </motion.div>
 
@@ -157,60 +186,50 @@ function InputPageReal() {
           <div className="flex flex-col sm:flex-row gap-2 p-4 sm:p-6 border-b border-white/60">
             <TabButton
               active={activeTab === "text"}
-              onClick={() => {
-                setActiveTab("text");
-                resetErrors();
-              }}
+              onClick={() => setActiveTab("text")}
               icon={<Type className="w-5 h-5" />}
-              label="Process Text"
+              label="Text"
             />
             <TabButton
               active={activeTab === "image"}
-              onClick={() => {
-                setActiveTab("image");
-                resetErrors();
-              }}
+              onClick={() => setActiveTab("image")}
               icon={<FileImage className="w-5 h-5" />}
-              label="Process Image"
+              label="Image"
             />
             <TabButton
-              active={activeTab === "voice"}
-              onClick={() => {
-                setActiveTab("voice");
-                resetErrors();
-              }}
+              active={activeTab === "audio"}
+              onClick={() => setActiveTab("audio")}
               icon={<FileAudio className="w-5 h-5" />}
-              label="Process Voice"
+              label="Audio File"
+            />
+            <TabButton
+              active={activeTab === "mic"}
+              onClick={() => setActiveTab("mic")}
+              icon={<Mic className="w-5 h-5" />}
+              label="Mic"
             />
           </div>
 
           <div className="p-4 sm:p-6">
-            {error && (
-              <div className="mb-4 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-red-700">
-                {error}
-              </div>
-            )}
-
-            {/* Inputs */}
-            {activeTab === "text" ? (
+            {/* Inputs (tabbed) */}
+            {activeTab === "text" && (
               <div>
                 <label className="block text-sm font-semibold text-gray-800 mb-2">
                   Text Input
                 </label>
                 <textarea
                   className="w-full min-h-40 p-4 rounded-2xl border-2 border-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-purple-200 bg-white"
-                  placeholder="Paste a science paragraph here..."
+                  placeholder="Paste lesson text here..."
                   value={text}
-                  onChange={(e) => {
-                    resetErrors();
-                    setText(e.target.value);
-                  }}
+                  onChange={(e) => setText(e.target.value)}
                 />
               </div>
-            ) : (
+            )}
+
+            {activeTab === "image" && (
               <div>
                 <label className="block text-sm font-semibold text-gray-800 mb-2">
-                  {activeTab === "image" ? "Image Upload" : "Voice Upload"}
+                  Image Upload
                 </label>
 
                 <motion.div
@@ -222,91 +241,169 @@ function InputPageReal() {
                   onDragOver={onDragOver}
                   onDragLeave={onDragLeave}
                   onDrop={onDrop}
-                  onClick={() => {
-                    if (activeTab === "image") {
-                      document.getElementById("slc-image-upload")?.click();
-                    } else {
-                      document.getElementById("slc-voice-upload")?.click();
-                    }
-                  }}
+                  onClick={() => document.getElementById("slc-image-upload")?.click()}
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.99 }}
                 >
                   <UploadCloud className="w-12 h-12 mx-auto text-gray-400 mb-4" />
                   <p className="text-gray-700 font-medium">
-                    Drag & drop, or click to select a file
+                    Drag & drop, or click to select an image file
                   </p>
-                  <p className="text-gray-500 text-sm mt-1">
-                    {activeTab === "image"
-                      ? "Supported: JPG, PNG, PDF"
-                      : "Supported: WAV, MP3, M4A"}
-                  </p>
+                  <p className="text-gray-500 text-sm mt-1">Supported: JPG, PNG, PDF</p>
 
-                  {activeTab === "image" ? (
-                    <input
-                      id="slc-image-upload"
-                      type="file"
-                      className="hidden"
-                      accept="image/*,.pdf"
-                      onChange={(e) => {
-                        const file = e.target.files?.[0] || null;
-                        if (file) {
-                          resetErrors();
-                          setImageFile(file);
-                        }
-                      }}
-                    />
-                  ) : (
-                    <input
-                      id="slc-voice-upload"
-                      type="file"
-                      className="hidden"
-                      accept="audio/*"
-                      onChange={(e) => {
-                        const file = e.target.files?.[0] || null;
-                        if (file) {
-                          resetErrors();
-                          setVoiceFile(file);
-                        }
-                      }}
-                    />
-                  )}
+                  <input
+                    id="slc-image-upload"
+                    type="file"
+                    className="hidden"
+                    accept="image/*,.pdf"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0] || null;
+                      setImageFile(file);
+                    }}
+                  />
                 </motion.div>
 
-                {activeTab === "image" && imageFile && (
+                {imageFile && (
                   <div className="mt-3 text-sm text-gray-700">
                     Selected: <span className="font-semibold">{imageFile.name}</span>
                   </div>
                 )}
-                {activeTab === "voice" && voiceFile && (
+              </div>
+            )}
+
+            {activeTab === "audio" && (
+              <div>
+                <label className="block text-sm font-semibold text-gray-800 mb-2">
+                  Audio File Upload
+                </label>
+
+                <motion.div
+                  className={`rounded-3xl border-2 border-dashed p-8 sm:p-10 text-center cursor-pointer transition-colors bg-white ${
+                    isDragging
+                      ? "border-purple-400 bg-purple-50"
+                      : "border-gray-200 hover:border-purple-200"
+                  }`}
+                  onDragOver={onDragOver}
+                  onDragLeave={onDragLeave}
+                  onDrop={onDrop}
+                  onClick={() => document.getElementById("slc-audio-upload")?.click()}
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.99 }}
+                >
+                  <UploadCloud className="w-12 h-12 mx-auto text-gray-400 mb-4" />
+                  <p className="text-gray-700 font-medium">
+                    Drag & drop, or click to select an audio file
+                  </p>
+                  <p className="text-gray-500 text-sm mt-1">Supported: WAV, MP3, M4A</p>
+
+                  <input
+                    id="slc-audio-upload"
+                    type="file"
+                    className="hidden"
+                    accept="audio/*"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0] || null;
+                      setAudioFile(file);
+                    }}
+                  />
+                </motion.div>
+
+                {audioFile && (
                   <div className="mt-3 text-sm text-gray-700">
-                    Selected: <span className="font-semibold">{voiceFile.name}</span>
+                    Selected: <span className="font-semibold">{audioFile.name}</span>
                   </div>
                 )}
+              </div>
+            )}
+
+            {activeTab === "mic" && (
+              <div>
+              <div className="flex items-center gap-2 mb-2">
+                <Mic className="w-5 h-5 text-gray-700" />
+                <label className="block text-sm font-semibold text-gray-800">
+                  Microphone (Record Voice)
+                </label>
+              </div>
+
+              {micError && (
+                <div className="mb-4 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-red-700">
+                  {micError}
+                </div>
+              )}
+
+              <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
+                <motion.button
+                  type="button"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  disabled={isRecording}
+                  onClick={startRecording}
+                  className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl font-bold shadow transition-all border-2 ${
+                    isRecording
+                      ? "bg-gray-200 text-gray-500 cursor-not-allowed border-gray-200"
+                      : "bg-white text-gray-800 border-gray-200 hover:border-purple-200"
+                  }`}
+                >
+                  <Mic className="w-5 h-5" />
+                  Start Recording
+                </motion.button>
+
+                <motion.button
+                  type="button"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  disabled={!isRecording}
+                  onClick={stopRecording}
+                  className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl font-bold shadow transition-all border-2 ${
+                    !isRecording
+                      ? "bg-gray-200 text-gray-500 cursor-not-allowed border-gray-200"
+                      : "bg-white text-gray-800 border-gray-200 hover:border-purple-200"
+                  }`}
+                >
+                  <Square className="w-5 h-5" />
+                  Stop
+                </motion.button>
+
+                <motion.button
+                  type="button"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  disabled={!micBlob && !micUrl}
+                  onClick={clearMicRecording}
+                  className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl font-bold shadow transition-all border-2 ${
+                    !micBlob && !micUrl
+                      ? "bg-gray-200 text-gray-500 cursor-not-allowed border-gray-200"
+                      : "bg-white text-gray-800 border-gray-200 hover:border-purple-200"
+                  }`}
+                >
+                  <Trash2 className="w-5 h-5" />
+                  Clear
+                </motion.button>
+              </div>
+
+              {micUrl && (
+                <div className="mt-4 rounded-2xl border-2 border-gray-100 bg-white p-4">
+                  <div className="text-sm font-semibold text-gray-800 mb-2">Preview</div>
+                  <audio controls src={micUrl} className="w-full" />
+                </div>
+              )}
               </div>
             )}
 
             {/* Action */}
             <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
               <div className="text-sm text-gray-600">
-                Uses APIs: <span className="font-mono">/api/ocr-nlp/process-text</span>,{" "}
-                <span className="font-mono">/process-image</span>,{" "}
-                <span className="font-mono">/process-voice</span>
+                Generate is disabled for now (no output page yet).
               </div>
 
               <motion.button
-                whileHover={{ scale: canSubmit ? 1.03 : 1 }}
-                whileTap={{ scale: canSubmit ? 0.98 : 1 }}
-                disabled={!canSubmit}
-                onClick={submit}
-                className={`inline-flex items-center justify-center gap-3 px-6 py-3 rounded-2xl font-bold shadow-xl transition-all ${
-                  canSubmit
-                    ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-2xl"
-                    : "bg-gray-200 text-gray-500 cursor-not-allowed"
-                }`}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => {}}
+                className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-2xl font-bold shadow-xl transition-all bg-gray-200 text-gray-500 cursor-not-allowed"
               >
                 <Sparkles className="w-5 h-5" />
-                {loading ? "Processing..." : "Generate"}
+                Generate
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </div>

@@ -22,7 +22,7 @@ export function Navigation() {
             onClick={() => navigate("/student/dashboard")}
             className="text-xl font-bold text-gray-800 hover:text-[#1E7038] transition-colors cursor-pointer"
           >
-            Back to the Dashboard
+            Dashboard
           </button>
 
           {/* Desktop Navigation */}
