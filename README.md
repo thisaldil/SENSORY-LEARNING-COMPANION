@@ -17,14 +17,14 @@
 
 ## 👥 Group Members
 
-| Student ID | Name                 | Component                                 | Branch                                                                                                                   |
-| ---------- | -------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| IT22551252 | Gonsalkorala T. D.   |  Educational Script and Scene Generation  | [IT22551252-Gonsalkorala-T-D-](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/IT22551252-Gonsalkorala-T-D-)|
-|            |                      |                                           | [Educational-Scene-%26-Script](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/Educational-Scene-%26-Script)|
-| IT22186256 | Bhashitha W. K. V.   |                                           | [IT22186256-W.K.V-Bhashitha](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/IT22186256-W.K.V-Bhashitha)    |
-| IT22213662 | Nanayakkara K. E. D. |                                           | [quiz_generater](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/quiz_generater)                            |
-|            |                      |                                           | [IT22213662-Nanayakkara-K-E-D](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/IT22213662-Nanayakkara-K-E-D)|
-| IT22268594 | Madhuka H. W. E.     |                                           | [Audio-%26-Haptic-Experience](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/Audio-%26-Haptic-Experience)  |
+| Student ID | Name                 | Component                               | Branch                                                                                                                   |
+| ---------- | -------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| IT22551252 | Gonsalkorala T. D.   |  Educational Script & Scene Generation  | [IT22551252-Gonsalkorala-T-D-](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/IT22551252-Gonsalkorala-T-D-)|
+|            |                      |                                         | [Educational-Scene-&-Script](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/Educational-Scene-%26-Script)  |
+| IT22186256 | Bhashitha W. K. V.   |                                         | [IT22186256-W.K.V-Bhashitha](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/IT22186256-W.K.V-Bhashitha)    |
+| IT22213662 | Nanayakkara K. E. D. |                                         | [Quiz_Generater](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/quiz_generater)                            |
+|            |                      |                                         | [IT22213662-Nanayakkara-K-E-D](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/IT22213662-Nanayakkara-K-E-D)|
+| IT22268594 | Madhuka H. W. E.     |                                         | [Audio-&-Haptic-Experience](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION/tree/Audio-%26-Haptic-Experience)    |
 
 
 ---
