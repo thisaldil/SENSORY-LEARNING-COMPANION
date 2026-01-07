@@ -8,6 +8,7 @@ from app.models.lesson import Lesson
 from app.models.quiz import Quiz, QuizResult
 from app.ml.processors.quiz_generator import generate_quiz_from_content
 from app.ml.processors.cognitive_load_predictor import predict_cognitive_load
+from app.ml.processors.feature_extractor import extract_features_from_behavior_log
 from app.services.behavior_service import (
     create_behavior_log,
     update_behavior_log_with_results
@@ -145,19 +146,56 @@ async def submit_quiz_answers(
                 'answer_index': ans.answer_index
             })
     
-    # Predict cognitive load if features provided
+    # Predict cognitive load if features provided or if behavior_data is available
     cognitive_load = None
     cognitive_load_confidence = None
+    
+    # Try to get features from cognitive_load_features first, then from behavior_data
+    features_dict = None
+    
     if cognitive_load_features:
+        # Use provided cognitive load features
         try:
             # Convert Pydantic model to dict if needed
             if hasattr(cognitive_load_features, 'model_dump'):
                 features_dict = cognitive_load_features.model_dump()
             else:
                 features_dict = cognitive_load_features
+        except Exception as e:
+            print(f"⚠️  Error processing cognitive_load_features: {str(e)}")
+    
+    # If no features from cognitive_load_features, try to extract from behavior_data
+    if not features_dict and behavior_data:
+        try:
+            # Convert behavior_data to dict if it's a Pydantic model
+            if hasattr(behavior_data, 'model_dump'):
+                behavior_dict = behavior_data.model_dump()
+            else:
+                behavior_dict = behavior_data
             
-            # Calculate totalScore and accuracyRate from quiz results if not provided
-            # or override with calculated values to ensure consistency
+            # Add quiz result metrics to behavior_dict for feature extraction
+            behavior_dict['total_questions'] = total_questions
+            behavior_dict['correct_answers'] = correct_count
+            behavior_dict['incorrect_answers'] = total_questions - correct_count
+            behavior_dict['accuracy_rate'] = (correct_count / total_questions) if total_questions > 0 else 0.0
+            
+            # Extract features from behavior log
+            extracted_features = extract_features_from_behavior_log(behavior_dict)
+            
+            # Add missing features required by the model
+            extracted_features['totalScore'] = float(correct_count)
+            extracted_features['accuracyRate'] = float(correct_count / total_questions) if total_questions > 0 else 0.0
+            extracted_features['errors'] = float(total_questions - correct_count)
+            
+            features_dict = extracted_features
+            print(f"✅ Extracted cognitive load features from behavior_data")
+        except Exception as e:
+            print(f"⚠️  Error extracting features from behavior_data: {str(e)}")
+    
+    # Predict cognitive load if we have features
+    if features_dict:
+        try:
+            # Ensure totalScore and accuracyRate are set (override if needed for consistency)
             features_dict['totalScore'] = float(correct_count)
             features_dict['accuracyRate'] = float(correct_count / total_questions) if total_questions > 0 else 0.0
             
@@ -169,7 +207,11 @@ async def submit_quiz_answers(
             print(f"   Confidence scores: Low={confidence_scores['Low']:.2%}, Medium={confidence_scores['Medium']:.2%}, High={confidence_scores['High']:.2%}")
         except Exception as e:
             print(f"⚠️  Error predicting cognitive load: {str(e)}")
+            import traceback
+            traceback.print_exc()
             # Continue without prediction if model fails
+    else:
+        print(f"⚠️  No cognitive load features available. cognitive_load_features or behavior_data required.")
     
     # Create quiz result
     result = QuizResult(
