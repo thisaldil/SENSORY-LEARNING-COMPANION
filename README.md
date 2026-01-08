@@ -18,7 +18,7 @@
  # Project Repository Link
  
  
-*[SENSORY-LEARNING-COMPANION WEB APPLICATION](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION)
+*[SENSORY-LEARNING-COMPANION WEB APPLICATION](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION)</br>
 *[SENSORY-LEARNING-COMPANION MOBILE APPLICATION](https://github.com/thisaldil/EduSense)
 
 
@@ -67,9 +67,9 @@ All components communicate through secure RESTful APIs to ensure scalability and
 
 ### Frontend
 
-* Framework: React Js 
+* Framework: React Js / React Native
 * Styling: Tailwind CSS
-* State Management: Context API / Redux
+* State Management: Context API 
 
 ### Backend
 
@@ -88,9 +88,8 @@ All components communicate through secure RESTful APIs to ensure scalability and
 * Deployment: Vercel / Render
 * Libraries and Services:
 
-  * OCR and image processing
-  * Speech or audio processing tools
-  * Accessibility focused UI libraries
+  
+  
 
 ---
 
@@ -101,10 +100,10 @@ sensory-learning-companion/
 │
 ├── client/           # Frontend application
 ├── server/           # Backend services
-├── models/           # Database schemas
-├── routes/           # API routes
-├── controllers/      # Business logic
-├── public/           # Static assets
+      ├── models/           # Database schemas
+      ├── routes/           # API routes
+      ├── controllers/      # Business logic
+      ├── public/           # Static assets
 └── README.md
 ```
 
