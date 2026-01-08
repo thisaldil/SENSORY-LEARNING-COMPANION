@@ -15,6 +15,11 @@
 
 ---
 
+ # Project Repository Link
+ 
+[SENSORY-LEARNING-COMPANION](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION)
+
+
 ## 👥 Group Members
 
 | Student ID | Name                 | Component                               | Branch                                                                                                                   |
@@ -31,8 +36,8 @@
 
 ## 🎓 Supervisors
 
-* **Ms. Thamali Kelegama**
-* **Ms. Nimasha Chinthaka**
+* **Ms. Thamali Kelegama /Mr Nelum Chathuranga**
+*  **Ms. Nimasha Chinthaka**
 
 ---
 
@@ -60,21 +65,20 @@ All components communicate through secure RESTful APIs to ensure scalability and
 
 ### Frontend
 
-* Framework: React / Next.js
+* Framework: React Js 
 * Styling: Tailwind CSS
 * State Management: Context API / Redux
 
 ### Backend
 
-* Runtime: Node.js
-* Framework: Express.js / FastAPI
+* Runtime: Python
+* Framework: FastAPI
 * API Style: REST
 * Authentication: JWT based authentication
 
 ### Database
 
 * Database Type: MongoDB
-* Data Handling: Mongoose ORM
 
 ### Other Tools
 
@@ -167,11 +171,3 @@ This project is developed for academic purposes under SLIIT and is not intended 
 
 ---
 
-If you want, I can also:
-
-* Add **badges** (build, tech stack, license)
-* Match this exactly to your **proposal document**
-* Assign **components to each member**
-* Make a **shorter version** for public GitHub visibility
-
-Just tell me.
