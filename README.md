@@ -17,7 +17,9 @@
 
  # Project Repository Link
  
-[SENSORY-LEARNING-COMPANION](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION)
+ 
+[SENSORY-LEARNING-COMPANION WEB APPLICATION](https://github.com/thisaldil/SENSORY-LEARNING-COMPANION)
+[SENSORY-LEARNING-COMPANION MOBILE APPLICATION](https://github.com/thisaldil/EduSense)
 
 
 ## 👥 Group Members
