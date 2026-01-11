@@ -92,53 +92,26 @@ All components communicate through secure RESTful APIs to ensure scalability and
 
 * Version Control: Git and GitHub
 * Deployment: Vercel / Render
-* Libraries and Services:
+* Libraries and Services: Read Package.json , Requirements.txt
 
-  
-  
-
----
 
 ## 📂 Project Structure
 
 ```
 sensory-learning-companion/
 │
-├── client/           # Frontend application
-├── server/           # Backend services
-      ├── models/           # Database schemas
-      ├── routes/           # API routes
-      ├── controllers/      # Business logic
-      ├── public/           # Static assets
-└── README.md
+├── client/                     # Frontend application (UI / UX)
+│
+├── server/                     # Backend (Python-based)
+│   ├── models/                 # Database models / ORM schemas
+│   ├── routes/                 # API route definitions
+│   ├── controllers/            # Business logic & request handling
+│   ├── services/               # Core services (AI/ML logic, utilities, integrations)
+│
+├── README.md                   # Project documentation
+
 ```
 
----
-
-## ⚙️ Installation and Setup
-
-1. Clone the repository
-
-   ```
-   git clone https://github.com/your-repo/sensory-learning-companion.git
-   ```
-
-2. Install dependencies
-
-   ```
-   npm install
-   ```
-
-3. Configure environment variables
-   Create a `.env` file with required values.
-
-4. Run the application
-
-   ```
-   npm run dev
-   ```
-
----
 
 ## 🧪 Testing
 
@@ -148,27 +121,6 @@ sensory-learning-companion/
 
 ---
 
-## 🚧 Limitations
-
-* Some accessibility features are limited by device capabilities
-* Advanced personalization is constrained by available training data
-
----
-
-## 🚀 Future Enhancements
-
-* AI driven personalized learning paths
-* Expanded support for assistive technologies
-* Performance optimization for low end devices
-* Multilingual learning support
-
----
-
-## 📜 License
-
-This project is developed for academic purposes under SLIIT and is not intended for commercial distribution.
-
----
 
 ## 🙏 Acknowledgements
 
