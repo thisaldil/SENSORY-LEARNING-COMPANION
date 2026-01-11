@@ -36,7 +36,8 @@
 
 ---
 ## System Architecture
-![System Architecture](./system architecture.png)
+<img src="./system architecture.png" alt="Alt text" width="300"/>
+
 
 
 
