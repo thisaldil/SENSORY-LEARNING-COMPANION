@@ -6,6 +6,7 @@ from app.models.lesson import Lesson
 from app.models.quiz import Quiz, QuizResult
 from app.models.progress import Progress
 from app.models.content import ContentFile, ProcessingJob
+from app.models.activity import Activity
 
 __all__ = [
     "User",
@@ -15,5 +16,6 @@ __all__ = [
     "Progress",
     "ContentFile",
     "ProcessingJob",
+    "Activity",
 ]
 

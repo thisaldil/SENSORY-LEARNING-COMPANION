@@ -55,11 +55,12 @@ async def health_check():
 
 
 # Include routers
-from app.api import auth, users, quizzes, lessons
+from app.api import auth, users, quizzes, lessons, activities
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
 app.include_router(quizzes.router, prefix="/api/quizzes", tags=["Quizzes"])
 app.include_router(lessons.router, prefix="/api/lessons", tags=["Lessons"])
+app.include_router(activities.router, prefix="/api/activities", tags=["Activities"])
 
 # Uncomment as you implement them
 # from app.api import content, progress, uploads
@@ -77,4 +78,3 @@ if __name__ == "__main__":
         port=8000,
         reload=True,
     )
-

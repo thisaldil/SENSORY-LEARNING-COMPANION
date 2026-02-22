@@ -1,67 +1,113 @@
 """
 Cognitive Load Predictor
-Load trained model and predict cognitive load from behavioral features
+Load trained model and predict cognitive load from behavioral features.
+Supports both Keras (.h5) and scikit-learn (joblib .pkl or pickle-in-.h5) models.
 """
-import os
 import json
+import warnings
+
 import numpy as np
-from typing import Dict, Optional, Tuple
+import pandas as pd
+from typing import Dict, Optional, Tuple, Any
 from pathlib import Path
 from app.config import settings
+
+# Resolve model dir relative to project root (server/) so it works regardless of CWD
+# __file__ = server/app/ml/processors/cognitive_load_predictor.py -> parent^4 = server
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+_MODELS_DIR = _PROJECT_ROOT / settings.ML_MODELS_DIR
+_COGNITIVE_LOAD_DIR = _MODELS_DIR / "cognitive_load_model"
 
 try:
     from tensorflow import keras
     TENSORFLOW_AVAILABLE = True
 except ImportError:
     TENSORFLOW_AVAILABLE = False
-    print("⚠️  TensorFlow not available. Please install tensorflow.")
+
+try:
+    import joblib
+    JOBLIB_AVAILABLE = True
+except ImportError:
+    JOBLIB_AVAILABLE = False
+
+try:
+    from sklearn.exceptions import InconsistentVersionWarning
+except ImportError:
+    InconsistentVersionWarning = type("InconsistentVersionWarning", (UserWarning,), {})
 
 
 class CognitiveLoadPredictor:
     """Predict cognitive load from behavioral features"""
-    
+
     def __init__(self):
-        self.model = None
-        self.feature_order = None
+        self.model: Any = None
+        self.feature_order: Optional[list] = None
+        self._model_kind: str = "none"  # "keras" | "sklearn" | "none"
+        self._sklearn_classes: Optional[list] = None  # class order for predict_proba
         self.load_model()
-    
+
     def load_model(self):
-        """Load the trained cognitive load model and feature order"""
-        if not TENSORFLOW_AVAILABLE:
-            print("⚠️  TensorFlow is not available. Cannot load model. Will use fallback heuristic.")
-            return
-            
-        models_dir = Path(settings.ML_MODELS_DIR)
-        
-        model_path = models_dir / "cognitive_load_model" / "cognitive_load_model.h5"
-        features_path = models_dir / "cognitive_load_model" / "feature_order.json"
-        
-        try:
-            if model_path.exists():
-                self.model = keras.models.load_model(model_path)
-                print(f"✅ Loaded model from '{model_path.name}'")
-            else:
-                print(f"⚠️  Model not found at {model_path}. Will use fallback heuristic.")
-                return
-            
-            if features_path.exists():
-                with open(features_path, 'r') as f:
+        """Load the trained cognitive load model and feature order."""
+        features_path = _COGNITIVE_LOAD_DIR / "feature_order.json"
+        if features_path.exists():
+            try:
+                with open(features_path, "r", encoding="utf-8") as f:
                     self.feature_order = json.load(f)
                 print(f"✅ Loaded feature order from '{features_path.name}'")
-            else:
-                print(f"⚠️  Feature order not found at {features_path}. Will use fallback heuristic.")
-                
-        except Exception as e:
-            print(f"❌ Error loading model: {str(e)}")
-            print("⚠️  Will use fallback heuristic for cognitive load prediction.")
-            self.model = None
-            # Try to still load feature order for reference
+            except Exception as e:
+                print(f"⚠️  Could not load feature order: {e}. Will use fallback heuristic.")
+        else:
+            print(f"⚠️  Feature order not found at {features_path}. Will use fallback heuristic.")
+
+        h5_path = _COGNITIVE_LOAD_DIR / "cognitive_load_model.h5"
+        pkl_path = _COGNITIVE_LOAD_DIR / "cognitive_load_model.pkl"
+
+        # 1) Try Keras .h5 (real HDF5 file)
+        if TENSORFLOW_AVAILABLE and h5_path.exists():
             try:
-                if features_path.exists():
-                    with open(features_path, 'r') as f:
-                        self.feature_order = json.load(f)
-            except Exception:
-                pass
+                self.model = keras.models.load_model(h5_path)
+                self._model_kind = "keras"
+                print(f"✅ Loaded Keras model from '{h5_path.name}'")
+                return
+            except Exception as e:
+                err = str(e).lower()
+                # .h5 is often a misnamed pickle (e.g. from Git LFS or wrong save)
+                if "file signature not found" in err or "unable to synchronously open" in err:
+                    if JOBLIB_AVAILABLE:
+                        try:
+                            with warnings.catch_warnings():
+                                warnings.simplefilter("ignore", InconsistentVersionWarning)
+                                self.model = joblib.load(h5_path)
+                            if hasattr(self.model, "predict_proba"):
+                                self._model_kind = "sklearn"
+                                self._sklearn_classes = getattr(
+                                    self.model, "classes_", ["Low", "Medium", "High"]
+                                )
+                                print(f"✅ Loaded sklearn model from '{h5_path.name}' (file was pickle format)")
+                                return
+                        except Exception:
+                            pass
+                self.model = None
+                print(f"⚠️  Could not load '{h5_path.name}' as Keras model: {e}")
+
+        # 2) Try .pkl as sklearn/joblib model
+        if JOBLIB_AVAILABLE and pkl_path.exists():
+            try:
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore", InconsistentVersionWarning)
+                    self.model = joblib.load(pkl_path)
+                if hasattr(self.model, "predict_proba"):
+                    self._model_kind = "sklearn"
+                    self._sklearn_classes = getattr(
+                        self.model, "classes_", ["Low", "Medium", "High"]
+                    )
+                    print(f"✅ Loaded sklearn model from '{pkl_path.name}'")
+                    return
+            except Exception as e:
+                print(f"⚠️  Could not load '{pkl_path.name}': {e}")
+
+        if self.model is None:
+            print("⚠️  No model loaded. Will use fallback heuristic for cognitive load prediction.")
     
     def _predict_fallback(self, features: Dict[str, float]) -> Tuple[str, float, Dict[str, float]]:
         """
@@ -130,54 +176,58 @@ class CognitiveLoadPredictor:
     def predict(self, features: Dict[str, float]) -> Tuple[str, float, Dict[str, float]]:
         """
         Predict cognitive load from features
-        
-        Args:
-            features: Dictionary of feature names and values
-            
+
         Returns:
             Tuple of (predicted_load, confidence, confidence_scores)
             predicted_load: "Low", "Medium", or "High"
             confidence: Prediction confidence (0-1)
             confidence_scores: Dictionary with confidence scores for each class
         """
-        # Use fallback if model is not available
-        if self.model is None:
+        if self.model is None or self.feature_order is None:
             return self._predict_fallback(features)
-        
-        if self.feature_order is None:
-            # Try to use fallback if feature order is missing
-            return self._predict_fallback(features)
-        
+
         try:
-            # Convert features dict to array in the correct order
-            feature_array = []
-            for feature_name in self.feature_order:
-                value = features.get(feature_name, 0.0)
-                feature_array.append(float(value))
-            
-            # Convert to numpy array and reshape for single sample
+            feature_array = [
+                float(features.get(name, 0.0)) for name in self.feature_order
+            ]
+
+            if self._model_kind == "sklearn":
+                # Pass DataFrame with feature names so sklearn doesn't warn and column order is explicit
+                X = pd.DataFrame(
+                    [feature_array],
+                    columns=list(self.feature_order),
+                )
+                probabilities = self.model.predict_proba(X)[0]
+                # Avoid "truth value of array is ambiguous": don't use (array or default)
+                if self._sklearn_classes is None:
+                    classes = ["Low", "Medium", "High"]
+                else:
+                    classes = list(np.atleast_1d(self._sklearn_classes))
+                class_labels = [str(c).strip() for c in classes]
+                idx = int(np.argmax(probabilities))
+                predicted_load = class_labels[idx] if idx < len(class_labels) else "Medium"
+                conf = np.max(probabilities)
+                confidence = float(conf) if np.isscalar(conf) else float(conf.item())
+                confidence_scores = {}
+                for i in range(len(class_labels)):
+                    p = probabilities[i]
+                    confidence_scores[class_labels[i]] = float(p) if np.isscalar(p) else float(p.item())
+                for key in ("Low", "Medium", "High"):
+                    confidence_scores.setdefault(key, 0.0)
+                return predicted_load, confidence, confidence_scores
+
+            # Keras: numpy input
             X = np.array(feature_array).reshape(1, -1)
-            
-            # Predict probabilities
             probabilities = self.model.predict(X, verbose=0)[0]
-            
-            # Get predicted class (index with highest probability)
+            load_mapping = {0: "Low", 1: "Medium", 2: "High"}
             predicted_class = int(np.argmax(probabilities))
-            
-            # Map prediction to label
-            load_mapping = {0: 'Low', 1: 'Medium', 2: 'High'}
-            predicted_load = load_mapping.get(predicted_class, 'Medium')
-            
-            # Get confidence (max probability)
+            predicted_load = load_mapping.get(predicted_class, "Medium")
             confidence = float(np.max(probabilities))
-            
-            # Create confidence scores dictionary
             confidence_scores = {
-                'Low': float(probabilities[0]),
-                'Medium': float(probabilities[1]),
-                'High': float(probabilities[2])
+                "Low": float(probabilities[0]),
+                "Medium": float(probabilities[1]),
+                "High": float(probabilities[2]),
             }
-            
             return predicted_load, confidence, confidence_scores
         except Exception as e:
             print(f"⚠️  Error during model prediction: {str(e)}. Falling back to heuristic.")
