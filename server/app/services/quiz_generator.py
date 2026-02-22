@@ -149,19 +149,36 @@ async def submit_quiz_answers(
     cognitive_load = None
     cognitive_load_confidence = None
     if cognitive_load_features:
+        # Convert Pydantic model to dict if needed (outside try block for fallback)
+        if hasattr(cognitive_load_features, 'model_dump'):
+            features_dict = cognitive_load_features.model_dump()
+        else:
+            features_dict = cognitive_load_features.copy() if isinstance(cognitive_load_features, dict) else {}
+        
+        # Extract answerChanges before try block for fallback
+        answer_changes = float(features_dict.get('answerChanges', 0.0))
+        
         try:
-            # Convert Pydantic model to dict if needed
-            if hasattr(cognitive_load_features, 'model_dump'):
-                features_dict = cognitive_load_features.model_dump()
-            else:
-                features_dict = cognitive_load_features
-            
-            # Calculate totalScore and accuracyRate from quiz results if not provided
-            # or override with calculated values to ensure consistency
+            # Calculate required features from quiz results to ensure consistency
+            # These override any provided values to match actual quiz results
             features_dict['totalScore'] = float(correct_count)
             features_dict['accuracyRate'] = float(correct_count / total_questions) if total_questions > 0 else 0.0
+            features_dict['errors'] = float(total_questions - correct_count)
             
-            # Predict cognitive load using the model
+            # Ensure all required features have default values if missing
+            required_features = {
+                'answerChanges': answer_changes,
+                'currentErrorStreak': 0.0,
+                'idleGapsOverThreshold': 0.0,
+                'responseTimeVariability': 0.0,
+                'completionTime': 0.0,
+                'avgResponseTime': 0.0
+            }
+            for feature, default_value in required_features.items():
+                if feature not in features_dict:
+                    features_dict[feature] = default_value
+            
+            # Predict cognitive load using the model (with fallback if model unavailable)
             predicted_load, confidence, confidence_scores = predict_cognitive_load(features_dict)
             cognitive_load = predicted_load
             cognitive_load_confidence = confidence
@@ -169,7 +186,26 @@ async def submit_quiz_answers(
             print(f"   Confidence scores: Low={confidence_scores['Low']:.2%}, Medium={confidence_scores['Medium']:.2%}, High={confidence_scores['High']:.2%}")
         except Exception as e:
             print(f"⚠️  Error predicting cognitive load: {str(e)}")
-            # Continue without prediction if model fails
+            # Try fallback prediction with minimal features
+            try:
+                fallback_features = {
+                    'totalScore': float(correct_count),
+                    'accuracyRate': float(correct_count / total_questions) if total_questions > 0 else 0.0,
+                    'errors': float(total_questions - correct_count),
+                    'answerChanges': answer_changes,
+                    'currentErrorStreak': 0.0,
+                    'idleGapsOverThreshold': 0.0,
+                    'responseTimeVariability': 0.0,
+                    'completionTime': 0.0,
+                    'avgResponseTime': 0.0
+                }
+                predicted_load, confidence, _ = predict_cognitive_load(fallback_features)
+                cognitive_load = predicted_load
+                cognitive_load_confidence = confidence
+                print(f"✅ Used fallback prediction: {cognitive_load} (confidence: {confidence:.4f})")
+            except Exception as fallback_error:
+                print(f"⚠️  Fallback prediction also failed: {str(fallback_error)}")
+                # Continue without prediction if all methods fail
     
     # Create quiz result
     result = QuizResult(

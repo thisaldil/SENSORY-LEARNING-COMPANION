@@ -40,6 +40,12 @@ Desktop.ini
 coverage/
 *.lcov
 
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
 # --- Misc ---
 *.swp
 *.swo
