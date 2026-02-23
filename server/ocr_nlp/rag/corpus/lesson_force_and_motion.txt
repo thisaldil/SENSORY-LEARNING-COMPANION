@@ -1,0 +1,11 @@
+Force is a fundamental concept in physics, describing any push or pull that can change the state of motion of an object. When a force acts on an object, it can cause the object to start moving, stop moving, change direction, or alter its speed. Motion itself refers to the change in position of an object over time, and it is closely tied to the forces acting upon it. For example, gravity pulls objects toward Earth, friction resists their movement, and applied forces from people or machines can set them in motion.
+
+Newton’s three laws of motion provide the framework for understanding how forces affect movement. The first law, often called the law of inertia, states that an object will remain at rest or continue moving in a straight line at constant speed unless acted upon by an external force. The second law explains the relationship between force, mass, and acceleration, summarized by the equation 
+𝐹
+=
+𝑚
+⋅
+𝑎
+. This means that heavier objects require more force to accelerate. The third law highlights that every action has an equal and opposite reaction, which is why rockets propel forward when gases are expelled backward.
+
+In everyday life, forces and motion are everywhere. Friction allows us to walk without slipping, gravity keeps us grounded, and applied forces let us push doors open or ride bicycles. Understanding these principles not only explains natural phenomena but also helps engineers design vehicles, buildings, and technologies that work safely and efficiently.
