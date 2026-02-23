@@ -1,0 +1,24 @@
+PP1
+Input → OCR/STT → Clean → NLP → JSON Knowledge Base → Scene + Script
+
+PP2
+Input → OCR/STT → Clean → Query Embedding
+→ Vector Search (Grade 6 Content)
+→ Retrieved Context
+→ LLM Generation
+→ Scene + Script
+
+
+Architecture After Step 5
+
+User Query
+↓
+Embedding Model
+↓
+FAISS Vector Search
+↓
+Top 3 Relevant Chunks
+↓
+Pass as Context to LLM
+↓
+Structured Educational Response
