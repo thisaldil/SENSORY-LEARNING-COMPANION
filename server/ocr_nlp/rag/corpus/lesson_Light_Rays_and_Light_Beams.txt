@@ -1,0 +1,53 @@
+Light Rays and Light Beams
+Light does not just spread out randomly; it travels in a very organized way. To study light in science, we use specific terms to describe its path.
+
+1. Light Rays
+Light travels in straight lines. The path along which light travels is called a light ray.
+
+In diagrams, we represent a light ray using a straight line with an arrowhead.
+
+The arrowhead shows the direction in which the light is traveling.
+
+2. Light Beams
+In the real world, we rarely see just one single ray of light. Instead, we see many rays traveling together. A collection of light rays is called a light beam.
+
+There are three main types of light beams:
+
+Parallel Light Beam: The light rays travel parallel to each other (they never meet).
+
+Example: Light from a very distant source like the Sun.
+
+Convergent Light Beam: The light rays move toward each other and meet at a single point.
+
+Example: Using a magnifying glass to focus sunlight onto a piece of paper.
+
+Divergent Light Beam: The light rays start from a single point and spread out in different directions.
+
+Example: Light coming out from a small torch or a car headlight.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Principle of Rectilinear Propagation
+The fact that light travels in straight lines is a scientific principle called Rectilinear Propagation. You can prove this with a simple experiment using three pieces of cardboard with small holes in the center. If you align the holes perfectly, you can see the light of a candle through them. If you move even one cardboard slightly out of line, the light disappears. This is because light cannot "bend" around the obstacle. This principle is why we have shadows and why we cannot see things hidden behind a wall.
++1
+
+Light Beams in Nature and Technology
+Understanding beams is helpful for many Sri Lankan industries:
+
+Lighthouses: In coastal cities like Galle or Beruwala, lighthouses use powerful lamps and lenses to create a parallel beam of light. This beam can travel long distances across the ocean without spreading out too much, warning ships about the coastline.
+
+Searchlights: During festivals or events, you might see large searchlights pointing at the sky. These are divergent beams that spread out to cover a wide area, making them visible from miles away.
+
+Lasers: A laser is a very special kind of light beam where all the rays are perfectly parallel and "in step." Unlike a torch (divergent), a laser beam stays very narrow even over long distances. This is why a laser pointer can put a tiny red dot on a wall far away.
+
+The "Meeting Point": Focus and Convergence
+Convergent beams are very powerful because they concentrate energy. When light rays converge, the point where they meet is called the Focus. This is why a magnifying glass can start a fire; it takes a wide beam of solar energy and converges it into one tiny, extremely hot point. In our eyes, the lens converges light rays to a focus on the retina, allowing us to see a sharp image. If the rays don't converge perfectly at the right spot, our vision becomes blurry, and we might need spectacles.
++1
+
+Why do Beams "Diverge"?
+Most light sources we use, like a candle or a naked light bulb, are "point sources." The light wants to move away from the source in every direction to fill the room. This creates a divergent beam. However, in a flashlight, we put a curved mirror (reflector) behind the bulb. This mirror catches the divergent rays and reflects them forward, turning them into a more directed beam so we can see further down a dark path.
+
+Visualizing Beams: The Role of Dust and Smoke
+Light rays themselves are invisible. You cannot see a beam of light passing through perfectly clean air. You only see the "beam" when there are tiny particles like dust, smoke, or water droplets in the air. These particles reflect some of the light toward your eyes. This is why you can see "God rays" filtering through trees in a misty forest in Sinharaja or see the beam of a cinema projector in a dark, dusty room. This effect is known as the Tyndall Effect.
+
+Light Beams in Scientific Diagrams
+For a RAG architecture, it is important to know that scientists use "Ray Diagrams" to predict how light will behave. By drawing straight lines with arrows, we can calculate where a shadow will fall or how a mirror will reflect an image. This mathematical side of light is used by architects when designing buildings in Colombo to ensure rooms get enough natural sunlight without getting too hot.

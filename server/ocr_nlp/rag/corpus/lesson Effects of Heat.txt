@@ -1,0 +1,61 @@
+Effects of Heat
+There are four primary effects that heat has on substances:
+
+1. Change in Temperature
+The most common effect of heat is that it makes things hotter. When heat energy is added to an object, its temperature rises. Conversely, when heat is removed, the temperature drops.
+
+Example: Heating water on a stove increases its temperature until it reaches a boil.
+
+2. Change of State
+Heat can change a substance from one physical form to another (Solid, Liquid, or Gas).
+
+Melting: Solid to Liquid (e.g., Ice melting into water).
+
+Vaporization: Liquid to Gas (e.g., Water turning into steam).
+
+Example: Heating a piece of wax causes it to turn from a hard solid into a runny liquid.
+
+3. Expansion
+When substances are heated, they usually increase in size. This is called expansion. When they cool down, they shrink back, which is called contraction.
++1
+
+Solids: Metal tracks or wires get slightly longer when hot.
+
+Liquids: The liquid inside a thermometer rises when it gets warm.
+
+Gases: Air inside a balloon expands when heated.
+
+4. Color Change and Chemical Changes
+Extreme heat can cause a substance to change color or even transform into a completely new substance.
+
+Example: Heating a piece of bright copper metal makes it turn black as it reacts with oxygen. Heating sugar makes it turn brown (caramelization) and eventually black (carbon).
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of Expansion: Why things get bigger
+To understand expansion, imagine the molecules inside a solid are like a crowd of people. When it is cold, everyone stands still and close together. When you add heat, you are giving these people energy. They start to "dance" and vibrate vigorously. As they move more, they need more personal space and push each other apart. This causes the entire object to grow slightly larger.
+
+In Sri Lanka, engineers must consider this effect when building:
+
+Railway Tracks: Small gaps are left between rail sections. On a very hot afternoon in Anuradhapura, the steel rails expand. If there were no gaps, the rails would push against each other and bend (buckle), causing a train crash.
+
+Bridges: Large concrete bridges often have "expansion joints" that look like metal teeth. These allow the bridge to expand safely during the day and contract at night.
+
+Thermal Expansion in Liquids and Gases
+Liquids expand more than solids, and gases expand the most. This is why a bottle of soda should not be filled to the absolute top; if it gets warm, the liquid needs space to expand, or the bottle might burst.
+Gases are extremely sensitive to heat. If you take an "empty" plastic bottle and put it in the sun, the air inside expands. If you then put it in a refrigerator, the air contracts, and the bottle may actually "crush" itself inward as the air takes up less space.
+
+Heat and the "Phase Change" Plateau
+An interesting scientific fact is that while a substance is changing its state (like ice melting), its temperature does not rise, even if you keep adding heat! All the heat energy is being used to break the bonds holding the molecules together. Only after all the ice has turned into water will the temperature start to climb again. This is called "Latent Heat."
++1
+
+Biological Effects of Heat
+Heat doesn't just affect metal and water; it affects living things.
+
+Enzymes: The tiny "workers" inside your body only work at specific temperatures. If your body gets too hot (a fever), these enzymes can stop working, which is why high fevers are dangerous.
++1
+
+Thermoregulation: Humans sweat to cool down. As the sweat evaporates from your skin, it takes heat energy away with it, lowering your body temperature. This is an application of "cooling by evaporation."
++1
+
+Heat and Incandescence
+When some solids are heated to very high temperatures, they don't just change state; they begin to emit light. This is called incandescence. This is how old-fashioned light bulbs work. Electricity heats a thin tungsten wire until it is so hot that it glows white. In a blacksmith's shop, you can see iron being heated until it glows red, then orange, then yellow. The color tells the blacksmith exactly how hot the metal is.

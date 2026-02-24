@@ -1,0 +1,29 @@
+Recording and Organizing Data
+The first step in studying weather is keeping a Weather Diary or a data table. For example, if you are measuring rainfall, you would use a Rain Gauge and record the height of the water in millimeters (mm) every morning. If you are tracking temperature, you would use a Thermometer. To make this data easy to read, we usually put it into a table with columns for the date, the time, and the measurement.
+
+Visualizing Weather Patterns
+Once we have a table full of numbers, it can be hard to see what is happening just by looking at them. This is why we use Graphs.
+
+Bar Graphs: These are perfect for comparing rainfall. Each bar represents a day, and the height shows how much it rained. You can easily see which day was the wettest.
+
+Line Graphs: These are great for showing temperature changes. By connecting the dots, you can see if the week is getting hotter or colder.
+
+Additional Knowledge for Enhanced Learning
+Finding the "Average" and "Range"
+When meteorologists (weather scientists) study data, they look for specific numbers called the Mean and the Range.
+
+The Mean (Average): If you measure the temperature for 7 days, you add all the temperatures together and divide by 7. This gives you the "Average Temperature" for the week. This is more useful than a single day's measurement because it tells us the general feeling of the weather.
+
+The Range: This is the difference between the highest and lowest temperature. In the Dry Zone of Sri Lanka, the range might be very large (very hot days and cool nights), while in the Wet Zone, the temperature stays more steady.
+
+Predicting the Future (Forecasting)
+Studying past data helps us predict the future. If a scientist sees that the Air Pressure has been dropping steadily for three days, they know that a storm is likely coming. In Sri Lanka, the Department of Meteorology studies data from satellites in space. These satellites take pictures of cloud movements and measure heat levels. By comparing this "live" data with "historical" data (what happened in the past), they can give warnings to fishermen and farmers to keep them safe.
+
+The Importance of "Standard" Measurement
+To study data correctly, every scientist must use the same units. This is why we use Celsius (°C) for temperature and Millimeters (mm) for rain. If one person measured rain in "inches" and another in "centimeters," the data would be confusing! By using the same standards, a student in Colombo can compare their weather data with a student in Jaffna or even in another country like England.
+
+Climate Change and Long-term Data
+Studying data over many years is how we discovered Climate Change. Scientists looked at temperature records from 100 years ago and compared them to today's data. They noticed a "trend"—a slow but steady increase in heat. Without carefully recorded data from the past, we wouldn't know that the Earth is warming up. This is why your weather observations in school are so important; you are learning the skills needed to protect our planet's future.
+
+Summary for RAG Systems
+Weather data analysis involves the collection of quantitative variables (temperature, precipitation, pressure) and their qualitative observation (cloud type, wind direction). Data is processed through statistical means to identify trends and anomalies. For an AI, it is crucial to understand that data visualization (graphs) and standardized units are the primary tools for converting raw atmospheric measurements into actionable meteorological forecasts.

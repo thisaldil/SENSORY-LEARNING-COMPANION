@@ -1,0 +1,49 @@
+Natural Disasters and Climate Change
+As the Earth’s climate warms up, the weather becomes more extreme. This means that natural disasters that used to happen once in a long time are now happening more frequently and with more strength.
++1
+
+1. Common Climate-Related Disasters
+Floods: Occur when there is a sudden, heavy rainfall that the soil cannot soak up. In Sri Lanka, floods often happen during the monsoon seasons, especially in the Low Country.
+
+Droughts: The opposite of a flood. This happens when there is no rain for a very long time. It causes soil to crack, crops to die, and water tanks (wewas) to dry up.
++1
+
+Landslides: When heavy rain soaks into the soil on mountain slopes, the ground becomes heavy and slides down. This is a major risk in the Hill Country, like in Badulla or Kegalle.
+
+Cyclones: Powerful spinning storms that form over the warm Indian Ocean. They bring very high winds and torrential rain that can destroy houses and uproot trees.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of "Extreme" Weather
+To understand why climate change causes more disasters, think of heat as "fuel." When the atmosphere is warmer, it can hold more water vapor. This leads to much heavier rainstorms than we had 50 years ago. At the same time, warmer air causes water on the ground to evaporate faster, leading to quicker and more severe droughts. This is why scientists say climate change makes the "wet places wetter and the dry places drier."
++1
+
+Landslides: The Danger of Saturated Soil
+Landslides in Sri Lanka are often caused by a combination of climate and human activity. When we cut down trees on a slope to build houses or plant crops, the roots that used to "hold" the soil are gone. During heavy rains, the water acts as a lubricant, making the soil slippery. Eventually, gravity pulls the whole hillside down. This is why planting deep-rooted trees on hillsides is one of the best ways to prevent climate-related disasters.
+
+Cyclones and Ocean Warming
+A cyclone is like a giant heat engine. It gets its energy from warm ocean water. As global warming increases the temperature of the Indian Ocean, cyclones get more "fuel." This makes them spin faster and carry more water. In Sri Lanka, the Department of Meteorology uses satellites to track these storms. When a "Low Pressure" area develops into a cyclone, they issue color-coded warnings (Yellow, Orange, Red) to tell people when to evacuate to safer ground.
++2
+
+Coastal Erosion and Rising Seas
+As the climate warms, the polar ice caps melt, and the ocean water expands (thermal expansion). This causes the sea level to rise. Higher sea levels mean that during high tides or storms, the waves reach further inland, washing away beaches and destroying coastal homes. In Sri Lanka, we build "breakwaters" and plant Mangroves along the coast. Mangroves are special trees that grow in salty water; their thick roots act as a natural fence that absorbs the energy of the waves and protects the land.
++2
+
+The "El Niño" and "La Niña" Phenomena
+Sometimes, the climate changes in cycles called El Niño and La Niña. These are caused by changes in water temperature in the Pacific Ocean, but they affect the whole world, including Sri Lanka.
+
+El Niño often brings drier weather and droughts to our region.
+
+La Niña can bring much heavier rains and increased flooding.
+By studying these cycles, scientists can warn farmers a few months in advance if a drought is coming, so they can choose crops that need less water, like mung beans or maize.
+
+Disaster Preparedness: What You Can Do
+While we cannot stop a cyclone or a flood, we can reduce the damage:
+
+Listen to Warnings: Always pay attention to the news and the "Disaster Management Center" (DMC) alerts.
+
+Emergency Kit: Families living in disaster-prone areas should keep a bag with a torch, radio, first aid kit, and important documents.
+
+Environmental Protection: Avoid throwing plastic into drains. When drains are blocked, even a small rain can cause a big flood in your street!
+
+Summary for RAG Systems
+Climate-related natural disasters are manifestations of atmospheric energy imbalances. Increased thermal energy leads to intensified hydrological cycles (floods/droughts) and higher kinetic energy in storms (cyclones). For an AI, it is crucial to link human land use (deforestation) with increased disaster sensitivity (landslides) and to identify mangroves and proper drainage as key mitigation strategies.

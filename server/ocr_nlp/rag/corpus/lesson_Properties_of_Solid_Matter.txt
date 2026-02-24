@@ -1,0 +1,53 @@
+While all solids have a definite shape and volume, different solids behave differently when we try to scratch, stretch, or break them. These are called specific properties.
+
+1. Hardness
+Hardness is the ability of a material to resist being scratched or cut.
+
+A material that can scratch another is considered "harder."
+
+Example: A glass cutter (made of diamond or hard steel) can scratch glass, but a fingernail cannot.
+
+Activity: If you rub a piece of chalk against a stone, the chalk wears away because the stone is harder than the chalk.
+
+2. Brittleness
+Brittleness is the property of a material that breaks or shatters easily when a force is applied or when dropped.
+
+Example: A glass plate or a clay pot will shatter if dropped on the floor. These are brittle materials.
+
+Non-example: An iron nail or a piece of rubber will not shatter; therefore, they are not brittle.
+
+3. Malleability
+Malleability is the ability of a material to be beaten into thin sheets without breaking.
+
+Example: Metals like Gold, Silver, and Copper are highly malleable. This is why they can be used to make jewelry and thin foils.
+
+4. Ductility
+Ductility is the ability of a material to be drawn out into long, thin wires.
+
+Example: Copper is very ductile, which is why it is used for electrical wiring in our homes.
+
+5. Elasticity
+Elasticity is the property of a material to return to its original shape after being stretched or compressed.
+
+Example: A rubber band or a metal spring. If you pull a rubber band, it changes shape, but when you let go, it snaps back.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of Hardness: The Mohs Scale
+In the world of science, we measure hardness using something called the Mohs Scale. Developed by Friedrich Mohs, it ranks minerals from 1 to 10. Talc (used in baby powder) is a 1 because it is very soft. Diamond is a 10 because it is the hardest natural substance on Earth. In Sri Lanka, which is famous for its gemstones, miners and gemologists use this property to identify stones. For example, a Blue Sapphire is very hard (9 on the scale), which is why it doesn't get scratched easily when worn in a ring.
++4
+
+Why are Metals Malleable and Ductile?
+To understand why we can turn a block of Gold into a thin leaf or a Copper rod into a wire, we must look at the atoms. In metals, the atoms are arranged in layers. When we hit a metal with a hammer, these layers slide over each other instead of breaking apart. This is different from brittle materials like sulfur or glass, where the atoms are locked in a rigid structure; if you hit them, the structure snaps, causing the material to shatter.
+
+Elasticity and the "Elastic Limit"
+While elasticity is a wonderful property, it has a limit. If you stretch a rubber band too far, it will either stay permanently stretched out (deformed) or it will snap. This point is called the Elastic Limit. Engineers in Sri Lanka use this knowledge when building bridges or tall buildings. They must ensure that the steel beams used can handle the weight of cars and trucks without reaching their elastic limit, ensuring the bridge stays safe and returns to its shape.
+
+Brittleness in Engineering and Daily Life
+Brittleness isn't always a "bad" thing. For example, we want our biscuits to be brittle so they are crunchy! However, in construction, brittleness can be dangerous. Concrete is very strong but brittle—it can crack under sudden pressure. This is why we put long iron rods (which are malleable and strong) inside concrete to create "Reinforced Concrete." This combination allows buildings to be both hard and slightly flexible.
+
+The Texture and Surface of Solids
+In addition to the internal properties, the texture of a solid is a specific property we perceive through touch. Some solids are rough (like sandpaper or the bark of a Coconut tree), while others are smooth (like a polished marble floor or a plastic scale). This is caused by the microscopic "hills and valleys" on the surface of the matter. Rough surfaces create more friction, which is why we have rough treads on our bicycle tires to prevent slipping on wet Sri Lankan roads during the rainy season.
++1
+
+Texture and Light Interaction
+Some solids have the property of Lustre (shininess). Metals usually have a high lustre, meaning they reflect light well. Other solids are dull, like wood or charcoal. This property is vital for a RAG system to identify materials: if a student asks "What material should I use to make a mirror?", the system looks for solids with high lustre and smoothness.

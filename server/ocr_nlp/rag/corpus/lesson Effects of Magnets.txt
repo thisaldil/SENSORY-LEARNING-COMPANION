@@ -1,0 +1,54 @@
+Effects of Magnets
+Magnets are fascinating objects that can exert a force on certain materials without even touching them. This invisible force is known as magnetism.
+
+1. Attraction and Repulsion
+A magnet has two ends called poles: the North Pole (N) and the South Pole (S).
+
+Like Poles: When you bring two North poles or two South poles together, they push each other away. This is called repulsion.
+
+Unlike Poles: When you bring a North pole and a South pole together, they pull toward each other. This is called attraction.
+
+2. Magnetic vs. Non-Magnetic Materials
+Magnets do not stick to everything.
+
+Magnetic Materials: Materials that are attracted to magnets. Examples include iron, steel, nickel, and cobalt.
+
+Non-Magnetic Materials: Materials that are not attracted to magnets. Examples include wood, plastic, glass, copper, and aluminum.
+
+3. Acting Through Barriers
+Magnets can exert their force through non-magnetic barriers. For example, if you place a paperclip on a piece of paper and move a magnet underneath the paper, the paperclip will move.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of Magnetic Fields
+While we cannot see magnetism, we can see its "work." Every magnet is surrounded by an invisible area called a Magnetic Field. This is the space where the magnetic force can be felt. The field is strongest at the poles and gets weaker as you move away from the magnet. If you sprinkle iron filings around a bar magnet, they will arrange themselves in curved lines. These are called Magnetic Field Lines. They always travel from the North Pole to the South Pole.
+
+Different Shapes for Different Jobs
+Magnets come in many shapes, each designed for a specific purpose:
+
+Bar Magnets: Long, rectangular magnets often used in school laboratories.
+
+Horse-shoe Magnets: U-shaped magnets that bring both poles close together, creating a very strong pull in one spot.
+
+Cylindrical/Button Magnets: Small magnets found in toys or used to hold notes on a refrigerator.
+
+Ring Magnets: Used in loudspeakers and computer hard drives.
+
+The Earth as a Giant Magnet
+One of the most amazing effects of magnets is that our own planet behaves like one! The Earth has a core made of molten iron and nickel, which creates a massive magnetic field. This is why a magnetic compass works. The needle of a compass is a tiny magnet that aligns itself with the Earth's magnetic field, always pointing toward the Earth's North. This has helped sailors and explorers navigate the oceans for thousands of years.
+
+Magnetism and Electricity: A Close Friendship
+In the 1800s, scientists discovered that electricity and magnetism are linked. If you wrap a copper wire around an iron nail and connect it to a battery, the nail becomes a magnet! This is called an Electromagnet. Unlike permanent magnets (like the ones on your fridge), electromagnets can be turned on and off. This is used in massive cranes at ports to lift heavy scrap metal and then drop it just by switching off the power.
+
+The Domain Theory: Why are some things magnetic?
+Inside a piece of iron, there are tiny regions called domains. Usually, these domains point in all different directions, so they cancel each other out. But when a magnet comes close, it "encourages" all the domains to line up in the same direction. When they all point the same way, the whole piece of iron becomes a magnet! If you drop a magnet or heat it up very high, these domains get jumbled up again, and the magnet can lose its strength.
+
+Modern Applications in Sri Lanka
+Magnets are everywhere in modern life. They are used in:
+
+MRI Scanners: In hospitals, giant magnets are used to take pictures of the inside of the human body.
+
+Maglev Trains: Some high-speed trains in other countries use powerful magnets to "float" above the tracks, removing friction so they can travel incredibly fast.
+
+Credit Cards: The black strip on the back of a card uses tiny magnetic particles to store information.
+
+Speakers and Microphones: These use magnets to turn electrical signals into the sound vibrations we studied in the previous chapter.

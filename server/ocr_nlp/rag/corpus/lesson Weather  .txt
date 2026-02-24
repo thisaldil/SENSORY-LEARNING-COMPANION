@@ -1,0 +1,55 @@
+Weather
+Weather is the condition of the atmosphere at a specific place during a short period of time. Because the atmosphere is always moving, weather can change very quickly. You might notice that it is sunny in the morning in your village, but by the afternoon, it is raining heavily.
+
+1. Elements of Weather
+To describe the weather, scientists look at several key "elements":
+
+Temperature: How hot or cold the air is.
+
+Humidity: The amount of water vapor in the air (this makes us feel "sticky").
+
+Wind: The movement of air. We measure its speed and direction.
+
+Precipitation: Water falling from the sky in the form of rain, dew, or hail.
+
+Cloud Cover: How much of the sky is hidden by clouds.
+
+2. Weather Measuring Instruments
+To study the weather accurately, we use special tools:
+
+Thermometer: Measures air temperature.
+
+Rain Gauge: Measures the amount of rainfall in millimeters (mm).
+
+Anemometer: Measures the speed of the wind.
+
+Wind Vane: Shows the direction the wind is blowing from.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of Air Pressure
+One "invisible" element of weather is Air Pressure. Air may seem weightless, but it actually presses down on us. When air is warm, it rises, creating Low Pressure. This usually brings clouds and rain. When air is cool, it sinks, creating High Pressure, which usually brings clear, sunny skies. In Sri Lanka, sudden changes in air pressure over the Indian Ocean can lead to the formation of "depressions" or cyclones, which bring very windy and rainy weather to the island.
+
+How Clouds Form: The Invisible Ladder
+Weather is mostly about what water is doing in the sky. When the sun heats the ground, the air above it warms up and begins to rise like an invisible ladder. As it rises higher into the atmosphere, it cools down. The invisible water vapor in the air turns back into tiny water droplets—this is called condensation. Millions of these tiny droplets bunch together to form a cloud. When the droplets get too heavy for the air to hold them up, they fall as rain.
+
+Understanding Wind: The Great Balancer
+Wind exists because the Earth is heated unevenly. The sun hits the equator (near Sri Lanka) more directly than the poles. Warm air at the equator rises and moves toward the poles, while cold air from the poles moves in to take its place. This constant movement is what we feel as wind. In Sri Lanka, we have special winds called Monsoons.
+
+South-West Monsoon: Brings rain from May to September.
+
+North-East Monsoon: Brings rain from December to February.
+These winds are the most important part of our national weather because they provide the water for our electricity and our rice fields.
+
+The Difference Between Weather and Climate
+A common mistake is confusing weather with climate.
+
+Weather is what is happening right now or today (e.g., "It is raining in Kandy today").
+
+Climate is the average weather over a very long time, usually 30 years (e.g., "Nuwara Eliya has a cool climate").
+Think of it like this: Weather is your mood today (happy or sad), but Climate is your personality (usually calm or usually energetic).
+
+Humidity and Human Comfort
+In Sri Lanka, we often hear that the "humidity is high." Humidity is the amount of invisible gas (water vapor) in the air. When humidity is high, our sweat cannot evaporate easily into the air. Since evaporation is how our bodies cool down, high humidity makes us feel much hotter and "stuffier" than the actual temperature on the thermometer. This is why a 30°C day in a dry area like Vavuniya might feel more comfortable than a 30°C day in a humid area like Colombo.
+
+The Importance of Weather Forecasting
+Scientists who study the weather are called Meteorologists. In Sri Lanka, the Department of Meteorology uses satellites, radar, and weather stations across the country to predict what will happen next. This is called Weather Forecasting. Accurate forecasts save lives by warning fishermen not to go to sea during storms and helping farmers decide when to harvest their crops so the rain doesn't ruin the grain.

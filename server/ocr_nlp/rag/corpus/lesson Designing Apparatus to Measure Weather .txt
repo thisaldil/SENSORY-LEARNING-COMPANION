@@ -1,0 +1,48 @@
+In Grade 6 Science, you don't always need expensive equipment to study the atmosphere. You can be a scientist by designing your own apparatus (tools) using simple recycled materials. Building these tools helps you understand exactly how they work.
+
+1. Designing a Rain Gauge
+A rain gauge measures the amount of liquid precipitation over a set period.
+
+How to build it: You can use a plastic bottle with a flat bottom. Cut the top off and turn it upside down to act as a funnel. This prevents the water from evaporating. Use a ruler to mark measurements in millimeters (mm) on the side.
+
+Placement: It must be placed in an open area away from trees or buildings that might block the rain or cause extra water to drip into it.
+
+2. Designing a Wind Vane
+A wind vane is used to show the direction of the wind.
+
+How to build it: You can use a pencil, a drinking straw, and a piece of cardboard cut into an arrow shape. Balance the straw on a pin pushed into the pencil eraser.
+
+How it works: The large tail of the arrow catches the wind, causing the tip to point into the direction the wind is coming from. If the arrow points North, we call it a "North Wind."
+
+3. Designing an Anemometer
+An anemometer measures wind speed.
+
+How to build it: You can use four paper cups attached to two drinking straws in a cross shape. Poke a pin through the center of the straws and into a pencil eraser.
+
+How it works: As the wind blows, it catches the open part of the cups and makes the device spin. By counting how many times it spins in one minute, you can calculate how fast the wind is moving.
+
+Additional Knowledge for Enhanced Learning
+The Science of Calibration
+When you design your own apparatus, the most important step is calibration. This means making sure your tool gives accurate readings. For your rain gauge, if the bottle is curved at the bottom, your mm marks won't be accurate at the start. Scientists solve this by pouring a small amount of "leveling water" to reach the flat part of the bottle and marking that as "0." This ensures that every millimeter of rain you measure is exactly the same amount of water.
+
+Understanding Sensitivity in Design
+A good weather instrument must be sensitive. For a wind vane, if the pin is too tight or the straw is too heavy, the wind won't be strong enough to move it. When designing, engineers try to reduce friction. Using a smooth pin and a lightweight straw allows your wind vane to react even to a very light breeze. This is the same principle used in professional weather stations at the Colombo Observatory, though they use electronic sensors instead of cardboard!
+
+Standardization of Instruments
+To compare your data with a friend's, your designs must be similar. This is called Standardization. If your rain gauge is very wide and your friend's is very narrow, will they show the same height of water? Interestingly, yes! Because a wider bottle catches more rain but also has more area to fill, the height in millimeters stays the same. This is a fundamental rule of geometry that allows weather data to be shared worldwide.
+
+Using Technology: The Digital Transition
+While homemade tools are great for learning, modern weather study uses Digital Sensors. These use electronics to "feel" the weather.
+
+Digital Thermometers use a "thermistor" that changes its electrical resistance when it gets hot.
+
+Ultrasonic Anemometers use sound waves to measure wind speed without any moving parts at all!
+Learning to build manual tools first helps you understand the "logic" that these modern computers use to give us our daily weather reports.
+
+The Importance of Siting (Placement)
+The best-designed apparatus will give wrong data if it is placed in the wrong spot.
+
+Temperature: A thermometer in direct sunlight measures the heat of the sun hitting the glass, not the air temperature. It must be kept in the shade.
+
+Wind: An anemometer placed behind a wall will show "zero" wind even during a storm.
+Scientists use a Stevenson Screen—a white, wooden box with slats—to keep instruments in the shade and protected from rain while still letting the air flow through freely.

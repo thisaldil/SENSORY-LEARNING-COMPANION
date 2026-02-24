@@ -1,0 +1,49 @@
+Transmission of Light through Objects
+When light rays hit an object, they don't always behave the same way. Depending on the material the object is made of, light may pass through it, get partially blocked, or be stopped completely. We categorize objects into three groups based on how they transmit light:
+
+1. Transparent Objects
+These are materials that allow almost all the light hitting them to pass through. Because the light passes through clearly, we can see objects on the other side very distinctly.
+
+Examples: Clear glass, clean water, cellophane paper, and air.
+
+Application: We use transparent glass for spectacles and car windscreens so we can see clearly.
+
+2. Translucent Objects
+These materials allow only some light to pass through. The light is scattered as it passes, so we can see that there is something on the other side, but the image is blurred or not clear.
+
+Examples: Frosted glass, tissue paper, oiled paper, and some plastics.
+
+Application: These are used in bathroom windows to let light in while keeping privacy.
+
+3. Opaque Objects
+These materials do not allow any light to pass through them. Instead, they absorb or reflect the light. We cannot see anything through them.
+
+Examples: Wood, metals, bricks, cardboard, and stones.
+
+Application: We use opaque materials like bricks and wood to build the walls of our houses to block sunlight and provide privacy.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of Scattering: Why Translucent Objects are Blurry
+To understand the difference between transparent and translucent, we must look at how light "travels." In a transparent material, the particles are arranged so that light rays can travel in straight lines without hitting obstacles. However, in a translucent material, the internal structure is uneven. When light rays enter, they hit particles and "bounce" or scatter in many different directions. Because the rays are no longer straight, our eyes cannot form a sharp image. This is why you can see the "glow" of a flashlight through your hand, but you cannot see the bones inside!
+
+Shadow Formation and Opacity
+One of the most important results of opacity is the formation of shadows. Since light travels in straight lines and cannot pass through opaque objects, an area of darkness is created behind the object where the light has been blocked.
+
+Umbra: The darkest, central part of the shadow where the light source is completely blocked.
+
+Penumbra: The lighter, outer part of the shadow seen when the light source is large, where only some of the light is blocked.
+In Sri Lanka, we see this clearly when the sun (a light source) is blocked by a coconut tree (an opaque object), creating a cool, dark shadow on the ground.
+
+[Image showing the formation of a shadow with umbra and penumbra using an opaque sphere and a light source]
+
+The Role of Thickness and Color
+Whether an object is transparent or opaque can sometimes depend on its thickness. For example, a single sheet of clear water is transparent. However, if you look deep into the ocean, it becomes opaque because the huge volume of water eventually absorbs all the light. Similarly, a thin slice of wood might be slightly translucent if held up to a very strong light, but a thick plank is completely opaque. Color also plays a role; colored glass acts as a "filter," allowing only certain colors of light to pass through while blocking others.
+
+Light Transmission in Daily Technology
+Modern technology relies heavily on how light moves through materials. Fiber optic cables, which provide high-speed internet to many parts of Sri Lanka, use highly transparent glass threads. Light signals travel through these threads by bouncing off the "walls" of the glass. If the glass were even slightly translucent or opaque, the internet signal would fade away before reaching your home.
+
+Atmospheric Effects: Mist and Clouds
+Nature often changes the "transparency" of our environment. On a clear day, the air is transparent. However, on a misty morning in Nuwara Eliya, the tiny water droplets in the air turn the atmosphere translucent. You can see the headlights of a car coming toward you, but you cannot see the car itself until it gets very close. This is because the water droplets scatter the light rays, just like frosted glass.
+
+Photosynthesis and Transparency
+Plants have adapted to light transmission as well. The outer layer of a leaf (the epidermis) is transparent. This allows sunlight to pass through the outer "skin" of the leaf and reach the inner cells where photosynthesis takes place. If the surface of a leaf were opaque, the plant would not be able to make food and would die.

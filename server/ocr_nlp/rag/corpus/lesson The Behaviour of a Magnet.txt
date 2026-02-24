@@ -1,0 +1,27 @@
+The most famous behavior of a magnet is its ability to always point in a specific direction when it is allowed to move freely. If you hang a bar magnet by a thread so that it can swing without touching anything, it will eventually stop moving and point in a North-South direction. This happens because the Earth itself acts like a giant magnet. The end of the magnet that points toward the North is called the North Pole, and the end pointing South is called the South Pole. This consistent behavior is why magnets are used to make compasses for navigation.
++4
+
+Another key behavior is how magnets interact with each other, which is governed by the Law of Magnetism. This law states that "like poles" (North and North, or South and South) will always push each other away, a behavior called repulsion. On the other hand, "unlike poles" (North and South) will always pull toward each other, which is called attraction. This push and pull happens because of an invisible area around the magnet called the magnetic field. This field allows the magnet to exert force on objects even if they are not touching, proving that magnetism is a non-contact force.
++4
+
+Magnets also exhibit a behavior called magnetic induction. This means that a magnet can temporarily turn a plain piece of iron or steel into a magnet just by being near it. For example, if you touch a strong magnet to an iron nail, that nail can then pick up small paperclips. The nail has "induced" magnetism. However, once the main magnet is removed, the nail usually loses its magnetic power. This shows that the behavior of certain materials can be changed temporarily when they are inside a magnetic field.
++2
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of Magnetic Alignment
+The behavior of a magnet always pointing North-South is due to the Earth's magnetic core. Deep inside the Earth, moving liquid iron creates a magnetic field that stretches out into space. A freely suspended magnet acts like a tiny scout that follows these invisible magnetic lines. In Sri Lanka, which is located near the equator, this North-South alignment is very clear. This behavior is used not only by humans but also by animals. Some birds, sea turtles, and even bees have tiny magnetic particles in their bodies that act like built-in magnets, helping them migrate thousands of kilometers without getting lost.
++3
+
+Understanding Magnetic Force through Barriers
+A very interesting behavior of magnets is their ability to act through non-magnetic materials. If you place a magnet on one side of a wooden table and a set of pins on the other, the magnet can still move the pins. The magnetic force passes through "transparent" materials like glass, plastic, wood, and water. However, if you place a sheet of iron or steel between the magnet and the pins, the behavior changes. The iron sheet "soaks up" the magnetic field, blocking the force from reaching the pins. This is why sensitive electronic equipment is often kept in metal boxes to protect them from magnetic interference.
+
+The Behavior of "Breaking" a Magnet
+Many students wonder what happens to the behavior of a magnet if it is broken in half. You might think that one half would be North and the other would be South. However, the behavior of magnetism is such that every magnet must have two poles. If you snap a bar magnet in two, you instantly get two smaller, complete magnets, each with its own North and South pole. This happens because magnetism is a property of the tiny atoms inside the material. Each atom acts like a tiny magnet, and when they are all lined up, the whole object becomes a magnet. Breaking the object doesn't change the alignment of the atoms.
++3
+
+Demagnetization: Why Magnets Lose Their Power
+A magnet does not always behave perfectly. It can lose its magnetic properties through a process called demagnetization. If a magnet is heated to a very high temperature, the atoms inside start to vibrate violently and lose their organized alignment. Similarly, if a magnet is hammered or dropped repeatedly on a hard floor, the physical shock can jumble the atoms. Once the internal alignment is lost, the object stops behaving like a magnet and becomes just a regular piece of metal. This is why scientists and students must handle magnets with care.
++2
+
+How Shape Changes Magnetic Behavior
+The shape of a magnet changes how its force is distributed. In a bar magnet, the force is spread out, making it good for simple experiments. However, in a horseshoe magnet, the "U" shape brings the North and South poles very close together. This creates a much more concentrated and powerful magnetic field between the two ends. This specific design allows the magnet to lift much heavier loads than a bar magnet of the same size. Engineers use this knowledge to design powerful magnets for lifting scrap metal in factories or for use in high-speed Maglev trains.

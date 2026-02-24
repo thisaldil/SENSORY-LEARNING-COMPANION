@@ -1,0 +1,61 @@
+Based on the Grade 6 Science curriculum and expanded for a RAG architecture, here is the lesson on Types of Water based on Salinity. This text is designed for 11-year-old students and includes over 500 words of additional scientific context.
+
+3.3 Types of Water based on Salinity
+Salinity refers to the amount of salt dissolved in water. Not all water on Earth tastes the same or contains the same minerals. We categorize water into three main types based on its salt content:
++1
+
+1. Fresh Water
+This is water with a very low concentration of dissolved salts. It is the water we use for drinking, bathing, and irrigation.
+
+Sources: Rainwater, rivers, lakes, and most ground water.
+
+In Sri Lanka: Reservoirs (Tanks) like Parakrama Samudra contain fresh water.
+
+2. Marine Water (Salt Water)
+This is water with a high concentration of dissolved salts, primarily sodium chloride (table salt).
+
+Sources: Oceans and seas.
+
+Taste: It has a distinct salty taste and is not suitable for drinking or most farming.
+
+3. Brackish Water
+Brackish water has a salinity level between fresh water and marine water. It is "semi-salty."
+
+Locations: This usually occurs where fresh water from a river meets the salt water of the sea.
+
+Examples in Sri Lanka: Lagoons and estuaries, such as the Negombo Lagoon or Rekawa Lagoon.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Chemistry of Salt: Why is the Sea Salty?
+A common question for Grade 6 students is why rivers are fresh but the ocean is salty. The answer lies in the water cycle. As rain falls, it is slightly acidic and erodes rocks on land. This erosion releases ions (minerals), which are carried by rivers into the ocean. While rivers have a tiny amount of salt, the ocean has collected these minerals for billions of years. When the sun evaporates water from the ocean, only the "fresh" water turns into vapour, leaving the salt behind. Over time, the ocean becomes saltier and saltier.
++1
+
+Measuring Salinity: Parts Per Thousand (ppt)
+Scientists measure salinity by looking at how many grams of salt are in 1,000 grams (1 kilogram) of water.
+
+Fresh water usually has less than 0.5 ppt of salt.
+
+Marine water (like the Indian Ocean surrounding Sri Lanka) has an average salinity of about 35 ppt.
+
+Brackish water can range anywhere from 0.5 to 30 ppt.
+Knowing these measurements is important for scientists (Hydrologists) to determine which plants and animals can survive in a specific water body.
+
+Adaptation: Survival in Different Salinity
+Organisms have special "characteristics" (as learned in Chapter 1) to survive their specific water type:
+
+Freshwater fish: Their bodies are designed to keep salt in and pump excess water out. If you put a freshwater fish in the ocean, it would lose too much body water and die.
+
+Marine fish: They drink a lot of seawater and have special cells in their gills to pump the extra salt out of their bodies.
+
+Mangroves (The Brackish Water Specialists): Sri Lanka is famous for its mangrove forests. These trees grow in brackish water. They have special roots that can filter out salt, and some even "sweat" salt out through their leaves!
++2
+
+Density and Floating: The "Heavy" Water
+Salinity changes the physical properties of water. Salt water is denser (heavier) than fresh water. This is why it is easier to float in the sea than in a swimming pool. Because salt water is denser, when a river meets the sea, the fresh water often floats on top of the saltier water for a while before they mix to become brackish. This layering is very important for the tiny organisms (plankton) that live in Sri Lankan lagoons.
++1
+
+The Importance of Brackish Water Ecosystems
+Lagoons and estuaries are often called "nature's nurseries." Many species of fish and prawns that live in the deep ocean travel into the brackish waters of Sri Lanka's lagoons to lay their eggs. The brackish water provides a safe, nutrient-rich environment for the babies to grow before they head back to the saltier sea. Protecting these areas from pollution is vital for the fishing industry in our country.
+
+Human Impact: Salinization
+Sometimes, human activity can make fresh water salty, which is a big problem. In the coastal areas of Sri Lanka, if we pump too much ground water from wells, the salt water from the sea can seep into the ground to take its place. This is called saltwater intrusion. Once a well becomes "saline," it can no longer be used for drinking or for watering crops like coconut or paddy, making it a major challenge for farmers in the dry zone.

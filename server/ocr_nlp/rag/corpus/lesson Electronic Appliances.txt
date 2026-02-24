@@ -1,0 +1,43 @@
+Electronic Appliances
+In our previous lessons, we looked at electrical appliances like bulbs and kettles. However, there is a special group of devices called Electronic Appliances. While these also run on electricity, they use it in a much more precise way to process information, sound, and images.
+
+1. Common Electronic Appliances
+Radio and Television: These turn electrical signals into sound and moving pictures.
+
+Mobile Phones and Computers: These process vast amounts of data and allow us to communicate.
+
+Calculators: These use electronics to perform mathematical tasks instantly.
+
+Digital Clocks: Unlike mechanical clocks, these use electronic pulses to keep time.
+
+2. Components of Electronic Appliances
+Electronic devices are filled with very small components. Unlike a simple bulb, these parts are often mounted on a green or blue board called a Printed Circuit Board (PCB).
+
+LED (Light Emitting Diode): Small lights often found as "indicators" on TVs or remote controls.
+
+Resistors: Used to control the amount of electricity flowing through the device.
+
+Transistors: Act like tiny switches that can turn on and off millions of times per second.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Difference: Electrical vs. Electronic
+It is important to understand the difference between these two.
+
+Electrical Appliances generally convert electricity into heat, light, or motion. Examples include an electric iron (heat), a light bulb (light), or a ceiling fan (motion). They use a lot of power and have simple circuits.
+
+Electronic Appliances use electricity to process and transmit information. They usually operate on much lower voltages and use specialized components like semi-conductors. While a toaster (electrical) just gets hot, a smartphone (electronic) can "think," remember your photos, and connect to the internet.
+
+The Power Source: AC vs. DC
+Most electronic appliances are very sensitive. The electricity that comes from the wall sockets in Sri Lankan homes is AC (Alternating Current). However, most electronic parts—like the ones inside your laptop—need DC (Direct Current), which is the steady flow you get from a battery. This is why many electronic devices have a "power brick" or an adapter. This adapter converts the high-voltage AC from the wall into low-voltage DC that the electronic components can handle safely.
+
+The Marvel of the LED
+One of the most common electronic components we see in Sri Lanka is the LED. Unlike the old filament bulbs that get very hot, LEDs are electronic components that produce "cold" light. They are incredibly efficient and can last for many years. In your school or home, you might see small red or green LEDs on the front of the TV to tell you if it is on "standby" mode. Because they use so little power, they are perfect for electronic devices.
+
+Semi-conductors: The Brain of Electronics
+The "magic" material behind all electronic appliances is the Semi-conductor, usually made from Silicon. A semi-conductor is a material that is neither a perfect conductor (like copper) nor a perfect insulator (like plastic). Scientists can "tune" it to conduct electricity only under certain conditions. This allows us to create Integrated Circuits (ICs) or "chips." These tiny chips are the "brains" inside your computer or microwave oven.
+
+The Importance of E-Waste Management
+Because electronic appliances contain complex parts and chemicals (like lead, mercury, and lithium), they should not be thrown away with normal household garbage. When a phone or a radio breaks, it becomes E-waste (Electronic Waste). In Sri Lanka, there are special collection centers for E-waste. Recycling these items allows us to recover valuable metals like gold and copper and prevents toxic chemicals from leaking into our soil and water.
+
+Evolution of Appliances
+Electronic technology is always changing. In the past, a radio was as big as a suitcase and used "vacuum tubes." Today, thanks to micro-electronics, a radio is just a tiny part of a mobile phone that fits in your pocket. This process of making things smaller is called miniaturization, and it is the reason why modern electronic appliances are so powerful yet so small.

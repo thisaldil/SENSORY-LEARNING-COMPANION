@@ -1,0 +1,88 @@
+In our daily lives, we use various types of matter. These can be grouped into three main categories based on their physical state: Solid, Liquid, and Gas.
++2
+
+1. Solids
+Solids are materials that do not change their shape easily.
+
+Definite Shape: A solid has a shape of its own. If you put a stone in a cup, it stays the same shape.
+
+
+Definite Volume: A solid occupies a specific amount of space that doesn't change.
+
+
+Examples: Firewood, bricks, stones, pens, and jaggery.
++4
+
+2. Liquids
+Liquids can flow and change their shape depending on where they are placed.
+
+
+No Definite Shape: Liquids take the shape of the container they are in.
+
+Definite Volume: Even if the shape changes, the amount (volume) of the liquid stays the same. 25 ml of water is still 25 ml whether it is in a tall glass or a flat dish.
++1
+
+
+Examples: Kerosene, water, coconut oil, and milk.
++4
+
+3. Gases
+Gases are often invisible and spread out to fill any space available to them.
++1
+
+
+No Definite Shape: Gases do not have a shape of their own.
++2
+
+
+No Definite Volume: Gases do not have a fixed volume; they spread throughout the entire container they are placed in.
+
+
+Examples: L.P. gas, air, oxygen, and water vapour.
++3
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Particle Theory: Seeing the Invisible
+To understand why solids, liquids, and gases behave differently, we have to look at the tiny particles they are made of. Imagine these particles are like students in a school:
+
+In a Solid, the particles are like students sitting tightly packed in a row during an assembly. They are so close together that they can only vibrate in place. This is why solids keep their shape and are hard to squash.
+
+In a Liquid, the particles are like students moving around in the playground during recess. They stay close to each other but can slide past one another. This "sliding" is why liquids can flow and take the shape of a bottle.
+
+In a Gas, the particles are like students running as fast as they can in every direction. They are very far apart and move independently. This explains why gases fill up a whole room and can be easily compressed (squashed).
+
+Changing States: The Role of Heat
+Matter doesn't always stay in one state. By adding or removing heat, we can cause a Change of State.
+
+
+Melting: Adding heat to a solid (like ice) turns it into a liquid (water).
+
+
+Evaporation: Adding more heat to a liquid turns it into a gas (water vapour).
+
+Condensation: Removing heat from a gas (cooling it) turns it back into a liquid. You see this when water droplets form on the outside of a cold ginger beer bottle.
+
+Freezing: Removing even more heat from a liquid turns it back into a solid.
+
+In Sri Lanka, we see these changes often. When it rains, water vapour in the clouds cools down and turns into liquid water. High in the mountains like Horton Plains, it can get cold enough for water to almost reach its freezing point as frost.
+
+Measuring States: Mass and Volume in the Lab
+While we can see the shape of a solid, measuring liquids and gases requires special tools. In a science lab, we use a measuring cylinder to find the volume of a liquid. Because the surface of water curves (called a meniscus), you must always take the reading from the lowest point of that curve at eye level to be accurate.
++1
+
+Measuring the mass of a gas is more tricky because it is so light. However, using a "Triple Beam Balance" or a sensitive electronic scale, you can weigh a deflated balloon and then weigh it again after it is blown up. The small difference in weight is the mass of the air inside!.
++2
+
+Unique Properties: The Anomaly of Water
+Water is one of the few substances on Earth that we regularly see in all three states: as solid ice, liquid drinking water, and gaseous water vapour. Most substances get smaller (contract) when they freeze, but water is special—it expands when it turns into ice. This is why a glass bottle filled with water might crack if you put it in the freezer.
+
+Applications in Daily Life
+Understanding these states helps us every day:
+
+
+Compressed Gases: Because gases have no definite volume, we can squash a lot of L.P. gas into a metal cylinder to use for cooking in our kitchens.
++1
+
+Construction: We use solids like cement and steel for buildings because their definite shape and volume provide strength.
+
+Lubrication: We use liquids like coconut oil or engine oil because they can flow into the tiny gaps between moving parts of a machine to stop them from rubbing together.

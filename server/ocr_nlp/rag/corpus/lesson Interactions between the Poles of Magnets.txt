@@ -1,0 +1,42 @@
+Interactions between the Poles of Magnets
+Magnets do not just sit still when they are near each other; they exert a force that can either pull them together or push them apart. This interaction depends entirely on which poles are facing each other.
+
+1. The Law of Attraction
+When you bring two unlike poles together, they exert a pulling force on each other. This means a North Pole (N) and a South Pole (S) will move toward each other and stick together. This behavior is called attraction.
+
+2. The Law of Repulsion
+When you bring two like poles together, they exert a pushing force on each other.
+
+A North Pole (N) will push away another North Pole (N).
+
+A South Pole (S) will push away another South Pole (S).
+This behavior is called repulsion. You can actually feel this force as a "cushion" of invisible resistance when you try to force two like poles to touch.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Science of Magnetic Field Lines
+To understand why poles interact this way, we have to look at the invisible magnetic field lines. These lines are like invisible streams of energy that flow out of the North Pole and loop back into the South Pole.
+
+When a North and South pole are near each other, the field lines from the North pole can go directly into the nearby South pole, acting like a stretched rubber band that pulls the two magnets together.
+
+When two North poles face each other, the lines from both poles are trying to push "outward." Since they cannot enter each other, they clash and push against one another, resulting in repulsion.
+
+Magnetism as a Non-Contact Force
+Interactions between poles are special because they are a non-contact force. Most forces, like pushing a chair or pulling a door, require you to touch the object. However, magnets can interact over a distance. This is why a magnet can pull a paperclip across a table or push another magnet without ever making physical contact. The strength of this interaction depends on the distance; the closer the poles are, the stronger the attraction or repulsion will be.
+
+Experimental Evidence: The Floating Magnets
+In Sri Lankan classrooms, a common way to see these interactions is the "Floating Magnet" experiment. If you place several ring magnets through a vertical wooden pencil or plastic rod, you can make them "float" in the air. This happens by arranging the magnets so that like poles face each other. The repulsion force between the North poles (or South poles) is strong enough to overcome gravity, pushing the top magnet upward so it appears to hang in mid-air.
+
+Applications of Magnetic Interactions
+The push and pull of magnetic poles is used in many modern inventions:
+
+Magnetic Door Catches: Many cupboards in our homes stay closed because a magnet on the door is attracted to a metal plate (which becomes a temporary pole) on the cupboard frame.
+
+Maglev Trains: "Maglev" stands for Magnetic Levitation. These trains use the principle of repulsion to lift the entire train off the tracks and attraction to pull it forward at high speeds. Because the train is floating, there is no friction, allowing it to go much faster than a normal train in Sri Lanka.
+
+Electric Motors: Inside a fan or a toy car, magnets are placed so that their poles keep pushing and pulling against each other. This constant interaction creates the spinning motion that turns the blades of the fan.
+
+Magnetic Induction and Pole Interaction
+Interactions can also happen with non-magnetic objects through a process called induction. If you bring the North pole of a magnet near an iron nail, the magnet "induces" a South pole at the tip of the nail. Because North and South are unlike poles, they attract. This is why magnets can pick up iron, steel, nickel, and cobalt objects—they turn them into temporary magnets with an opposite pole facing the permanent magnet.
+
+Testing for Magnetism: Repulsion is the Key
+If you have a metal bar and you want to know if it is a permanent magnet, attraction is not enough to prove it. A magnet will attract any piece of iron. However, repulsion only happens between two permanent magnets. If one end of your magnet pushes the metal bar away, you can be 100% sure that the bar is also a magnet. Scientists say that "Repulsion is the surest test for magnetism."
