@@ -1,0 +1,41 @@
+Food Related Interactions: Food Webs
+In nature, a single animal rarely eats only one type of food. For example, a snake doesn't just eat frogs; it might also eat small birds or rats. Similarly, a frog might be eaten by a snake, a crow, or a water bird. When we connect all the overlapping food chains in an environment, we create a Food Web.
+
+1. What is a Food Web?
+A Food Web is a network of many interconnected food chains. It represents the "who eats whom" in an entire ecosystem, such as a garden, a forest, or a pond.
+
+2. Components of a Food Web
+Producers: These are always at the base. They are the green plants that produce food using sunlight (Photosynthesis).
+
+Consumers: Animals that eat plants or other animals.
+
+Primary Consumers: Herbivores (like grasshoppers or rabbits) that eat the producers.
+
+Secondary Consumers: Carnivores (like frogs) that eat the herbivores.
+
+Tertiary Consumers: Predators at the top (like eagles or leopards) that eat other carnivores.
+
+Additional Knowledge for Enhanced Learning (500+ Words)
+The Complexity of Balance
+A food web is much more stable than a single food chain. In a simple food chain, if one species disappears, every animal "above" it might starve. However, in a Food Web, animals have choices. If the population of rats in a paddy field decreases, a snake can switch to eating more frogs or lizards. This flexibility keeps the ecosystem balanced. This is a vital concept in Sri Lankan agriculture; if we kill all the spiders in a field using chemicals, the food web is broken, and the insect pests they used to eat will increase and destroy our crops.
+
+Energy Transfer: The 10% Rule
+When one organism eats another, it doesn't get all the energy that the other organism had. Most of the energy is lost as heat or used up by the animal to move, breathe, and grow. Scientists estimate that only about 10% of the energy is passed on to the next level. This is why a food web usually has many plants and insects but only a very small number of top predators like leopards or eagles. There simply isn't enough energy to support a large number of "kings of the jungle."
+
+Keystone Species in Sri Lankan Ecosystems
+In every food web, there is usually one species that is extra important. We call this a Keystone Species. For example, in a Sri Lankan forest, the Elephant is a keystone species. By eating trees and clearing paths, elephants create space for smaller plants to grow and provide dung that feeds beetles and fertilizes the soil. If the elephant is removed from the food web, many other plants and animals are affected, even if they don't eat the elephant!
+
+Decomposers: The Recyclers
+A food web is never truly complete without Decomposers like fungi and bacteria. When plants and animals die, these organisms break down the dead matter and return the nutrients to the soil. These nutrients are then taken up by the roots of plants to start the cycle all over again. Without decomposers, the forest floor would be piled high with dead leaves and wood, and the plants would run out of "food" to grow.
+
+Trophic Levels and Bioaccumulation
+Each "step" in a food web is called a Trophic Level. An interesting and dangerous effect of food webs is Bioaccumulation. If a farmer uses a poisonous pesticide on grass, a grasshopper eats a little bit of it. Then a frog eats many grasshoppers, and a bird eats many frogs. The poison becomes more and more concentrated as it moves up the food web. By the time it reaches the top predator (or humans eating fish from a polluted lake), the poison level can be very high and dangerous.
+
+Human Impact on Food Webs
+Humans often disrupt food webs without realizing it.
+
+Overfishing: Removing too many small fish from the ocean near Sri Lanka leaves larger fish and sea birds with nothing to eat.
+
+Deforestation: Cutting down trees removes the "Producers" which are the foundation of the entire web.
+
+Invasive Species: Bringing in foreign animals (like the Apple Snail) can disrupt local food webs because the new animals might not have any natural predators to keep their numbers in check.

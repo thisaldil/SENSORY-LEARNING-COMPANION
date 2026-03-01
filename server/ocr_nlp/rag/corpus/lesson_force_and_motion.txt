@@ -9,3 +9,4 @@ Newton’s three laws of motion provide the framework for understanding how forc
 . This means that heavier objects require more force to accelerate. The third law highlights that every action has an equal and opposite reaction, which is why rockets propel forward when gases are expelled backward.
 
 In everyday life, forces and motion are everywhere. Friction allows us to walk without slipping, gravity keeps us grounded, and applied forces let us push doors open or ride bicycles. Understanding these principles not only explains natural phenomena but also helps engineers design vehicles, buildings, and technologies that work safely and efficiently.
+examples for force, an apple falls from a tree

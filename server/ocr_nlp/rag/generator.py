@@ -1,3 +1,4 @@
+import json
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
@@ -8,23 +9,20 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
 print("Model loaded.")
 
+
 def generate_response(query, context_chunks):
     """
     Generate structured educational response
-    using retrieved curriculum context.
+    and safely convert into JSON format.
     """
 
     context = "\n\n".join(context_chunks)
 
     prompt = f"""
-You are an educational assistant for Grade 6 Science students.
+You are a Grade 6 Science teacher.
 
-Use ONLY the context provided below to answer the question.
-Explain in simple language.
-Provide:
-- Definition
-- Simple Example
-- Short Narration Script (2-3 sentences)
+Explain the following question in simple language
+using only the information provided.
 
 Context:
 {context}
@@ -32,7 +30,11 @@ Context:
 Question:
 {query}
 
-Answer:
+Write clearly in this format:
+
+Definition:
+Example:
+Narration:
 """
 
     inputs = tokenizer(
@@ -46,9 +48,34 @@ Answer:
         outputs = model.generate(
             **inputs,
             max_new_tokens=250,
-            temperature=0.3
+            do_sample=False
         )
 
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    response_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-    return response
+    print("RAW MODEL OUTPUT:")
+    print(response_text)
+
+    # Manual parsing instead of strict JSON parsing
+    definition = ""
+    example = ""
+    narration = ""
+
+    try:
+        parts = response_text.split("Example:")
+        if len(parts) > 1:
+            definition_part = parts[0].replace("Definition:", "").strip()
+            example_part = parts[1].split("Narration:")[0].strip()
+            narration_part = parts[1].split("Narration:")[1].strip()
+
+            definition = definition_part
+            example = example_part
+            narration = narration_part
+    except:
+        definition = response_text
+
+    return {
+        "definition": definition,
+        "example": example,
+        "narration_script": narration
+    }

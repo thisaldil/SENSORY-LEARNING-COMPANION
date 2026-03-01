@@ -1,4 +1,5 @@
 import os
+import json
 from ocr_nlp.rag.retriever import build_vector_store, retrieve_context
 from ocr_nlp.rag.generator import generate_response
 
@@ -16,15 +17,18 @@ while True:
     if query.lower() == "exit":
         break
 
-    context = retrieve_context(store, query)
+    # Retrieve relevant curriculum chunks
+    context = retrieve_context(store, query)[:2]
+    context = [chunk[:800] for chunk in context]
 
     print("\nRetrieved Context:")
     for i, chunk in enumerate(context, 1):
         print(f"\n--- Chunk {i} ---")
         print(chunk[:300])
 
-    print("\nGenerating Answer...")
-    answer = generate_response(query, context)
+    print("\nGenerating Structured JSON Answer...")
 
-    print("\n===== Final Answer =====\n")
-    print(answer)
+    rag_output = generate_response(query, context)
+
+    print("\n===== Structured JSON Output =====\n")
+    print(json.dumps(rag_output, indent=2))
