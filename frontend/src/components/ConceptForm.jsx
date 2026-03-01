@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { fetchAnimation } from "../services/api";
 
-export default function ConceptForm({ onScriptLoaded }) {
+export default function ConceptForm({ onSceneLoaded }) {
   const [concept, setConcept] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!concept.trim()) return;
-    setLoading(true);
 
+    setLoading(true);
     try {
       const data = await fetchAnimation(concept.trim());
-      onScriptLoaded(data.script); // send JS script to canvas
+      onSceneLoaded(data.scene);
     } catch (err) {
       alert("Failed to load animation.");
     } finally {
@@ -28,7 +28,7 @@ export default function ConceptForm({ onScriptLoaded }) {
           type="text"
           value={concept}
           onChange={(e) => setConcept(e.target.value)}
-          placeholder="e.g., photosynthesis"
+          placeholder="e.g., photosynthesis / water cycle / day and night"
           className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <button
@@ -36,7 +36,7 @@ export default function ConceptForm({ onScriptLoaded }) {
           disabled={loading}
           className="bg-blue-500 text-white py-2 rounded hover:bg-blue-600 disabled:opacity-50"
         >
-          {loading ? "Loading..." : "Generate Animation"}
+          {loading ? "Loading..." : "Generate Visualization"}
         </button>
       </form>
     </div>

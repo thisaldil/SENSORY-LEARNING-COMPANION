@@ -6,3 +6,5 @@ torch
 sentencepiece
 # optionally:
 # bitsandbytes
+python-dotenv==1.0.1
+groq==0.12.0

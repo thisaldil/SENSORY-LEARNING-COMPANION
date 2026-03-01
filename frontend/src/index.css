@@ -1,16 +1,2 @@
-/* @tailwind base;
-@tailwind components; */
-@tailwind utilities;
-
-
-/* body {
-  background: #f5f8ff;
-  font-family: sans-serif;
-} */
-
-
 @import "tailwindcss";
-
-body {
-  margin: 0;
-}
+body { margin: 0; }

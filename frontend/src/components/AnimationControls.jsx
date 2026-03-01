@@ -7,8 +7,7 @@ export default function AnimationControls({
   onSpeedChange,
 }) {
   return (
-    <div className="flex flex-wrap items-center gap-4 p-4 bg-white border rounded-xl shadow-sm">
-      {/* Play / Pause */}
+    <div className="flex flex-wrap items-center gap-4 p-3 bg-white border rounded-xl shadow-sm">
       <button
         onClick={isPlaying ? onPause : onPlay}
         className={`px-4 py-2 rounded-lg text-white font-semibold transition
@@ -17,7 +16,6 @@ export default function AnimationControls({
         {isPlaying ? "⏸ Pause" : "▶ Play"}
       </button>
 
-      {/* Reset */}
       <button
         onClick={onReset}
         className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 border font-semibold"
@@ -25,8 +23,7 @@ export default function AnimationControls({
         ↻ Reset
       </button>
 
-      {/* Speed */}
-      <div className="flex items-center gap-3 ml-4">
+      <div className="flex items-center gap-3 ml-2">
         <span className="text-sm text-gray-600">Speed</span>
         <input
           type="range"
@@ -35,7 +32,7 @@ export default function AnimationControls({
           step="0.25"
           value={speed}
           onChange={(e) => onSpeedChange(parseFloat(e.target.value))}
-          className="w-32"
+          className="w-40"
         />
         <span className="text-sm font-medium">{speed}x</span>
       </div>

@@ -1,173 +1,65 @@
 import os
-import json
 import re
-from groq import Groq
 from dotenv import load_dotenv
+from scenes import SCENES
 
 load_dotenv()
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+# If you want optional AI routing, keep Groq enabled.
+USE_AI_ROUTER = os.getenv("USE_AI_ROUTER", "false").lower() == "true"
 MODEL = os.getenv("MODEL_ID", "llama-3.3-70b-versatile")
 
-SYLLABUS_MAP = {
-    "solar system": "space",
-    "sun": "space",
-    "earth": "space",
-    "moon": "space",
-    "day and night": "space",
-    "plant": "plants",
-    "photosynthesis": "plants",
-    "leaf": "plants",
-    "root": "plants",
-    "human": "humans",
-    "animal": "humans",
-    "body": "humans",
-    "breathing": "humans",
-    "matter": "matter",
-    "solid": "matter",
-    "liquid": "matter",
-    "gas": "matter",
-    "light": "energy",
-    "heat": "energy",
-    "sound": "energy",
-    "gravity": "energy",
-    "water cycle": "environment",
-    "rain": "environment",
-    "cloud": "environment",
-    "magnet": "physics",
-    "force": "physics",
-    "motion": "physics",
-}
-
-PROMPTS = {
-    "space": "sun and planets moving slowly",
-    "plants": "plant receiving sunlight",
-    "humans": "simple human body parts",
-    "matter": "solid liquid gas comparison",
-    "energy": "light or heat rays",
-    "environment": "water cycle process",
-    "physics": "objects showing motion or force",
-    "fallback": "simple rotating object",
-}
+SYLLABUS_KEYWORDS = [
+    # SPACE
+    ("day and night", "day_and_night"),
+    ("rotation", "day_and_night"),
+    ("solar system", "solar_system_basic"),
+    ("planets", "solar_system_basic"),
+    ("sun", "solar_system_basic"),
+    # PLANTS
+    ("photosynthesis", "photosynthesis"),
+    ("leaf", "photosynthesis"),
+    ("plants", "photosynthesis"),
+    # ENVIRONMENT
+    ("water cycle", "water_cycle"),
+    ("evaporation", "water_cycle"),
+    ("condensation", "water_cycle"),
+    ("precipitation", "water_cycle"),
+    ("rain", "water_cycle"),
+    ("cloud", "water_cycle"),
+    # MATTER
+    ("matter", "states_of_matter"),
+    ("solid", "states_of_matter"),
+    ("liquid", "states_of_matter"),
+    ("gas", "states_of_matter"),
+    ("states of matter", "states_of_matter"),
+    # PHYSICS
+    ("force", "forces_motion"),
+    ("motion", "forces_motion"),
+    ("push", "forces_motion"),
+    ("pull", "forces_motion"),
+]
 
 
-def extract_json(text):
-    try:
-        return json.loads(text)
-    except:
-        match = re.search(r"\[.*\]", text, re.S)
-        if match:
-            return json.loads(match.group())
-        return []
+def normalize(text: str) -> str:
+    text = text.lower().strip()
+    text = re.sub(r"\s+", " ", text)
+    return text
 
 
-def json_to_three(objects):
-    code = []
-
-    for idx, o in enumerate(objects):
-        geo = o.get("geometry", "box")
-        size = o.get("size", [2, 2, 2])
-        pos = o.get("position", [0, 0, 0])
-        color = o.get("color", "#ffaa00")
-        anim = o.get("animation", {"rotate": 0.01})
-
-        if geo == "sphere":
-            geometry = f"new THREE.SphereGeometry({size[0]}, 32, 32)"
-        else:
-            geometry = f"new THREE.BoxGeometry({size[0]}, {size[1]}, {size[2]})"
-
-        var_name = f"mesh_{idx}"
-
-        code.append(
-            f"""
-const {var_name} = new THREE.Mesh(
-  {geometry},
-  new THREE.MeshStandardMaterial({{ color: '{color}' }})
-);
-{var_name}.position.set({pos[0]}, {pos[1]}, {pos[2]});
-{var_name}.userData = {json.dumps(anim)};
-scene.add({var_name});
-animatedObjects.push({var_name});
-"""
-        )
-
-    return "\n".join(code)
+def pick_scene_id(concept: str) -> str:
+    t = normalize(concept)
+    for kw, scene_id in SYLLABUS_KEYWORDS:
+        if kw in t:
+            return scene_id
+    return "photosynthesis"  # friendly default for Grade 6
 
 
-def generate_js_for_concept(user_text):
-    text = user_text.lower()
-    category = "fallback"
+def generate_scene(concept: str) -> dict:
+    scene_id = pick_scene_id(concept)
+    scene = SCENES.get(scene_id)
 
-    for key in SYLLABUS_MAP:
-        if key in text:
-            category = SYLLABUS_MAP[key]
-            break
-
-    prompt = f"""
-Return ONLY a JSON array.
-
-Each object:
-{{
-  "geometry": "sphere or box",
-  "size": [x, y, z],
-  "position": [x, y, z],
-  "color": "#hex",
-  "animation": {{ "rotate": 0.01 }}
-}}
-
-Create: {PROMPTS[category]}
-"""
-
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.1,
-        max_tokens=600,
-    )
-
-    objects = extract_json(response.choices[0].message.content)
-    generated = json_to_three(objects)
-
-    # ✅ NO import/export here
-    return f"""
-function dynamicAnimation(containerId) {{
-  const container = document.getElementById(containerId);
-  container.innerHTML = '';
-
-  const renderer = new THREE.WebGLRenderer({{ antialias: true }});
-  renderer.setSize(container.clientWidth, container.clientHeight);
-  container.appendChild(renderer.domElement);
-
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x87ceeb);
-
-  const camera = new THREE.PerspectiveCamera(
-    60,
-    container.clientWidth / container.clientHeight,
-    0.1,
-    1000
-  );
-  camera.position.z = 30;
-
-  const controls = new OrbitControls(camera, renderer.domElement);
-
-  scene.add(new THREE.AmbientLight(0xffffff, 0.6));
-  const light = new THREE.PointLight(0xffffff, 1);
-  light.position.set(10, 20, 10);
-  scene.add(light);
-
-  const animatedObjects = [];
-
-  {generated}
-
-  function animate() {{
-    requestAnimationFrame(animate);
-    animatedObjects.forEach(o => {{
-      if (o.userData.rotate) o.rotation.y += o.userData.rotate;
-    }});
-    renderer.render(scene, camera);
-  }}
-
-  animate();
-}}
-"""
+    # Always return a known-good scene (best visuals).
+    # Later you can add AI to tweak labels or add extra arrows,
+    # but KEEP the renderer stable.
+    return {"concept": concept, "sceneId": scene_id, "scene": scene}
