@@ -1,0 +1,18 @@
+cd backend
+npm start
+
+cd python_service
+python app.py
+
+cd frontend
+npm run dev
+
+MongoDB
+light rays , light beams
+
+prebuilt
+spinning cube, solar system
+
+generated
+photosynthesis process
+

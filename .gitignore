@@ -43,3 +43,31 @@ coverage/
 # --- Misc ---
 *.swp
 *.swo
+
+# --- Python ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Poetry
+poetry.lock
+
+# mypy
+.mypy_cache/
+
+# pipenv
+Pipfile.lock
+
