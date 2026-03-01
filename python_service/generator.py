@@ -64,9 +64,9 @@ def extract_json(text):
 def json_to_three(objects):
     code = []
 
-    for o in objects:
+    for idx, o in enumerate(objects):
         geo = o.get("geometry", "box")
-        size = o.get("size", [1, 1, 1])
+        size = o.get("size", [2, 2, 2])
         pos = o.get("position", [0, 0, 0])
         color = o.get("color", "#ffaa00")
         anim = o.get("animation", {"rotate": 0.01})
@@ -76,16 +76,18 @@ def json_to_three(objects):
         else:
             geometry = f"new THREE.BoxGeometry({size[0]}, {size[1]}, {size[2]})"
 
+        var_name = f"mesh_{idx}"
+
         code.append(
             f"""
-const mesh = new THREE.Mesh(
+const {var_name} = new THREE.Mesh(
   {geometry},
   new THREE.MeshStandardMaterial({{ color: '{color}' }})
 );
-mesh.position.set({pos[0]}, {pos[1]}, {pos[2]});
-mesh.userData = {json.dumps(anim)};
-scene.add(mesh);
-animatedObjects.push(mesh);
+{var_name}.position.set({pos[0]}, {pos[1]}, {pos[2]});
+{var_name}.userData = {json.dumps(anim)};
+scene.add({var_name});
+animatedObjects.push({var_name});
 """
         )
 
@@ -126,11 +128,9 @@ Create: {PROMPTS[category]}
     objects = extract_json(response.choices[0].message.content)
     generated = json_to_three(objects)
 
+    # ✅ NO import/export here
     return f"""
-import * as THREE from 'three';
-import {{ OrbitControls }} from 'three/examples/jsm/controls/OrbitControls.js';
-
-export function dynamicAnimation(containerId) {{
+function dynamicAnimation(containerId) {{
   const container = document.getElementById(containerId);
   container.innerHTML = '';
 
