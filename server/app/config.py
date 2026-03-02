@@ -1,7 +1,7 @@
 """
 Application Configuration
 """
-from pydantic import field_validator, model_validator
+from pydantic import AliasChoices, Field, field_validator, model_validator
 from pydantic_settings import BaseSettings
 from typing import List
 
@@ -62,10 +62,23 @@ class Settings(BaseSettings):
     # ML Models
     ML_MODELS_DIR: str = "app/ml/models"
 
+    # Visual Learning Platform (animation script generation) – Gemini
+    # Accepts GEMINI_API_KEY or Gemini_API_Key from .env
+    GEMINI_API_KEY: str = Field(
+        default="",
+        validation_alias=AliasChoices("GEMINI_API_KEY", "Gemini_API_Key"),
+    )
+    GEMINI_MODEL: str = "gemini-2.0-flash"
+    # MongoDB for animation cache (can be same server, different DB)
+    MONGODB_VISUAL_DB_NAME: str = "visualScience"
+
     class Config:
         env_file = ".env"
         case_sensitive = True
-        # Ignore system environment variables that conflict
+        # Allow env var Gemini_API_Key to populate GEMINI_API_KEY
+        populate_by_name = True
+        # Ignore other extra env vars so Gemini_API_Key is not rejected
+        extra = "ignore"
         env_ignore_empty = True
 
 

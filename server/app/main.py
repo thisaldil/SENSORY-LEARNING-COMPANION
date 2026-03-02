@@ -88,17 +88,18 @@ async def root():
 
 @app.get("/health")
 async def health_check():
-    """Health check endpoint"""
-    return {"status": "healthy"}
+    """Health check endpoint (liveness/readiness)."""
+    return {"status": "ok"}
 
 
 # Include routers
-from app.api import auth, users, quizzes, lessons, activities
+from app.api import auth, users, quizzes, lessons, activities, animation
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
 app.include_router(quizzes.router, prefix="/api/quizzes", tags=["Quizzes"])
 app.include_router(lessons.router, prefix="/api/lessons", tags=["Lessons"])
 app.include_router(activities.router, prefix="/api/activities", tags=["Activities"])
+app.include_router(animation.router, prefix="/api", tags=["Visual Learning / Animation"])
 
 # Uncomment as you implement them
 # from app.api import content, progress, uploads
