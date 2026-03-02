@@ -1,8 +1,10 @@
-import os
+import re
 from pathlib import Path
+
 
 def load_corpus(corpus_path):
     documents = []
+
     for file in Path(corpus_path).glob("*.txt"):
         with open(file, "r", encoding="utf-8") as f:
             text = f.read()
@@ -10,16 +12,24 @@ def load_corpus(corpus_path):
                 "lesson": file.stem,
                 "text": text
             })
+
     return documents
 
 
-def chunk_text(text, chunk_size=400, overlap=50):
-    words = text.split()
+def chunk_text(text):
+    """
+    Semantic chunking based on SECTION markers.
+    Each SECTION becomes one chunk.
+    """
+
+    pattern = r"(SECTION:.*?)(?=SECTION:|\Z)"
+    matches = re.findall(pattern, text, re.DOTALL)
+
     chunks = []
 
-    for i in range(0, len(words), chunk_size - overlap):
-        chunk = " ".join(words[i:i + chunk_size])
-        if len(chunk) > 50:
-            chunks.append(chunk)
+    for block in matches:
+        cleaned = block.strip()
+        if len(cleaned) > 100:
+            chunks.append(cleaned)
 
     return chunks

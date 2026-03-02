@@ -1,12 +1,215 @@
-Force is a fundamental concept in physics, describing any push or pull that can change the state of motion of an object. When a force acts on an object, it can cause the object to start moving, stop moving, change direction, or alter its speed. Motion itself refers to the change in position of an object over time, and it is closely tied to the forces acting upon it. For example, gravity pulls objects toward Earth, friction resists their movement, and applied forces from people or machines can set them in motion.
+LESSON_ID: SCI_G6_FORCE_MOTION_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Force and Motion
+DIFFICULTY: Basic
 
-Newton’s three laws of motion provide the framework for understanding how forces affect movement. The first law, often called the law of inertia, states that an object will remain at rest or continue moving in a straight line at constant speed unless acted upon by an external force. The second law explains the relationship between force, mass, and acceleration, summarized by the equation 
-𝐹
-=
-𝑚
-⋅
-𝑎
-. This means that heavier objects require more force to accelerate. The third law highlights that every action has an equal and opposite reaction, which is why rockets propel forward when gases are expelled backward.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FM_01
+NAME: Force
+DEFINITION:
+A force is a push or a pull that can change the motion or shape of an object.
 
-In everyday life, forces and motion are everywhere. Friction allows us to walk without slipping, gravity keeps us grounded, and applied forces let us push doors open or ride bicycles. Understanding these principles not only explains natural phenomena but also helps engineers design vehicles, buildings, and technologies that work safely and efficiently.
-examples for force, an apple falls from a tree
+KEY_POINTS:
+- A force can start motion.
+- A force can stop motion.
+- A force can change speed.
+- A force can change direction.
+- Force is measured in newtons (N).
+
+EXAMPLES:
+Pushing a door
+Pulling a rope
+Kicking a ball
+
+KEYWORDS:
+push, pull, change motion, newton
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FM_02
+NAME: Motion
+DEFINITION:
+Motion is the change in position of an object over time.
+
+KEY_POINTS:
+- An object is in motion when it changes position.
+- Motion depends on time and distance.
+- Objects can move fast or slow.
+
+EXAMPLES:
+A car moving on the road
+A bird flying
+A rolling ball
+
+KEYWORDS:
+movement, position, time, distance
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FM_03
+NAME: Gravity
+DEFINITION:
+Gravity is a force that pulls objects toward the Earth.
+
+KEY_POINTS:
+- Gravity keeps us on the ground.
+- It causes objects to fall.
+- The Earth pulls everything toward its center.
+
+EXAMPLES:
+An apple falling from a tree
+Rain falling to the ground
+
+KEYWORDS:
+pull, Earth, falling
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FM_04
+NAME: Friction
+DEFINITION:
+Friction is a force that resists motion when two surfaces rub against each other.
+
+KEY_POINTS:
+- Friction slows objects down.
+- It allows us to walk without slipping.
+- Rough surfaces create more friction.
+
+EXAMPLES:
+Brakes stopping a bicycle
+Shoes gripping the ground
+
+KEYWORDS:
+resistance, rubbing, slow down
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FM_05
+NAME: Newton’s First Law
+DEFINITION:
+An object will remain at rest or continue moving in a straight line unless acted upon by a force.
+
+KEY_POINTS:
+- Also called the law of inertia.
+- Objects resist changes in motion.
+
+EXAMPLE:
+A book stays on a table until someone pushes it.
+
+KEYWORDS:
+inertia, rest, constant motion
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FM_06
+NAME: Newton’s Second Law
+DEFINITION:
+Force equals mass times acceleration.
+
+FORMULA:
+F = m × a
+
+KEY_POINTS:
+- Heavier objects need more force to move.
+- More force causes greater acceleration.
+
+EXAMPLE:
+It is harder to push a truck than a bicycle.
+
+KEYWORDS:
+mass, acceleration, formula
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FM_07
+NAME: Newton’s Third Law
+DEFINITION:
+For every action, there is an equal and opposite reaction.
+
+KEY_POINTS:
+- Forces come in pairs.
+- When one object pushes another, the second pushes back.
+
+EXAMPLE:
+A rocket moves forward when gases push backward.
+
+KEYWORDS:
+action, reaction, opposite force
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_FM_01
+FROM: Force
+TO: Motion
+EXPLANATION:
+Forces cause changes in motion.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_FM_02
+FROM: Gravity
+TO: Falling Objects
+EXPLANATION:
+Gravity pulls objects downward toward Earth.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_FM_03
+FROM: Friction
+TO: Slowing Motion
+EXPLANATION:
+Friction reduces speed by opposing motion.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_FM_01
+TITLE: Apple Falling from a Tree
+
+DESCRIPTION:
+Gravity pulls the apple downward.
+The apple moves toward the ground.
+This is motion caused by force.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_FM_02
+TITLE: Riding a Bicycle
+
+DESCRIPTION:
+You push the pedals.
+The bicycle moves forward.
+Friction between tires and road allows movement.
+Brakes create friction to stop the bicycle.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_FM_01
+STATEMENT:
+If an object is moving, a force must always be pushing it.
+
+CORRECTION:
+An object can continue moving without a force unless friction or another force acts on it.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_FM_01
+TITLE: Falling Apple
+
+DESCRIPTION:
+An apple hangs on a tree.
+It detaches and falls downward.
+An arrow points down labeled “Gravity”.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Define force and motion.
+- Identify gravity and friction.
+- Explain Newton’s three laws in simple terms.
+- Describe how forces affect everyday movement.
+
+==================================================
+SECTION: SUMMARY
+A force is a push or pull that changes motion. Motion is the movement of objects over time. Gravity pulls objects downward, and friction slows them down. Newton’s laws explain how forces affect movement.

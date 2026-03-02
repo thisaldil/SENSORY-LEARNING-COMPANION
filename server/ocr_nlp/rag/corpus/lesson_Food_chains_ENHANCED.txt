@@ -1,0 +1,253 @@
+LESSON_ID: SCI_G6_FOOD_CHAIN_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Food Chain
+DIFFICULTY: Basic
+COUNTRY_CONTEXT: Sri Lanka
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FC_01
+NAME: Food Chain
+DEFINITION:
+A food chain is a simple pathway that shows how energy moves from one living organism to another.
+
+KEY_POINTS:
+- Energy starts from the Sun.
+- Plants capture sunlight.
+- Animals obtain energy by eating plants or other animals.
+- Energy flows in one direction only.
+
+KEYWORDS:
+energy flow, pathway, organisms, sunlight
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FC_02
+NAME: Producer
+DEFINITION:
+A producer is a living organism that makes its own food using sunlight through photosynthesis.
+
+KEY_POINTS:
+- Producers are always the first step in a food chain.
+- They convert solar energy into chemical energy (food).
+- Without producers, food chains cannot exist.
+
+EXAMPLES:
+Grass
+Rice plant
+Trees
+Algae
+
+KEYWORDS:
+photosynthesis, plant, sunlight, first level
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FC_03
+NAME: Primary Consumer
+DEFINITION:
+A primary consumer is an animal that eats plants.
+
+KEY_POINTS:
+- Also called herbivores.
+- They receive energy directly from producers.
+- They form the second trophic level.
+
+EXAMPLES:
+Cow
+Goat
+Grasshopper
+Rat (paddy field)
+
+KEYWORDS:
+herbivore, plant eater, second level
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FC_04
+NAME: Secondary Consumer
+DEFINITION:
+A secondary consumer is an animal that eats primary consumers.
+
+KEY_POINTS:
+- Usually small carnivores.
+- They receive less energy than primary consumers.
+- They form the third trophic level.
+
+EXAMPLES:
+Snake
+Cat
+Eagle
+Owl
+
+KEYWORDS:
+carnivore, predator, third level
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FC_05
+NAME: Tertiary Consumer
+DEFINITION:
+A tertiary consumer is a top predator that eats other carnivores.
+
+KEY_POINTS:
+- Usually at the top of the food chain.
+- Very little energy reaches this level.
+- Few organisms exist at this level.
+
+EXAMPLES:
+Tiger
+Lion
+Hawk
+Crocodile
+Human
+
+KEYWORDS:
+top predator, apex, highest level
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FC_06
+NAME: Decomposer
+DEFINITION:
+A decomposer is an organism that breaks down dead plants and animals and returns nutrients to the soil.
+
+KEY_POINTS:
+- Decomposers recycle nutrients.
+- They help plants grow again.
+- They complete the energy and nutrient cycle.
+
+EXAMPLES:
+Bacteria
+Fungi
+Worms
+Termites
+
+KEYWORDS:
+recycle, nutrients, soil, breakdown
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: FC_07
+NAME: Trophic Level
+DEFINITION:
+A trophic level is each step in a food chain.
+
+LEVELS:
+Level 1 – Producer
+Level 2 – Primary Consumer
+Level 3 – Secondary Consumer
+Level 4 – Tertiary Consumer
+
+ENERGY_RULE:
+Only about 10 percent of energy passes to the next level.
+
+KEYWORDS:
+energy pyramid, levels, energy loss
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_01
+FROM: Sun
+TO: Producer
+EXPLANATION:
+Producers capture solar energy from the Sun and convert it into food.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_02
+FROM: Producer
+TO: Primary Consumer
+EXPLANATION:
+Primary consumers obtain stored plant energy by eating producers.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_03
+FROM: Primary Consumer
+TO: Secondary Consumer
+EXPLANATION:
+Secondary consumers obtain energy by eating herbivores.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_04
+FROM: All Levels
+TO: Decomposer
+EXPLANATION:
+When organisms die, decomposers break them down and recycle nutrients.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_01
+TITLE: Paddy Field Food Chain (Sri Lanka)
+
+CHAIN:
+Rice Plant → Rat → Cobra → Peacock
+
+EXPLANATION:
+The rice plant captures sunlight.
+The rat eats rice grains.
+The cobra eats the rat.
+The peacock eats the cobra.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_02
+TITLE: Ocean Food Chain
+
+CHAIN:
+Phytoplankton → Zooplankton → Small Fish → Tuna
+
+EXPLANATION:
+Tiny sea plants capture sunlight.
+Small sea animals eat them.
+Fish eat the small animals.
+Large fish eat smaller fish.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_01
+STATEMENT:
+The arrow in a food chain shows who eats whom.
+
+CORRECTION:
+The arrow shows the direction of energy flow, not the direction of eating.
+
+==================================================
+SECTION: ADVANCED_CONCEPT
+CONCEPT_ID: FC_08
+NAME: Bio-magnification
+DEFINITION:
+Bio-magnification is the increase in concentration of pollutants as they move up the food chain.
+
+EXPLANATION:
+Small organisms absorb small amounts of pollution.
+Predators eat many smaller organisms.
+Pollution accumulates at higher levels.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_01
+TITLE: Energy Journey
+DESCRIPTION:
+Sunlight shines on a rice field.
+Energy glows as it enters green leaves.
+Energy transfers from rice to rat.
+Energy transfers from rat to cobra.
+Energy transfers from cobra to peacock.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Define a food chain.
+- Identify producers and consumers.
+- Explain trophic levels.
+- Describe energy loss between levels.
+- Recognize the role of decomposers.
+- Explain why balance is important.
+
+==================================================
+SECTION: SUMMARY
+A food chain shows how energy moves from the Sun to plants and then to animals. Each step receives less energy than the one before it. Decomposers recycle nutrients and maintain balance in ecosystems.

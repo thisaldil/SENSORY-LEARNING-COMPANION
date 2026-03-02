@@ -1,4 +1,3 @@
-import json
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
@@ -12,17 +11,16 @@ print("Model loaded.")
 
 def generate_response(query, context_chunks):
     """
-    Generate structured educational response
-    and safely convert into JSON format.
+    Generate structured educational response.
     """
 
+    # Join retrieved chunks into context
     context = "\n\n".join(context_chunks)
 
     prompt = f"""
 You are a Grade 6 Science teacher.
 
-Explain the following question in simple language
-using only the information provided.
+Use ONLY the provided context to answer the question.
 
 Context:
 {context}
@@ -30,11 +28,13 @@ Context:
 Question:
 {query}
 
-Write clearly in this format:
+Answer strictly in this exact format:
 
-Definition:
-Example:
-Narration:
+Definition: <one clear paragraph>
+
+Example: <one simple real-world example>
+
+Narration: <short storytelling explanation for children>
 """
 
     inputs = tokenizer(
@@ -56,23 +56,19 @@ Narration:
     print("RAW MODEL OUTPUT:")
     print(response_text)
 
-    # Manual parsing instead of strict JSON parsing
+    # Structured parsing
     definition = ""
     example = ""
     narration = ""
 
-    try:
-        parts = response_text.split("Example:")
-        if len(parts) > 1:
-            definition_part = parts[0].replace("Definition:", "").strip()
-            example_part = parts[1].split("Narration:")[0].strip()
-            narration_part = parts[1].split("Narration:")[1].strip()
+    if "Definition:" in response_text:
+        definition = response_text.split("Definition:")[1].split("Example:")[0].strip()
 
-            definition = definition_part
-            example = example_part
-            narration = narration_part
-    except:
-        definition = response_text
+    if "Example:" in response_text:
+        example = response_text.split("Example:")[1].split("Narration:")[0].strip()
+
+    if "Narration:" in response_text:
+        narration = response_text.split("Narration:")[1].strip()
 
     return {
         "definition": definition,

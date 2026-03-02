@@ -45,3 +45,50 @@ coverage/
 # --- Misc ---
 *.swp
 *.swo
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Python Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# --- ML Models (Large Files) ---
+*.h5
+*.pkl
+*.pth
+*.onnx
+models/checkpoints/
+server/ocr_nlp/rag/vector_store/
+.cache/
+huggingface/
+
+# --- Data & Uploads ---
+uploads/
+temp/
+tmp/
+*.csv
+*.xlsx
