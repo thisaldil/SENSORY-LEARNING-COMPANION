@@ -2,7 +2,7 @@
 User Schemas
 """
 from datetime import datetime, date, time
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 from pydantic import BaseModel, EmailStr, Field, field_validator
 from enum import Enum
 
@@ -156,6 +156,12 @@ class UserResponse(BaseModel):
     
     # Legacy field
     profile: Optional[dict] = None
+
+    # Neuro-adaptive calibration summary
+    is_calibrated: Optional[bool] = None
+    baseline_cognitive_load: Optional[str] = None
+    neuro_profile: Optional[str] = None
+    calibration_data: Optional[Dict[str, Any]] = None
 
     class Config:
         from_attributes = True

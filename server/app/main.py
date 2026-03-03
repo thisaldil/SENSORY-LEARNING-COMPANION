@@ -99,13 +99,26 @@ async def health_check():
 
 
 # Include routers
-from app.api import auth, users, quizzes, lessons, activities, animation
+from app.api import (
+    auth,
+    users,
+    quizzes,
+    lessons,
+    activities,
+    animation,
+    calibration,
+    cognitive,
+    adaptive_content,
+)
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
 app.include_router(quizzes.router, prefix="/api/quizzes", tags=["Quizzes"])
 app.include_router(lessons.router, prefix="/api/lessons", tags=["Lessons"])
 app.include_router(activities.router, prefix="/api/activities", tags=["Activities"])
 app.include_router(animation.router, prefix="/api", tags=["Visual Learning / Animation"])
+app.include_router(calibration.router, prefix="/api", tags=["Calibration"])
+app.include_router(cognitive.router, prefix="/api", tags=["Cognitive Load"])
+app.include_router(adaptive_content.router, prefix="/api", tags=["Adaptive Content"])
 
 # Uncomment as you implement them
 # from app.api import content, progress, uploads
