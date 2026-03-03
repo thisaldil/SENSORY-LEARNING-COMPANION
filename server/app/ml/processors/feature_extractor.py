@@ -1,8 +1,13 @@
 """
 Feature Extractor
-Extract behavioral features from quiz interaction logs for cognitive load prediction
-Matches the actual dataset features: answerChanges, currentErrorStreak, idleGapsOverThreshold, 
-responseTimeVariability, completionTime, avgResponseTime
+
+Extract behavioral features from quiz interaction logs for cognitive load prediction.
+These are behavioral proxies for working memory load (Cognitive Load Theory, Sweller 1988);
+we do not measure brain activity.
+
+Matches the actual dataset features: answerChanges, currentErrorStreak, idleGapsOverThreshold,
+responseTimeVariability, completionTime, avgResponseTime (plus totalScore, accuracyRate, errors
+when combined with quiz results).
 """
 from typing import Dict, List, Optional
 import numpy as np

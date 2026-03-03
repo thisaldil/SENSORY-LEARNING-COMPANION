@@ -8,9 +8,10 @@ import traceback
 from fastapi import APIRouter, HTTPException, Query
 
 from app.schemas.animation import AnimationRequest, AnimationResponse
-from app.services.visual.cache_service import get_cached_script, is_script_valid, save_script
+from app.services.visual.cache_service import get_cached_script, is_script_valid, is_script_complete, save_script
 from app.services.visual import ai_generator
 from app.services.visual.hybrid_generator import generate_hybrid_script_async
+from app.services.visual.prebuilt import get_prebuilt_script
 
 router = APIRouter()
 
@@ -43,24 +44,32 @@ async def generate_animation(
     request: AnimationRequest,
     mode: str = Query("hybrid", description="Generation mode: 'hybrid' (default) or 'legacy'"),
 ):
-    """
-    Generate or retrieve animation script for a concept.
-    Flow: 1) Check MongoDB cache  2) Generate (hybrid or legacy)  3) Validate and cache  4) Return.
+    """Generate or retrieve animation script for a concept.
+
+    Flow:
+    1. Prebuilt (highest quality for known topics like water cycle)
+    2. Cache by concept
+    3. Comprehensive Gemini script (few-shot with water cycle exemplar)
+    4. Hybrid rule-based fallback
     """
     concept = (request.concept or "").strip()
     if not concept:
         raise HTTPException(status_code=400, detail="concept is required")
 
     concept_key = concept.lower()
-    mode = (mode or "hybrid").lower()
-    if mode not in ("hybrid", "legacy"):
-        mode = "hybrid"
-
-    cache_key = f"{concept_key}_{mode}"
 
     try:
-        # 1. Check cache (with mode-specific key)
-        cached = await get_cached_script(cache_key)
+        # 1. Prebuilt scripts for well-known topics (e.g. water cycle)
+        prebuilt = get_prebuilt_script(concept)
+        if prebuilt is not None:
+            return AnimationResponse(
+                script=prebuilt,
+                source="prebuilt",
+                concept=concept_key,
+            )
+
+        # 2. Cache lookup by concept
+        cached = await get_cached_script(concept_key)
         if cached:
             return AnimationResponse(
                 script=cached["script"],
@@ -68,32 +77,31 @@ async def generate_animation(
                 concept=concept_key,
             )
 
-        # 2. Generate new script based on mode
-        if mode == "hybrid":
-            script = await generate_hybrid_script_async(concept)
-        else:
-            script = await asyncio.to_thread(ai_generator.generate_animation_script, concept)
-
-        if not script:
-            raise HTTPException(
-                status_code=500,
-                detail=f"Failed to generate animation script using {mode} mode",
+        # 3. Comprehensive Gemini script (few-shot, highest quality)
+        script = await asyncio.to_thread(ai_generator.generate_animation_script, concept, True)
+        if script and is_script_complete(script):
+            await save_script(concept_key, script, "generated_comprehensive")
+            return AnimationResponse(
+                script=script,
+                source="generated_comprehensive",
+                concept=concept_key,
             )
 
-        # 3. Validate script
-        if not is_script_valid(script):
-            raise HTTPException(status_code=500, detail="Generated script is invalid")
+        # 4. Hybrid fallback (rule-based pipeline)
+        script = await generate_hybrid_script_async(concept)
+        if script and is_script_complete(script):
+            await save_script(concept_key, script, "generated_hybrid")
+            return AnimationResponse(
+                script=script,
+                source="generated_hybrid",
+                concept=concept_key,
+            )
 
-        # 4. Save to cache
-        source = f"generated_{mode}"
-        await save_script(cache_key, script, source)
-
-        return AnimationResponse(
-            script=script,
-            source=source,
-            concept=concept_key,
+        # 5. Last resort
+        raise HTTPException(
+            status_code=500,
+            detail="Failed to generate animation script",
         )
-
     except HTTPException:
         raise
     except Exception as e:

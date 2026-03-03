@@ -1,6 +1,10 @@
 """
 Behavior Logging Service
-Service for logging student behavior and predicting cognitive load
+
+Logs quiz session behavior and predicts cognitive load from behavioral proxies
+(Cognitive Load Theory). Predicted load (Low/Medium/High) can drive adaptation
+and, per Yerkes–Dodson, future modulation of stimulation intensity (e.g. reduce
+when high load, increase when low engagement).
 """
 from typing import Dict, List, Optional
 from datetime import datetime

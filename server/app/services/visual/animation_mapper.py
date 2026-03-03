@@ -1,6 +1,9 @@
 """
 Animation Mapper - Rule-Based Animation Mapping
-Maps conceptual actions from AI to valid animation names with fallbacks.
+
+Maps conceptual actions from AI to valid animation names. Supports Dual Coding
+(Paivio): visual animation should support the verbal narration (e.g. "rise" → moveUp)
+so the two channels reinforce rather than conflict.
 """
 from typing import Optional
 

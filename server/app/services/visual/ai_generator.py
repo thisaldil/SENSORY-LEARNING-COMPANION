@@ -9,6 +9,7 @@ from typing import Any, Optional
 from dotenv import load_dotenv
 
 from app.config import settings
+from app.services.visual.prebuilt import test_water_cycle_script
 
 load_dotenv()
 
@@ -100,52 +101,30 @@ KEYWORD_VISUAL_MAP = [
 
 
 def build_comprehensive_prompt(concept: str) -> str:
-    """Build a comprehensive prompt for detailed, production-ready animation scripts."""
+    """Few-shot prompt using the prebuilt water cycle script as an exemplar."""
     return f"""
-You are an expert educational animation script generator. Create a comprehensive, detailed animation script for the concept: "{concept}"
+You are an expert educational animation designer. Create high-quality, scientifically accurate scripts.
 
-Generate a COMPLETE, DETAILED JSON animation script with the EXACT structure below. Make it as comprehensive and detailed as possible.
+Here is an excellent example of exactly the quality and style I want:
 
-REQUIRED JSON STRUCTURE:
-{{
-  "title": "Concept Name: Descriptive Subtitle",
-  "duration": 45000,
-  "scenes": [
-    {{
-      "id": "unique_scene_id",
-      "startTime": 0,
-      "duration": 5000,
-      "text": "Clear, educational explanation text for this scene",
-      "actors": [
-        {{
-          "type": "actor_type",
-          "x": 400,
-          "y": 300,
-          "animation": "animation_name",
-          "color": "#hex_color",
-          "size": 40,
-          "angle": 0,
-          "depth": 80,
-          "width": 100,
-          "branches": 6,
-          "moleculeType": "water",
-          "cellType": "plant",
-          "showLabels": true,
-          "rays": true
-        }}
-      ]
-    }}
-  ]
-}}
+```json
+{json.dumps(test_water_cycle_script, indent=2)}
+```
 
-AVAILABLE ACTOR TYPES: planet, earth, moon, star, sun, asteroid, comet, cloud, mountain, ocean, volcano, animal, cell, bacteria, leaf, root, plant, molecule, atom, electron, proton, neutron, arrow, label, line, graph, number, glucose.
+Now create a script of exactly the same quality and style for this concept: "{concept}"
 
-AVAILABLE ANIMATIONS: appear, idle, pulse, glow, sway, rotate, vibrate, orbit, spin, fall, moveUp, moveDown, shine, grow, absorb, bubbleUp, floatIn, floatOut.
+Rules:
+- 6–8 scenes, total around 45 seconds
+- Rich visuals: oceans, sun, clouds, molecules (water, CO2, O2 when relevant), arrows, labels, mountains, plants when relevant
+- Educational but simple text (student-friendly)
+- Great animations: wave, bubbleUp, fall, vibrate, grow, sway, shine, absorb, moveDown, pulse, rotate
+- Multiple molecules for phase changes
+- Arrows + labels like "Water Vapor", "Rain", "Groundwater", "H₂O" when appropriate
+- Use the exact same JSON structure as the example
 
-ACTOR PROPERTIES: x (0-800), y (0-600), size, color, animation; Leaf: angle, size, color; Root: depth, width, branches; Molecule: moleculeType (water, co2, o2); Cell: cellType, size, showLabels; Sun: size, rays; Arrow: length, angle, color, thickness; Label: text, fontSize, color.
-
-Create 6-8 scenes, 40-50 seconds total. Multiple actors per scene. Add arrows and labels (H₂O, CO₂, O₂, C₆H₁₂O₆). Use sequential startTime. Output ONLY valid JSON, no markdown or comments.
+Return ONLY valid JSON, no markdown or explanation.
 """
+
 
 
 def build_prompt(concept: str) -> str:

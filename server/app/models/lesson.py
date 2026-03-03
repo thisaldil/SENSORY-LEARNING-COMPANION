@@ -1,5 +1,9 @@
 """
 Lesson Model
+
+Lessons contain concepts with audio scripts and haptic patterns. Haptics support
+embodied cognition (concept grounding in sensorimotor experience); patterns
+should be synchronized with visual/audio for key concepts (Hebbian learning).
 """
 from datetime import datetime
 from typing import List, Optional
@@ -8,8 +12,12 @@ from pydantic import Field
 
 
 class Concept(Document):
-    """Concept embedded in lesson"""
+    """Concept embedded in a lesson.
 
+    audio_script drives narration; haptics_pattern supports embodied encoding
+    (sensorimotor grounding). Visual + audio + haptic are synchronized for
+    key concepts (Dual Coding, Hebbian learning).
+    """
     id: str
     title: str
     description: str

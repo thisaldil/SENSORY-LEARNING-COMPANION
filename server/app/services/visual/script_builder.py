@@ -1,5 +1,10 @@
 """
 Script Builder - Final Script Assembly with Timing
+
+Supports Dual Coding (Paivio, 1971): visual and verbal channels are synchronized—
+scene duration and text drive narration timing so that visual supports verbal
+without redundancy. Each scene has explicit startTime/duration for precise
+audio–animation sync and Hebbian co-activation of modalities.
 """
 from typing import Any, Optional
 

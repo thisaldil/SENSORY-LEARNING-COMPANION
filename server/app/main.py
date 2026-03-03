@@ -23,7 +23,12 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="EduSense API",
-    description="Backend API for EduSense - Sensory Learning Platform",
+    description=(
+        "Backend for EduSense: a neuro-adaptive multisensory learning system. "
+        "Uses behavioral proxies for cognitive load and engagement; supports haptic, audio, and visual "
+        "content with theory-grounded adaptation (Cognitive Load, Dual Coding, Embodied Cognition). "
+        "See RESEARCH_FRAMEWORK.md for theory mapping."
+    ),
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -80,9 +85,10 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 async def root():
     """Root endpoint"""
     return {
-        "message": "Welcome to EduSense API",
+        "message": "Welcome to EduSense API — Neuro-Adaptive Multisensory Learning",
         "version": "1.0.0",
         "docs": "/docs",
+        "research_framework": "See RESEARCH_FRAMEWORK.md for theory grounding.",
     }
 
 
