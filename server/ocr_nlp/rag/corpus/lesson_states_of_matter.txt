@@ -1,260 +1,258 @@
-## 🎯 STATES OF MATTER - The Three Forms of EVERYTHING
-
-All matter in the universe exists in three main states: **Solid, Liquid, and Gas**. Everything you see - your phone, water, air - is made of tiny particles. How those particles behave determines the state!
-
----
-
-### 🔬 THE THREE STATES EXPLAINED LIKE YOU'RE 11:
-
-#### 1️⃣ **SOLID** - Packed Tight Like a Concert! 🎤
-**Particles:** Stuck together tightly, vibrating in place (like fans at a concert who stay in their seats!)
-**Properties:** 
-- Has a definite shape (doesn't change)
-- Has a definite volume (amount of space)
-- Can't flow
-- Hard to squeeze
-
-**Real Examples:** 
-- Ice, stone, wood, metal, your desk, pencils, books
-- An APPLE 🍎: No matter how you squeeze it, it stays apple-shaped!
-
-**Animation Idea:** Show tiny balls (particles) tightly packed together, vibrating in place. They can't move around or flow.
-
----
-
-#### 2️⃣ **LIQUID** - Free to Move Like Fans in a Mosh Pit! 🌊
-**Particles:** Touching but can slide past each other (like fans dancing and moving around, but still close together!)
-**Properties:**
-- NO definite shape (takes shape of container)
-- HAS definite volume (amount stays same)
-- Can flow and pour
-- Hard to squeeze (but not impossible)
-
-**Real Examples:**
-- Water, milk, juice, honey, oil, blood
-- WATER 💧: Pour it into a cup - it becomes cup-shaped. Pour it into a bowl - it becomes bowl-shaped. Same water, different shape!
-
-**Animation Idea:** Show particles with some space between them, sliding past each other smoothly. They move and flow but stay connected.
-
----
-
-#### 3️⃣ **GAS** - Flying Around Like Birds Released from a Cage! 🐦
-**Particles:** Flying around fast and free, bouncing into each other (like birds just let out of a cage!)
-**Properties:**
-- NO definite shape
-- NO definite volume (spreads out to fill container)
-- Can flow easily
-- Easy to squeeze
-
-**Real Examples:**
-- Air, oxygen, nitrogen, carbon dioxide, steam
-- If you open a perfume bottle, the gas spreads throughout the room - you can smell it everywhere!
-
-**Animation Idea:** Show particles zooming around rapidly in all directions, spreading out to fill all available space.
-
----
-
-### 🌡️ **THE KINETIC NATURE OF MATTER** (Easy Version!)
-
-**Kinetic Energy** = Energy of movement
-
-**Secret:** The hotter something is, the more the particles move around!
-
-- **SOLID (Cold):** Particles barely move - they vibrate in tiny circles
-- **LIQUID (Warmer):** Particles move around more - they slide and mix
-- **GAS (Hot):** Particles zoom around super fast in all directions!
-
-**Simple Demo:** 
-- When you HEAT ice → particles get energized → becomes liquid water
-- When you HEAT water → particles go crazy → becomes steam/gas!
-- When you COOL steam → particles calm down → becomes liquid water
-- When you COOL water → particles almost stop moving → becomes ice!
-
----
-
-### 🔄 **PHASE TRANSITIONS** - When Matter Changes States!
-
-#### Melting 🧊→💧
-**What happens:** Solid → Liquid
-**Energy:** Needs HEAT (absorbs energy)
-**Example:** Ice cream melting in the sun!
-
-**Animation:** Show ice particles vibrating faster and faster, breaking free from their rigid positions, starting to slide past each other.
-
-**Kid Experiment at Home:**
-- Leave an ice cube on your desk
-- Watch it melt into water
-- That's MELTING happening in real-time! 
-- The room's heat energy gave the particles enough energy to break free!
-
----
-
-#### Freezing 💧→🧊
-**What happens:** Liquid → Solid
-**Energy:** RELEASES energy (gives away heat)
-**Example:** Water in freezer becoming ice!
-
-**Animation:** Show water particles slowing down, connecting tighter, forming rigid positions.
-
-**Real-Life Example:** When you freeze water, the liquid becomes solid. Put it in a cup - it stays cup-shaped when frozen!
-
----
-
-#### Evaporation 💧→💨
-**What happens:** Liquid → Gas
-**Energy:** Needs HEAT (absorbs energy)
-**Example:** Wet clothes drying on a sunny day!
-
-**Animation:** Show water particles at surface getting so much energy they break free and zoom away into air!
-
-**Kid Experiment:**
-- Wet your hair
-- When heat from sun (or hair dryer) hits it
-- Water evaporates - hair dries!
-- The particles got so much energy they escaped and became gas (water vapor in air you can't see!)
-
----
-
-#### Condensation 💨→💧
-**What happens:** Gas → Liquid
-**Energy:** RELEASES energy (cooling)
-**Example:** Mirror fogging up when you shower!
-
-**Animation:** Show gas particles slowing down in cool air, coming together, forming droplets.
-
-**Cool Demo:** 
-- Take a cold glass
-- Put it in steamy bathroom
-- Water droplets form on the glass!
-- That's steam (gas) turning back to water (liquid) because the glass is cold!
-
----
-
-#### Sublimation ❄️→☁️ (Advanced!)
-**What happens:** Solid → Gas (skips liquid!)
-**Example:** Dry ice turning straight into fog, or ice slowly disappearing in winter without melting
-
-**Animation:** Show solid particles gaining SO much energy, they jump straight to gas state!
-
----
-
-#### Deposition ❄️ (Reverse Sublimation!)
-**What happens:** Gas → Solid (skips liquid!)
-**Example:** Frost forming on windows in winter
-
----
-
-### ⚡ **ENERGY IS THE KEY!**
-
-Think of it like a party:
-- **SOLID = Sedate party** 🧑‍💼 Everyone in their seats, not moving much
-- **LIQUID = Lively party** 🎉 People dancing, mixing, moving around
-- **GAS = WILD party!** 🎊 People bouncing everywhere, spreading throughout the building!
-
-**ADD HEAT** = Party gets more energetic, more wild!
-**REMOVE HEAT** = Party calms down!
-
----
-
-### 🎬 **ANIMATED VIDEO IDEAS:**
-
-**Video 1: Ice Cube Adventure (2 min)**
-- Scene 1: Ice cube in freezer (tight particles) ❄️
-- Scene 2: Take out ice, room temperature (starts vibrating) 
-- Scene 3: Ice melts into water (particles flow!)
-- Scene 4: Heat water over stove (particles go crazy)
-- Scene 5: Steam rises (gas escapes!) 💨
-- Narration: "Follow this water molecule on its amazing journey through three states!"
-
-**Video 2: Particle Dance Party (2 min)**
-- Three colored groups of particles representing Solid/Liquid/Gas
-- Particles vibrate slowly (solid), then more (liquid), then wildly (gas)
-- When heat is added: particles move more
-- When heat is removed: particles calm down
-- Music gets faster as temperature rises!
-
-**Video 3: Real-Life Examples (2 min)**
-- Show actual videos of:
-  - Ice cream melting
-  - Clothes drying
-  - Window fogging up
-  - Boiling water steaming
-- Label each as a phase change
-- Show the particles moving at same time
-
----
-
-### 🧪 **HANDS-ON ACTIVITIES FOR 11-YEAR-OLDS:**
-
-**Activity 1: Observe Phase Changes (20 min)**
-- Heat water in pot (with adult)
-- Watch liquid → gas (steam)
-- Put cold plate above steam
-- Watch gas → liquid (water droplets on plate!)
-- Discuss what happened to particles
-
-**Activity 2: Ice Cube Race (10 min)**
-- Leave ice cube on desk at room temperature
-- Measure how long before it melts completely
-- Record: Start time, end time, time to melt
-- Predict: Would it melt faster in sun? In warm water?
-- Try it!
-
-**Activity 3: Particle Model Game (15 min)**
-- Use marbles or balls to represent particles
-- In a box = Solid (tight, vibrating)
-- In an open space = Liquid (moving, sliding)
-- In a huge space = Gas (zooming everywhere!)
-- Act it out with your body/friends!
-
-**Activity 4: Moisture Hunt (5 min)**
-- Find examples of evaporation in your house:
-  - Wet bathroom after shower (water vapor)
-  - Leaves wet from rain drying
-  - Puddles disappearing
-- Take photos and explain what happened to the water molecules!
-
----
-
-### 📊 **THE STATES OF MATTER CHART:**
-
-| Property | SOLID | LIQUID | GAS |
-|----------|-------|--------|-----|
-| **Shape** | Definite ✓ | Takes container shape | Fills entire space |
-| **Volume** | Definite ✓ | Definite ✓ | Expands to fill space |
-| **Can Flow?** | No | Yes | Yes |
-| **Easy to Squeeze?** | No | Very hard | Easy |
-| **Particles** | Tightly packed | Close but moving | Far apart, zooming |
-| **Speed of Particles** | Very slow | Medium | Very fast |
-| **Example** | Ice | Water | Steam |
-
----
-
-### 💡 **WHY THIS MATTERS:**
-
-Understanding states of matter explains:
-- Why ice floats in water (special property of H₂O!)
-- How refrigerators keep food cold (heat removal)
-- Why you need to cover food to prevent drying (stops evaporation)
-- How clouds form (water evaporation + condensation)
-- Why clothes dry after washing (evaporation)
-- How air can carry water (as gas/water vapor, invisible!)
-
----
-
-### 🌟 **REAL WORLD APPLICATIONS:**
-
-**Cooking:**
-- Boiling = Evaporation
-- Freezing = Freezing
-- Melting chocolate = Melting
-
-**Weather:**
-- Water cycle = Phase changes!
-- Rain = Condensation of clouds
-- Steam from pot = Evaporation
-
-**Your Body:**
-- Sweating = Evaporation (cooling you down!)
-- Breathing = You're actually evaporating small amounts of water!
-- Getting goosebumps in cold = Your body protecting you from heat loss
+LESSON_ID: SCI_G6_STATES_OF_MATTER_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: States of Matter
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_01
+NAME: Three Main States of Matter
+DEFINITION:
+Matter exists in three main states: solid, liquid, and gas. The behavior and movement of particles determine the state of matter.
+
+KEY_POINTS:
+- All matter is made of tiny particles.
+- Particle arrangement determines physical state.
+- Solids, liquids, and gases have different properties.
+- Temperature affects particle movement.
+
+KEYWORDS:
+matter, particles, solid, liquid, gas
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_02
+NAME: Solid State
+DEFINITION:
+A solid has a definite shape and definite volume because its particles are tightly packed and vibrate in fixed positions.
+
+KEY_POINTS:
+- Particles are very close together.
+- Particles vibrate but do not move freely.
+- Solids do not flow.
+- Solids are difficult to compress.
+
+EXAMPLES:
+Ice, stone, wood, metal, books, desks.
+
+KEYWORDS:
+solid, definite shape, definite volume, tightly packed
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_03
+NAME: Liquid State
+DEFINITION:
+A liquid has a definite volume but no definite shape because its particles are close together but can slide past one another.
+
+KEY_POINTS:
+- Particles are close but not fixed.
+- Liquids take the shape of their container.
+- Liquids can flow.
+- Liquids are difficult to compress.
+
+EXAMPLES:
+Water, milk, oil, juice, blood.
+
+KEYWORDS:
+liquid, flow, container shape, sliding particles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_04
+NAME: Gaseous State
+DEFINITION:
+A gas has no definite shape and no definite volume because its particles move freely and spread out to fill available space.
+
+KEY_POINTS:
+- Particles are far apart.
+- Particles move rapidly in all directions.
+- Gases expand to fill their container.
+- Gases are easily compressed.
+
+EXAMPLES:
+Air, oxygen, carbon dioxide, steam, nitrogen.
+
+KEYWORDS:
+gas, expansion, compression, fast particles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_05
+NAME: Kinetic Nature of Matter
+DEFINITION:
+The kinetic nature of matter explains that particles are always in motion, and their speed increases as temperature increases.
+
+KEY_POINTS:
+- Kinetic energy is energy of movement.
+- Higher temperature means faster particle motion.
+- Lower temperature means slower particle motion.
+- State changes occur due to energy transfer.
+
+KEYWORDS:
+kinetic energy, temperature, particle motion
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_06
+NAME: Melting and Freezing
+DEFINITION:
+Melting is the change from solid to liquid when heat is absorbed. Freezing is the change from liquid to solid when heat is released.
+
+KEY_POINTS:
+- Melting requires heat energy.
+- Freezing releases heat energy.
+- Particle arrangement changes during transition.
+- Shape changes but chemical identity remains same.
+
+EXAMPLES:
+Ice melting into water.
+Water freezing into ice in a freezer.
+
+KEYWORDS:
+melting, freezing, heat absorption, heat release
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_07
+NAME: Evaporation and Condensation
+DEFINITION:
+Evaporation is the change from liquid to gas when heat is absorbed. Condensation is the change from gas to liquid when heat is removed.
+
+KEY_POINTS:
+- Evaporation occurs at the surface of a liquid.
+- Condensation forms droplets.
+- Energy is absorbed during evaporation.
+- Energy is released during condensation.
+
+EXAMPLES:
+Wet clothes drying.
+Mirror fogging after a shower.
+Steam forming water droplets on a cold plate.
+
+KEYWORDS:
+evaporation, condensation, vapor, droplets
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_08
+NAME: Sublimation and Deposition
+DEFINITION:
+Sublimation is the direct change from solid to gas without becoming liquid. Deposition is the direct change from gas to solid.
+
+KEY_POINTS:
+- Sublimation skips the liquid state.
+- Deposition is the reverse of sublimation.
+- Energy changes drive both processes.
+
+EXAMPLES:
+Dry ice turning into fog.
+Frost forming on cold windows.
+
+KEYWORDS:
+sublimation, deposition, phase change
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM_01
+FROM: Temperature
+TO: Particle Movement
+EXPLANATION:
+Increasing temperature increases kinetic energy and particle speed, which may cause change of state.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM_02
+FROM: Evaporation
+TO: Cooling Effect
+EXPLANATION:
+Evaporation absorbs heat from surroundings, causing cooling, such as sweating in the human body.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM_03
+FROM: Condensation
+TO: Cloud Formation
+EXPLANATION:
+Water vapor condenses into droplets to form clouds and eventually rain.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM_01
+TITLE: Ice Cube Observation
+
+DESCRIPTION:
+An ice cube left at room temperature absorbs heat and melts into liquid water.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM_02
+TITLE: Steam and Cold Plate
+
+DESCRIPTION:
+When steam touches a cold surface, it cools and condenses into water droplets.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM_03
+TITLE: Wet Clothes Drying
+
+DESCRIPTION:
+Water in clothes absorbs heat from the surroundings and evaporates into the air.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM_01
+STATEMENT:
+Particles in solids do not move.
+
+CORRECTION:
+Particles in solids vibrate in fixed positions even though they do not move freely.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM_02
+STATEMENT:
+Evaporation only happens when water boils.
+
+CORRECTION:
+Evaporation can occur at any temperature, even at room temperature.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM_03
+STATEMENT:
+Gas particles have no mass.
+
+CORRECTION:
+Gas particles have mass and occupy space; they are simply far apart and move freely.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM_01
+TITLE: Particle Movement Comparison
+
+DESCRIPTION:
+Show three containers labeled solid, liquid, and gas. Animate tightly packed vibrating particles for solid, sliding particles for liquid, and fast-moving spread particles for gas.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM_02
+TITLE: Phase Change Cycle
+
+DESCRIPTION:
+Illustrate melting, evaporation, condensation, and freezing in a circular diagram with energy arrows showing heat absorption and release.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Identify the three main states of matter.
+- Describe particle arrangement in solids, liquids, and gases.
+- Explain how temperature affects particle motion.
+- Define melting, freezing, evaporation, condensation, sublimation, and deposition.
+- Apply phase change concepts to everyday life examples.
+
+==================================================
+SECTION: SUMMARY
+Matter exists as solid, liquid, or gas depending on particle arrangement and motion. Temperature affects particle kinetic energy, causing phase changes such as melting, freezing, evaporation, and condensation. Understanding states of matter explains many natural processes including cooking, weather, refrigeration, and the water cycle.

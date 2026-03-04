@@ -43,8 +43,6 @@ Bringing two North poles close together creates a pushing force that keeps them 
 KEYWORDS:
 law of magnetism, repulsion, attraction, like poles, unlike poles
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Concept of the "Freely Suspended" Magnet
 ==================================================
 SECTION: CORE_CONCEPT
 CONCEPT_ID: C3

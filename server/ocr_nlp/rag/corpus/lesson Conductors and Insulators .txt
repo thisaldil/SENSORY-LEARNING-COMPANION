@@ -1,42 +1,219 @@
-Conductors and Insulators
-Not all materials behave the same way when they come into contact with electricity. Depending on their internal structure, materials either allow electricity to flow through them or block it entirely.
+LESSON_ID: SCI_G6_ELECTRICITY_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Conductors and Insulators
+DIFFICULTY: Basic
 
-1. Conductors
-Materials that allow electricity to flow through them easily are called Conductors. Most metals are excellent conductors. In a circuit, we use conductors to carry energy from the battery to the bulb.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CI_01
+NAME: Conductor
+DEFINITION:
+A conductor is a material that allows electricity to flow through it easily.
 
-Examples: Copper, Aluminum, Iron, Gold, and Silver.
+KEY_POINTS:
+- Most metals are good conductors.
+- Conductors are used to carry electric current.
+- Electricity flows through conductors because they have free electrons.
 
-Special Case: Graphite (the "lead" in your pencil) is a non-metal that can conduct electricity.
+EXAMPLES:
+Copper
+Aluminum
+Iron
+Gold
+Silver
+Graphite (non-metal conductor)
 
-2. Insulators
-Materials that do not allow electricity to flow through them are called Insulators. These materials are used to protect us from electric shocks by covering conductive parts.
+KEYWORDS:
+electric current, metal, free electrons, flow
 
-Examples: Rubber, Plastic, Wood, Glass, and Dry Air.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CI_02
+NAME: Insulator
+DEFINITION:
+An insulator is a material that does not allow electricity to flow through it.
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Atomic Secret: Why do they conduct?
-To understand why a piece of copper conducts but a piece of wood does not, we have to look at the atoms. In metals, some electrons (tiny charged particles) are not tied to any single atom; they are "free" to move around. When you connect a battery, these free electrons start flowing in one direction, creating an electric current. In insulators, the electrons are tightly bound to their atoms and cannot move freely, so no current can flow.
+KEY_POINTS:
+- Insulators block electric current.
+- They protect us from electric shock.
+- Electrons in insulators are tightly bound to atoms.
 
-Water: A Dangerous Conductor
-A very important lesson for safety in Sri Lanka is that impure water conducts electricity. While pure distilled water is a poor conductor, the water we find in our taps, wells, and rivers contains dissolved minerals and salts. These impurities allow electricity to pass through. This is why you must never touch electrical switches with wet hands. If your hands are wet, the electricity can travel through the water on your skin and into your body, causing a dangerous electric shock.
+EXAMPLES:
+Rubber
+Plastic
+Wood
+Glass
+Dry air
 
-Electricity and the Human Body
-Did you know that the human body is a conductor? About 60–70% of our body is made of water containing salts. This is why electricity is so dangerous to us. If you touch a "live" wire, your body becomes part of the circuit, allowing the electricity to flow through you to the ground. This can stop the heart or cause severe burns. This is why safety equipment, like the rubber handles on an electrician's pliers, is so important.
+KEYWORDS:
+block electricity, protection, safety
 
-Applications in Everyday Life
-We use the combination of conductors and insulators in almost every electrical device:
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CI_03
+NAME: Atomic Structure and Conductivity
+DEFINITION:
+The ability of a material to conduct electricity depends on how its electrons are arranged.
 
-Electrical Wires: The inside is made of copper (conductor) to carry the power, while the outside is coated in PVC plastic (insulator) so we can touch the wire safely.
+KEY_POINTS:
+- Metals have free-moving electrons.
+- Free electrons move when connected to a battery.
+- Insulators have tightly bound electrons.
+- Electric current is the movement of electrons.
 
-Plug Tops: The pins that go into the wall are made of brass (conductor), but the part you hold is made of hard plastic (insulator).
+KEYWORDS:
+atoms, electrons, current, structure
 
-Power Lines: You may have noticed large ceramic or glass "discs" holding the high-voltage wires on concrete poles. These are Insulators that prevent the electricity from traveling down the pole into the ground.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CI_04
+NAME: Water and Electricity
+DEFINITION:
+Impure water can conduct electricity because it contains dissolved salts and minerals.
 
-Testing Materials: The Conductivity Tester
-You can easily test if an object is a conductor or an insulator by building a simple "Tester Circuit." Create a circuit with a battery and a bulb, but leave a gap between two wires. If you place a metal key in the gap and the bulb lights up, the key is a conductor. If you place a plastic ruler in the gap and the bulb stays dark, the ruler is an insulator.
+KEY_POINTS:
+- Pure distilled water is a poor conductor.
+- Tap water contains minerals.
+- Wet hands increase risk of electric shock.
+- Water on skin allows electricity to travel into the body.
 
-Superconductors: The Future of Science
-Some materials, when cooled to extremely low temperatures, become Superconductors. This means they have zero resistance, and electricity can flow through them forever without losing any energy as heat. While we don't use these in our homes yet, they are used in giant magnets for MRI machines in hospitals and for high-speed Maglev trains.
+EXAMPLES:
+Touching a switch with wet hands is dangerous.
+Flooded areas increase electric shock risk.
 
-Resistance: The "Traffic Jam" for Electrons
-Even among conductors, some are better than others. Copper is used for household wiring because it has low resistance (it is easy for electrons to move). Tungsten, a metal used in old light bulbs, has high resistance. As electricity tries to force its way through the thin tungsten wire, it generates a lot of heat and light. This shows that even "conductive" materials can be used to control or change the energy of electricity.
+KEYWORDS:
+impurities, dissolved salts, safety
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CI_05
+NAME: Human Body as a Conductor
+DEFINITION:
+The human body conducts electricity because it contains water and dissolved salts.
+
+KEY_POINTS:
+- The body is about 60–70% water.
+- Electricity can pass through the body.
+- Electric shock can damage organs and stop the heart.
+- Safety equipment uses insulating materials.
+
+EXAMPLES:
+Rubber handles on tools.
+Wearing rubber gloves during repairs.
+
+KEYWORDS:
+electric shock, safety, circuit, grounding
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CI_06
+NAME: Electrical Resistance
+DEFINITION:
+Resistance is the opposition to the flow of electric current.
+
+KEY_POINTS:
+- Low resistance allows easier flow.
+- High resistance produces heat.
+- Copper has low resistance.
+- Tungsten has high resistance.
+
+EXAMPLES:
+Copper wires in homes.
+Tungsten filament in bulbs producing light and heat.
+
+KEYWORDS:
+resistance, heat, tungsten, copper
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CI_07
+NAME: Superconductors
+DEFINITION:
+Superconductors are materials that have zero resistance at very low temperatures.
+
+KEY_POINTS:
+- Electricity flows without energy loss.
+- Used in MRI machines.
+- Used in Maglev trains.
+
+KEYWORDS:
+zero resistance, low temperature, advanced technology
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CI_01
+FROM: Atomic Structure
+TO: Conductivity
+EXPLANATION:
+Materials conduct electricity if they have free electrons that can move.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CI_02
+FROM: Water
+TO: Electric Shock
+EXPLANATION:
+Water containing dissolved salts allows electricity to pass through the human body.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CI_03
+FROM: Resistance
+TO: Heat Production
+EXPLANATION:
+High resistance converts electrical energy into heat and light.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CI_01
+TITLE: Electrical Wire
+
+DESCRIPTION:
+A wire has copper inside to carry electricity. The outside is covered with plastic to prevent electric shock.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CI_02
+TITLE: Conductivity Tester
+
+DESCRIPTION:
+A simple circuit with a battery and bulb can test materials. If the bulb lights when a material is placed in the gap, it is a conductor. If not, it is an insulator.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CI_03
+TITLE: Power Line Insulators
+
+DESCRIPTION:
+Ceramic or glass discs on power poles prevent electricity from traveling into the ground.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_CI_01
+STATEMENT:
+All water is a good conductor of electricity.
+
+CORRECTION:
+Pure water is a poor conductor. Impurities like salts allow electricity to flow.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_CI_01
+TITLE: Safe Electrical Wire
+
+DESCRIPTION:
+Show a cross-section of an electrical wire. The center is copper labeled “Conductor.” The outer layer is plastic labeled “Insulator.” Arrows show current flowing only through the copper.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Define conductors and insulators.
+- Explain why metals conduct electricity.
+- Describe the role of electrons in electric current.
+- Understand safety precautions with water and electricity.
+- Explain the concept of resistance.
+
+==================================================
+SECTION: SUMMARY
+Conductors allow electricity to flow because they contain free electrons, while insulators block electric current. Water and the human body can conduct electricity due to dissolved salts. Resistance affects how easily electricity flows and can produce heat. Understanding these principles helps ensure electrical safety and supports modern technology.

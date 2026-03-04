@@ -1,41 +1,450 @@
-While both plants and animals are living organisms that grow, breathe, and reproduce, they have very distinct ways of surviving in their environment. 
+LESSON_ID: SCI_G6_DIFFERENCES_PLANTS_ANIMALS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Differences between Plants and Animals
+DIFFICULTY: Basic
 
-1. Movement
-Animals: Most animals can move their entire body from one place to another. This is called locomotion. They move to find food, escape danger, or find shelter.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Animal Locomotion
+DEFINITION:
+Locomotion is the ability to move the entire body from one place to another, a characteristic that most animals possess to find food, escape danger, or find shelter.
 
-Plants: Plants are generally fixed to one spot by their roots. They do not show locomotion. However, they show movements of parts, such as flowers opening or leaves turning toward the sun.
+KEY_POINTS:
 
-2. Nutrition (How they get food)
-Animals: Animals cannot make their own food. They must eat plants or other animals to get energy. 
-+1
+Animals can move their whole body from location to location.
+Locomotion serves survival functions like finding food and avoiding predators.
+Movement requires high energy and quick responses.
 
+EXAMPLES:
+A squirrel darts around a tree constantly moving to gather food and escape threats, requiring immediate energy.
 
-Plants: Green plants make their own food using sunlight, water, and carbon dioxide through a process called photosynthesis. 
-+2
+KEYWORDS:
+locomotion, animal movement, body movement, escape danger, find food, survival
 
-3. Sensory Organs
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Plant Fixed Position and Part Movement
+DEFINITION:
+Plants are generally fixed to one spot by their roots and do not show locomotion, but they do show movements of parts such as flowers opening or leaves turning toward the sun.
 
-Animals: Animals have well-developed sensory organs like eyes, ears, and a nose to respond quickly to their surroundings. 
+KEY_POINTS:
 
-Plants: Plants do not have nervous systems or sense organs like animals, though they still respond slowly to light and gravity.
+Plants remain rooted in one location throughout their lives.
+Plants do not have locomotion like animals.
+Plants show part movements such as leaf orientation and flower opening.
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Biological "Engines": Comparing Energy Use
-The fundamental difference between plants and animals lies in their energy strategies. Animals are known as consumers (or heterotrophs). Because they move actively, they require a high amount of energy quickly. This is why animals have complex systems like a heart to pump blood and lungs to take in large amounts of oxygen.
+EXAMPLES:
+A plant's leaves turn toward the sun to maximize light capture, and flowers open and close in response to time of day.
 
-Plants, on the other hand, are producers (or autotrophs). Since they do not move from place to place, their energy needs are lower and more consistent. Instead of a heart, they use a system of tiny tubes called Xylem and Phloem to transport water and food slowly throughout their bodies. In the Sri Lankan context, think of a massive Jak tree; it stays in one place for decades, slowly building its trunk, whereas a Squirrel living in that same tree is constantly darting around, requiring immediate "fuel" from the Jak fruit. 
+KEYWORDS:
+rooted, fixed position, no locomotion, part movement, leaves, flowers, phototropism
 
-Growth Patterns: Indeterminate vs. Determinate
-A very interesting difference for a Grade 6 student is how they grow. Animals usually have determinate growth. This means they grow until they reach a certain size and age, then they stop. A human child will eventually stop getting taller.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Animal Nutrition as Consumers
+DEFINITION:
+Animals are consumers (heterotrophs) that cannot make their own food and must eat plants or other animals to obtain energy.
 
-Plants often have indeterminate growth. As long as they have the right conditions (water, sunlight, and space), many plants can keep growing new branches and leaves throughout their entire lives. This is why you can prune a hibiscus hedge in your garden, and it will simply grow new shoots to replace the old ones. Most animals cannot regrow a limb if it is lost.
+KEY_POINTS:
 
-Cellular Structure: The Invisible Wall
-If we looked through a compound microscope, like the one used to see micro-organisms, we would see a massive difference at the cellular level.  Animal cells are flexible and soft, which allows for movement and different body shapes. Plant cells, however, are encased in a "Cell Wall" made of a tough material called cellulose. This cell wall acts like a skeleton for the plant, giving it the strength to stand tall without having bones. This is why wood is hard and a dog's fur is soft.
-+1
+Animals cannot produce their own food.
+Animals must consume plants or other animals for energy.
+Animals are called consumers or heterotrophs.
 
-Respiration and Gas Exchange
-While both plants and animals breathe (respire) to produce energy, they interact with the air differently. Animals breathe in oxygen and breathe out carbon dioxide constantly. Plants do the same during respiration; however, during the day, they also perform photosynthesis. During photosynthesis, they take in the carbon dioxide that animals breathe out and release the oxygen that animals need. This beautiful "give and take" relationship is what keeps the atmosphere of the Earth balanced.
+EXAMPLES:
+A squirrel living in a Jak tree must eat the Jak fruit to get energy because it cannot make its own food.
 
-Defense Mechanisms
-Because animals can move, their primary defense is often "fight or flight"—they either run away or fight back. Since plants cannot run, they have developed amazing physical and chemical defenses. Some plants have thorns (like a rose or a bougainvillea), while others produce chemicals that taste bitter or are poisonous to keep animals from eating them.
+KEYWORDS:
+consumers, heterotrophs, eating, animal nutrition, cannot make food, energy intake
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Plant Nutrition and Photosynthesis
+DEFINITION:
+Green plants are producers (autotrophs) that make their own food using sunlight, water, and carbon dioxide through the process of photosynthesis.
+
+KEY_POINTS:
+
+Plants produce their own food through photosynthesis.
+Photosynthesis uses sunlight, water, and carbon dioxide.
+Plants are called producers or autotrophs.
+
+EXAMPLES:
+A massive Jak tree uses sunlight, water from soil, and carbon dioxide from air to make its own food through photosynthesis.
+
+KEYWORDS:
+photosynthesis, producers, autotrophs, make own food, sunlight, water, carbon dioxide, green plants
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Animal Sensory Organs
+DEFINITION:
+Animals have well-developed sensory organs like eyes, ears, and nose that allow them to respond quickly to their surroundings.
+
+KEY_POINTS:
+
+Animals possess specialized sensory organs.
+These organs include eyes, ears, nose, and other sense receptors.
+Sensory organs enable quick responses to environmental changes.
+
+EXAMPLES:
+A dog uses its eyes to see danger, ears to hear sounds, and nose to smell food, responding immediately to its environment.
+
+KEYWORDS:
+sensory organs, eyes, ears, nose, quick response, detect environment, animal senses
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Plant Response Without Sense Organs
+DEFINITION:
+Plants do not have nervous systems or sense organs like animals, but they still respond slowly to environmental factors such as light and gravity.
+
+KEY_POINTS:
+
+Plants lack nervous systems and specialized sense organs.
+Plants respond to stimuli like light and gravity.
+Plant responses are slow compared to animal responses.
+
+EXAMPLES:
+A plant slowly grows toward a window over days, responding to light without eyes or a nervous system.
+
+KEYWORDS:
+no nervous system, no sense organs, slow response, light response, gravity response, tropism
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Energy Strategy Differences
+DEFINITION:
+Animals are consumers requiring high, immediate energy delivered by complex systems like hearts and lungs, while plants are producers with lower, consistent energy needs met by xylem and phloem transport systems.
+
+KEY_POINTS:
+
+Animals require high amounts of energy quickly for active movement.
+Animals have hearts to pump blood and lungs for oxygen intake.
+Plants have lower, more consistent energy needs.
+Plants use xylem and phloem tubes to transport water and food slowly.
+
+EXAMPLES:
+In Sri Lanka, a Jak tree stays in one place for decades slowly building its trunk using xylem and phloem, while a squirrel in that tree constantly darts around requiring immediate fuel from a heart and lungs.
+
+KEYWORDS:
+energy strategies, consumers, producers, heart, lungs, xylem, phloem, transport systems, Jak tree, squirrel
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Growth Pattern Differences
+DEFINITION:
+Animals have determinate growth that stops at a certain size and age, while plants often have indeterminate growth continuing throughout their lives under the right conditions.
+
+KEY_POINTS:
+
+Animals have determinate growth that stops at maturity.
+A human child eventually stops getting taller.
+Plants have indeterminate growth continuing with proper conditions.
+Plants can grow new branches and leaves throughout their entire lives.
+Most animals cannot regrow lost limbs, but plants can replace pruned parts.
+
+EXAMPLES:
+You can prune a hibiscus hedge in your garden and it will simply grow new shoots to replace the old ones, demonstrating indeterminate growth.
+
+KEYWORDS:
+determinate growth, indeterminate growth, growth patterns, pruning, regrowth, hibiscus, maturity
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Cellular Structure Differences
+DEFINITION:
+Animal cells are flexible and soft allowing for movement and different body shapes, while plant cells are encased in a rigid cell wall made of cellulose that provides structural support.
+
+KEY_POINTS:
+
+Animal cells are flexible and soft.
+Plant cells have a rigid cell wall made of cellulose.
+The cell wall acts like a skeleton for plants, providing strength without bones.
+Cell structure explains why wood is hard and animal fur is soft.
+
+EXAMPLES:
+Under a compound microscope, plant cells show rigid cell walls giving wood its hardness, while animal cells are flexible giving a dog's fur its softness.
+
+KEYWORDS:
+cell wall, cellulose, animal cells, plant cells, flexible, rigid, cellular structure, microscope
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Respiration and Gas Exchange Balance
+DEFINITION:
+Both plants and animals respire to produce energy, but they interact with air differently creating a complementary relationship where animals consume oxygen and release carbon dioxide while plants use carbon dioxide and release oxygen during photosynthesis.
+
+KEY_POINTS:
+
+Animals breathe in oxygen and breathe out carbon dioxide constantly.
+Plants respire like animals, taking in oxygen and releasing carbon dioxide.
+During photosynthesis, plants take in carbon dioxide and release oxygen.
+This give-and-take relationship keeps Earth's atmosphere balanced.
+
+EXAMPLES:
+Animals breathe out carbon dioxide that plants use for photosynthesis, and plants release oxygen that animals need to breathe, creating a balanced cycle.
+
+KEYWORDS:
+respiration, gas exchange, oxygen, carbon dioxide, photosynthesis, atmospheric balance, complementary relationship
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C11
+NAME: Defense Mechanisms
+DEFINITION:
+Animals use fight-or-flight defenses enabled by movement, while plants being immobile have developed physical defenses like thorns and chemical defenses like bitter or poisonous compounds.
+
+KEY_POINTS:
+
+Animals can run away or fight back as primary defenses.
+Plants cannot run, so they evolved alternative defenses.
+Physical plant defenses include thorns and spines.
+Chemical plant defenses include bitter tastes and poisonous compounds.
+
+EXAMPLES:
+Roses and bougainvillea plants in Sri Lanka have thorns to deter animals from eating them, while other plants produce bitter or poisonous chemicals for protection.
+
+KEYWORDS:
+defense mechanisms, fight or flight, thorns, chemical defense, poisonous, bitter, rose, bougainvillea, protection
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Animal Locomotion
+TO: Animal Nutrition as Consumers
+EXPLANATION:
+Animals need locomotion to actively search for and obtain food because they cannot produce their own food and must find and consume other organisms.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Plant Fixed Position and Part Movement
+TO: Plant Nutrition and Photosynthesis
+EXPLANATION:
+Plants can remain fixed in one spot because they produce their own food through photosynthesis using sunlight that comes to them, eliminating the need for locomotion.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Energy Strategy Differences
+TO: Animal Locomotion
+TO: Plant Fixed Position and Part Movement
+EXPLANATION:
+Animals require high-energy systems like hearts and lungs to support active locomotion, while plants need only slow transport systems like xylem and phloem because they remain stationary.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Growth Pattern Differences
+TO: Cellular Structure Differences
+EXPLANATION:
+Plant indeterminate growth is supported by the rigid cell wall structure that allows continuous addition of new cells and tissues throughout the plant's life.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Plant Nutrition and Photosynthesis
+TO: Respiration and Gas Exchange Balance
+EXPLANATION:
+Photosynthesis in plants produces the oxygen that animals need for respiration, while animal respiration produces the carbon dioxide plants need for photosynthesis.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Animal Locomotion
+TO: Defense Mechanisms
+EXPLANATION:
+Animals use locomotion for defense through fight-or-flight responses, while plants lacking locomotion evolved alternative physical and chemical defenses.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R7
+FROM: Animal Sensory Organs
+TO: Plant Response Without Sense Organs
+EXPLANATION:
+Animals have specialized sensory organs for quick responses supporting active survival, while plants respond slowly without specialized organs because their stationary lifestyle requires less rapid reactions.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Sri Lankan Jak Tree and Squirrel Energy Comparison
+
+DESCRIPTION:
+A massive Jak tree in Sri Lanka stays in one place for decades, slowly building its trunk using xylem and phloem to transport nutrients, while a squirrel living in that same tree constantly darts around requiring immediate energy fuel from the Jak fruit, powered by its heart and lungs.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Hibiscus Hedge Regrowth After Pruning
+
+DESCRIPTION:
+When you prune a hibiscus hedge in your garden by cutting branches, the plant simply grows new shoots to replace the old ones, demonstrating indeterminate growth that continues throughout the plant's life.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Rose and Bougainvillea Thorn Defense
+
+DESCRIPTION:
+Rose and bougainvillea plants in Sri Lankan gardens have sharp thorns that physically deter animals from eating them, compensating for their inability to run away.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Oxygen-Carbon Dioxide Exchange Cycle
+
+DESCRIPTION:
+Animals in a forest breathe out carbon dioxide that surrounding plants absorb for photosynthesis, while those plants release oxygen that the animals breathe in, maintaining atmospheric balance.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Cell Wall Strength in Wood versus Soft Animal Tissue
+
+DESCRIPTION:
+Under a compound microscope, plant cells from a wooden branch show rigid cell walls made of cellulose providing hardness, while animal cells from a dog's fur show flexible structure providing softness.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E6
+TITLE: Plant Leaf Movement Toward Sunlight
+
+DESCRIPTION:
+A houseplant slowly turns its leaves toward a window over several days, demonstrating plant response to light without eyes or a nervous system.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Plants cannot move at all.
+
+CORRECTION:
+While plants cannot move their entire body from place to place (no locomotion), they do show movements of parts such as leaves turning toward the sun and flowers opening and closing.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Plants do not breathe or respire.
+
+CORRECTION:
+Plants do respire, taking in oxygen and releasing carbon dioxide just like animals. During the day, they also perform photosynthesis which takes in carbon dioxide and releases oxygen.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+All living things stop growing at a certain age.
+
+CORRECTION:
+Animals have determinate growth and stop growing at maturity, but plants have indeterminate growth and can continue growing new branches and leaves throughout their entire lives.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Plants do not need energy because they do not move around.
+
+CORRECTION:
+Plants need energy for all life processes including growth, reproduction, and maintaining their cells. They just need less immediate, high-intensity energy than animals because they are stationary.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Animal cells and plant cells are basically the same.
+
+CORRECTION:
+Plant cells have a rigid cell wall made of cellulose that animal cells lack. This cell wall provides structural support allowing plants to stand without bones, while animal cells are flexible allowing movement.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Animal Locomotion versus Plant Rooted Position
+
+DESCRIPTION:
+Split screen showing a squirrel running and jumping through trees on one side, while a Jak tree remains firmly rooted in the same spot on the other side over time-lapse.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Photosynthesis Process in Plant Leaf
+
+DESCRIPTION:
+Zoom into a green leaf showing chloroplasts absorbing sunlight, roots bringing water up, carbon dioxide entering through stomata, and glucose being produced while oxygen is released.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Animal Heart and Lungs versus Plant Xylem and Phloem
+
+DESCRIPTION:
+Side-by-side comparison showing animal heart pumping blood rapidly through vessels and lungs exchanging oxygen, versus plant xylem slowly transporting water upward and phloem transporting food throughout.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Determinate versus Indeterminate Growth
+
+DESCRIPTION:
+Time-lapse showing human child growing to adult height then stopping, versus hibiscus plant continuously producing new branches and leaves being pruned and regrowing over years.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Cell Wall Structure Under Microscope
+
+DESCRIPTION:
+Microscope view showing flexible, soft animal cells from fur tissue, then switching to rigid plant cells with thick cell walls from wooden branch showing cellulose structure.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Oxygen-Carbon Dioxide Exchange Cycle
+
+DESCRIPTION:
+Diagram showing animals breathing in oxygen (blue arrows) and breathing out carbon dioxide (red arrows), with plants taking in carbon dioxide during photosynthesis and releasing oxygen, creating circular flow.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Plant Defense Mechanisms
+
+DESCRIPTION:
+Show rose bush with sharp thorns deterring animals, then show plant producing bitter chemical compounds internally, contrasting with deer running away using locomotion for defense.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S8
+TITLE: Plant Part Movement Toward Light
+
+DESCRIPTION:
+Time-lapse over several days showing houseplant leaves gradually turning and bending toward window light source without moving from rooted position.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Distinguish between animal locomotion that moves the entire body and plant part movements such as leaves turning toward light while remaining rooted in place.
+
+Contrast animal nutrition as consumers that must eat other organisms with plant nutrition as producers that make their own food through photosynthesis.
+
+Compare animal energy systems requiring hearts and lungs for high immediate energy with plant transport systems using xylem and phloem for slower consistent energy needs.
+
+Explain key structural differences including determinate versus indeterminate growth, flexible animal cells versus rigid plant cells with cellulose walls, and complementary gas exchange where animals and plants balance oxygen and carbon dioxide in the atmosphere.
+
+==================================================
+SECTION: SUMMARY
+Plants and animals are both living organisms that grow, breathe, and reproduce, but they have fundamentally different survival strategies. Animals possess locomotion to move their entire body to find food, escape danger, or find shelter, while plants remain fixed in place by roots showing only part movements like leaves turning toward the sun. Animals are consumers (heterotrophs) that must eat plants or other animals because they cannot make their own food, whereas green plants are producers (autotrophs) that make their own food through photosynthesis using sunlight, water, and carbon dioxide. Animals have well-developed sensory organs like eyes, ears, and nose for quick environmental responses, while plants respond slowly to light and gravity without nervous systems or specialized sense organs. The energy strategies differ fundamentally: animals require high immediate energy delivered by hearts pumping blood and lungs exchanging oxygen to support active movement, while plants have lower consistent energy needs met by xylem and phloem tubes slowly transporting water and nutrients—as seen in Sri Lanka where a Jak tree stays in one place for decades while a squirrel constantly requires immediate fuel. Animals have determinate growth stopping at maturity, but plants have indeterminate growth continuing throughout life with proper conditions, allowing a hibiscus hedge to grow new shoots after pruning. At the cellular level, plant cells have rigid cell walls made of cellulose providing structural support like a skeleton, explaining why wood is hard, while animal cells are flexible allowing movement and body shape variation. Both respire to produce energy, but their gas exchange creates a complementary atmospheric balance: animals breathe in oxygen and release carbon dioxide constantly, while plants not only respire but also perform photosynthesis taking in the carbon dioxide animals produce and releasing the oxygen animals need. Finally, defense mechanisms reflect their mobility differences: animals use fight-or-flight responses enabled by locomotion, while immobile plants developed physical defenses like thorns on roses and bougainvillea and chemical defenses producing bitter or poisonous compounds to deter consumption.

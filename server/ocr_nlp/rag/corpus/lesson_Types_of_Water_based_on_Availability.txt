@@ -1,45 +1,250 @@
-Types of Water based on Availability
-Water is found in different places in our environment. Based on where it is located and how we access it, we can divide it into three main types:
+LESSON_ID: SCI_G6_WATER_AVAILABILITY_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Types of Water Based on Availability
+DIFFICULTY: Basic
 
-1. Surface Water
-This is the water that is found on the surface of the earth. It is the most visible form of water.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_01
+NAME: Surface Water
+DEFINITION:
+Surface water is water found on the surface of the Earth and is easily visible.
 
-Examples: Streams, rivers, ponds, lakes, and the sea.
+KEY_POINTS:
+- Found in rivers, lakes, ponds, and seas.
+- Directly affected by rainfall.
+- Used for agriculture, drinking, and industry.
+- Easily polluted by human activities.
 
-In Sri Lanka: We have many "Tanks" (Wewa) built by ancient kings, which are important sources of surface water for agriculture.
+EXAMPLES:
+Streams, rivers, tanks (Wewa), lakes, sea.
+Ancient irrigation tanks in Sri Lanka.
 
-2. Ground Water
-Some of the rain that falls on the ground seeps through the soil and collects between underground rocks. This is called ground water.
+KEYWORDS:
+surface water, rivers, lakes, tanks, agriculture
 
-Access: We get this water by digging wells or using tube wells.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_02
+NAME: Ground Water
+DEFINITION:
+Ground water is water that seeps into the soil and collects in underground layers of rock and sand.
 
-Characteristics: Ground water is usually filtered naturally as it passes through layers of sand and soil, but it can still contain dissolved minerals.
+KEY_POINTS:
+- Formed by rainwater infiltration.
+- Stored in pores and cracks in rocks.
+- Accessed using wells and tube wells.
+- Naturally filtered but may contain dissolved minerals.
 
-3. Atmospheric Water
-Water is also present in the air around us.
+EXAMPLES:
+Well water.
+Tube well water.
+Ground water in Jaffna limestone regions.
 
-Forms: It exists as water vapour (gas), and as tiny water droplets in clouds and mist.
+KEYWORDS:
+ground water, infiltration, wells, underground water
 
-Visibility: While water vapour is invisible, we can see it when it turns into clouds or as dew on grass in the morning.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_03
+NAME: Atmospheric Water
+DEFINITION:
+Atmospheric water is water present in the air as vapour or tiny droplets.
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Science of Aquifers: Nature’s Underground Storage
-Ground water doesn't just sit in big empty caves; it mostly fills the tiny pores and cracks in rocks and soil. A layer of rock that holds a significant amount of ground water is called an aquifer. In the northern parts of Sri Lanka, like Jaffna, people rely almost entirely on limestone aquifers because there are very few rivers. Protecting this ground water is vital because once it becomes polluted by chemicals or salt water, it is very difficult and expensive to clean.
+KEY_POINTS:
+- Exists as invisible water vapour.
+- Forms clouds through condensation.
+- Appears as dew, mist, and rain.
+- Drives weather systems.
 
-Surface Water: Freshwater vs. Marine Water
-Not all surface water is the same. Scientists divide it into:
+EXAMPLES:
+Clouds, mist in Nuwara Eliya, dew on grass.
 
-Freshwater: This has very low salt content. Only about 3% of the world's water is fresh, and most of that is trapped in ice caps. Our rivers and tanks are our primary source of freshwater.
+KEYWORDS:
+atmospheric water, vapour, clouds, condensation
 
-Marine Water: This is the salty water in our oceans and seas. While we cannot drink it or use it for most plants, it is home to millions of sea creatures and helps regulate the Earth's temperature.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_04
+NAME: Aquifers
+DEFINITION:
+An aquifer is an underground layer of rock or soil that stores significant amounts of ground water.
 
-Brackish Water: This is a mixture of fresh and salt water, usually found in lagoons where rivers meet the sea. Sri Lanka has many beautiful lagoons, like the Negombo Lagoon, which are rich in biodiversity.
+KEY_POINTS:
+- Water fills tiny pores and cracks.
+- Important for drinking water supply.
+- Vulnerable to pollution.
+- Limestone aquifers are important in northern Sri Lanka.
 
-The Movement of Atmospheric Water
-Atmospheric water is the "engine" of our weather. When the sun heats the ocean, water molecules speed up and escape into the air as vapour. This process is called evaporation. As this vapour rises into the cooler parts of the atmosphere, it slows down and sticks to tiny dust particles, forming clouds. This is called condensation. In Sri Lanka, our "monsoon" seasons are driven by massive amounts of atmospheric water being carried by winds across the ocean and falling as rain over the island.
+EXAMPLES:
+Limestone aquifers in Jaffna.
 
-The Water Table and its Importance
-If you dig a hole in the ground, you will eventually reach a point where the soil is completely soaked with water. The top level of this underground water is called the Water Table. During the rainy season in Sri Lanka, the water table rises, making it easier to get water from wells. In the dry season, the water table drops. If we pump too much water out of the ground (over-extraction), the water table can drop so low that wells go dry and plants cannot reach moisture with their roots.
+KEYWORDS:
+aquifer, underground storage, limestone, groundwater supply
 
-Water Quality and Human Impact
-As water moves through these different "availabilities," its quality can change. Rainwater (atmospheric) is generally pure but can pick up pollutants from factory smoke. Surface water is easily contaminated by plastic waste and factory chemicals. Even ground water can be affected by the overuse of fertilizers in farming. In many parts of Sri Lanka’s North Central Province, scientists are studying how ground water quality affects human health, such as Kidney disease (CKDu), highlighting why protecting our water sources is a national priority.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_05
+NAME: Types of Surface Water
+DEFINITION:
+Surface water can be classified based on salt content as freshwater, marine water, or brackish water.
+
+KEY_POINTS:
+- Freshwater contains very little salt.
+- Marine water contains high salt content.
+- Brackish water is a mixture of fresh and salt water.
+- Lagoons often contain brackish water.
+
+EXAMPLES:
+Freshwater rivers and tanks.
+Indian Ocean (marine water).
+Negombo Lagoon (brackish water).
+
+KEYWORDS:
+freshwater, marine water, brackish water, lagoon
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_06
+NAME: Water Table
+DEFINITION:
+The water table is the upper level of underground water where soil and rocks are fully saturated.
+
+KEY_POINTS:
+- Rises during rainy seasons.
+- Falls during dry seasons.
+- Affected by over-extraction.
+- Important for agriculture and wells.
+
+EXAMPLES:
+Wells drying during drought.
+Higher well water levels after monsoon.
+
+KEYWORDS:
+water table, saturation, rainy season, drought
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_07
+NAME: Water Quality and Human Impact
+DEFINITION:
+Water quality can change due to natural processes and human activities such as pollution and overuse.
+
+KEY_POINTS:
+- Rainwater may collect air pollutants.
+- Surface water can be polluted by waste.
+- Ground water can absorb chemicals from fertilizers.
+- Protecting water sources is essential for health.
+
+EXAMPLES:
+Plastic waste in rivers.
+Fertilizer runoff affecting wells.
+Groundwater quality studies in North Central Province.
+
+KEYWORDS:
+water pollution, fertilizer runoff, contamination, water protection
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WA_01
+FROM: Evaporation
+TO: Atmospheric Water
+EXPLANATION:
+Evaporation converts surface water into atmospheric water vapour, which later forms clouds and rain.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WA_02
+FROM: Rainfall
+TO: Ground Water
+EXPLANATION:
+Rainwater infiltrates the soil and replenishes underground aquifers.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WA_03
+FROM: Over-Extraction
+TO: Water Table Decline
+EXPLANATION:
+Pumping too much groundwater lowers the water table and may cause wells to dry.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WA_01
+TITLE: Ancient Irrigation Tanks
+
+DESCRIPTION:
+Ancient Sri Lankan kings built large tanks (Wewa) to store surface water for farming.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WA_02
+TITLE: Negombo Lagoon
+
+DESCRIPTION:
+Negombo Lagoon contains brackish water where river water mixes with seawater.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WA_03
+TITLE: Rising and Falling Water Table
+
+DESCRIPTION:
+During heavy rain, wells fill easily. During drought, wells may dry as the water table drops.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WA_01
+STATEMENT:
+Ground water exists in large underground rivers and empty caves.
+
+CORRECTION:
+Ground water mainly fills tiny pores and cracks in rocks and soil layers.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WA_02
+STATEMENT:
+Rainwater is always completely pure.
+
+CORRECTION:
+Rainwater can absorb pollutants from the air before reaching the ground.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WA_03
+STATEMENT:
+Sea water can be used directly for drinking and farming.
+
+CORRECTION:
+Marine water contains high salt content and requires treatment before use.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WA_01
+TITLE: Water Availability Layers
+
+DESCRIPTION:
+Display a cross-section of land showing surface water on top, groundwater stored in aquifer layers, and atmospheric water forming clouds above.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WA_02
+TITLE: Water Cycle Interaction
+
+DESCRIPTION:
+Show evaporation from ocean, cloud formation, rainfall over land, infiltration into soil, and groundwater recharge.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Identify surface water, ground water, and atmospheric water.
+- Explain how aquifers store underground water.
+- Distinguish freshwater, marine water, and brackish water.
+- Describe the importance of the water table.
+- Explain how human activities affect water quality.
+
+==================================================
+SECTION: SUMMARY
+Water exists as surface water, ground water, and atmospheric water depending on location and availability. Ground water is stored in aquifers and influenced by the water table. Surface water may be freshwater, marine, or brackish. Atmospheric water drives weather through evaporation and condensation. Human activities can affect water quality, making conservation and protection essential.

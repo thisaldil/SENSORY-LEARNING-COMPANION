@@ -1,88 +1,251 @@
-In our daily lives, we use various types of matter. These can be grouped into three main categories based on their physical state: Solid, Liquid, and Gas.
-+2
+LESSON_ID: SCI_G6_STATES_OF_MATTER_002
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Solid, Liquid, and Gas
+DIFFICULTY: Basic
 
-1. Solids
-Solids are materials that do not change their shape easily.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_01
+NAME: Classification of Matter by Physical State
+DEFINITION:
+Matter can be grouped into three main physical states: solid, liquid, and gas, based on shape, volume, and particle arrangement.
 
-Definite Shape: A solid has a shape of its own. If you put a stone in a cup, it stays the same shape.
+KEY_POINTS:
+- All matter is made of tiny particles.
+- Physical state depends on particle behavior.
+- Solids, liquids, and gases have different properties.
+- Heat can change the state of matter.
 
+KEYWORDS:
+matter, physical state, solid, liquid, gas
 
-Definite Volume: A solid occupies a specific amount of space that doesn't change.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_02
+NAME: Solids
+DEFINITION:
+Solids are materials that have a definite shape and definite volume because their particles are tightly packed.
 
+KEY_POINTS:
+- Solids keep their own shape.
+- Solids occupy a fixed amount of space.
+- Particles vibrate in fixed positions.
+- Solids are difficult to compress.
 
-Examples: Firewood, bricks, stones, pens, and jaggery.
-+4
+EXAMPLES:
+Firewood, bricks, stones, pens, jaggery.
 
-2. Liquids
-Liquids can flow and change their shape depending on where they are placed.
+KEYWORDS:
+solid, definite shape, definite volume, rigid
 
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_03
+NAME: Liquids
+DEFINITION:
+Liquids have a definite volume but no definite shape because their particles can slide past one another.
 
-No Definite Shape: Liquids take the shape of the container they are in.
+KEY_POINTS:
+- Liquids take the shape of their container.
+- Volume remains constant.
+- Liquids can flow.
+- Liquids are slightly compressible but difficult to squash.
 
-Definite Volume: Even if the shape changes, the amount (volume) of the liquid stays the same. 25 ml of water is still 25 ml whether it is in a tall glass or a flat dish.
-+1
+EXAMPLES:
+Kerosene, water, coconut oil, milk.
 
+KEYWORDS:
+liquid, flow, container shape, volume
 
-Examples: Kerosene, water, coconut oil, and milk.
-+4
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_04
+NAME: Gases
+DEFINITION:
+Gases have neither definite shape nor definite volume because their particles move freely and spread out.
 
-3. Gases
-Gases are often invisible and spread out to fill any space available to them.
-+1
+KEY_POINTS:
+- Gases fill the entire container.
+- Particles are far apart.
+- Gases are easily compressed.
+- Many gases are invisible.
 
+EXAMPLES:
+L.P. gas, air, oxygen, water vapour.
 
-No Definite Shape: Gases do not have a shape of their own.
-+2
+KEYWORDS:
+gas, expansion, compression, particles far apart
 
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_05
+NAME: Particle Theory of Matter
+DEFINITION:
+The particle theory explains that all matter is made of tiny particles whose arrangement and motion determine the state of matter.
 
-No Definite Volume: Gases do not have a fixed volume; they spread throughout the entire container they are placed in.
+KEY_POINTS:
+- In solids, particles vibrate in fixed positions.
+- In liquids, particles stay close but slide past each other.
+- In gases, particles move rapidly and independently.
+- Heat increases particle movement.
 
+KEYWORDS:
+particle theory, vibration, movement, temperature
 
-Examples: L.P. gas, air, oxygen, and water vapour.
-+3
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_06
+NAME: Changes of State
+DEFINITION:
+Changes of state occur when heat is added or removed, causing matter to transform between solid, liquid, and gas.
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Particle Theory: Seeing the Invisible
-To understand why solids, liquids, and gases behave differently, we have to look at the tiny particles they are made of. Imagine these particles are like students in a school:
+KEY_POINTS:
+- Melting: solid to liquid (absorbs heat).
+- Freezing: liquid to solid (releases heat).
+- Evaporation: liquid to gas (absorbs heat).
+- Condensation: gas to liquid (releases heat).
+- Heat energy changes particle motion.
 
-In a Solid, the particles are like students sitting tightly packed in a row during an assembly. They are so close together that they can only vibrate in place. This is why solids keep their shape and are hard to squash.
+EXAMPLES:
+Ice melting into water.
+Water vapour forming droplets on a cold bottle.
+Rain forming from clouds.
 
-In a Liquid, the particles are like students moving around in the playground during recess. They stay close to each other but can slide past one another. This "sliding" is why liquids can flow and take the shape of a bottle.
+KEYWORDS:
+melting, freezing, evaporation, condensation
 
-In a Gas, the particles are like students running as fast as they can in every direction. They are very far apart and move independently. This explains why gases fill up a whole room and can be easily compressed (squashed).
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_07
+NAME: Measuring Mass and Volume
+DEFINITION:
+Mass and volume are measurable properties that help identify and compare different states of matter.
 
-Changing States: The Role of Heat
-Matter doesn't always stay in one state. By adding or removing heat, we can cause a Change of State.
+KEY_POINTS:
+- Liquids are measured using a measuring cylinder.
+- The curved surface of liquid is called the meniscus.
+- Measurements must be read at eye level.
+- Gases have mass even though they are light.
 
+EXAMPLES:
+Reading water level from bottom of meniscus.
+Weighing a balloon before and after inflating it.
 
-Melting: Adding heat to a solid (like ice) turns it into a liquid (water).
+KEYWORDS:
+mass, volume, measuring cylinder, meniscus, balance
 
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_08
+NAME: Anomaly of Water
+DEFINITION:
+Water expands when it freezes, unlike most substances which contract when they become solid.
 
-Evaporation: Adding more heat to a liquid turns it into a gas (water vapour).
+KEY_POINTS:
+- Ice occupies more space than liquid water.
+- Frozen water can crack containers.
+- This property is unique and important in nature.
 
-Condensation: Removing heat from a gas (cooling it) turns it back into a liquid. You see this when water droplets form on the outside of a cold ginger beer bottle.
+EXAMPLES:
+Bottle cracking in freezer.
+Ice floating on water.
 
-Freezing: Removing even more heat from a liquid turns it back into a solid.
+KEYWORDS:
+water expansion, freezing, anomaly, ice
 
-In Sri Lanka, we see these changes often. When it rains, water vapour in the clouds cools down and turns into liquid water. High in the mountains like Horton Plains, it can get cold enough for water to almost reach its freezing point as frost.
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM2_01
+FROM: Heat
+TO: Change of State
+EXPLANATION:
+Adding heat increases particle motion, causing melting or evaporation, while removing heat causes freezing or condensation.
 
-Measuring States: Mass and Volume in the Lab
-While we can see the shape of a solid, measuring liquids and gases requires special tools. In a science lab, we use a measuring cylinder to find the volume of a liquid. Because the surface of water curves (called a meniscus), you must always take the reading from the lowest point of that curve at eye level to be accurate.
-+1
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM2_02
+FROM: Particle Arrangement
+TO: Physical Properties
+EXPLANATION:
+The spacing and movement of particles determine whether matter behaves as a solid, liquid, or gas.
 
-Measuring the mass of a gas is more tricky because it is so light. However, using a "Triple Beam Balance" or a sensitive electronic scale, you can weigh a deflated balloon and then weigh it again after it is blown up. The small difference in weight is the mass of the air inside!.
-+2
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM2_01
+TITLE: Cold Bottle Condensation
 
-Unique Properties: The Anomaly of Water
-Water is one of the few substances on Earth that we regularly see in all three states: as solid ice, liquid drinking water, and gaseous water vapour. Most substances get smaller (contract) when they freeze, but water is special—it expands when it turns into ice. This is why a glass bottle filled with water might crack if you put it in the freezer.
+DESCRIPTION:
+Water vapour in the air cools and condenses into liquid droplets on the outside of a cold bottle.
 
-Applications in Daily Life
-Understanding these states helps us every day:
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM2_02
+TITLE: Inflated Balloon Mass
 
+DESCRIPTION:
+A balloon weighs slightly more after inflation because the air inside has mass.
 
-Compressed Gases: Because gases have no definite volume, we can squash a lot of L.P. gas into a metal cylinder to use for cooking in our kitchens.
-+1
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM2_03
+TITLE: L.P. Gas Cylinder
 
-Construction: We use solids like cement and steel for buildings because their definite shape and volume provide strength.
+DESCRIPTION:
+Gases can be compressed into cylinders because they have no definite volume.
 
-Lubrication: We use liquids like coconut oil or engine oil because they can flow into the tiny gaps between moving parts of a machine to stop them from rubbing together.
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM2_01
+STATEMENT:
+Gas has no mass because it is invisible.
+
+CORRECTION:
+Gases have mass and occupy space even though they may not be visible.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM2_02
+STATEMENT:
+Particles in solids do not move.
+
+CORRECTION:
+Particles in solids vibrate in fixed positions.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM2_03
+STATEMENT:
+All substances shrink when frozen.
+
+CORRECTION:
+Water expands when it freezes, which is an unusual property.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM2_01
+TITLE: Particle Arrangement Comparison
+
+DESCRIPTION:
+Display three containers labeled solid, liquid, and gas with animated particle spacing and motion differences.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM2_02
+TITLE: Measuring Meniscus
+
+DESCRIPTION:
+Show a measuring cylinder with curved water surface and indicate correct eye-level reading at lowest point of meniscus.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Classify matter into solid, liquid, and gas.
+- Describe particle arrangement in each state.
+- Explain how heat causes changes of state.
+- Measure liquid volume correctly using a measuring cylinder.
+- Describe the unique freezing behavior of water.
+
+==================================================
+SECTION: SUMMARY
+Matter exists as solid, liquid, or gas depending on particle arrangement and motion. Solids have definite shape and volume, liquids have definite volume but no fixed shape, and gases have neither. Heat changes the motion of particles and causes phase transitions such as melting and evaporation. Understanding these concepts helps explain daily observations, laboratory measurements, and natural processes.

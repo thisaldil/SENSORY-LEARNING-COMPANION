@@ -1,48 +1,230 @@
-In Grade 6 Science, you don't always need expensive equipment to study the atmosphere. You can be a scientist by designing your own apparatus (tools) using simple recycled materials. Building these tools helps you understand exactly how they work.
+LESSON_ID: SCI_G6_WEATHER_APPARATUS_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Designing Apparatus to Measure Weather
+DIFFICULTY: Basic
 
-1. Designing a Rain Gauge
-A rain gauge measures the amount of liquid precipitation over a set period.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_01
+NAME: Rain Gauge
+DEFINITION:
+A rain gauge is an instrument used to measure the amount of liquid rainfall collected over a period of time.
 
-How to build it: You can use a plastic bottle with a flat bottom. Cut the top off and turn it upside down to act as a funnel. This prevents the water from evaporating. Use a ruler to mark measurements in millimeters (mm) on the side.
+KEY_POINTS:
+- A plastic bottle can be used as a simple rain gauge.
+- The top can be cut and inverted as a funnel to reduce evaporation.
+- Measurements should be marked in millimeters (mm) for rainfall depth.
 
-Placement: It must be placed in an open area away from trees or buildings that might block the rain or cause extra water to drip into it.
+EXAMPLES:
+Measuring daily rainfall in an open school field after a rain shower.
 
-2. Designing a Wind Vane
-A wind vane is used to show the direction of the wind.
+KEYWORDS:
+rain gauge, rainfall, precipitation, millimeters, measurement
 
-How to build it: You can use a pencil, a drinking straw, and a piece of cardboard cut into an arrow shape. Balance the straw on a pin pushed into the pencil eraser.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_02
+NAME: Wind Vane
+DEFINITION:
+A wind vane is an instrument that shows the direction from which the wind is blowing.
 
-How it works: The large tail of the arrow catches the wind, causing the tip to point into the direction the wind is coming from. If the arrow points North, we call it a "North Wind."
+KEY_POINTS:
+- A straw, pin, pencil, and cardboard arrow can form a simple wind vane.
+- The wider tail catches wind and turns the arrow.
+- If the arrow points north, the wind is called a north wind.
 
-3. Designing an Anemometer
-An anemometer measures wind speed.
+EXAMPLES:
+Using a handmade wind vane in the school garden to record wind direction each morning.
 
-How to build it: You can use four paper cups attached to two drinking straws in a cross shape. Poke a pin through the center of the straws and into a pencil eraser.
+KEYWORDS:
+wind vane, wind direction, arrow, north wind, atmosphere
 
-How it works: As the wind blows, it catches the open part of the cups and makes the device spin. By counting how many times it spins in one minute, you can calculate how fast the wind is moving.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_03
+NAME: Anemometer
+DEFINITION:
+An anemometer is an instrument used to measure wind speed.
 
-Additional Knowledge for Enhanced Learning
-The Science of Calibration
-When you design your own apparatus, the most important step is calibration. This means making sure your tool gives accurate readings. For your rain gauge, if the bottle is curved at the bottom, your mm marks won't be accurate at the start. Scientists solve this by pouring a small amount of "leveling water" to reach the flat part of the bottle and marking that as "0." This ensures that every millimeter of rain you measure is exactly the same amount of water.
+KEY_POINTS:
+- Four paper cups and two straws can be arranged in a cross shape.
+- Wind pushes the cups and makes the device rotate.
+- Counting rotations per minute helps estimate wind speed.
 
-Understanding Sensitivity in Design
-A good weather instrument must be sensitive. For a wind vane, if the pin is too tight or the straw is too heavy, the wind won't be strong enough to move it. When designing, engineers try to reduce friction. Using a smooth pin and a lightweight straw allows your wind vane to react even to a very light breeze. This is the same principle used in professional weather stations at the Colombo Observatory, though they use electronic sensors instead of cardboard!
+EXAMPLES:
+Counting cup rotations for one minute during a windy afternoon to compare wind speed.
 
-Standardization of Instruments
-To compare your data with a friend's, your designs must be similar. This is called Standardization. If your rain gauge is very wide and your friend's is very narrow, will they show the same height of water? Interestingly, yes! Because a wider bottle catches more rain but also has more area to fill, the height in millimeters stays the same. This is a fundamental rule of geometry that allows weather data to be shared worldwide.
+KEYWORDS:
+anemometer, wind speed, rotation, cups, measurement
 
-Using Technology: The Digital Transition
-While homemade tools are great for learning, modern weather study uses Digital Sensors. These use electronics to "feel" the weather.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_04
+NAME: Calibration
+DEFINITION:
+Calibration is the process of adjusting an instrument so that its measurements are accurate.
 
-Digital Thermometers use a "thermistor" that changes its electrical resistance when it gets hot.
+KEY_POINTS:
+- A curved bottle base can cause incorrect early rain-gauge readings.
+- Adding leveling water and marking that level as zero improves accuracy.
+- Calibration makes each millimeter reading represent the correct water amount.
 
-Ultrasonic Anemometers use sound waves to measure wind speed without any moving parts at all!
-Learning to build manual tools first helps you understand the "logic" that these modern computers use to give us our daily weather reports.
+EXAMPLES:
+Setting zero on a homemade rain gauge before starting a weekly rainfall record.
 
-The Importance of Siting (Placement)
-The best-designed apparatus will give wrong data if it is placed in the wrong spot.
+KEYWORDS:
+calibration, accuracy, zero mark, leveling water, data quality
 
-Temperature: A thermometer in direct sunlight measures the heat of the sun hitting the glass, not the air temperature. It must be kept in the shade.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_05
+NAME: Sensitivity and Friction
+DEFINITION:
+Sensitivity is how well an instrument responds to small weather changes, and friction is a force that can reduce this response.
 
-Wind: An anemometer placed behind a wall will show "zero" wind even during a storm.
-Scientists use a Stevenson Screen—a white, wooden box with slats—to keep instruments in the shade and protected from rain while still letting the air flow through freely.
+KEY_POINTS:
+- A wind vane must move even in a light breeze.
+- Too much friction at the pin point reduces movement.
+- Lightweight materials and smooth pivots increase sensitivity.
+
+EXAMPLES:
+A lighter straw wind vane turns in a weak breeze, while a heavy one stays still.
+
+KEYWORDS:
+sensitivity, friction, breeze, pivot, instrument design
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_06
+NAME: Standardization
+DEFINITION:
+Standardization means using consistent instrument design and methods so data can be compared fairly.
+
+KEY_POINTS:
+- Similar design methods help students compare results reliably.
+- Rain-gauge width differences can still produce comparable mm-height readings.
+- Standard methods allow weather data sharing across places.
+
+EXAMPLES:
+Two students in different schools compare weekly rainfall because both use mm scale readings.
+
+KEYWORDS:
+standardization, comparison, data sharing, consistency, method
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_07
+NAME: Digital Weather Sensors
+DEFINITION:
+Digital weather sensors are electronic devices that measure weather conditions automatically.
+
+KEY_POINTS:
+- A digital thermometer uses a thermistor that changes electrical resistance with temperature.
+- Ultrasonic anemometers measure wind speed using sound waves.
+- Learning manual tools first helps students understand the logic of digital systems.
+
+EXAMPLES:
+Comparing a handmade anemometer reading with a digital weather station reading.
+
+KEYWORDS:
+digital sensors, thermistor, ultrasonic anemometer, electronics, automation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WA_08
+NAME: Instrument Siting
+DEFINITION:
+Instrument siting is placing weather instruments in correct locations so they measure real atmospheric conditions.
+
+KEY_POINTS:
+- A thermometer in direct sunlight measures heated glass, not true air temperature.
+- An anemometer behind a wall may show very low wind even during strong weather.
+- A Stevenson screen protects instruments while allowing proper airflow.
+
+EXAMPLES:
+Placing a thermometer in shade and ventilation to obtain accurate air-temperature data.
+
+KEYWORDS:
+siting, placement, Stevenson screen, airflow, accuracy
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WA_01
+FROM: Calibration
+TO: Rain Gauge
+EXPLANATION:
+Calibrating a rain gauge, especially setting a correct zero level, improves rainfall measurement accuracy.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WA_02
+FROM: Sensitivity and Friction
+TO: Wind Vane
+EXPLANATION:
+Lower friction and lighter parts make a wind vane more sensitive to weak winds, so direction readings are more reliable.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WA_03
+FROM: Instrument Siting
+TO: Data Accuracy
+EXPLANATION:
+Correct placement of instruments is necessary because poor siting causes wrong temperature and wind data.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WA_01
+TITLE: Building and Calibrating a Rain Gauge
+
+DESCRIPTION:
+A student cuts a plastic bottle, makes a funnel top, adds leveling water to the flat section, marks that as zero, and then records rainfall in millimeters each day.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WA_02
+TITLE: Measuring Wind Direction and Speed at School
+
+DESCRIPTION:
+Students place a wind vane and cup anemometer in an open area, record wind direction, count anemometer rotations for one minute, and compare changes during different times of day.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WA_03
+TITLE: Comparing Manual and Digital Instruments
+
+DESCRIPTION:
+Students compare values from their handmade thermometer setup and wind tools with readings from a digital weather station to understand similarities and differences.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WA_01
+STATEMENT:
+If a weather instrument is built correctly, it will always give correct data no matter where it is placed.
+
+CORRECTION:
+Even a well-built instrument gives wrong results if it is placed in the wrong location. Proper siting and calibration are both required for accurate weather measurements.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WA_01
+TITLE: School Weather Station Setup
+
+DESCRIPTION:
+Show students placing a rain gauge in an open field, a wind vane and cup anemometer away from walls, and a thermometer inside a shaded Stevenson screen, with labels showing what each tool measures.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+- Describe how a rain gauge, wind vane, and anemometer are designed and used.
+
+- Explain why calibration is needed for accurate weather measurement.
+
+- Explain how sensitivity, friction, and instrument siting affect weather data quality.
+
+- Compare manual weather instruments with digital weather sensors.
+
+==================================================
+SECTION: SUMMARY
+Designing weather apparatus using simple materials helps students understand scientific measurement. A rain gauge measures rainfall, a wind vane shows wind direction, and an anemometer measures wind speed. Accurate results depend on calibration, sensitivity, and correct instrument siting. Standardized methods allow fair comparison of weather data, and these same principles also support modern digital weather sensors.

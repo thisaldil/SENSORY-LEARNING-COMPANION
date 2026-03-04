@@ -1,52 +1,422 @@
-1. Introduction to Our Environment
-The environment is everything that surrounds us, including the land, water bodies, houses, plants, and animals. When we look around our school garden or home, we see many different things. Some of these things, like a child or a plant, grow over time. Others, like a pencil or a stone, stay the same size.
+LESSON_ID: SCI_G6_CHARACTERISTICS_OF_ORGANISMS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Characteristics of Organisms
+DIFFICULTY: Basic
 
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Environment and Its Components
+DEFINITION:
+The environment is everything that surrounds us, including living organisms and non-living things such as land, water, and human-made objects.
 
-2. Defining Living Organisms
-Growth is the increase in size, height, or amount of something.
+KEY_POINTS:
 
+Environment includes both living and non-living components.
+Living components show growth and change over time.
+Non-living components remain the same size.
 
-Living Things (Organisms): Components of the environment that show growth are called living organisms.
+EXAMPLES:
+A school garden contains living organisms like plants and insects, along with non-living things like stones and buildings.
 
+KEYWORDS:
+environment, living things, non-living things, surroundings, components
 
-Non-Living Things: Components that do not show growth are called non-living things.
-Living organisms are generally categorized into two main groups: Plants and Animals.
-+1
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Growth as a Defining Characteristic
+DEFINITION:
+Growth is the increase in size, height, or amount of something, and is a primary indicator used to distinguish living organisms from non-living things.
 
-3. Key Characteristics of Living Organisms
-To identify if something is truly "living," scientists look for specific characteristics. While growth is the most obvious, there are several other vital processes:
+KEY_POINTS:
 
-Growth: All living things grow at some stage in their life. For example, a small seed becomes a giant tree, and a baby grows into an adult.
+Growth means increasing in size or quantity.
+Living organisms show growth at some stage in their life.
+Non-living things do not grow on their own.
 
-Nutrition: All organisms need energy to live. Animals get this by eating food, while plants produce their own food using sunlight.
-+1
+EXAMPLES:
+A seed grows into a giant tree, and a baby grows into an adult, while a stone stays the same size forever.
 
-Respiration: Organisms break down food to produce energy. This usually involves taking in oxygen and releasing carbon dioxide.
+KEYWORDS:
+growth, increase, size, living indicator, development
 
-Movement: Animals move from place to place to find food or safety. While plants don't walk, they show movement by turning their leaves toward the sun or opening their flowers.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Living Organisms versus Non-Living Things
+DEFINITION:
+Living organisms are components of the environment that show growth and other life processes, while non-living things do not exhibit these characteristics.
 
-Reproduction: To ensure their kind continues, living things produce offspring (babies or seeds).
+KEY_POINTS:
 
+Living organisms are categorized mainly as plants and animals.
+Living things show growth and life processes.
+Non-living things lack biological processes.
 
-Sensitivity: Living things respond to changes in their environment, such as a plant leaning toward light or a person shivering in the cold.
+EXAMPLES:
+A child and a plant are living organisms because they grow, while a pencil and a stone are non-living.
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Science of Classification (Taxonomy)
-In Grade 6, we begin by separating the world into "Living" and "Non-living." However, scientists use a deeper system called Taxonomy to organize millions of species. This system was pioneered by Carolus Linnaeus. By grouping organisms based on shared characteristics, scientists can communicate clearly across different languages. For instance, while we say "Aliya" in Sinhala or "Elephant" in English, the scientific name Elephas maximus identifies the Asian Elephant globally.
+KEYWORDS:
+living organisms, non-living things, plants, animals, classification
 
-Photosynthesis: The Miracle of Plant Life
-Unlike animals, plants are "autotrophs," meaning they are self-feeders. They perform a unique process called photosynthesis. Using a green pigment called chlorophyll, plants trap energy from sunlight to convert water and carbon dioxide into glucose (food). This is why plants are the "producers" at the start of every food chain. Without this process, life on Earth would not have the oxygen we breathe or the primary food source we depend on.
-+1
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Six Characteristics of Living Organisms
+DEFINITION:
+Living organisms exhibit six key characteristics: growth, nutrition, respiration, movement, reproduction, and sensitivity.
 
-The Cellular Basis of Life
-While we see growth on the outside, the "magic" happens on the inside. Every living organism is made of tiny building blocks called cells. Some organisms, like bacteria, are made of just one cell (unicellular). Others, like humans and mango trees, are made of trillions of cells (multicellular). Growth occurs because these cells divide and create more cells. This is a fundamental difference between a living kitten and a non-living toy cat; the kitten's cells are constantly working, repairing, and multiplying.
+KEY_POINTS:
 
-Adaptation and Survival
-Characteristics are not just about staying alive; they are about thriving in specific environments. This is called adaptation. In Sri Lanka, you might see plants like the Cactus in dry zones with thick stems to store water, while plants in the rainforest have "drip tips" on their leaves to shed excess rain quickly. Animals adapt too—the Sloth Bear has long claws to dig for termites, and the Blue Whale has a thick layer of blubber to stay warm in the ocean.
+Growth: All living things increase in size at some life stage.
+Nutrition: Organisms need energy; animals eat food while plants make their own.
+Respiration: Breaking down food to produce energy, usually involving oxygen intake and carbon dioxide release.
+Movement: Animals move to find food or safety; plants move by turning toward sun or opening flowers.
+Reproduction: Producing offspring to continue the species.
+Sensitivity: Responding to environmental changes like light or temperature.
 
-The Cycle of Nutrients
-When we talk about nutrition and growth, we must also consider what happens at the end of life. Decomposers, such as fungi and bacteria, are the "recyclers" of the living world. They break down dead plants and animals, returning vital nutrients to the soil. This allows new plants to grow, continuing the cycle of the "Wonders of the Living World."
+EXAMPLES:
+A plant shows all six characteristics by growing taller, making food through photosynthesis, respiring, turning toward sunlight, producing seeds, and responding to touch.
 
-Sensitivity: The Five Senses and Beyond
-Sensitivity (or irritability) is how organisms "sense" their world. Humans use five primary senses: sight, hearing, smell, taste, and touch. However, some organisms have "super-senses." For example, bats use echolocation (sound waves) to navigate in total darkness, and some snakes can "see" the heat coming off their prey. Understanding these diverse characteristics helps us appreciate the complexity of life in Sri Lankan ecosystems, from the central highlands to the coastal reefs.
-+1
+KEYWORDS:
+growth, nutrition, respiration, movement, reproduction, sensitivity, life processes
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Taxonomy and Scientific Classification
+DEFINITION:
+Taxonomy is the scientific system for organizing and naming millions of species based on shared characteristics, pioneered by Carolus Linnaeus.
+
+KEY_POINTS:
+
+Taxonomy groups organisms by shared characteristics.
+Scientific names allow clear communication across languages.
+The system was developed by Carolus Linnaeus.
+
+EXAMPLES:
+Asian Elephant is called "Aliya" in Sinhala and "Elephant" in English, but the scientific name Elephas maximus is understood globally.
+
+KEYWORDS:
+taxonomy, classification, Carolus Linnaeus, scientific name, Elephas maximus, Aliya
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Photosynthesis and Autotrophs
+DEFINITION:
+Photosynthesis is the process by which plants produce their own food using chlorophyll to convert sunlight, water, and carbon dioxide into glucose.
+
+KEY_POINTS:
+
+Plants are autotrophs, meaning self-feeders.
+Chlorophyll is the green pigment that traps sunlight energy.
+Photosynthesis produces glucose and oxygen.
+Plants are producers at the start of every food chain.
+
+EXAMPLES:
+A tree uses chlorophyll in its leaves to capture sunlight and make glucose from water and carbon dioxide, releasing oxygen we breathe.
+
+KEYWORDS:
+photosynthesis, autotroph, chlorophyll, glucose, producers, food chain, oxygen
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Cellular Basis of Life
+DEFINITION:
+All living organisms are made of tiny building blocks called cells, which divide to create more cells and enable growth.
+
+KEY_POINTS:
+
+Cells are the fundamental units of life.
+Unicellular organisms like bacteria have just one cell.
+Multicellular organisms like humans and trees have trillions of cells.
+Growth happens through cell division and multiplication.
+
+EXAMPLES:
+A living kitten's cells constantly work, repair, and multiply, while a toy cat has no cells.
+
+KEYWORDS:
+cells, unicellular, multicellular, cell division, building blocks, bacteria
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Adaptation to Environment
+DEFINITION:
+Adaptation is the process by which organisms develop characteristics that help them thrive in specific environments.
+
+KEY_POINTS:
+
+Adaptations help organisms survive in their habitat.
+Physical features match environmental conditions.
+Both plants and animals show adaptations.
+
+EXAMPLES:
+In Sri Lanka, cacti in dry zones have thick stems to store water, rainforest plants have drip tips to shed excess rain, Sloth Bears have long claws for digging termites, and Blue Whales have blubber for ocean warmth.
+
+KEYWORDS:
+adaptation, survival, habitat, dry zone, rainforest, Sloth Bear, Blue Whale, environment
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Decomposers and Nutrient Cycling
+DEFINITION:
+Decomposers like fungi and bacteria break down dead organisms and return vital nutrients to the soil, continuing the cycle of life.
+
+KEY_POINTS:
+
+Decomposers are recyclers of the living world.
+They break down dead plants and animals.
+Nutrients return to soil for new plant growth.
+This completes the cycle of life and death.
+
+EXAMPLES:
+Fungi break down a fallen tree, releasing nutrients into the soil that help new seedlings grow.
+
+KEYWORDS:
+decomposers, fungi, bacteria, nutrient cycle, recycling, soil nutrients
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Sensitivity and Diverse Senses
+DEFINITION:
+Sensitivity is how organisms sense and respond to their environment, using various sensory mechanisms from basic five senses to specialized abilities.
+
+KEY_POINTS:
+
+Humans use five primary senses: sight, hearing, smell, taste, and touch.
+Some organisms have super-senses beyond human abilities.
+Sensitivity helps organisms respond to environmental changes.
+
+EXAMPLES:
+Bats use echolocation with sound waves to navigate in darkness, and some snakes detect heat from prey, helping them survive in Sri Lankan ecosystems from highlands to coastal reefs.
+
+KEYWORDS:
+sensitivity, senses, echolocation, heat detection, environmental response, Sri Lankan ecosystems
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Growth as a Defining Characteristic
+TO: Six Characteristics of Living Organisms
+EXPLANATION:
+Growth is one of the six key characteristics that together define living organisms and distinguish them from non-living things.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Photosynthesis and Autotrophs
+TO: Six Characteristics of Living Organisms
+EXPLANATION:
+Photosynthesis is how plants fulfill the nutrition characteristic, making their own food rather than consuming other organisms.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Cellular Basis of Life
+TO: Growth as a Defining Characteristic
+EXPLANATION:
+Growth occurs through cell division and multiplication, so the cellular basis explains how growth happens at the microscopic level.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Adaptation to Environment
+TO: Six Characteristics of Living Organisms
+EXPLANATION:
+Adaptations develop through the interplay of all life characteristics, helping organisms survive by optimizing nutrition, movement, and sensitivity in their habitat.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Decomposers and Nutrient Cycling
+TO: Photosynthesis and Autotrophs
+EXPLANATION:
+Decomposers return nutrients to soil, which plants then use along with sunlight for photosynthesis, completing the ecosystem cycle.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Taxonomy and Scientific Classification
+TO: Living Organisms versus Non-Living Things
+EXPLANATION:
+Taxonomy is applied only to living organisms, providing a systematic way to organize and name the diversity of life.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Seed to Tree Growth Cycle
+
+DESCRIPTION:
+A tiny seed planted in soil absorbs water and nutrients, grows roots and shoots, and over years becomes a giant tree demonstrating the growth characteristic.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Asian Elephant Scientific Naming
+
+DESCRIPTION:
+The Asian Elephant is called "Aliya" in Sinhala and "Elephant" in English, but scientists worldwide use Elephas maximus to avoid confusion.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Plant Photosynthesis in Sunlight
+
+DESCRIPTION:
+Tree leaves containing chlorophyll capture sunlight and combine water from roots with carbon dioxide from air to make glucose and release oxygen.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Dry Zone Cactus Water Storage
+
+DESCRIPTION:
+Cacti in Sri Lankan dry zones have evolved thick stems that store water, allowing survival during long periods without rain.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Sloth Bear Termite Digging Adaptation
+
+DESCRIPTION:
+The Sloth Bear has long curved claws specially adapted for tearing open termite mounds and ant hills to access food.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E6
+TITLE: Fungal Decomposition of Dead Wood
+
+DESCRIPTION:
+Fungi growing on a fallen tree break down the wood tissue, releasing nutrients back into forest soil for new plants.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Only animals are living organisms; plants are just part of the environment.
+
+CORRECTION:
+Plants are living organisms that show all life characteristics including growth, nutrition, respiration, reproduction, movement, and sensitivity.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Plants do not move, so they cannot be living things.
+
+CORRECTION:
+Plants show movement by turning leaves toward sunlight, opening and closing flowers, and growing roots toward water sources.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Growth is the only characteristic needed to identify living organisms.
+
+CORRECTION:
+Living organisms must show all six characteristics: growth, nutrition, respiration, movement, reproduction, and sensitivity.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+All organisms get nutrition by eating food like animals do.
+
+CORRECTION:
+Plants are autotrophs that produce their own food through photosynthesis using sunlight, water, and carbon dioxide.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Cells are only found in animals, not in plants.
+
+CORRECTION:
+All living organisms, both plants and animals, are made of cells; plants have plant cells and animals have animal cells.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Living vs Non-Living Comparison
+
+DESCRIPTION:
+Split screen showing a growing plant changing over time versus a stone remaining unchanged, illustrating growth characteristic.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Six Characteristics in Action
+
+DESCRIPTION:
+Animate a plant demonstrating all six life characteristics: growing taller, making food, respiring, turning toward sun, producing seeds, and responding to touch.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Photosynthesis Process
+
+DESCRIPTION:
+Zoom into leaf showing chlorophyll capturing sunlight, water entering from roots, carbon dioxide from air, producing glucose and oxygen.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Cell Division and Growth
+
+DESCRIPTION:
+Microscopic view of cells dividing and multiplying, showing how growth occurs at cellular level in living organisms.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Sri Lankan Habitat Adaptations
+
+DESCRIPTION:
+Show cactus in dry zone with thick water-storing stem, then rainforest plant with drip-tip leaves shedding rain.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Decomposer Nutrient Cycle
+
+DESCRIPTION:
+Visualize fungi breaking down fallen tree, nutrients entering soil, new seedling absorbing nutrients and growing.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Bat Echolocation in Darkness
+
+DESCRIPTION:
+Animate bat emitting sound waves, waves bouncing off obstacles, and bat receiving echoes to navigate in complete darkness.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S8
+TITLE: Taxonomy Classification Tree
+
+DESCRIPTION:
+Display branching classification system from broad categories down to specific species like Elephas maximus with common names in different languages.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Distinguish living organisms from non-living things using the six characteristics of life: growth, nutrition, respiration, movement, reproduction, and sensitivity.
+
+Explain how photosynthesis allows plants to produce their own food and function as autotrophs at the base of food chains.
+
+Describe the cellular basis of life and how cell division enables growth in both unicellular and multicellular organisms.
+
+Identify adaptations in Sri Lankan organisms such as dry zone cacti, rainforest plants, Sloth Bears, and recognize the role of decomposers in nutrient cycling.
+
+==================================================
+SECTION: SUMMARY
+Living organisms are distinguished from non-living things through six key characteristics: growth, nutrition, respiration, movement, reproduction, and sensitivity. The environment contains both living components that grow and change, and non-living components that remain static. Scientific classification through taxonomy, pioneered by Carolus Linnaeus, allows organisms to be named systematically across languages, such as using Elephas maximus for the Asian Elephant known as "Aliya" in Sinhala. Plants are autotrophs that produce their own food through photosynthesis using chlorophyll to convert sunlight, water, and carbon dioxide into glucose and oxygen. All living organisms are built from cells—some unicellular like bacteria, others multicellular like humans and trees—and growth occurs through cell division. Organisms develop adaptations to thrive in specific environments, such as cacti storing water in Sri Lankan dry zones, rainforest plants with drip tips, Sloth Bears with claws for digging, and Blue Whales with insulating blubber. Decomposers like fungi and bacteria recycle nutrients by breaking down dead organisms, returning vital elements to soil for new plant growth. Sensitivity ranges from human five senses to specialized abilities like bat echolocation and snake heat detection, supporting survival across diverse Sri Lankan ecosystems from central highlands to coastal reefs.

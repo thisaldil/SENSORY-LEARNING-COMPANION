@@ -1,29 +1,327 @@
-Recording and Organizing Data
-The first step in studying weather is keeping a Weather Diary or a data table. For example, if you are measuring rainfall, you would use a Rain Gauge and record the height of the water in millimeters (mm) every morning. If you are tracking temperature, you would use a Thermometer. To make this data easy to read, we usually put it into a table with columns for the date, the time, and the measurement.
+LESSON_ID: SCI_G6_WEATHER_DATA_STUDY
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Studying Data Related to Weather
+DIFFICULTY: Basic
 
-Visualizing Weather Patterns
-Once we have a table full of numbers, it can be hard to see what is happening just by looking at them. This is why we use Graphs.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Recording Weather Data Systematically
+DEFINITION:
+Weather study begins by recording measurements regularly in a weather diary or table using proper instruments.
 
-Bar Graphs: These are perfect for comparing rainfall. Each bar represents a day, and the height shows how much it rained. You can easily see which day was the wettest.
+KEY_POINTS:
 
-Line Graphs: These are great for showing temperature changes. By connecting the dots, you can see if the week is getting hotter or colder.
+Rainfall is measured with a rain gauge.
+Temperature is measured with a thermometer.
+Data should include date, time, and measured value for each observation.
 
-Additional Knowledge for Enhanced Learning
-Finding the "Average" and "Range"
-When meteorologists (weather scientists) study data, they look for specific numbers called the Mean and the Range.
+EXAMPLES:
+A student records daily morning rainfall in millimeters in a table with columns for date, time, and rainfall value.
 
-The Mean (Average): If you measure the temperature for 7 days, you add all the temperatures together and divide by 7. This gives you the "Average Temperature" for the week. This is more useful than a single day's measurement because it tells us the general feeling of the weather.
+KEYWORDS:
+weather diary, data table, rain gauge, thermometer, observation, measurement
 
-The Range: This is the difference between the highest and lowest temperature. In the Dry Zone of Sri Lanka, the range might be very large (very hot days and cool nights), while in the Wet Zone, the temperature stays more steady.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Data Tables and Graphs for Pattern Detection
+DEFINITION:
+Graphs convert raw weather numbers into visual patterns that are easier to compare and interpret.
 
-Predicting the Future (Forecasting)
-Studying past data helps us predict the future. If a scientist sees that the Air Pressure has been dropping steadily for three days, they know that a storm is likely coming. In Sri Lanka, the Department of Meteorology studies data from satellites in space. These satellites take pictures of cloud movements and measure heat levels. By comparing this "live" data with "historical" data (what happened in the past), they can give warnings to fishermen and farmers to keep them safe.
+KEY_POINTS:
 
-The Importance of "Standard" Measurement
-To study data correctly, every scientist must use the same units. This is why we use Celsius (°C) for temperature and Millimeters (mm) for rain. If one person measured rain in "inches" and another in "centimeters," the data would be confusing! By using the same standards, a student in Colombo can compare their weather data with a student in Jaffna or even in another country like England.
+Bar graphs are useful for comparing rainfall between days.
+Line graphs are useful for showing temperature changes over time.
+Visual patterns help identify wettest days and warming or cooling trends quickly.
 
-Climate Change and Long-term Data
-Studying data over many years is how we discovered Climate Change. Scientists looked at temperature records from 100 years ago and compared them to today's data. They noticed a "trend"—a slow but steady increase in heat. Without carefully recorded data from the past, we wouldn't know that the Earth is warming up. This is why your weather observations in school are so important; you are learning the skills needed to protect our planet's future.
+EXAMPLES:
+A weekly bar graph shows which day had the highest rainfall, while a line graph shows if temperature increased day by day.
 
-Summary for RAG Systems
-Weather data analysis involves the collection of quantitative variables (temperature, precipitation, pressure) and their qualitative observation (cloud type, wind direction). Data is processed through statistical means to identify trends and anomalies. For an AI, it is crucial to understand that data visualization (graphs) and standardized units are the primary tools for converting raw atmospheric measurements into actionable meteorological forecasts.
+KEYWORDS:
+bar graph, line graph, visualization, weather pattern, trend, comparison
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Mean and Range in Weather Analysis
+DEFINITION:
+Meteorologists use mean and range to summarize temperature behavior over a period.
+
+KEY_POINTS:
+
+Mean is found by adding all values and dividing by the number of observations.
+Range is the difference between the highest and lowest values.
+These values describe overall weather conditions better than one isolated reading.
+
+EXAMPLES:
+For 7 daily temperatures, adding them and dividing by 7 gives weekly mean; subtracting lowest from highest gives range.
+
+KEYWORDS:
+mean, average, range, statistics, meteorology, temperature variation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Forecasting from Weather Data Trends
+DEFINITION:
+Forecasting uses current and past weather data patterns to predict likely future conditions.
+
+KEY_POINTS:
+
+A steady drop in air pressure can indicate an approaching storm.
+Satellite data provides cloud movement and heat information in real time.
+Historical records improve accuracy by comparing present patterns with past events.
+
+EXAMPLES:
+The Sri Lankan Department of Meteorology compares satellite images and pressure trends to issue warnings for fishermen and farmers.
+
+KEYWORDS:
+forecasting, air pressure, satellite data, historical data, meteorology warnings
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Standard Units in Weather Science
+DEFINITION:
+Standard units allow weather data from different places and times to be compared accurately.
+
+KEY_POINTS:
+
+Temperature is measured in degrees Celsius (°C).
+Rainfall is measured in millimeters (mm).
+Using mixed units causes confusion and incorrect comparisons.
+
+EXAMPLES:
+A student in Colombo can compare rainfall with a student in Jaffna when both use millimeters.
+
+KEYWORDS:
+standard units, Celsius, millimeters, data consistency, comparison, measurement standards
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Long-Term Data and Climate Change Detection
+DEFINITION:
+Long-term weather records reveal climate trends, including gradual warming over many decades.
+
+KEY_POINTS:
+
+Climate trends are detected by comparing data across many years.
+A consistent increase in temperature over long periods indicates warming.
+Careful school-level observations support future scientific understanding.
+
+EXAMPLES:
+Comparing present temperature records with data from 100 years ago shows a gradual increase in average heat.
+
+KEYWORDS:
+climate change, long-term data, trend analysis, temperature records, global warming
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Quantitative and Qualitative Weather Variables
+DEFINITION:
+Weather analysis includes quantitative variables measured by numbers and qualitative observations described by categories.
+
+KEY_POINTS:
+
+Quantitative variables include temperature, precipitation, and pressure.
+Qualitative observations include cloud type and wind direction.
+Combining both types gives stronger weather interpretation and decision-making.
+
+EXAMPLES:
+A report may include 30°C temperature, 12 mm rainfall, falling pressure, dark cumulonimbus clouds, and southwest wind direction.
+
+KEYWORDS:
+quantitative data, qualitative data, precipitation, pressure, cloud type, wind direction
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Recording Weather Data Systematically
+TO: Data Tables and Graphs for Pattern Detection
+EXPLANATION:
+Accurate recorded measurements are the source data used to build tables and graphs.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Data Tables and Graphs for Pattern Detection
+TO: Forecasting from Weather Data Trends
+EXPLANATION:
+Visualized patterns help scientists identify trend changes that support weather forecasting decisions.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Mean and Range in Weather Analysis
+TO: Forecasting from Weather Data Trends
+EXPLANATION:
+Mean and range summarize temperature behavior and help detect unusual conditions before forecasting.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Standard Units in Weather Science
+TO: Recording Weather Data Systematically
+EXPLANATION:
+Systematic recording is scientifically useful only when all measurements follow common standard units.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Long-Term Data and Climate Change Detection
+TO: Forecasting from Weather Data Trends
+EXPLANATION:
+Long historical data improves prediction by showing recurring patterns and long-term shifts.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Weekly Rainfall Comparison Using Bar Graph
+
+DESCRIPTION:
+A Grade 6 class measures rain each morning for seven days, plots bars, and identifies the wettest day from the tallest bar.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Temperature Trend with a Line Graph
+
+DESCRIPTION:
+Daily noon temperatures are plotted on a line graph, showing a steady upward trend through the week.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Mean and Range in Dry Zone vs Wet Zone
+
+DESCRIPTION:
+A Dry Zone dataset shows higher day-night variation, while a Wet Zone dataset shows a smaller temperature range.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Pressure Drop Storm Warning
+
+DESCRIPTION:
+After three days of falling air pressure, meteorologists issue alerts to fishermen and farmers about possible severe weather.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+One day of weather data is enough to understand weather behavior.
+
+CORRECTION:
+Weather understanding requires repeated measurements over time to identify real patterns and trends.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Graphs are only decoration and do not improve analysis.
+
+CORRECTION:
+Graphs reveal trends and comparisons that are difficult to identify quickly from raw tables.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Any unit can be used because numbers are the same.
+
+CORRECTION:
+Different units change numeric values, so standard units are required for valid comparison.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Forecasts are guesses without data.
+
+CORRECTION:
+Forecasts are evidence-based predictions built from live observations, historical records, and statistical analysis.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Climate change can be proven by one hot day.
+
+CORRECTION:
+Climate change is identified from long-term trends over many years, not single-day weather events.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Weather Diary Data Collection
+
+DESCRIPTION:
+Show a student measuring rain with a rain gauge and recording date, time, and millimeter value in a table.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Table to Graph Transformation
+
+DESCRIPTION:
+Animate weather numbers from a table turning into a bar graph for rainfall and a line graph for temperature.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Calculating Mean and Range
+
+DESCRIPTION:
+Display seven temperature values, then show addition, division for mean, and subtraction of max-min for range.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Forecast from Falling Air Pressure
+
+DESCRIPTION:
+Show pressure values decreasing over three days, followed by a storm warning message issued to coastal communities.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Standard Unit Comparison Across Regions
+
+DESCRIPTION:
+Display students in Colombo and Jaffna comparing temperature and rainfall data using the same units.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Long-Term Climate Trend Graph
+
+DESCRIPTION:
+Show a 100-year temperature line graph gradually rising to illustrate climate warming.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Quantitative and Qualitative Weather Report
+
+DESCRIPTION:
+Visualize a report combining numbers (°C, mm, pressure) with cloud type and wind direction observations.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Record weather measurements accurately using correct instruments, date-time entries, and organized tables.
+
+Construct and interpret bar graphs and line graphs to identify rainfall and temperature patterns.
+
+Calculate mean and range and use them to describe short-term weather behavior.
+
+Explain how standardized units, historical records, and satellite-supported observations improve forecasting and climate understanding.
+
+==================================================
+SECTION: SUMMARY
+Studying weather data begins with systematic measurement and recording using tools such as rain gauges and thermometers. Tables organize observations by date, time, and value, while bar and line graphs make trends easier to detect. Meteorologists use statistics such as mean and range to summarize weather behavior and identify variability. Forecasting depends on combining live observations, such as changing air pressure and satellite cloud data, with historical records to predict future events and issue warnings to groups such as fishermen and farmers in Sri Lanka. Standard units like °C and mm are essential so data from different places, including Colombo and Jaffna, can be compared correctly. Long-term records reveal climate trends, including gradual warming, and both quantitative and qualitative weather observations are necessary for accurate meteorological analysis.

@@ -1,249 +1,367 @@
-FOOD WEBS: Understanding Interconnected Food Chains
+LESSON_ID: SCI_G6_FOOD_WEBS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Food Webs: Interconnected Food Chains
+DIFFICULTY: Basic
 
-CORE CONCEPTS:
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Food Web Definition and Purpose
+DEFINITION:
+A food web is a network of connected food chains that shows multiple feeding paths in an ecosystem, explaining how organisms eat and are eaten in real life.
 
-Concept 1: Food Web Definition and Purpose
-A Food Web is a network of many interconnected food chains showing all the different ways organisms in an ecosystem eat and are eaten. Unlike a simple food chain (which shows one path), a food web shows multiple paths of energy flow through an environment. This is more realistic because most animals have choices about what they eat.
+KEY_POINTS:
 
-Interactive Definition: Imagine if every student in your school only had one meal choice. That would be a food chain (one path). But in reality, you can choose rice, curry, vegetables, or other combinations. That flexibility is like a food web.
-
-Concept 2: Producers - The Foundational Level
-Producers are organisms that make their own food from sunlight using photosynthesis. They are always at the bottom of every food web because they are the original energy source. Without producers, nothing else in the web could exist.
-
-Examples of Producers:
-- Green plants (grass, trees, bushes)
-- Rice plants in paddy fields
-- Algae in ponds and oceans
-- Vegetables (spinach, lettuce)
-- Water lilies (common in Sri Lankan wetlands)
-- Moss and ferns
-
-Sub-concept: Photosynthesis is the process where producers capture sunlight and convert it into chemical energy stored in leaves and fruits.
-
-Concept 3: Primary Consumers - The Plant Eaters (Herbivores)
-Primary consumers are animals that eat only plants and producers. They directly depend on the energy that producers make. Their digestive systems are specialized to break down plant material.
-
-Examples of Primary Consumers:
-- Grasshoppers (eat grass and leaves)
-- Rabbits (eat vegetables and leaves)
-- Cattle (eat grass in pastures)
-- Rats in rice paddy fields (eat rice grains)
-- Caterpillars (eat leaves)
-- Deer (browse on bushes and small trees)
-- Parrots (eat seeds and fruits)
-
-Key Characteristic: Primary consumers must eat large amounts of plants because plants are less energy-dense than meat.
-
-Concept 4: Secondary Consumers - The Meat Eaters (Small Carnivores)
-Secondary consumers are animals that eat primary consumers (the plant-eaters). They get energy that has already been partially processed by herbivores. These are usually medium-sized predators.
-
-Examples of Secondary Consumers:
-- Snakes (eat frogs, mice, rats)
-- Spiders (eat insects)
-- Frogs (eat insects and small creatures)
-- Crows (eat insects, small birds, small mammals)
-- Herons (eat fish and small creatures from water)
-- Cats (eat mice and birds)
-- Lizards (eat insects and small animals)
-
-Sub-concept: Secondary consumers are more specialized hunters with adapted teeth, claws, and senses.
-
-Concept 5: Tertiary Consumers - The Top Predators
-Tertiary consumers are at the top of the food web. They eat secondary consumers and sometimes eat other tertiary consumers. These are usually large, powerful predators with few natural enemies.
-
-Examples of Tertiary Consumers:
-- Eagles (eat snakes, birds, small mammals)
-- Hawks (hunt medium-sized animals)
-- Leopards (hunt various animals in Sri Lankan forests)
-- Lions (top predators - eat many other consumers)
-- Crocodiles (eat fish and medium-sized animals)
-- Snakes (can be both secondary and tertiary depending on what they eat)
-
-Key Characteristic: Very few tertiary consumers exist because there isn't enough energy to support large populations.
-
-Concept 6: Decomposers - The Recycling Specialists
-Decomposers are organisms that break down dead material (plants and animals) and return nutrients to the soil. They are essential for completing the cycle. Without decomposers, the ecosystem would accumulate dead matter and stop functioning.
-
-Examples of Decomposers:
-- Bacteria (microscopic, in soil)
-- Fungi (mushrooms, molds, toadstools)
-- Earthworms and other soil creatures
-- Termites (common in Sri Lanka - break down wood)
-- Millipedes
-- Certain insects
-
-Key Role: Decomposers don't eat or hunt - they absorb nutrients from dead material and return them to soil for producers to use again.
-
-CONCEPT RELATIONS:
-
-Relation 1: Energy Transfer Hierarchy
-Producers create energy → Primary consumers eat producers → Secondary consumers eat primary consumers → Tertiary consumers eat secondary consumers → All bodies eventually go to decomposers.
-
-Relation 2: Energy Loss at Each Level
-Only about 10% of energy transfers to the next level. The remaining 90% is lost as heat or used for the organism's activities (breathing, moving, maintaining body temperature).
-
-Mathematical Representation:
-- Producers capture 100% solar energy
-- Primary consumers get 10% of producer energy
-- Secondary consumers get 10% of primary consumer energy (=1% of original)
-- Tertiary consumers get 10% of secondary consumer energy (=0.1% of original)
-
-This is why food webs have many plants and insects but very few large predators.
-
-Relation 3: Interdependence
-All organisms in a food web depend on each other. Removing one species affects many others. This interdependence creates both stability and vulnerability.
-
-Relation 4: Cyclical Nutrient Flow
-When organisms die, decomposers break them down and return nutrients to soil, which producers use to grow, completing a cycle that repeats indefinitely.
+A food chain shows one path, but a food web shows many paths.
+Food webs are more realistic because organisms usually have more than one food option.
+A food web helps explain ecosystem stability and what happens when one species changes.
 
 EXAMPLES:
+In a paddy field, a snake may eat rats or frogs, so energy can flow through different paths.
 
-Example 1: A Sri Lankan Paddy Field Food Web
+KEYWORDS:
+food web, food chain, ecosystem, feeding paths, energy flow
 
-Visual representation of connections:
-- Rice plants (producers) are eaten by:
-  - Rats and grasshoppers (primary consumers)
-- Rats and grasshoppers are eaten by:
-  - Snakes, spiders, and herons (secondary consumers)
-- Snakes and herons are eaten by:
-  - Eagles and hawks (tertiary consumers)
-- When any organism dies (rat, snake, eagle), decomposers in soil break it down and return nutrients to soil
-- These nutrients are absorbed by rice plants again
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Producers and Photosynthesis
+DEFINITION:
+Producers are organisms that make their own food using sunlight through photosynthesis, and they form the base of every food web.
 
-Concrete learning: When you eat rice grown in a Sri Lankan paddy field, you're getting energy from the sun that was captured by the plant. That same paddy field might have snakes eating rats eating rice, and eagles eating snakes. The natural balance keeps rice pests under control.
+KEY_POINTS:
 
-Example 2: Understanding the 10% Energy Rule
+Producers are the first energy source for all consumers.
+Photosynthesis changes light energy into chemical energy stored in plant parts.
+Without producers, higher trophic levels cannot survive.
 
-If a paddy field receives 10,000 units of solar energy:
-- Rice plants capture and store 10,000 units
-- Rats eating rice get only 1,000 units (10% of plant energy)
-- Snakes eating rats get only 100 units (10% of rat energy)
-- Eagles eating snakes get only 10 units (10% of snake energy)
+EXAMPLES:
+Rice plants, grasses, algae, water lilies, mosses, and ferns are producers in Sri Lankan ecosystems.
 
-Practical meaning: To get a pound of eagle meat requires the sun shining on enough rice to support thousands of pounds of rice plants. This explains why eagles are rare and rice is common.
+KEYWORDS:
+producers, photosynthesis, sunlight, chemical energy, base level
 
-Example 3: Impact of Removing One Species
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Primary Consumers (Herbivores)
+DEFINITION:
+Primary consumers are animals that eat producers directly and obtain plant-based energy.
 
-If all the snakes disappear from a paddy field:
-1. Immediately: Rats have no predator (snakes are gone)
-2. First weeks: Rat population explodes dramatically
-3. Next month: Rats eat all the rice plants (no crop for farmers)
-4. Result: Crisis - farmers lose income, eagles and herons lose food source too
+KEY_POINTS:
 
-This shows why even animals that seem "bad" (snakes, spiders) are actually necessary.
+Primary consumers feed on leaves, seeds, fruits, and other plant material.
+They transfer energy from producers to higher consumer levels.
+They often need to eat large quantities because plant food is less energy-dense than meat.
 
-Example 4: Pesticide and Bio-magnification
+EXAMPLES:
+Grasshoppers, rabbits, cattle, caterpillars, deer, parrots, and rats feeding on rice grains are primary consumers.
 
-Farmer sprays pesticide on paddy field to kill insects (primary consumers).
-- Each blade of rice has a tiny bit of pesticide
-- A grasshopper eats many blades of rice (collects pesticide)
-- A frog eats many grasshoppers (collects much more pesticide)
-- A heron eats many frogs (collects large amounts of pesticide)
-- Result: The heron gets sick or dies from poison, while the rice plant is barely affected
+KEYWORDS:
+primary consumers, herbivores, plant eaters, trophic level, energy transfer
 
-This is why pesticide-free farming is important.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Secondary Consumers (Small Carnivores)
+DEFINITION:
+Secondary consumers are animals that eat primary consumers and obtain energy from herbivores.
 
-Example 5: Natural Keystone Species in Sri Lanka
+KEY_POINTS:
 
-Elephants in Sri Lankan forests:
-- Eat trees and vegetation (creating open spaces)
-- Their paths create movement routes for smaller animals
-- Their dung fertilizes soil and spreads seeds
-- Their presence supports hundreds of other species
+They are usually predators of insects, rodents, or other small animals.
+They include species adapted for hunting with specialized senses or body structures.
+They form the middle predator level in many food webs.
 
-If elephants disappear:
-- Forest becomes too dense
-- Many species lose habitat and food
-- Entire ecosystem changes
+EXAMPLES:
+Frogs, spiders, snakes, crows, herons, cats, and lizards can act as secondary consumers.
 
-SCENE DESCRIPTIONS (for visualization/animation):
+KEYWORDS:
+secondary consumers, carnivores, predators, herbivore predators, trophic level
 
-Scene 1: The Paddy Field at Different Times
-Morning: Sun rises over rice field, light illuminates green plants as photosynthesis begins
-Midday: Plants absorb maximum light energy, grasshoppers visible jumping on stems, rat emerges to feed
-Evening: Snake slides through field, catching rat; eagle circles overhead
-Night: Decomposers become active in soil, breaking down dead matter
-Description: Show energy flowing from sun → plants → animals → back to soil
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Tertiary Consumers (Top Predators)
+DEFINITION:
+Tertiary consumers are high-level predators that feed on secondary consumers and sometimes other predators.
 
-Scene 2: Energy Pyramid - Visual Comparison
-Bottom: Show massive area of rice plants (representing 100 units of energy)
-Level 2: Show smaller area with many grasshoppers and rats (representing 10 units)
-Level 3: Show even smaller area with few snakes and frogs (representing 1 unit)
-Level 4: Show tiny area with one or two eagles (representing 0.1 units)
-Animation: Energy packages appearing at each level, showing 90% disappearing at each step
+KEY_POINTS:
 
-Scene 3: Food Web Network
-Central sun at top
-Arrows spreading down to multiple producers
-Each producer connected to multiple consumers
-Each consumer connected to multiple other consumers
-Show decomposers at bottom receiving arrows from all dead organisms
-Dynamic: As you remove one organism, show what happens to all connected organisms
+They are near the top of the food web and have few natural enemies.
+Their populations are usually small because less energy is available at higher levels.
+Some organisms, such as snakes, may be secondary or tertiary depending on diet.
 
-Scene 4: Bio-magnification Process
-Start with pesticide particles on single rice plant
-Show toxin concentration increasing at each level:
-- Grass → Grasshopper (more concentrated)
-- Grasshopper → Frog (even more concentrated)
-- Frog → Bird (highly concentrated, bird becomes sick)
-Color change: Use color intensity to show concentration increasing
+EXAMPLES:
+Eagles, hawks, leopards, crocodiles, and some snakes can function as tertiary consumers.
 
-Scene 5: Keystone Species Impact
-Show forest with elephant and many other species interacting
-Remove elephant (animation: elephant disappears)
-Show cascade of effects:
-- Forest becomes denser
-- Smaller animals lose paths
-- Vegetation becomes chaotic
-- Species populations crash
-Then show elephant returning, ecosystem recovering
+KEYWORDS:
+tertiary consumers, top predators, apex level, predator hierarchy, food web top
 
-NARRATION:
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Decomposers and Nutrient Recycling
+DEFINITION:
+Decomposers break down dead plants and animals and return nutrients to the soil, completing ecosystem nutrient cycles.
 
-Opening:
-"Have you ever thought about where your food comes from? You eat rice or bread. But before that rice became your food, it was a plant in a field. And that plant got energy from the sun. This is just the beginning of a complex web of life where everything eats something, and everything is eaten by something else. Welcome to the world of food webs."
+KEY_POINTS:
 
-Main Explanation Flow:
+Decomposers recycle matter that would otherwise accumulate as dead material.
+Returned nutrients support plant growth and restart energy pathways.
+They are essential for long-term ecosystem function.
 
-Section 1 - The Foundation:
-"At the base of every food web are plants - rice, grass, vegetables, leaves, flowers, all kinds of plants. These plants have a superpower: they can capture light energy from the sun and convert it into chemical energy. They're like solar panels in nature. All other life depends on their ability to harness the sun's energy. Without plants, there would be no animals, including humans."
+EXAMPLES:
+Soil bacteria, fungi, earthworms, termites, millipedes, and other soil organisms decompose dead matter.
 
-Section 2 - The Plant Eaters:
-"Then come the animals that eat plants. Grasshoppers eat leaves. Rats eat rice grains. Rabbits eat vegetables. We call these primary consumers or herbivores. They're not picky eaters - they're always looking for their next plant meal. When these plant-eaters are eating, they're actually capturing the sun's energy that the plants captured. About 90% gets used up for their own movement and breathing, but 10% stays in their body for the next eater."
+KEYWORDS:
+decomposers, nutrient cycle, soil fertility, recycling, bacteria, fungi
 
-Section 3 - The Meat Eaters:
-"Then come the meat eaters. Snakes eat rats. Frogs eat insects. Herons eat fish. Eagles eat snakes. These are secondary and tertiary consumers - the hunters. Each time a hunter eats a plant-eater, again only 10% of energy is stored in the hunter's body. 90% is used up. This is why there are millions of insects, thousands of rats, hundreds of snakes, but only a few eagles. There just isn't enough energy to support large populations of top predators."
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Energy Transfer and the 10% Rule
+DEFINITION:
+During feeding, only about 10% of energy passes from one trophic level to the next, while about 90% is used for life processes or lost as heat.
 
-Section 4 - The Complete Cycle:
-"But here's the amazing part - the cycle doesn't end when an animal dies. Tiny creatures called decomposers - bacteria, fungi, earthworms - break down the dead body and return all those nutrients to the soil. That soil feeds the plants again. And the cycle repeats forever. Energy constantly flows: sun → plants → animals → soil → plants again. It's like nature's perfect recycling system."
+KEY_POINTS:
 
-Section 5 - Why Balance Matters:
-"This is why farmers need snakes, spiders, and insects in their fields even though some seem 'bad.' Each organism plays a role. If you kill all the snakes, rats multiply with nothing to eat them, and they destroy the crops. If you use too much pesticide, it gets more concentrated as it moves up the food web, and eventually birds and other animals get poisoned. The lesson: everything is connected. Understanding food webs helps us understand what happens when humans interfere with nature."
+Energy decreases strongly at each higher trophic level.
+This limits how many organisms can exist at top predator levels.
+It explains why ecosystems have many plants but few large predators.
 
-Conclusion Connection:
-"When you understand food webs, you understand that you're not separate from nature - you're part of a giant web of life. The food you eat connects you to plants, to soil, to rain, to sun. You're connected to eagles and snakes and decomposers in the soil. That's why protecting nature is protecting yourself."
+EXAMPLES:
+From 10,000 energy units in rice plants, rats receive about 1,000, snakes about 100, and eagles about 10.
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Complexity of Balance
-A food web is much more stable than a single food chain. In a simple food chain, if one species disappears, every animal "above" it might starve. However, in a Food Web, animals have choices. If the population of rats in a paddy field decreases, a snake can switch to eating more frogs or lizards. This flexibility keeps the ecosystem balanced. This is a vital concept in Sri Lankan agriculture; if we kill all the spiders in a field using chemicals, the food web is broken, and the insect pests they used to eat will increase and destroy our crops.
+KEYWORDS:
+10% rule, energy loss, trophic levels, energy pyramid, heat loss
 
-Energy Transfer: The 10% Rule
-When one organism eats another, it doesn't get all the energy that the other organism had. Most of the energy is lost as heat or used up by the animal to move, breathe, and grow. Scientists estimate that only about 10% of the energy is passed on to the next level. This is why a food web usually has many plants and insects but only a very small number of top predators like leopards or eagles. There simply isn't enough energy to support a large number of "kings of the jungle."
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Interdependence and Ecosystem Balance
+DEFINITION:
+Interdependence means each species in a food web affects others, so changes in one population can cause chain reactions.
 
-Keystone Species in Sri Lankan Ecosystems
-In every food web, there is usually one species that is extra important. We call this a Keystone Species. For example, in a Sri Lankan forest, the Elephant is a keystone species. By eating trees and clearing paths, elephants create space for smaller plants to grow and provide dung that feeds beetles and fertilizes the soil. If the elephant is removed from the food web, many other plants and animals are affected, even if they don't eat the elephant!
+KEY_POINTS:
 
-Decomposers: The Recyclers
-A food web is never truly complete without Decomposers like fungi and bacteria. When plants and animals die, these organisms break down the dead matter and return the nutrients to the soil. These nutrients are then taken up by the roots of plants to start the cycle all over again. Without decomposers, the forest floor would be piled high with dead leaves and wood, and the plants would run out of "food" to grow.
+Predators help regulate prey populations.
+Removing one species can disrupt crop systems and wildlife populations.
+Food webs are both stable and vulnerable because of connected relationships.
 
-Trophic Levels and Bioaccumulation
-Each "step" in a food web is called a Trophic Level. An interesting and dangerous effect of food webs is Bioaccumulation. If a farmer uses a poisonous pesticide on grass, a grasshopper eats a little bit of it. Then a frog eats many grasshoppers, and a bird eats many frogs. The poison becomes more and more concentrated as it moves up the food web. By the time it reaches the top predator (or humans eating fish from a polluted lake), the poison level can be very high and dangerous.
+EXAMPLES:
+If snakes disappear from a paddy field, rats increase and can severely damage rice crops.
 
-Human Impact on Food Webs
-Humans often disrupt food webs without realizing it.
+KEYWORDS:
+interdependence, ecosystem balance, population control, chain reaction, species connection
 
-Overfishing: Removing too many small fish from the ocean near Sri Lanka leaves larger fish and sea birds with nothing to eat.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Bioaccumulation and Biomagnification
+DEFINITION:
+Bioaccumulation is the build-up of harmful chemicals in organisms, and biomagnification is the increase of those chemicals at higher trophic levels.
 
-Deforestation: Cutting down trees removes the "Producers" which are the foundation of the entire web.
+KEY_POINTS:
 
-Invasive Species: Bringing in foreign animals (like the Apple Snail) can disrupt local food webs because the new animals might not have any natural predators to keep their numbers in check.
+Small toxin amounts at lower levels can become dangerous at upper levels.
+Predators can be harmed even when producers appear only lightly contaminated.
+Safe pesticide practice is important to protect ecosystems and human health.
+
+EXAMPLES:
+Pesticide on rice is consumed by grasshoppers, then concentrated in frogs, and reaches high levels in herons.
+
+KEYWORDS:
+bioaccumulation, biomagnification, pesticide, toxin concentration, environmental safety
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Keystone Species
+DEFINITION:
+A keystone species is a species with a very large effect on ecosystem structure and function compared with its population size.
+
+KEY_POINTS:
+
+Keystone species support many other organisms indirectly.
+Their removal causes major ecosystem changes.
+Protecting keystone species helps maintain biodiversity.
+
+EXAMPLES:
+Sri Lankan elephants create open paths, spread seeds, and fertilize soil, supporting many other species.
+
+KEYWORDS:
+keystone species, elephants, biodiversity, habitat structure, ecosystem function
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Producers and Photosynthesis
+TO: Primary Consumers (Herbivores)
+EXPLANATION:
+Primary consumers depend directly on producers for energy because they eat plants and plant products.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Primary Consumers (Herbivores)
+TO: Secondary Consumers (Small Carnivores)
+EXPLANATION:
+Secondary consumers receive energy by feeding on herbivores, transferring plant-captured energy to higher predator levels.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Secondary Consumers (Small Carnivores)
+TO: Tertiary Consumers (Top Predators)
+EXPLANATION:
+Tertiary consumers feed on secondary consumers, but energy available decreases at each step because of the 10% rule.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Decomposers and Nutrient Recycling
+TO: Producers and Photosynthesis
+EXPLANATION:
+Decomposers return nutrients to soil, and producers absorb these nutrients to grow and continue photosynthesis.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Interdependence and Ecosystem Balance
+TO: Bioaccumulation and Biomagnification
+EXPLANATION:
+Because species are connected, chemicals introduced at one level can spread through feeding links and concentrate in higher-level organisms.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Sri Lankan Paddy Field Food Web
+
+DESCRIPTION:
+Rice plants act as producers. Rats and grasshoppers act as primary consumers. Snakes, spiders, and herons feed on them as secondary consumers. Eagles and hawks feed at higher levels. When organisms die, decomposers return nutrients to soil, and rice plants absorb them again.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: 10% Energy Transfer in a Field
+
+DESCRIPTION:
+If rice plants store 10,000 units of solar energy, rats receive about 1,000 units, snakes receive about 100 units, and eagles receive about 10 units. This demonstrates why top predators are few and producers are many.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Removing Snakes from a Paddy Ecosystem
+
+DESCRIPTION:
+When snakes are removed, rats lose a major predator. Rat populations rise quickly and consume more rice plants, reducing crop yield and farmer income, while predators such as eagles and herons lose food sources.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Pesticide Biomagnification
+
+DESCRIPTION:
+A farmer sprays pesticide on rice. Grasshoppers eat treated plants, frogs eat many grasshoppers, and herons eat many frogs. Toxin concentration increases upward, and birds may become sick or die.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Elephant as a Keystone Species in Sri Lanka
+
+DESCRIPTION:
+Elephants eat vegetation, open movement paths, spread seeds through dung, and improve soil fertility. If elephants disappear, forest structure changes, habitats shrink, and many species are affected.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+A food web is just a longer single food chain.
+
+CORRECTION:
+A food web is a network of many connected chains with multiple feeding paths, so it represents ecosystem reality better than one chain.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Top predators have the most energy because they are strongest.
+
+CORRECTION:
+Energy decreases at each trophic level; top predators survive on the smallest energy share and therefore exist in lower numbers.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Decomposers are not very important because they act only after death.
+
+CORRECTION:
+Decomposers are essential because they recycle nutrients needed by producers, keeping the entire ecosystem cycle functioning.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+More pesticide always means better crop protection.
+
+CORRECTION:
+Excess pesticide can biomagnify through food webs and poison helpful organisms and top consumers, so pesticide use must be controlled and safe.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Paddy Field Through One Day
+
+DESCRIPTION:
+Morning sunlight activates photosynthesis in rice plants, midday herbivores feed, evening predators hunt, and at night decomposers recycle dead matter in soil.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Energy Pyramid Comparison
+
+DESCRIPTION:
+Show wide producer base, smaller primary consumer layer, smaller secondary layer, and tiny tertiary layer, with visible 90% energy loss at each transfer.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Connected Food Web Network
+
+DESCRIPTION:
+Display arrows from sun to producers, from producers to multiple consumers, and from all dead organisms to decomposers; remove one species to show cascading effects.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Biomagnification Animation
+
+DESCRIPTION:
+Start with tiny pesticide particles on rice, then show stronger toxin color in grasshopper, stronger in frog, and strongest in heron to show increasing concentration.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Keystone Elephant Impact
+
+DESCRIPTION:
+Show a forest with elephants creating paths and spreading seeds, then remove elephants and visualize denser vegetation, reduced movement, and biodiversity decline.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Define a food web and distinguish it from a food chain.
+
+Identify producers, primary consumers, secondary consumers, tertiary consumers, and decomposers in local ecosystems.
+
+Explain the 10% rule of energy transfer using trophic levels and energy pyramids.
+
+Analyze how species removal and pesticide use affect ecosystem balance, safety, and agriculture in Sri Lankan contexts.
+
+==================================================
+SECTION: SUMMARY
+Food webs show how energy and matter move through interconnected feeding relationships in ecosystems. Producers capture sunlight by photosynthesis, consumers transfer that energy through trophic levels, and decomposers recycle nutrients back to soil for new plant growth. Because only about 10% of energy moves to the next level, upper predators are fewer than lower-level organisms. Ecosystem balance depends on interdependence, so removing species or misusing pesticides can cause serious ecological and agricultural problems. Sri Lankan examples such as paddy fields and elephant-supported forests show why protecting food-web relationships is essential for biodiversity, crop stability, and environmental safety.

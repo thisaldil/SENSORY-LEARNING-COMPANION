@@ -1,55 +1,396 @@
-Weather
-Weather is the condition of the atmosphere at a specific place during a short period of time. Because the atmosphere is always moving, weather can change very quickly. You might notice that it is sunny in the morning in your village, but by the afternoon, it is raining heavily.
+LESSON_ID: SCI_G6_WEATHER
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Weather
+DIFFICULTY: Basic
 
-1. Elements of Weather
-To describe the weather, scientists look at several key "elements":
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Weather as Short-Term Atmospheric Condition
+DEFINITION:
+Weather is the condition of the atmosphere at a specific place during a short period of time.
 
-Temperature: How hot or cold the air is.
+KEY_POINTS:
 
-Humidity: The amount of water vapor in the air (this makes us feel "sticky").
+Weather describes current atmospheric state.
+The atmosphere is always moving, so weather changes quickly.
+Conditions can vary greatly within a single day.
 
-Wind: The movement of air. We measure its speed and direction.
+EXAMPLES:
+A morning may be sunny in a village but become rainy by afternoon due to rapid atmospheric changes.
 
-Precipitation: Water falling from the sky in the form of rain, dew, or hail.
+KEYWORDS:
+weather, atmosphere, short-term, atmospheric conditions, rapid change
 
-Cloud Cover: How much of the sky is hidden by clouds.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Elements of Weather
+DEFINITION:
+Weather elements are measurable characteristics of the atmosphere including temperature, humidity, wind, precipitation, and cloud cover.
 
-2. Weather Measuring Instruments
-To study the weather accurately, we use special tools:
+KEY_POINTS:
 
-Thermometer: Measures air temperature.
+Temperature measures how hot or cold the air is.
+Humidity measures water vapor content in air.
+Wind is measured by speed and direction.
+Precipitation includes rain, dew, and hail.
+Cloud cover measures how much sky is hidden by clouds.
 
-Rain Gauge: Measures the amount of rainfall in millimeters (mm).
+EXAMPLES:
+A weather report might state 28°C temperature, high humidity, 15 km/h southeast wind, and scattered clouds.
 
-Anemometer: Measures the speed of the wind.
+KEYWORDS:
+temperature, humidity, wind, precipitation, cloud cover, weather elements
 
-Wind Vane: Shows the direction the wind is blowing from.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Weather Measuring Instruments
+DEFINITION:
+Specialized instruments measure different weather elements accurately for scientific study and forecasting.
 
-Additional Knowledge for Enhanced Learning (500+ Words)
-The Science of Air Pressure
-One "invisible" element of weather is Air Pressure. Air may seem weightless, but it actually presses down on us. When air is warm, it rises, creating Low Pressure. This usually brings clouds and rain. When air is cool, it sinks, creating High Pressure, which usually brings clear, sunny skies. In Sri Lanka, sudden changes in air pressure over the Indian Ocean can lead to the formation of "depressions" or cyclones, which bring very windy and rainy weather to the island.
+KEY_POINTS:
 
-How Clouds Form: The Invisible Ladder
-Weather is mostly about what water is doing in the sky. When the sun heats the ground, the air above it warms up and begins to rise like an invisible ladder. As it rises higher into the atmosphere, it cools down. The invisible water vapor in the air turns back into tiny water droplets—this is called condensation. Millions of these tiny droplets bunch together to form a cloud. When the droplets get too heavy for the air to hold them up, they fall as rain.
+Thermometer measures air temperature.
+Rain gauge measures rainfall in millimeters.
+Anemometer measures wind speed.
+Wind vane shows wind direction.
 
-Understanding Wind: The Great Balancer
-Wind exists because the Earth is heated unevenly. The sun hits the equator (near Sri Lanka) more directly than the poles. Warm air at the equator rises and moves toward the poles, while cold air from the poles moves in to take its place. This constant movement is what we feel as wind. In Sri Lanka, we have special winds called Monsoons.
+EXAMPLES:
+A school weather station uses a rain gauge to record 45 mm of rainfall during a storm.
 
-South-West Monsoon: Brings rain from May to September.
+KEYWORDS:
+thermometer, rain gauge, anemometer, wind vane, weather instruments, measurement
 
-North-East Monsoon: Brings rain from December to February.
-These winds are the most important part of our national weather because they provide the water for our electricity and our rice fields.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Air Pressure and Weather Patterns
+DEFINITION:
+Air pressure is the weight of air pressing down, and its changes create different weather patterns.
 
-The Difference Between Weather and Climate
-A common mistake is confusing weather with climate.
+KEY_POINTS:
 
-Weather is what is happening right now or today (e.g., "It is raining in Kandy today").
+Warm air rises and creates low pressure, bringing clouds and rain.
+Cool air sinks and creates high pressure, bringing clear skies.
+Pressure changes over the Indian Ocean can form depressions or cyclones affecting Sri Lanka.
 
-Climate is the average weather over a very long time, usually 30 years (e.g., "Nuwara Eliya has a cool climate").
-Think of it like this: Weather is your mood today (happy or sad), but Climate is your personality (usually calm or usually energetic).
+EXAMPLES:
+Sudden air pressure drops over the Indian Ocean can lead to cyclones bringing heavy rain and wind to Sri Lanka.
 
-Humidity and Human Comfort
-In Sri Lanka, we often hear that the "humidity is high." Humidity is the amount of invisible gas (water vapor) in the air. When humidity is high, our sweat cannot evaporate easily into the air. Since evaporation is how our bodies cool down, high humidity makes us feel much hotter and "stuffier" than the actual temperature on the thermometer. This is why a 30°C day in a dry area like Vavuniya might feel more comfortable than a 30°C day in a humid area like Colombo.
+KEYWORDS:
+air pressure, low pressure, high pressure, cyclone, depression, Indian Ocean
 
-The Importance of Weather Forecasting
-Scientists who study the weather are called Meteorologists. In Sri Lanka, the Department of Meteorology uses satellites, radar, and weather stations across the country to predict what will happen next. This is called Weather Forecasting. Accurate forecasts save lives by warning fishermen not to go to sea during storms and helping farmers decide when to harvest their crops so the rain doesn't ruin the grain.
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Cloud Formation Through Condensation
+DEFINITION:
+Clouds form when rising warm air cools, causing water vapor to condense into tiny droplets that gather together.
+
+KEY_POINTS:
+
+Sun heats ground, warming air above it.
+Warm air rises and cools at higher altitude.
+Water vapor condenses into tiny droplets forming clouds.
+Heavy droplets fall as rain when air cannot hold them.
+
+EXAMPLES:
+On a hot day, air rises from heated ground and forms afternoon clouds that may produce rain.
+
+KEYWORDS:
+cloud formation, condensation, water vapor, rising air, evaporation, precipitation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Wind Formation and Monsoons
+DEFINITION:
+Wind is caused by uneven Earth heating, and monsoons are seasonal wind patterns bringing rain to Sri Lanka.
+
+KEY_POINTS:
+
+Equatorial regions receive more direct sunlight than poles.
+Warm air rises at equator while cool air from poles moves in, creating wind.
+South-West Monsoon brings rain May to September.
+North-East Monsoon brings rain December to February.
+Monsoon water supports electricity generation and rice farming.
+
+EXAMPLES:
+The South-West Monsoon provides essential water for Sri Lankan rice paddies and hydroelectric dams.
+
+KEYWORDS:
+wind, uneven heating, monsoon, South-West Monsoon, North-East Monsoon, seasonal wind, rice fields
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Weather versus Climate
+DEFINITION:
+Weather is the current or short-term atmospheric condition, while climate is the average weather over a long period, typically 30 years.
+
+KEY_POINTS:
+
+Weather describes today or right now.
+Climate describes long-term average patterns.
+Weather changes daily; climate describes typical conditions.
+
+EXAMPLES:
+Kandy may have rain today (weather), but Nuwara Eliya has a cool climate (long-term average).
+
+KEYWORDS:
+weather, climate, short-term, long-term average, Kandy, Nuwara Eliya
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Humidity and Human Comfort
+DEFINITION:
+Humidity is water vapor concentration in air, and high humidity reduces evaporative cooling, making people feel hotter.
+
+KEY_POINTS:
+
+High humidity slows sweat evaporation.
+Evaporation is how the body cools itself.
+Same temperature feels hotter in humid areas than dry areas.
+
+EXAMPLES:
+A 30°C day in dry Vavuniya feels more comfortable than the same temperature in humid Colombo.
+
+KEYWORDS:
+humidity, water vapor, evaporation, body cooling, comfort, Vavuniya, Colombo
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Weather Forecasting and Meteorology
+DEFINITION:
+Weather forecasting uses observations from instruments, satellites, and radar to predict future atmospheric conditions.
+
+KEY_POINTS:
+
+Meteorologists are scientists who study and predict weather.
+Department of Meteorology uses satellites, radar, and weather stations.
+Forecasts warn fishermen about dangerous seas.
+Forecasts help farmers plan harvest timing.
+
+EXAMPLES:
+The Department of Meteorology issues storm warnings to prevent fishermen from going to sea during dangerous conditions.
+
+KEYWORDS:
+weather forecasting, meteorology, satellite, radar, Department of Meteorology, fishermen warnings, farmer planning
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Weather Measuring Instruments
+TO: Elements of Weather
+EXPLANATION:
+Each weather element requires specific instruments to measure it accurately.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Air Pressure and Weather Patterns
+TO: Cloud Formation Through Condensation
+EXPLANATION:
+Low pressure areas with rising warm air promote cloud formation through cooling and condensation.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Wind Formation and Monsoons
+TO: Elements of Weather
+EXPLANATION:
+Wind is one of the key measurable weather elements created by uneven heating.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Cloud Formation Through Condensation
+TO: Elements of Weather
+EXPLANATION:
+Cloud cover and precipitation are weather elements that result from condensation processes.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Weather Forecasting and Meteorology
+TO: Weather Measuring Instruments
+EXPLANATION:
+Forecasting depends on accurate measurements collected by weather instruments at many locations.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Weather as Short-Term Atmospheric Condition
+TO: Weather versus Climate
+EXPLANATION:
+Understanding that weather is short-term helps distinguish it from long-term climate patterns.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Morning Sun to Afternoon Rain
+
+DESCRIPTION:
+A village experiences sunny morning weather that changes to heavy rain by afternoon, showing rapid atmospheric change.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: School Weather Station Measurement
+
+DESCRIPTION:
+Students use thermometer, rain gauge, anemometer, and wind vane to record daily weather at their school.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Low Pressure Cyclone Formation
+
+DESCRIPTION:
+Falling air pressure over the Indian Ocean leads to cyclone development, bringing stormy weather to Sri Lankan coast.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Monsoon Rains for Rice Paddies
+
+DESCRIPTION:
+South-West Monsoon rains from May to September fill irrigation systems and support Sri Lankan rice cultivation.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Humidity Comparison Across Regions
+
+DESCRIPTION:
+Same 30°C temperature feels much more uncomfortable in humid coastal Colombo than in drier inland Vavuniya.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Weather and climate are the same thing.
+
+CORRECTION:
+Weather is short-term atmospheric condition while climate is long-term average over typically 30 years.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+High humidity only means more water in the air and does not affect comfort.
+
+CORRECTION:
+High humidity reduces sweat evaporation, which is how the body cools, making people feel hotter.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Air has no weight and does not press down on us.
+
+CORRECTION:
+Air has weight and creates air pressure; changes in pressure create different weather patterns.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Clouds are made of water vapor gas.
+
+CORRECTION:
+Clouds are made of tiny liquid water droplets formed when water vapor condenses.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Wind just happens randomly.
+
+CORRECTION:
+Wind forms because Earth is heated unevenly, causing warm air to rise and cool air to move in.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Rapid Morning-to-Afternoon Weather Change
+
+DESCRIPTION:
+Time-lapse showing a village transitioning from sunny morning to cloudy and rainy afternoon.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Weather Station Instruments in Use
+
+DESCRIPTION:
+Display thermometer, rain gauge, anemometer, and wind vane with readings being recorded simultaneously.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Rising Warm Air and Low Pressure Formation
+
+DESCRIPTION:
+Animate warm air rising, leaving behind low pressure zone that draws in surrounding air and forms clouds.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Cloud Formation Step by Step
+
+DESCRIPTION:
+Show sun heating ground, warm air rising, cooling at altitude, vapor condensing into droplets, and cloud forming.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Global Wind Pattern and Monsoons
+
+DESCRIPTION:
+Visualize equator receiving direct sun, warm air rising, cool polar air moving in, with monsoon winds marked for Sri Lanka.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Weather Today vs Climate Average
+
+DESCRIPTION:
+Split screen showing daily weather changes in Kandy versus long-term climate pattern in Nuwara Eliya.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Humidity Effect on Evaporative Cooling
+
+DESCRIPTION:
+Compare sweat evaporating quickly in dry air versus slowly in humid air, showing why humidity affects comfort.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S8
+TITLE: Forecasting Workflow and Safety Warnings
+
+DESCRIPTION:
+Show satellite data, meteorologist analysis, forecast creation, and warnings issued to fishermen and farmers.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Define weather and identify its key elements including temperature, humidity, wind, precipitation, and cloud cover.
+
+Describe the instruments used to measure weather and explain how each works.
+
+Explain how air pressure, cloud formation, and wind patterns including monsoons affect Sri Lankan weather.
+
+Distinguish weather from climate and apply forecasting information to protect lives and livelihoods.
+
+==================================================
+SECTION: SUMMARY
+Weather is the short-term atmospheric condition at a specific place, changing rapidly as the atmosphere moves. Scientists describe weather using elements such as temperature, humidity, wind, precipitation, and cloud cover, measured by instruments including thermometers, rain gauges, anemometers, and wind vanes. Air pressure plays a key role, with low pressure bringing clouds and rain while high pressure brings clear skies, and pressure changes over the Indian Ocean can create cyclones affecting Sri Lanka. Clouds form when rising warm air cools and water vapor condenses into tiny droplets. Wind results from uneven Earth heating, and Sri Lanka experiences important seasonal monsoons—the South-West Monsoon from May to September and North-East Monsoon from December to February—that provide water for electricity and rice farming. Weather differs from climate as short-term conditions versus long-term averages over 30 years. High humidity reduces evaporative cooling and makes people feel hotter, explaining why temperatures feel different in Vavuniya versus Colombo. Meteorologists use satellites, radar, and weather stations to forecast conditions, helping save lives through warnings to fishermen and supporting farmers in harvest planning.

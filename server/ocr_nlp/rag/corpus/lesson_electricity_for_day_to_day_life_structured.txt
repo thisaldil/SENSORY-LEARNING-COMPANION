@@ -1,0 +1,390 @@
+LESSON_ID: SCI_G6_ELECTRICITY_DAY_TO_DAY
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Electricity for Day-to-Day Life
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTRICITY_IMPORTANCE
+NAME: Electricity as Essential Energy
+DEFINITION:
+Electricity is a form of energy that provides invisible power for modern life, helping people live comfortably, work efficiently, and communicate.
+
+KEY_POINTS:
+
+- Electricity is used in homes, schools, hospitals, and industries
+- It supports comfort, productivity, and daily communication
+- Many modern devices depend on electricity to function
+
+EXAMPLES:
+Without electricity, lights, phone charging, refrigeration, and many school or office activities stop.
+
+KEYWORDS:
+electricity, energy, daily life, modern world, power, comfort, communication
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_DAILY_APPLICATIONS
+NAME: Applications of Electricity in Daily Activities
+DEFINITION:
+Electricity is converted into other forms of energy such as light, heat, motion, and signals to perform useful tasks in day-to-day life.
+
+KEY_POINTS:
+
+- Lighting devices include bulbs, tube lights, and streetlights
+- Heating devices include electric kettles, irons, and rice cookers
+- Cooling devices include fans and air conditioners, important in warm Sri Lankan weather
+- Movement devices include washing machines, blenders, and electric fans
+- Communication devices include mobile phone chargers, televisions, and computers
+
+EXAMPLES:
+An electric rice cooker converts electrical energy to heat, while a washing machine converts electrical energy to motion.
+
+KEYWORDS:
+lighting, heating, cooling, motion, communication, household appliances, energy conversion
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTRICITY_SOURCES
+NAME: Sources of Electricity in Sri Lanka
+DEFINITION:
+Electricity is generated at power stations and transmitted through wires to homes and buildings. Sri Lanka uses multiple energy sources to produce electricity.
+
+KEY_POINTS:
+
+- Hydropower uses falling water to drive turbines and generate electricity
+- Thermal power uses heat from burning coal or oil
+- Wind power uses moving air to turn turbines
+- Solar power uses sunlight to produce electrical energy
+- Different sources improve reliability of national electricity supply
+
+EXAMPLES:
+Sri Lanka gets major electricity from hydropower stations and also uses wind in Mannar and solar projects in Hambantota.
+
+KEYWORDS:
+power stations, hydropower, thermal power, wind energy, solar energy, electricity generation, Sri Lanka
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_CURRENT_AND_CIRCUIT
+NAME: Electric Current and Circuits
+DEFINITION:
+Electric current is the flow of electrons through a conductor. For current to flow and make a device work, there must be a complete path called a circuit.
+
+KEY_POINTS:
+
+- Electrons are tiny particles that move in conductors such as copper wire
+- A complete circuit is required for electrical devices to operate
+- If a wire is broken, current cannot flow
+- If a switch is OFF, the circuit is open and the appliance stops working
+
+EXAMPLES:
+A torch lights up only when the battery, bulb, and switch form a complete circuit.
+
+KEYWORDS:
+electric current, electrons, conductor, circuit, open circuit, closed circuit, switch
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_CONDUCTORS_INSULATORS
+NAME: Conductors and Insulators
+DEFINITION:
+Materials are grouped by how easily they allow electric current to pass. Conductors allow current flow, while insulators resist or block it.
+
+KEY_POINTS:
+
+- Copper, silver, and aluminum are good conductors
+- Rubber, plastic, and glass are insulators
+- Copper is widely used for internal wire cores
+- Plastic coverings on wires help protect people from electric shock
+
+EXAMPLES:
+A household cable has a copper core to carry current and a plastic outer layer for safety.
+
+KEYWORDS:
+conductors, insulators, copper, aluminum, rubber, plastic coating, electric safety
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_MAINS_VS_BATTERY
+NAME: Mains Electricity and Battery Power
+DEFINITION:
+Homes use two common electricity sources: mains electricity from wall sockets and stored chemical electricity from cells or batteries.
+
+KEY_POINTS:
+
+- Mains electricity provides high power through wall sockets
+- Mains electricity can be dangerous if used carelessly
+- Cells and batteries provide lower-voltage portable power
+- Batteries are used in torches, clocks, and remote controls
+- Batteries need recharging or replacement after stored energy is used
+
+EXAMPLES:
+A television usually uses mains electricity, while a remote control uses batteries.
+
+KEYWORDS:
+mains electricity, wall socket, batteries, cells, portable power, voltage, electrical supply
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTRICITY_COST_EFFICIENCY
+NAME: Electricity Cost and Efficient Use
+DEFINITION:
+Electricity use is measured and billed in units of energy. Efficient use reduces cost and saves resources.
+
+KEY_POINTS:
+
+- Leaving lights or appliances on unnecessarily wastes energy
+- Electricity bills depend on total units consumed
+- Energy-efficient appliances use less electricity for the same task
+- LED bulbs generally use less energy than old filament bulbs
+
+EXAMPLES:
+Replacing filament bulbs with LED bulbs can reduce household electricity bills.
+
+KEYWORDS:
+electricity bill, units, energy efficiency, LED bulbs, energy saving, responsible usage
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTRICITY_ENVIRONMENT
+NAME: Electricity and the Environment
+DEFINITION:
+How electricity is produced affects the environment. Fossil-fuel generation can increase pollution and global warming, while renewable sources reduce these impacts.
+
+KEY_POINTS:
+
+- Burning coal and oil for power releases pollutants
+- Fossil-fuel electricity contributes to global warming
+- Renewable sources include hydropower, wind, and solar
+- Renewable energy supports cleaner long-term electricity supply
+- Sri Lanka is increasing renewable projects for sustainability
+
+EXAMPLES:
+Wind turbines in Mannar and solar farms in Hambantota help produce cleaner electricity.
+
+KEYWORDS:
+environment, fossil fuels, pollution, global warming, renewable energy, sustainability, Mannar, Hambantota
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTRICAL_SAFETY
+NAME: Electrical Safety Principles
+DEFINITION:
+Electricity can be dangerous, so safety rules are essential to prevent electric shocks, fires, and equipment damage.
+
+KEY_POINTS:
+
+- Never touch switches or sockets with wet hands
+- Do not overload one socket with too many plugs
+- Keep metal objects away from socket holes
+- Do not use damaged or frayed wires
+- Water can increase shock risk because it helps current travel
+
+EXAMPLES:
+A frayed charging cable should be replaced immediately to reduce shock and fire risk.
+
+KEYWORDS:
+electrical safety, electric shock, wet hands, overloaded sockets, frayed wires, home safety
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_HISTORY_SRI_LANKA_ELECTRICITY
+NAME: Early Development of Electricity in Sri Lanka
+DEFINITION:
+Sri Lanka’s electricity development began in the late 1800s and expanded through hydropower planning led by key national engineers.
+
+KEY_POINTS:
+
+- The first electric light in Colombo was lit in 1895
+- D.J. Wimalasurendra is known as the Father of Hydropower in Sri Lanka
+- Hydropower development used rivers and waterfalls to generate electricity
+- Major projects such as Laxapana and Victoria became important power sources
+
+EXAMPLES:
+Hydropower plants influenced by Wimalasurendra’s vision still support Sri Lanka’s electricity system.
+
+KEYWORDS:
+Sri Lanka electricity history, Colombo 1895, D.J. Wimalasurendra, hydropower, Laxapana, Victoria
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CURRENT_CIRCUIT_DEVICE
+FROM: Electric Current and Circuits
+TO: Applications of Electricity in Daily Activities
+EXPLANATION:
+Daily electrical devices work only when electric current flows through complete circuits. If the circuit is open, lights, heaters, motors, and communication devices cannot operate.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CONDUCTOR_SAFETY
+FROM: Conductors and Insulators
+TO: Electrical Safety Principles
+EXPLANATION:
+Conductors carry current while insulators protect users. Safe electrical design combines conducting cores with insulating covers to reduce shock risk.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SOURCES_ENVIRONMENT
+FROM: Sources of Electricity in Sri Lanka
+TO: Electricity and the Environment
+EXPLANATION:
+The environmental impact of electricity depends on generation source. Thermal power from fossil fuels causes more pollution, while wind, solar, and hydropower are cleaner options.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_COST_EFFICIENCY_USE
+FROM: Applications of Electricity in Daily Activities
+TO: Electricity Cost and Efficient Use
+EXPLANATION:
+More frequent or unnecessary use of lights and appliances increases unit consumption and bills. Efficient appliances and responsible usage reduce both costs and resource waste.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_HISTORY_RENEWABLES
+FROM: Early Development of Electricity in Sri Lanka
+TO: Sources of Electricity in Sri Lanka
+EXPLANATION:
+Early hydropower development in Sri Lanka created a foundation for national electricity supply and influenced today’s use of water-based and other renewable sources.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_HOME_ELECTRICITY_USE
+TITLE: Electricity Use in a Typical Sri Lankan Home
+
+DESCRIPTION:
+At night, a family uses LED bulbs for lighting, a fan for cooling, a rice cooker for heating food, and a phone charger for communication. Each appliance converts electrical energy into a useful form such as light, heat, motion, or electronic signals.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_COMPLETE_CIRCUIT_TORCH
+TITLE: Torch Working with a Complete Circuit
+
+DESCRIPTION:
+When a torch switch is turned ON, the internal circuit closes and electrons flow from the battery through the bulb and back. The bulb glows. If the battery is removed or the switch is OFF, the circuit opens and the torch does not light.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_MANNAR_WIND_ENERGY
+TITLE: Wind Power Contribution in Mannar
+
+DESCRIPTION:
+Large wind turbines in Mannar rotate when strong wind blows. This rotation drives generators that produce electricity for the grid. Because wind is renewable, this helps reduce dependence on fossil fuels.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SAFE_SOCKET_PRACTICE
+TITLE: Safe Use of Sockets at Home
+
+DESCRIPTION:
+A student notices a socket already connected to multiple plugs and avoids adding another adapter. Instead, the student unplugs unnecessary devices first. This reduces overheating and electrical hazard risk.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_ELECTRICITY_VISIBLE
+STATEMENT:
+Electricity is visible energy that we can always see directly.
+
+CORRECTION:
+Electricity is usually invisible. We observe its effects, such as a glowing bulb, a spinning fan, or a heated iron.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_CURRENT_WITHOUT_CIRCUIT
+STATEMENT:
+A device can work even if the circuit is incomplete.
+
+CORRECTION:
+Electrical devices require a complete path for electron flow. A broken wire or OFF switch opens the circuit and stops current.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_ALL_MATERIALS_CONDUCT
+STATEMENT:
+All materials allow electricity to pass equally.
+
+CORRECTION:
+Only conductors allow easy current flow. Insulators such as rubber and plastic resist current and are used for safety.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_BATTERY_ALWAYS_SAFE
+STATEMENT:
+Battery-powered devices are always safe and need no precautions.
+
+CORRECTION:
+Batteries are generally lower voltage than mains supply, but misuse can still cause heating, leakage, or short circuits. Safe handling and correct battery use are still necessary.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_RENEWABLE_NO_IMPORTANCE
+STATEMENT:
+It does not matter whether electricity comes from fossil fuels or renewable energy.
+
+CORRECTION:
+Generation source strongly affects pollution and climate impact. Increasing renewable electricity helps reduce air pollution and supports long-term sustainability.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_ENERGY_CONVERSIONS_HOME
+TITLE: One Home, Many Electricity Uses
+
+DESCRIPTION:
+Show a Sri Lankan home at evening. Animate separate rooms where a bulb emits light, a rice cooker produces steam, a fan rotates, and a phone charges. Label each as electrical energy converting into light, heat, motion, or communication function.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_CURRENT_CIRCUIT
+TITLE: Electron Flow in a Simple Circuit
+
+DESCRIPTION:
+Display a battery, switch, wire, and bulb. With switch OFF, show no electron movement and a dark bulb. With switch ON, animate electrons moving through the closed loop and the bulb lighting up. Mark open and closed circuit states.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_CONDUCTOR_INSULATOR
+TITLE: Conductors and Insulators in a Wire
+
+DESCRIPTION:
+Show a cross-section of an electrical wire with copper core and plastic insulation. Animate current flowing through copper only. Highlight the plastic layer as a protective barrier that reduces shock risk when touched externally.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_SRI_LANKA_POWER_SOURCES
+TITLE: Sri Lanka Electricity Sources Map
+
+DESCRIPTION:
+Show a map of Sri Lanka with icons for hydropower dams (Laxapana, Victoria), wind turbines in Mannar, and solar farms in Hambantota. Arrows lead to homes and schools to show grid distribution.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_ELECTRICAL_SAFETY
+TITLE: Safe and Unsafe Electrical Behavior
+
+DESCRIPTION:
+Split screen: left side shows safe actions (dry hands, undamaged wires, moderate plug use), right side shows unsafe actions (wet hands touching switch, overloaded socket, frayed cable). Use warning symbols to emphasize risk.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+- Define electricity and explain why it is essential in day-to-day life
+
+- Identify major daily applications of electricity and the type of energy conversion in each
+
+- Explain electric current, complete circuits, and the role of switches in controlling devices
+
+- Distinguish conductors from insulators with common material examples
+
+- Compare mains electricity and battery power for home and portable uses
+
+- Describe major electricity sources in Sri Lanka, including hydropower, thermal, wind, and solar
+
+- Explain how electricity use affects bills and how energy-efficient choices reduce cost
+
+- Apply key electrical safety rules to prevent shock, fire, and household accidents
+
+==================================================
+SECTION: SUMMARY
+Electricity is an essential form of energy that powers lighting, heating, cooling, movement, and communication in daily life. It is generated at power stations and delivered through networks, with Sri Lanka using hydropower, thermal power, wind, and solar sources. Electric current is the flow of electrons through a conductor, and devices work only when a complete circuit exists. Conductors such as copper carry current, while insulators such as plastic improve safety by limiting accidental contact with current. Homes use both mains electricity and battery power for different needs. Because electricity use is billed in energy units, efficient appliances and careful habits help save money. Electricity generation also affects the environment, so expanding renewables such as Mannar wind and Hambantota solar supports cleaner development. Since electricity can cause shock and fire hazards, strict safety practices—dry hands, safe sockets, and undamaged wires—are essential.
