@@ -5,7 +5,17 @@ from beanie import init_beanie
 from motor.motor_asyncio import AsyncIOMotorClient
 
 from app.config import settings
-from app.models import User, Lesson, Quiz, QuizResult, Progress, ContentFile, ProcessingJob, Activity
+from app.models import (
+    User,
+    Lesson,
+    Quiz,
+    QuizResult,
+    Progress,
+    ContentFile,
+    ProcessingJob,
+    Activity,
+    TransmutedContent,
+)
 from app.models.behavior import BehaviorLog
 
 
@@ -39,6 +49,7 @@ async def connect_to_mongo():
             ProcessingJob,
             BehaviorLog,
             Activity,
+            TransmutedContent,
         ],
     )
 

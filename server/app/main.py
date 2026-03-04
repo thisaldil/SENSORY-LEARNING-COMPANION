@@ -98,7 +98,6 @@ async def health_check():
     return {"status": "ok"}
 
 
-# Include routers
 from app.api import (
     auth,
     users,
@@ -109,6 +108,7 @@ from app.api import (
     calibration,
     cognitive,
     adaptive_content,
+    content,
 )
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
@@ -119,10 +119,10 @@ app.include_router(animation.router, prefix="/api", tags=["Visual Learning / Ani
 app.include_router(calibration.router, prefix="/api", tags=["Calibration"])
 app.include_router(cognitive.router, prefix="/api", tags=["Cognitive Load"])
 app.include_router(adaptive_content.router, prefix="/api", tags=["Adaptive Content"])
+app.include_router(content.router, prefix="/api", tags=["Content"])
 
 # Uncomment as you implement them
-# from app.api import content, progress, uploads
-# app.include_router(content.router, prefix="/api/content", tags=["Content"])
+# from app.api import progress, uploads
 # app.include_router(progress.router, prefix="/api/progress", tags=["Progress"])
 # app.include_router(uploads.router, prefix="/api/uploads", tags=["Uploads"])
 

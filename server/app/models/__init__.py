@@ -5,7 +5,7 @@ from app.models.user import User
 from app.models.lesson import Lesson
 from app.models.quiz import Quiz, QuizResult
 from app.models.progress import Progress
-from app.models.content import ContentFile, ProcessingJob
+from app.models.content import ContentFile, ProcessingJob, TransmutedContent
 from app.models.activity import Activity
 
 __all__ = [
@@ -16,6 +16,7 @@ __all__ = [
     "Progress",
     "ContentFile",
     "ProcessingJob",
+    "TransmutedContent",
     "Activity",
 ]
 
