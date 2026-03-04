@@ -1,67 +1,56 @@
-import os
-import json
-
+from ocr_nlp.rag.rag_service import run_rag
 from ocr_nlp.pipeline.nlp.clean_text import clean
 from ocr_nlp.pipeline.ocr.preprocess import preprocess_image
 from ocr_nlp.pipeline.ocr.extract import extract_text
-from ocr_nlp.pipeline.nlp.concept_extraction import extract_concepts
-from ocr_nlp.pipeline.nlp.relation_extraction import extract_relations
-from ocr_nlp.pipeline.graph.scene_graph import build_scene_graph
-from ocr_nlp.pipeline.nlp.example_mapping import map_examples
-from ocr_nlp.pipeline.narration.script_generator import generate_script
 
 
+def format_rag_output(rag_output):
+    """
+    Ensure RAG output is always structured.
+    """
+
+    # If RAG returned a dictionary (expected case)
+    if isinstance(rag_output, dict):
+        return {
+            "definition": rag_output.get("definition", ""),
+            "example": rag_output.get("example", ""),
+            "narration_script": rag_output.get("narration_script", "")
+        }
+
+    # If RAG returned plain text (fallback)
+    return {
+        "definition": rag_output,
+        "example": "",
+        "narration_script": ""
+    }
 
 
 def handle_text(text):
-    """
-    Process text input: clean and extract concepts
-    """
+
     cleaned = clean(text)
-    concepts = extract_concepts(cleaned["cleaned_text"])
-    relations = extract_relations(cleaned["cleaned_text"])
-    graph = build_scene_graph(concepts, relations)
-    examples = map_examples(concepts)
-    narration = generate_script(relations, examples)
+    query = cleaned["cleaned_text"]
 
-    # DO NOT LOAD MOCK FOR TEXT INPUT
-    output = {
-        "extracted_text": cleaned["cleaned_text"],
-        "cleaned_text": cleaned["cleaned_text"],
-        "concepts": concepts,
-        "relations": relations,
-        "scene_graph": graph,
-        "examples": examples,
-        "narration": narration,
-        "example_mapping": examples,  
-        "narration_script": narration 
+    rag_output = run_rag(query)
+
+    return {
+        "extracted_text": text,
+        "cleaned_text": query,
+        "rag_output": format_rag_output(rag_output)
     }
-
-    return output
-
 
 
 def handle_image(image_bytes):
+
     processed_image = preprocess_image(image_bytes)
     raw_text = extract_text(processed_image)
+
     cleaned = clean(raw_text)
+    query = cleaned["cleaned_text"]
 
-    concepts = extract_concepts(cleaned["cleaned_text"])
-    relations = extract_relations(cleaned["cleaned_text"])
-    graph = build_scene_graph(concepts, relations)
-    examples = map_examples(concepts)
-    narration = generate_script(relations, examples)
+    rag_output = run_rag(query)
 
-    output = {
-        "extracted_text": cleaned["cleaned_text"],
-        "cleaned_text": cleaned["cleaned_text"],
-        "concepts": concepts,
-        "relations": relations,
-        "scene_graph": graph,
-        "examples": examples,
-        "narration": narration,
-        "example_mapping": examples,  
-        "narration_script": narration 
+    return {
+        "extracted_text": raw_text,
+        "cleaned_text": query,
+        "rag_output": format_rag_output(rag_output)
     }
-
-    return output

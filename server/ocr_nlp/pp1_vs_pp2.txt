@@ -22,3 +22,46 @@ Top 3 Relevant Chunks
 Pass as Context to LLM
 ↓
 Structured Educational Response
+
+
+User Input
+   │
+   ├── Text
+   ├── Image → OCR
+   └── Voice → Whisper STT
+            │
+            ▼
+      cleaned_text
+            │
+            ▼
+      RAG Pipeline
+   (retriever + generator)
+            │
+            ▼
+   Structured Educational JSON
+
+
+   Final
+   Frontend
+   │
+   ▼
+FastAPI
+   │
+   ▼
+pipeline_controller
+   │
+   ├─ text input
+   ├─ image → OCR
+   └─ voice → Whisper
+   │
+   ▼
+clean_text
+   │
+   ▼
+RAG Service
+   │
+   ├─ Retriever
+   └─ Generator (Flan-T5)
+   │
+   ▼
+Structured Educational JSON

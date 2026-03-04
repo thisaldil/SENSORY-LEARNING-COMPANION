@@ -21,5 +21,18 @@ def build_vector_store(corpus_path):
 
 
 def retrieve_context(store, query):
+
     query_embedding = generate_embeddings([query])[0]
-    return store.search(query_embedding, top_k=3)
+
+    results = store.search(query_embedding, top_k=5)
+
+    query_lower = query.lower()
+
+    # prioritize chunks containing concept name
+    ranked = sorted(
+        results,
+        key=lambda chunk: query_lower in chunk.lower(),
+        reverse=True
+    )
+
+    return ranked[:3]

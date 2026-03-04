@@ -11,16 +11,15 @@ print("Model loaded.")
 
 def generate_response(query, context_chunks):
     """
-    Generate structured educational response.
+    Generate explanation script using retrieved chunks.
     """
 
-    # Join retrieved chunks into context
     context = "\n\n".join(context_chunks)
 
     prompt = f"""
-You are a Grade 6 Science teacher.
+You are a Grade 6 science teacher.
 
-Use ONLY the provided context to answer the question.
+Use the context to explain the concept clearly to a student.
 
 Context:
 {context}
@@ -28,13 +27,7 @@ Context:
 Question:
 {query}
 
-Answer strictly in this exact format:
-
-Definition: <one clear paragraph>
-
-Example: <one simple real-world example>
-
-Narration: <short storytelling explanation for children>
+Explain the concept clearly and simply.
 """
 
     inputs = tokenizer(
@@ -47,7 +40,7 @@ Narration: <short storytelling explanation for children>
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=250,
+            max_new_tokens=200,
             do_sample=False
         )
 
@@ -56,22 +49,4 @@ Narration: <short storytelling explanation for children>
     print("RAW MODEL OUTPUT:")
     print(response_text)
 
-    # Structured parsing
-    definition = ""
-    example = ""
-    narration = ""
-
-    if "Definition:" in response_text:
-        definition = response_text.split("Definition:")[1].split("Example:")[0].strip()
-
-    if "Example:" in response_text:
-        example = response_text.split("Example:")[1].split("Narration:")[0].strip()
-
-    if "Narration:" in response_text:
-        narration = response_text.split("Narration:")[1].strip()
-
-    return {
-        "definition": definition,
-        "example": example,
-        "narration_script": narration
-    }
+    return response_text
