@@ -32,7 +32,8 @@ class User(Document):
     language: Optional[str] = "en"
 
     # Neuro-adaptive personalization
-    baseline_cognitive_load: Optional[Literal["LOW", "OPTIMAL", "OVERLOAD"]] = None
+    # Use LOW_LOAD to align with cognitive_state enums used elsewhere (e.g. visual engine)
+    baseline_cognitive_load: Optional[Literal["LOW", "LOW_LOAD", "OPTIMAL", "OVERLOAD"]] = None
     baseline_features: Optional[Dict[str, Any]] = None
     is_calibrated: bool = False
     neuro_profile: Optional[str] = None

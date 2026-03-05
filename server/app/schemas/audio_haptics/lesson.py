@@ -33,6 +33,7 @@ class LessonResponse(BaseModel):
     title: str
     subject: str
     content: str
+    baseline_cognitive_load: Optional[str] = None
     concepts: List[dict] = []
     visuals: List[dict] = []
     progress: float = 0.0

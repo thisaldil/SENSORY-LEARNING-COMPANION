@@ -51,7 +51,8 @@ async def calibrate_baseline(
         # Map model string labels to canonical discrete states
         label = (predicted_load or "").upper()
         if label.startswith("LOW"):
-            state = "LOW"
+            # Use LOW_LOAD to stay consistent with cognitive_state used by Member 1 & 2
+            state = "LOW_LOAD"
         elif label.startswith("HIGH") or label.startswith("OVER"):
             state = "OVERLOAD"
         else:

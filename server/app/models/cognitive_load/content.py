@@ -87,6 +87,9 @@ class TransmutedContent(Document):
     # Raw input from the student / caller
     input: Dict[str, Any]
 
+    # Snapshot of baseline cognitive load at time of transmutation
+    baseline_cognitive_load: Optional[str] = None
+
     # Deterministic NLP analysis on the original text
     nlp_analysis: Dict[str, Any]
 

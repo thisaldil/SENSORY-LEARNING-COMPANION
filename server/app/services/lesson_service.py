@@ -5,6 +5,7 @@ Service layer for lesson management
 from beanie import PydanticObjectId
 from app.models.audio_haptics.lesson import Lesson
 from app.schemas.audio_haptics.lesson import LessonCreate, LessonResponse
+from app.models.user import User
 
 
 def lesson_to_response(lesson: Lesson) -> LessonResponse:
@@ -30,11 +31,15 @@ async def create_lesson(
     Returns:
         Lesson document
     """
+    # Fetch the user so we can snapshot their baseline_cognitive_load
+    user = await User.get(user_id)
+
     lesson = Lesson(
         user_id=user_id,
         title=lesson_data.title,
         subject=lesson_data.subject,
-        content=lesson_data.content
+        content=lesson_data.content,
+        baseline_cognitive_load=user.baseline_cognitive_load if user else None,
     )
     
     await lesson.insert()

@@ -27,6 +27,7 @@ except ImportError:  # pragma: no cover - optional dependency
     textstat = None  # type: ignore
 
 from app.models.cognitive_load.content import TransmutedContent
+from app.models.user import User
 from app.services.nlp.text_llm_client import generate_text
 
 
@@ -318,6 +319,7 @@ async def log_transmutation_event(
 
     beanie_lesson_id: Optional[PydanticObjectId] = None
     beanie_student_id: Optional[PydanticObjectId] = None
+    baseline_cognitive_load: Optional[str] = None
     if lesson_id:
         try:
             beanie_lesson_id = PydanticObjectId(lesson_id)
@@ -326,13 +328,19 @@ async def log_transmutation_event(
     if student_id:
         try:
             beanie_student_id = PydanticObjectId(student_id)
+            # Fetch user to snapshot their baseline at this moment
+            user = await User.get(beanie_student_id)
+            if user:
+                baseline_cognitive_load = user.baseline_cognitive_load
         except Exception:
             beanie_student_id = None
+            baseline_cognitive_load = None
 
     doc = TransmutedContent(
         lesson_id=beanie_lesson_id,
         student_id=beanie_student_id,
         session_id=session_id,
+        baseline_cognitive_load=baseline_cognitive_load,
         topic=topic,
         lesson_title=lesson_title,
         input={

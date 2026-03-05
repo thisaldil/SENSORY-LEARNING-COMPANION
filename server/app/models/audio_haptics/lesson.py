@@ -33,6 +33,8 @@ class Lesson(Document):
     title: str
     subject: str
     content: str
+    # Snapshot of the learner's baseline load at lesson creation time
+    baseline_cognitive_load: Optional[str] = None
     concepts: List[dict] = []
     visuals: List[dict] = []
     progress: float = 0.0  # 0.0 to 1.0
