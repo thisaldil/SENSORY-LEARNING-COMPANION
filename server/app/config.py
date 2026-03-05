@@ -62,12 +62,14 @@ class Settings(BaseSettings):
     # ML Models
     ML_MODELS_DIR: str = "app/ml/models"
 
+    # Google Gemini
+    GOOGLE_API_KEY: str = ""
+
     class Config:
         env_file = ".env"
         case_sensitive = True
-        # Ignore system environment variables that conflict
         env_ignore_empty = True
+        extra = "ignore"        # prevent crashes when .env has unrecognised keys
 
 
 settings = Settings()
-

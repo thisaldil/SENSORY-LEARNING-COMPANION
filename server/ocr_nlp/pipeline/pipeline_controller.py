@@ -4,12 +4,11 @@ from ocr_nlp.pipeline.ocr.preprocess import preprocess_image
 from ocr_nlp.pipeline.ocr.extract import extract_text
 
 
-def format_rag_output(rag_output):
+def format_rag_output(rag_output) -> dict:
     """
-    Ensure RAG output is always structured.
+    Ensure RAG output is always a clean structured dict.
+    Handles both dict output (normal) and plain string (fallback).
     """
-
-    # If RAG returned a dictionary (expected case)
     if isinstance(rag_output, dict):
         return {
             "definition": rag_output.get("definition", ""),
@@ -17,16 +16,15 @@ def format_rag_output(rag_output):
             "narration_script": rag_output.get("narration_script", "")
         }
 
-    # If RAG returned plain text (fallback)
+    # Fallback: plain string returned unexpectedly
     return {
-        "definition": rag_output,
+        "definition": str(rag_output),
         "example": "",
         "narration_script": ""
     }
 
 
-def handle_text(text):
-
+def handle_text(text: str) -> dict:
     cleaned = clean(text)
     query = cleaned["cleaned_text"]
 
@@ -39,8 +37,7 @@ def handle_text(text):
     }
 
 
-def handle_image(image_bytes):
-
+def handle_image(image_bytes: bytes) -> dict:
     processed_image = preprocess_image(image_bytes)
     raw_text = extract_text(processed_image)
 
