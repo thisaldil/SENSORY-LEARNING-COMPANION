@@ -7,9 +7,9 @@ from beanie import PydanticObjectId
 from typing import Optional
 
 from app.models.user import User
-from app.models.lesson import Lesson
+from app.models.audio_haptics.lesson import Lesson
 from app.models.activity import Activity
-from app.schemas.lesson import LessonCreate, LessonResponse
+from app.schemas.audio_haptics.lesson import LessonCreate, LessonResponse
 from app.services.lesson_service import create_lesson, get_lesson, lesson_to_response
 from app.utils.dependencies import get_current_user
 from app.utils.topic_inference import infer_topics_from_lesson, infer_cognitive_load_from_lesson

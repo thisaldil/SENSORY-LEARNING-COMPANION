@@ -9,8 +9,8 @@ when high load, increase when low engagement).
 from typing import Dict, List, Optional
 from datetime import datetime
 from beanie import PydanticObjectId
-from app.models.behavior import BehaviorLog
-from app.models.quiz import Quiz, QuizResult
+from app.models.cognitive_load.behavior import BehaviorLog
+from app.models.cognitive_load.quiz import Quiz, QuizResult
 from app.ml.processors.feature_extractor import extract_features_from_behavior_log
 from app.ml.processors.cognitive_load_predictor import predict_cognitive_load
 

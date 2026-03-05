@@ -3,7 +3,7 @@ Cache service for animation scripts – get/save in MongoDB (Visual Learning Pla
 """
 from typing import Any, Dict, Optional
 
-from app.models.animation import AnimationModel
+from app.models.visual.animation import AnimationModel
 
 # Initialize model
 animation_model = AnimationModel()

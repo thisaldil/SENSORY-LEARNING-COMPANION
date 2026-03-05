@@ -13,10 +13,12 @@ from app.models import (
     Progress,
     ContentFile,
     ProcessingJob,
+    ContentObject,
     Activity,
     TransmutedContent,
+    NeuroAdaptiveVisualScript,
 )
-from app.models.behavior import BehaviorLog
+from app.models.cognitive_load.behavior import BehaviorLog
 
 
 class Database:
@@ -48,8 +50,10 @@ async def connect_to_mongo():
             ContentFile,
             ProcessingJob,
             BehaviorLog,
+            ContentObject,
             Activity,
             TransmutedContent,
+            NeuroAdaptiveVisualScript,
         ],
     )
 

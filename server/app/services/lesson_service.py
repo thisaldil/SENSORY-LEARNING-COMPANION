@@ -3,8 +3,8 @@ Lesson Service
 Service layer for lesson management
 """
 from beanie import PydanticObjectId
-from app.models.lesson import Lesson
-from app.schemas.lesson import LessonCreate, LessonResponse
+from app.models.audio_haptics.lesson import Lesson
+from app.schemas.audio_haptics.lesson import LessonCreate, LessonResponse
 
 
 def lesson_to_response(lesson: Lesson) -> LessonResponse:

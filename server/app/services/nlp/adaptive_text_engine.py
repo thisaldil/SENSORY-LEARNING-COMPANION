@@ -26,7 +26,7 @@ try:
 except ImportError:  # pragma: no cover - optional dependency
     textstat = None  # type: ignore
 
-from app.models.content import TransmutedContent
+from app.models.cognitive_load.content import TransmutedContent
 from app.services.nlp.text_llm_client import generate_text
 
 

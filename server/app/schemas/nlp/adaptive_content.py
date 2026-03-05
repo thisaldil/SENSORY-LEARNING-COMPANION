@@ -30,6 +30,10 @@ class TransmuteRequest(BaseModel):
     """Request body for the Adaptive Text Engine."""
 
     text: str = Field(..., description="Raw input text to be transmuted")
+    lesson_id: Optional[str] = Field(
+        default=None,
+        description="Optional Lesson ObjectId as string to link transmuted_content to lessons",
+    )
     cognitive_state: str = Field(
         ...,
         description='"LOW_LOAD", "OPTIMAL", or "OVERLOAD"',

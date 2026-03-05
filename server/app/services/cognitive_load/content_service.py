@@ -5,7 +5,7 @@ from typing import Optional
 
 from beanie import PydanticObjectId
 
-from app.models.content import ContentObject
+from app.models.cognitive_load.content import ContentObject
 
 
 async def get_content_for_state(
@@ -18,14 +18,16 @@ async def get_content_for_state(
 
     State is a discrete label: "LOW", "OPTIMAL", or "OVERLOAD".
     """
-    query = {"lesson_id": lesson_id}
-    if concept_id:
+    # NOTE:
+    # Older Beanie versions allowed query expressions like
+    # `ContentObject.lesson_id == lesson_id`. With the current
+    # Pydantic/Beanie stack this raises AttributeError on the
+    # class attribute access, so we fall back to a plain dict query.
+    query: dict = {"lesson_id": lesson_id}
+    if concept_id is not None:
         query["concept_id"] = concept_id
 
-    content_obj = await ContentObject.find_one(
-        ContentObject.lesson_id == lesson_id,
-        ContentObject.concept_id == concept_id if concept_id else True,
-    )
+    content_obj = await ContentObject.find_one(query)
     if not content_obj:
         return None
 

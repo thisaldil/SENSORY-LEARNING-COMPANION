@@ -4,7 +4,7 @@ Cognitive Load API – Real-time Classifier
 from fastapi import APIRouter, Depends, HTTPException, status
 
 from app.models.user import User
-from app.schemas.cognitive import PredictRequest, PredictResponse
+from app.schemas.cognitive_load.cognitive import PredictRequest, PredictResponse
 from app.ml.processors.feature_extractor import extract_features_from_behavior_log
 from app.ml.processors.cognitive_load_predictor import predict_cognitive_load
 from app.utils.dependencies import get_current_user

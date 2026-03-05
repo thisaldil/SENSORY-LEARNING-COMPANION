@@ -7,7 +7,7 @@ an initial cognitive load profile for the user.
 from fastapi import APIRouter, Depends, HTTPException, status
 
 from app.models.user import User
-from app.schemas.calibration import CalibrationRequest, CalibrationResponse
+from app.schemas.cognitive_load.calibration import CalibrationRequest, CalibrationResponse
 from app.ml.processors.feature_extractor import extract_features_from_behavior_log
 from app.ml.processors.cognitive_load_predictor import predict_cognitive_load
 from app.utils.dependencies import get_current_user

@@ -5,7 +5,7 @@ Uses subject and content so activities can be matched by topic and cognitive loa
 import re
 from typing import List, Optional
 
-from app.models.lesson import Lesson
+from app.models.audio_haptics.lesson import Lesson
 
 
 def infer_cognitive_load_from_lesson(lesson: Lesson) -> Optional[str]:

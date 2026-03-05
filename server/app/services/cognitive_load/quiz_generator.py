@@ -4,11 +4,11 @@ Service layer for quiz generation and management
 """
 from typing import List, Dict, Optional
 from beanie import PydanticObjectId
-from app.models.lesson import Lesson
-from app.models.quiz import Quiz, QuizResult
+from app.models.audio_haptics.lesson import Lesson
+from app.models.cognitive_load.quiz import Quiz, QuizResult
 from app.ml.processors.quiz_generator import generate_quiz_from_content
 from app.ml.processors.cognitive_load_predictor import predict_cognitive_load
-from app.services.behavior_service import (
+from app.services.cognitive_load.behavior_service import (
     create_behavior_log,
     update_behavior_log_with_results
 )
