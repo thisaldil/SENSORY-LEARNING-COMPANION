@@ -166,9 +166,10 @@ def _route_tier(cognitive_state: str, complexity_score: float) -> str:
     """Phase 2 – simple, explicit routing logic."""
     state = (cognitive_state or "").upper()
     if state == "OVERLOAD":
-        if complexity_score >= 0.6:
-            return "Tier 3 - Cognitive Offloading"
-        return "Tier 2 - Moderate Simplification"
+        # For OVERLOAD, always offload as much as possible:
+        # consistently use Tier 3 so Member 2 receives
+        # short, chunked bullets instead of long paragraphs.
+        return "Tier 3 - Cognitive Offloading"
     if state == "LOW_LOAD":
         if complexity_score <= 0.3:
             return "Tier 1 - Enrichment and Elaboration"
@@ -189,11 +190,13 @@ Preserve scientific accuracy and keep all core concepts intact.
 Tier 3 - Cognitive Offloading (OVERLOAD state):
 - You are a Grade 2 teacher.
 - Your goal is Cognitive Offloading.
-- Use ONLY bullet points.
-- Each bullet point must be less than 8 words.
-- Do NOT use words like "fundamental", "possessing", or "proportional".
-- Focus only on the action: gravity pulls things.
-- Prefer short, concrete words (pull, close, heavy).
+- Use a list of bullet points.
+- Start each bullet with "- ".
+- Output 4–9 bullets.
+- Each bullet is one short, simple sentence (max ~15 words).
+- Keep all important science words and processes from the original.
+- Each bullet should describe ONE clear idea, step, or relation in the explanation.
+- Avoid advanced academic wording; prefer concrete, everyday language that a Grade 2 student understands.
 """
     elif "Tier 1" in tier:
         tier_instructions = """
