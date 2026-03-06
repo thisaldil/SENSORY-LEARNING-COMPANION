@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 
 from app.config import settings
 from app.services.visual.prebuilt import test_water_cycle_script
+from app.services.visual.layout_engine import get_actor_properties
 
 load_dotenv()
 
@@ -242,26 +243,58 @@ def _generate_timeline_for_actor(actor_type: str, animation: str, x: int, y: int
 
 
 def _pick_actors_for_idea(idea: str) -> list:
-    """Create actors for an idea using KEYWORD_VISUAL_MAP."""
+    """Create actors for an idea using KEYWORD_VISUAL_MAP + layout defaults."""
     idea_lower = idea.lower()
     actors = []
     SEQUENTIAL_DELAY = 1200
     primary_actors = []
+
+    # Collect primary conceptual actors for this idea
     for keywords, actor_type, animation in KEYWORD_VISUAL_MAP:
         if any(k in idea_lower for k in keywords):
-            if not any(a["type"] == actor_type for a in primary_actors):
+            if not any(a_type == actor_type for a_type, _ in primary_actors):
                 primary_actors.append((actor_type, animation))
-    positions = {"earth": (400, 450), "moon": (600, 200), "planet": (200, 250), "arrow": (400, 150)}
+
     for idx, (actor_type, animation) in enumerate(primary_actors):
-        x, y = positions.get(actor_type, (400 + idx * 100, 300 - idx * 50))
+        # Use layout engine to assign sensible x, y, size, color
+        props = get_actor_properties(actor_type, {})
+        x = props.get("x", 400)
+        y = props.get("y", 300)
+        color = props.get("color")
         appear_delay = idx * SEQUENTIAL_DELAY
-        actor = {"type": actor_type, "x": x, "y": y, "animation": animation or "idle", "color": None, "count": 1}
+        actor = {
+            "type": actor_type,
+            "x": x,
+            "y": y,
+            "animation": animation or "idle",
+            "color": color,
+            "count": 1,
+        }
         actor["timeline"] = _generate_timeline_for_actor(actor_type, animation or "idle", x, y, appear_delay)
         actors.append(actor)
+
     if not actors:
-        actor = {"type": "label", "x": 400, "y": 300, "animation": "appear", "color": None, "count": 1}
-        actor["timeline"] = _generate_timeline_for_actor("label", "appear", 400, 300, 0)
+        # Fallback: a label centered on screen, with layout-derived color and fontSize
+        props = get_actor_properties("label", {"text": idea})
+        x = props.get("x", 400)
+        y = props.get("y", 300)
+        color = props.get("color")
+        actor = {
+            "type": "label",
+            "x": x,
+            "y": y,
+            "animation": "appear",
+            "color": color,
+            "count": 1,
+        }
+        # Preserve optional text/fontSize if frontend uses them
+        if "text" in props:
+            actor["text"] = props["text"]
+        if "fontSize" in props:
+            actor["fontSize"] = props["fontSize"]
+        actor["timeline"] = _generate_timeline_for_actor("label", "appear", x, y, 0)
         actors.append(actor)
+
     return actors
 
 

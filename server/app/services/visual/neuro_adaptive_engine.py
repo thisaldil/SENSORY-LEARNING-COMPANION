@@ -39,6 +39,7 @@ from typing import List, Tuple, Dict, Any, Optional
 from beanie import PydanticObjectId
 
 from app.services.visual.ai_generator import _pick_actors_for_idea
+from app.services.visual.visual_enricher import enrich_scene
 from app.models.visual.neuro_adaptive import NeuroAdaptiveVisualScript
 
 
@@ -154,6 +155,7 @@ def _add_personalization_avatar(actors: List[Dict[str, Any]]) -> None:
 def _build_scenes_from_chunks(
     chunks: List[List[str]],
     state: str,
+    concept_analysis: Optional[Dict[str, Any]] = None,
 ) -> Tuple[List[Dict[str, Any]], int]:
     """
     Turn bullet chunks into scene list following AnimationScript shape.
@@ -204,7 +206,9 @@ def _build_scenes_from_chunks(
             "environment": _environment_for_state(state),
             "meta": _scene_meta(state),
         }
-        scenes.append(scene)
+        # Enrich with domain-specific visuals (e.g. photosynthesis visuals)
+        enriched_scene = enrich_scene(scene, concept_analysis or {})
+        scenes.append(enriched_scene)
         current_start += duration
 
     return scenes, current_start
@@ -231,8 +235,21 @@ def generate_neuro_adaptive_script(
         # Fallback: treat full text as a single "idea".
         bullets = [transmuted_text.strip() or "Explanation"]
 
+    # Lightweight concept analysis for the enricher (topic/domain hints)
+    text_lower = (transmuted_text or "").lower()
+    topic_hint = (concept or "").lower()
+    domain = "generic"
+    if "photosynthesis" in text_lower or "chloroplast" in text_lower:
+        topic_hint = "photosynthesis"
+        domain = "biology"
+    elif any(k in text_lower for k in ["gravity", "force", "mass", "weight"]):
+        domain = "physics"
+    elif any(k in text_lower for k in ["rock", "magma", "sediment"]):
+        domain = "earth_science"
+    concept_analysis = {"topic": topic_hint, "domain": domain}
+
     chunks = _chunk_bullets_for_state(bullets, state)
-    scenes, total_duration = _build_scenes_from_chunks(chunks, state)
+    scenes, total_duration = _build_scenes_from_chunks(chunks, state, concept_analysis)
 
     title = (concept or "Adaptive Visual Explanation").strip() or "Adaptive Visual Explanation"
 
