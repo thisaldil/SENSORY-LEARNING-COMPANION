@@ -1,7 +1,12 @@
 """
 Cognitive Load Predictor
-Load trained model and predict cognitive load from behavioral features.
-Supports both Keras (.h5) and scikit-learn (joblib .pkl or pickle-in-.h5) models.
+
+Predicts cognitive load from behavioral features (behavioral proxies for working memory load).
+Grounded in Cognitive Load Theory (Sweller, 1988): working memory has limited capacity;
+when overloaded, encoding to long-term memory fails. This module does not measure brain
+activity—it uses quiz interaction proxies (accuracy, errors, response times, answer changes, etc.)
+to estimate load levels (Low / Medium / High) for adaptation and potential arousal modulation
+(Yerkes–Dodson).
 """
 import json
 import warnings
@@ -111,12 +116,11 @@ class CognitiveLoadPredictor:
     
     def _predict_fallback(self, features: Dict[str, float]) -> Tuple[str, float, Dict[str, float]]:
         """
-        Fallback heuristic-based prediction when model is not available
-        
-        Uses simple rules based on behavioral features to estimate cognitive load:
-        - High load: Low accuracy, high errors, many answer changes, high variability
-        - Medium load: Medium accuracy, some errors
-        - Low load: High accuracy, few errors, low variability
+        Fallback heuristic-based prediction when model is not available.
+
+        Uses behavioral proxies to estimate cognitive load (Sweller: working memory
+        saturation). High load: low accuracy, many errors/answer changes, high
+        variability. We do not measure brain activity.
         
         Args:
             features: Dictionary of feature names and values

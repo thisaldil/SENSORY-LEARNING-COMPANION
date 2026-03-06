@@ -55,9 +55,10 @@ class BehaviorDataSchema(BaseModel):
 
 
 class CognitiveLoadFeaturesSchema(BaseModel):
-    """Raw cognitive load features schema - direct features for model prediction
-    
-    All 9 features are required for the cognitive load model:
+    """Behavioral proxies for cognitive load (Cognitive Load Theory, Sweller 1988).
+
+    Used to predict working-memory load from quiz behavior; we do not measure
+    brain activity. All 9 features are used for the cognitive load model:
     - answerChanges: Number of times the user changed their answer
     - currentErrorStreak: Current consecutive errors
     - totalScore: Total score achieved (can be calculated from quiz results)

@@ -4,20 +4,20 @@ Quizzes API Routes
 from fastapi import APIRouter, HTTPException, status, Depends
 from beanie import PydanticObjectId
 from app.models.user import User
-from app.models.quiz import Quiz, QuizResult
-from app.schemas.quiz import (
+from app.models.cognitive_load.quiz import Quiz, QuizResult
+from app.schemas.cognitive_load.quiz import (
     QuizGenerateRequest,
     QuizSubmitRequest,
     QuizResponse,
     QuizResultResponse
 )
-from app.services.quiz_generator import (
+from app.services.cognitive_load.quiz_generator import (
     generate_quiz_for_lesson,
     get_quiz as get_quiz_service,
     submit_quiz_answers,
     get_quiz_result
 )
-from app.services.behavior_service import get_behavior_log
+from app.services.cognitive_load.behavior_service import get_behavior_log
 from app.utils.dependencies import get_current_user
 import json
 

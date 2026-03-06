@@ -23,7 +23,12 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="EduSense API",
-    description="Backend API for EduSense - Sensory Learning Platform",
+    description=(
+        "Backend for EduSense: a neuro-adaptive multisensory learning system. "
+        "Uses behavioral proxies for cognitive load and engagement; supports haptic, audio, and visual "
+        "content with theory-grounded adaptation (Cognitive Load, Dual Coding, Embodied Cognition). "
+        "See RESEARCH_FRAMEWORK.md for theory mapping."
+    ),
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -80,29 +85,36 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 async def root():
     """Root endpoint"""
     return {
-        "message": "Welcome to EduSense API",
+        "message": "Welcome to EduSense API — Neuro-Adaptive Multisensory Learning",
         "version": "1.0.0",
         "docs": "/docs",
+        "research_framework": "See RESEARCH_FRAMEWORK.md for theory grounding.",
     }
 
 
 @app.get("/health")
 async def health_check():
-    """Health check endpoint"""
-    return {"status": "healthy"}
+    """Health check endpoint (liveness/readiness)."""
+    return {"status": "ok"}
 
 
-# Include routers
 from app.api import auth, users, quizzes, lessons, activities
+from app.api.visual import animation
+from app.api.cognitive_load import calibration, cognitive, adaptive_content
+from app.api.nlp import content
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
 app.include_router(quizzes.router, prefix="/api/quizzes", tags=["Quizzes"])
 app.include_router(lessons.router, prefix="/api/lessons", tags=["Lessons"])
 app.include_router(activities.router, prefix="/api/activities", tags=["Activities"])
+app.include_router(animation.router, prefix="/api", tags=["Visual Learning / Animation"])
+app.include_router(calibration.router, prefix="/api", tags=["Calibration"])
+app.include_router(cognitive.router, prefix="/api", tags=["Cognitive Load"])
+app.include_router(adaptive_content.router, prefix="/api", tags=["Adaptive Content"])
+app.include_router(content.router, prefix="/api", tags=["Content"])
 
 # Uncomment as you implement them
-# from app.api import content, progress, uploads
-# app.include_router(content.router, prefix="/api/content", tags=["Content"])
+# from app.api import progress, uploads
 # app.include_router(progress.router, prefix="/api/progress", tags=["Progress"])
 # app.include_router(uploads.router, prefix="/api/uploads", tags=["Uploads"])
 

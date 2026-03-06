@@ -1,10 +1,21 @@
 # EduSense Backend
 
-Backend API for EduSense - A Sensory Learning Platform
+Backend API for **EduSense** — a neuro-adaptive multisensory learning system for Grade 6 science.
 
 ## Overview
 
-EduSense Backend is a FastAPI-based REST API that powers the EduSense mobile application. It provides content processing, quiz generation, user management, and progress tracking capabilities.
+EduSense is a **brain-informed adaptive learning platform** that optimizes memory encoding, cognitive load, and arousal using multisensory stimulation (haptic, audio, visual) and behaviorally adaptive quizzes. The design is grounded in established learning and neuroscience theory; see [RESEARCH_FRAMEWORK.md](RESEARCH_FRAMEWORK.md) for the theory–feature mapping and panel-ready explanations.
+
+**Research framing:** The system uses **behavioral proxies** for cognitive load and engagement (e.g. quiz performance, response times, answer changes). It does not measure brain waves or direct neurological activity.
+
+| Theory | What it controls | Our feature |
+|--------|------------------|-------------|
+| **Cognitive Load (Sweller)** | Working memory | Quiz adaptation; behavioral prediction of load |
+| **Dual Coding (Paivio)** | Visual + verbal encoding | Animation + narration; synchronized modalities |
+| **Embodied Cognition** | Concept grounding in body | Haptic mapping (e.g. gravity → downward pattern) |
+| **Yerkes–Dodson** | Arousal level | (Design) Stimulation intensity control |
+| **Hebbian Learning** | Neural strengthening | Synchronized visual, audio, haptic for key concepts |
+| **Sensory gating** | Attention filtering | Selective multimodal bursts; avoid constant stimulation |
 
 ## Features
 

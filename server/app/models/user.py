@@ -2,7 +2,7 @@
 User Model
 """
 from datetime import datetime, date, time  # Add 'time' import
-from typing import Optional, List
+from typing import Optional, List, Literal, Dict, Any
 from beanie import Document
 from pydantic import EmailStr, Field
 
@@ -30,6 +30,14 @@ class User(Document):
     difficulty_level: Optional[str] = None  # "beginner", "intermediate", "advanced"
     accessibility_needs: Optional[List[str]] = None
     language: Optional[str] = "en"
+
+    # Neuro-adaptive personalization
+    # Use LOW_LOAD to align with cognitive_state enums used elsewhere (e.g. visual engine)
+    baseline_cognitive_load: Optional[Literal["LOW", "LOW_LOAD", "OPTIMAL", "OVERLOAD"]] = None
+    baseline_features: Optional[Dict[str, Any]] = None
+    is_calibrated: bool = False
+    neuro_profile: Optional[str] = None
+    calibration_data: Optional[Dict[str, Any]] = None
     
     # Safety & Compliance (for Gen AI tools - age verification)
     parental_consent: bool = False
