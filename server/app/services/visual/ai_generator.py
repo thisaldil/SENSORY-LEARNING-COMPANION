@@ -7,6 +7,8 @@ import os
 from typing import Any, Optional
 
 from dotenv import load_dotenv
+from google import genai
+from google.genai import types
 
 from app.config import settings
 from app.services.visual.prebuilt import test_water_cycle_script
@@ -14,7 +16,7 @@ from app.services.visual.layout_engine import get_actor_properties
 
 load_dotenv()
 
-_model = None
+_client: Optional[genai.Client] = None
 
 
 def _get_api_key() -> str:
@@ -32,25 +34,30 @@ def _get_model_name() -> str:
     return getattr(settings, "GEMINI_MODEL", None) or os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
 
 
-def get_client():
-    """Get or create Gemini GenerativeModel. Returns the model instance."""
-    global _model
-    if _model is not None:
-        return _model
+def get_client() -> genai.Client:
+    """Get or create Gemini Client for the Gemini API."""
+    global _client
+    if _client is not None:
+        return _client
     api_key = _get_api_key()
     if not api_key:
         raise ValueError("GEMINI_API_KEY (or Gemini_API_Key) is not set. Please set it in your .env file.")
-    import google.generativeai as genai
-    genai.configure(api_key=api_key)
-    _model = genai.GenerativeModel(_get_model_name())
-    return _model
+    _client = genai.Client(api_key=api_key)
+    return _client
 
 
 def _generate_text(prompt: str, temperature: float = 0.3, max_tokens: int = 2048) -> str:
     """Call Gemini and return response text."""
-    model = get_client()
-    generation_config = {"temperature": temperature, "max_output_tokens": max_tokens}
-    response = model.generate_content(prompt, generation_config=generation_config)
+    client = get_client()
+    config = types.GenerateContentConfig(
+        temperature=temperature,
+        max_output_tokens=max_tokens,
+    )
+    response = client.models.generate_content(
+        model=_get_model_name(),
+        contents=prompt,
+        config=config,
+    )
     if not response or not response.text:
         raise RuntimeError("Gemini returned empty response")
     return response.text.strip()
