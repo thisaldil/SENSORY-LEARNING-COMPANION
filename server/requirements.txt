@@ -34,6 +34,7 @@ spacy>=3.7.0
 # Utilities
 python-dateutil==2.8.2
 google-genai>=1.0.0
+google-cloud-texttospeech>=2.14.0
 
 # Development
 pytest==7.4.3

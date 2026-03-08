@@ -72,6 +72,9 @@ class Settings(BaseSettings):
     # MongoDB for animation cache (can be same server, different DB)
     MONGODB_VISUAL_DB_NAME: str = "visualScience"
 
+    # Google Cloud TTS (Member 3 narration). Set GOOGLE_APPLICATION_CREDENTIALS to path to credentials.json
+    GOOGLE_APPLICATION_CREDENTIALS: str = ""
+
     class Config:
         env_file = ".env"
         case_sensitive = True

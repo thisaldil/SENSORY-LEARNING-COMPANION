@@ -237,14 +237,38 @@ def generate_neuro_adaptive_script(
 
     # Lightweight concept analysis for the enricher (topic/domain hints)
     text_lower = (transmuted_text or "").lower()
-    topic_hint = (concept or "").lower()
+    concept_lower = (concept or "").lower()
+    topic_hint = concept_lower
     domain = "generic"
-    if "photosynthesis" in text_lower or "chloroplast" in text_lower:
+
+    # Biology / photosynthesis-like signals
+    photosynth_core = ["photosynthesis", "chloroplast", "chlorophyll"]
+    photosynth_signals = [
+        "carbon dioxide",
+        "co2",
+        "glucose",
+        "sugar",
+        "oxygen",
+        "sunlight",
+        "light energy",
+    ]
+    if (
+        any(k in text_lower for k in photosynth_core)
+        or any(k in concept_lower for k in photosynth_core)
+        or (
+            any(k in text_lower for k in ["plant", "plants"])
+            and any(k in text_lower for k in photosynth_signals)
+        )
+    ):
         topic_hint = "photosynthesis"
         domain = "biology"
-    elif any(k in text_lower for k in ["gravity", "force", "mass", "weight"]):
+    # Physics / gravity-like texts
+    elif any(k in text_lower for k in ["gravity", "force", "mass", "weight"]) or "gravity" in concept_lower:
         domain = "physics"
-    elif any(k in text_lower for k in ["rock", "magma", "sediment"]):
+    # Earth science (rock cycle, geology)
+    elif any(k in text_lower for k in ["rock", "magma", "sediment"]) or any(
+        k in concept_lower for k in ["rock cycle", "rock", "magma", "sediment"]
+    ):
         domain = "earth_science"
     concept_analysis = {"topic": topic_hint, "domain": domain}
 

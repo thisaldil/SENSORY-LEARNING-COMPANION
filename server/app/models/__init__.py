@@ -14,6 +14,7 @@ from app.models.cognitive_load.content import (
 from app.models.visual.neuro_adaptive import NeuroAdaptiveVisualScript
 from app.models.activity import Activity
 from app.models.cognitive_load.behavior import BehaviorLog
+from app.models.sensory_models import SensorySession
 
 __all__ = [
     "User",
@@ -28,5 +29,6 @@ __all__ = [
     "Activity",
     "BehaviorLog",
     "NeuroAdaptiveVisualScript",
+    "SensorySession",
 ]
 

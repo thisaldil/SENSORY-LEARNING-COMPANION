@@ -6,6 +6,7 @@ from typing import List, Dict, Optional
 from beanie import PydanticObjectId
 from app.models.audio_haptics.lesson import Lesson
 from app.models.cognitive_load.quiz import Quiz, QuizResult
+from app.models.user import User
 from app.ml.processors.quiz_generator import generate_quiz_from_content
 from app.ml.processors.cognitive_load_predictor import predict_cognitive_load
 from app.services.cognitive_load.behavior_service import (
@@ -20,41 +21,40 @@ async def generate_quiz_for_lesson(
     num_questions: int = 10
 ) -> Quiz:
     """
-    Generate a quiz for a given lesson
-    
-    Args:
-        lesson_id: ID of the lesson
-        user_id: ID of the user
-        num_questions: Number of questions to generate (default: 10)
-        
-    Returns:
-        Quiz document
-        
-    Raises:
-        ValueError: If lesson not found
+    Generate a quiz for a given lesson using baseline cognitive load.
+
+    Mapping:
+    - OVERLOAD -> simpler quiz (4 MCQ, 6 TF, 3 options)
+    - OPTIMAL  -> balanced quiz (5 MCQ, 5 TF, 4 options)
+    - LOW / LOW_LOAD -> harder quiz (6 MCQ, 4 TF, 4 options)
     """
-    # Get lesson
     lesson = await Lesson.get(lesson_id)
     if not lesson:
         raise ValueError(f"Lesson with ID {lesson_id} not found")
-    
-    # Verify lesson belongs to user
+
     if lesson.user_id != user_id:
         raise ValueError("Lesson does not belong to user")
-    
-    # Generate questions from lesson content
-    questions = generate_quiz_from_content(lesson.content, num_questions)
-    
-    # Create quiz document
+
+    baseline = (lesson.baseline_cognitive_load or "OPTIMAL").strip().upper()
+    if baseline == "LOW_LOAD":
+        baseline = "LOW"
+    if baseline not in {"OVERLOAD", "OPTIMAL", "LOW"}:
+        baseline = "OPTIMAL"
+
+    questions = generate_quiz_from_content(
+        content=lesson.content,
+        num_questions=10,
+        target_load=baseline,
+        use_ml=True
+    )
+
     quiz = Quiz(
         lesson_id=lesson_id,
         user_id=user_id,
         questions=questions
     )
-    
-    # Save to database
+
     await quiz.insert()
-    
     return quiz
 
 
@@ -90,18 +90,22 @@ async def submit_quiz_answers(
     cognitive_load_features: Optional[Dict] = None
 ) -> QuizResult:
     """
-    Submit quiz answers and calculate score
-    
+    Submit quiz answers and calculate score.
+
+    This also runs the cognitive load model (when features are available), stores
+    the per-quiz cognitive_load on QuizResult, and uses the normalized state to
+    update the user's baseline_cognitive_load (LOW / OPTIMAL / OVERLOAD).
+
     Args:
         quiz_id: ID of the quiz
         user_id: ID of the user
         answers: List of answer dictionaries with 'question_id' and 'answer_index'
         behavior_data: Optional behavior data for logging
         cognitive_load_features: Optional raw features for cognitive load prediction
-        
+
     Returns:
         QuizResult document
-        
+
     Raises:
         ValueError: If quiz not found or answers invalid
     """
@@ -258,7 +262,26 @@ async def submit_quiz_answers(
         except Exception as e:
             print(f"⚠️  Error logging behavior: {str(e)}")
             # Continue even if behavior logging fails
-    
+
+    # Update the user's baseline_cognitive_load using the same normalization
+    # logic as the /v1/predict endpoint (LOW / OPTIMAL / OVERLOAD).
+    if cognitive_load:
+        try:
+            label = cognitive_load.upper()
+            if label.startswith("LOW"):
+                state = "LOW"
+            elif label.startswith("HIGH") or label.startswith("OVER"):
+                state = "OVERLOAD"
+            else:
+                state = "OPTIMAL"
+
+            user = await User.get(user_id)
+            if user:
+                user.baseline_cognitive_load = state
+                await user.save()
+        except Exception as e:
+            print(f"⚠️  Error updating user baseline cognitive load: {str(e)}")
+
     return result
 
 

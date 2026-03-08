@@ -1,0 +1,15 @@
+# Credentials – do not commit
+credentials.json
+*-credentials.json
+# Env (often contains secrets)
+.env
+.env.local
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+# IDE / OS
+.idea/
+.DS_Store
