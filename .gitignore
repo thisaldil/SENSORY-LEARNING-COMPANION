@@ -4,7 +4,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-package-lock.json
 
 # --- Environment Files ---
 .env
@@ -20,7 +19,7 @@ build/
 out/
 
 # --- Logs ---
-logs
+logs/
 *.log
 *.log.*
 *.pid
@@ -28,8 +27,8 @@ logs
 *.pid.lock
 
 # --- IDE & Editor ---
-.vscode/
-.idea/
+/.vscode/
+/.idea/
 .DS_Store
 Thumbs.db
 
@@ -44,7 +43,28 @@ coverage/
 __pycache__/
 *.py[cod]
 *$py.class
-*.pyo
+.venv/
+venv/
+env/
+ENV/
+/server/venv/
+/server/.venv/
+
+# --- Python Tooling / Tests ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+.ipynb_checkpoints/
 
 # --- Misc ---
 *.swp
