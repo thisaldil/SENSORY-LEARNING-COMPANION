@@ -1,11 +1,59 @@
 """
-Infer topic(s) and cognitive load from a lesson for filtering activities.
-Uses subject and content so activities can be matched by topic and cognitive load.
+Infer topic(s), keywords, and cognitive load from a lesson for filtering activities.
+Uses subject and content so activities can be matched by topic, keywords, and cognitive load.
 """
 import re
-from typing import List, Optional
+from typing import List, Optional, Set
 
 from app.models.audio_haptics.lesson import Lesson
+
+# Common stopwords to exclude from keyword extraction
+_STOPWORDS: Set[str] = {
+    "the", "a", "an", "this", "that", "with", "from", "when", "what", "where",
+    "which", "there", "their", "these", "those", "have", "has", "had", "will",
+    "would", "could", "should", "more", "most", "very", "also", "just", "only",
+    "about", "some", "such", "into", "through", "during", "before", "after",
+    "above", "below", "between", "under", "again", "each", "other", "being",
+    "been", "both", "same", "and", "or", "but", "for", "nor", "so", "yet",
+    "is", "are", "was", "were", "be", "been", "being", "to", "of", "in", "on",
+    "at", "by", "as", "it", "its",
+}
+
+
+def extract_keywords_from_lesson(lesson: Lesson, min_length: int = 3) -> List[str]:
+    """
+    Extract significant keywords from lesson subject and content for activity matching.
+
+    Keywords are used to match activities whose topic or title contains any of these
+    words (e.g. "magnetic", "field", "electromagnetism" for a magnetic lesson).
+    This allows "A Magnetic Field" lesson to match "Magnetic Field" or "Electromagnetism"
+    activities even when topic strings differ.
+
+    Returns:
+        List of lowercase keywords (min length, no stopwords).
+    """
+    keywords: Set[str] = set()
+    text_parts: List[str] = []
+
+    if lesson.subject and lesson.subject.strip():
+        text_parts.append(lesson.subject.strip())
+    if lesson.title and lesson.title.strip():
+        text_parts.append(lesson.title.strip())
+    if lesson.content and lesson.content.strip():
+        text_parts.append(lesson.content.strip())
+
+    for text in text_parts:
+        words = re.findall(r"[A-Za-z]+", text)
+        for w in words:
+            lower = w.lower()
+            if (
+                len(lower) >= min_length
+                and lower not in _STOPWORDS
+                and not lower.isdigit()
+            ):
+                keywords.add(lower)
+
+    return sorted(keywords)
 
 
 def infer_cognitive_load_from_lesson(lesson: Lesson) -> Optional[str]:

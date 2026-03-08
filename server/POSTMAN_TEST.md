@@ -4,12 +4,12 @@ Base URL: **http://localhost:8000**
 
 ---
 
-## Prerequisites: Install `google-generativeai` and set Gemini API key
+## Prerequisites: Install `google-genai` and set Gemini API key
 
-1. **Install the Gemini package** (same environment as the server):
+1. **Install the Gemini SDK** (same environment as the server):
 
 ```bash
-pip install google-generativeai
+pip install google-genai
 # or: pip install -r requirements.txt
 ```
 

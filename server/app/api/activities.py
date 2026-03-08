@@ -27,17 +27,36 @@ def _activity_to_response(activity: Activity) -> dict:
 def build_activity_query(
     topic: Optional[str] = None,
     topics_any: Optional[list] = None,
+    keywords_any: Optional[list] = None,
     cognitive_load: Optional[str] = None,
     activity_type: Optional[str] = None,
 ) -> dict:
-    """Build MongoDB query for activities. topics_any = list of strings for $or regex match."""
+    """
+    Build MongoDB query for activities.
+
+    - topics_any: match activity.topic with regex for any phrase.
+    - keywords_any: match activity.topic OR activity.title if they contain any keyword (word-boundary).
+    """
     query: dict = {}
+    or_clauses: list = []
+
     if topic is not None and topic.strip():
         query["topic"] = topic.strip()
     elif topics_any:
-        or_clauses = [{"topic": {"$regex": re.escape(t), "$options": "i"}} for t in topics_any if t and str(t).strip()]
-        if or_clauses:
-            query["$or"] = or_clauses
+        for t in topics_any:
+            if t and str(t).strip():
+                or_clauses.append({"topic": {"$regex": re.escape(t.strip()), "$options": "i"}})
+
+    if keywords_any:
+        for kw in keywords_any:
+            if kw and str(kw).strip():
+                escaped = re.escape(kw.strip())
+                pattern = rf"\b{escaped}\b"
+                or_clauses.append({"topic": {"$regex": pattern, "$options": "i"}})
+                or_clauses.append({"title": {"$regex": pattern, "$options": "i"}})
+
+    if or_clauses:
+        query["$or"] = or_clauses
     if cognitive_load is not None and cognitive_load.strip():
         cl = cognitive_load.strip().upper()
         if cl in COGNITIVE_LOAD_VALUES:

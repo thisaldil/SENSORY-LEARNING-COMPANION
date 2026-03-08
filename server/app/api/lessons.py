@@ -12,7 +12,11 @@ from app.models.activity import Activity
 from app.schemas.audio_haptics.lesson import LessonCreate, LessonResponse
 from app.services.lesson_service import create_lesson, get_lesson, lesson_to_response
 from app.utils.dependencies import get_current_user
-from app.utils.topic_inference import infer_topics_from_lesson, infer_cognitive_load_from_lesson
+from app.utils.topic_inference import (
+    infer_topics_from_lesson,
+    infer_cognitive_load_from_lesson,
+    extract_keywords_from_lesson,
+)
 from app.api.activities import build_activity_query, _activity_to_response
 
 router = APIRouter()
@@ -41,28 +45,40 @@ async def get_lesson_activities(
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(e))
 
     topics = infer_topics_from_lesson(lesson)
+    keywords = extract_keywords_from_lesson(lesson)
     # Use query param if provided, otherwise infer from lesson content
     cognitive_load_to_use = cognitive_load
     if not cognitive_load_to_use or not cognitive_load_to_use.strip():
         cognitive_load_to_use = infer_cognitive_load_from_lesson(lesson)
 
+    # Match activities by topic phrases OR keywords (lesson content/subject words)
     query = build_activity_query(
         topics_any=topics if topics else None,
+        keywords_any=keywords if keywords else None,
         cognitive_load=cognitive_load_to_use,
         activity_type=activity_type,
     )
-    # If no topics inferred, return all activities (optional: restrict by subject only)
     if not query:
         query = {}
     cursor = Activity.find(query)
     activities = await cursor.to_list()
 
-    # Fallback: if client passed cognitive_load (or we inferred it) and got 0 results,
-    # retry without cognitive_load so user still sees topic-matched activities
+    # Fallback 1: if cognitive_load filter gave 0 results, retry without it
     if not activities and cognitive_load_to_use:
         query_fallback = build_activity_query(
             topics_any=topics if topics else None,
+            keywords_any=keywords if keywords else None,
             cognitive_load=None,
+            activity_type=activity_type,
+        )
+        if query_fallback:
+            cursor = Activity.find(query_fallback)
+            activities = await cursor.to_list()
+
+    # Fallback 2: if still no results (no topic/keyword matches), show activities by cognitive_load only
+    if not activities and (topics or keywords):
+        query_fallback = build_activity_query(
+            cognitive_load=cognitive_load_to_use,
             activity_type=activity_type,
         )
         if query_fallback:

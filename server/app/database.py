@@ -17,6 +17,7 @@ from app.models import (
     Activity,
     TransmutedContent,
     NeuroAdaptiveVisualScript,
+    SensorySession,
 )
 from app.models.cognitive_load.behavior import BehaviorLog
 
@@ -54,6 +55,7 @@ async def connect_to_mongo():
             Activity,
             TransmutedContent,
             NeuroAdaptiveVisualScript,
+            SensorySession,
         ],
     )
 

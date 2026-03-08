@@ -46,6 +46,21 @@ def _enrich_photosynthesis(scene_id: str, scene_text: str, actors: list, domain:
     has_root = any(a.get("type") == "root" for a in actors)
     has_leaf = any(a.get("type") == "leaf" for a in actors)
 
+    # Ensure there is at least one plant actor as a visual anchor.
+    if not has_plant:
+        enriched.insert(
+            0,
+            {
+                "type": "plant",
+                "x": 400,
+                "y": 350,
+                "size": 40,
+                "color": "#4CAF50",
+                "animation": "grow",
+            },
+        )
+        has_plant = True
+
     if "water" in scene_text or "absorption" in scene_text:
         if has_plant and not has_root:
             enriched.insert(0, {"type": "root", "x": 400, "y": 550, "depth": 80, "width": 100, "branches": 6, "color": "#8B4513", "animation": "absorb"})

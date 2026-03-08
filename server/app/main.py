@@ -98,7 +98,7 @@ async def health_check():
     return {"status": "ok"}
 
 
-from app.api import auth, users, quizzes, lessons, activities
+from app.api import auth, users, quizzes, lessons, activities, sensory
 from app.api.visual import animation
 from app.api.cognitive_load import calibration, cognitive, adaptive_content
 from app.api.nlp import content
@@ -112,6 +112,7 @@ app.include_router(calibration.router, prefix="/api", tags=["Calibration"])
 app.include_router(cognitive.router, prefix="/api", tags=["Cognitive Load"])
 app.include_router(adaptive_content.router, prefix="/api", tags=["Adaptive Content"])
 app.include_router(content.router, prefix="/api", tags=["Content"])
+app.include_router(sensory.router, prefix="/api", tags=["Sensory Overlay"])
 
 # Uncomment as you implement them
 # from app.api import progress, uploads
