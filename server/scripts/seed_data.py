@@ -1,5 +1,5 @@
 """
-Script to seed database with initial data
+Script to seed database with initial datab
 """
 # TODO: Implement database seeding
 # - Create sample users

@@ -21,45 +21,40 @@ async def generate_quiz_for_lesson(
     num_questions: int = 10
 ) -> Quiz:
     """
-    Generate a quiz for a given lesson.
+    Generate a quiz for a given lesson using baseline cognitive load.
 
-    This function is baseline-aware:
-    - If the lesson's baseline_cognitive_load is OVERLOAD, we lighten the load
-      by reducing the target number of questions toward the generator minimum.
-    - For other states we keep the default num_questions so the client contract
-      stays stable.
+    Mapping:
+    - OVERLOAD -> simpler quiz (4 MCQ, 6 TF, 3 options)
+    - OPTIMAL  -> balanced quiz (5 MCQ, 5 TF, 4 options)
+    - LOW / LOW_LOAD -> harder quiz (6 MCQ, 4 TF, 4 options)
     """
-    # Get lesson
     lesson = await Lesson.get(lesson_id)
     if not lesson:
         raise ValueError(f"Lesson with ID {lesson_id} not found")
-    
-    # Verify lesson belongs to user
+
     if lesson.user_id != user_id:
         raise ValueError("Lesson does not belong to user")
-    
-    # Adapt quiz size based on baseline cognitive load snapshot for this lesson
-    effective_num_questions = num_questions
-    baseline = (lesson.baseline_cognitive_load or "").upper()
 
-    # For overloaded learners, keep the quiz short to reduce strain
-    if baseline == "OVERLOAD":
-        # Quiz generator enforces a minimum of 7 questions internally
-        effective_num_questions = min(num_questions, 7)
+    baseline = (lesson.baseline_cognitive_load or "OPTIMAL").strip().upper()
+    if baseline == "LOW_LOAD":
+        baseline = "LOW"
+    if baseline not in {"OVERLOAD", "OPTIMAL", "LOW"}:
+        baseline = "OPTIMAL"
 
-    # Generate questions from lesson content
-    questions = generate_quiz_from_content(lesson.content, effective_num_questions)
-    
-    # Create quiz document
+    questions = generate_quiz_from_content(
+        content=lesson.content,
+        num_questions=10,
+        target_load=baseline,
+        use_ml=True
+    )
+
     quiz = Quiz(
         lesson_id=lesson_id,
         user_id=user_id,
         questions=questions
     )
-    
-    # Save to database
+
     await quiz.insert()
-    
     return quiz
 
 
