@@ -37,9 +37,11 @@ async def register(user_data: UserSignup):
         user = await register_user(user_data)
         return user_to_response(user)
     except ValueError as e:
+        msg = str(e)
+        logger.warning("Registration failed: %s", msg)
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail=str(e)
+            detail=msg
         )
     except Exception as e:
         raise HTTPException(

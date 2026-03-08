@@ -61,22 +61,28 @@ app.add_middleware(
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
-    """Custom handler for validation errors to provide clearer error messages"""
+    """Custom handler for validation errors; keeps FastAPI-style detail for frontend parsing."""
     errors = []
+    detail_list = []
     for error in exc.errors():
-        field = " -> ".join(str(loc) for loc in error["loc"])
+        loc = error["loc"]
+        msg = error["msg"]
+        field = " -> ".join(str(x) for x in loc)
         errors.append({
             "field": field,
-            "message": error["msg"],
+            "message": msg,
             "type": error["type"]
         })
-    
+        detail_list.append({"loc": list(loc), "msg": msg, "type": error["type"]})
+
+    # Single message for simple display; frontends can use detail (array) for field-level errors
+    first_msg = errors[0]["message"] if errors else "Validation error"
     return JSONResponse(
         status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
         content={
-            "detail": "Validation error",
+            "detail": detail_list,  # FastAPI-style so frontend can parse loc/msg
+            "message": first_msg,
             "errors": errors,
-            "body": "Expected format: {\"email\": \"user@example.com\", \"password\": \"password123\"}"
         }
     )
 
@@ -102,6 +108,7 @@ from app.api import auth, users, quizzes, lessons, activities, sensory
 from app.api.visual import animation
 from app.api.cognitive_load import calibration, cognitive, adaptive_content
 from app.api.nlp import content
+from app.api import tts
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
 app.include_router(quizzes.router, prefix="/api/quizzes", tags=["Quizzes"])
@@ -113,6 +120,7 @@ app.include_router(cognitive.router, prefix="/api", tags=["Cognitive Load"])
 app.include_router(adaptive_content.router, prefix="/api", tags=["Adaptive Content"])
 app.include_router(content.router, prefix="/api", tags=["Content"])
 app.include_router(sensory.router, prefix="/api", tags=["Sensory Overlay"])
+app.include_router(tts.router, prefix="/api", tags=["TTS"])
 
 # Uncomment as you implement them
 # from app.api import progress, uploads
