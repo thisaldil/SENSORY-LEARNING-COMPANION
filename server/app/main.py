@@ -109,6 +109,8 @@ from app.api.visual import animation
 from app.api.cognitive_load import calibration, cognitive, adaptive_content
 from app.api.nlp import content
 from app.api import tts
+from app.api import voice_clone
+from app.api import vision_notes
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
 app.include_router(quizzes.router, prefix="/api/quizzes", tags=["Quizzes"])
@@ -121,6 +123,9 @@ app.include_router(adaptive_content.router, prefix="/api", tags=["Adaptive Conte
 app.include_router(content.router, prefix="/api", tags=["Content"])
 app.include_router(sensory.router, prefix="/api", tags=["Sensory Overlay"])
 app.include_router(tts.router, prefix="/api", tags=["TTS"])
+# Voice clone (Coqui XTTS): POST /tts/voice-clone with form-data text + speaker_wav → WAV
+app.include_router(voice_clone.router)
+app.include_router(vision_notes.router, prefix="/api", tags=["Vision Notes"])
 
 # Uncomment as you implement them
 # from app.api import progress, uploads

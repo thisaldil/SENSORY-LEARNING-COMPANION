@@ -57,7 +57,16 @@ def generate_text(prompt: str, temperature: float = 0.3, max_tokens: int = 2048)
     response = client.models.generate_content(
         model=_get_model_name(),
         contents=prompt,
-        config={"temperature": temperature, "max_output_tokens": max_tokens},
+        config={
+            "temperature": temperature,
+            "max_output_tokens": max_tokens,
+            "system_instruction": (
+                "You are an expert science educator. "
+                "Always respond with plain text only. "
+                "Never use markdown formatting such as bold (**), italics (*), "
+                "headers (#), or any other markup in your response."
+            ),
+        },
     )
     if not response or not getattr(response, "text", None):
         raise RuntimeError("Gemini returned empty response")
