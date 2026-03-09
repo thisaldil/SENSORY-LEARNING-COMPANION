@@ -4,7 +4,7 @@ Lessons API Routes
 from fastapi import APIRouter, HTTPException, status, Depends, Query
 from fastapi.responses import JSONResponse
 from beanie import PydanticObjectId
-from typing import Optional
+from typing import Optional, List
 
 from app.models.user import User
 from app.models.audio_haptics.lesson import Lesson
@@ -20,6 +20,29 @@ from app.utils.topic_inference import (
 from app.api.activities import build_activity_query, _activity_to_response
 
 router = APIRouter()
+
+
+@router.get("", response_model=List[LessonResponse])
+async def list_user_lessons(
+    skip: int = Query(0, ge=0, description="Number of records to skip"),
+    limit: int = Query(20, ge=1, le=100, description="Maximum number of lessons to return"),
+    current_user: User = Depends(get_current_user),
+):
+    """
+    List lessons for the current user, ordered by most recent first.
+
+    Intended for use in the user dashboard to show previously created lessons.
+    """
+    try:
+        user_id = PydanticObjectId(current_user.id)
+        cursor = Lesson.find({"user_id": user_id}).sort("-created_at").skip(skip).limit(limit)
+        lessons = await cursor.to_list()
+        return [lesson_to_response(lesson) for lesson in lessons]
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error listing lessons: {str(e)}",
+        )
 
 
 @router.get("/{lesson_id}/activities", response_class=JSONResponse)

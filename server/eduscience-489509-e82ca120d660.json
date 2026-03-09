@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "eduscience-489509",
+  "private_key_id": "e82ca120d6605da4e9b50f712df8d4b64de23939",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDElolig/CSWed5\nv2OSnXO5mvuz4kR5UlPrerPDd0VxcERq1+qSgeWi92ARw24/8/sIp/Vas+LRitg8\nyJF4+/584JPYUTSdl/n1xhrc8IdifvN5brzCFMTXYPl9sNwUFm4IVFoigiBm/GDR\np7s919mf4mqfSB0ls2ybMGpFefoUBTcm9UDPjofy+fGF6FmhdMTZjOvJax9KuBEZ\ncsB9DJK4/pzvO4+KAifmFm38DdIa4E50LbrUaPpKyo72+DyIiolKWul/Rj+rO9NS\nRdSSrbFBQyo3MoWHvoYnFmgWgCdDFmaMcKOixpngo5T7F+I0ZvS9Ua0LdAm5zfTt\ng4NtUMTNAgMBAAECgf96e1AdkRbSGDGgKR5gurjfazBnYxJGhITEsi5OGoGpq8j0\nyJHdthDc+ENizeBi+B/vxLWZTXqEE32mYVBBkL9+Dm4O2IlvpsCV4FfcUAAJ3g7U\nGaqBQW9iwYiwRwDXgyILDoMZ/PkzMQshlN+UKGfutaK4mrWOR7vi9MdBgj3NOlq5\n0weupm4FCBVyGj8zpQCbO0+vcpUAJa/BjUz5A+MOwyGdvNilhjPV3bH+jbz8Pxay\ntl9tnBEdPR1uzNb20cL3jsWTatZylVgBkDWAPGpTou9CzEb2cksFfqnVz2bAgNXv\ncEnhQpPz0ORenSv1WGTYSyl8PI8aR3+TEMikvRECgYEA7BloHEi+J9S/LEYqepjY\nuOCbActdwYxlLvCLJuJZMJx5RD3lGLPtAS4G9rfhySpbUfC2VSXob7qifoxsIsJt\nbHijljj9KhGQNp3amsD+CeWL2/Z/UWTgc6DZlapHL9lxlTNAFI7YGSYihDqUUrO5\nHST7fj+VJ3FXE+KfJ6JwfVUCgYEA1SiMu2M26q3wxhaDyBM3Z9ut1UKnBL+Pkt3j\nfxT6OqvuK/KNGFN7T99F/LTtEObp+8zQXKDjQfpmSrlUSk17cjpVCTq/MRoyxK/A\nv7wbUv6Kv5IuuooIMd+oD6+s80zoFnZxM+IZGngQ9sYfLkh56ozM8VuuqZAlqed6\np7H2aZkCgYEAs6XFZTgokNA9wueE7RIeXdZxu9TNezdjymq3xxeV+/oj/7wE9V36\n6dnm7JYQVGxJXjkF1BZrHZDqkdYxdeVxM4c8GlM0t2zzycslCnntEwS5/d47FGjo\nrLLovQv67LrMxVVg3gOvBLvSqcCVGbStFzMLtg2VZZTFSFk49wSQCZ0CgYEAjdTQ\nZ3MpvFeGqNecUglvSVzjus4BwegQiUG5OPrlURrLfFSEy5XorAm9UNu2DhQHxrLO\nRYQMEv+hBsFwM4yAwk3L/TsosmxjMXpcP3fTmpKiEbwb+aUUtNLDycQzySP4HdIr\nmsErwO/5IapMXwh8jrOnPkWp30t5tCbA90oz0qkCgYBLfQ9D+EMLKQJIBzyBWXwJ\nrLCWW6pWl5OF6BeXSk7FiZCj0wRRh9D8bFVkV7XRCOdQysYUU1pT4Rv7QhfzcQNY\nAsCM4ECCZl5BpTlbpvBYRWGyU85y0lJHLJgFEKV/snS3iGQ6Szy84OEKtsrwCl97\nxtuHNer76f2AY/RtuaLScw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "edu-secse-tts@eduscience-489509.iam.gserviceaccount.com",
+  "client_id": "101929950294935923381",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/edu-secse-tts%40eduscience-489509.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

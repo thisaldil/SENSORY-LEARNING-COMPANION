@@ -22,6 +22,7 @@ from app.services.visual.neuro_adaptive_engine import (
     log_neuro_adaptive_script,
 )
 from app.models.visual.neuro_adaptive import NeuroAdaptiveVisualScript
+from app.models.cognitive_load.content import TransmutedContent
 from beanie import PydanticObjectId
 
 router = APIRouter()
@@ -220,7 +221,7 @@ async def get_latest_neuro_adaptive_animation(
             detail="Invalid student_id",
         )
 
-    # Build Beanie filters without injecting plain booleans into the expression list
+    # First try to fetch an already-logged visual script
     filters = [
         NeuroAdaptiveVisualScript.student_id == student_obj_id,
     ]
@@ -229,19 +230,70 @@ async def get_latest_neuro_adaptive_animation(
 
     doc = await NeuroAdaptiveVisualScript.find(*filters).sort("-created_at").first_or_none()
 
-    if not doc:
-        raise HTTPException(
-            status_code=404,
-            detail="No neuro-adaptive visual script found for this student/session",
+    if doc:
+        return NeuroAdaptiveAnimationResponse(
+            script=doc.script,
+            source="neuro_adaptive_logged",
+            concept=doc.concept,
+            cognitive_state=doc.cognitive_state,
+            tier=doc.tier,
+            student_id=str(doc.student_id) if doc.student_id else None,
+            lesson_id=str(doc.lesson_id) if doc.lesson_id else None,
+            session_id=doc.session_id,
         )
 
+    # If no visual script exists yet, fall back to the latest TransmutedContent
+    trans_filters = [TransmutedContent.student_id == student_obj_id]
+    if session_id is not None:
+        trans_filters.append(TransmutedContent.session_id == session_id)
+
+    trans_doc = await TransmutedContent.find(*trans_filters).sort("-created_at").first_or_none()
+
+    if not trans_doc:
+        raise HTTPException(
+            status_code=404,
+            detail="No neuro-adaptive visual script or transmuted content found for this student/session",
+        )
+
+    # Derive inputs for the neuro-adaptive engine from the transmutation record
+    transmuted_text = (trans_doc.output or {}).get("transmuted_text") or (trans_doc.input or {}).get("raw_text") or ""
+    cognitive_state_raw = (trans_doc.input or {}).get("cognitive_state") or trans_doc.baseline_cognitive_load or "OPTIMAL"
+    concept = trans_doc.topic or trans_doc.lesson_title or "Adaptive Visual Explanation"
+
+    if not transmuted_text:
+        raise HTTPException(
+            status_code=500,
+            detail="Transmuted content record is missing text for neuro-adaptive generation",
+        )
+
+    # Generate and log a new neuro-adaptive visual script on-demand
+    from app.services.visual.neuro_adaptive_engine import _map_state_to_tier, _normalize_state
+
+    state_norm = _normalize_state(cognitive_state_raw)
+    tier = _map_state_to_tier(state_norm)
+    script = generate_neuro_adaptive_script(
+        transmuted_text=transmuted_text,
+        cognitive_state=state_norm,
+        concept=concept,
+    )
+
+    await log_neuro_adaptive_script(
+        script,
+        cognitive_state=state_norm,
+        tier=tier,
+        concept=concept,
+        lesson_id=str(trans_doc.lesson_id) if trans_doc.lesson_id else None,
+        student_id=student_id,
+        session_id=session_id,
+    )
+
     return NeuroAdaptiveAnimationResponse(
-        script=doc.script,
-        source="neuro_adaptive_logged",
-        concept=doc.concept,
-        cognitive_state=doc.cognitive_state,
-        tier=doc.tier,
-        student_id=str(doc.student_id) if doc.student_id else None,
-        lesson_id=str(doc.lesson_id) if doc.lesson_id else None,
-        session_id=doc.session_id,
+        script=script,
+        source="neuro_adaptive_rule_based",
+        concept=concept,
+        cognitive_state=state_norm,
+        tier=tier,
+        student_id=student_id,
+        lesson_id=str(trans_doc.lesson_id) if trans_doc.lesson_id else None,
+        session_id=session_id,
     )
