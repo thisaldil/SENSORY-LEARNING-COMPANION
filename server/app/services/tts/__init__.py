@@ -1,3 +1,3 @@
 """
-TTS services (Google Cloud Text-to-Speech for Member 3 narration).
+TTS services: Google Cloud TTS (narration) and Coqui TTS voice cloning (XTTS v2).
 """
