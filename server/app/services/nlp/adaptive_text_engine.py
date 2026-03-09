@@ -196,20 +196,28 @@ Tier 3 - Cognitive Offloading (OVERLOAD state):
 - Each bullet is one short, simple sentence (max ~15 words).
 - Keep all important science words and processes from the original.
 - Each bullet should describe ONE clear idea, step, or relation in the explanation.
-- Avoid advanced academic wording; prefer concrete, everyday language that a Grade 2 student understands.
+- Avoid advanced academic wording; prefer concrete, everyday language a Grade 2 student understands.
+- Output plain text ONLY. Do NOT use markdown (no bold, no italics, no headers).
 """
     elif "Tier 1" in tier:
         tier_instructions = """
 Tier 1 - Enrichment and Elaboration:
 - Slightly increase richness and precision of language without making it harder to read.
-- Add 1–2 short clarifying phrases or analogies.
+- Add 1–2 short clarifying phrases or analogies that deepen understanding.
 - Keep sentences reasonably short and direct.
+- Do NOT repeat or duplicate any ideas already stated.
+- Output plain prose ONLY. Do NOT use markdown (no bold, no italics, no bullet points, no headers).
 """
     else:
         tier_instructions = """
 Tier 2 - Moderate Simplification:
-- Gently simplify complex sentences while preserving structure and nuance.
-- Reduce unnecessary clauses and jargon, but keep important terms.
+- Rewrite as clean, plain prose. Output plain text ONLY — no markdown, no bold, no italics, no bullet points, no headers.
+- Simplify long or complex sentences into shorter, clearer ones while keeping the original meaning intact.
+- Remove unnecessary technical jargon, but preserve all key scientific terms.
+- Do NOT repeat or duplicate any ideas already stated.
+- Do NOT add new information that was not in the original text.
+- Each sentence should introduce exactly one clear idea.
+- Aim for a reading level a motivated middle-school student would find comfortable.
 """
     keyword_hint = ""
     if keywords_str:
@@ -228,7 +236,11 @@ The following terms are core and MUST remain present in some form in your answer
 def _compute_keyword_preservation(
     original_keywords: List[str], transmuted_text: str
 ) -> Tuple[List[str], List[str]]:
-    """Phase 4 – keyword preservation check."""
+    """Phase 4 – keyword preservation check.
+    
+    For multi-word keywords (bigrams), checks if ALL component words appear
+    individually — they rarely survive verbatim after rewriting.
+    """
     if not original_keywords:
         return [], []
     lower_out = transmuted_text.lower()
@@ -238,7 +250,13 @@ def _compute_keyword_preservation(
         token = kw.lower().strip()
         if not token:
             continue
-        if token in lower_out:
+        parts = token.split()
+        # Bigrams: preserved if every component word appears somewhere in output
+        if len(parts) > 1:
+            preserved = all(part in lower_out for part in parts)
+        else:
+            preserved = token in lower_out
+        if preserved:
             kept.append(kw)
         else:
             dropped.append(kw)
