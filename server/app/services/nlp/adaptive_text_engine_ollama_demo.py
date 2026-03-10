@@ -1,5 +1,5 @@
 """
-Adaptive Text Engine Demo - Hybrid NLP + LLM Pipeline.
+Adaptive Text Engine  - Hybrid NLP + LLM Pipeline.
 
 Implements:
 - Phase 1: NLP analysis (readability, dependency distance, TF-IDF keywords)
@@ -18,13 +18,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 try:
     import spacy
-except ImportError:  # pragma: no cover - handled gracefully at runtime
-    spacy = None  # type: ignore
+except ImportError: 
+    spacy = None  
 
 try:
-    import textstat  # type: ignore
-except ImportError:  # pragma: no cover - optional dependency
-    textstat = None  # type: ignore
+    import textstat  
+except ImportError:  
+    textstat = None  
 
 from app.models.cognitive_load.content import TransmutedContent
 from app.models.user import User
@@ -48,7 +48,7 @@ def _get_nlp():
         _NLP = None
     return _NLP
 
-
+#difficulty of the text.
 def _compute_flesch_kincaid_grade(text: str) -> float:
     """Compute Flesch‑Kincaid grade with safe fallback."""
     cleaned = (text or "").strip()
@@ -68,7 +68,7 @@ def _compute_flesch_kincaid_grade(text: str) -> float:
     approx_grade = 0.5 * avg_word_len + 3.0
     return float(max(0.0, min(18.0, approx_grade)))
 
-
+#how complex the sentence structure
 def _compute_dependency_distance(text: str) -> float:
     """Average normalized dependency distance as a proxy for syntactic load."""
     nlp = _get_nlp()
@@ -89,7 +89,7 @@ def _compute_dependency_distance(text: str) -> float:
     # Normalize by a conservative upper bound (25 tokens apart).
     return float(max(0.0, min(1.0, avg_distance / 25.0)))
 
-
+#detect the core scientific terms
 def _extract_keywords_tfidf(text: str, top_k: int = 10) -> List[str]:
     """TF‑IDF keyword extraction on a single document."""
     cleaned = (text or "").strip()
@@ -112,7 +112,7 @@ def _extract_keywords_tfidf(text: str, top_k: int = 10) -> List[str]:
     keywords = [feature_names[i] for i in top_indices if scores[i] > 0]
     return [k for k in keywords if k.strip()]
 
-
+#decide how much the text should be simplified.
 @dataclass
 class AnalysisResult:
     flesch_kincaid_grade: float
