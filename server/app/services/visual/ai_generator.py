@@ -1,7 +1,3 @@
-"""
-AI generator – Google Gemini for concept analysis and animation script generation.
-Uses GEMINI_API_KEY or Gemini_API_Key from .env; model gemini-2.0-flash (free tier).
-"""
 import json
 import os
 from typing import Any, Optional
@@ -35,7 +31,7 @@ def _get_model_name() -> str:
 
 
 def get_client() -> genai.Client:
-    """Get or create Gemini Client for the Gemini API."""
+    
     global _client
     if _client is not None:
         return _client
