@@ -107,10 +107,10 @@ async def health_check():
 from app.api import auth, users, quizzes, lessons, activities, sensory
 from app.api.visual import animation
 from app.api.cognitive_load import calibration, cognitive, adaptive_content
-from app.api.nlp import content
+from app.api.nlp import content, content_ollama_demo
 from app.api import tts
 from app.api import voice_clone
-from app.api import vision_notes
+from app.api import vision_notes, vision_notes_local_demo
 app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
 app.include_router(users.router, prefix="/api/users", tags=["Users"])
 app.include_router(quizzes.router, prefix="/api/quizzes", tags=["Quizzes"])
@@ -121,11 +121,13 @@ app.include_router(calibration.router, prefix="/api", tags=["Calibration"])
 app.include_router(cognitive.router, prefix="/api", tags=["Cognitive Load"])
 app.include_router(adaptive_content.router, prefix="/api", tags=["Adaptive Content"])
 app.include_router(content.router, prefix="/api", tags=["Content"])
+app.include_router(content_ollama_demo.router, prefix="/api", tags=["Content Demo"])
 app.include_router(sensory.router, prefix="/api", tags=["Sensory Overlay"])
 app.include_router(tts.router, prefix="/api", tags=["TTS"])
 # Voice clone (Coqui XTTS): POST /tts/voice-clone with form-data text + speaker_wav → WAV
 app.include_router(voice_clone.router)
 app.include_router(vision_notes.router, prefix="/api", tags=["Vision Notes"])
+app.include_router(vision_notes_local_demo.router, prefix="/api", tags=["Vision Notes Demo"])
 
 # Uncomment as you implement them
 # from app.api import progress, uploads
