@@ -1,0 +1,368 @@
+LESSON_ID: SCI_G6_PREPARATION_OF_CIRCUITS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Preparation of Circuits
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Electric Circuit as a Complete Loop
+DEFINITION:
+An electric circuit is a closed loop path through which electric energy flows from a source, through components, and back to the source.
+
+KEY_POINTS:
+
+A circuit works only when the loop is complete.
+Electricity moves from one terminal of the cell through the load and returns to the other terminal.
+If the loop is broken anywhere, energy flow stops.
+
+EXAMPLES:
+A bulb in a classroom setup lights only when wire connections form a complete path between both cell terminals.
+
+KEYWORDS:
+electric circuit, closed loop, current path, energy flow, complete connection
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Components of a Simple Circuit
+DEFINITION:
+A simple circuit needs a power source, conductors, a load, and often a switch to control operation.
+
+KEY_POINTS:
+
+The cell or battery supplies electrical energy.
+Copper wires conduct electricity between components.
+The load (bulb or buzzer) uses electrical energy to produce light or sound.
+The switch opens or closes the path to control the load.
+
+EXAMPLES:
+A school experiment uses one dry cell, two wires, a small bulb, and a switch mounted on a board.
+
+KEYWORDS:
+power source, cell, conductor, copper wire, load, bulb, buzzer, switch
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Open Circuit and Closed Circuit
+DEFINITION:
+A closed circuit allows electricity to flow, while an open circuit has a break that stops flow.
+
+KEY_POINTS:
+
+Switch ON usually means closed circuit and working load.
+Switch OFF usually means open circuit and non-working load.
+Disconnected wires or poor contacts create open circuits even if the switch is ON.
+
+EXAMPLES:
+When one wire is removed from a bulb holder, the bulb goes off because the circuit is open.
+
+KEYWORDS:
+open circuit, closed circuit, switch ON, switch OFF, continuity
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Switch Operation and Insulating Air Gap
+DEFINITION:
+A switch controls current by bringing metal contacts together or separating them with an insulating air gap.
+
+KEY_POINTS:
+
+In ON position, metal contacts touch and allow electron flow.
+In OFF position, contacts separate and air blocks easy current flow.
+Switches improve safety and reduce unnecessary energy use.
+
+EXAMPLES:
+Pressing a switch closes metal contacts so a bulb lights instantly; releasing it opens the path and the bulb turns off.
+
+KEYWORDS:
+switch contacts, metal connection, air gap, insulator, safety control
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Series and Parallel Circuit Connections
+DEFINITION:
+Multiple loads can be connected in series (single path) or parallel (multiple branches), giving different behavior when one load fails.
+
+KEY_POINTS:
+
+Series circuits have one path; one broken component stops all loads.
+Parallel circuits have separate branches; other branches continue if one fails.
+Homes in Sri Lanka use parallel wiring so rooms work independently.
+
+EXAMPLES:
+If the kitchen bulb fails in a house, bedroom lights still work because house circuits are parallel.
+
+KEYWORDS:
+series circuit, parallel circuit, branch, household wiring, independent load
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Voltage, Resistance, and Bulb Brightness
+DEFINITION:
+Bulb brightness depends on voltage pushing current and resistance opposing current inside circuit components.
+
+KEY_POINTS:
+
+Higher voltage provides greater electrical push.
+Resistance limits current and can convert electrical energy into heat.
+Bulb filaments glow because electrical energy becomes heat and then light in high-resistance material.
+
+EXAMPLES:
+A 9V battery can make a suitable bulb brighter than a 1.5V cell, while filament resistance controls heating and glow.
+
+KEYWORDS:
+voltage, resistance, filament, brightness, electrical pressure, energy conversion
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Short Circuit and Protective Devices
+DEFINITION:
+A short circuit happens when current takes a very low-resistance path directly between battery terminals, causing dangerous overheating.
+
+KEY_POINTS:
+
+Bypassing the load removes normal resistance in the path.
+Excess current can overheat wires, melt insulation, and start fires.
+Fuses and circuit breakers cut power automatically during dangerous current conditions.
+
+EXAMPLES:
+Directly joining positive and negative battery terminals with wire causes rapid heating; a circuit breaker in home wiring interrupts such faults.
+
+KEYWORDS:
+short circuit, overheating, fuse, circuit breaker, electrical safety, fault current
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Circuit Symbols as Scientific Language
+DEFINITION:
+Circuit symbols are standardized drawings used worldwide to represent electrical components and connections.
+
+KEY_POINTS:
+
+A cell is shown by long and short parallel lines.
+A bulb is shown as a circle with a cross.
+A switch is shown as a breakable line contact.
+Standard symbols allow people in different countries to read the same diagram.
+
+EXAMPLES:
+A student in Sri Lanka can interpret a circuit diagram drawn by an engineer in Japan using common symbols.
+
+KEYWORDS:
+circuit symbols, diagram, standard notation, cell symbol, bulb symbol, switch symbol
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Conductors, Insulators, and Wire Stripping
+DEFINITION:
+Conductors allow current flow while insulators resist it, so exposed metal contact is needed at connection points.
+
+KEY_POINTS:
+
+Copper is a conductor used inside wires.
+Plastic and rubber are insulators used for protection.
+Wire ends must be stripped so metal touches metal at terminals.
+Insulating gloves and boots protect electricians from electric shock.
+
+EXAMPLES:
+If plastic insulation covers wire tips at a battery terminal, the circuit stays open and the bulb does not light.
+
+KEYWORDS:
+conductor, insulator, copper, plastic insulation, wire stripping, rubber safety gear
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Components of a Simple Circuit
+TO: Electric Circuit as a Complete Loop
+EXPLANATION:
+The components must be connected in loop form for the circuit definition to be satisfied and for energy to flow.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Switch Operation and Insulating Air Gap
+TO: Open Circuit and Closed Circuit
+EXPLANATION:
+Switch contact position determines whether the circuit is closed (flow) or open (no flow).
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Voltage, Resistance, and Bulb Brightness
+TO: Series and Parallel Circuit Connections
+EXPLANATION:
+Connection type affects current distribution, which changes effective brightness and behavior of multiple bulbs.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Conductors, Insulators, and Wire Stripping
+TO: Open Circuit and Closed Circuit
+EXPLANATION:
+If insulation blocks terminal contact, continuity is broken and the circuit behaves as an open circuit.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Short Circuit and Protective Devices
+TO: Electric Circuit as a Complete Loop
+EXPLANATION:
+A short circuit is also a loop, but it is an unsafe low-resistance path that bypasses the intended load.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Building a Basic Bulb Circuit
+
+DESCRIPTION:
+A student connects one cell, a bulb holder, and a switch using copper wires from positive to bulb to switch back to negative; bulb lights when switch is ON.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Series Bulb Failure
+
+DESCRIPTION:
+Two bulbs connected in one line both turn off when one bulb is removed because the single path is broken.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Parallel Home Lighting in Sri Lanka
+
+DESCRIPTION:
+Bedroom and kitchen lights are connected on separate branches, so one failed bulb does not cut power to the other room.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Unsafe Direct Battery Connection
+
+DESCRIPTION:
+A wire touching both battery terminals without a bulb causes rapid heating; this demonstrates why short circuits are dangerous.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Electricity flows even if one wire is disconnected.
+
+CORRECTION:
+Current needs a complete loop; any break creates an open circuit and stops flow.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Series and parallel circuits work the same when one bulb fails.
+
+CORRECTION:
+In series all bulbs go out, but in parallel other branches continue to work.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+A short circuit is a faster way to make devices work.
+
+CORRECTION:
+A short circuit is unsafe because very high current can overheat wires and cause fire.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Plastic-covered wire can conduct electricity through the covering.
+
+CORRECTION:
+Plastic is an insulator; metal conductor must make direct terminal contact.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Circuit symbols are only for advanced scientists.
+
+CORRECTION:
+Circuit symbols are basic scientific language that students can learn to read and draw accurately.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Complete Loop Lighting a Bulb
+
+DESCRIPTION:
+Show a cell, wires, switch, and bulb connected in a full loop, with arrows indicating current path and bulb glowing.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Open vs Closed Circuit Switch Action
+
+DESCRIPTION:
+Animate switch contacts touching in ON state and separated in OFF state, with bulb turning on and off.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Series and Parallel Comparison
+
+DESCRIPTION:
+Split view of two-bulb series and parallel circuits; remove one bulb and show only parallel keeps the other bulb lit.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Filament Heating and Light Emission
+
+DESCRIPTION:
+Zoom into bulb filament to show resistance causing heating, then visible glow as light is emitted.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Short Circuit Hazard and Protection
+
+DESCRIPTION:
+Show unsafe direct terminal connection heating wire, then fuse or circuit breaker opening to stop current.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Circuit Symbol Translation
+
+DESCRIPTION:
+Display real components changing into standard symbols for cell, bulb, and switch on a circuit diagram.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Conductors and Insulators in Practice
+
+DESCRIPTION:
+Show stripped copper wire making contact at terminals while plastic coating and rubber gloves act as insulation.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Identify and correctly connect the power source, wires, load, and switch in a simple electric circuit.
+
+Differentiate open and closed circuits and explain switch action using contact and air-gap ideas.
+
+Compare series and parallel circuits and predict circuit behavior when one bulb fails.
+
+Apply electrical safety principles by avoiding short circuits, using proper insulation, and recognizing fuse or circuit-breaker protection.
+
+==================================================
+SECTION: SUMMARY
+A simple electric circuit works only when all required components—power source, conductor, load, and usually a switch—are connected as a complete loop. In a closed circuit, current flows and devices work, while in an open circuit, any break stops flow. Switches control current by joining or separating metal contacts, and air gaps act as insulation in the OFF state. Multiple loads can be connected in series or parallel; series has one path so one failure stops all loads, while parallel has branches so other loads continue, as in Sri Lankan household wiring. Bulb brightness depends on voltage and resistance, and filament resistance converts electrical energy to heat and light. Short circuits are dangerous low-resistance faults that can overheat wires, so fuses and circuit breakers are essential protection. Standard circuit symbols form a universal scientific language, and understanding conductors and insulators—including proper wire stripping and protective rubber gear—supports both correct circuit construction and safety.

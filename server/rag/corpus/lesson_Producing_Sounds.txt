@@ -1,0 +1,240 @@
+LESSON_ID: SCI_G6_SOUND_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Producing Sounds
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: PS_01
+NAME: Vibration and Sound
+DEFINITION:
+Sound is produced when an object vibrates, meaning it moves back and forth very quickly.
+
+KEY_POINTS:
+- Vibration means rapid to-and-fro motion.
+- Every sound comes from a vibrating object.
+- If vibration stops, sound stops.
+- Sound cannot exist without vibration.
+
+EXAMPLES:
+Plucking a rubber band.
+Striking a tuning fork.
+Beating a drum.
+Speaking using vocal cords.
+
+KEYWORDS:
+vibration, sound production, to and fro motion
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: PS_02
+NAME: Frequency and Pitch
+DEFINITION:
+Frequency is the number of vibrations made in one second, measured in Hertz (Hz). Pitch depends on how fast an object vibrates.
+
+KEY_POINTS:
+- High frequency produces high pitch.
+- Low frequency produces low pitch.
+- Thin strings vibrate faster than thick strings.
+- Larger objects usually produce lower sounds.
+
+EXAMPLES:
+A whistle produces high pitch.
+A large drum produces low pitch.
+A thin violin string produces higher sound than a thick bass string.
+
+KEYWORDS:
+frequency, Hertz, pitch, high sound, low sound
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: PS_03
+NAME: Sound Needs a Medium
+DEFINITION:
+Sound requires a material medium such as solid, liquid, or gas to travel.
+
+KEY_POINTS:
+- Air is the most common medium.
+- Sound travels through water.
+- Sound travels fastest through solids.
+- Sound cannot travel in a vacuum.
+
+EXAMPLES:
+Hearing underwater sounds.
+Listening through a wooden desk.
+Astronauts using radios in space.
+
+KEYWORDS:
+medium, air, water, solids, vacuum
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: PS_04
+NAME: How Sound Travels in Air
+DEFINITION:
+Sound travels in air as waves created by compressions and rarefactions of air particles.
+
+KEY_POINTS:
+- Vibrating objects push air particles.
+- Particles move in wave patterns.
+- Energy moves through particles, not the particles themselves.
+- These waves reach our ears.
+
+KEYWORDS:
+sound waves, compression, rarefaction, air particles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: PS_05
+NAME: The Human Ear
+DEFINITION:
+The human ear detects sound vibrations and converts them into electrical signals for the brain.
+
+KEY_POINTS:
+- The outer ear collects sound waves.
+- The eardrum vibrates when waves hit it.
+- Three tiny bones transmit vibrations.
+- The cochlea converts vibrations into signals.
+- The brain interprets these signals as sound.
+
+EXAMPLES:
+Hearing a school bell.
+Recognizing a bird chirping.
+
+KEYWORDS:
+eardrum, cochlea, sound detection, brain, ear bones
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: PS_06
+NAME: Natural Sound Producers
+DEFINITION:
+Many animals produce sound by vibrating special body parts.
+
+KEY_POINTS:
+- Cicadas vibrate membranes on their bodies.
+- Frogs use vocal sacs to amplify sound.
+- Animals use sound for communication.
+
+EXAMPLES:
+Cicadas in the dry zone forests.
+Frogs croaking during rainy season.
+
+KEYWORDS:
+cicada, frog, vocal sac, communication
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: PS_07
+NAME: Noise and Hearing Safety
+DEFINITION:
+Noise is unpleasant or very loud sound that can damage hearing.
+
+KEY_POINTS:
+- Continuous loud sound can harm the eardrum.
+- Noise pollution affects health.
+- Sharp objects can damage the ear.
+- Laws control excessive noise at night.
+
+EXAMPLES:
+Factory noise.
+Loud speakers at high volume.
+
+KEYWORDS:
+noise pollution, hearing damage, eardrum, safety
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_PS_01
+FROM: Vibration
+TO: Sound
+EXPLANATION:
+Sound exists only when objects vibrate and transfer energy through a medium.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_PS_02
+FROM: Frequency
+TO: Pitch
+EXPLANATION:
+Higher frequency vibrations produce higher pitch sounds.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_PS_03
+FROM: Medium
+TO: Sound Transmission
+EXPLANATION:
+Sound requires particles in a medium to travel from one place to another.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_PS_01
+TITLE: Tuning Fork in Water
+
+DESCRIPTION:
+When a tuning fork is struck and touched to water, ripples appear because the vibrating fork transfers energy to the water surface.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_PS_02
+TITLE: Rubber Band Sound
+
+DESCRIPTION:
+Plucking a stretched rubber band causes it to vibrate rapidly, producing a humming sound.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_PS_03
+TITLE: Listening Through a Desk
+
+DESCRIPTION:
+Placing your ear on a wooden desk allows you to hear tapping more clearly because sound travels efficiently through solids.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_PS_01
+STATEMENT:
+Sound can travel through empty space.
+
+CORRECTION:
+Sound cannot travel through a vacuum because there are no particles to vibrate.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_PS_02
+STATEMENT:
+Louder sound always means higher pitch.
+
+CORRECTION:
+Loudness depends on amplitude, while pitch depends on frequency.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_PS_01
+TITLE: Sound Wave Animation
+
+DESCRIPTION:
+Show a vibrating object pushing air particles to create compressions and rarefactions. Animate waves moving toward a human ear.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_PS_02
+TITLE: Inside the Human Ear
+
+DESCRIPTION:
+Illustrate outer ear collecting sound, eardrum vibrating, tiny bones moving, and signals traveling to the brain.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Explain how vibration produces sound.
+- Define frequency and pitch.
+- Describe how sound travels through different media.
+- Identify parts of the human ear involved in hearing.
+- Recognize the importance of noise control and ear safety.
+
+==================================================
+SECTION: SUMMARY
+Sound is produced by vibrating objects and travels through a material medium as waves. The speed of vibration determines pitch, and sound cannot travel in a vacuum. The human ear detects vibrations and converts them into signals for the brain. Understanding sound helps explain communication, animal behavior, and hearing safety.

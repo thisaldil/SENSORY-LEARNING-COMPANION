@@ -1,0 +1,276 @@
+LESSON_ID: SCI_G6_ANIMAL_NUTRITION_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Modes of Nutrition in Animals
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_01
+NAME: Herbivores
+DEFINITION:
+Herbivores are animals that feed only on plants or plant products.
+
+KEY_POINTS:
+- Eat leaves, fruits, seeds, grass, or nectar.
+- Have flat, broad teeth for grinding plant fibers.
+- Often have long digestive systems.
+- Important as primary consumers in food chains.
+
+EXAMPLES:
+Cow, Elephant, Rabbit, Deer, Giraffe.
+
+KEYWORDS:
+herbivore, plant eater, grinding teeth, primary consumer
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_02
+NAME: Carnivores
+DEFINITION:
+Carnivores are animals that feed only on the flesh of other animals.
+
+KEY_POINTS:
+- Have sharp canines or hooked beaks.
+- Possess claws for capturing prey.
+- Usually have shorter digestive systems.
+- Occupy higher trophic levels in food chains.
+
+EXAMPLES:
+Lion, Leopard, Eagle, Crocodile, Shark.
+
+KEYWORDS:
+carnivore, meat eater, sharp teeth, predator
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_03
+NAME: Omnivores
+DEFINITION:
+Omnivores are animals that eat both plant and animal matter.
+
+KEY_POINTS:
+- Flexible diet supports survival in varied environments.
+- Teeth adapted for both cutting and grinding.
+- Can act as both primary and secondary consumers.
+
+EXAMPLES:
+Humans, Crows, Pigs, Bears, Monkeys.
+
+KEYWORDS:
+omnivore, mixed diet, adaptable feeder
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_04
+NAME: Scavengers
+DEFINITION:
+Scavengers are animals that feed on the remains of dead animals.
+
+KEY_POINTS:
+- Help clean the environment.
+- Reduce spread of disease.
+- Part of nutrient recycling in ecosystems.
+- Often have strong beaks or jaws.
+
+EXAMPLES:
+Vulture, Hyena, Jackal, certain beetles.
+
+KEYWORDS:
+scavenger, carrion, environmental cleaning
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_05
+NAME: Specialized Feeding Types
+DEFINITION:
+Some animals have specialized feeding habits within broader nutrition groups.
+
+KEY_POINTS:
+- Frugivores eat mainly fruits.
+- Nectarivores feed on nectar using long mouthparts.
+- Insectivores eat insects.
+- Filter feeders strain small organisms from water.
+
+EXAMPLES:
+Fruit Bat (frugivore).
+Sunbird (nectarivore).
+Gecko (insectivore).
+Blue Whale (filter feeder).
+
+KEYWORDS:
+frugivore, nectarivore, insectivore, filter feeder
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_06
+NAME: Physical Adaptations for Feeding
+DEFINITION:
+Animals develop physical structures suited to their mode of nutrition.
+
+KEY_POINTS:
+- Bird beaks vary according to diet.
+- Herbivores have long intestines.
+- Carnivores have strong jaws and claws.
+- Baleen plates filter food in whales.
+
+EXAMPLES:
+Sunbird beak for nectar.
+Eagle beak for tearing meat.
+Cow digestive system for grass digestion.
+
+KEYWORDS:
+adaptation, beak structure, digestive system, form and function
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_07
+NAME: Symbiotic Nutrition
+DEFINITION:
+Symbiotic nutrition occurs when animals gain food through cooperative relationships with other organisms.
+
+KEY_POINTS:
+- Mutualism benefits both organisms.
+- One species may provide food cleaning services.
+- Strengthens ecosystem relationships.
+
+EXAMPLES:
+Oxpecker bird eating ticks from buffalo.
+
+KEYWORDS:
+symbiosis, mutualism, cooperation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_08
+NAME: Parasitic Nutrition
+DEFINITION:
+Parasitic nutrition occurs when one organism lives on or inside another and obtains nutrients at the host’s expense.
+
+KEY_POINTS:
+- Ectoparasites live outside the body.
+- Endoparasites live inside the body.
+- Parasites have hooks or suckers for attachment.
+- Can harm the host.
+
+EXAMPLES:
+Ticks, leeches, tapeworms.
+
+KEYWORDS:
+parasite, ectoparasite, endoparasite, host
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: AN_09
+NAME: Ecological Role of Scavengers and Decomposers
+DEFINITION:
+Scavengers and decomposers recycle nutrients and maintain ecosystem balance.
+
+KEY_POINTS:
+- Scavengers consume dead animals.
+- Decomposers break down remains into nutrients.
+- Nutrients return to soil for plant growth.
+- Supports food chain continuity.
+
+EXAMPLES:
+Vultures cleaning carcasses.
+Fungi decomposing remains.
+
+KEYWORDS:
+nutrient cycle, decomposer, ecosystem balance
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_AN_01
+FROM: Herbivores
+TO: Food Chain
+EXPLANATION:
+Herbivores act as primary consumers by transferring plant energy to higher trophic levels.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_AN_02
+FROM: Carnivores
+TO: Ecosystem Balance
+EXPLANATION:
+Carnivores regulate prey populations and maintain ecological stability.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_AN_03
+FROM: Scavengers
+TO: Nutrient Recycling
+EXPLANATION:
+Scavengers initiate nutrient recycling by consuming dead organisms.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_AN_01
+TITLE: Blue Whale Feeding
+
+DESCRIPTION:
+Blue whales filter large volumes of seawater through baleen plates to capture tiny krill.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_AN_02
+TITLE: Sunbird and Flower
+
+DESCRIPTION:
+A sunbird uses its long beak to extract nectar while helping pollinate the flower.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_AN_01
+STATEMENT:
+All carnivores are large animals.
+
+CORRECTION:
+Carnivores can be small, such as geckos or spiders.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_AN_02
+STATEMENT:
+Scavengers are harmful animals.
+
+CORRECTION:
+Scavengers help prevent disease and clean the environment.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_AN_03
+STATEMENT:
+Omnivores eat equal amounts of plants and meat.
+
+CORRECTION:
+Omnivores may vary their diet depending on availability.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_AN_01
+TITLE: Feeding Adaptations Comparison
+
+DESCRIPTION:
+Display different animals with labeled teeth or beak structures showing adaptation to diet.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_AN_02
+TITLE: Nutrient Cycle Through Scavengers
+
+DESCRIPTION:
+Show a dead animal consumed by scavengers, then decomposed into soil nutrients, which support plant growth.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Classify animals as herbivores, carnivores, omnivores, or scavengers.
+- Explain physical adaptations related to diet.
+- Describe specialized feeding types.
+- Distinguish mutualism from parasitism.
+- Explain the ecological role of scavengers and decomposers.
+
+==================================================
+SECTION: SUMMARY
+Animals are classified by their mode of nutrition into herbivores, carnivores, omnivores, and scavengers. Specialized feeding habits such as nectar feeding, insect feeding, and filter feeding show how form supports function. Symbiotic and parasitic relationships demonstrate complex nutritional strategies. Scavengers and decomposers play essential roles in recycling nutrients and maintaining ecosystem balance.

@@ -1,0 +1,258 @@
+LESSON_ID: SCI_G6_STATES_OF_MATTER_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: States of Matter
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_01
+NAME: Three Main States of Matter
+DEFINITION:
+Matter exists in three main states: solid, liquid, and gas. The behavior and movement of particles determine the state of matter.
+
+KEY_POINTS:
+- All matter is made of tiny particles.
+- Particle arrangement determines physical state.
+- Solids, liquids, and gases have different properties.
+- Temperature affects particle movement.
+
+KEYWORDS:
+matter, particles, solid, liquid, gas
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_02
+NAME: Solid State
+DEFINITION:
+A solid has a definite shape and definite volume because its particles are tightly packed and vibrate in fixed positions.
+
+KEY_POINTS:
+- Particles are very close together.
+- Particles vibrate but do not move freely.
+- Solids do not flow.
+- Solids are difficult to compress.
+
+EXAMPLES:
+Ice, stone, wood, metal, books, desks.
+
+KEYWORDS:
+solid, definite shape, definite volume, tightly packed
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_03
+NAME: Liquid State
+DEFINITION:
+A liquid has a definite volume but no definite shape because its particles are close together but can slide past one another.
+
+KEY_POINTS:
+- Particles are close but not fixed.
+- Liquids take the shape of their container.
+- Liquids can flow.
+- Liquids are difficult to compress.
+
+EXAMPLES:
+Water, milk, oil, juice, blood.
+
+KEYWORDS:
+liquid, flow, container shape, sliding particles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_04
+NAME: Gaseous State
+DEFINITION:
+A gas has no definite shape and no definite volume because its particles move freely and spread out to fill available space.
+
+KEY_POINTS:
+- Particles are far apart.
+- Particles move rapidly in all directions.
+- Gases expand to fill their container.
+- Gases are easily compressed.
+
+EXAMPLES:
+Air, oxygen, carbon dioxide, steam, nitrogen.
+
+KEYWORDS:
+gas, expansion, compression, fast particles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_05
+NAME: Kinetic Nature of Matter
+DEFINITION:
+The kinetic nature of matter explains that particles are always in motion, and their speed increases as temperature increases.
+
+KEY_POINTS:
+- Kinetic energy is energy of movement.
+- Higher temperature means faster particle motion.
+- Lower temperature means slower particle motion.
+- State changes occur due to energy transfer.
+
+KEYWORDS:
+kinetic energy, temperature, particle motion
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_06
+NAME: Melting and Freezing
+DEFINITION:
+Melting is the change from solid to liquid when heat is absorbed. Freezing is the change from liquid to solid when heat is released.
+
+KEY_POINTS:
+- Melting requires heat energy.
+- Freezing releases heat energy.
+- Particle arrangement changes during transition.
+- Shape changes but chemical identity remains same.
+
+EXAMPLES:
+Ice melting into water.
+Water freezing into ice in a freezer.
+
+KEYWORDS:
+melting, freezing, heat absorption, heat release
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_07
+NAME: Evaporation and Condensation
+DEFINITION:
+Evaporation is the change from liquid to gas when heat is absorbed. Condensation is the change from gas to liquid when heat is removed.
+
+KEY_POINTS:
+- Evaporation occurs at the surface of a liquid.
+- Condensation forms droplets.
+- Energy is absorbed during evaporation.
+- Energy is released during condensation.
+
+EXAMPLES:
+Wet clothes drying.
+Mirror fogging after a shower.
+Steam forming water droplets on a cold plate.
+
+KEYWORDS:
+evaporation, condensation, vapor, droplets
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM_08
+NAME: Sublimation and Deposition
+DEFINITION:
+Sublimation is the direct change from solid to gas without becoming liquid. Deposition is the direct change from gas to solid.
+
+KEY_POINTS:
+- Sublimation skips the liquid state.
+- Deposition is the reverse of sublimation.
+- Energy changes drive both processes.
+
+EXAMPLES:
+Dry ice turning into fog.
+Frost forming on cold windows.
+
+KEYWORDS:
+sublimation, deposition, phase change
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM_01
+FROM: Temperature
+TO: Particle Movement
+EXPLANATION:
+Increasing temperature increases kinetic energy and particle speed, which may cause change of state.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM_02
+FROM: Evaporation
+TO: Cooling Effect
+EXPLANATION:
+Evaporation absorbs heat from surroundings, causing cooling, such as sweating in the human body.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM_03
+FROM: Condensation
+TO: Cloud Formation
+EXPLANATION:
+Water vapor condenses into droplets to form clouds and eventually rain.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM_01
+TITLE: Ice Cube Observation
+
+DESCRIPTION:
+An ice cube left at room temperature absorbs heat and melts into liquid water.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM_02
+TITLE: Steam and Cold Plate
+
+DESCRIPTION:
+When steam touches a cold surface, it cools and condenses into water droplets.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM_03
+TITLE: Wet Clothes Drying
+
+DESCRIPTION:
+Water in clothes absorbs heat from the surroundings and evaporates into the air.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM_01
+STATEMENT:
+Particles in solids do not move.
+
+CORRECTION:
+Particles in solids vibrate in fixed positions even though they do not move freely.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM_02
+STATEMENT:
+Evaporation only happens when water boils.
+
+CORRECTION:
+Evaporation can occur at any temperature, even at room temperature.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM_03
+STATEMENT:
+Gas particles have no mass.
+
+CORRECTION:
+Gas particles have mass and occupy space; they are simply far apart and move freely.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM_01
+TITLE: Particle Movement Comparison
+
+DESCRIPTION:
+Show three containers labeled solid, liquid, and gas. Animate tightly packed vibrating particles for solid, sliding particles for liquid, and fast-moving spread particles for gas.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM_02
+TITLE: Phase Change Cycle
+
+DESCRIPTION:
+Illustrate melting, evaporation, condensation, and freezing in a circular diagram with energy arrows showing heat absorption and release.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Identify the three main states of matter.
+- Describe particle arrangement in solids, liquids, and gases.
+- Explain how temperature affects particle motion.
+- Define melting, freezing, evaporation, condensation, sublimation, and deposition.
+- Apply phase change concepts to everyday life examples.
+
+==================================================
+SECTION: SUMMARY
+Matter exists as solid, liquid, or gas depending on particle arrangement and motion. Temperature affects particle kinetic energy, causing phase changes such as melting, freezing, evaporation, and condensation. Understanding states of matter explains many natural processes including cooking, weather, refrigeration, and the water cycle.

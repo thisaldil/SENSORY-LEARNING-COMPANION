@@ -1,0 +1,338 @@
+LESSON_ID: SCI_G6_GENERATING_ELECTRICITY
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Generating Electricity
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Electricity Must Be Generated
+DEFINITION:
+Electricity is produced by converting other forms of energy, not collected directly from nature.
+
+KEY_POINTS:
+
+Electricity generation changes one energy form into electrical energy.
+Generation can happen in small devices or large power stations.
+Different technologies use different original energy sources.
+
+EXAMPLES:
+A torch battery generates a small electric current, while a power station generator produces electricity for many homes.
+
+KEYWORDS:
+electricity generation, energy conversion, power station, electrical energy
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Major Electricity Sources in Sri Lanka
+DEFINITION:
+Sri Lanka generates electricity mainly from hydro, thermal, wind, and solar power systems.
+
+KEY_POINTS:
+
+Hydropower uses falling water to rotate turbines at dams such as Victoria and Randenigala.
+Thermal power burns coal or fuel oil to produce steam that spins turbines, including at Lakvijaya Norochcholai.
+Wind turbines in areas such as Mannar and Puttalam and solar panels convert wind and sunlight into electricity.
+
+EXAMPLES:
+Water released from a dam turns a turbine that drives a generator to produce electrical power.
+
+KEYWORDS:
+hydroelectric, thermal power, wind power, solar power, Sri Lanka energy
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Generator and Electromagnetic Induction
+DEFINITION:
+Most large-scale generation (except direct solar photovoltaic generation) uses electromagnetic induction, where moving magnetic fields near coils produce electric current.
+
+KEY_POINTS:
+
+Electromagnetic induction was discovered by Michael Faraday.
+A generator contains magnets and coils, and relative motion between them creates current.
+Hydro, thermal, and wind systems mainly differ in how they spin the generator.
+
+EXAMPLES:
+High-pressure steam in a thermal plant rotates a turbine, which spins the generator and induces current.
+
+KEYWORDS:
+generator, electromagnetic induction, Faraday, magnet, coil, turbine
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Electric Cells and Dynamo Devices
+DEFINITION:
+Small devices can generate electricity using chemical reactions in cells or mechanical rotation in dynamos.
+
+KEY_POINTS:
+
+Primary cells are non-rechargeable and must be replaced when chemicals are exhausted.
+Secondary cells are rechargeable and can be used many times.
+A bicycle dynamo converts wheel rotation into electricity for a lamp.
+
+EXAMPLES:
+A zinc-carbon wall clock battery is a primary cell, while a mobile phone battery is a rechargeable secondary cell.
+
+KEYWORDS:
+electric cell, primary cell, secondary cell, rechargeable battery, bicycle dynamo
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Solar Cell Operation (Photovoltaic Effect)
+DEFINITION:
+Solar cells convert sunlight directly into electricity when photons strike silicon and free electrons, creating electric current.
+
+KEY_POINTS:
+
+Solar cells have no moving parts.
+Silicon is a key material used in most solar cells.
+Sri Lanka’s strong sunlight near the equator supports solar power potential.
+
+EXAMPLES:
+Rooftop solar panels in Sri Lanka generate daytime electricity for homes and schools.
+
+KEYWORDS:
+solar cell, photovoltaic effect, silicon, photons, clean energy
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Static Electricity by Friction
+DEFINITION:
+Static electricity is produced when friction causes electrons to transfer between different materials.
+
+KEY_POINTS:
+
+Static electricity often appears as small sparks or "zaps."
+It can occur when rubbing a balloon on hair or touching metal after friction.
+Lightning is a large natural example of static charge discharge.
+
+EXAMPLES:
+A student may feel a small shock when touching a metal handle after walking on a dry surface.
+
+KEYWORDS:
+static electricity, friction, electrons, electric discharge, lightning
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Transmission, Transformers, and Home Supply
+DEFINITION:
+After generation, electricity travels through transmission lines at high voltage, then transformers reduce voltage to safer household levels.
+
+KEY_POINTS:
+
+Power stations send electricity over long distances using high-voltage lines.
+Transformers lower voltage near towns before household distribution.
+Standard household supply in Sri Lanka is about 230V.
+
+EXAMPLES:
+Electricity from a distant power plant reaches a local transformer before entering homes and powering appliances.
+
+KEYWORDS:
+transmission lines, transformer, voltage, distribution grid, 230V Sri Lanka
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Environmental Impact and Energy Mix
+DEFINITION:
+Each generation method has benefits and environmental costs, so a balanced energy mix is used to improve reliability and reduce harm.
+
+KEY_POINTS:
+
+Coal and oil plants provide dependable power but increase air pollution and global warming.
+Hydropower is cleaner during operation, but large dams can affect forests and wildlife habitats.
+Solar and wind are clean and renewable, but output depends on sunlight and wind conditions.
+
+EXAMPLES:
+Sri Lanka uses multiple sources together so electricity remains available while reducing environmental damage.
+
+KEYWORDS:
+environmental impact, energy mix, renewable energy, pollution, sustainability
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Major Electricity Sources in Sri Lanka
+TO: Generator and Electromagnetic Induction
+EXPLANATION:
+Hydro, thermal, and wind systems all use different energy sources to spin turbines, but they commonly generate electricity through electromagnetic induction in generators.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Solar Cell Operation (Photovoltaic Effect)
+TO: Generator and Electromagnetic Induction
+EXPLANATION:
+Solar photovoltaic cells produce electricity directly from light and do not need turbine-driven electromagnetic induction like most large rotating generators.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Electricity Must Be Generated
+TO: Transmission, Transformers, and Home Supply
+EXPLANATION:
+Once electricity is generated from another energy source, it must be transmitted and transformed to suitable voltages before safe use in homes.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Major Electricity Sources in Sri Lanka
+TO: Environmental Impact and Energy Mix
+EXPLANATION:
+Because each source has different advantages and environmental trade-offs, Sri Lanka combines sources in an energy mix for reliability and protection of nature.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Hydropower Generation at a Dam
+
+DESCRIPTION:
+At a dam such as Victoria, falling water turns a turbine connected to a generator. The generator uses electromagnetic induction to produce electric current for the national grid.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Thermal Station Steam Turbine Process
+
+DESCRIPTION:
+At Lakvijaya Norochcholai, fuel is burned to produce high-pressure steam. The steam spins a turbine, which rotates a generator and produces electricity.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Bicycle Dynamo and Lamp
+
+DESCRIPTION:
+When a bicycle wheel rotates, a dynamo spins and generates electricity that lights a small bulb, showing mechanical-to-electrical energy conversion.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Solar Cell Electricity Production
+
+DESCRIPTION:
+Sunlight hits silicon solar cells on a rooftop panel, electrons are released, and direct current is produced without moving parts.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Voltage Reduction for Household Safety
+
+DESCRIPTION:
+Electricity is transmitted at high voltage, then a nearby transformer reduces it to around 230V in Sri Lanka so home appliances can operate safely.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Electricity is naturally available and can be collected directly like water.
+
+CORRECTION:
+Electricity must be generated by converting other forms of energy such as water motion, steam, wind, sunlight, or chemical energy.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+All electricity is produced in exactly the same way.
+
+CORRECTION:
+Different methods use different source energies; hydro, thermal, and wind often use rotating generators, while solar photovoltaic cells generate directly from light.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Every battery can be recharged.
+
+CORRECTION:
+Primary cells are non-rechargeable, while secondary cells are designed to be recharged many times.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+High voltage from transmission lines can enter homes safely without changes.
+
+CORRECTION:
+Transformers must reduce voltage before household use; in Sri Lanka, home supply is about 230V for safe appliance operation.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Renewable energy has no limitations.
+
+CORRECTION:
+Solar and wind are clean but depend on weather conditions, so an energy mix is needed for reliable supply.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Energy Conversion at a Hydropower Dam
+
+DESCRIPTION:
+Show water falling through dam channels, spinning a turbine, rotating a generator, and sending electricity to transmission lines.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: One Generator, Different Driving Forces
+
+DESCRIPTION:
+Split screen showing water, steam, and wind each spinning turbines connected to similar generators using electromagnetic induction.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Inside a Solar Cell
+
+DESCRIPTION:
+Animate photons striking silicon, electrons moving through a circuit, and electricity flowing to power a home device.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Static Electricity Demonstration
+
+DESCRIPTION:
+Show balloon rubbing on hair, charge build-up, then a small spark when touching metal, followed by a lightning comparison.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Grid to Home Distribution Path
+
+DESCRIPTION:
+Visualize power station output, high-voltage transmission lines, local transformer voltage reduction, and safe household supply at 230V.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Environmental Trade-Offs and Energy Mix
+
+DESCRIPTION:
+Compare coal smoke, hydro dam habitat change, and clean solar/wind variability, then show balanced national energy mix planning.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Explain that electricity is generated by converting other forms of energy.
+
+Identify how hydro, thermal, wind, solar, cells, and dynamos generate electricity in Sri Lankan contexts.
+
+Describe electromagnetic induction, photovoltaic action, and basic grid distribution with transformers.
+
+Evaluate environmental impacts and explain why an energy mix improves reliability and sustainability.
+
+==================================================
+SECTION: SUMMARY
+Electricity is produced by converting other forms of energy using systems from small cells to large generators. In Sri Lanka, major generation methods include hydro, thermal, wind, and solar power. Most large rotating systems use electromagnetic induction, while solar cells generate directly through the photovoltaic effect. Electricity then travels through high-voltage transmission lines and is reduced by transformers to about 230V for safe home use. Different methods have different environmental costs, so Sri Lanka uses an energy mix to balance reliable electricity supply with protection of nature.

@@ -16,7 +16,6 @@ _client: Optional[genai.Client] = None
 
 
 def _get_api_key() -> str:
-    """Read Gemini API key from config or env (supports GEMINI_API_KEY and Gemini_API_Key)."""
     key = (
         getattr(settings, "GEMINI_API_KEY", None)
         or os.getenv("GEMINI_API_KEY")
@@ -43,7 +42,6 @@ def get_client() -> genai.Client:
 
 
 def _generate_text(prompt: str, temperature: float = 0.3, max_tokens: int = 2048) -> str:
-    """Call Gemini and return response text."""
     client = get_client()
     config = types.GenerateContentConfig(
         temperature=temperature,

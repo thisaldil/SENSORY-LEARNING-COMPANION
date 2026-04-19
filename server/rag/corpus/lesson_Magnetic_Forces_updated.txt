@@ -1,0 +1,471 @@
+LESSON_ID: SCI_G6_MAGNETIC_FORCES
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Magnetic Forces
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: What is Magnetic Force
+DEFINITION:
+Magnetic force is a push or pull exerted by a magnet on certain materials or on other magnets, and it is a non-contact force that can act over a distance.
+
+KEY_POINTS:
+
+Magnetic force does not require physical contact with objects.
+It operates over varying distances depending on magnet strength.
+It can affect both magnetic materials and other magnets.
+
+EXAMPLES:
+A magnet can pull a paperclip across a table without touching it.
+
+KEYWORDS:
+magnetic force, non-contact force, push, pull, distance force
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Attractive Force
+DEFINITION:
+Attractive force is a pulling effect that occurs between a magnet and a magnetic material or between opposite poles of two magnets.
+
+KEY_POINTS:
+
+Attractive force pulls objects toward the magnet.
+It occurs between North and South poles.
+It occurs between magnets and magnetic materials like iron.
+
+EXAMPLES:
+A North Pole magnet pulled toward a South Pole attracts and sticks together.
+
+KEYWORDS:
+attractive force, pulling, opposite poles, magnet attraction, iron magnetism
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Repulsive Force
+DEFINITION:
+Repulsive force is a pushing effect that occurs only between the same poles of two magnets.
+
+KEY_POINTS:
+
+Repulsive force pushes objects away from each other.
+It occurs only between similar poles (North-North or South-South).
+It produces a cushioning resistance when poles are forced together.
+
+EXAMPLES:
+Two North Poles pushed together create a pushing sensation strong enough to prevent contact.
+
+KEYWORDS:
+repulsive force, pushing, same poles, magnetic repulsion, cushion effect
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Effect of Distance on Magnetic Force
+DEFINITION:
+The strength of magnetic force decreases as distance between the magnet and object increases, with closer proximity producing stronger force.
+
+KEY_POINTS:
+
+Closer magnets exert stronger force on objects.
+Distant magnets exert weaker force.
+Force eventually becomes too weak to move objects.
+
+EXAMPLES:
+A magnet can pick up a pin from 1 centimeter away but may not reach a pin 10 centimeters away.
+
+KEYWORDS:
+distance, magnetic strength, force weakening, proximity, force range
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Magnet Strength
+DEFINITION:
+Different magnets have different natural force strengths, with larger and higher-quality magnets exerting greater force.
+
+KEY_POINTS:
+
+Some magnets are naturally stronger than others.
+Large magnets usually produce stronger force than small ones.
+High-quality magnets exert greater pulling or pushing power.
+
+EXAMPLES:
+A large neodymium magnet will attract iron more strongly than a small ceramic magnet.
+
+KEYWORDS:
+magnet strength, quality, size, force intensity, magnetic power
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Magnetic Field
+DEFINITION:
+A magnetic field is the invisible space around a magnet where magnetic force exists and can be visualized as lines of force flowing from North to South.
+
+KEY_POINTS:
+
+Magnetic force exists throughout the space around a magnet.
+Iron filings reveal field line patterns arcing from North to South.
+Field strength decreases with distance from the magnet.
+
+EXAMPLES:
+Iron filings sprinkled around a magnet arrange into curved line patterns showing the invisible field.
+
+KEYWORDS:
+magnetic field, field lines, invisible force, iron filings pattern, force visualization
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Magnetic Force Through Different Media
+DEFINITION:
+Magnetic force can pass through various non-magnetic materials including solids, liquids, and gases.
+
+KEY_POINTS:
+
+Magnetic force travels through solid materials like wood.
+It passes through liquids like water and glass containers.
+It moves easily through air and other gases.
+
+EXAMPLES:
+Moving a magnet under a wooden table can move a needle on top of the table.
+
+KEYWORDS:
+transparency, transmission, solids, liquids, gases, force penetration
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Material Composition vs Mass in Magnetism
+DEFINITION:
+Magnetic force depends only on what an object is made of, not how heavy it is; non-magnetic materials experience zero force regardless of size.
+
+KEY_POINTS:
+
+Weight does not determine magnetic attraction.
+Material composition is the only factor that matters.
+A tiny iron pin attracts while a huge gold block does not.
+
+EXAMPLES:
+In Sri Lankan recycling centers, magnets separate iron and steel cans from aluminum cans by composition, not weight.
+
+KEYWORDS:
+composition, material type, weight independence, magnetic materials, non-magnetic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Induced Magnetism
+DEFINITION:
+Induced magnetism is the temporary creation of magnetic properties in an object when exposed to a magnetic force.
+
+KEY_POINTS:
+
+Iron becomes a temporary magnet when exposed to a permanent magnet.
+Induced magnetism disappears when the source magnet is removed.
+The induced pole is always opposite to the source pole.
+
+EXAMPLES:
+A nail becomes magnetized when held near a strong magnet and can pick up smaller pins, but loses magnetism when removed.
+
+KEYWORDS:
+induced magnetism, temporary magnet, magnetization, demagnetization
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Overcoming Friction with Magnetic Force
+DEFINITION:
+Magnetic repulsive force can lift objects above surfaces to eliminate friction, allowing higher speeds and reduced wear.
+
+KEY_POINTS:
+
+Magnetic force can lift trains above tracks.
+Eliminating friction allows higher speeds.
+Maglev trains move faster because wheels do not rub tracks.
+
+EXAMPLES:
+Maglev trains use magnetic repulsion to float centimeters above tracks, reducing friction and allowing faster travel than normal Sri Lankan trains.
+
+KEYWORDS:
+friction reduction, levitation, maglev train, frictionless motion, speed increase
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C11
+NAME: Dangers of Magnetic Force to Electronics
+DEFINITION:
+Strong magnetic forces can damage electronic devices by disrupting stored information or harming sensitive components.
+
+KEY_POINTS:
+
+Credit cards have magnetic strips that store information.
+Strong magnets can scramble magnetic strip data.
+Smartphones and screens can be damaged by strong magnetic fields.
+
+EXAMPLES:
+A strong magnet too close to a credit card can jumble information on the magnetic strip, making the card unusable.
+
+KEYWORDS:
+magnetic damage, electronic protection, credit card, data loss, device safety
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C12
+NAME: Earth's Magnetic Field
+DEFINITION:
+Earth's magnetic field is a giant protective force that deflects charged particles from the sun and shields the planet from harmful radiation.
+
+KEY_POINTS:
+
+Earth's magnetic field acts as a protective shield.
+It deflects solar winds and charged particles.
+It prevents dangerous solar radiation from reaching atmosphere.
+
+EXAMPLES:
+Without Earth's magnetic field protection, sun radiation would make life very difficult on Earth.
+
+KEYWORDS:
+Earth magnetic field, solar wind, radiation protection, planetary shield
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Attractive Force
+TO: Repulsive Force
+EXPLANATION:
+Both are magnetic force effects, but attractive force pulls unlike poles together while repulsive force pushes like poles apart.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Effect of Distance on Magnetic Force
+TO: Magnet Strength
+EXPLANATION:
+Both control force strength; distance determines how far force travels while magnet strength determines how powerful that force is.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Magnetic Field
+TO: Attractive Force
+EXPLANATION:
+Field lines flowing from North to South create the mechanism that allows North poles to attract South poles.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Magnetic Force Through Different Media
+TO: What is Magnetic Force
+EXPLANATION:
+Magnetic force's ability to penetrate non-magnetic materials is a defining characteristic of its non-contact nature.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Material Composition vs Mass in Magnetism
+TO: Induced Magnetism
+EXPLANATION:
+Only magnetic materials such as iron become temporarily magnetized; composition determines whether induction can occur rather than mass.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Overcoming Friction with Magnetic Force
+TO: Repulsive Force
+EXPLANATION:
+Maglev trains use magnetic repulsion to lift trains above tracks, demonstrating how repulsive force eliminates friction.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R7
+FROM: Dangers of Magnetic Force to Electronics
+TO: Magnetic Field
+EXPLANATION:
+Strong magnetic fields from magnets can disrupt electronic data storage and components designed to work in weak magnetic environments.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Magnet Pulling a Paperclip Without Contact
+
+DESCRIPTION:
+Hold a magnet above a paperclip on a table; the attractive force pulls the paperclip upward and onto the magnet without physical contact.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Repelling Magnet Cushion Effect
+
+DESCRIPTION:
+Push two North Poles together; the repulsive force creates a resistance that prevents them from touching, feeling like an invisible cushion.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Magnet Under Table Moving Needle
+
+DESCRIPTION:
+Move a magnet underneath a wooden table; a needle resting on top of the table moves along with the magnet, showing force travels through solid.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Fishing a Paperclip from Water
+
+DESCRIPTION:
+Drop a paperclip into a water glass, then slide a magnet down the glass outside; the magnetic force pulls the paperclip through water and glass.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Iron and Gold Selectivity
+
+DESCRIPTION:
+A giant non-magnetic gold block experiences zero force, while a tiny iron pin is pulled instantly, showing composition matters more than size.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E6
+TITLE: Maglev Train Friction Elimination
+
+DESCRIPTION:
+Maglev trains use magnetic repulsion to float above tracks, eliminating wheel friction and allowing speeds faster than normal trains.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Magnetic force requires the magnet to touch the object it affects.
+
+CORRECTION:
+Magnetic force is a non-contact force that can act over distances without physical touching.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Heavier objects are always more attracted to magnets than lighter objects.
+
+CORRECTION:
+Magnetic force depends on material composition, not mass; a tiny iron pin attracts while a huge non-magnetic gold block does not.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Magnetic field lines are physical lines drawn on the magnet.
+
+CORRECTION:
+Field lines are invisible energy patterns; iron filings show their pattern but the lines themselves are not physical structures.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Magnets can never be weakened by distance.
+
+CORRECTION:
+Magnetic force weakens with distance and eventually becomes too weak to affect objects.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Magnetism cannot pass through water or glass.
+
+CORRECTION:
+Magnetic force passes easily through water, glass, and other non-magnetic materials.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M6
+STATEMENT:
+Once an iron object is magnetized, it stays magnetic forever.
+
+CORRECTION:
+In most cases, induced magnetism is temporary and disappears when the source magnet is removed.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Magnetic Field Line Visualization
+
+DESCRIPTION:
+Sprinkle iron filings around a magnet and show them arranging into curved line patterns flowing from North Pole to South Pole.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Attractive Force Between Opposite Poles
+
+DESCRIPTION:
+Show two magnets with opposite poles facing, with arrows depicting the pulling force drawing them together.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Repulsive Force Between Like Poles
+
+DESCRIPTION:
+Animate two North Poles facing each other, with arrows showing the pushing force and an invisible cushion preventing contact.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Distance Effect on Magnetic Strength
+
+DESCRIPTION:
+Show a magnet at varying distances from an object; display force strength decreasing visually as distance increases.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Magnet Force Through Different Materials
+
+DESCRIPTION:
+Demonstrate magnet moving needle through wood, paperclip through water/glass, and fridge door snapping shut through air.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Maglev Train Levitation
+
+DESCRIPTION:
+Show a train floating above tracks using magnetic repulsion, then moving forward using attraction, with no wheel friction.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Induced Magnetism in Iron Nail
+
+DESCRIPTION:
+Animate a magnet pole approaching a nail, inducing an opposite pole at the nail tip so it picks up smaller pins temporarily.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S8
+TITLE: Earth's Protective Magnetic Shield
+
+DESCRIPTION:
+Show Earth's magnetic field deflecting solar winds and charged particles away from the atmosphere.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Explain magnetic force as a non-contact force and describe attractive and repulsive forces.
+
+Identify factors that affect magnetic force strength and describe how magnetic fields visualize force.
+
+Analyze how magnetic force passes through different materials and impacts material composition independently of mass.
+
+Apply knowledge of induced magnetism, friction reduction, and safety precautions when using magnets near electronics.
+
+==================================================
+SECTION: SUMMARY
+Magnetic force is a non-contact force exerted by magnets on magnetic materials and other magnets over a distance. Attractive force pulls unlike poles together, while repulsive force pushes like poles apart. Force strength depends on two factors: distance (closer produces stronger force) and magnet strength (larger quality magnets produce greater force). Magnetic force exists in invisible fields visualized by iron filing patterns flowing from North to South Pole. This force can pass through solids, liquids, and gases. Importantly, magnetic force depends on material composition, not mass, so a tiny iron pin attracts while a large non-magnetic gold block does not. When magnets contact iron objects, induced magnetism creates temporary magnetism that disappears when the source magnet is removed. Maglev trains use magnetic repulsion to levitate above tracks and friction-free motion allows faster speeds than normal trains. Strong magnetic forces can damage electronic devices such as credit cards and smartphones, so magnets must be kept away from sensitive electronics. Finally, Earth's magnetic field acts as a protective shield, deflecting harmful solar winds and radiation to make life possible on our planet.

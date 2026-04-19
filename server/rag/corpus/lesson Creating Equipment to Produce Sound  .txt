@@ -1,0 +1,218 @@
+LESSON_ID: SCI_G6_SOUND_002
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Creating Equipment to Produce Sound
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SE_01
+NAME: Sound and Vibration
+DEFINITION:
+Sound is produced when an object vibrates and causes the surrounding air to vibrate.
+
+KEY_POINTS:
+- Vibrations move back and forth rapidly.
+- Vibrations travel through air as sound waves.
+- Without vibration, no sound is produced.
+
+EXAMPLES:
+Plucking a rubber band.
+Striking a drum.
+Blowing into a whistle.
+
+KEYWORDS:
+vibration, sound waves, movement
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SE_02
+NAME: Tension and Pitch
+DEFINITION:
+The tightness of a vibrating object affects the pitch of the sound.
+
+KEY_POINTS:
+- Higher tension produces higher pitch.
+- Lower tension produces lower pitch.
+- Tight rubber bands vibrate faster.
+
+EXAMPLES:
+Tightening a rubber band on a box.
+Pulling a drum skin tighter.
+
+KEYWORDS:
+tension, pitch, frequency
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SE_03
+NAME: Length and Pitch
+DEFINITION:
+The length of a vibrating object or air column affects the pitch.
+
+KEY_POINTS:
+- Longer length produces lower pitch.
+- Shorter length produces higher pitch.
+- Air inside flutes vibrates to produce sound.
+
+EXAMPLES:
+Long bamboo flute makes a low note.
+Short whistle makes a high note.
+
+KEYWORDS:
+air column, length, frequency
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SE_04
+NAME: Resonance
+DEFINITION:
+Resonance occurs when vibrations cause surrounding air or objects to vibrate at the same frequency, increasing sound volume.
+
+KEY_POINTS:
+- Hollow bodies amplify sound.
+- Sound becomes louder when resonance occurs.
+- Musical instruments use resonance chambers.
+
+EXAMPLES:
+Rubber band over a box is louder.
+Guitars and violins have hollow bodies.
+Rabana drum produces loud sound.
+
+KEYWORDS:
+amplification, resonance chamber, vibration
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SE_05
+NAME: Mass and Inertia in Sound
+DEFINITION:
+The mass of a vibrating object affects how quickly it can vibrate.
+
+KEY_POINTS:
+- More mass vibrates slowly.
+- Less mass vibrates quickly.
+- Faster vibration produces higher pitch.
+
+EXAMPLES:
+Bottle with more water produces low sound.
+Bottle with less water produces high sound.
+
+KEYWORDS:
+mass, inertia, pitch
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SE_06
+NAME: Loudspeaker Technology
+DEFINITION:
+A loudspeaker produces sound by moving a cone back and forth using an electromagnet.
+
+KEY_POINTS:
+- Electricity controls the magnet.
+- The cone vibrates rapidly.
+- Vibrations create complex sounds.
+
+EXAMPLES:
+Television speakers.
+Smartphone speakers.
+
+KEYWORDS:
+electromagnet, cone, electronic sound
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SE_07
+NAME: Environmental Responsibility in Sound Creation
+DEFINITION:
+Sound-producing devices can be made using recycled or natural materials to protect the environment.
+
+KEY_POINTS:
+- Use discarded materials.
+- Practice upcycling.
+- Reduce environmental waste.
+
+EXAMPLES:
+Using plastic bottles as instruments.
+Using fallen coconut leaves.
+
+KEYWORDS:
+upcycling, recycling, sustainability
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SE_01
+FROM: Vibration
+TO: Sound Production
+EXPLANATION:
+Sound is created when vibrations travel through air.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SE_02
+FROM: Tension
+TO: Pitch
+EXPLANATION:
+Increasing tension increases vibration speed and pitch.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SE_03
+FROM: Mass
+TO: Frequency
+EXPLANATION:
+Greater mass slows vibration, producing lower frequency sounds.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SE_01
+TITLE: Rubber Band Guitar
+
+DESCRIPTION:
+Stretch rubber bands of different thickness over a box. Pluck them to hear different pitches.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SE_02
+TITLE: Bottle Xylophone
+
+DESCRIPTION:
+Fill bottles with different amounts of water. Strike them gently to hear different notes.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SE_03
+TITLE: Tin Can Drum
+
+DESCRIPTION:
+Stretch balloon material tightly over a tin can. Strike it to produce sound. Adjust tension to change pitch.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SE_01
+STATEMENT:
+Sound can be produced without vibration.
+
+CORRECTION:
+All sound is created by vibrations of objects or air.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SE_01
+TITLE: DIY Sound Lab
+
+DESCRIPTION:
+Show a classroom scene with a rubber band guitar, bottle xylophone, and tin can drum. Arrows indicate vibration motion and sound waves moving outward.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Explain how vibration produces sound.
+- Describe how tension and length affect pitch.
+- Understand the role of resonance in amplification.
+- Identify modern sound production using speakers.
+- Apply scientific principles to create simple instruments.
+
+==================================================
+SECTION: SUMMARY
+Sound is produced by vibration. Changing tension, length, or mass affects pitch and frequency. Resonance amplifies sound, and modern speakers use similar vibration principles. Simple homemade instruments demonstrate important physics concepts.
