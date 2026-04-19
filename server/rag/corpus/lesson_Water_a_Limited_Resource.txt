@@ -1,0 +1,238 @@
+LESSON_ID: SCI_G6_WATER_LIMITED_RESOURCE_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Water as a Limited Resource
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WLR_01
+NAME: Distribution of Earth’s Water
+DEFINITION:
+Although Earth is covered mostly by water, only a very small fraction is available for human use.
+
+KEY_POINTS:
+- About 97% of Earth’s water is salt water in oceans and seas.
+- Only about 3% is fresh water.
+- Most fresh water is trapped in glaciers and polar ice caps.
+- Less than 1% of total water is available in rivers, lakes, and groundwater for use.
+
+EXAMPLES:
+Oceans contain the majority of Earth's water.
+Rivers and wells provide only a tiny usable fraction.
+
+KEYWORDS:
+water distribution, salt water, fresh water, glaciers, usable water
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WLR_02
+NAME: Water Scarcity
+DEFINITION:
+Water scarcity occurs when available clean fresh water is not enough to meet the needs of people and ecosystems.
+
+KEY_POINTS:
+- Fresh water supply is limited.
+- Population growth increases demand.
+- Climate change affects rainfall patterns.
+- Droughts reduce available water sources.
+
+EXAMPLES:
+Water rationing during dry months.
+Drying wells during long droughts.
+
+KEYWORDS:
+water scarcity, drought, water stress, rationing
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WLR_03
+NAME: Causes of Limited Water Availability
+DEFINITION:
+Several natural and human factors reduce the amount of usable fresh water.
+
+KEY_POINTS:
+- Pollution makes water unsafe.
+- Wasteful usage reduces shared supply.
+- Climate change alters rainfall.
+- Deforestation disrupts water regulation.
+
+EXAMPLES:
+Polluted rivers becoming unsafe.
+Traditional tanks drying during drought.
+
+KEYWORDS:
+pollution, wasteful usage, climate change, deforestation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WLR_04
+NAME: Water Pollution
+DEFINITION:
+Water pollution occurs when harmful substances contaminate rivers, lakes, or groundwater, making them unsafe.
+
+KEY_POINTS:
+- Industrial waste releases chemicals into rivers.
+- Agrochemicals seep into groundwater.
+- Plastic waste blocks drains and pollutes lagoons.
+- Polluted water reduces usable supply.
+
+EXAMPLES:
+Pollution in the Kelani River.
+Groundwater issues in North Central Province.
+
+KEYWORDS:
+industrial waste, agrochemicals, contamination, plastic pollution
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WLR_05
+NAME: Role of Forests in Water Protection
+DEFINITION:
+Forests help regulate water by absorbing rain and releasing it slowly into rivers and groundwater.
+
+KEY_POINTS:
+- Trees act like natural sponges.
+- Reduce floods during heavy rain.
+- Maintain river flow during dry seasons.
+- Deforestation increases water instability.
+
+EXAMPLES:
+Central hill forests supporting river systems.
+
+KEYWORDS:
+forests, rainfall absorption, runoff, flood prevention
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WLR_06
+NAME: Water Conservation
+DEFINITION:
+Water conservation means using water carefully and efficiently to prevent waste.
+
+KEY_POINTS:
+- Turn off taps when not in use.
+- Fix leaking pipes.
+- Use buckets instead of hoses.
+- Practice rainwater harvesting.
+
+EXAMPLES:
+Collecting rainwater from roofs in dry zones.
+
+KEYWORDS:
+water conservation, rainwater harvesting, saving water
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WLR_07
+NAME: Virtual Water
+DEFINITION:
+Virtual water is the hidden amount of water used to produce goods and food.
+
+KEY_POINTS:
+- Water is used in farming and manufacturing.
+- Producing cotton clothing requires large water volumes.
+- Wasting products wastes water resources.
+- Awareness reduces indirect water waste.
+
+EXAMPLES:
+About 2,500 liters of water used to produce one cotton t-shirt.
+
+KEYWORDS:
+virtual water, hidden water use, production water, sustainability
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WLR_01
+FROM: Pollution
+TO: Water Scarcity
+EXPLANATION:
+Pollution removes clean water from the usable supply, increasing water scarcity.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WLR_02
+FROM: Deforestation
+TO: Water Instability
+EXPLANATION:
+Cutting forests increases rapid runoff, causing floods and dry river conditions.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WLR_03
+FROM: Population Growth
+TO: Water Stress
+EXPLANATION:
+As population increases, demand for fresh water rises while supply remains limited.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WLR_01
+TITLE: The 10-Liter Bucket Model
+
+DESCRIPTION:
+If all Earth's water filled a 10-liter bucket, 9.7 liters would be salt water, most fresh water would be trapped in ice, and only about one teaspoon would be available for human use.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WLR_02
+TITLE: Rainwater Harvesting in Dry Zones
+
+DESCRIPTION:
+Families collect rainwater from roofs into tanks to reduce pressure on groundwater supplies.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WLR_01
+STATEMENT:
+Because Earth looks blue, water is unlimited.
+
+CORRECTION:
+Most water is salt water or frozen, and only a tiny fraction is usable fresh water.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WLR_02
+STATEMENT:
+Water pollution only affects rivers near cities.
+
+CORRECTION:
+Pollution can spread into groundwater and affect rural areas as well.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WLR_03
+STATEMENT:
+Wasting clothes or food does not affect water supply.
+
+CORRECTION:
+Producing goods requires large amounts of water, so waste indirectly wastes water.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WLR_01
+TITLE: Earth’s Water Distribution Visual
+
+DESCRIPTION:
+Show a large bucket representing all Earth’s water. Highlight 97% salt water, small portion of fresh water in ice, and a tiny spoon representing available water.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WLR_02
+TITLE: Forest and Water Regulation
+
+DESCRIPTION:
+Display a forested hill absorbing rain and releasing water slowly into rivers. Contrast with deforested land causing floods and dry rivers.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Describe the distribution of water on Earth.
+- Explain why fresh water is limited.
+- Identify causes of water scarcity.
+- Describe the role of forests in water regulation.
+- Explain water conservation and virtual water.
+
+==================================================
+SECTION: SUMMARY
+Although Earth is covered with water, most of it is salt water or frozen. Only a very small fraction is available for human use. Pollution, deforestation, climate change, and population growth increase water scarcity. Water conservation and responsible habits are essential to protect this limited resource.

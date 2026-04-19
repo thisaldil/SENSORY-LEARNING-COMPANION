@@ -1,0 +1,327 @@
+LESSON_ID: SCI_G6_HEARING_OF_SOUNDS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Hearing of Sounds
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Sound Perception Through Hearing
+DEFINITION:
+Sound is perceived when the ear detects vibrations traveling through a medium such as air and the brain interprets them as meaningful signals.
+
+KEY_POINTS:
+
+Many objects produce vibrations, but hearing is needed to perceive them as sound.
+The ear acts as a receiver that captures vibrations.
+The brain interprets incoming signals as speech, music, or warning sounds.
+
+EXAMPLES:
+A ringing school bell creates vibrations in air that students hear as a signal to change periods.
+
+KEYWORDS:
+sound perception, vibration, ear, hearing, brain interpretation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Ear Structure and Hearing Pathway
+DEFINITION:
+Hearing occurs through a pathway in which the pinna collects sound waves, the eardrum vibrates, middle-ear bones amplify motion, the cochlea converts it to electrical signals, and the auditory nerve carries signals to the brain.
+
+KEY_POINTS:
+
+The pinna collects sound and directs it into the ear canal.
+The eardrum and three tiny middle-ear bones transmit and amplify vibrations.
+The cochlea converts mechanical vibrations into electrical nerve signals.
+
+EXAMPLES:
+When someone speaks, their voice waves enter the ear, vibrate the eardrum, and are processed by the cochlea and auditory nerve.
+
+KEYWORDS:
+pinna, ear canal, eardrum, middle ear bones, cochlea, auditory nerve
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Human Auditory Frequency Range
+DEFINITION:
+The human ear hears only a specific frequency range, usually about 20 Hz to 20,000 Hz in healthy young people.
+
+KEY_POINTS:
+
+Infrasound is below 20 Hz and is usually not heard by humans.
+Ultrasound is above 20,000 Hz and is usually not heard by humans.
+High-frequency hearing often decreases with age and can worsen with long-term loud-noise exposure.
+
+EXAMPLES:
+A very high-pitched dog whistle may not be heard by humans, even though dogs react.
+
+KEYWORDS:
+frequency, hertz, 20 Hz, 20000 Hz, infrasound, ultrasound
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Hearing in Animals and Echolocation
+DEFINITION:
+Different animals hear different frequency ranges, and some species use specialized hearing behaviors such as echolocation for navigation and hunting.
+
+KEY_POINTS:
+
+Bats and dolphins use ultrasound echoes to detect objects and prey.
+Elephants use low-frequency infrasound to communicate over long distances.
+Dogs hear higher frequencies than humans.
+
+EXAMPLES:
+A bat emits high-pitched clicks and uses returning echoes to avoid obstacles in darkness.
+
+KEYWORDS:
+animal hearing, echolocation, bats, dolphins, elephants, dogs, ultrasound, infrasound
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Sound Localization with Two Ears
+DEFINITION:
+Sound localization is the brain’s ability to find sound direction by comparing tiny differences in arrival time and loudness between the two ears.
+
+KEY_POINTS:
+
+Sound reaches the nearer ear slightly earlier than the farther ear.
+Sound is often slightly louder in the nearer ear.
+The brain combines these differences to identify direction.
+
+EXAMPLES:
+If a vehicle horn sounds from the right, the right ear receives it first and slightly louder, helping a person turn correctly.
+
+KEYWORDS:
+sound localization, two ears, time difference, loudness difference, direction
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Hearing Protection and Ear Safety
+DEFINITION:
+Hearing protection involves preventing damage to delicate ear structures, especially the eardrum and cochlear hair cells, to avoid permanent hearing loss.
+
+KEY_POINTS:
+
+Long-term loud sound exposure can damage cochlear hair cells permanently.
+Sharp objects or deep cotton buds can tear the eardrum.
+In Sri Lanka, swimming in polluted water can increase ear infection risk, so ears should be dried and pain should be medically checked.
+
+EXAMPLES:
+Listening to very loud headphone music for long periods can reduce hearing sensitivity over time.
+
+KEYWORDS:
+hearing protection, cochlear hair cells, eardrum injury, ear infection, noise exposure, safety
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Speed of Sound Compared with Light
+DEFINITION:
+Sound travels much slower than light, so light events are seen before their sounds are heard.
+
+KEY_POINTS:
+
+Sound in air travels at about 340 m/s.
+Light reaches the eye almost instantly over common Earth distances.
+Time delay between lightning and thunder can estimate storm distance.
+
+EXAMPLES:
+During a Sri Lankan thunderstorm, a 6-second delay between flash and thunder suggests the storm is about 2 kilometers away.
+
+KEYWORDS:
+speed of sound, speed of light, thunder, lightning, storm distance
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Sound Perception Through Hearing
+TO: Ear Structure and Hearing Pathway
+EXPLANATION:
+Perceiving sound depends on the ear pathway, where vibrations are collected, amplified, converted to electrical signals, and sent to the brain.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Ear Structure and Hearing Pathway
+TO: Hearing Protection and Ear Safety
+EXPLANATION:
+Because eardrum, middle-ear bones, and cochlear hair cells are delicate, damage to these structures can reduce hearing quality or cause permanent loss.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Human Auditory Frequency Range
+TO: Hearing in Animals and Echolocation
+EXPLANATION:
+Humans and animals detect different frequency ranges, which explains why some animal sounds or signals are inaudible to people.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Sound Localization with Two Ears
+TO: Hearing Protection and Ear Safety
+EXPLANATION:
+Healthy hearing in both ears is important for accurate sound direction detection, which supports safety in traffic and natural environments.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Speed of Sound Compared with Light
+TO: Sound Perception Through Hearing
+EXPLANATION:
+Sound reaches the ear after light reaches the eyes, so hearing and vision together help interpret distant events such as thunderstorms.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Step-by-Step Hearing Process
+
+DESCRIPTION:
+Sound waves are collected by the pinna, pass through the ear canal, vibrate the eardrum, move middle-ear bones, enter the cochlea, convert to electrical signals, and travel by auditory nerve to the brain.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Animal Hearing Differences
+
+DESCRIPTION:
+Bats and dolphins use ultrasound echoes for echolocation, elephants communicate with infrasound across long distances, and dogs hear high frequencies beyond human range.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Direction Detection with Two Ears
+
+DESCRIPTION:
+When a friend calls from one side, the nearest ear receives the sound slightly earlier and louder, and the brain calculates the direction.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Thunderstorm Distance Estimation
+
+DESCRIPTION:
+If 9 seconds pass between lightning and thunder, the storm is approximately 3 kilometers away, using about 3 seconds per kilometer.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Preventing Ear Damage in Daily Life
+
+DESCRIPTION:
+Keeping headphone volume moderate, avoiding objects inside the ear, drying ears after swimming, and seeking medical help for pain can protect long-term hearing.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+All vibrations in the environment can be heard by humans.
+
+CORRECTION:
+Humans hear only a specific frequency range, usually about 20 Hz to 20,000 Hz in healthy young people.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+The ear alone identifies sounds without help from the brain.
+
+CORRECTION:
+The ear converts vibrations into electrical signals, but the brain interprets those signals as meaningful sounds.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Cotton buds are always safe to insert deeply into ears.
+
+CORRECTION:
+Deep insertion can injure the ear canal or tear the eardrum, which can reduce hearing and cause medical problems.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Hearing loss from loud sound is always temporary.
+
+CORRECTION:
+Damage to cochlear hair cells can be permanent because these cells do not regenerate effectively.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Lightning and thunder happen at different times.
+
+CORRECTION:
+They happen at the same event, but light arrives much faster than sound, so thunder is heard later.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Journey of a Sound Wave Through the Ear
+
+DESCRIPTION:
+Animate sound entering pinna, traveling through ear canal, vibrating eardrum, moving three middle-ear bones, activating cochlea, and signals reaching the brain.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Human Hearing Range Spectrum
+
+DESCRIPTION:
+Show a frequency scale with infrasound below 20 Hz, human hearing from 20 Hz to 20,000 Hz, and ultrasound above 20,000 Hz.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Animal Hearing Comparison
+
+DESCRIPTION:
+Display bats and dolphins using ultrasound echoes, elephants using infrasound waves through ground, and dogs hearing high-pitched whistle signals.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Two-Ear Direction Detection
+
+DESCRIPTION:
+Visualize a sound source on one side and show tiny time and loudness differences at each ear, then brain-based direction decision.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Safe and Unsafe Ear Care
+
+DESCRIPTION:
+Contrast safe habits like moderate volume and drying ears after swimming with unsafe habits like loud headphone use and inserting objects deeply.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Lightning and Thunder Delay
+
+DESCRIPTION:
+Show instant lightning flash, delayed thunder sound, and a timer-based distance estimate using about 3 seconds per kilometer.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Describe how the ear and brain work together to detect and interpret sound.
+
+Identify key ear structures and explain each step in the hearing pathway.
+
+Explain human hearing limits, compare them with animal hearing, and describe sound localization.
+
+Apply hearing safety practices and use thunder-lightning delay to estimate storm distance.
+
+==================================================
+SECTION: SUMMARY
+Hearing happens when vibrations are collected by the ear and converted into electrical signals that the brain interprets as sound. The hearing pathway includes the pinna, ear canal, eardrum, middle-ear bones, cochlea, and auditory nerve. Humans hear only a limited frequency range, while many animals detect higher or lower frequencies and may use echolocation. Two ears help locate sound direction by comparing tiny differences in timing and loudness. Protecting hearing is essential because loud noise and ear injury can cause permanent damage, and understanding the speed difference between light and sound helps explain thunder delay and storm distance in Sri Lanka.

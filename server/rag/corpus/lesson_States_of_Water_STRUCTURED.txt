@@ -1,0 +1,509 @@
+LESSON_ID: SCI_G6_STATES_OF_WATER
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: States of Water
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: The Three States of Water
+DEFINITION:
+Water exists naturally in three distinct physical states on Earth: solid (ice), liquid (water), and gas (steam or water vapor). The state of water depends primarily on temperature and pressure. Water is the only common substance that naturally exists in all three states under conditions found on Earth's surface.
+
+KEY_POINTS:
+- Water is the same chemical compound (H₂O) in all three states—only the arrangement of molecules changes
+- State changes are reversible—water can move between states and back again
+- Temperature is the primary factor determining which state water is in
+- The three states of water are essential for the water cycle and all life on Earth
+- Different states have different properties: solids hold their shape, liquids flow, gases spread out
+
+EXAMPLES:
+Ice cubes in a freezer represent solid water. A glass of drinking water represents liquid water. Steam rising from boiling water represents gaseous water. Snow and hail are also solid water. Water vapor in humid air is gaseous water that we cannot see. All three forms are the same H₂O, just arranged differently.
+
+KEYWORDS:
+states of water, solid water, liquid water, gaseous water, ice, steam, water vapor, phase changes, H₂O, molecular arrangement
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Solid Water - Ice
+DEFINITION:
+Solid water, called ice, exists when water molecules are packed tightly together in a fixed, rigid structure. In this state, molecules vibrate in place but cannot move past each other, giving ice a definite shape and volume that does not change unless the ice melts or breaks.
+
+KEY_POINTS:
+- Ice molecules are arranged in a rigid, geometric structure
+- Molecules vibrate but remain in fixed positions relative to each other
+- Ice has a definite shape and volume
+- Ice is denser than liquid water in almost all substances, but water is an exception (ice is less dense than liquid water)
+- Ice is hard and brittle, breaking easily when struck
+- Ice forms when liquid water is cooled to 0°C (32°F)
+
+EXAMPLES:
+Ice cubes in freezers are solid water. Frozen lakes and ponds in winter countries have ice on their surface. Glaciers are massive formations of solid ice found in polar regions and on high mountains. Snow is frozen water crystals formed directly in the atmosphere. Hail is rain that freezes into ice. Frost is a thin layer of ice that forms on cold surfaces in early morning.
+
+KEYWORDS:
+ice, solid water, frozen water, molecular structure, rigid structure, definite shape, glaciers, snowflakes, hail, frost, crystalline structure
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: The Water Density Anomaly
+DEFINITION:
+Water is an unusual substance because it expands when it freezes, making ice less dense than liquid water. This unique property causes ice to float on water rather than sink, which is opposite to how most substances behave. This anomaly is critical for survival of aquatic life during winter.
+
+KEY_POINTS:
+- Most substances contract (shrink) when they freeze, becoming denser
+- Water expands when it freezes, becoming less dense
+- A specific volume of ice weighs less than the same volume of liquid water
+- Ice floats on the surface of liquid water
+- Ice acts as an insulating blanket on frozen water bodies
+- Liquid water beneath ice remains warm enough for fish and plants to survive
+- Without this property, lakes would freeze solid from the bottom up, killing all aquatic life
+
+EXAMPLES:
+Ice cubes float in water rather than sinking to the bottom. In frozen lakes during winter, ice forms on the surface while liquid water remains below, protected by the ice layer. Fish in frozen northern lakes survive the winter because they can stay in the liquid water beneath the floating ice. In winter countries, thick ice layers on lakes can support weight of people and vehicles because ice is strong and floats at the top. This property has influenced the evolution of organisms—aquatic life adapted to survive under ice during winter.
+
+KEYWORDS:
+water density, ice floats, expansion, less dense, anomalous expansion, aquatic survival, floating ice, thermal insulation, molecular structure of ice
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Liquid Water
+DEFINITION:
+Liquid water is the common form of water where molecules move freely but remain close together in a disorganized manner. Liquid water has no fixed shape—it adapts to the shape of its container—but has a fixed volume. Liquid water is denser than ice and can flow, pour, and dissolve other substances.
+
+KEY_POINTS:
+- Liquid water molecules move freely and slide past each other
+- Water takes the shape of whichever container holds it
+- The volume of liquid water remains constant (doesn't compress easily)
+- Liquid water is denser than ice at the same temperature
+- Water can flow and be poured
+- Water exerts pressure in all directions equally
+- Liquid water is the most dense form of pure water at 4°C
+- Liquid water dissolves more substances than almost any other liquid, earning it the title "universal solvent"
+
+EXAMPLES:
+Drinking water from taps is liquid water. Rainwater is liquid water. Water in lakes, rivers, oceans, and wetlands is liquid. Blood is mostly liquid water (with dissolved minerals and cells). Plant sap flowing through roots and stems is liquid water dissolved with nutrients. Sweat on skin is liquid water. Tears are liquid water with dissolved salts. Milk, juice, and soup are mostly liquid water with dissolved substances.
+
+KEYWORDS:
+liquid water, flowing water, universal solvent, disorganized molecules, density, volume, pressure, dissolved substances, flowing liquid
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Gaseous Water - Steam and Water Vapor
+DEFINITION:
+Gaseous water exists as either steam (visible water that has recently boiled) or water vapor (invisible moisture in air). In gaseous form, water molecules are far apart and move rapidly in all directions, filling all available space. Most gaseous water is invisible to the naked eye.
+
+KEY_POINTS:
+- Water molecules in the gas state are far apart and move very rapidly
+- Gaseous water has no fixed shape or volume—it expands to fill all available space
+- Gaseous water is mostly invisible (water vapor cannot be seen)
+- The white steam from a boiling kettle is not actually water vapor—it is visible liquid water droplets formed when vapor cooled slightly
+- True water vapor is colorless and mixes with air
+- Water vapor is present in the atmosphere everywhere
+- Higher temperatures allow air to hold more water vapor
+- Humidity is a measure of how much water vapor exists in air
+
+EXAMPLES:
+Steam rising from boiling water is visible because it contains water droplets. Water vapor in the air on humid days is invisible but makes the air feel sticky. Breath visible on a cold morning is warm water vapor that condenses into visible droplets when encountering cold air. Mist and fog are water vapor that has partially condensed into tiny visible droplets. Sweat evaporating from skin becomes invisible water vapor. On rainy, humid days, the air contains lots of water vapor that we cannot see but can feel. Clouds appear white and visible because they contain many tiny liquid water droplets and ice crystals, not true water vapor.
+
+KEYWORDS:
+water vapor, steam, gaseous water, invisible vapor, humidity, water droplets, mist, fog, evaporation, condensation, atmospheric water
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Melting and Freezing
+DEFINITION:
+Melting is the state change from solid to liquid when ice is heated. Freezing is the reverse process, the state change from liquid to solid when water is cooled. Both processes occur at 0°C (32°F) and are reversible—the same molecules change state but remain the same chemical compound.
+
+KEY_POINTS:
+- Melting occurs when ice is heated and molecular structure breaks down
+- Melting temperature for water is 0°C (32°F)
+- Freezing is the reverse of melting
+- Freezing occurs when liquid water is cooled and molecules lock into rigid positions
+- Freezing temperature for water is 0°C (32°F)
+- Both processes are reversible—ice can melt and reform by freezing again
+- Melting requires adding heat energy to break rigid molecular bonds
+- Freezing requires removing heat energy to allow molecular bonds to form rigid structure
+
+EXAMPLES:
+An ice cube melting on a table at room temperature shows melting. Ice cream melting on a hot day in Sri Lanka shows melting. Water left in a freezer overnight turns into ice cubes through freezing. A puddle that freezes solid overnight has undergone freezing. When you melt and refreeze the same water multiple times, the water molecules remain unchanged. In winter, icicles hanging from roofs form when water from melted snow refreezes.
+
+KEYWORDS:
+melting, freezing, state change, temperature, 0°C, heat energy, ice formation, molecular bonds, reversible process
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Evaporation
+DEFINITION:
+Evaporation is the state change from liquid to gas when water is heated. Heat energy gives water molecules enough kinetic energy to escape from the liquid and spread into the air as invisible water vapor. Evaporation can occur at any temperature above freezing but proceeds fastest at 100°C when water boils.
+
+KEY_POINTS:
+- Evaporation converts liquid water into water vapor (gas)
+- Evaporation requires significant amounts of heat energy
+- Evaporation can occur at any temperature, not just at boiling point (100°C)
+- Evaporation accelerates with increasing temperature, larger surface area, lower humidity, and air movement
+- Evaporation is responsible for the upward part of the water cycle
+- Evaporation removes heat from the body when sweat evaporates from skin
+- Evaporation is why wet clothes dry on clotheslines
+- Evaporation requires more energy than melting—it's the most energy-intensive state change
+
+EXAMPLES:
+Puddles disappearing on sunny days are being evaporated into water vapor. Wet hair drying is water evaporating from the hair surface. Sweat evaporating from skin during exercise cools the body. Wet clothes drying on a clothesline in wind dry faster because moving air increases evaporation. Water in a pot gradually disappearing as it sits is evaporation (before boiling point). Morning dew on grass evaporates as the Sun heats it. Clothes drying faster on hot, windy days than on cool, humid days demonstrates how temperature and humidity affect evaporation rate.
+
+KEYWORDS:
+evaporation, liquid to gas, water vapor, heat energy, kinetic energy, cooling, drying, humidity, surface area, water cycle, boiling
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Condensation
+DEFINITION:
+Condensation is the state change from gas to liquid when water vapor cools. As gaseous water molecules slow down due to lower temperature, they come close enough together to form visible liquid water droplets. Condensation is the reverse process of evaporation.
+
+KEY_POINTS:
+- Condensation converts water vapor (gas) into liquid water
+- Condensation occurs when cooled water vapor loses sufficient heat energy
+- Condensation happens when water vapor encounters cold surfaces
+- Condensation releases heat energy (opposite of evaporation which requires heat)
+- Condensation occurs at the dew point temperature—the temperature at which air becomes saturated with water vapor
+- Condensation is reversible to evaporation
+- Condensation in the atmosphere creates clouds and fog
+- Condensation on cold surfaces creates visible water droplets
+
+EXAMPLES:
+Water droplets forming on the outside of a cold glass on a hot day show condensation. Mirrors and bathroom windows fogging up when you shower demonstrates condensation of body-warmed water vapor on cool surfaces. Dew on grass in early morning is water vapor from the atmosphere condensing on grass cooled by nighttime radiation. Fog forming in cool morning air is water vapor condensing into visible tiny liquid droplets. Breath visible on a cold window or mirror is warm water vapor from breathing that condenses on the cold surface. Clouds forming in the sky are water vapor condensing into tiny droplets at high altitude where air is cold.
+
+KEYWORDS:
+condensation, gas to liquid, water vapor cooling, dew point, cooling, visible droplets, clouds, fog, dew, heat release
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Sublimation
+DEFINITION:
+Sublimation is a state change where solid water transforms directly into gaseous water vapor without becoming liquid first. This occurs when ice or snow is heated under very dry conditions, or in space where pressure is extremely low. Sublimation is a less common phase change than melting or evaporation.
+
+KEY_POINTS:
+- Sublimation converts solid ice directly to water vapor gas
+- Sublimation bypasses the liquid state entirely
+- Sublimation occurs in very dry conditions where liquid water would quickly evaporate
+- Sublimation occurs naturally in dry air at low temperatures and pressures
+- Sublimation is demonstrated dramatically by dry ice (solid carbon dioxide)
+- Sublimation is important in high-altitude environments where air is cold and dry
+- Frozen laundry drying on clotheslines in winter sublimes when water changes directly from ice to vapor
+
+EXAMPLES:
+Snow subliming away in dry, cold mountain air without melting into water shows sublimation. Wet clothes freezing on a clothesline in winter and gradually drying without melting demonstrates sublimation. Antarctica's ice sheet loses water through sublimation in the very dry polar atmosphere. Perfume crystals disappearing from a warm surface without melting is sublimation of a solid directly to gas. In space, water ice can sublime because there is no air pressure and very low temperatures.
+
+KEYWORDS:
+sublimation, solid to gas, ice to vapor, dry ice, water cycle, phase change, high altitude, dry conditions, bypassing liquid
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Energy and Temperature in State Changes
+DEFINITION:
+State changes require energy transfer (heating) or energy removal (cooling). Each state transition requires a specific amount of energy, with evaporation requiring significantly more energy than melting because molecules must move much farther apart in the gas state than in the liquid state.
+
+KEY_POINTS:
+- Melting requires adding heat energy to break rigid molecular structure
+- Freezing requires removing heat energy to solid molecules in place
+- Evaporation requires substantial heat energy to separate liquid molecules into gas
+- Condensation releases latent heat energy when gas molecules combine into liquid
+- Evaporation requires approximately 5 times more energy than melting the same mass of ice
+- Temperature alone does not determine if phase change will occur—energy (heat) must be transferred
+- This energy relationship explains why boiling water takes much longer than melting ice
+- This energy relationship explains how evaporation cools skin (sweat releases heat to air)
+
+EXAMPLES:
+Melting an ice cube takes a few minutes at room temperature. Boiling the resulting liquid water takes much longer because evaporation requires more energy than melting. Sweating cools the body because water evaporating from skin removes heat from the body. Wet hair takes longer to dry than to get wet because evaporation (drying) requires more energy than the water absorption process. A pot of water heats up from room temperature to boiling point gradually, but reaching the boiling point is not enough—adding more heat is needed to actually boil the water and turn it to steam.
+
+KEYWORDS:
+heat energy, energy transfer, latent heat, thermodynamics, energy requirements, cooling, heating, phase transition energy
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C11
+NAME: Water as Universal Solvent
+DEFINITION:
+Water is called the "universal solvent" because it can dissolve more substances than almost any other liquid. Water's unique molecular structure allows it to dissolve salts, gases, minerals, sugars, and countless other compounds. This property is essential for life and Earth's chemical cycles.
+
+KEY_POINTS:
+- Water's polar molecular structure makes it an excellent solvent
+- Dissolved substances in water don't change water's state or boiling point significantly
+- Water in nature is never pure H₂O—it always contains dissolved substances
+- Saltwater in oceans contains dissolved sodium chloride and other minerals
+- Freshwater in rivers and lakes contains dissolved minerals and gases
+- Water in blood dissolves nutrients, gases (like oxygen), and waste products for transport
+- Plant sap carries dissolved minerals and sugars through roots and stems
+- Water as a solvent is essential for all biochemical reactions in living organisms
+
+EXAMPLES:
+Seawater tastes salty because dissolved sodium chloride and other minerals are dispersed throughout. River water contains dissolved minerals that give it different properties from pure water. Blood contains many dissolved substances including nutrients, glucose, and oxygen transported in water. Soil absorbs water with dissolved minerals that plants take up through roots. Sweat contains dissolved salts from the body. Rain water contains dissolved gases like carbon dioxide and nitrogen from the atmosphere.
+
+KEYWORDS:
+universal solvent, dissolved substances, saltwater, freshwater, polar molecules, salts, minerals, nutrients, transport, biochemistry
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C12
+NAME: The Water Cycle
+DEFINITION:
+The water cycle is the continuous process where water moves through all three states over the Earth's surface and atmosphere. Water evaporates from oceans and bodies of water, condenses in the atmosphere to form clouds, falls as precipitation, and returns to oceans through rivers and infiltration. This cycle continuously redistributes water across the planet.
+
+KEY_POINTS:
+- Evaporation from oceans is driven by the Sun's heat
+- Condensation in the atmosphere forms clouds when water vapor rises and cools
+- Precipitation falls as rain, snow, sleet, or hail depending on temperature
+- Infiltration allows water to soak into soil and groundwater
+- Transpiration releases water vapor from plants
+- Runoff flows water along Earth's surface back to oceans
+- The water cycle has existed for billions of years, recycling the same water molecules
+- All three states of water are essential to the complete water cycle
+- The water cycle transports energy and regulates Earth's temperature
+
+EXAMPLES:
+In the water cycle, ocean water evaporates into atmosphere as water vapor, water vapor rises and cools into clouds (condensation), clouds release precipitation as rain, rain soaks into soil or flows as rivers back to ocean. In monsoon climates like Sri Lanka, the water cycle intensifies during wet season: evaporation increases over oceans, moisture-laden clouds form, heavy precipitation falls. The water that falls as rain today might have been in a cloud yesterday, an ocean the day before, and inside a plant the week before.
+
+KEYWORDS:
+water cycle, evaporation, condensation, precipitation, infiltration, transpiration, runoff, hydrological cycle, continuous process, energy transport
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C13
+NAME: Sri Lankan Water Context
+DEFINITION:
+Sri Lanka's geography, climate, and agriculture are fundamentally shaped by water and its state changes. As an island surrounded by the Indian Ocean and experiencing monsoon seasons, Sri Lanka has high humidity, distinctive wet and dry seasons, and traditional water management systems that depend on understanding water in all its forms.
+
+KEY_POINTS:
+- Sri Lanka is surrounded by the Indian Ocean, providing abundant water sources
+- Humidity is very high in Sri Lanka due to tropical island location
+- Sri Lanka experiences two monsoon seasons bringing heavy precipitation
+- The Tank System (Wewa) is an ancient water management system for storing liquid water for irrigation
+- Sri Lankan agriculture depends on monsoon water and tank systems
+- The high humidity in Sri Lanka makes evaporation and sweat cooling very important for human comfort
+- Tropical climate keeps most water in gaseous form (water vapor) rather than frozen
+- Sri Lanka rarely experiences solid water (ice) naturally due to warm climate
+
+EXAMPLES:
+The ancient Tank Systems of Sri Lanka store rainwater during monsoon season for use during dry season. During monsoon rains, heavy precipitation fills tanks and paddy fields with liquid water for rice cultivation. High humidity in Colombo and Kandy makes air feel "sticky" because of abundant water vapor. Sri Lankan farmers depend on monsoon evaporation-condensation cycle for survival. The natural absence of ice means Sri Lankan water ecosystems evolved without adaptations for frozen-water survival characteristic of cold climates.
+
+KEYWORDS:
+Sri Lanka, monsoon, Tank System, Wewa, humidity, tropical climate, agriculture, Indian Ocean, rainfall, dry season, wet season
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: The Three States of Water
+TO: Energy and Temperature in State Changes
+EXPLANATION:
+Temperature and heat energy directly determine which state water exists in. Lower temperatures favor the solid state, moderate temperatures favor the liquid state, and higher temperatures favor the gaseous state. The three states exist because different energy levels allow different molecular arrangements. Understanding that temperature drives state changes is essential for understanding the water cycle and all water-related phenomena.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Evaporation
+TO: Condensation
+EXPLANATION:
+Evaporation and condensation are reverse processes that are both essential to the water cycle. Evaporation requires heat energy to convert liquid to gas and cools the environment. Condensation releases heat energy as gas converts to liquid and warms the environment. These two processes continuously cycling distribute energy around the planet and regulate global temperature. Where evaporation occurs, energy is removed from the surface. Where condensation occurs, that energy is released in the atmosphere.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: The Water Density Anomaly
+TO: The Water Cycle
+EXPLANATION:
+The anomalous density of ice—where frozen water is less dense than liquid water—is critical for the water cycle to sustain life. If ice were denser and sank, lakes and oceans would freeze solid from the bottom up during winter, preventing liquid water where aquatic life depends. The floating ice layer insulates the liquid water below, allowing the water cycle to continue year-round even in frozen regions. This single unusual property of water makes the entire water cycle compatible with biological life.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Water as Universal Solvent
+TO: The Water Cycle
+EXPLANATION:
+Water dissolves substances as it evaporates from oceans, rivers, and soil. The water cycle transports not just pure H₂O but complex solutions containing minerals, salts, gases, and nutrients. This property allows the water cycle to distribute essential minerals from oceans across continents through clouds and rainfall. When water condenses and falls as precipitation, it carries dissolved gases and minerals that nourish soil. When water infiltrates soil, its solvent property allows it to extract minerals that plants need for growth.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Liquid Water
+TO: Sri Lankan Water Context
+EXPLANATION:
+Sri Lanka's entire economic and cultural foundation depends on managing liquid water. The Tank Systems were built specifically to store the liquid form of water that falls during monsoon season for use during dry season. Agriculture, primarily rice cultivation, requires maintaining reservoirs of liquid water. Understanding liquid water's properties—that it maintains fixed volume, can be stored in containers, and flows from high to low elevation—was essential for ancient Sinhala engineers to design the sophisticated Tank System networks.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Gaseous Water - Steam and Water Vapor
+TO: Sri Lankan Water Context
+EXPLANATION:
+Sri Lanka's high humidity and tropical climate mean gaseous water (water vapor) is constantly present in substantial quantities in the atmosphere. The moisture-rich air from the Indian Ocean and the high evaporation rates during hot seasons create the humid conditions characteristic of the island. This high humidity is why cooling through sweating and evaporation is so important in Sri Lankan climate, and why buildings require ventilation to manage moisture. The monsoon system itself is driven by differential evaporation and condensation—the same water vapor that makes Sri Lanka humid.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: The Complete Water Cycle in Sri Lanka's Climate System
+
+DESCRIPTION:
+The water cycle in Sri Lanka demonstrates all three states of water in action. During the dry season, the surface of the Indian Ocean and all water bodies in Sri Lanka heat up under intense sunlight. Solar energy drives evaporation, converting liquid water into invisible water vapor gas. This water vapor rises into the atmosphere, cooling as it reaches higher altitudes. As temperature drops, the water vapor condenses into liquid water droplets that form visible clouds. When clouds cool further at high altitudes or when airflow causes them to cool, the liquid droplets combine and become heavy enough to fall as precipitation—rain in tropical Sri Lanka (as opposed to snow in cold climates). This rain falls on land, where some soaks into soil as infiltration to recharge groundwater and refill the Tank Systems that are essential to Sri Lankan agriculture. Water in plants is transpired back into the air as water vapor. Water in rivers flows back downhill toward oceans. The cycle then repeats, continuously redistributing water and the Sun's energy across the island. Understanding this cycle explains why Sri Lanka's agriculture depends on monsoon seasons and why the Tank System is an essential invention for managing the seasonal distribution of water.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Energy Requirements Explain Why Boiling Takes Longer Than Melting
+
+DESCRIPTION:
+An everyday observation demonstrates the difference in energy required for different state changes. If you place an ice cube on a warm table and measure the time to melt, it melts in a few minutes. If you then heat that resulting liquid water until it boils, the same amount of water takes much longer to boil than it took to melt. Why? Because evaporation requires roughly five times more energy than melting. When ice melts, molecules only need to break free from their rigid structure and become mobile—they stay close together as in liquid. When liquid water evaporates, molecules must move far apart to become a gas, separated by vast distances compared to the liquid state. This enormous separation requires proportionally more energy. This explains why sweating is so cooling—evaporation removes large amounts of heat from the body. It also explains why wet hair takes much longer to dry than to get wet: absorption of water by hair happens quickly, but evaporation of water from hair requires much more energy and takes much longer. This principle is not just academic—it's why boiling a pot of water requires leaving the heat on much longer than heating the same pot from room temperature to boiling point.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Observing Condensation in Daily Sri Lankan Life
+
+DESCRIPTION:
+On Sri Lanka's humid tropical mornings, condensation is visible everywhere. On a cool morning after night, dew appears on grass—this is water vapor from the humid air condensing on cool grass that has lost heat through radiative cooling during the night. When you open a refrigerator in humid Colombo, water condenses on the outside of the fridge because cold air from inside meets warm, humid air outside. When you pour a cold drink from the refrigerator into a glass, water droplets almost immediately form on the outside of the glass—the cold glass cools surrounding air, and water vapor in the humid air condenses into visible liquid. In bathrooms after a hot shower, the mirror and windows fog up because the warm water vapor from the shower condenses on cooler surfaces. Older Sri Lankan homes with eaves would often have water dripping from the edges in early morning—this is condensed water collecting and dripping. In air-conditioned buildings, water accumulates at the base of air conditioning units—this condensed water vapor has been removed from the indoor air. These everyday observations of condensation are actually witnessing the water cycle in action, showing how invisible water vapor in humid air becomes visible liquid water when cooled.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: History of Water Management - Sri Lanka's Tank System
+
+DESCRIPTION:
+Sri Lanka's ancient Sinhala kings and engineers understood water in liquid form so well that they built one of the world's most sophisticated water management systems: the Tank System (Wewa). These reservoirs were constructed to capture and store liquid water during monsoon season when rainfall is abundant. The water stored in tanks could then be released gradually during dry season to irrigate paddy fields for rice cultivation. This system demonstrates profound understanding of liquid water's properties: that it maintains fixed volume (water stored in a tank doesn't mysteriously disappear), that it flows from high to low elevation (allowing water from elevated tanks to flow to distant paddy fields), and that it can be managed through channels and gates. The Tank System also requires understanding evaporation—engineers had to account for water loss to evaporation from the reservoir surface during dry season, so they built tanks large enough to maintain adequate supply despite evaporation. Ancient Sri Lankan water management, still visible in places like the Sigiriya area with its complex network of tanks and channels, proves that farmers and engineers understood water behavior through empirical observation long before modern physics formalized these principles. The continued dependence of Sri Lankan agriculture on monsoon systems and tank management demonstrates how the water cycle and state changes remain central to the island's survival.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Water in the form of steam is invisible, so you cannot see steam.
+
+CORRECTION:
+The white steam rising from a boiling kettle is actually not water vapor—it is visible liquid water droplets suspended in air, formed when water vapor condenses as it cools slightly after escaping the hot water. True water vapor is colorless and invisible, mixed with the air. When you see white steam, you are seeing tiny liquid water droplets, not the gaseous water vapor itself. The gas closest to the boiling water is invisible—as it rises and cools in the cooler air, it condenses into visible white droplets. This distinction is important for understanding the water cycle: the water vapor that evaporates from oceans is invisible and spread throughout the air; clouds form when this invisible water vapor condenses into visible liquid droplets high in the atmosphere.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+When water evaporates, it disappears and goes away forever.
+
+CORRECTION:
+Evaporated water does not disappear—it transforms into water vapor gas that remains on Earth. Water vapor becomes part of the air and atmosphere, invisible but still present. This water vapor can condense back into liquid water (when cooled, as in forming clouds) or refreeze into ice. The water that evaporates from puddles becomes part of the atmosphere, is carried by winds, and eventually condenses into clouds, falls as rain, and is used by plants or flows to oceans again. The total amount of water on Earth has remained roughly constant for billions of years—water never leaves the planet. Evaporation is not a disappearing act but a state change, part of the continuous water cycle.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Ice is always frozen water and doesn't change unless it melts.
+
+CORRECTION:
+Ice can change state directly to water vapor through sublimation without becoming liquid first. While melting (ice to liquid) is the most common way ice changes, sublimation (ice to gas) occurs when ice is in very dry conditions where evaporation is extremely fast. This is important in dry climates where frozen laundry dries without ever becoming wet. Sublimation also occurs naturally in polar regions and at high altitudes where air is cold and dry. So ice is not necessarily stable until melted—it can transition directly to the gaseous state under appropriate conditions.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Water in all three states has the same density.
+
+CORRECTION:
+Water has different densities in different states. Liquid water is the densest at 4°C. Ice is less dense than liquid water, which is why ice floats (unusual for solids). Water vapor is much less dense than either solid or liquid water. This density difference is crucial to Earth's aquatic ecosystems: if ice were denser than liquid water and sank, all water bodies would freeze solid from the bottom up in winter, making survival impossible for aquatic life. The floating ice layer insulating the liquid water below is only possible because ice is less dense.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+The water cycle is driven by temperature alone, with no energy transfer required.
+
+CORRECTION:
+The water cycle requires constant energy input, primarily from the Sun's heat. Energy (heat) must be added to liquid water to make it evaporate (state change to gas requires energy input). Energy must be removed from water vapor for it to condense into liquid (condensation releases energy). The Sun provides the primary energy driving the water cycle by heating water bodies and causing evaporation. Without the Sun's energy continuously driving the water cycle, water would not evaporate, clouds would not form, and precipitation would not occur. The water cycle is fundamentally a heat-driven process that redistributes solar energy around the planet.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M6
+STATEMENT:
+Humidity is just water that makes the air feel sticky; it doesn't affect water behavior.
+
+CORRECTION:
+Humidity—the amount of water vapor in air—directly affects evaporation and condensation rates. Dry air can hold more water molecules before becoming saturated, so liquids evaporate faster in dry air. Humid air already contains substantial water vapor, so evaporation is slower and condensation more likely. The dew point (temperature at which condensation occurs) depends on the moisture already in the air. Understanding humidity is essential for predicting weather patterns, explaining why wet objects dry differently in humid versus dry climates, and understanding why Sri Lanka's tropical humidity affects sweating and cooling on the human body.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Molecular View of Ice Formation
+
+DESCRIPTION:
+Zoom into molecular level showing individual water molecules. Display liquid water with molecules moving randomly and closely packed. Gradually lower temperature and show molecules slowing down. At 0°C, show molecules locking into rigid geometric patterns, forming crystalline ice structure. Show how each molecule remains in a fixed position relative to neighbors. Display as temperature drops further to -10°C, -20°C, molecules vibrate less and less but remain in fixed positions. Color code: blue for ice, molecules tightly arranged in perfect grid pattern. Include text: "Solid ice: Molecules locked in rigid structure."
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Evaporation and Condensation Process
+
+DESCRIPTION:
+Start with liquid water in a glass. Show heat energy (represented as red arrows) being added. Water molecules at the surface gain energy and escape upward as gas (water vapor). Show these now-separated molecules spreading out far apart, becoming less dense. Show wind carrying the water vapor away. In a different location, show cold air (blue coloring) where water vapor encounters it. Molecules slow down and cluster together, forming visible liquid droplets (condensation). Show droplets combining. Caption: "Evaporation requires energy input; condensation releases energy." Show this as a repeating cycle.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: The Complete Water Cycle Over Sri Lanka
+
+DESCRIPTION:
+Show a map of Sri Lanka surrounded by Indian Ocean. Display the Sun's rays heating the ocean surface. Show water molecules escaping the ocean as invisible water vapor (represented by upward arrows). Show water vapor rising high into the atmosphere, cooling as it rises. At higher altitude where air is cooler, show water vapor condensing into visible cloud droplets. Show heavy clouds forming over Sri Lanka during monsoon season. Show precipitation (rain) falling from clouds onto land. Separate pathways show: some water infiltrating into soil and Tank System, some water flowing as runoff through rivers back to ocean, some water being absorbed by plants and transpired back to vapor. Show the continuous cycling: ocean → evaporation → clouds → rain → land/ocean. Label each state: "Liquid in ocean," "Gas in atmosphere," "Liquid in clouds and rain."
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Comparative View of All Three States
+
+DESCRIPTION:
+Display three containers side by side. Left container: ice with molecules arranged in tight geometric grid structure with minimal vibration. Middle container: liquid water with molecules closely packed but moving randomly, sliding past each other. Right container: gaseous water vapor with molecules far apart, moving rapidly in all directions. Include temperature scale showing 0°C boundary between solid and liquid, and 100°C boundary between liquid and gas. Show density comparison: ice molecules less dense (taking up more space per molecule), liquid molecules medium density, gas molecules very sparse. Include molecular movement indicators: ice molecules barely move, liquid molecules moving moderately, gas molecules moving very fast. Add energy scale showing melting requires less energy than evaporation.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Why Ice Floats - The Density Anomaly
+
+DESCRIPTION:
+Show cross-section of frozen water body. Bottom shows liquid water (indicated by blue). Middle shows ice layer (indicated by lighter blue with more space between molecules). Top shows ice surface. Show that ice is less dense (molecules take up more space), so ice is less heavy per unit volume than liquid water below. Use colored dots to represent molecules: more densely packed in liquid water (lower portion), less densely packed in ice (upper portion). Show fish swimming in liquid water beneath the protective floating ice layer. Include temperature scale: warmer water below ice (at ~4°C where water is most dense), colder ice above. Contrast with most substances where solid is denser and would sink. Caption: "Water's unusual property: Ice is less dense, so it floats. This saves aquatic life."
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Sri Lanka's Tank System and Water Management
+
+DESCRIPTION:
+Display a map perspective of Sri Lankan landscape with multiple ancient Tank Systems visible. Show monsoon rains falling and filling the tanks (reservoirs) with liquid water—show rainwater as blue liquid accumulating. During dry season, show water gates at tanks being opened, and water flowing downslope through channels to service paddy fields. Show farmers flooded rice paddies through the dry season using stored liquid water. Include timeline showing wet season (tank filling, evaporation occurring) and dry season (tank water release, continued evaporation). Show water levels in tank declining through dry season as water is used for irrigation and lost to evaporation. Illustrate how engineers had to account for evaporation costs when designing tank size. Demonstrate understanding of liquid water's fixed volume, flowing properties, and that evaporation removes it over time.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+By the end of this lesson, students will be able to:
+
+- Identify and describe the three physical states of water (solid, liquid, gas) and explain that they are the same chemical compound with different molecular arrangements
+
+- Explain the characteristics of water in each state: how particles are arranged, whether shape and volume are fixed, and how particles move
+
+- Understand that temperature is the primary factor determining water's state and describe how temperature changes drive state transitions
+
+- Describe melting, freezing, evaporation, condensation, and sublimation as state changes and identify which require adding energy and which release energy
+
+- Explain water's unusual density property where ice is less dense than liquid water, and describe why this is essential for aquatic life survival
+
+- Describe how water moves through the water cycle, visiting all three states, and explain the role of evaporation, condensation, and precipitation
+
+- Identify examples of water in all three states in their daily lives and in Sri Lanka's environment and climate
+
+- Explain water as a universal solvent and describe how this property supports life and geochemical cycles
+
+- Apply understanding of water states and state changes to explain observations like dew forming, puddles disappearing, and sweating cooling the body
+
+- Understand how Sri Lanka's climate, agriculture, and water management systems depend on understanding the water cycle and water's physical properties
+
+==================================================
+SECTION: SUMMARY
+Water is the only common substance on Earth that naturally exists in all three physical states: solid (ice), liquid (water), and gas (steam or water vapor). The state of water depends primarily on temperature. Water molecules in solid form are packed tightly in an organized geometric structure where they vibrate but remain in fixed positions. In liquid form, molecules move freely while remaining close together, giving water the ability to flow and take the shape of containers while maintaining fixed volume. In gaseous form, molecules spread far apart and move rapidly in all directions, filling all available space. Water undergoes reversible state changes: melting and freezing occur at 0°C, while evaporation and condensation occur across a range of temperatures. Evaporation requires significantly more energy than melting because molecules must move much farther apart. Water exhibits unusual behavior where ice is less dense than liquid water, causing ice to float—this property is essential for aquatic ecosystems to survive winter freezing. Water is the universal solvent, capable of dissolving more substances than almost any other liquid, making it essential for all life processes and geochemical cycles. The water cycle continuously recycles water through all three states: evaporation from oceans and surface water → condensation in the atmosphere forming clouds → precipitation as rain or snow → infiltration into soil and flow as rivers → back to oceans. In Sri Lanka specifically, the tropical island climate creates high humidity and distinctive monsoon seasons that drive intense evaporation and precipitation cycles. Sri Lankan agriculture and water management systems, particularly the ancient Tank Systems (Wewa), were developed with sophisticated understanding of liquid water's properties and the monsoon-driven water cycle, demonstrating how water's physical properties are fundamental to human civilization and survival.

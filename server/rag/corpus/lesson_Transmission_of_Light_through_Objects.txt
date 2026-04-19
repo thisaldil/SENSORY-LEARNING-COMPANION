@@ -1,0 +1,270 @@
+LESSON_ID: SCI_G6_LIGHT_TRANSMISSION_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Transmission of Light through Objects
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_01
+NAME: Transparent Materials
+DEFINITION:
+Transparent materials allow almost all incident light to pass through them clearly, enabling distinct visibility of objects on the other side.
+
+KEY_POINTS:
+- Light passes through with minimal obstruction.
+- Images appear clear and sharp.
+- Particles are arranged to allow straight-line travel of light.
+- Used where visibility is required.
+
+EXAMPLES:
+Clear glass, clean water, air, cellophane paper.
+Spectacles and car windscreens.
+
+KEYWORDS:
+transparent, clear image, light transmission
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_02
+NAME: Translucent Materials
+DEFINITION:
+Translucent materials allow some light to pass through, but scatter it in different directions, producing blurred images.
+
+KEY_POINTS:
+- Light partially passes through.
+- Internal structure causes scattering.
+- Images appear blurred.
+- Useful for privacy with light.
+
+EXAMPLES:
+Frosted glass, tissue paper, oiled paper, certain plastics.
+Bathroom windows.
+
+KEYWORDS:
+translucent, scattering, blurred image
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_03
+NAME: Opaque Materials
+DEFINITION:
+Opaque materials do not allow light to pass through. They either absorb or reflect the light completely.
+
+KEY_POINTS:
+- No light transmission.
+- Cannot see through them.
+- Create shadows.
+- Provide privacy and protection.
+
+EXAMPLES:
+Wood, metal, bricks, cardboard, stones.
+House walls.
+
+KEYWORDS:
+opaque, absorption, reflection, no transmission
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_04
+NAME: Scattering of Light
+DEFINITION:
+Scattering occurs when light rays change direction after striking particles inside a material, preventing clear image formation.
+
+KEY_POINTS:
+- Light travels in straight lines.
+- Uneven internal structure causes scattering.
+- Responsible for blurring in translucent materials.
+- Explains mist and fog visibility effects.
+
+EXAMPLES:
+Flashlight glow through hand.
+Misty morning in Nuwara Eliya.
+Frosted glass.
+
+KEYWORDS:
+scattering, light rays, direction change
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_05
+NAME: Shadow Formation
+DEFINITION:
+Shadows form when opaque objects block light traveling in straight lines.
+
+KEY_POINTS:
+- Light travels in straight lines.
+- Opaque objects block light.
+- Umbra is the darkest central region.
+- Penumbra is the lighter outer region.
+
+EXAMPLES:
+Shadow of coconut tree in sunlight.
+Shadow of a ball under a lamp.
+
+KEYWORDS:
+shadow, umbra, penumbra, light blockage
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_06
+NAME: Effect of Thickness and Color
+DEFINITION:
+The transparency of a material may depend on its thickness and color, which influence light absorption and filtering.
+
+KEY_POINTS:
+- Thin materials may be transparent.
+- Thick layers may become opaque.
+- Colored glass filters specific wavelengths.
+- Deep water absorbs light gradually.
+
+EXAMPLES:
+Ocean appearing dark at depth.
+Colored window glass.
+Thin wood slice allowing faint light.
+
+KEYWORDS:
+thickness, absorption, color filter
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_07
+NAME: Light Transmission in Technology
+DEFINITION:
+Modern technologies rely on controlled transmission of light through transparent materials.
+
+KEY_POINTS:
+- Fiber optic cables use transparent glass.
+- Light signals reflect internally inside fibers.
+- Transparency prevents signal loss.
+- Slight opacity weakens signals.
+
+EXAMPLES:
+High-speed internet through fiber optics.
+
+KEYWORDS:
+fiber optics, signal transmission, internal reflection
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: LT_08
+NAME: Biological and Environmental Applications
+DEFINITION:
+Light transmission plays a vital role in natural processes and environmental visibility.
+
+KEY_POINTS:
+- Leaf epidermis is transparent for photosynthesis.
+- Mist makes air translucent.
+- Clouds form through light scattering.
+- Plants require light penetration for food production.
+
+EXAMPLES:
+Photosynthesis in leaves.
+Foggy weather reducing visibility.
+
+KEYWORDS:
+photosynthesis, leaf epidermis, atmosphere, mist
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_LT_01
+FROM: Opaque Materials
+TO: Shadow Formation
+EXPLANATION:
+Shadows are created because opaque materials block light traveling in straight lines.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_LT_02
+FROM: Translucent Materials
+TO: Scattering of Light
+EXPLANATION:
+The internal structure of translucent materials scatters light, causing blurred images.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_LT_03
+FROM: Transparency
+TO: Fiber Optic Communication
+EXPLANATION:
+High transparency allows light signals to travel long distances without significant loss.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_LT_01
+TITLE: Bathroom Privacy Glass
+
+DESCRIPTION:
+Frosted glass allows light to enter but scatters it, preventing clear visibility from outside.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_LT_02
+TITLE: Coconut Tree Shadow
+
+DESCRIPTION:
+Sunlight blocked by a coconut tree creates a distinct shadow with darker and lighter regions.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_LT_03
+TITLE: Misty Morning Visibility
+
+DESCRIPTION:
+Tiny water droplets in mist scatter light, reducing visibility and making distant objects appear blurred.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_LT_01
+STATEMENT:
+Translucent materials do not allow light to pass at all.
+
+CORRECTION:
+Translucent materials allow some light to pass but scatter it, creating blurred images.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_LT_02
+STATEMENT:
+Transparent objects do not affect light.
+
+CORRECTION:
+Transparent materials allow light to pass but may refract or slightly alter its direction.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_LT_03
+STATEMENT:
+Thick transparent materials always remain transparent.
+
+CORRECTION:
+Increased thickness can absorb more light, reducing transparency.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_LT_01
+TITLE: Transparent vs Translucent vs Opaque Comparison
+
+DESCRIPTION:
+Display three panels showing light rays passing clearly through transparent material, scattering through translucent material, and being blocked by opaque material.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_LT_02
+TITLE: Shadow Formation Diagram
+
+DESCRIPTION:
+Illustrate a light source, opaque object, and screen showing umbra and penumbra regions.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Classify materials as transparent, translucent, or opaque.
+- Explain how scattering causes blurred images.
+- Describe shadow formation including umbra and penumbra.
+- Explain how thickness and color affect light transmission.
+- Identify technological and biological applications of light transmission.
+
+==================================================
+SECTION: SUMMARY
+Materials differ in how they transmit light. Transparent materials allow light to pass clearly, translucent materials scatter light causing blurred images, and opaque materials block light completely. These properties explain shadow formation, atmospheric effects, fiber optic communication, and photosynthesis in plants.

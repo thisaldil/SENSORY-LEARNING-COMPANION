@@ -1,0 +1,471 @@
+LESSON_ID: SCI_G6_MATTER_AND_ENERGY
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Matter and Energy
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Matter Definition and Characteristics
+DEFINITION:
+Matter is anything that has mass and occupies space (volume), composed of particles that take up physical room and can be measured, weighed, and sometimes touched.
+
+KEY_POINTS:
+
+Matter has mass (amount of substance measured in grams or kilograms).
+Matter occupies space (takes up volume measured in liters or cubic meters).
+All physical objects are matter.
+Matter can be solid, liquid, or gas.
+Examples include pens, water, air, tables, milk, rocks, and books.
+Matter cannot be created or destroyed in chemical reactions.
+Matter can change forms but remains as matter.
+
+EXAMPLES:
+A pen is matter - it has mass and occupies space on your desk, water in a container has mass and fills the container space, air in a balloon has mass (balloon is heavier when filled) and occupies the space inside, tables and chairs are solid matter with definite shape and volume.
+
+KEYWORDS:
+matter, mass, volume, occupies space, substance, particles, weight, physical objects
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Energy Definition and Characteristics
+DEFINITION:
+Energy is the power or ability to do work and cause change, without having mass or occupying space like matter, existing in various forms that can transform into other types.
+
+KEY_POINTS:
+
+Energy does not have mass.
+Energy does not occupy space.
+Energy is the ability to do work or cause change.
+Without energy nothing happens or changes.
+Energy exists everywhere in the universe.
+Energy can change from one form to another.
+Energy can be stored in potential forms (like battery) and released as active forms.
+Multiple forms of energy exist with different properties.
+
+EXAMPLES:
+Light energy from bulbs illuminates spaces, heat energy from fire warms objects, sound energy from voice carries messages, electrical energy from outlets powers devices, chemical energy in food provides body fuel.
+
+KEYWORDS:
+energy, power, work, change, motion, invisible, transformation, ability, forms of energy
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Mass and Volume - Matter's Measurable Properties
+DEFINITION:
+Mass is the amount of matter (substance) contained in an object measured in units like grams or kilograms, while volume is the space that matter occupies measured in liters or cubic meters.
+
+KEY_POINTS:
+
+Mass measures amount of substance in object.
+Mass is measured using balances and scales.
+International unit for mass is kilogram (kg).
+Other mass units include grams (g) and milligrams (mg).
+Volume measures space taken up by matter.
+Volume is measured using measuring cylinders or rulers.
+Volume can be measured in liters, milliliters, or cubic meters.
+Same material has different masses if volumes differ.
+
+EXAMPLES:
+A heavy rock has more mass than light cotton ball same size, a large water container has more volume than small cup even if both contain water, a balloon filled with air has more mass and volume than deflated balloon that has no air inside.
+
+KEYWORDS:
+mass, volume, grams, kilograms, liters, measurement, substance amount, space occupied, scales, balances
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Air as Invisible Matter
+DEFINITION:
+Air is matter even though invisible because it has mass and occupies space, provable through experiments showing air's weight and volume despite being unable to see it.
+
+KEY_POINTS:
+
+Air is matter even though we cannot see it.
+Air has mass (weight) even though invisible.
+Air occupies space just like solid or liquid matter.
+Balloon filled with air is heavier than empty balloon.
+Air inside balloon takes up space preventing water entry.
+Atmospheric pressure is created by air's mass above Earth.
+Air pressure is vital for weather patterns.
+Air pressure is necessary for breathing.
+Upside-down glass in water experiment proves air occupies space.
+When glass pushed down into water air inside prevents water entry.
+
+EXAMPLES:
+Upside-down glass submerged in water - water does not enter because air inside occupies that space creating pressure barrier, bicycle pump moving air feels resistance because air has mass and weight, balloon filled with air is noticeably heavier than empty balloon demonstrating air has mass, air pressure enables drinking through straw because pressure difference moves liquid.
+
+KEYWORDS:
+air as matter, invisible matter, air mass, air pressure, volume of air, atmospheric pressure, air weight, gas matter
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Energy Forms and Transformations
+DEFINITION:
+Energy exists in multiple forms including heat, light, sound, electrical, mechanical, chemical, and nuclear, with ability to transform from one form to another while total energy remains constant.
+
+KEY_POINTS:
+
+Heat energy is thermal energy from particle motion.
+Light energy enables vision and travels from sources.
+Sound energy is produced by vibrations.
+Electrical energy powers devices and appliances.
+Mechanical energy is energy of motion and position.
+Chemical energy is stored in bonds of matter (food, fuel, batteries).
+Nuclear energy is stored in atoms and released by splitting/fusing.
+Wind energy is mechanical energy of moving air.
+Energy transforms between forms constantly.
+Total energy in system stays constant (conservation).
+
+EXAMPLES:
+Electric bulb transforms electrical energy into light and heat energy, burning wood transforms chemical energy into heat and light energy, moving car transforms chemical energy (fuel) into mechanical energy (motion) and heat, turbine in hydropower dam transforms mechanical energy of water into electrical energy for homes.
+
+KEYWORDS:
+heat energy, light energy, sound energy, electrical energy, mechanical energy, chemical energy, nuclear energy, wind energy, energy transformation, energy forms
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Sun as Primary Energy Source
+DEFINITION:
+The Sun is the ultimate primary energy source for nearly all life and processes on Earth, providing heat energy that warms the planet and light energy that plants use for photosynthesis.
+
+KEY_POINTS:
+
+Sun produces enormous energy continuously.
+Solar energy reaches Earth providing heat.
+Solar energy provides light for vision.
+Plants capture solar energy in photosynthesis.
+Animal food chains depend on plant photosynthesis.
+Solar energy creates weather patterns.
+Solar energy powers evaporation and water cycle.
+Without Sun's energy Earth would be cold and lifeless.
+Solar energy has been storing for millions of years in fossil fuels.
+
+EXAMPLES:
+Sunlight warms your skin showing direct heat transfer, plants grow using photosynthesis powered by sunlight, rain cycle powered by solar heating causing evaporation, fossil fuels formed from ancient plants that captured solar energy millions of years ago, food eaten today ultimately originates from plants powered by historical solar energy.
+
+KEYWORDS:
+Sun, solar energy, primary source, heat, light, photosynthesis, weather, water cycle, fossil fuels, energy source
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Conservation of Matter and Energy
+DEFINITION:
+Matter and energy cannot be created or destroyed in any process, only changing forms while remaining in constant total quantity, fundamental principle explaining how universe maintains balance.
+
+KEY_POINTS:
+
+Matter cannot be created from nothing.
+Matter cannot be destroyed completely.
+Energy cannot be created from nothing.
+Energy cannot be destroyed completely.
+Matter transforms between forms (solid to liquid to gas).
+Energy transforms between different forms.
+When wood burns it becomes ash, smoke, heat, and light.
+Total mass/energy before and after reaction equals.
+Understanding conservation helps manage resources.
+Chemical reactions rearrange matter but total remains same.
+
+EXAMPLES:
+Burning wood - solid wood (matter) becomes ash (solid matter), smoke (gaseous matter), heat (energy), and light (energy) with total mass/energy unchanged, ice melting becomes water (phase change) with same total mass, food digestion breaks matter into usable forms while energy extraction powers body, fossil fuels burning releases stored ancient solar energy proving energy conservation across millions of years.
+
+KEYWORDS:
+conservation of matter, conservation of energy, transformation, cannot be created, cannot be destroyed, balanced equation, phase changes, chemical reactions, total amount remains
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Tangibility - Distinguishing Matter and Energy
+DEFINITION:
+Tangibility refers to the property of being physically touchable and visible, with matter generally being tangible while energy is intangible, perceived through senses indirectly.
+
+KEY_POINTS:
+
+Matter is usually tangible - can interact with physical form.
+Energy is intangible - cannot hold or touch directly.
+Matter can be seen with eyes (most of time).
+Energy is perceived through sensing effects not the energy itself.
+Heat energy felt as warmth but not seen.
+Light energy seen as illumination source.
+Sound energy heard as vibrations not seen.
+This distinction helps identify if something is matter or energy.
+Some matter is invisible (air) but still has tangible properties.
+
+EXAMPLES:
+Desk (matter) can be touched and seen with eyes, sunlight (energy) cannot be touched but felt as warmth and seen as illumination, sound (energy) cannot be touched but felt as vibrations and heard by ears, air (matter) cannot be seen but can feel wind and see effects, food (matter) can be touched and eaten, hunger (response to need) can be felt but no tangible form.
+
+KEYWORDS:
+tangibility, tangible, intangible, touchable, visible, perceive through senses, matter properties, energy effects
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Energy Storage and Release
+DEFINITION:
+Energy can be stored in potential forms (stored capacity to do work) and released as active kinetic forms (active work being done), with different storage mechanisms for different energy types.
+
+KEY_POINTS:
+
+Potential energy is stored energy with capacity to do work.
+Kinetic energy is active energy of motion.
+Chemical energy stored in matter (batteries, food, fuel).
+Stretched rubber band stores elastic potential energy.
+Water at height stores gravitational potential energy.
+Batteries store electrical energy chemically.
+Compressed springs store mechanical potential energy.
+Stored energy can be released to perform work.
+Energy storage enables later use when needed.
+
+EXAMPLES:
+Battery (matter) stores chemical energy that can be released to power device, food (matter) stores chemical energy that body releases for activity and growth, water behind dam stores gravitational potential energy that converts to electrical energy when released through turbines, wound-up toy stores mechanical energy that releases as motion when released.
+
+KEYWORDS:
+potential energy, kinetic energy, stored energy, chemical storage, elastic potential, gravitational potential, energy release, work capacity, storage mechanism
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Matter and Energy in Daily Life and Sri Lanka
+DEFINITION:
+All daily activities involve interactions of matter and energy - consuming food matter for energy, using electrical energy to power matter devices, and Sri Lanka increasingly utilizing renewable energy from solar and wind.
+
+KEY_POINTS:
+
+Breakfast involves consuming food matter for chemical energy.
+Computer uses matter (plastic/metal parts) with electrical energy.
+Transportation uses fuel matter with combustion energy.
+Lighting uses electrical energy converting to light in matter.
+Cooking applies heat energy to matter changing properties.
+Sri Lanka uses hydropower converting water motion to electricity.
+Sri Lanka abundant with solar energy year-round.
+Coastal areas have wind energy potential.
+Traditional biomass (wood, coconut) used for cooking.
+Imported oil and diesel power vehicles.
+Moving toward renewable energy protects environment.
+Understanding matter/energy helps manage resources.
+
+EXAMPLES:
+Eating breakfast - consume food matter to gain chemical energy for body to move and grow and think, using computer - matter device uses electrical energy creating light energy for screen display and heat energy from operation, cooking dinner - apply heat energy to food matter chemically transforming it into edible nutritious form, Sri Lankan hydroelectric dams convert flowing water matter-motion into electrical energy transmitting to homes and businesses.
+
+KEYWORDS:
+daily life, breakfast, computer, cooking, transportation, Sri Lanka, hydropower, solar power, wind energy, renewable energy, biomass, environmental protection, resource management
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Matter Definition and Characteristics
+TO: Energy Definition and Characteristics
+EXPLANATION:
+Matter and energy are fundamentally different substances with distinct properties - matter has mass and occupies space while energy does not, yet both exist together in universe with energy acting upon matter causing transformations.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Energy Forms and Transformations
+TO: Sun as Primary Energy Source
+EXPLANATION:
+The Sun provides the original energy source from which nearly all other energy forms ultimately derive - solar energy is captured by plants, stored in chemical bonds, and released as various energy forms throughout food chains and through fossil fuel combustion.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Conservation of Matter and Energy
+TO: Energy Forms and Transformations
+EXPLANATION:
+Energy transformation follows conservation principle - when energy changes from one form to another (electrical to heat and light), total energy amount remains constant with no energy created or lost in transformation.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Air as Invisible Matter
+TO: Tangibility - Distinguishing Matter and Energy
+EXPLANATION:
+Air demonstrates that matter can be invisible and therefore intangible to sight yet still possess physical properties (mass, volume, pressure), challenging the assumption that only visible things are matter.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Energy Storage and Release
+TO: Energy Forms and Transformations
+EXPLANATION:
+Stored potential energy in matter (batteries, fuel, food) must be released and transformed into active kinetic energy forms to perform useful work, forming cycle of storage, transformation, and release.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Matter and Energy in Daily Life and Sri Lanka
+TO: Conservation of Matter and Energy
+EXPLANATION:
+Understanding conservation principles enables Sri Lanka and individuals to manage daily resources efficiently - recognizing that matter and energy cannot be created but only transformed helps prioritize renewable sources and reduce waste.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Breakfast Meal - Matter and Energy Transformation
+
+DESCRIPTION:
+When you eat breakfast you consume food matter (cereal, milk, fruit, bread) which is physical substance with mass and volume. The food contains chemical energy stored in its molecular bonds from original sources (grains from photosynthesis, milk from cow consuming plants, fruit from photosynthesis). Your body digests food matter breaking it into smaller pieces and extracting chemical energy. This extracted energy powers your body - enabling muscle movement for getting dressed, enabling brain function for thinking about school day, enabling growth and repair of body tissues. The matter is transformed into body tissue and waste materials, while energy is released and used for activity. This daily process demonstrates how matter and energy interconnect and transform continuously.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Electric Bulb - Energy Transformation Chain
+
+DESCRIPTION:
+An electric bulb demonstrates energy transformation: Electrical energy travels through wires from power source to bulb filament. Inside bulb filament (made of tungsten matter), electrical energy is transformed into two forms - heat energy (making filament extremely hot ~2700°C) and light energy (visible illumination). Heat and light energy are released from bulb matter radiating outward. The light energy travels to your eyes enabling vision. The heat energy warms surrounding air and nearby objects. Going further back the electrical energy was generated at power plant (which may be hydropower converting water motion to electricity, or fossil fuel combustion converting chemical energy to electrical energy). This chain shows how matter (bulb filament, water, fuel) and various energy forms interconnect with constant transformation.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Burning Wood - Matter-Energy Transformation
+
+DESCRIPTION:
+When you burn wood in fire, solid wood matter is transformed into multiple forms demonstrating conservation principle: The original wood contains chemical energy (stored from photosynthesis capturing solar energy). When burned oxygen molecules react with wood molecules in combustion reaction. The wood is transformed into ash (solid matter remaining), smoke/gases (gaseous matter released), heat energy (thermal energy warming surroundings), and light energy (visible flames). If you collect and weigh all products (ash, gases, heat released, light released), the total mass-energy equals the original wood plus oxygen. Nothing is created or destroyed, only transformed. This example clearly demonstrates conservation of matter and energy while showing multiple energy forms (heat, light) released from chemical transformation.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Sri Lankan Hydropower Dam Converting Water 
+
+DESCRIPTION:
+Sri Lankan hydroelectric dams (Victoria, Randenigala, Kotmale) demonstrate practical energy transformation: Water behind dam stores gravitational potential energy - the higher the dam the more energy stored. When dam gates open water flows downward converting potential energy to kinetic energy of motion. The fast-moving water strikes turbine blades causing them to spin rapidly. Turbine motion (mechanical energy) rotates generators converting mechanical energy to electrical energy. Electrical energy travels through power lines to homes and businesses powering lights, computers, refrigerators, and other appliances. This chain shows how water matter's position stores energy, position-change releases energy, mechanical motion converts to electrical energy, and electrical energy powers daily life. The process demonstrates conservation (water energy transforms to electricity doesn't disappear), energy transformation (potential to kinetic to mechanical to electrical), and practical application demonstrating Sun's stored energy over geological time scales.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Balloon Experiment Proving Air is Matter
+
+DESCRIPTION:
+Take two identical balloons - one empty and one filled with air. Using sensitive scale compare the weights: the air-filled balloon weighs noticeably more than the empty balloon even though both appear same size. This weight difference proves air has mass. Additionally performing experiment - push an empty glass upside down into water. Despite pushing glass below water surface, water cannot enter the glass because air inside the glass occupies the space creating pressure that keeps water out. Tilt glass to one side and air bubbles escape upward while water enters from bottom - demonstrating that air took up the space preventing water. These experiments prove air is matter because it has mass (weight) and occupies space (volume) despite being invisible to eyes. This challenges misconception that only visible things are matter.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Energy is a physical substance like matter that you can touch and hold.
+
+CORRECTION:
+Energy is not a physical substance - it has no mass and occupies no space like matter does. Energy cannot be touched or held directly. We only perceive energy through its effects (feeling warmth from heat energy, seeing light from light energy, hearing sound from sound energy). Energy is the ability to do work and cause change in matter, not a substance itself.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Air is not matter because you cannot see it and you cannot hold it in your hand.
+
+CORRECTION:
+Air is definitely matter because it has mass (proven by weighing filled vs empty balloon) and occupies space (proven by upside-down glass in water experiment air preventing water entry). Not all matter is visible - some matter like air and gases are invisible but still have physical properties of mass and volume. The ability to see something is not the definition of matter.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Energy is created when something burns or when you plug in an appliance.
+
+CORRECTION:
+Energy cannot be created - it only transforms from one form to another. When wood burns chemical energy stored in wood is released as heat and light energy. When you plug in appliance electrical energy from power source is transformed into other forms (heat in heater, light in bulb, motion in fan). The energy already existed before - it just changed form. This is conservation of energy principle.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Matter can be completely destroyed when burned or broken apart.
+
+CORRECTION:
+Matter cannot be destroyed completely. When something burns it transforms into other forms of matter (ash, smoke, gases) and releases energy, but total matter remains. When something breaks into pieces the pieces are still matter adding up to original amount. Conservation of matter means total mass remains constant through transformations. Objects may change form or location but mass cannot disappear.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Energy storage is separate from matter - you can store energy anywhere without matter being involved.
+
+CORRECTION:
+Energy cannot be stored without matter. Energy must be stored in some form of matter - batteries store chemical energy in chemicals, water behind dam stores gravitational potential energy due to its mass and position, springs store mechanical energy in their physical structure, food stores chemical energy in its molecular matter. All energy storage requires matter as the medium.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M6
+STATEMENT:
+Sri Lanka should rely only on fossil fuels (oil, diesel, coal) for energy because they are most reliable.
+
+CORRECTION:
+While fossil fuels are currently important, Sri Lanka has abundant renewable energy resources. Year-round strong sunlight makes solar power highly viable. Coastal winds enable wind power generation. Hydropower from rivers and dams provides renewable electricity. Biomass from agricultural waste provides energy. Renewable sources are more sustainable reducing environmental pollution and dependence on imported fuels. Diversifying energy sources among renewables and conventional sources creates more reliable resilient system.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Matter vs Energy Visual Comparison
+
+DESCRIPTION:
+Split-screen animation: Left side shows matter examples (rock, water, air in balloon, food, desk) each labeled showing they have mass, occupy space, usually visible/tangible. Right side shows energy examples (light from bulb, heat from fire, sound waves, electrical current) each labeled showing they have no mass, don't occupy space, perceived through effects. Animated text summarizes distinctions. Objects on left side shown with measurement tools (scales for mass, containers for volume). Right side energy shown with sensors detecting heat, light, sound without physical containment.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Balloon Experiment Proving Air Exists
+
+DESCRIPTION:
+Animated laboratory experiment: Empty balloon and air-filled balloon on balance scale - air-filled balloon tips scale showing heavier weight. Then sequence showing glass pushed upside down into water basin - water cannot enter because air inside prevents it (air shown as invisible but present). Tilt glass slightly and air bubbles shown escaping upward while water enters from bottom. Graphics show air taking up space - volume visualization. Compare before/after water levels. Annotation explains: mass proven by weight difference, space proven by water displacement.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Electric Bulb Energy Transformation
+
+DESCRIPTION:
+Diagram of lightbulb showing electrical energy entering through base wires. Animation shows electrical energy in wires converting within filament into two paths: heat energy (shown as red/orange color and temperature indicator reaching 2700°C) and light energy (shown as yellow/white glow radiating outward). Arrows show energy transformation. Animation zooms into filament structure at molecular level showing electron movement creating heat through resistance and accelerated electrons emitting photons as light. Then zooms back out showing light energy rays traveling to human eye and heat energy radiating to surrounding air - both demonstrating energy leaving filament after transformation.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Wood Burning - Matter and Energy Conservation
+
+DESCRIPTION:
+Animation showing wooden log before burning. Chemical bonds in wood molecules shown at molecular level storing energy (from ancient photosynthesis). Ignition occurs and combustion reaction begins. Animation tracks transformations: wood matter breaks down into ash (collected in bottom), smoke and gases released upward (gaseous matter), heat energy radiating outward, light energy visible as flames. Molecular animation shows rearrangement of atoms from wood + oxygen into ash + carbon dioxide + water vapor + heat + light. Equation-style display showing: Wood + Oxygen → Ash + Gases + Heat + Light with notation that total matter and energy input equals total matter and energy output (conservation).
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Sri Lankan Hydropower - Water to Electricity
+
+DESCRIPTION:
+Animated hydroelectric dam cross-section: Water behind dam shown at height storing potential energy (visualized as compressed spring indicator). Dam gates open and water flows downward (potential converts to kinetic energy shown as flowing motion animation). Water strikes turbine blades causing rapid rotation (mechanical energy). Turbine connects to generator shown spinning rapidly converting mechanical rotation into electrical energy (shown as electrical current visualization and lightning bolts). Electrical power lines carry electricity from dam to distant city where it illuminates street lights, powers homes shown with lit windows, computers running in offices, and refrigerators in homes. Animation traces energy chain: water position → water motion → mechanical rotation → electrical current → useful work in homes. Loop shows seasonal variation with more water during monsoon season increasing power generation.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Food Digestion - Matter-Energy Processing
+
+DESCRIPTION:
+Animation of breakfast meal entering human body system. Food matter (cereal, milk, fruit) shown entering mouth and moving through digestive system. Animation shows digestion breaking food matter into molecular components. Graphics zoom in showing chemical bonds in food molecules containing stored chemical energy (originally from plant photosynthesis). Digestive process shown breaking these bonds releasing energy. Energy depicted flowing to muscles (shows muscles contracting), to brain (shows neurons firing), to body repair tissues (cells growing and regenerating). Matter transformations shown - food converted to body tissue, energy extracted and used for work, excess matter eliminated as waste. Timeline shows energy being used throughout day for all activities.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Energy Storage and Release Cycle
+
+DESCRIPTION:
+Circular animation showing energy storage-release cycle: Battery shown storing chemical energy shown as compressed spring visualization. When connected to circuit battery discharges (spring released) providing electrical energy shown as current flowing. Electrical energy reaches light bulb transforming to light and heat (shown as glow and heat radiation). Light travels to eye (vision), heat radiates to surroundings (warming). Separately show water stored behind dam potential energy converts through turbine to kinetic then electrical energy. Food chemical energy stored in molecules converts through digestion to body energy for work. Show stretched rubber band storing elastic energy converting to motion when released. Each example cycles through storage-release-transformation-work loop demonstrating common pattern.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Define matter as anything with mass and occupying space (like pens, water, air, food, rocks) and distinguish it from energy which has no mass and occupies no space (like light, heat, sound), explaining that both matter and energy exist in universe with energy acting to transform matter.
+
+Explain conservation principle stating matter and energy cannot be created or destroyed only transformed between forms, using examples like burning wood transforming into ash/gases/heat/light or electrical to heat and light in bulbs.
+
+Identify multiple forms of energy (heat, light, sound, electrical, mechanical, chemical, nuclear) and explain energy transformation between forms, recognizing Sun as primary energy source powering nearly all Earth processes through photosynthesis.
+
+Apply matter-energy concepts to daily life examples (breakfast digestion, bulb illumination, Sri Lankan hydropower) and recognize practical applications in managing resources, understanding renewable energy sources (solar, wind, hydropower), and making environmentally responsible decisions.
+
+==================================================
+SECTION: SUMMARY
+Matter is anything that has mass and occupies space including visible objects like desks and water plus invisible matter like air whose existence is proven through experiments showing air has weight and takes up space, fundamentally distinguished from energy which has no mass and occupies no space but instead represents the ability to do work and cause change visible only through effects like heat warmth, light illumination, and sound vibrations. Energy exists in multiple interconnected forms including heat energy from thermal molecular motion, light energy enabling vision from sources like the Sun and bulbs, sound energy from vibrations, electrical energy powering devices, mechanical energy of motion and position, chemical energy stored in molecular bonds of food and fuel, nuclear energy within atoms, and wind energy from moving air, with all forms capable of transforming into other types following the fundamental conservation law prohibiting creation or destruction of either matter or energy. The Sun serves as the primary energy source for nearly all Earth processes providing heat warming the planet and light energy captured by plants in photosynthesis to create food fueling entire food chains, while energy transformation chains show electrical energy in bulbs converting to light and heat energy, burning wood releasing stored chemical energy as heat and light while matter transforms to ash and gases maintaining total mass-energy, water behind hydroelectric dams storing gravitational potential energy converting to kinetic energy flowing downward to mechanical energy spinning turbines finally becoming electrical energy powering homes. Matter and energy relate intimately in daily life: consuming food matter at breakfast extracts chemical energy powering body for movement and thought and growth, using computer device made of matter uses electrical energy transforming into light for vision and heat from operation, cooking applies heat energy to food matter chemically transforming properties to create nutrition, while Sri Lanka increasingly utilizes renewable energy such as abundant year-round solar power, coastal wind energy generation, hydroelectric stations converting river water motion to electricity, and traditional biomass from agricultural waste, recognizing that understanding matter and energy conservation helps manage limited resources sustainably reducing environmental impact through efficient energy use and renewable source prioritization.

@@ -1,0 +1,210 @@
+LESSON_ID: SCI_G6_CLIMATE_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Climate
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CL_01
+NAME: Climate
+DEFINITION:
+Climate is the average weather condition of a place over a long period of time, usually 30 years or more.
+
+KEY_POINTS:
+- Weather changes daily.
+- Climate describes long-term patterns.
+- Climate is more stable than weather.
+
+EXAMPLES:
+Rain falling today is weather.
+Sri Lanka having rainy months every year is climate.
+
+KEYWORDS:
+average weather, long-term, pattern, temperature
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CL_02
+NAME: Weather
+DEFINITION:
+Weather is the condition of the atmosphere at a specific time and place.
+
+KEY_POINTS:
+- Weather changes from hour to hour.
+- It includes rain, sunshine, wind, and temperature.
+- Weather can be measured daily.
+
+EXAMPLES:
+A sunny afternoon.
+A rainy morning.
+
+KEYWORDS:
+daily change, rain, wind, temperature
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CL_03
+NAME: Factors Affecting Climate
+DEFINITION:
+Several factors determine the climate of a region.
+
+KEY_POINTS:
+- Distance from the equator
+- Altitude (height above sea level)
+- Distance from the sea
+- Rainfall patterns
+
+KEYWORDS:
+equator, altitude, sea, rainfall
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CL_04
+NAME: Altitude Effect
+DEFINITION:
+Temperature decreases as altitude increases.
+
+KEY_POINTS:
+- Higher places are cooler.
+- Temperature drops about 6.5°C per 1,000 meters.
+- Hill country areas are cooler than coastal areas.
+
+EXAMPLES:
+Nuwara Eliya is cooler than Colombo.
+Mountain climbers wear jackets.
+
+KEYWORDS:
+height, cooler, mountain, temperature
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CL_05
+NAME: Ocean Influence
+DEFINITION:
+The ocean helps control temperature in coastal areas.
+
+KEY_POINTS:
+- Water heats up slowly.
+- Water cools down slowly.
+- Coastal areas have moderate temperatures.
+
+EXAMPLES:
+Colombo does not become extremely hot or cold.
+Sea breeze cools land during the day.
+
+KEYWORDS:
+sea breeze, coastal, moderate temperature
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CL_06
+NAME: Monsoons
+DEFINITION:
+Monsoons are seasonal winds that bring rain.
+
+KEY_POINTS:
+- South-West Monsoon brings rain to the south and west.
+- North-East Monsoon brings rain to the north and east.
+- Farmers depend on monsoon seasons.
+
+EXAMPLES:
+Yala season farming.
+Maha season farming.
+
+KEYWORDS:
+seasonal wind, rainfall, Yala, Maha
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CL_07
+NAME: Climate Change
+DEFINITION:
+Climate change is the long-term change in Earth’s climate caused mainly by human activities.
+
+KEY_POINTS:
+- Burning fuels increases carbon dioxide.
+- Extra greenhouse gases trap more heat.
+- Climate change causes floods and droughts.
+
+EXAMPLES:
+Unusual heavy rain in Sri Lanka.
+Rising sea levels.
+
+KEYWORDS:
+greenhouse effect, CO2, global warming
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CL_01
+FROM: Weather
+TO: Climate
+EXPLANATION:
+Climate is the long-term average of weather conditions.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CL_02
+FROM: Altitude
+TO: Temperature
+EXPLANATION:
+As altitude increases, temperature decreases.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CL_03
+FROM: Ocean
+TO: Temperature Stability
+EXPLANATION:
+The ocean reduces extreme temperature changes.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CL_01
+TITLE: Road Trip from Colombo to Nuwara Eliya
+
+DESCRIPTION:
+Colombo is hot and humid.
+As you travel uphill, temperature decreases.
+Nuwara Eliya is much cooler due to altitude.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CL_02
+TITLE: Sea Breeze Effect
+
+DESCRIPTION:
+Land heats faster than water during the day.
+Hot air rises over land.
+Cool air from the ocean moves in.
+This creates a sea breeze.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_CL_01
+STATEMENT:
+Weather and climate are the same thing.
+
+CORRECTION:
+Weather is short-term change, while climate is the long-term pattern.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_CL_01
+TITLE: Climate Zones of Sri Lanka
+
+DESCRIPTION:
+Show a map of Sri Lanka divided into Wet Zone, Dry Zone, Intermediate Zone, and Hill Country. Use different colors and temperature labels.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Define climate and weather.
+- Identify factors affecting climate.
+- Explain monsoons in Sri Lanka.
+- Describe how altitude affects temperature.
+- Understand basic ideas of climate change.
+
+==================================================
+SECTION: SUMMARY
+Climate describes long-term weather patterns of a place. It is influenced by altitude, distance from the equator, rainfall, and proximity to the ocean. Sri Lanka has different climatic zones and depends heavily on monsoons. Climate change is affecting weather patterns worldwide.

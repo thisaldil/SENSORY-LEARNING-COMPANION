@@ -2,11 +2,19 @@ import os
 
 from google.cloud import vision
 
-# Prefer configuring credentials via the GOOGLE_APPLICATION_CREDENTIALS environment
-# variable, pointing to your Vision JSON key file, e.g.:
-#   export GOOGLE_APPLICATION_CREDENTIALS="/secure/path/vision-api-489413-3be174ca33c7.json"
-# The default client constructor will pick this up automatically.
+# Vision client uses its own env var so it doesn't clash with
+# Text‑to‑Speech credentials:
+#   VISION_GOOGLE_APPLICATION_CREDENTIALS="/secure/path/vision-credentials.json"
+# If that is not set, it will fall back to the default Google ADC chain
+# (including GOOGLE_APPLICATION_CREDENTIALS if present).
 
 
-vision_client = vision.ImageAnnotatorClient()
+def _create_vision_client() -> vision.ImageAnnotatorClient:
+    creds_path = os.getenv("VISION_GOOGLE_APPLICATION_CREDENTIALS", "").strip()
+    if creds_path and os.path.isfile(creds_path):
+        return vision.ImageAnnotatorClient.from_service_account_file(creds_path)
+    return vision.ImageAnnotatorClient()
+
+
+vision_client = _create_vision_client()
 

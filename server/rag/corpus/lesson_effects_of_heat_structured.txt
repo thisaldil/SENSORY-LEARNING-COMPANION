@@ -1,0 +1,334 @@
+LESSON_ID: SCI_G6_EFFECTS_OF_HEAT
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Effects of Heat
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_TEMPERATURE_CHANGE
+NAME: Temperature Change
+DEFINITION:
+Temperature is a measure of how hot or cold a substance is. When heat energy is added, particles move faster and temperature increases; when heat is removed, particles move slower and temperature decreases.
+
+KEY_POINTS:
+
+- Heat naturally flows from hotter objects to cooler objects until temperatures become equal
+- Thermometers are used to measure temperature
+- Different materials warm and cool at different rates
+- Temperature reflects particle motion at the microscopic level
+
+EXAMPLES:
+A metal spoon placed in hot tea becomes warm quickly because heat flows from the hotter tea to the cooler spoon.
+
+KEYWORDS:
+temperature, heat flow, hot to cold, thermometer, particle motion, heating rate
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_CHANGE_OF_STATE
+NAME: Change of State
+DEFINITION:
+Heat can change matter between solid, liquid, and gas by changing particle bonding and movement, while the substance itself can remain the same.
+
+KEY_POINTS:
+
+- Melting changes a solid to a liquid
+- Freezing changes a liquid to a solid
+- Vaporization (boiling) changes a liquid to a gas
+- Condensation changes a gas to a liquid
+- During a state change, added heat can be used to break bonds instead of raising temperature
+
+EXAMPLES:
+Ice cream melts on a hot Colombo afternoon, changing from solid to liquid because it absorbs heat from the surroundings.
+
+KEYWORDS:
+change of state, melting, freezing, vaporization, boiling, condensation, phase change, particle bonds
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_THERMAL_EXPANSION
+NAME: Thermal Expansion and Contraction
+DEFINITION:
+Most substances expand when heated because particles move faster and need more space, and contract when cooled because particles slow down and come closer together.
+
+KEY_POINTS:
+
+- Solids usually expand less than liquids
+- Liquids generally expand less than gases
+- Gases expand the most when heated
+- Expansion and contraction are usually reversible for physical changes
+- Engineers must design structures to safely handle expansion
+
+EXAMPLES:
+Railway tracks in Sri Lanka include small gaps so expanding steel rails do not buckle on very hot days.
+
+KEYWORDS:
+thermal expansion, contraction, particle spacing, solids liquids gases, expansion gaps, engineering design
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_CHEMICAL_CHANGES_HEAT
+NAME: Chemical Changes Caused by Heat
+DEFINITION:
+Strong heating can cause chemical reactions that form new substances with new properties, often making irreversible changes.
+
+KEY_POINTS:
+
+- Chemical changes can require threshold energy (activation energy)
+- New substances with different color, taste, or texture can form
+- Many heat-driven chemical changes are irreversible
+- Burning is a chemical reaction where substances react with oxygen
+
+EXAMPLES:
+White sugar turns into brown caramel when heated, showing a chemical change that cannot be reversed to the original sugar crystals.
+
+KEYWORDS:
+chemical change, activation energy, irreversible change, caramelization, combustion, new substances
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_HEAT_TRANSFER
+NAME: Heat Energy Transfer
+DEFINITION:
+Heat moves from one place to another by conduction, convection, and radiation.
+
+KEY_POINTS:
+
+- Conduction is heat transfer through direct contact, common in solids
+- Convection is heat transfer by movement of liquids or gases
+- Radiation is heat transfer by electromagnetic waves and needs no medium
+- Materials differ in conductivity, affecting how fast they transfer heat
+
+EXAMPLES:
+A metal pot handle gets hot by conduction while warm air rising in a kitchen is convection, and sunlight warming your skin is radiation.
+
+KEYWORDS:
+heat transfer, conduction, convection, radiation, conductivity, thermal energy flow
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_STATE_AND_EXPANSION_RELATION
+NAME: State Change and Expansion Behavior
+DEFINITION:
+State changes and expansion are related because particle arrangement and spacing change with heat, and volume may change significantly across states.
+
+KEY_POINTS:
+
+- Heating from solid to liquid to gas usually increases particle spacing and volume
+- Cooling usually reduces spacing and volume
+- Water is unusual because it expands when freezing
+- This special behavior of water affects natural and engineering processes
+
+EXAMPLES:
+When water freezes in a closed space, its expansion can crack containers because ice occupies more volume than liquid water.
+
+KEYWORDS:
+volume change, state and expansion, particle arrangement, water anomaly, freezing expansion
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_HEAT_SAFETY
+NAME: Heat Safety in Daily Life
+DEFINITION:
+Understanding heat effects is essential for safety because thermal expansion, high temperatures, and pressure build-up can cause accidents.
+
+KEY_POINTS:
+
+- Closed containers should not be left in strong sunlight because heated gases can expand and increase pressure
+- Very hot materials can cause burns and must be handled carefully
+- Engineering safety features like expansion joints and rail gaps prevent structural failure
+- Safe cooking and heating practices reduce fire and burn risks
+
+EXAMPLES:
+A tightly sealed soft-drink bottle left in hot sunlight can become dangerous because gas expansion increases internal pressure.
+
+KEYWORDS:
+heat safety, pressure build-up, burns, expansion joints, thermal risk, safe handling
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_TEMP_STATE
+FROM: Temperature Change
+TO: Change of State
+EXPLANATION:
+Rising temperature provides energy that can bring substances to melting or boiling points, enabling state changes. Temperature change is therefore a key condition for phase transitions.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_TEMP_EXPANSION
+FROM: Temperature Change
+TO: Thermal Expansion and Contraction
+EXPLANATION:
+As temperature increases, particle motion increases and materials expand. As temperature decreases, particle motion decreases and materials contract.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_TRANSFER_TEMP
+FROM: Heat Energy Transfer
+TO: Temperature Change
+EXPLANATION:
+Conduction, convection, and radiation are the mechanisms that move heat into or out of substances. This movement directly causes temperature to rise or fall.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CHEMICAL_THRESHOLD
+FROM: Change of State
+TO: Chemical Changes Caused by Heat
+EXPLANATION:
+State changes are usually physical changes where the substance can remain chemically the same, while chemical changes require enough energy to break and form chemical bonds, creating new substances.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_EXPANSION_SAFETY
+FROM: Thermal Expansion and Contraction
+TO: Heat Safety in Daily Life
+EXPLANATION:
+Expansion due to heating can create hazards in tracks, bridges, pipes, and sealed containers. Safety designs and careful handling are necessary to prevent damage and accidents.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_MORNING_TEA
+TITLE: Morning Tea Cooling to Room Temperature
+
+DESCRIPTION:
+Freshly made tea starts hot because its particles have high thermal energy. Heat transfers from the tea to the cup and then to the cooler air by conduction and convection. Over time, the tea temperature drops until it approaches room temperature, showing that heat naturally flows from hot to cold.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_ICE_DIFFERENT_SURFACES
+TITLE: Ice Cubes Melting on Different Materials
+
+DESCRIPTION:
+Ice cubes placed on metal, wood, and plastic melt at different rates. The cube on metal melts fastest because metal is a good conductor, while wood slows heat transfer and melts ice more slowly. All cubes eventually melt, showing that heat causes state change while material type controls the speed.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_RAILWAY_GAPS
+TITLE: Railway Track Gaps in Sri Lanka
+
+DESCRIPTION:
+Railway tracks near areas such as Colombo Fort and Anuradhapura include expansion gaps between steel sections. On hot days, the rails expand and gaps become smaller. Without these gaps, rails could buckle upward and create derailment risk.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_HOPPERS_COOKING
+TITLE: Heat Effects While Making Hoppers
+
+DESCRIPTION:
+When batter is poured into a very hot hopper pan, heat quickly raises temperature, evaporates water, and drives chemical reactions that create crispy edges and a soft center. These texture and flavor changes are not fully reversible, demonstrating heat-driven chemical change during cooking.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_BALLOON_SUNLIGHT
+TITLE: Balloon Expansion in Sunlight
+
+DESCRIPTION:
+A partially inflated balloon left in sunlight becomes tighter and larger because the air inside warms and expands. When moved to a cooler air-conditioned room, the gas cools and contracts, and the balloon shrinks slightly.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_HEAT_TEMP_SAME
+STATEMENT:
+Heat and temperature are exactly the same thing.
+
+CORRECTION:
+Heat is energy transferred between objects due to temperature difference, while temperature measures how hot or cold something is. Heat transfer can change temperature, but the terms are not identical.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_STATE_CHANGE_ALWAYS_TEMP_RISES
+STATEMENT:
+Temperature always rises while heating, even during boiling or melting.
+
+CORRECTION:
+During melting or boiling, added heat can be used to break particle bonds rather than increase temperature. That is why temperature can remain constant during a phase change.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_EXPANSION_ONLY_METALS
+STATEMENT:
+Only metals expand when heated.
+
+CORRECTION:
+Most solids, liquids, and gases expand when heated, though by different amounts. Gases generally expand the most, liquids more than most solids.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_CHEMICAL_CHANGES_REVERSIBLE
+STATEMENT:
+All heat changes can be reversed by cooling.
+
+CORRECTION:
+Some physical changes like wax melting can reverse on cooling, but many heat-driven chemical changes (such as caramelization or burning) form new substances and are not reversible.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_SEALED_BOTTLE_SAFE_IN_SUN
+STATEMENT:
+A sealed bottle is always safe to leave in direct hot sunlight.
+
+CORRECTION:
+Heating can expand gases and increase pressure inside closed containers. This can make containers deform or burst, so sealed bottles should not be left in strong heat.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_WAX_MELT_SOLIDIFY
+TITLE: Candle Wax Melting and Solidifying
+
+DESCRIPTION:
+Show a candle on a metal dish. Flame heats solid white wax near the wick until it becomes shiny liquid and drips down. After the flame is removed, the liquid wax cools and hardens back to solid. Visual labels show melting during heating and solidification during cooling.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_TRACK_EXPANSION
+TITLE: Railway Expansion on a Hot Day
+
+DESCRIPTION:
+Display railway tracks in Anuradhapura under strong sunlight. Animate steel particles vibrating faster as temperature rises. Track segments lengthen and the expansion gaps become smaller. A measuring scale shows gap reduction to explain thermal expansion clearly.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_BOILING_CONSTANT_TEMP
+TITLE: Boiling Water at Constant Temperature
+
+DESCRIPTION:
+Show water in a transparent kettle with a thermometer rising from 25°C to 100°C. At 100°C, vigorous bubbles and steam appear while the thermometer reading stays at 100°C during boiling. Visual energy arrows indicate heat being used for state change rather than temperature increase.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_CARAMELIZATION
+TITLE: Sugar Caramelization by Heat
+
+DESCRIPTION:
+Animate white sugar crystals in a spoon over a flame. Sugar melts to clear liquid, then changes to golden and amber-brown liquid. On cooling, it hardens into brown caramel. Side-by-side comparison shows original sugar and final caramel as different substances.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_THERMOMETER_EXPANSION
+TITLE: Thermometer and Liquid Expansion
+
+DESCRIPTION:
+Show a medical thermometer at room temperature, then placed under the tongue. Colored liquid rises in the narrow tube as it warms. A molecular inset shows faster particle motion and expansion of the liquid, linking thermal expansion to temperature measurement.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+- Define temperature and explain how heat transfer changes temperature from hot to cold regions
+
+- Describe melting, freezing, vaporization, and condensation using particle behavior
+
+- Explain thermal expansion and contraction in solids, liquids, and gases with Sri Lankan engineering examples
+
+- Distinguish physical state changes from heat-driven chemical changes using real cooking examples
+
+- Describe conduction, convection, and radiation with everyday and household applications
+
+- Explain why water expanding during freezing is unusual compared with most substances
+
+- Apply heat safety principles in daily life, including risks of sealed containers in sunlight and hot surfaces
+
+==================================================
+SECTION: SUMMARY
+Heat is a form of energy that changes the world by changing temperature, state, size, and sometimes chemical composition. Heat flows naturally from hotter objects to cooler ones and can be transferred by conduction, convection, and radiation. With enough heat, matter changes state between solid, liquid, and gas, and during phase changes temperature may stay constant while energy breaks particle bonds. Most substances expand when heated and contract when cooled, which is why engineers in Sri Lanka use rail gaps and expansion joints for safety. Strong heating can also cause chemical reactions, such as caramelization and burning, that form new substances and are often irreversible. Domain-specific applications in cooking, transport, medicine, and home life show that understanding heat is essential for science, engineering, and daily safety.

@@ -1,0 +1,258 @@
+LESSON_ID: SCI_G6_HEAT_ENVIRONMENT_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Effects of Heat on the Environment
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_01
+NAME: Heat as an Environmental Driver
+DEFINITION:
+Heat from the Sun controls environmental temperature and supports life on Earth.
+
+KEY_POINTS:
+- The Sun heats the Earth's surface during the day.
+- The Earth releases heat at night.
+- This balance maintains suitable living conditions.
+- Too much trapped heat leads to environmental imbalance.
+
+EXAMPLES:
+Daytime warming and nighttime cooling cycle.
+
+KEYWORDS:
+solar heat, temperature balance, environmental heat
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_02
+NAME: Global Warming
+DEFINITION:
+Global warming is the gradual increase in Earth’s average temperature due to excessive heat being trapped in the atmosphere.
+
+KEY_POINTS:
+- Caused by increased greenhouse gases.
+- Leads to rising temperatures worldwide.
+- Contributes to melting glaciers and rising sea levels.
+- Affects climate stability.
+
+EXAMPLES:
+Melting polar ice.
+Rising sea levels affecting island nations.
+
+KEYWORDS:
+global warming, greenhouse gases, climate change, sea level rise
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_03
+NAME: Greenhouse Effect
+DEFINITION:
+The greenhouse effect is the natural process by which certain gases in the atmosphere trap heat and keep Earth warm.
+
+KEY_POINTS:
+- Gases such as carbon dioxide and methane trap heat.
+- Essential for maintaining life-supporting temperatures.
+- Excess greenhouse gases cause overheating.
+- Human activities increase greenhouse gas levels.
+
+EXAMPLES:
+Burning coal, oil, and deforestation increase carbon dioxide.
+
+KEYWORDS:
+greenhouse effect, carbon dioxide, methane, atmosphere
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_04
+NAME: Effects on Living Organisms
+DEFINITION:
+Environmental heat influences how living organisms survive and function.
+
+KEY_POINTS:
+- Homeothermic animals regulate body temperature internally.
+- Poikilothermic animals depend on environmental temperature.
+- Extreme heat stresses ecosystems.
+- Species may migrate to cooler areas.
+
+EXAMPLES:
+Lizards hiding in shade.
+Birds moving to cooler hill regions.
+
+KEYWORDS:
+homeothermic, poikilothermic, adaptation, migration
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_05
+NAME: Heat and the Water Cycle
+DEFINITION:
+Heat drives the evaporation process and powers the water cycle.
+
+KEY_POINTS:
+- Heat causes evaporation from oceans and rivers.
+- Warm air rises and forms clouds.
+- Excess heat can intensify droughts.
+- Warm oceans increase storm intensity.
+
+EXAMPLES:
+Droughts in Hambantota.
+Strong cyclones forming over warm ocean water.
+
+KEYWORDS:
+evaporation, drought, cyclones, water cycle
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_06
+NAME: Thermal Expansion of Oceans
+DEFINITION:
+When ocean water warms, it expands, contributing to sea-level rise.
+
+KEY_POINTS:
+- Heat increases molecular movement.
+- Warm water occupies more space.
+- Contributes significantly to rising sea levels.
+- Combined with melting ice, increases flooding risk.
+
+EXAMPLES:
+Coastal flooding risks in island regions.
+
+KEYWORDS:
+thermal expansion, sea-level rise, ocean warming
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_07
+NAME: Urban Heat Island Effect
+DEFINITION:
+The Urban Heat Island effect occurs when cities become warmer than surrounding rural areas due to heat-absorbing surfaces.
+
+KEY_POINTS:
+- Concrete and asphalt absorb heat.
+- Reduced tree cover increases warming.
+- Cities release stored heat slowly at night.
+- Planting trees reduces temperature.
+
+EXAMPLES:
+Colombo feeling hotter than rural villages.
+
+KEYWORDS:
+urban heat island, city warming, asphalt, tree cover
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: HE_08
+NAME: Heat and Ecological Timing
+DEFINITION:
+Temperature influences seasonal behaviors such as flowering, nesting, and migration.
+
+KEY_POINTS:
+- Plants bloom based on temperature signals.
+- Birds nest when conditions are suitable.
+- Early warming can disrupt food availability.
+- Extreme changes threaten biodiversity.
+
+EXAMPLES:
+Tabebuia trees blooming during hot seasons.
+Bird nesting patterns changing.
+
+KEYWORDS:
+seasonal timing, ecological balance, biodiversity
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_HE_01
+FROM: Greenhouse Effect
+TO: Global Warming
+EXPLANATION:
+Excess greenhouse gases strengthen the natural greenhouse effect, leading to global warming.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_HE_02
+FROM: Global Warming
+TO: Sea-Level Rise
+EXPLANATION:
+Global warming causes melting ice and thermal expansion, increasing sea levels.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_HE_03
+FROM: Heat
+TO: Water Cycle
+EXPLANATION:
+Solar heat powers evaporation and cloud formation, driving the water cycle.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_HE_01
+TITLE: Urban vs Rural Temperature
+
+DESCRIPTION:
+A city center with concrete buildings feels hotter than a tree-covered village due to heat absorption and reduced transpiration.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_HE_02
+TITLE: Species Migration
+
+DESCRIPTION:
+Birds and insects move from hot lowlands to cooler hills to survive rising temperatures.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_HE_01
+STATEMENT:
+The greenhouse effect is entirely harmful.
+
+CORRECTION:
+The natural greenhouse effect is essential for life; problems arise when excess gases increase heat trapping.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_HE_02
+STATEMENT:
+Only melting ice causes sea-level rise.
+
+CORRECTION:
+Sea levels rise due to both melting ice and thermal expansion of warm ocean water.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_HE_03
+STATEMENT:
+Temperature changes do not affect animals.
+
+CORRECTION:
+Temperature strongly affects animal survival, migration, and reproduction patterns.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_HE_01
+TITLE: Greenhouse Effect Diagram
+
+DESCRIPTION:
+Show sunlight entering Earth’s atmosphere. Some heat escapes, while greenhouse gases trap part of the heat and reflect it back toward Earth.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_HE_02
+TITLE: Urban Heat Island Comparison
+
+DESCRIPTION:
+Split screen showing city buildings absorbing heat versus a tree-covered rural area remaining cooler.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Explain how heat influences the environment.
+- Describe the greenhouse effect and global warming.
+- Distinguish between homeothermic and poikilothermic animals.
+- Explain how heat drives the water cycle.
+- Describe thermal expansion and urban heat island effect.
+- Identify ways to reduce environmental heat impact.
+
+==================================================
+SECTION: SUMMARY
+Heat from the Sun controls Earth’s climate and supports life. However, excessive heat trapped by greenhouse gases causes global warming, rising sea levels, and ecosystem disruption. Heat influences animal survival, weather patterns, and ocean behavior. Human actions such as planting trees, conserving energy, and reducing waste can help manage environmental heat.

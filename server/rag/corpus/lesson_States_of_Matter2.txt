@@ -1,0 +1,251 @@
+LESSON_ID: SCI_G6_STATES_OF_MATTER_002
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Solid, Liquid, and Gas
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_01
+NAME: Classification of Matter by Physical State
+DEFINITION:
+Matter can be grouped into three main physical states: solid, liquid, and gas, based on shape, volume, and particle arrangement.
+
+KEY_POINTS:
+- All matter is made of tiny particles.
+- Physical state depends on particle behavior.
+- Solids, liquids, and gases have different properties.
+- Heat can change the state of matter.
+
+KEYWORDS:
+matter, physical state, solid, liquid, gas
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_02
+NAME: Solids
+DEFINITION:
+Solids are materials that have a definite shape and definite volume because their particles are tightly packed.
+
+KEY_POINTS:
+- Solids keep their own shape.
+- Solids occupy a fixed amount of space.
+- Particles vibrate in fixed positions.
+- Solids are difficult to compress.
+
+EXAMPLES:
+Firewood, bricks, stones, pens, jaggery.
+
+KEYWORDS:
+solid, definite shape, definite volume, rigid
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_03
+NAME: Liquids
+DEFINITION:
+Liquids have a definite volume but no definite shape because their particles can slide past one another.
+
+KEY_POINTS:
+- Liquids take the shape of their container.
+- Volume remains constant.
+- Liquids can flow.
+- Liquids are slightly compressible but difficult to squash.
+
+EXAMPLES:
+Kerosene, water, coconut oil, milk.
+
+KEYWORDS:
+liquid, flow, container shape, volume
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_04
+NAME: Gases
+DEFINITION:
+Gases have neither definite shape nor definite volume because their particles move freely and spread out.
+
+KEY_POINTS:
+- Gases fill the entire container.
+- Particles are far apart.
+- Gases are easily compressed.
+- Many gases are invisible.
+
+EXAMPLES:
+L.P. gas, air, oxygen, water vapour.
+
+KEYWORDS:
+gas, expansion, compression, particles far apart
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_05
+NAME: Particle Theory of Matter
+DEFINITION:
+The particle theory explains that all matter is made of tiny particles whose arrangement and motion determine the state of matter.
+
+KEY_POINTS:
+- In solids, particles vibrate in fixed positions.
+- In liquids, particles stay close but slide past each other.
+- In gases, particles move rapidly and independently.
+- Heat increases particle movement.
+
+KEYWORDS:
+particle theory, vibration, movement, temperature
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_06
+NAME: Changes of State
+DEFINITION:
+Changes of state occur when heat is added or removed, causing matter to transform between solid, liquid, and gas.
+
+KEY_POINTS:
+- Melting: solid to liquid (absorbs heat).
+- Freezing: liquid to solid (releases heat).
+- Evaporation: liquid to gas (absorbs heat).
+- Condensation: gas to liquid (releases heat).
+- Heat energy changes particle motion.
+
+EXAMPLES:
+Ice melting into water.
+Water vapour forming droplets on a cold bottle.
+Rain forming from clouds.
+
+KEYWORDS:
+melting, freezing, evaporation, condensation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_07
+NAME: Measuring Mass and Volume
+DEFINITION:
+Mass and volume are measurable properties that help identify and compare different states of matter.
+
+KEY_POINTS:
+- Liquids are measured using a measuring cylinder.
+- The curved surface of liquid is called the meniscus.
+- Measurements must be read at eye level.
+- Gases have mass even though they are light.
+
+EXAMPLES:
+Reading water level from bottom of meniscus.
+Weighing a balloon before and after inflating it.
+
+KEYWORDS:
+mass, volume, measuring cylinder, meniscus, balance
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: SM2_08
+NAME: Anomaly of Water
+DEFINITION:
+Water expands when it freezes, unlike most substances which contract when they become solid.
+
+KEY_POINTS:
+- Ice occupies more space than liquid water.
+- Frozen water can crack containers.
+- This property is unique and important in nature.
+
+EXAMPLES:
+Bottle cracking in freezer.
+Ice floating on water.
+
+KEYWORDS:
+water expansion, freezing, anomaly, ice
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM2_01
+FROM: Heat
+TO: Change of State
+EXPLANATION:
+Adding heat increases particle motion, causing melting or evaporation, while removing heat causes freezing or condensation.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SM2_02
+FROM: Particle Arrangement
+TO: Physical Properties
+EXPLANATION:
+The spacing and movement of particles determine whether matter behaves as a solid, liquid, or gas.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM2_01
+TITLE: Cold Bottle Condensation
+
+DESCRIPTION:
+Water vapour in the air cools and condenses into liquid droplets on the outside of a cold bottle.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM2_02
+TITLE: Inflated Balloon Mass
+
+DESCRIPTION:
+A balloon weighs slightly more after inflation because the air inside has mass.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_SM2_03
+TITLE: L.P. Gas Cylinder
+
+DESCRIPTION:
+Gases can be compressed into cylinders because they have no definite volume.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM2_01
+STATEMENT:
+Gas has no mass because it is invisible.
+
+CORRECTION:
+Gases have mass and occupy space even though they may not be visible.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM2_02
+STATEMENT:
+Particles in solids do not move.
+
+CORRECTION:
+Particles in solids vibrate in fixed positions.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_SM2_03
+STATEMENT:
+All substances shrink when frozen.
+
+CORRECTION:
+Water expands when it freezes, which is an unusual property.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM2_01
+TITLE: Particle Arrangement Comparison
+
+DESCRIPTION:
+Display three containers labeled solid, liquid, and gas with animated particle spacing and motion differences.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_SM2_02
+TITLE: Measuring Meniscus
+
+DESCRIPTION:
+Show a measuring cylinder with curved water surface and indicate correct eye-level reading at lowest point of meniscus.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Classify matter into solid, liquid, and gas.
+- Describe particle arrangement in each state.
+- Explain how heat causes changes of state.
+- Measure liquid volume correctly using a measuring cylinder.
+- Describe the unique freezing behavior of water.
+
+==================================================
+SECTION: SUMMARY
+Matter exists as solid, liquid, or gas depending on particle arrangement and motion. Solids have definite shape and volume, liquids have definite volume but no fixed shape, and gases have neither. Heat changes the motion of particles and causes phase transitions such as melting and evaporation. Understanding these concepts helps explain daily observations, laboratory measurements, and natural processes.

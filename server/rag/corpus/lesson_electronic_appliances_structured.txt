@@ -1,0 +1,355 @@
+LESSON_ID: SCI_G6_ELECTRONIC_APPLIANCES
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Electronic Appliances
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTRONIC_APPLIANCES_BASICS
+NAME: What Electronic Appliances Are
+DEFINITION:
+Electronic appliances are devices that run on electricity but use it precisely to process information, sound, and images.
+
+KEY_POINTS:
+
+- Electronic appliances differ from simple electrical appliances in function
+- They handle signals, data, and control actions
+- They are central to communication, computing, and digital systems
+
+EXAMPLES:
+A television turns electrical signals into moving images and sound, while a mobile phone processes data and sends messages.
+
+KEYWORDS:
+electronic appliances, electricity, information processing, digital devices, signals
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_COMMON_ELECTRONIC_DEVICES
+NAME: Common Electronic Appliances in Daily Life
+DEFINITION:
+Many daily-use devices are electronic because they process electrical signals to provide communication, calculation, timing, and media functions.
+
+KEY_POINTS:
+
+- Radios and televisions convert signals into sound and images
+- Mobile phones and computers process large amounts of data
+- Calculators perform mathematical operations electronically
+- Digital clocks keep time using electronic pulses
+
+EXAMPLES:
+A calculator gives instant answers to arithmetic problems, and a digital clock displays time using electronic timing pulses.
+
+KEYWORDS:
+radio, television, mobile phone, computer, calculator, digital clock, electronic signals
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_PCB_AND_COMPONENTS
+NAME: PCB and Basic Electronic Components
+DEFINITION:
+Electronic appliances contain small components mounted on a Printed Circuit Board (PCB), which connects and supports the parts that control current and processing.
+
+KEY_POINTS:
+
+- A PCB is usually a green or blue board carrying electronic components
+- LEDs emit light and often work as indicators on appliances
+- Resistors control and limit electric current in circuits
+- Transistors act as very fast switches and can switch millions of times per second
+
+EXAMPLES:
+A TV standby light is an LED on the PCB, while resistors and transistors inside control signal and power behavior.
+
+KEYWORDS:
+PCB, printed circuit board, LED, resistor, transistor, electronic components, indicators
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTRICAL_VS_ELECTRONIC
+NAME: Electrical Appliances vs Electronic Appliances
+DEFINITION:
+Electrical appliances mainly convert electricity into heat, light, or motion, while electronic appliances use low-power circuits and semiconductor components to process and transmit information.
+
+KEY_POINTS:
+
+- Electrical appliances include iron, bulb, and ceiling fan
+- Electronic appliances include smartphone, computer, and digital systems
+- Electrical appliances usually have simpler high-power circuits
+- Electronic appliances use specialized low-voltage signal-processing circuits
+
+EXAMPLES:
+A toaster mainly produces heat, but a smartphone stores photos, processes data, and connects to the internet.
+
+KEYWORDS:
+electrical appliances, electronic appliances, power conversion, information processing, low voltage circuits
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_AC_DC_ADAPTER
+NAME: AC and DC Power in Electronics
+DEFINITION:
+Wall sockets supply AC (Alternating Current), but most electronic components require low-voltage DC (Direct Current), so adapters convert AC to DC.
+
+KEY_POINTS:
+
+- Sri Lankan homes receive AC power from mains sockets
+- Most electronics need stable low-voltage DC internally
+- Adapters or power bricks convert high-voltage AC into safer low-voltage DC
+- Correct voltage conversion protects sensitive electronic parts
+
+EXAMPLES:
+A laptop charger converts AC from the wall socket into DC suitable for the laptop’s internal circuits.
+
+KEYWORDS:
+AC, DC, adapter, power brick, voltage conversion, mains electricity, electronic power supply
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_LED_IMPORTANCE
+NAME: LEDs as Efficient Electronic Components
+DEFINITION:
+A Light Emitting Diode (LED) is an electronic component that emits light efficiently with low power use and long operating life.
+
+KEY_POINTS:
+
+- LEDs produce light with much less heat than old filament bulbs
+- LEDs are highly energy-efficient
+- LEDs are used as status indicators such as standby lights
+- Long life makes LEDs practical for many devices
+
+EXAMPLES:
+A small red LED on the front of a TV indicates standby mode while using very little power.
+
+KEYWORDS:
+LED, light emitting diode, efficient lighting, standby indicator, low power, long life
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_SEMICONDUCTORS_AND_ICS
+NAME: Semiconductors and Integrated Circuits
+DEFINITION:
+Semiconductors, usually silicon, are materials whose conductivity can be controlled, allowing engineers to build integrated circuits (chips) that perform complex electronic tasks.
+
+KEY_POINTS:
+
+- Semiconductors are between conductors and insulators in behavior
+- Silicon is the most common semiconductor material
+- Controlled semiconductor behavior allows switching and logic operations
+- Integrated circuits (ICs) act as the processing “brain” in many appliances
+
+EXAMPLES:
+The chip inside a computer or microwave uses semiconductor circuits to process instructions and control operations.
+
+KEYWORDS:
+semiconductor, silicon, integrated circuit, IC, chip, electronics brain, controlled conductivity
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_EWASTE_MANAGEMENT
+NAME: Electronic Waste (E-Waste) and Safe Disposal
+DEFINITION:
+Broken or discarded electronic devices become e-waste and must be handled separately because they contain valuable metals and potentially harmful chemicals.
+
+KEY_POINTS:
+
+- E-waste can contain lead, mercury, and lithium
+- E-waste should not be mixed with normal household garbage
+- Recycling recovers valuable metals such as gold and copper
+- Proper disposal prevents toxic leakage into soil and water
+- Sri Lanka has dedicated e-waste collection centers
+
+EXAMPLES:
+An old mobile phone should be sent to an e-waste collection center instead of being thrown into a household dustbin.
+
+KEYWORDS:
+e-waste, electronic waste, recycling, lead, mercury, lithium, toxic chemicals, Sri Lanka collection centers
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_MINIATURIZATION
+NAME: Evolution and Miniaturization of Electronic Appliances
+DEFINITION:
+Miniaturization is the process of making electronic devices much smaller while increasing their capability through advances in micro-electronics.
+
+KEY_POINTS:
+
+- Older devices such as radios were much larger and used vacuum tubes
+- Modern electronics are smaller due to compact components and chips
+- Miniaturization increases portability and efficiency
+- A single mobile phone can include functions that once needed separate large devices
+
+EXAMPLES:
+A radio that once required a large standalone unit is now a small built-in feature in a mobile phone.
+
+KEYWORDS:
+miniaturization, micro-electronics, vacuum tubes, compact devices, evolution of electronics, portability
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_PCB_COMPONENTS_FUNCTION
+FROM: PCB and Basic Electronic Components
+TO: What Electronic Appliances Are
+EXPLANATION:
+Electronic appliances process information because PCBs organize components such as LEDs, resistors, and transistors into functional circuits. Without these components working together, precise processing is not possible.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_AC_DC_PROTECTION
+FROM: AC and DC Power in Electronics
+TO: Common Electronic Appliances in Daily Life
+EXPLANATION:
+Daily electronic devices operate safely because adapters convert mains AC to suitable low-voltage DC. This conversion allows sensitive circuits in phones, computers, and clocks to work correctly.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SEMI_TRANSISTOR
+FROM: Semiconductors and Integrated Circuits
+TO: PCB and Basic Electronic Components
+EXPLANATION:
+Transistors and chips are built from semiconductor materials. These semiconductor-based components are mounted on PCBs, where they perform switching and data processing tasks.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_MINI_IC
+FROM: Evolution and Miniaturization of Electronic Appliances
+TO: Semiconductors and Integrated Circuits
+EXPLANATION:
+Miniaturization became possible because integrated circuits pack many semiconductor components into tiny chips. As chip technology improved, appliance size decreased while function increased.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_EWASTE_SAFETY_ENV
+FROM: Electronic Waste (E-Waste) and Safe Disposal
+TO: Common Electronic Appliances in Daily Life
+EXPLANATION:
+As more electronic devices are used daily, e-waste volume increases. Safe disposal and recycling are necessary to reduce chemical hazards and recover useful materials from these appliances.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_TV_STANDBY_LED
+TITLE: TV Standby Indicator and PCB Operation
+
+DESCRIPTION:
+When a TV is switched off with the remote, a small red LED remains on to show standby mode. That LED is part of the PCB circuit. Resistors control current to the LED, and transistors help switch between standby and active operation.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_LAPTOP_ADAPTER
+TITLE: Laptop Adapter Converting AC to DC
+
+DESCRIPTION:
+A laptop is connected to a wall socket in a Sri Lankan home. The adapter takes high-voltage AC from the mains and converts it to low-voltage DC. This protects internal chips and provides the stable power they need.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_PHONE_EWASTE_COLLECTION
+TITLE: Safe Disposal of a Broken Mobile Phone
+
+DESCRIPTION:
+A family has a damaged mobile phone with a swollen battery. Instead of throwing it into household garbage, they hand it to an authorized e-waste collection center. This prevents harmful chemical leakage and allows recovery of metals like copper and gold.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_MINIATURIZATION_RADIO
+TITLE: From Large Radio to Pocket Device
+
+DESCRIPTION:
+An old suitcase-sized radio using vacuum tubes is compared with a modern smartphone that includes radio, music playback, and communication. The smartphone is far smaller because modern integrated circuits combine many functions into tiny chips.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_ELECTRICAL_ELECTRONIC_SAME
+STATEMENT:
+Electrical appliances and electronic appliances are exactly the same.
+
+CORRECTION:
+Electrical appliances mainly convert electricity into heat, light, or motion, while electronic appliances use precise low-voltage circuits and components to process information, sound, and images.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_WALL_POWER_DIRECT_SAFE
+STATEMENT:
+All electronic devices can use wall socket AC directly without conversion.
+
+CORRECTION:
+Most electronic components require low-voltage DC. Adapters are needed to convert mains AC to suitable DC levels. Direct high-voltage AC can damage sensitive circuits.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_LED_JUST_SMALL_BULB
+STATEMENT:
+An LED is just a tiny normal bulb and works the same way.
+
+CORRECTION:
+An LED is a semiconductor component that emits light efficiently with low power and less heat. It operates differently from filament bulbs and usually lasts longer.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_EWASTE_NORMAL_GARBAGE
+STATEMENT:
+Broken electronic devices can be thrown away with regular household waste.
+
+CORRECTION:
+Electronic waste contains harmful chemicals and valuable metals. It should be sent to proper e-waste collection or recycling centers to avoid pollution and recover materials.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_ELECTRICAL_VS_ELECTRONIC
+TITLE: Electrical vs Electronic Device Comparison
+
+DESCRIPTION:
+Split screen shows an electric iron heating up on one side and a smartphone processing messages and images on the other. Labels highlight “energy conversion” for the iron and “information processing” for the smartphone.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_PCB_COMPONENT_ZOOM
+TITLE: Inside a PCB with LED, Resistor, and Transistor
+
+DESCRIPTION:
+Camera zooms into a device and reveals a green PCB. The animation highlights an LED glowing, current limited by a resistor, and a transistor switching rapidly. Connection tracks on the board show how components are linked.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_AC_TO_DC_ADAPTER
+TITLE: Adapter Converting AC to DC
+
+DESCRIPTION:
+Show wall socket AC entering a laptop adapter. Inside the adapter, conversion blocks transform the waveform into steady low-voltage DC. The DC then powers a laptop chip safely.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_EWASTE_RECYCLING
+TITLE: E-Waste Collection and Recycling Flow
+
+DESCRIPTION:
+A broken phone and old radio are placed in a dedicated e-waste bin at a Sri Lankan collection center. Next, a recycling facility separates batteries, plastics, and metals. Icons show copper and gold being recovered and toxic leakage prevented.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_MINIATURIZATION_TIMELINE
+TITLE: Electronics Miniaturization Through Time
+
+DESCRIPTION:
+Timeline animation starts with a large vacuum-tube radio, then moves to transistor radios, then integrated-circuit devices, ending with a modern smartphone. Each stage gets smaller while feature icons increase.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+- Define electronic appliances and explain how they differ from basic electrical appliances
+
+- Identify common electronic appliances and describe their day-to-day functions
+
+- Describe the roles of PCB, LED, resistor, and transistor in electronic circuits
+
+- Explain why AC from mains must be converted to DC for most electronic devices
+
+- Describe semiconductors and integrated circuits as the foundation of modern electronics
+
+- Explain the importance of e-waste management and proper disposal methods in Sri Lanka
+
+- Describe miniaturization and how it changed the size and power of electronic appliances
+
+==================================================
+SECTION: SUMMARY
+Electronic appliances use electricity in precise circuits to process information, sound, and images. Common examples include radios, televisions, mobile phones, computers, calculators, and digital clocks. Their internal parts are mounted on PCBs and include components such as LEDs, resistors, and transistors. Unlike basic electrical appliances that mainly convert electricity into heat, light, or motion, electronic devices rely on low-voltage signal processing. Because Sri Lankan wall sockets provide AC while most electronics need DC, adapters convert high-voltage AC into safer low-voltage DC. Semiconductor materials, especially silicon, make integrated circuits possible and act as the core of modern digital devices. As electronics spread, safe e-waste handling is essential because discarded devices may contain harmful chemicals but also valuable metals that can be recovered through recycling. Advances in micro-electronics and miniaturization have made modern appliances much smaller and more powerful than older vacuum-tube devices.

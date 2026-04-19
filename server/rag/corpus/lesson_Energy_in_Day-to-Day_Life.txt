@@ -1,0 +1,521 @@
+LESSON_ID: SCI_G6_ENERGY_SOURCES_APPLICATIONS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Energy Sources and Applications
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Energy as Ability to Do Work
+DEFINITION:
+Energy is defined as the ability to do work, enabling us to perform activities such as pulling a rope, carrying a heavy load, or loading goods into a vehicle.
+
+KEY_POINTS:
+
+Energy is required to perform any task or activity.
+Work requires energy expenditure.
+Different activities require different amounts of energy.
+
+EXAMPLES:
+Pulling a rope, carrying a heavy load, and loading goods into a vehicle all require energy to accomplish the work involved in these tasks.
+
+KEYWORDS:
+energy, work, ability, tasks, physical activity, energy expenditure
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Solar Energy Applications in Sri Lanka
+DEFINITION:
+Solar energy from the Sun is used in Sri Lanka for various applications including drying, heating water, and generating electricity through solar panels.
+
+KEY_POINTS:
+
+The Sun provides free, abundant energy for daily use.
+Traditional uses include drying clothes, grains like chilies and paddy, and making Lunu dehi.
+Solar water heaters use sunlight to heat water for households.
+Solar panels convert sunlight into electricity for home appliances and satellites.
+
+EXAMPLES:
+In Sri Lanka, farmers dry chilies and paddy in the sun, households use solar water heaters for bathing, and solar panels generate electricity for homes and power satellites in space.
+
+KEYWORDS:
+solar energy, Sun, drying, Lunu dehi, chilies, paddy, solar water heaters, solar panels, electricity generation, Sri Lankan applications
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Biomass Energy Sources
+DEFINITION:
+Biomass consists of living plant or animal materials used as fuel, including firewood, coconut shells, saw dust, and rice bran, commonly used for cooking in Sri Lanka.
+
+KEY_POINTS:
+
+Biomass is organic material from plants and animals used as fuel.
+Common biomass fuels include firewood, coconut shells, saw dust, and rice bran.
+Traditional stoves like the kudu lipa (saw dust stove) use biomass efficiently.
+Applications include cooking meals and boiling water.
+
+EXAMPLES:
+Sri Lankan households use firewood and coconut shells in hearths for cooking, and the kudu lipa (saw dust stove) burns saw dust to prepare meals and boil water.
+
+KEYWORDS:
+biomass, firewood, coconut shells, saw dust, rice bran, kudu lipa, saw dust stove, cooking fuel, organic materials, traditional cooking
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Fossil Fuels Formation and Applications
+DEFINITION:
+Fossil fuels are energy sources made from buried plants and animals subjected to high pressure over millions of years, including coal, petroleum oil, and L.P. gas used for transportation, cooking, and electricity generation.
+
+KEY_POINTS:
+
+Fossil fuels form from ancient plants and animals under high pressure over millions of years.
+Major types include coal, petroleum oil, and L.P. gas.
+Applications include powering vehicles with petrol and diesel, cooking with L.P. gas, and generating electricity in coal power plants.
+Sri Lanka imports petroleum from other countries.
+
+EXAMPLES:
+Vehicles in Sri Lanka run on petrol or diesel made from petroleum, households cook with L.P. gas, and coal power plants generate electricity for the national grid.
+
+KEYWORDS:
+fossil fuels, coal, petroleum, L.P. gas, petrol, diesel, ancient plants, high pressure, millions of years, vehicles, cooking, electricity generation, imports
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Wind Energy Applications
+DEFINITION:
+Wind energy harnesses the power of moving air for purposes including separating grain, pumping water, grinding materials, and generating electricity through wind turbines.
+
+KEY_POINTS:
+
+Wind provides kinetic energy from air movement.
+Traditional uses include winnowing to separate unfilled rice grains.
+Wind can pump water and grind grains in windmills.
+Large wind vanes in Hambantota and Puttalam rotate dynamos to generate electricity.
+
+EXAMPLES:
+Sri Lankan farmers use wind for winnowing unfilled rice grains, and wind farms in Hambantota and Puttalam use large wind vanes to rotate dynamos and generate electricity for the national grid.
+
+KEYWORDS:
+wind energy, winnowing, rice grains, water pumping, windmills, grinding, wind vanes, Hambantota, Puttalam, dynamos, electricity generation, turbines
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Hydropower from Running Water
+DEFINITION:
+Hydropower uses flowing water to rotate large turbines in hydropower stations, generating electricity as demonstrated by Sri Lankan facilities at Laxapana and Victoria.
+
+KEY_POINTS:
+
+Running water possesses kinetic energy from its flow.
+Water flow rotates large turbines in hydropower stations.
+Turbine rotation generates electricity.
+Sri Lanka has major hydropower stations at Laxapana and Victoria.
+
+EXAMPLES:
+At Laxapana and Victoria hydropower stations in Sri Lanka, flowing water rotates large turbines that generate electricity distributed through the national power grid.
+
+KEYWORDS:
+hydropower, running water, turbines, electricity generation, Laxapana, Victoria, hydropower stations, kinetic energy, water flow, renewable energy
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Solar Energy as Ultimate Source
+DEFINITION:
+Almost all energy on Earth originally comes from the Sun, with food energy created through photosynthesis and fossil fuels being stored solar energy from ancient plants and animals.
+
+KEY_POINTS:
+
+The Sun is the ultimate source of nearly all Earth's energy.
+Green plants use sunlight for photosynthesis to produce food.
+Animals and humans consume stored solar energy when eating plants.
+Biomass is made from plants that grew using sunlight.
+Fossil fuels are remains of ancient plants and animals that captured solar energy millions of years ago.
+
+EXAMPLES:
+When you eat rice grown through photosynthesis using sunlight, you are consuming stored solar energy, and when vehicles burn petroleum made from ancient organisms that used sunlight, they are releasing solar energy stored millions of years ago.
+
+KEYWORDS:
+ultimate source, solar energy, Sun, photosynthesis, food energy, stored energy, ancient organisms, energy origin, plant growth, fossil fuel formation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Renewable versus Non-Renewable Energy
+DEFINITION:
+Renewable energy sources like sunlight, wind, and running water do not run out, while non-renewable fossil fuels are limited and take millions of years to form, making conservation critical especially in countries like Sri Lanka that import petroleum.
+
+KEY_POINTS:
+
+Renewable energy sources do not deplete with use.
+Examples of renewable energy include sunlight, wind, and running water.
+Sri Lanka has abundant sunlight and rain for solar and hydropower.
+Non-renewable fossil fuels are limited and finite.
+Fossil fuels take millions of years to form and cannot be replaced once burned.
+Sri Lanka imports petroleum, making efficient use economically important.
+
+EXAMPLES:
+Sri Lanka's hydropower from abundant rainfall and solar power from plentiful sunlight are renewable and sustainable, while imported petroleum for vehicles is non-renewable and must be used efficiently to protect the economy.
+
+KEYWORDS:
+renewable energy, non-renewable energy, sustainable, fossil fuels, limited resources, sunlight, wind, hydropower, petroleum imports, conservation, economic importance
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Energy Transformation Principle
+DEFINITION:
+Energy is never created from nothing or destroyed but only changes from one form to another, such as chemical energy to light, motion energy to electrical, or light energy to heat.
+
+KEY_POINTS:
+
+Energy cannot be created or destroyed, only transformed.
+Different devices transform energy between various forms.
+Flashlights transform chemical energy in batteries to light energy.
+Wind turbines transform motion energy of wind to electrical energy.
+Solar cookers concentrate light energy and transform it to heat energy.
+
+EXAMPLES:
+In a flashlight, chemical energy stored in the dry cell battery transforms into light energy for illumination, and in a solar cooker, light energy from the sun concentrates to become heat energy that boils water.
+
+KEYWORDS:
+energy transformation, energy conversion, chemical energy, light energy, electrical energy, heat energy, motion energy, conservation of energy, batteries, wind turbines, solar cookers
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Electricity in Sri Lanka and D.J. Wimalasurendra
+DEFINITION:
+Electricity is a highly useful energy form that travels easily through wires, with Sri Lanka's electrical development pioneered by D.J. Wimalasurendra who recognized the potential of waterfalls and rivers for hydropower generation.
+
+KEY_POINTS:
+
+Electricity is easily transmitted through wires to homes and factories.
+D.J. Wimalasurendra was the first to realize Sri Lanka's hydropower potential.
+Sri Lanka uses a mix of hydro, wind, coal, and fuel sources for electricity.
+Multiple energy sources ensure reliable power supply.
+
+EXAMPLES:
+D.J. Wimalasurendra pioneered Sri Lanka's use of waterfalls and rivers for hydropower, and today the country generates electricity from a mix of hydropower stations like Laxapana and Victoria, wind farms in Hambantota and Puttalam, and coal plants to keep lights on and factories running.
+
+KEYWORDS:
+electricity, D.J. Wimalasurendra, hydropower pioneer, transmission wires, power grid, hydro, wind, coal, fuel, mixed sources, Sri Lankan history, electrical development
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C11
+NAME: Heat Energy and Environment
+DEFINITION:
+Heat is a form of energy felt as warmth, with the Sun as the main source, and while necessary for life, excessive heat can cause environmental problems like floods and droughts related to weather and climate changes.
+
+KEY_POINTS:
+
+Heat is energy perceived as warmth.
+The Sun is Earth's primary heat source.
+Heat is necessary for life but excessive heat causes problems.
+Temperature changes lead to natural disasters like floods and droughts.
+Scientists study weather and climate to understand solar energy interactions.
+
+EXAMPLES:
+The Sun provides the heat energy we need to live, but excessive heating causes climate changes that lead to natural disasters like floods during heavy rains or droughts during extended dry periods, which scientists study to understand and predict.
+
+KEYWORDS:
+heat energy, warmth, Sun, temperature, natural disasters, floods, droughts, weather, climate, environmental impact, climate change
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C12
+NAME: Energy Conservation Practices
+DEFINITION:
+Energy conservation involves using energy productively and efficiently through habits like switching off unnecessary lights, using efficient cooking methods, and maintaining vehicles to reduce waste, costs, and pollution.
+
+KEY_POINTS:
+
+Some energy sources are limited and others are expensive, requiring conservation.
+Simple habits make significant differences in energy use.
+Examples include switching off unnecessary lights, using saw dust stoves instead of gas when possible, and maintaining vehicles.
+Saving energy preserves resources for the future.
+Conservation reduces pollution and environmental impact.
+
+EXAMPLES:
+Sri Lankan households can conserve energy by switching off lights when not needed, using kudu lipa (saw dust stoves) instead of expensive L.P. gas when appropriate, and maintaining vehicles properly to save imported fuel, which preserves resources for future generations and reduces pollution.
+
+KEYWORDS:
+energy conservation, efficiency, productive use, saving energy, switching off lights, saw dust stoves, vehicle maintenance, resource preservation, pollution reduction, environmental responsibility, future resources
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Solar Energy as Ultimate Source
+TO: Solar Energy Applications in Sri Lanka
+TO: Biomass Energy Sources
+TO: Fossil Fuels Formation and Applications
+EXPLANATION:
+The Sun as the ultimate energy source explains why solar panels work directly, why biomass exists from plant growth, and why fossil fuels contain energy from ancient organisms that captured sunlight.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Renewable versus Non-Renewable Energy
+TO: Energy Conservation Practices
+EXPLANATION:
+Understanding that non-renewable fossil fuels are limited while renewable sources are sustainable motivates conservation practices to preserve finite resources and transition to sustainable energy.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Energy Transformation Principle
+TO: Solar Energy Applications in Sri Lanka
+TO: Wind Energy Applications
+TO: Hydropower from Running Water
+EXPLANATION:
+Energy transformation explains how solar panels convert light to electricity, wind turbines convert motion to electricity, and hydropower stations convert water flow kinetic energy to electrical energy.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Fossil Fuels Formation and Applications
+TO: Solar Energy as Ultimate Source
+EXPLANATION:
+Fossil fuels formed from ancient plants and animals that captured solar energy millions of years ago, making them stored solar energy released when burned.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Electricity in Sri Lanka and D.J. Wimalasurendra
+TO: Hydropower from Running Water
+EXPLANATION:
+D.J. Wimalasurendra's recognition of Sri Lanka's waterfall and river potential led to development of hydropower stations like Laxapana and Victoria that now generate national electricity.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Heat Energy and Environment
+TO: Solar Energy as Ultimate Source
+EXPLANATION:
+The Sun as the primary heat source drives weather and climate patterns, with changes in solar heating causing environmental impacts like floods and droughts.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R7
+FROM: Renewable versus Non-Renewable Energy
+TO: Fossil Fuels Formation and Applications
+EXPLANATION:
+Fossil fuels are non-renewable because they take millions of years to form from buried organisms, making them finite resources that will eventually deplete.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Sri Lankan Sun-Dried Chilies and Paddy
+
+DESCRIPTION:
+Farmers in Sri Lanka spread chilies and paddy grains in the sun to dry them using free solar energy, preserving the crops for storage and sale without requiring fuel or electricity.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Kudu Lipa Saw Dust Stove Cooking
+
+DESCRIPTION:
+Sri Lankan households use the kudu lipa, a traditional saw dust stove, to burn saw dust as biomass fuel for cooking meals and boiling water efficiently and economically.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Hambantota and Puttalam Wind Farms
+
+DESCRIPTION:
+Large wind vanes in Hambantota and Puttalam harness wind energy to rotate dynamos, generating electricity that feeds into Sri Lanka's national power grid for homes and industries.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Laxapana and Victoria Hydropower Stations
+
+DESCRIPTION:
+At Laxapana and Victoria hydropower stations, flowing water from Sri Lankan rivers rotates massive turbines that generate electricity distributed throughout the country's power network.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Winnowing Rice with Wind Energy
+
+DESCRIPTION:
+Sri Lankan farmers use wind to winnow rice by throwing harvested grain into the air, allowing wind to blow away lightweight unfilled grains while heavier filled grains fall back for collection.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E6
+TITLE: Flashlight Energy Transformation
+
+DESCRIPTION:
+When you turn on a flashlight, chemical energy stored in the dry cell battery transforms into light energy that illuminates your surroundings, demonstrating energy conversion from one form to another.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E7
+TITLE: Making Lunu Dehi with Solar Heat
+
+DESCRIPTION:
+Sri Lankan households make Lunu dehi (a traditional food) by using the Sun's heat energy to dry and preserve ingredients, utilizing free solar energy for food preparation.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E8
+TITLE: Solar Panels Powering Homes
+
+DESCRIPTION:
+Solar panels on Sri Lankan rooftops convert sunlight directly into electrical energy that powers home appliances like lights, fans, and televisions, using renewable energy from the abundant tropical sun.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+All energy sources are unlimited and will never run out.
+
+CORRECTION:
+Energy sources are divided into renewable (sunlight, wind, running water) that do not run out and non-renewable (fossil fuels) that are limited and take millions of years to form, requiring conservation.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Energy is created when we turn on devices like lights or start engines.
+
+CORRECTION:
+Energy is never created from nothing; it only transforms from one form to another. Light bulbs transform electrical energy to light, and engines transform chemical fuel energy to mechanical motion.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Fossil fuels are renewable because they come from plants and animals.
+
+CORRECTION:
+Although fossil fuels formed from plants and animals, the process takes millions of years under high pressure, making them non-renewable on human timescales and finite resources that will eventually deplete.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Solar energy is only useful for generating electricity with solar panels.
+
+CORRECTION:
+Solar energy has many traditional uses beyond electricity including drying clothes and grains, making Lunu dehi, heating water in solar water heaters, and providing warmth, in addition to modern solar panel electricity generation.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Individual energy conservation efforts do not matter because industries use most energy.
+
+CORRECTION:
+While industries use significant energy, household conservation through switching off lights, using efficient cooking methods, and maintaining vehicles collectively makes major differences in national energy demand, costs, and environmental impact.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M6
+STATEMENT:
+Biomass and fossil fuels are completely different energy sources with no connection.
+
+CORRECTION:
+Both biomass and fossil fuels come from plants and animals, but biomass is recently grown organic material while fossil fuels are ancient organisms subjected to high pressure over millions of years, both ultimately storing solar energy.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Solar Energy Applications Montage
+
+DESCRIPTION:
+Show Sri Lankan farmers drying chilies and paddy in bright sunlight, household solar water heaters heating water, solar panels on rooftops generating electricity, and Lunu dehi being made using solar heat.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Traditional Kudu Lipa Cooking
+
+DESCRIPTION:
+Animate a traditional Sri Lankan kudu lipa (saw dust stove) with saw dust fuel burning inside, flames heating a cooking pot, and family preparing meals using this biomass energy source.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Fossil Fuel Formation Timeline
+
+DESCRIPTION:
+Time-lapse animation showing ancient plants and animals living, dying and being buried, experiencing high pressure over millions of years underground, and transforming into coal, oil, and gas deposits.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Wind Farm Electricity Generation
+
+DESCRIPTION:
+Panoramic view of wind vanes in Hambantota or Puttalam spinning in strong wind, rotating dynamos inside turbines, generating electrical current flowing through transmission lines to homes and factories.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Hydropower Station Operation
+
+DESCRIPTION:
+Show water flowing from reservoir through pipes at Laxapana or Victoria station, hitting turbine blades causing rotation, turbines connected to generators producing electricity, power flowing through transmission grid.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Energy Transformation Chain
+
+DESCRIPTION:
+Visual flow diagram showing Sun's light energy captured by plants through photosynthesis, animals eating plants, humans eating food, energy transforming through digestion to power activities, demonstrating solar energy as ultimate source.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Renewable versus Non-Renewable Comparison
+
+DESCRIPTION:
+Split screen showing renewable sources (sun shining endlessly, wind blowing continuously, rivers flowing perpetually) on one side versus non-renewable sources (finite oil barrels, coal piles depleting, empty fuel pumps) on the other side.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S8
+TITLE: D.J. Wimalasurendra Hydropower Vision
+
+DESCRIPTION:
+Historical scene showing D.J. Wimalasurendra observing Sri Lankan waterfalls and rivers, envisioning turbines and electricity generation, transitioning to modern hydropower stations he inspired, powering the nation.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S9
+TITLE: Energy Conservation Practices
+
+DESCRIPTION:
+Show household scenes of switching off unnecessary lights, using kudu lipa instead of L.P. gas stove, properly maintained vehicle running efficiently, solar water heater instead of electric heater, demonstrating practical conservation.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Define energy as the ability to do work and identify major energy sources used in Sri Lanka including solar energy for drying and electricity, biomass like firewood and saw dust for cooking, fossil fuels for vehicles and power plants, wind for winnowing and electricity generation, and hydropower from running water.
+
+Explain that the Sun is the ultimate source of almost all Earth's energy, with food energy created through photosynthesis, biomass from recently grown plants, and fossil fuels being stored solar energy from ancient organisms subjected to high pressure over millions of years.
+
+Distinguish between renewable energy sources (sunlight, wind, running water) that do not deplete and non-renewable fossil fuels that are limited and take millions of years to form, understanding that Sri Lanka imports petroleum making conservation economically important.
+
+Apply the principle that energy is never created or destroyed but only transforms between forms, recognize Sri Lanka's electrical development pioneered by D.J. Wimalasurendra using hydropower, and practice energy conservation through habits like switching off lights, using efficient cooking methods, and maintaining vehicles to preserve resources and reduce pollution.
+
+==================================================
+SECTION: SUMMARY
+Energy is defined as the ability to do work, enabling activities like pulling ropes, carrying loads, and loading goods. Sri Lanka utilizes diverse energy sources including solar energy for drying clothes, grains like chilies and paddy, making Lunu dehi, heating water in solar water heaters, and generating electricity through solar panels. Biomass consists of living plant or animal materials used as fuel such as firewood, coconut shells, saw dust, and rice bran, commonly burned in traditional stoves like the kudu lipa (saw dust stove) for cooking meals and boiling water. Fossil fuels including coal, petroleum oil, and L.P. gas formed from buried plants and animals subjected to high pressure over millions of years and power vehicles with petrol and diesel, enable cooking with L.P. gas, and generate electricity in coal power plants, though Sri Lanka imports petroleum from other countries. Wind energy applications include farmers winnowing unfilled rice grains, pumping water, grinding grains in windmills, and generating electricity through large wind vanes in Hambantota and Puttalam that rotate dynamos. Hydropower harnesses running water at stations like Laxapana and Victoria where flowing water rotates large turbines generating electricity. Almost all energy on Earth originally comes from the Sun, with green plants using sunlight for photosynthesis to produce food that animals and humans consume as stored solar energy, biomass made from plants grown using sunlight, and fossil fuels being remains of ancient organisms that captured solar energy millions of years ago. Renewable energy sources like sunlight, wind, and running water do not run out and Sri Lanka benefits from abundant sunlight and rain for solar and hydropower, while non-renewable fossil fuels are limited, take millions of years to form, and require efficient use especially for imported petroleum. Energy is never created from nothing or destroyed but only transforms between forms, as demonstrated by flashlights converting chemical battery energy to light, wind turbines converting motion energy to electrical energy, and solar cookers concentrating light energy into heat energy. Electricity is easily transmitted through wires with Sri Lanka's electrical development pioneered by D.J. Wimalasurendra who recognized waterfall and river potential for hydropower, and today the country uses a mix of hydro, wind, coal, and fuel sources for reliable power. Heat is energy felt as warmth with the Sun as the main source, necessary for life but excessive heat causing environmental problems like floods and droughts that scientists study through weather and climate research. Energy conservation involves productive and efficient use through habits like switching off unnecessary lights, using kudu lipa saw dust stoves instead of expensive L.P. gas when possible, and maintaining vehicles to save imported fuel, which preserves resources for future generations and reduces pollution and environmental impact.
+
+==================================================
+
+
+

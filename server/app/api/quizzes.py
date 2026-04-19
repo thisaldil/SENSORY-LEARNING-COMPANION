@@ -1,7 +1,7 @@
 """
 Quizzes API Routes
 """
-from fastapi import APIRouter, HTTPException, status, Depends
+from fastapi import APIRouter, HTTPException, status, Depends, Query
 from beanie import PydanticObjectId
 from app.models.user import User
 from app.models.cognitive_load.quiz import Quiz, QuizResult
@@ -19,6 +19,7 @@ from app.services.cognitive_load.quiz_generator import (
 )
 from app.services.cognitive_load.behavior_service import get_behavior_log
 from app.utils.dependencies import get_current_user
+from typing import List
 import json
 
 router = APIRouter()
@@ -51,6 +52,29 @@ async def quiz_result_to_response(result: QuizResult) -> QuizResultResponse:
             result_dict["cognitive_load_confidence"] = behavior_log.cognitive_load_confidence
     
     return QuizResultResponse.model_validate(result_dict)
+
+
+@router.get("/results", response_model=List[QuizResultResponse])
+async def list_user_quiz_results(
+    skip: int = Query(0, ge=0, description="Number of records to skip"),
+    limit: int = Query(20, ge=1, le=100, description="Maximum number of quiz results to return"),
+    current_user: User = Depends(get_current_user),
+):
+    """
+    List quiz results for the current user, ordered by most recent first.
+
+    Intended for use in the user dashboard to show recent quiz performance.
+    """
+    try:
+        user_id = PydanticObjectId(current_user.id)
+        cursor = QuizResult.find({"user_id": user_id}).sort("-completed_at").skip(skip).limit(limit)
+        results = await cursor.to_list()
+        return [await quiz_result_to_response(result) for result in results]
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error listing quiz results: {str(e)}",
+        )
 
 
 @router.post("/generate", response_model=QuizResponse, status_code=status.HTTP_201_CREATED)

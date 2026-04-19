@@ -4,7 +4,7 @@ Adaptive Text Engine – Hybrid NLP + LLM Pipeline.
 Implements:
 - Phase 1: NLP analysis (readability, dependency distance, TF‑IDF keywords)
 - Phase 2: State router -> Tier 1 / Tier 2 / Tier 3
-- Phase 3: LLM transmutation (Gemini via existing client)
+- Phase 3: LLM transmutation 
 - Phase 4: Output validator ensuring keyword preservation
 """
 from __future__ import annotations
