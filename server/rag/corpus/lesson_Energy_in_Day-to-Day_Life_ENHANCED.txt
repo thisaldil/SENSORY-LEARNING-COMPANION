@@ -1,0 +1,576 @@
+LESSON_ID: SCI_G6_ENERGY_DAILY_LIFE
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Energy in Day-to-Day Life
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Continuous Energy Use in Living
+DEFINITION:
+Every activity performed by living organisms, from breathing and thinking to moving and growing, requires energy in various forms operating simultaneously.
+
+KEY_POINTS:
+
+All life activities consume energy continuously, even at rest.
+Multiple energy types work together in the body simultaneously.
+Brain uses electrical energy, body burns chemical energy from food, eyes receive light energy.
+Even reading requires energy expenditure in multiple body systems.
+
+EXAMPLES:
+While reading a book, your brain uses electrical energy for thinking, your body burns chemical energy from food to maintain cells, light energy enters your eyes to see, and your heart uses mechanical energy to pump blood.
+
+KEYWORDS:
+continuous energy use, life activities, multiple energy forms, simultaneous processes, body energy
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Sunlight Energy Transfer to Eyes
+DEFINITION:
+Sunlight is electromagnetic energy that travels 150 million kilometers from the Sun to Earth at the speed of light, entering our eyes and being converted to electrical signals in the brain.
+
+KEY_POINTS:
+
+Sunlight travels vast distances at light speed to reach Earth.
+Light energy enters the eye and stimulates photoreceptor cells.
+The eye converts light energy into electrical nerve signals.
+Brain interprets these signals as vision.
+
+EXAMPLES:
+At 6:00 AM, sunlight travels from the Sun through your window, enters your eyes, and sends electrical signals to your brain allowing you to see the new day.
+
+KEYWORDS:
+sunlight, light energy, electromagnetic radiation, vision, eye, photoreceptors, speed of light
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Food as Chemical Energy Storage
+DEFINITION:
+Food contains chemical energy stored in molecular bonds of carbohydrates, proteins, and fats, with different foods providing different amounts and types of energy measured in calories.
+
+KEY_POINTS:
+
+Chemical energy is stored in food molecules.
+Carbohydrates provide long-lasting energy.
+Proteins build muscles and provide energy.
+Fats are energy-dense providing concentrated calories.
+One calorie is a unit measuring energy content.
+
+EXAMPLES:
+Breakfast foods provide varied energy: cereal and bread give long-lasting carbohydrate energy, eggs provide muscle-building protein energy, butter provides energy-dense fat, and rice or roti provide sustained morning energy.
+
+KEYWORDS:
+chemical energy, food energy, calories, carbohydrates, proteins, fats, energy storage, molecular bonds
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Digestion and Energy Release Process
+DEFINITION:
+Digestion is the chemical and mechanical breakdown of food in the digestive system that releases stored chemical energy for absorption and use by body cells.
+
+KEY_POINTS:
+
+Chewing provides mechanical breakdown of food.
+Stomach performs chemical digestion through acids and enzymes.
+Chemical reactions release energy from food molecules.
+Energy is absorbed by intestines into bloodstream.
+Released energy powers all body functions.
+
+EXAMPLES:
+When you eat a banana containing approximately 100 calories of chemical energy, your digestive system breaks it down through chewing and stomach acids, releases the energy, and your body absorbs it providing enough power to run around for 15 minutes.
+
+KEYWORDS:
+digestion, chemical breakdown, mechanical breakdown, energy release, absorption, stomach, enzymes, chemical reactions
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Electrical Energy Transformations in Devices
+DEFINITION:
+Electrical energy from power plants travels through wires to homes and transforms into other energy forms such as light, heat, and mechanical energy in various household devices.
+
+KEY_POINTS:
+
+Power plants generate electrical energy transmitted through wires.
+Electrical energy transforms into multiple useful forms in devices.
+Light bulbs convert electrical to light and heat energy.
+Water heaters convert electrical to heat energy.
+Fans and hair dryers convert electrical to mechanical energy.
+
+EXAMPLES:
+In your bathroom, a light bulb converts electrical energy to light and heat so you can see yourself, a water heater converts electrical energy to heat for warm showers, and a hair dryer converts electrical energy to heat and mechanical energy (blowing air) to dry your hair.
+
+KEYWORDS:
+electrical energy, energy transformation, light bulbs, appliances, heat conversion, mechanical conversion, power plants, wires
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Muscle Movement and Mechanical Energy
+DEFINITION:
+Muscles convert chemical energy from food into mechanical energy for movement by contracting and relaxing, enabling locomotion and physical work.
+
+KEY_POINTS:
+
+Food energy is delivered to muscle cells.
+Muscle contraction requires chemical energy.
+Mechanical energy results from muscle movement.
+Physical work burns calories from food stores.
+
+EXAMPLES:
+Walking to school burns approximately 100 calories while cycling burns approximately 200 calories because cycling requires more mechanical work from your muscles converting food energy into movement.
+
+KEYWORDS:
+mechanical energy, muscle contraction, locomotion, physical work, calorie burning, movement, muscle cells
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Energy Types in School Activities
+DEFINITION:
+School activities involve multiple simultaneous energy transformations including electrical energy for lighting and computers, sound energy for communication, and chemical energy for thinking and learning.
+
+KEY_POINTS:
+
+Classroom lighting converts electrical to light energy (60 watts per bulb).
+Sound waves carry energy from teachers to students' ears.
+Computers use electrical energy processed into light displays.
+Brain learning consumes chemical energy from food.
+Mechanical energy from fingers operates keyboards and mice.
+
+EXAMPLES:
+During computer class, electrical energy powers the computer circuits and screen light, mechanical energy from your fingers operates the keyboard and mouse, and your brain uses chemical energy to process information and learn.
+
+KEYWORDS:
+school energy, classroom lighting, sound energy, computer energy, learning, electrical devices, multiple transformations
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Physical Activity Energy Expenditure
+DEFINITION:
+Sports and physical activities consume large amounts of chemical energy from food, converting it to mechanical movement and heat, with intensity determining calorie burn rate.
+
+KEY_POINTS:
+
+Physical activity burns chemical energy at high rates.
+Energy converts to mechanical movement and body heat.
+30 minutes of running burns 300+ calories.
+Intense activity requires additional food energy intake.
+Mechanical energy transfers to objects like balls during sports.
+
+EXAMPLES:
+Kicking a football transfers your leg's mechanical energy to the ball creating kinetic energy in motion, the impact creates sound energy, and you feel tired because you've burned lots of chemical energy during 30 minutes of play.
+
+KEYWORDS:
+physical activity, sports, calorie expenditure, mechanical movement, heat generation, kinetic energy, energy burn rate
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C9
+NAME: Digital Device Energy Consumption
+DEFINITION:
+Electronic devices like phones, tablets, and game consoles consume electrical energy from batteries or outlets, converting it primarily to light from screens and heat from processors.
+
+KEY_POINTS:
+
+Devices store electrical energy in batteries or draw from outlets.
+Screens emit light energy from pixels.
+Processors generate heat as byproduct.
+Game consoles use 100-200 watts of power.
+Device settings affect energy consumption rates.
+
+EXAMPLES:
+When gaming, your phone's battery provides electrical energy to circuits, the screen converts it to light energy for display, and your brain uses energy thinking and reacting, while leaving devices charged unnecessarily wastes energy.
+
+KEYWORDS:
+digital devices, batteries, screens, electrical consumption, light emission, gaming, energy waste, pixels
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C10
+NAME: Cooking Heat Energy Transformation
+DEFINITION:
+Cooking transforms chemical energy from fuels (wood, gas, electricity) into heat energy that causes chemical changes in food, making it edible and releasing nutrients for digestion.
+
+KEY_POINTS:
+
+Fuel sources provide chemical or electrical energy.
+Energy converts to heat for cooking.
+Heat causes chemical changes making food edible.
+Different cooking methods have different energy efficiency.
+Cooked food energy becomes available to body after eating.
+
+EXAMPLES:
+In Sri Lankan traditional cooking, firewood contains chemical energy that burns to produce heat energy, which cooks rice through chemical changes, and when eaten the rice energy is absorbed by the family providing power for their activities.
+
+KEYWORDS:
+cooking, heat energy, fuel, chemical changes, firewood, gas, electricity, energy efficiency, Sri Lankan cooking, traditional methods
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C11
+NAME: Sleep Energy Recovery and Storage
+DEFINITION:
+During sleep, the body continues using energy for digestion, repair, growth, and memory consolidation while storing excess energy for future use, making sleep essential for energy management.
+
+KEY_POINTS:
+
+Sleep is energy-intensive despite appearing restful.
+Body performs digestion, repair, and growth during sleep.
+Energy stores as fat and glucose for next day.
+Brain consolidates memories using energy.
+Children need 8-10 hours for growth processes.
+
+EXAMPLES:
+After burning 2000-2500 calories throughout the day, an 11-year-old sleeps through the night while the body repairs muscles using protein, stores excess energy, brain consolidates learning, and healing processes occur, waking up refreshed and recharged.
+
+KEYWORDS:
+sleep, energy storage, body repair, growth, memory consolidation, glucose storage, fat storage, recovery, energy management
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C12
+NAME: Daily Energy Budget and Balance
+DEFINITION:
+A daily energy budget balances energy intake from food (calories consumed) against energy expenditure from all activities (calories burned), with excess stored or deficit requiring stored energy use.
+
+KEY_POINTS:
+
+11-year-olds typically burn 1700-2400 calories daily.
+Daily needs are 2000-2500 calories to balance energy.
+Energy in equals energy out plus storage.
+Different activities burn calories at different rates.
+Sleep burns 400-500 calories, school burns 600-800 calories, sports burn 400-600 calories.
+
+EXAMPLES:
+If breakfast provides 400 calories and walking to school burns 100 calories while cycling burns 200 calories, you still have 200-300 calories remaining for school activities, demonstrating energy budget management.
+
+KEYWORDS:
+energy budget, calorie balance, energy intake, energy expenditure, daily needs, calorie counting, energy equation, metabolism
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C13
+NAME: Energy Efficiency and Conservation
+DEFINITION:
+Energy efficiency means using less energy to accomplish the same task, achieved through technology choices and behavior changes that reduce waste and environmental impact.
+
+KEY_POINTS:
+
+LED bulbs use 75% less energy than incandescent bulbs.
+Turning off unused devices saves electrical energy.
+Shorter showers reduce water heating energy.
+Cycling instead of driving saves fuel energy.
+Individual actions multiplied across populations create massive impact.
+
+EXAMPLES:
+Using LED bulbs (10 watts per hour) instead of incandescent bulbs (60 watts per hour) for lighting reduces electricity consumption by 6 times, saving both energy costs and environmental resources.
+
+KEYWORDS:
+energy efficiency, conservation, LED bulbs, energy saving, waste reduction, environmental impact, sustainable practices, behavior change
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C14
+NAME: Global Energy Consumption Patterns
+DEFINITION:
+Energy consumption per person varies dramatically across countries, with developed nations using far more energy than sustainable levels while global goals aim for renewable energy transition.
+
+KEY_POINTS:
+
+Average USA person uses approximately 12,000 watts continuously.
+Average Sri Lankan person uses approximately 1,000 watts.
+Sustainable target is approximately 2,000 watts per person.
+80% of global energy currently from fossil fuels (non-renewable).
+20% from renewable sources (solar, wind, hydro).
+Goal is 80% renewable energy by 2050.
+
+EXAMPLES:
+Sri Lanka's per-person energy consumption of approximately 1,000 watts is far below USA's 12,000 watts, demonstrating that energy use varies by development level and lifestyle, with global sustainability requiring movement toward 2,000 watts per person from renewable sources.
+
+KEYWORDS:
+global energy, per capita consumption, fossil fuels, renewable energy, sustainability, energy transition, climate goals, Sri Lanka energy use
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Food as Chemical Energy Storage
+TO: Digestion and Energy Release Process
+EXPLANATION:
+Food stores chemical energy in molecular bonds that digestion breaks down and releases, making the stored energy available for body use.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Digestion and Energy Release Process
+TO: Muscle Movement and Mechanical Energy
+EXPLANATION:
+Digestion releases chemical energy from food that is delivered to muscle cells where it converts to mechanical energy for movement.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Food as Chemical Energy Storage
+TO: Daily Energy Budget and Balance
+EXPLANATION:
+Food provides the energy input side of the daily energy budget, supplying calories that balance against expenditure from all activities.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Physical Activity Energy Expenditure
+TO: Daily Energy Budget and Balance
+EXPLANATION:
+Physical activities consume calories at high rates, forming a major component of daily energy expenditure that must be balanced by food intake.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Sleep Energy Recovery and Storage
+TO: Daily Energy Budget and Balance
+EXPLANATION:
+Sleep represents both energy expenditure for repair and growth processes and energy storage for future use, completing the daily energy cycle.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Electrical Energy Transformations in Devices
+TO: Energy Efficiency and Conservation
+EXPLANATION:
+Understanding how devices transform electrical energy enables informed choices about efficient technologies and conservation behaviors to reduce waste.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R7
+FROM: Energy Efficiency and Conservation
+TO: Global Energy Consumption Patterns
+EXPLANATION:
+Individual energy efficiency choices multiplied across populations significantly impact global consumption patterns and progress toward sustainability goals.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R8
+FROM: Cooking Heat Energy Transformation
+TO: Food as Chemical Energy Storage
+EXPLANATION:
+Cooking uses heat energy to transform raw food through chemical changes that make stored chemical energy accessible for human digestion and use.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Banana Energy for Running
+
+DESCRIPTION:
+A banana contains approximately 100 calories of chemical energy stored in carbohydrate molecules. After eating and digesting the banana, your body absorbs this energy and can use it to power approximately 15 minutes of running around.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Walking versus Cycling Energy Expenditure
+
+DESCRIPTION:
+If breakfast provides 400 calories and walking to school burns 100 calories, you have 300 remaining, but if you cycle to school burning 200 calories, you have only 200 remaining because cycling requires more mechanical work from muscles.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: LED versus Incandescent Bulb Efficiency
+
+DESCRIPTION:
+An LED bulb uses 10 watts per hour costing $0.00012 per hour, while an incandescent bulb uses 60 watts per hour costing $0.0007 per hour, demonstrating LED bulbs use 6 times less energy and save money.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Traditional Sri Lankan Firewood Cooking
+
+DESCRIPTION:
+In traditional Sri Lankan cooking, firewood contains chemical energy that burns producing heat energy, which cooks rice through chemical changes making it edible, and when the family eats the rice they absorb its chemical energy to power their daily activities.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Football Kick Energy Transfer
+
+DESCRIPTION:
+When kicking a football, your leg's mechanical energy transfers to the ball creating kinetic energy in motion, the ball hitting the goal post creates sound energy from the impact, and you feel tired because you've burned chemical energy from food stores.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E6
+TITLE: Daily Energy Budget Calculation
+
+DESCRIPTION:
+An 11-year-old sleeping 8 hours burns 400 calories, sitting in school 6 hours burns 480 calories, walking 1 hour burns 100 calories, playing sports 1 hour burns 500 calories, totaling approximately 1620 calories burned, requiring about 2200 calories food intake to balance and provide growth energy.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E7
+TITLE: Bathroom Electrical Energy Transformations
+
+DESCRIPTION:
+In a bathroom, a light bulb transforms electrical energy to light and heat for visibility, a water heater transforms electrical energy to heat for warm showers, and a hair dryer transforms electrical energy to both heat and mechanical energy (air blowing) to dry hair.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E8
+TITLE: Sleep Energy Processes
+
+DESCRIPTION:
+During 8 hours of sleep, the body continues digesting food slowly, stores energy as fat and glucose, repairs muscles through protein synthesis, consolidates memories in the brain, and performs healing—all energy-intensive processes occurring while appearing restful.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Sleep does not use energy because you are not doing anything.
+
+CORRECTION:
+Sleep is actually energy-intensive, with the body using 400-500 calories during 8 hours for digestion, muscle repair, growth, memory consolidation, and healing processes essential for health.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Only active movement burns calories, not thinking or sitting.
+
+CORRECTION:
+All body processes burn calories including thinking, breathing, and maintaining body temperature. School sitting for 6 hours burns 600-800 calories, and your brain constantly uses energy even at rest.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+All foods provide the same amount of energy.
+
+CORRECTION:
+Different foods contain different energy amounts measured in calories. Fats are energy-dense, carbohydrates provide sustained energy, and proteins build muscles while also providing energy. One banana has approximately 100 calories while a meal can have 500-800 calories.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Energy disappears when used and is gone forever.
+
+CORRECTION:
+Energy transforms from one form to another but is never destroyed. Chemical energy from food transforms to mechanical energy for movement and heat energy warming the body, following the law of energy conservation.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Individual energy saving choices do not matter globally.
+
+CORRECTION:
+While one person's energy savings seems small, millions of people making efficient choices creates massive impact. If everyone used LED bulbs instead of incandescent, global electricity consumption would decrease significantly.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M6
+STATEMENT:
+Renewable energy can completely replace fossil fuels immediately.
+
+CORRECTION:
+While renewable energy is growing, currently 80% of global energy comes from fossil fuels and only 20% from renewables. The transition goal is 80% renewable by 2050, requiring decades of infrastructure development and technology advancement.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Morning Sunlight Energy Journey
+
+DESCRIPTION:
+Animate sunlight traveling 150 million kilometers from the Sun at light speed, entering through a bedroom window, bouncing off objects, and entering a child's eyes as they wake up, converting to electrical signals in the brain.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Food Digestion Energy Transformation
+
+DESCRIPTION:
+Show food entering mouth being mechanically chewed, traveling to stomach where colorful chemical reactions occur, energy being released and absorbed through intestine walls into bloodstream, and child suddenly having energy to play actively.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Power Plant to Home Energy Trail
+
+DESCRIPTION:
+Follow electrical energy from power plant through transmission wires and cables, entering home through meter, branching to different rooms, transforming in bathroom devices into light from bulbs, heat from water heater, and mechanical energy from fan blades spinning.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Muscle Energy Burn During Exercise
+
+DESCRIPTION:
+Show food calories as glowing energy packages inside body, as child walks to school packages gradually diminish, switching to cycling shows packages disappearing faster, display remaining energy level after arrival demonstrating higher burn rate for cycling.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: School Classroom Energy Web
+
+DESCRIPTION:
+Simultaneous animation showing electrical energy flowing to lights converting to illumination, teacher's sound waves traveling through air to students' ears, computers processing electrical to light displays, students' fingers providing mechanical energy to keyboards, and brains consuming chemical energy for learning.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Sports Activity Heat and Movement
+
+DESCRIPTION:
+Show child playing football with chemical energy packages being consumed rapidly, converting to mechanical leg movement kicking ball, heat radiating from body colored red, sweat appearing for cooling, and energy gauge dropping significantly after 30 minutes.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Traditional Firewood Cooking Transformation
+
+DESCRIPTION:
+Animate firewood burning with chemical energy releasing as heat flames, heat cooking rice showing chemical changes in color and texture, cooked rice being eaten by family, and family members glowing with absorbed energy ready for activities.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S8
+TITLE: Sleep Energy Restoration Processes
+
+DESCRIPTION:
+Show tired child going to bed, then inside body view revealing multiple processes: stomach continuing digestion glow, muscles being repaired with construction imagery, brain consolidating memories with filing animation, energy being stored as glowing reserves, child waking refreshed with full energy bar.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S9
+TITLE: Daily Energy Budget Visualization
+
+DESCRIPTION:
+24-hour time-lapse with energy bar showing food adding calories (bar fills up), activities consuming calories (bar decreases), label each activity with calorie cost, show balance at day's end with storage for growth.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S10
+TITLE: LED versus Incandescent Comparison
+
+DESCRIPTION:
+Split screen showing identical rooms lit by LED bulb on left using 10 watts with small power flow, incandescent bulb on right using 60 watts with large power flow, display running cost counters showing LED saving money over time.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Identify and explain how continuous energy transformations occur in daily activities including food chemical energy converting to mechanical movement, electrical energy transforming to light and heat in devices, and sunlight energy enabling vision.
+
+Calculate personal daily energy budget by accounting for calorie intake from food and calorie expenditure from activities including sleep (400-500 cal), school (600-800 cal), walking/cycling (100-200 cal), and sports (400-600 cal), understanding that 11-year-olds need 2000-2500 calories daily to balance energy.
+
+Compare energy efficiency between different technologies such as LED bulbs using 75% less energy than incandescent bulbs, and evaluate conservation behaviors including turning off unused devices, taking shorter showers, and cycling instead of driving to reduce environmental impact.
+
+Analyze global energy consumption patterns recognizing Sri Lanka's per-capita use of approximately 1,000 watts compared to USA's 12,000 watts, understand current 80% fossil fuel versus 20% renewable energy split, and explain the goal of transitioning to 80% renewable energy by 2050 for sustainability.
+
+==================================================
+SECTION: SUMMARY
+Every single activity in daily life requires energy in various forms operating simultaneously, from brain electrical energy and body chemical energy to light energy for vision and mechanical energy for heart pumping. Sunlight travels 150 million kilometers from the Sun to Earth enabling vision when light energy enters eyes and converts to electrical brain signals. Food stores chemical energy in molecular bonds of carbohydrates for long-lasting energy, proteins for muscle-building, and fats for concentrated energy, with digestion breaking down food through mechanical chewing and chemical stomach reactions to release energy measured in calories for absorption and body use. Electrical energy from power plants travels through wires transforming in household devices such as light bulbs converting to light and heat, water heaters converting to heat, and fans converting to mechanical energy. Muscles convert chemical energy from food to mechanical energy for movement, with walking burning approximately 100 calories and cycling burning 200 calories due to increased mechanical work. School activities involve multiple simultaneous energy transformations including electrical energy for 60-watt lighting and computers, sound energy for communication, mechanical energy for keyboards, and chemical energy for brain learning. Sports and physical activities consume large amounts of chemical energy at high rates, with 30 minutes of running burning 300+ calories converting to mechanical movement, heat, and kinetic energy transferred to balls. Digital devices consume electrical energy from batteries or outlets converting primarily to screen light from pixels and processor heat, with game consoles using 100-200 watts and device settings affecting consumption. Cooking transforms chemical energy from fuels into heat energy causing chemical changes in food, as seen in traditional Sri Lankan firewood cooking where wood's chemical energy burns to produce heat that cooks rice which families then eat for energy. During sleep the body continues using energy intensively for digestion, muscle repair through protein synthesis, growth processes, memory consolidation, and healing while storing excess energy as fat and glucose, with 8 hours burning 400-500 calories. Daily energy budget balances intake against expenditure, with 11-year-olds typically burning 1700-2400 calories daily requiring 2000-2500 calorie intake following the equation energy in equals energy out plus storage. Energy efficiency uses less energy for same tasks through technology like LED bulbs using 75% less energy than incandescent bulbs and behaviors like turning off unused devices, with individual actions multiplied across populations creating massive environmental impact. Global energy consumption varies dramatically with average USA person using 12,000 watts, Sri Lankan person using 1,000 watts, sustainable target being 2,000 watts per person, current 80% fossil fuels versus 20% renewables, and goal of transitioning to 80% renewable energy by 2050 for climate sustainability.
+

@@ -1,0 +1,353 @@
+LESSON_ID: SCI_G6_EFFECTS_OF_MAGNETS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Effects of Magnets
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_MAGNETISM_BASICS
+NAME: Magnetism as an Invisible Force
+DEFINITION:
+Magnetism is an invisible force produced by magnets that allows them to act on certain materials without touching them directly.
+
+KEY_POINTS:
+- Magnets can exert force at a distance without physical contact
+- The invisible force around a magnet is called magnetism
+- Magnetism can cause motion, attraction, or repulsion depending on the materials and pole positions
+- The strength of magnetic effects depends on distance and magnet type
+
+EXAMPLES:
+A paperclip can move toward a magnet even before the magnet touches it, showing that magnetic force works through space.
+
+KEYWORDS:
+magnetism, invisible force, magnetic force, force at a distance, magnetic effects
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ATTRACTION_REPULSION
+NAME: Attraction and Repulsion Between Poles
+DEFINITION:
+Every magnet has two poles, North (N) and South (S). Like poles repel each other, while unlike poles attract each other.
+
+KEY_POINTS:
+- A magnet has two poles: North and South
+- Two North poles or two South poles push each other away (repulsion)
+- A North pole and a South pole pull toward each other (attraction)
+- Pole interactions explain many magnetic motions seen in experiments and devices
+
+EXAMPLES:
+If you bring the North pole of one bar magnet near the South pole of another, they pull together. If you bring two North poles together, they push apart.
+
+KEYWORDS:
+magnetic poles, north pole, south pole, attraction, repulsion, like poles, unlike poles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_MAGNETIC_MATERIALS
+NAME: Magnetic and Non-Magnetic Materials
+DEFINITION:
+Materials are classified by how they respond to magnets. Magnetic materials are attracted to magnets, while non-magnetic materials are not attracted.
+
+KEY_POINTS:
+- Magnetic materials include iron, steel, nickel, and cobalt
+- Non-magnetic materials include wood, plastic, glass, copper, and aluminum
+- Magnets do not stick to every material
+- Material type determines whether magnetic attraction occurs
+
+EXAMPLES:
+A steel pin is attracted to a magnet, but a plastic ruler next to it is not affected.
+
+KEYWORDS:
+magnetic materials, non-magnetic materials, iron, steel, nickel, cobalt, wood, plastic, glass, copper, aluminum
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_FORCE_THROUGH_BARRIERS
+NAME: Magnetic Force Through Non-Magnetic Barriers
+DEFINITION:
+Magnetic force can pass through non-magnetic materials, allowing magnets to influence objects even when a barrier is present.
+
+KEY_POINTS:
+- Magnets can act through barriers such as paper and thin plastic
+- The barrier must be non-magnetic for the effect to pass through easily
+- Magnetic force still decreases with distance even through barriers
+- This property is useful in many practical demonstrations and devices
+
+EXAMPLES:
+A paperclip placed on top of paper moves when a magnet is moved underneath the paper.
+
+KEYWORDS:
+magnetic force through barriers, non-magnetic barrier, paperclip experiment, distance effect, indirect magnetic action
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_MAGNETIC_FIELD
+NAME: Magnetic Fields and Field Lines
+DEFINITION:
+A magnetic field is the invisible region around a magnet where magnetic force can be felt. Field lines are visual patterns that show the direction and shape of this field.
+
+KEY_POINTS:
+- Every magnet is surrounded by a magnetic field
+- The magnetic field is strongest near the poles and weaker farther away
+- Iron filings around a bar magnet arrange into curved lines called magnetic field lines
+- Field lines are shown traveling from the North pole to the South pole
+
+EXAMPLES:
+In a lab, sprinkling iron filings around a bar magnet reveals curved field line patterns that are denser near the poles.
+
+KEYWORDS:
+magnetic field, field lines, iron filings, magnetic strength, poles, north to south direction
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_MAGNET_SHAPES_APPLICATIONS
+NAME: Magnet Shapes and Their Uses
+DEFINITION:
+Magnets are made in different shapes to produce specific magnetic effects for different jobs in science and technology.
+
+KEY_POINTS:
+- Bar magnets are common in school laboratory activities
+- Horseshoe magnets bring poles close together to create strong pull in one region
+- Cylindrical and button magnets are used in toys and refrigerator note holders
+- Ring magnets are used in loudspeakers and computer hard drives
+
+EXAMPLES:
+A horseshoe magnet is often used in demonstrations where strong lifting in a small area is needed, while ring magnets are found inside speakers.
+
+KEYWORDS:
+bar magnet, horseshoe magnet, cylindrical magnet, button magnet, ring magnet, magnetic design, applications
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_EARTH_MAGNETISM
+NAME: Earth as a Giant Magnet
+DEFINITION:
+Earth behaves like a giant magnet because its molten iron and nickel core generates a large magnetic field that affects compass needles.
+
+KEY_POINTS:
+- Earth has a large magnetic field
+- The field is linked to molten iron and nickel in Earth's core
+- A compass needle is a tiny magnet that aligns with Earth's magnetic field
+- This alignment helps people identify direction, especially north, for navigation
+
+EXAMPLES:
+Sailors and explorers used compasses for thousands of years to navigate oceans by following the direction shown by the magnetic needle.
+
+KEYWORDS:
+earth magnetism, earth magnetic field, compass, navigation, molten core, iron and nickel
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_ELECTROMAGNETISM
+NAME: Electromagnets and the Link Between Electricity and Magnetism
+DEFINITION:
+An electromagnet is a temporary magnet created when electric current flows through a wire coil around an iron core, showing the connection between electricity and magnetism.
+
+KEY_POINTS:
+- Electricity and magnetism are closely linked
+- Wrapping copper wire around an iron nail and connecting a battery can make the nail magnetic
+- Electromagnets can be turned on and off by controlling electric power
+- Electromagnets are used in cranes to lift heavy metal and release it by switching off power
+
+EXAMPLES:
+At a port crane, turning on electrical power activates an electromagnet to lift scrap metal; turning power off drops the metal at the target location.
+
+KEYWORDS:
+electromagnet, electricity and magnetism, copper coil, iron core, battery, temporary magnet, crane magnet
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_DOMAIN_THEORY
+NAME: Domain Theory of Magnetism
+DEFINITION:
+Domain theory explains magnetism by tiny magnetic regions called domains inside materials. When domains align in one direction, the material becomes magnetic.
+
+KEY_POINTS:
+- Magnetic materials contain tiny regions called domains
+- In an unmagnetized state, domains point in different directions and cancel out
+- A nearby magnet can cause domains to line up in one direction
+- Aligned domains make the whole object magnetic
+- Dropping or strongly heating a magnet can jumble domains and weaken magnetism
+
+EXAMPLES:
+An iron nail near a strong magnet can become magnetized because its domains align. If a magnet is repeatedly dropped, domain alignment is disturbed and strength decreases.
+
+KEYWORDS:
+domain theory, magnetic domains, alignment, unmagnetized state, magnetization, demagnetization
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CC_MODERN_APPLICATIONS
+NAME: Modern Applications of Magnetism
+DEFINITION:
+Magnetism is used in many modern technologies, including medicine, transport, information storage, and audio devices.
+
+KEY_POINTS:
+- MRI scanners use very strong magnets to create images inside the human body
+- Maglev trains in some countries use magnetic forces to float above tracks and reduce friction
+- The black strip on credit cards stores data using tiny magnetic particles
+- Speakers and microphones use magnets to convert between electrical signals and sound vibrations
+- Magnet technology supports both daily life and advanced engineering systems
+
+EXAMPLES:
+In hospitals, MRI machines use large magnets for medical imaging, while home speakers use magnets to produce sound from electrical signals.
+
+KEYWORDS:
+MRI, maglev, credit card magnetic strip, speakers, microphones, medical imaging, magnetic technology
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_POLES_FIELD
+FROM: Attraction and Repulsion Between Poles
+TO: Magnetic Fields and Field Lines
+EXPLANATION:
+Attraction and repulsion happen because each pole creates a magnetic field. The way fields interact determines whether magnets pull together or push apart. Field strength is greatest near poles, where attraction or repulsion effects are strongest.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_MATERIALS_BARRIERS
+FROM: Magnetic and Non-Magnetic Materials
+TO: Magnetic Force Through Non-Magnetic Barriers
+EXPLANATION:
+Magnets can act through barriers only when those barriers are non-magnetic. Non-magnetic materials like paper or plastic do not become strongly attracted, so magnetic force can still reach magnetic objects such as paperclips on the other side.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_EARTH_COMPASS
+FROM: Earth as a Giant Magnet
+TO: Magnetic Fields and Field Lines
+EXPLANATION:
+Earth's magnetic field works like the field around a giant magnet. A compass needle aligns with this large-scale field, demonstrating that magnetic field concepts apply from small bar magnets to the whole planet.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_ELECTRO_DOMAIN
+FROM: Electromagnets and the Link Between Electricity and Magnetism
+TO: Domain Theory of Magnetism
+EXPLANATION:
+In an electromagnet, electric current creates a magnetic influence that helps domains in the iron core align. This domain alignment is why the core becomes magnetic while current flows, and why magnetism reduces when power is removed.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_SHAPES_APPLICATIONS
+FROM: Magnet Shapes and Their Uses
+TO: Modern Applications of Magnetism
+EXPLANATION:
+Different technologies require different magnet shapes to control field strength and direction. For example, ring magnets are useful in speakers and hard drives, while other shapes are selected for lifting, holding, or sensing tasks.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_PAPER_BARRIER
+TITLE: Moving a Paperclip Through Paper
+
+DESCRIPTION:
+Place a paperclip on top of a sheet of paper. Move a bar magnet underneath the paper. The paperclip follows the magnet's motion even though there is no direct contact. This shows that magnetic force can act through non-magnetic barriers and work at a distance.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_COMPASS_NAVIGATION
+TITLE: Compass Alignment with Earth
+
+DESCRIPTION:
+When a compass is placed on a flat surface, its needle rotates and settles in a direction. The needle is a tiny magnet and aligns with Earth's magnetic field. This helps travelers identify direction and has supported ocean navigation for centuries.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_PORT_CRANE
+TITLE: Electromagnet Crane Operation
+
+DESCRIPTION:
+At a scrap handling site, a crane uses an electromagnet to lift heavy iron and steel pieces. Operators switch power on to pick up metal and switch power off to release it safely. This on-off control is a major advantage over permanent magnets.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_IRON_FILINGS
+TITLE: Visualizing Magnetic Field Lines
+
+DESCRIPTION:
+Place a bar magnet under a sheet and sprinkle iron filings on top. Gently tap the sheet. The filings arrange into curved patterns, denser near poles and spread out farther away. This reveals the shape and strength distribution of the magnetic field.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_MAGNETS_STICK_ALL
+STATEMENT:
+Magnets stick to all metals and all objects.
+
+CORRECTION:
+Magnets attract only certain materials strongly, mainly iron, steel, nickel, and cobalt. Many metals such as copper and aluminum are not attracted in this simple classroom context, and non-metals like wood, plastic, and glass are non-magnetic.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_ONLY_ATTRACTION
+STATEMENT:
+Magnets only attract; they never repel.
+
+CORRECTION:
+Magnets can both attract and repel. Unlike poles (N-S) attract, while like poles (N-N or S-S) repel. Repulsion is an essential magnetic effect.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_FORCE_NEEDS_CONTACT
+STATEMENT:
+A magnet must touch an object to affect it.
+
+CORRECTION:
+Magnetic force acts at a distance through a magnetic field. A magnet can move a paperclip through a sheet of paper without contact, proving that direct touching is not required.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MISC_ELECTROMAGNET_ALWAYS_ON
+STATEMENT:
+An electromagnet stays magnetic forever like a permanent magnet.
+
+CORRECTION:
+Most simple electromagnets are temporary and depend on electric current. When power is switched off, magnetic strength drops greatly because the current that supports domain alignment is removed.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_POLES_INTERACTION
+TITLE: Attraction and Repulsion of Poles
+
+DESCRIPTION:
+Show two bar magnets labeled N and S. First, animate N approaching S and snapping together with arrows pointing inward (attraction). Then reset and animate N approaching N, where arrows point outward and magnets push apart (repulsion). Include clear pole labels and force arrows.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_FIELD_LINES
+TITLE: Magnetic Field Line Visualization
+
+DESCRIPTION:
+Display a bar magnet surrounded by animated curved field lines traveling from North to South. Overlay iron filings forming the same curved pattern, with denser lines near poles to show stronger field regions and lighter spacing farther away to show weaker field strength.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_PAPERCLIP_BARRIER
+TITLE: Magnet Acting Through Paper Barrier
+
+DESCRIPTION:
+Show a transparent side view of a sheet of paper with a paperclip on top and a magnet moving below. As the magnet slides, the paperclip follows on the upper surface. Highlight the non-magnetic barrier and use a glow path to indicate invisible magnetic force passing through.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SCENE_ELECTROMAGNET_CRANE
+TITLE: Electromagnet Crane in Operation
+
+DESCRIPTION:
+Animate a crane at a port or scrapyard lowering an electromagnet onto iron scrap. When a power switch turns on, current flows through coils and scrap metal lifts. When power turns off, metal drops at a sorting area. Show clear on/off states to emphasize control of electromagnet strength.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Explain magnetism as an invisible force that can act at a distance
+- Describe attraction and repulsion using North and South pole interactions
+- Classify materials as magnetic or non-magnetic with correct examples
+- Demonstrate that magnetic force can act through non-magnetic barriers
+- Describe magnetic fields and explain what field line patterns show
+- Explain how electromagnets work and why they can be turned on and off
+- Describe Earth as a giant magnet and explain compass navigation
+- Identify modern applications of magnetism including MRI, magnetic cards, speakers, and cranes
+
+==================================================
+SECTION: SUMMARY
+Magnets produce an invisible force called magnetism that can act on certain materials without touching them. Their two poles create attraction (between unlike poles) and repulsion (between like poles). Magnets attract magnetic materials such as iron, steel, nickel, and cobalt, but not common non-magnetic materials like wood, plastic, and glass. Magnetic force can pass through non-magnetic barriers such as paper, and this force exists in an invisible magnetic field that is strongest near poles. Magnet shapes are designed for different jobs, from laboratory bar magnets to ring magnets in speakers and hard drives. Earth itself behaves like a giant magnet, allowing compass needles to align for navigation. Electricity and magnetism are linked: electric current in a coil can create an electromagnet that turns on and off, useful in cranes for lifting and releasing metal. Domain theory explains magnetism by alignment of tiny internal regions in materials, and disruption of this alignment can weaken magnets. Magnetism is essential in modern technology, including MRI scanners, magnetic data strips, transport systems, and audio devices.

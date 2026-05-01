@@ -1,0 +1,378 @@
+LESSON_ID: SCI_G6_MAGNETIC_POLE_INTERACTIONS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Interactions between the Poles of Magnets
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Magnetic Poles and Basic Interactions
+DEFINITION:
+Every magnet has two poles—a North Pole and a South Pole—and these poles exert forces on other poles depending on whether they are alike or different.
+
+KEY_POINTS:
+
+Magnets do not remain still near each other; they exert active forces.
+Interactions between poles are predictable and follow consistent rules.
+Two types of pole interactions exist: attraction and repulsion.
+
+EXAMPLES:
+A North Pole on one magnet will be pulled toward a South Pole on another magnet.
+
+KEYWORDS:
+magnetic pole, North Pole, South Pole, magnet interaction, force
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Law of Attraction
+DEFINITION:
+Unlike magnetic poles attract each other, exerting a pulling force that draws them together.
+
+KEY_POINTS:
+
+A North Pole and a South Pole move toward each other.
+Opposite poles stick together when they touch.
+Attraction is a pulling force.
+
+EXAMPLES:
+A North Pole and South Pole bar magnet placed near each other will move together and align.
+
+KEYWORDS:
+attraction, unlike poles, pulling force, opposite poles, magnet alignment
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Law of Repulsion
+DEFINITION:
+Like magnetic poles repel each other, exerting a pushing force that keeps them apart.
+
+KEY_POINTS:
+
+Two North Poles push away from each other.
+Two South Poles push away from each other.
+The repulsion feels like an invisible cushion of resistance.
+
+EXAMPLES:
+Two North Poles held close together create a pushing sensation that prevents them from touching easily.
+
+KEYWORDS:
+repulsion, like poles, pushing force, same poles, resistance
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Magnetic Field Lines
+DEFINITION:
+Magnetic field lines are invisible streams of magnetic energy that flow out of the North Pole and return into the South Pole.
+
+KEY_POINTS:
+
+Field lines show the pattern of magnetic force in space.
+Lines from the North Pole can enter an approaching South Pole directly.
+When two poles of the same type approach, their field lines push against each other.
+
+EXAMPLES:
+Using iron filings sprinkled around a magnet reveals field line patterns arcing from North to South.
+
+KEYWORDS:
+magnetic field, field lines, force pattern, North Pole flow, South Pole return
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Non-Contact Force
+DEFINITION:
+Magnetic force acts over a distance without physical contact between the poles, making magnetism a non-contact force.
+
+KEY_POINTS:
+
+Most forces require touching, but magnetic force works at a distance.
+Closer poles produce stronger interactions.
+Distance weakens the strength of both attraction and repulsion.
+
+EXAMPLES:
+A magnet can pull a paperclip across a table without touching it, or push another magnet without contact.
+
+KEYWORDS:
+non-contact force, distance force, action at distance, magnetic range
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Magnetic Induction
+DEFINITION:
+A magnetic pole can induce an opposite pole in a non-magnetic material such as iron, turning it into a temporary magnet.
+
+KEY_POINTS:
+
+A permanent magnet can make iron, steel, nickel, and cobalt become temporary magnets.
+The induced pole is always opposite to the pole bringing on the induction.
+Induced magnetism ends when the permanent magnet is removed.
+
+EXAMPLES:
+A North Pole brought near an iron nail induces a South Pole at the nail's tip, letting the nail be attracted.
+
+KEYWORDS:
+induction, induced pole, temporary magnet, iron, steel, nickel, cobalt
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Repulsion as the Definitive Magnet Test
+DEFINITION:
+Repulsion between two bars or objects is the only definite proof that both are permanent magnets, because attraction can also occur with induction.
+
+KEY_POINTS:
+
+Attraction alone does not prove both objects are magnets.
+Repulsion proves permanent magnetism in both objects.
+Scientists use "repulsion is the surest test for magnetism."
+
+EXAMPLES:
+If a bar pushes away another bar, both must be permanent magnets; if they only attract, the second bar might just be iron.
+
+KEYWORDS:
+magnet test, repulsion test, permanent magnet, proof, induction vs permanent
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Applications of Magnetic Pole Interactions
+DEFINITION:
+The attraction and repulsion between magnetic poles is used in practical devices and technologies.
+
+KEY_POINTS:
+
+Magnetic door catches use attraction to hold cupboard doors closed.
+Maglev trains use repulsion to levitate and attraction to move forward.
+Electric motors use alternating push and pull to create spinning motion.
+
+EXAMPLES:
+Many Sri Lankan home cupboards stay closed using magnetic catches that attract the door to the frame.
+
+KEYWORDS:
+magnetic applications, door catch, maglev train, electric motor, technology
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Law of Attraction
+TO: Law of Repulsion
+EXPLANATION:
+Both laws explain pole interactions, but attraction involves unlike poles while repulsion involves like poles, showing the two opposite effects magnets produce.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Magnetic Field Lines
+TO: Law of Attraction
+EXPLANATION:
+Field lines from the North Pole can flow directly into an approaching South Pole, physically showing why attraction occurs between unlike poles.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Magnetic Field Lines
+TO: Law of Repulsion
+EXPLANATION:
+When two poles of the same type face each other, their field lines clash because both try to push outward, explaining repulsion.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Non-Contact Force
+TO: Magnetic Induction
+EXPLANATION:
+Because magnetism acts at a distance, a magnet can induce opposite poles in nearby non-magnetic conductors like iron without touching them.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Repulsion as the Definitive Magnet Test
+TO: Magnetic Induction
+EXPLANATION:
+Repulsion definitively proves magnetism because induction causes attraction with iron, but two permanent magnets alone produce repulsion with like poles.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R6
+FROM: Applications of Magnetic Pole Interactions
+TO: Law of Attraction
+EXPLANATION:
+Door catches and maglev forward motion use attraction between unlike poles to pull and hold objects together.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R7
+FROM: Applications of Magnetic Pole Interactions
+TO: Law of Repulsion
+EXPLANATION:
+Maglev train levitation and electric motor spinning depend on repulsion between like poles to create motion and lift.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Two Bar Magnets Attracting
+
+DESCRIPTION:
+Place a North Pole and South Pole end of two separate magnets close together; they will move toward each other and stick.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Two Bar Magnets Repelling
+
+DESCRIPTION:
+Place two North Poles or two South Poles face to face; they will push apart when forced together, creating a cushioning resistance.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Floating Magnet Experiment in Sri Lankan Classrooms
+
+DESCRIPTION:
+Stack ring magnets on a vertical rod with like poles facing up, using repulsion to make top magnets float in mid-air.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Magnetic Door Catch in a Cupboard
+
+DESCRIPTION:
+A magnet on a cupboard door is attracted to a metal plate, keeping the door closed through unlike-pole attraction.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Picking Up Iron with Magnetic Induction
+
+DESCRIPTION:
+Bring a magnet near an iron nail; the magnet induces an opposite pole at the nail tip, and the nail is attracted and held.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E6
+TITLE: Maglev Train Principle
+
+DESCRIPTION:
+Maglev trains use repulsion to float above tracks and attraction to move forward, moving faster than normal Sri Lankan trains due to reduced friction.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Magnets always attract each other, no matter how they are positioned.
+
+CORRECTION:
+Magnets attract when unlike poles face each other but repel when like poles face each other.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+The repulsion force between magnets is just a trick or illusion.
+
+CORRECTION:
+Repulsion is a real force caused by like-pole field lines clashing, and it is powerful enough to levitate objects.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+If an iron object is attracted to a magnet, the iron object must be a magnet itself.
+
+CORRECTION:
+Iron can be attracted through induction without being a permanent magnet; only repulsion from another magnet proves permanent magnetism.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Magnetic force requires physical contact to work.
+
+CORRECTION:
+Magnetic force acts at a distance without contact, making it a non-contact force that decreases with distance.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Magnetic field lines are visible lines drawn on magnets.
+
+CORRECTION:
+Field lines are invisible energy patterns; iron filings arrange along them to show their pattern, but the lines themselves are not physical.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Law of Attraction Between Opposite Poles
+
+DESCRIPTION:
+Show two magnets with North and South poles positioned to face opposite poles, with arrows illustrating the pulling force drawing them together.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Law of Repulsion Between Like Poles
+
+DESCRIPTION:
+Animate two North Poles facing each other at close range, showing the pushing force that prevents them from touching.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Magnetic Field Line Pattern
+
+DESCRIPTION:
+Display field lines flowing out of North Pole in an arc, looping back into South Pole, with lines clashing when poles of same type approach.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Floating Magnet Demonstration
+
+DESCRIPTION:
+Show ring magnets stacked on a rod with like poles facing upward, with top magnets levitating due to repulsion overcoming gravity.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Magnetic Induction in Iron
+
+DESCRIPTION:
+Animate a magnet pole approaching an iron nail, showing induction of an opposite pole at the nail tip and resulting attraction.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Maglev Train Levitation and Movement
+
+DESCRIPTION:
+Show a maglev train levitating above tracks using repulsion underneath and attraction pulling it forward at high speed.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Repulsion Test for Permanent Magnetism
+
+DESCRIPTION:
+Visualize two scenarios: one bar attracting iron (could be induction), another pushing iron away (proves both are permanent magnets).
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Explain the two laws of magnet interactions: attraction between unlike poles and repulsion between like poles.
+
+Describe magnetic field lines and how they explain why poles interact the way they do.
+
+Identify that magnetism is a non-contact force and apply magnetic induction to explain why magnets pick up iron objects.
+
+Use repulsion to test for permanent magnetism and describe practical applications such as door catches, maglev trains, and motors.
+
+==================================================
+SECTION: SUMMARY
+Magnetic poles interact by exerting forces over a distance without touching. Unlike poles attract each other in a pulling motion, while like poles repel each other with a pushing force. These interactions are explained by magnetic field lines that flow from North Pole to South Pole; when unlike poles face each other, lines connect them like a stretched rubber band causing attraction, and when like poles face each other, lines clash causing repulsion. Magnetism is a non-contact force that decreases with distance. A permanent magnet can induce temporary magnetism in iron, steel, nickel, and cobalt, which explains how magnets pick up these materials. Repulsion is the definitive test for permanent magnetism because attraction alone can be caused by induction. Practical applications include magnetic door catches, Maglev trains that levitate using repulsion, and electric motors that spin from alternating attraction and repulsion, all of which are common technologies in and around Sri Lanka.

@@ -1,10 +1,3 @@
-"""
-Audio Engine (Member 3)
-
-Uses Gemini (via existing visual ai_generator client) to generate
-TTS‑ready narration aligned with an AnimationScript, and selects
-ambient sound mode + speech rate based on cognitive state.
-"""
 from __future__ import annotations
 
 import json

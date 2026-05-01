@@ -1,12 +1,5 @@
 """
-Voice cloning API – Coqui TTS (XTTS v2).
-
-POST /tts/voice-clone
-  Form: text (str), speaker_wav (WAV file upload)
-  Returns: audio/wav (generated WAV bytes)
-
-GET /tts/health
-  Returns: {"status": "ok"} for liveness.
+Voice cloning TTS (XTTS v2).
 """
 
 from fastapi import APIRouter, File, Form, UploadFile, HTTPException

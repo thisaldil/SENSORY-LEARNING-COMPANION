@@ -1,0 +1,218 @@
+LESSON_ID: SCI_G6_ELECTRICITY_002
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Conservation of Electricity and Prevention of Accidents
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CE_01
+NAME: Conservation of Electricity
+DEFINITION:
+Conservation of electricity means using electrical energy carefully and avoiding unnecessary waste.
+
+KEY_POINTS:
+- Electricity is expensive to produce.
+- Many power plants burn coal and oil.
+- Burning fuels releases carbon dioxide.
+- Saving electricity reduces pollution.
+
+EXAMPLES:
+Switching off lights when leaving a room.
+Using natural sunlight during the day.
+Ironing clothes in batches.
+
+KEYWORDS:
+save energy, pollution, non-renewable, efficiency
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CE_02
+NAME: Energy Efficiency
+DEFINITION:
+Energy efficiency means using devices that provide the same service while consuming less electricity.
+
+KEY_POINTS:
+- LED bulbs use less power than filament bulbs.
+- 5-star appliances use less electricity than 1-star models.
+- Efficient devices reduce electricity bills.
+
+EXAMPLES:
+Replacing filament bulbs with LED bulbs.
+Buying appliances with Energy Star ratings.
+
+KEYWORDS:
+LED, rating system, efficiency, sustainability
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CE_03
+NAME: Electric Shock
+DEFINITION:
+An electric shock occurs when electric current passes through the human body.
+
+KEY_POINTS:
+- The human body contains water and salts.
+- External current interferes with body’s electrical signals.
+- Electric shock can stop the heart.
+- Sri Lankan household voltage is about 230V.
+
+EXAMPLES:
+Touching a live wire.
+Touching a switch with wet hands.
+
+KEYWORDS:
+current, voltage, heart rhythm, safety
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CE_04
+NAME: Electrical Overloading
+DEFINITION:
+Overloading happens when too many appliances draw electricity from one socket.
+
+KEY_POINTS:
+- Excess current produces heat.
+- Overheated wires can cause fires.
+- Avoid using too many devices in one outlet.
+
+EXAMPLES:
+Plugging multiple heavy appliances into one extension.
+Using damaged wiring.
+
+KEYWORDS:
+overheat, fire hazard, current flow
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CE_05
+NAME: Grounding (Earthing)
+DEFINITION:
+Grounding provides a safe path for excess electricity to flow into the earth.
+
+KEY_POINTS:
+- The green/yellow wire is the earth wire.
+- It protects people from electric shock.
+- It directs stray electricity safely away.
+
+KEYWORDS:
+earth wire, protection, safety circuit
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CE_06
+NAME: Safety Devices
+DEFINITION:
+Safety devices automatically stop electricity flow when danger is detected.
+
+KEY_POINTS:
+- A fuse melts if current is too high.
+- A circuit breaker trips during overload.
+- RCCB detects leakage current.
+
+EXAMPLES:
+Fuse wire melting during short circuit.
+Trip switch cutting power instantly.
+
+KEYWORDS:
+fuse, circuit breaker, RCCB, protection
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: CE_07
+NAME: Phantom Power
+DEFINITION:
+Phantom power is electricity used by devices in standby mode.
+
+KEY_POINTS:
+- Standby lights consume electricity.
+- Small amounts add up over time.
+- Turning off at the socket saves more energy.
+
+EXAMPLES:
+Television standby light.
+Microwave clock display.
+
+KEYWORDS:
+standby, hidden consumption, energy waste
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CE_01
+FROM: Electricity Production
+TO: Pollution
+EXPLANATION:
+Burning coal and oil to generate electricity releases carbon dioxide into the atmosphere.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CE_02
+FROM: Overloading
+TO: Fire Risk
+EXPLANATION:
+Excess current increases heat, which can ignite surrounding materials.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_CE_03
+FROM: Grounding
+TO: Electric Shock Prevention
+EXPLANATION:
+Grounding directs stray electricity safely into the earth instead of through a person.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CE_01
+TITLE: Safe Use of Appliances
+
+DESCRIPTION:
+Switch off appliances when not in use and unplug chargers to prevent phantom power waste.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CE_02
+TITLE: Avoiding Overloaded Sockets
+
+DESCRIPTION:
+Using separate sockets for heavy appliances like irons and heaters reduces overheating risk.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_CE_03
+TITLE: First Aid for Electric Shock
+
+DESCRIPTION:
+Do not touch the victim directly.
+Turn off main power immediately.
+Use a dry wooden stick to separate the person from the source.
+Call emergency number 1990.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_CE_01
+STATEMENT:
+Turning a device off with the remote means it uses no electricity.
+
+CORRECTION:
+Devices in standby mode still consume phantom power unless switched off at the wall socket.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_CE_01
+TITLE: Safe Electrical Setup
+
+DESCRIPTION:
+Show a home with labeled safety features: fuse box, trip switch, grounded socket, LED bulbs, and appliances switched off when not in use.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Define conservation of electricity.
+- Explain why electricity should be saved.
+- Describe causes of electric shock.
+- Identify safety devices used in homes.
+- Apply basic first aid steps during electrical accidents.
+
+==================================================
+SECTION: SUMMARY
+Electricity must be conserved to reduce pollution and save resources. Unsafe use can cause electric shocks and fires. Safety devices like fuses, circuit breakers, and grounding systems protect homes. Responsible use of electricity ensures safety and sustainability.

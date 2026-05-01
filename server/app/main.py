@@ -104,7 +104,7 @@ async def health_check():
     return {"status": "ok"}
 
 
-from app.api import auth, users, quizzes, lessons, activities, sensory
+from app.api import auth, users, quizzes, lessons, activities, sensory, progress
 from app.api.visual import animation
 from app.api.cognitive_load import calibration, cognitive, adaptive_content
 from app.api.nlp import content, content_ollama_demo
@@ -129,10 +129,7 @@ app.include_router(voice_clone.router)
 app.include_router(vision_notes.router, prefix="/api", tags=["Vision Notes"])
 app.include_router(vision_notes_local_demo.router, prefix="/api", tags=["Vision Notes Demo"])
 
-# Uncomment as you implement them
-# from app.api import progress, uploads
-# app.include_router(progress.router, prefix="/api/progress", tags=["Progress"])
-# app.include_router(uploads.router, prefix="/api/uploads", tags=["Uploads"])
+app.include_router(progress.router, prefix="/api/progress", tags=["Progress"])
 
 
 if __name__ == "__main__":

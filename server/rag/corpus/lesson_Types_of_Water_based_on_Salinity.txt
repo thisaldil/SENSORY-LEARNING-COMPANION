@@ -1,0 +1,267 @@
+LESSON_ID: SCI_G6_WATER_SALINITY_001
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Types of Water Based on Salinity
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_01
+NAME: Salinity
+DEFINITION:
+Salinity is the amount of dissolved salt present in water.
+
+KEY_POINTS:
+- Salinity depends on the concentration of dissolved minerals.
+- It affects taste, density, and suitability for use.
+- Different organisms survive in different salinity levels.
+- Salinity is measured in parts per thousand (ppt).
+
+EXAMPLES:
+Ocean water has high salinity.
+River water has low salinity.
+
+KEYWORDS:
+salinity, dissolved salts, minerals, ppt, concentration
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_02
+NAME: Fresh Water
+DEFINITION:
+Fresh water is water that contains very low levels of dissolved salts.
+
+KEY_POINTS:
+- Usually contains less than 0.5 ppt of salt.
+- Suitable for drinking, irrigation, and daily use.
+- Found in rivers, lakes, rainwater, and most groundwater.
+- Essential for agriculture and human survival.
+
+EXAMPLES:
+Rainwater.
+River water.
+Reservoirs such as Parakrama Samudra.
+
+KEYWORDS:
+fresh water, low salinity, drinking water, irrigation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_03
+NAME: Marine Water
+DEFINITION:
+Marine water is water that contains a high concentration of dissolved salts, mainly sodium chloride.
+
+KEY_POINTS:
+- Average salinity is about 35 ppt.
+- Found in oceans and seas.
+- Not suitable for direct drinking.
+- Supports marine ecosystems.
+
+EXAMPLES:
+Indian Ocean surrounding Sri Lanka.
+
+KEYWORDS:
+marine water, salt water, ocean, sodium chloride
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_04
+NAME: Brackish Water
+DEFINITION:
+Brackish water has a salinity level between fresh water and marine water.
+
+KEY_POINTS:
+- Forms where rivers meet the sea.
+- Salinity ranges from about 0.5 to 30 ppt.
+- Supports special ecosystems such as mangroves.
+- Common in lagoons and estuaries.
+
+EXAMPLES:
+Negombo Lagoon.
+Rekawa Lagoon.
+
+KEYWORDS:
+brackish water, lagoon, estuary, semi-salty
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_05
+NAME: Formation of Ocean Salinity
+DEFINITION:
+Ocean salinity develops over long periods as rivers carry dissolved minerals from land into the sea.
+
+KEY_POINTS:
+- Rainwater erodes rocks and releases ions.
+- Rivers transport minerals into oceans.
+- Evaporation removes water but leaves salt behind.
+- Over billions of years, salt accumulates in oceans.
+
+EXAMPLES:
+Salt left behind after seawater evaporates.
+
+KEYWORDS:
+erosion, ions, evaporation, mineral accumulation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_06
+NAME: Density and Salinity
+DEFINITION:
+Salt water is denser than fresh water because dissolved salts increase its mass.
+
+KEY_POINTS:
+- Higher salinity increases density.
+- Objects float more easily in salt water.
+- Fresh water may temporarily float above salt water at river mouths.
+- Density layering supports lagoon ecosystems.
+
+EXAMPLES:
+Floating more easily in the sea than in a swimming pool.
+
+KEYWORDS:
+density, floating, layering, plankton
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_07
+NAME: Adaptation to Salinity
+DEFINITION:
+Living organisms develop special adaptations to survive in specific salinity conditions.
+
+KEY_POINTS:
+- Freshwater fish retain salts and remove excess water.
+- Marine fish drink seawater and excrete excess salt.
+- Mangroves filter or expel salt through roots and leaves.
+- Adaptation ensures survival in different ecosystems.
+
+EXAMPLES:
+Mangrove forests in Sri Lanka.
+Marine fish in the Indian Ocean.
+
+KEYWORDS:
+adaptation, mangroves, freshwater fish, marine fish
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: WS_08
+NAME: Saltwater Intrusion
+DEFINITION:
+Saltwater intrusion occurs when seawater enters freshwater groundwater systems due to over-extraction.
+
+KEY_POINTS:
+- Happens in coastal regions.
+- Caused by excessive groundwater pumping.
+- Makes wells saline and unsuitable for drinking.
+- Affects farming and drinking water supply.
+
+EXAMPLES:
+Saline wells in coastal dry zone areas.
+
+KEYWORDS:
+saltwater intrusion, groundwater pumping, salinization
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WS_01
+FROM: Evaporation
+TO: Ocean Salinity
+EXPLANATION:
+Evaporation removes pure water from oceans while leaving salts behind, increasing salinity.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WS_02
+FROM: River Erosion
+TO: Ocean Salinity
+EXPLANATION:
+Rivers carry dissolved minerals from land to the sea, contributing to ocean salinity.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: REL_WS_03
+FROM: Over-Extraction
+TO: Saltwater Intrusion
+EXPLANATION:
+Excessive groundwater pumping lowers freshwater levels and allows seawater to move inland.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WS_01
+TITLE: Floating in the Sea
+
+DESCRIPTION:
+People float more easily in the ocean because salt water is denser than fresh water.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: EX_WS_02
+TITLE: Mangrove Survival
+
+DESCRIPTION:
+Mangrove trees grow in brackish water and filter out excess salt through specialized roots.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WS_01
+STATEMENT:
+All water on Earth has the same amount of salt.
+
+CORRECTION:
+Water varies in salinity and can be fresh, brackish, or marine depending on salt concentration.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WS_02
+STATEMENT:
+Ocean water is salty because salt was added recently.
+
+CORRECTION:
+Ocean salinity developed gradually over billions of years through erosion and evaporation.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: MC_WS_03
+STATEMENT:
+Brackish water is simply dirty water.
+
+CORRECTION:
+Brackish water is a natural mixture of fresh and salt water with specific salinity levels.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WS_01
+TITLE: River Meeting the Sea
+
+DESCRIPTION:
+Show fresh river water flowing into the ocean. Display layering where lighter fresh water floats briefly above denser salt water.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WS_02
+TITLE: Salinity Scale
+
+DESCRIPTION:
+Visual scale showing Fresh Water (<0.5 ppt), Brackish Water (0.5–30 ppt), and Marine Water (~35 ppt).
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: SC_WS_03
+TITLE: Saltwater Intrusion Diagram
+
+DESCRIPTION:
+Cross-section of coastal land showing excessive groundwater pumping allowing seawater to move inland into wells.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+- Define salinity.
+- Classify water as fresh, marine, or brackish.
+- Explain how ocean salinity develops.
+- Describe how density changes with salinity.
+- Identify adaptations of organisms to salinity.
+- Explain saltwater intrusion and its impact.
+
+==================================================
+SECTION: SUMMARY
+Water can be classified by salinity into fresh water, marine water, and brackish water. Ocean salinity develops through erosion and evaporation over long periods. Salinity affects density and floating ability. Organisms adapt to different salinity levels, and coastal regions must manage groundwater carefully to prevent saltwater intrusion.

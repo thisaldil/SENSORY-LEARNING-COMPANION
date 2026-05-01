@@ -1,0 +1,379 @@
+LESSON_ID: SCI_G6_MAGNETIC_POLES
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Magnetic Poles
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Definition and Location of Magnetic Poles
+DEFINITION:
+Magnetic poles are the regions of a magnet where magnetic force is strongest, and every magnet has exactly two poles: North Pole and South Pole.
+
+KEY_POINTS:
+
+Every magnet, regardless of shape or size, has two poles.
+North Pole is usually marked red or labeled "N".
+South Pole is usually marked blue/black or labeled "S".
+
+EXAMPLES:
+When a bar magnet is dipped in iron filings, most filings cluster at the two ends and very few stick to the middle.
+
+KEYWORDS:
+magnetic pole, North Pole, South Pole, magnetic concentration, magnet ends
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: The First Law of Magnetism
+DEFINITION:
+The magnetic interaction rule states that like poles repel each other while unlike poles attract each other.
+
+KEY_POINTS:
+
+Two North poles push away from each other (repulsion).
+Two South poles push away from each other (repulsion).
+A North pole and South pole pull toward each other (attraction).
+
+EXAMPLES:
+Bringing two North poles close together creates a pushing force that keeps them separated.
+
+KEYWORDS:
+law of magnetism, repulsion, attraction, like poles, unlike poles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Freely Suspended Magnet and Compass Principle
+DEFINITION:
+A magnet suspended freely by a thread will always align itself in a North-South direction because the Earth acts like a giant magnet.
+
+KEY_POINTS:
+
+The end pointing toward geographic North is the North-seeking pole.
+The end pointing toward geographic South is the South-seeking pole.
+This principle has been used by sailors, including Sri Lankan sailors across the Indian Ocean, for navigation.
+
+EXAMPLES:
+A suspended bar magnet always settles into a North-South orientation without external pushing.
+
+KEYWORDS:
+freely suspended magnet, compass, Earth magnetic field, navigation, Sri Lanka sailors
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Magnetic Monopole Impossibility
+DEFINITION:
+A single isolated magnetic pole (monopole) cannot exist; breaking a magnet creates two new complete magnets, each with its own poles.
+
+KEY_POINTS:
+
+Breaking a magnet in half produces two magnets, not an isolated North and South piece.
+Even tiny magnetic fragments have both North and South poles.
+Complete magnets cannot be subdivided into isolated poles.
+
+EXAMPLES:
+Cutting a bar magnet lengthwise still produces two complete bar magnets, each with both poles.
+
+KEYWORDS:
+monopole, pole pairs, magnet splitting, atomic alignment, inseparable poles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Earth's Magnetic Poles versus Geographic Poles
+DEFINITION:
+Earth's Magnetic North Pole is located near the geographic South Pole, and Earth's Magnetic South Pole is near the geographic North Pole, causing compass needles to align differently than expected.
+
+KEY_POINTS:
+
+Earth acts as a giant bar magnet with buried poles.
+Magnetic poles are reversed relative to geographic poles.
+Unlike poles attract, so compass North poles are attracted to Earth's Magnetic South Pole.
+
+EXAMPLES:
+A compass needle's North pole points toward geographic North because it is attracted to Earth's Magnetic South Pole located there.
+
+KEYWORDS:
+Earth magnetic field, magnetic poles, geographic poles, compass alignment, reversed poles
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: Magnetic Induction and Temporary Poles
+DEFINITION:
+Magnetic induction is the process by which a strong permanent magnet induces temporary opposite poles in nearby magnetic materials.
+
+KEY_POINTS:
+
+Iron, steel, nickel, and cobalt become temporarily magnetized near a permanent magnet.
+The induced pole closest to the magnet is always opposite.
+Induced magnetism disappears when the permanent magnet is removed.
+
+EXAMPLES:
+An iron nail brought near a magnet's North pole develops a South pole at the tip and becomes attracted to the magnet.
+
+KEYWORDS:
+magnetic induction, temporary poles, magnetic materials, iron, induction chain
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Pole Position in Different Magnet Shapes
+DEFINITION:
+The location of magnetic poles varies depending on the magnet's shape and design.
+
+KEY_POINTS:
+
+Bar magnets have poles at opposite ends.
+Horseshoe magnets have both poles on the same side for greater lifting force.
+Ring magnets typically have poles at opposite flat faces.
+Cylindrical magnets have poles at the circular ends.
+
+EXAMPLES:
+A horseshoe magnet can lift heavier objects because both North and South poles on the same side can pull on a single object.
+
+KEYWORDS:
+bar magnet, horseshoe magnet, ring magnet, cylindrical magnet, pole position, magnet shape
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C8
+NAME: Demagnetization and Pole Breakdown
+DEFINITION:
+Demagnetization is the loss of magnetic properties when atomic alignment inside a magnet is disrupted, causing poles to disappear.
+
+KEY_POINTS:
+
+Heat causes atoms to vibrate and lose organized alignment.
+Physical shocks and hammering can jumble atomic order.
+Improper storage with opposing poles touching can weaken magnets.
+
+EXAMPLES:
+A magnet heated to high temperature loses its ability to attract iron as atomic structure randomizes.
+
+KEYWORDS:
+demagnetization, atomic alignment, heat damage, physical shock, magnet storage, pole loss
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Definition and Location of Magnetic Poles
+TO: The First Law of Magnetism
+EXPLANATION:
+The First Law of Magnetism describes how the poles defined at magnet ends interact with each other and with other magnetic poles.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Freely Suspended Magnet and Compass Principle
+TO: Earth's Magnetic Poles versus Geographic Poles
+EXPLANATION:
+Suspended magnets align along Earth's magnetic field because Earth itself acts as a giant magnet with poles oriented differently from geographic poles.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Magnetic Monopole Impossibility
+TO: Magnetic Induction and Temporary Poles
+EXPLANATION:
+Because poles always come in pairs, induction in a single piece of iron creates both North and South poles even though induction is temporary.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Pole Position in Different Magnet Shapes
+TO: The First Law of Magnetism
+EXPLANATION:
+Different magnet shapes place poles in different positions, which affects how the attraction and repulsion forces work in practical applications.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: Demagnetization and Pole Breakdown
+TO: Definition and Location of Magnetic Poles
+EXPLANATION:
+Demagnetization destroys the pole structure by disrupting atomic alignment, so poles cease to exist in a demagnetized object.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Iron Filings Concentration at Poles
+
+DESCRIPTION:
+A bar magnet dipped in a pile of iron filings collects most filings at the two ends and very few along the center, showing magnetic strength concentration at poles.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Compass Navigation by Sri Lankan Sailors
+
+DESCRIPTION:
+Sri Lankan sailors have used magnetic compasses for centuries to navigate across the Indian Ocean; the compass north-pointing needle aligns with Earth's magnetic field.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Splitting a Bar Magnet
+
+DESCRIPTION:
+Breaking a bar magnet in half produces two complete smaller magnets, each with its own North and South poles, not isolated pole pieces.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Horseshoe Magnet Lifting Strength
+
+DESCRIPTION:
+A horseshoe magnet can lift heavier objects than a bar magnet because both poles face the same direction and both pull on the object simultaneously.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Paperclip Chain Induction
+
+DESCRIPTION:
+A magnet can pick up a chain of paperclips because each clip becomes a temporary magnet through induction, passing magnetic force down the line.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E6
+TITLE: Heat-Induced Demagnetization
+
+DESCRIPTION:
+A magnet heated to high temperature loses its magnetic properties as high heat causes atoms to vibrate and break their organized alignment.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+A magnet can have only one pole if broken carefully.
+
+CORRECTION:
+Breaking a magnet always produces two complete magnets, each with both North and South poles; isolated monopoles cannot exist.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+The North pole of a compass points toward Earth's Magnetic North Pole.
+
+CORRECTION:
+The compass North pole is attracted to Earth's Magnetic South Pole, which is located near geographic North.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+All positions on a magnet have equal magnetic strength.
+
+CORRECTION:
+Magnetic strength is concentrated at the poles; the middle of a magnet has very little magnetism.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+A magnet loses its poles only when it is very old.
+
+CORRECTION:
+Magnets lose poles when atoms lose alignment due to heat, physical shock, or improper storage, regardless of age.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Induction creates permanent magnetism in iron objects.
+
+CORRECTION:
+Induction creates temporary magnetism that disappears when the permanent magnet is removed.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Iron Filings Concentration Around Magnet Poles
+
+DESCRIPTION:
+Show a bar magnet with iron filings heavily concentrated at both ends and sparse along the middle section to demonstrate pole strength concentration.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Repulsion Between Like Poles
+
+DESCRIPTION:
+Animate two North poles approaching each other, showing visible resistance and pushing apart, illustrating repulsion force.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Attraction Between Unlike Poles
+
+DESCRIPTION:
+Show a North pole and South pole approaching, with arrows indicating pulling force drawing them together.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Freely Suspended Magnet Alignment
+
+DESCRIPTION:
+Visualize a bar magnet hanging from a thread rotating and settling into North-South alignment along Earth's magnetic field.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Magnet Breaking Into Two Complete Magnets
+
+DESCRIPTION:
+Cut a bar magnet and show each half separately, revealing new North and South poles on each new magnet surface.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: Earth's Reversed Magnetic Poles
+
+DESCRIPTION:
+Show geographic North and South with reversed magnetic poles, explaining why compass North poles point toward geographic North.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Magnetic Induction in a Paperclip Chain
+
+DESCRIPTION:
+Visualize a magnet attracting the first paperclip, which becomes temporarily magnetized and attracts the next clip, continuing down the chain.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S8
+TITLE: Different Magnet Shapes and Pole Positions
+
+DESCRIPTION:
+Compare bar magnet with end poles, horseshoe magnet with side-by-side poles, ring magnet with face poles, and cylindrical magnet end poles.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S9
+TITLE: Heat-Induced Demagnetization Process
+
+DESCRIPTION:
+Show atoms aligned in a magnet, then apply heat causing vibration and randomization, with poles gradually disappearing as alignment breaks down.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Identify and locate North and South poles on different magnet shapes using color codes or labels.
+
+Apply the First Law of Magnetism to predict whether two poles will attract or repel.
+
+Explain how Earth acts as a magnet and why compasses align as they do for navigation.
+
+Describe magnetic induction, demagnetization, and relate magnetic concepts to real applications such as Sri Lankan compass navigation.
+
+==================================================
+SECTION: SUMMARY
+Every magnet has two poles—a North Pole and a South Pole—where magnetic force is strongest, and these poles follow the First Law of Magnetism: like poles repel while unlike poles attract. A freely suspended magnet aligns itself along Earth's magnetic field, a principle used in compasses by Sri Lankan sailors for centuries to navigate the Indian Ocean. Magnetic poles always come in pairs, so breaking a magnet creates two new complete magnets rather than isolated poles. Earth's Magnetic South Pole is located near geographic North, which is why compass needles point northward due to attraction between unlike poles. Temporary poles can be induced in magnetic materials like iron through induction, but this magnetism disappears when the permanent magnet is removed. The position of poles varies by magnet shape—bar magnets have end poles while horseshoe magnets bring both poles to the same side for greater lifting force. Demagnetization occurs when atomic alignment is disrupted by heat, physical shock, or improper storage, causing poles to disappear and the object to lose magnetism.

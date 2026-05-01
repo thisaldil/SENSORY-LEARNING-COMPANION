@@ -48,5 +48,18 @@ class SensoryOverlayRequest(BaseModel):
     student_id: Optional[str] = None
     lesson_id: Optional[str] = None
     session_id: Optional[str] = None
+    skip_log: Optional[bool] = False  # If True, do not persist to DB
+
+
+class EnrichScriptRequest(BaseModel):
+    """
+    Request for POST /api/sensory/enrich-script.
+
+    Accepts a visual AnimationScript (or full document with script inside).
+    Returns the same structure with per-scene audio and haptics added.
+    """
+
+    script: Dict[str, Any]
+    cognitive_state: Optional[str] = None  # Falls back to script.meta.cognitiveState or "OPTIMAL"
 
 

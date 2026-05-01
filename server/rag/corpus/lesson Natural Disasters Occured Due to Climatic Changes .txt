@@ -1,0 +1,335 @@
+LESSON_ID: SCI_G6_CLIMATE_DISASTERS
+GRADE_LEVEL: 6
+AGE_GROUP: 11
+SUBJECT: Science
+TOPIC: Natural Disasters Occurred Due to Climatic Changes
+DIFFICULTY: Basic
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C1
+NAME: Climate Change and Extreme Weather
+DEFINITION:
+Climate change increases Earth’s heat, making weather events more extreme, more frequent, and often more destructive.
+
+KEY_POINTS:
+
+Warmer climate adds extra energy to the atmosphere.
+Events that were rare in the past now happen more often.
+Many climate-related disasters become stronger than before.
+
+EXAMPLES:
+Heavy rain events and long dry periods now occur more often in many regions compared with decades ago.
+
+KEYWORDS:
+climate change, extreme weather, warming, atmospheric energy, disaster frequency
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C2
+NAME: Floods and Droughts in the Hydrological Cycle
+DEFINITION:
+Floods and droughts are opposite climate-related disasters caused by imbalance in rainfall, evaporation, and water storage.
+
+KEY_POINTS:
+
+Floods occur when rainfall is so heavy that soil and drains cannot absorb or carry water.
+Droughts occur when rainfall is absent for long periods, drying soil and water sources.
+Warming increases both intense rainfall and rapid evaporation, making wet places wetter and dry places drier.
+
+EXAMPLES:
+In Sri Lanka, monsoon floods are common in the Low Country, while droughts can dry wewas and damage crops.
+
+KEYWORDS:
+flood, drought, rainfall, evaporation, monsoon, wewa, hydrological cycle
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C3
+NAME: Landslides, Saturated Soil, and Deforestation
+DEFINITION:
+Landslides occur when water-saturated slope soil loses stability and moves downhill, especially where vegetation cover has been removed.
+
+KEY_POINTS:
+
+Heavy rain fills soil pores and increases soil weight.
+Water acts like a lubricant, reducing friction between soil layers.
+Tree roots hold soil together, so deforestation raises landslide risk.
+
+EXAMPLES:
+Hill Country areas such as Badulla and Kegalle face high landslide danger after prolonged heavy rain, especially on cleared slopes.
+
+KEYWORDS:
+landslide, saturated soil, deforestation, slope stability, gravity, Badulla, Kegalle
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C4
+NAME: Cyclones and Indian Ocean Warming
+DEFINITION:
+Cyclones are rotating storm systems that gain energy from warm ocean water, producing strong winds and very heavy rain.
+
+KEY_POINTS:
+
+Cyclones behave like heat engines powered by warm sea surfaces.
+Warmer Indian Ocean water gives cyclones more energy and moisture.
+Sri Lankan authorities track low-pressure systems and issue warning levels for safety.
+
+EXAMPLES:
+When the Department of Meteorology detects a low-pressure area strengthening, Yellow, Orange, and Red warnings guide evacuation decisions.
+
+KEYWORDS:
+cyclone, Indian Ocean, ocean warming, low pressure, meteorology warnings, evacuation
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C5
+NAME: Sea Level Rise, Coastal Erosion, and Mangroves
+DEFINITION:
+Sea level rise from ice melt and thermal expansion increases coastal erosion and flood damage, but natural and engineered barriers reduce impacts.
+
+KEY_POINTS:
+
+Rising temperature melts polar ice and expands seawater volume.
+Higher sea levels push waves farther inland during tides and storms.
+Breakwaters and mangrove roots absorb wave energy and protect coastal land.
+
+EXAMPLES:
+Sri Lankan coastal communities use breakwaters and mangrove planting to reduce beach loss and home damage.
+
+KEYWORDS:
+sea level rise, thermal expansion, coastal erosion, breakwater, mangrove, coastal protection
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C6
+NAME: El Niño, La Niña, and Seasonal Forecasting
+DEFINITION:
+El Niño and La Niña are climate cycles linked to Pacific Ocean temperatures that influence rainfall patterns in Sri Lanka.
+
+KEY_POINTS:
+
+El Niño often brings drier conditions and drought risk to the region.
+La Niña often increases rainfall and flood risk.
+Forecasts help farmers choose crops and water plans before hazards intensify.
+
+EXAMPLES:
+If drought is predicted, farmers may switch to lower-water crops such as mung beans or maize.
+
+KEYWORDS:
+El Niño, La Niña, climate cycle, seasonal forecast, agriculture planning, drought warning
+
+==================================================
+SECTION: CORE_CONCEPT
+CONCEPT_ID: C7
+NAME: Disaster Preparedness and Risk Reduction
+DEFINITION:
+Preparedness reduces disaster damage through early warning response, emergency planning, and environmental management.
+
+KEY_POINTS:
+
+People must follow Disaster Management Center alerts and official weather news.
+Families in risk zones should maintain emergency kits with essential supplies and documents.
+Keeping drains clear and reducing plastic waste lowers urban flood risk.
+
+EXAMPLES:
+A family in a flood-prone area keeps a torch, radio, first-aid kit, and documents ready to evacuate quickly.
+
+KEYWORDS:
+preparedness, DMC alerts, emergency kit, evacuation, drainage, plastic waste, risk reduction
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R1
+FROM: Climate Change and Extreme Weather
+TO: Floods and Droughts in the Hydrological Cycle
+EXPLANATION:
+Extra atmospheric heat increases both intense rainfall and evaporation, creating stronger floods and droughts.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R2
+FROM: Climate Change and Extreme Weather
+TO: Cyclones and Indian Ocean Warming
+EXPLANATION:
+Warmer ocean surfaces provide more energy and moisture, which can intensify cyclone strength.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R3
+FROM: Landslides, Saturated Soil, and Deforestation
+TO: Disaster Preparedness and Risk Reduction
+EXPLANATION:
+Slope protection with deep-rooted trees and hazard awareness reduces landslide vulnerability.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R4
+FROM: Sea Level Rise, Coastal Erosion, and Mangroves
+TO: Disaster Preparedness and Risk Reduction
+EXPLANATION:
+Mangrove restoration and breakwaters are practical mitigation actions that reduce coastal disaster damage.
+
+==================================================
+SECTION: RELATION
+RELATION_ID: R5
+FROM: El Niño, La Niña, and Seasonal Forecasting
+TO: Floods and Droughts in the Hydrological Cycle
+EXPLANATION:
+These climate cycles shift rainfall patterns, helping predict whether drought or flood risk will increase.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E1
+TITLE: Monsoon Flood in the Low Country
+
+DESCRIPTION:
+During intense monsoon rain, ground and drains cannot absorb water fast enough, causing roads and homes in low-lying areas to flood.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E2
+TITLE: Drought Effects on Wewas and Farming
+
+DESCRIPTION:
+After many dry months, village tanks dry up, soil cracks, and paddy fields fail, forcing communities to ration water.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E3
+TITLE: Landslide on a Cleared Hillside
+
+DESCRIPTION:
+A slope without tree roots becomes unstable after heavy rain, and saturated soil slides downhill under gravity.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E4
+TITLE: Cyclone Alert Response
+
+DESCRIPTION:
+When warning level changes from Yellow to Orange, families secure homes and prepare evacuation to safer ground.
+
+==================================================
+SECTION: EXAMPLE
+EXAMPLE_ID: E5
+TITLE: Mangrove Protection Along the Coast
+
+DESCRIPTION:
+Mangrove root systems weaken wave energy, helping protect beaches and houses during high tides and storms.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M1
+STATEMENT:
+Climate change only causes hotter days and does not affect disasters.
+
+CORRECTION:
+Climate change increases atmospheric and ocean energy, which can intensify floods, droughts, cyclones, and other hazards.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M2
+STATEMENT:
+Landslides are caused only by rain, so tree cutting does not matter.
+
+CORRECTION:
+Deforestation removes roots that bind soil, so rainfall triggers landslides more easily on cleared slopes.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M3
+STATEMENT:
+Cyclone warnings are unnecessary unless the storm has already arrived.
+
+CORRECTION:
+Early warnings are critical because they give time for preparation, evacuation, and life-saving actions.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M4
+STATEMENT:
+Mangroves are only plants and do not protect people.
+
+CORRECTION:
+Mangroves are natural coastal barriers; their roots absorb wave energy and reduce erosion and flood damage.
+
+==================================================
+SECTION: MISCONCEPTION
+MISCONCEPTION_ID: M5
+STATEMENT:
+Small plastic waste in drains cannot cause major floods.
+
+CORRECTION:
+Blocked drains reduce water flow, so even moderate rain can produce severe street flooding.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S1
+TITLE: Climate Warming and Rising Disaster Frequency
+
+DESCRIPTION:
+Show a warming Earth timeline where floods, droughts, landslides, and cyclones appear more frequently over time.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S2
+TITLE: Flood and Drought Comparison
+
+DESCRIPTION:
+Split view showing heavy monsoon flood in one area and cracked dry soil with empty wewa in another area.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S3
+TITLE: Landslide Formation on a Slope
+
+DESCRIPTION:
+Animate rain soaking a deforested hillside, soil becoming slippery, and mass movement downhill due to gravity.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S4
+TITLE: Cyclone Tracking and Warning Colors
+
+DESCRIPTION:
+Show satellite tracking of a low-pressure system over the Indian Ocean with Yellow, Orange, and Red warning transitions.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S5
+TITLE: Sea Level Rise and Coastal Protection
+
+DESCRIPTION:
+Visualize rising sea level pushing waves inland, then compare coastlines with and without mangroves and breakwaters.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S6
+TITLE: El Niño and La Niña Rainfall Shift
+
+DESCRIPTION:
+Show map-based rainfall changes where El Niño brings drier conditions and La Niña brings heavier rain to Sri Lanka.
+
+==================================================
+SECTION: SCENE_DESCRIPTION
+SCENE_ID: S7
+TITLE: Family Disaster Preparedness
+
+DESCRIPTION:
+Display a family packing an emergency bag with torch, radio, first-aid supplies, and important documents after a DMC alert.
+
+==================================================
+SECTION: LEARNING_OBJECTIVES
+
+Explain how climate warming increases the frequency and intensity of natural disasters.
+
+Differentiate floods, droughts, landslides, and cyclones using their causes and impacts in Sri Lanka.
+
+Describe links between human activities, especially deforestation and drainage blockage, and disaster risk.
+
+Apply disaster preparedness actions including warning response, emergency kits, and environmental protection methods.
+
+==================================================
+SECTION: SUMMARY
+Climate change increases atmospheric and ocean heat, which strengthens many natural hazards and makes them more frequent. Warmer air holds more water vapor, causing heavier rain and floods, while faster evaporation can worsen droughts and dry out soils and wewas. In hill regions such as Badulla and Kegalle, heavy rain combined with deforestation increases landslide risk because saturated soil loses stability without root support. Cyclones over the Indian Ocean gain energy from warm seawater, so monitoring and color-coded warnings from meteorological services are essential for safe evacuation. Rising sea levels from ice melt and thermal expansion increase coastal erosion, and protection measures such as breakwaters and mangrove planting reduce wave damage. Climate cycles such as El Niño and La Niña help forecast drought or flood tendencies, allowing better crop planning. Disaster risk can be reduced through preparedness: following DMC alerts, maintaining emergency kits, keeping drains clear, and protecting ecosystems.

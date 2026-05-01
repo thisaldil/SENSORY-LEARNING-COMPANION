@@ -5,6 +5,7 @@ Entry point for POST /api/sensory/overlay.
 """
 from __future__ import annotations
 
+import copy
 from typing import Any, Dict
 
 from beanie import PydanticObjectId
@@ -65,9 +66,11 @@ async def generate_and_log_sensory_overlay(
     lesson_id: str | None = None,
     student_id: str | None = None,
     session_id: str | None = None,
+    skip_log: bool = False,
 ) -> Dict[str, Any]:
     """
-    Public orchestrator used by the FastAPI endpoint.
+    Generate overlay (haptics + audio). If skip_log is False, also persist to DB.
+    Set skip_log=True to avoid creating/using the SensorySession collection.
     """
     state = _normalize_state(cognitive_state)
 
@@ -85,25 +88,113 @@ async def generate_and_log_sensory_overlay(
         "research_metrics": metrics,
     }
 
-    # Persist research record
-    lesson_obj_id = _safe_object_id(lesson_id)
-    student_obj_id = _safe_object_id(student_id)
-
-    doc = SensorySession(
-        student_id=student_obj_id,
-        lesson_id=lesson_obj_id,
-        session_id=session_id,
-        concept=concept,
-        cognitive_state=state,
-        animation_script=script,
-        haptic_timeline=haptics,
-        audio_timeline=audio["narration"],
-        ambient_mode=audio["ambient_mode"],
-        speech_rate=audio["speech_rate"],
-        research_metrics=metrics,
-    )
-    await doc.insert()
+    if not skip_log:
+        lesson_obj_id = _safe_object_id(lesson_id)
+        student_obj_id = _safe_object_id(student_id)
+        doc = SensorySession(
+            student_id=student_obj_id,
+            lesson_id=lesson_obj_id,
+            session_id=session_id,
+            concept=concept,
+            cognitive_state=state,
+            animation_script=script,
+            haptic_timeline=haptics,
+            audio_timeline=audio["narration"],
+            ambient_mode=audio["ambient_mode"],
+            speech_rate=audio["speech_rate"],
+            research_metrics=metrics,
+        )
+        await doc.insert()
 
     return overlay
 
 
+def enrich_script_with_sensory_overlay(
+    script: Dict[str, Any],
+    cognitive_state: str,
+) -> Dict[str, Any]:
+    """
+    Takes a visual AnimationScript and returns it with per-scene audio and haptics.
+
+    Does NOT persist to DB. Use generate_and_log_sensory_overlay for that.
+    """
+    state = _normalize_state(cognitive_state)
+    haptics = build_haptic_timeline(script, state)
+    audio = generate_audio_overlay(script, state)
+
+    # Deep copy to avoid mutating input
+    enriched = copy.deepcopy(script)
+    scenes = enriched.get("scenes") or []
+    if not isinstance(scenes, list):
+        return enriched
+
+    # Script-level sensory config (applies to whole animation)
+    enriched["sensory"] = {
+        "cognitive_state": state,
+        "ambient_mode": audio["ambient_mode"],
+        "speech_rate": audio["speech_rate"],
+    }
+
+    narration_items = audio.get("narration") or []
+
+    for i, scene in enumerate(scenes):
+        if not isinstance(scene, dict):
+            continue
+        try:
+            start = int(scene.get("startTime", 0))
+            duration = int(scene.get("duration", 0))
+        except Exception:
+            continue
+        scene_id = scene.get("id") or f"scene_{i + 1}"
+        end = start + duration
+
+        # Haptics for this scene (by scene_id or by time range)
+        scene_haptics = []
+        for h in haptics:
+            h_at = h.get("at", 0)
+            h_scene = h.get("scene_id")
+            if h_scene and h_scene == scene_id:
+                scene_haptics.append(h)
+            elif not h_scene and start <= h_at < end:
+                scene_haptics.append({**h, "scene_id": scene_id})
+
+        # Narration for this scene (by time range)
+        scene_narration = [
+            n for n in narration_items
+            if start <= n.get("at", 0) < end
+        ]
+
+        # Build per-scene audio structure
+        scene["audio"] = {
+            "narration": [
+                {
+                    "at": n["at"],
+                    "duration": n["duration"],
+                    "text": n["text"],
+                    "timeline": [
+                        {"at": n["at"], "action": "play"},
+                        {"at": n["at"] + n["duration"] - 200, "action": "fade_out", "duration": 200},
+                    ],
+                }
+                for n in scene_narration
+            ],
+            "effects": [],
+        }
+
+        # Build per-scene haptics with timeline format
+        scene["haptics"] = [
+            {
+                "id": f"haptic_{scene_id}_{j}",
+                "pattern": h.get("pattern", "tap_medium"),
+                "intensity": h.get("intensity", 0.6),
+                "channel": h.get("channel", "device"),
+                "scene_id": scene_id,
+                "timeline": [
+                    {"at": h.get("at", 0), "action": "start", "duration": 150},
+                    {"at": h.get("at", 0) + 150, "action": "stop"},
+                ],
+            }
+            for j, h in enumerate(scene_haptics)
+        ]
+
+    return enriched
