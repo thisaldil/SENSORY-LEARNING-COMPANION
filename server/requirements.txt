@@ -24,17 +24,18 @@ scikit-learn>=1.5.0
 numpy>=1.26.4
 pandas>=2.2.0
 transformers>=4.36.0
-# Keep torch <2.9 to avoid torchcodec/FFmpeg dependency (voice cloning on Mac without FFmpeg)
-torch>=2.1.1,<2.9
+# torch<2.9 avoids optional torchcodec on some Mac setups. Render default Python 3.14 only
+# publishes torch>=2.9 wheels; use an open range so pip can resolve on 3.11–3.14.
+torch>=2.1.1
 tensorflow>=2.15.0
 sentence-transformers>=2.2.0
 
 # NLP Processing
 spacy>=3.7.0
 
-# Voice cloning (Coqui TTS / XTTS). Use torch <2.9 above; else install coqui-tts[codec] and FFmpeg.
+# Voice cloning (Coqui TTS / XTTS). If audio fails, install FFmpeg or coqui-tts[codec] per Coqui docs.
 coqui-tts>=0.22.0
-torchaudio>=2.1.0,<2.9
+torchaudio>=2.1.0
 
 # Utilities
 python-dateutil==2.8.2
