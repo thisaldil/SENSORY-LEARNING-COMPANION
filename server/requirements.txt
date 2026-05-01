@@ -24,16 +24,16 @@ scikit-learn>=1.5.0
 numpy>=1.26.4
 pandas>=2.2.0
 transformers>=4.36.0
-# Open range: Render may use Python 3.14 (only torch 2.9+ wheels). Local Mac: use torch<2.9 if you need to avoid torchcodec without FFmpeg.
+# torch<2.9 avoids optional torchcodec on some Mac setups. Render default Python 3.14 only
+# publishes torch>=2.9 wheels; use an open range so pip can resolve on 3.11–3.14.
 torch>=2.1.1
-# Not on PyPI for Python 3.14 yet; cognitive_load_predictor.py works without it (sklearn .pkl or heuristic).
-# For Keras .h5 models on Python 3.9–3.12: pip install "tensorflow>=2.15.0"
+tensorflow>=2.15.0
 sentence-transformers>=2.2.0
 
 # NLP Processing
 spacy>=3.7.0
 
-# Voice cloning (Coqui TTS / XTTS). If decode fails on server, add FFmpeg or coqui-tts[codec].
+# Voice cloning (Coqui TTS / XTTS). If audio fails, install FFmpeg or coqui-tts[codec] per Coqui docs.
 coqui-tts>=0.22.0
 torchaudio>=2.1.0
 
