@@ -27,7 +27,8 @@ transformers>=4.36.0
 # torch<2.9 avoids optional torchcodec on some Mac setups. Render default Python 3.14 only
 # publishes torch>=2.9 wheels; use an open range so pip can resolve on 3.11–3.14.
 torch>=2.1.1
-tensorflow>=2.15.0
+# Not on PyPI for Python 3.14+. cognitive_load_predictor.py works without it (sklearn .pkl/heuristic).
+# For Keras .h5 on Python 3.9–3.12: pip install "tensorflow>=2.15.0"
 sentence-transformers>=2.2.0
 
 # NLP Processing
