@@ -67,6 +67,9 @@ class Settings(BaseSettings):
     # ML Models
     ML_MODELS_DIR: str = "app/ml/models"
 
+    # Quiz generation loads spaCy + SentenceTransformer (high RAM). Set false on small hosts if /api/quizzes/generate returns 502.
+    QUIZ_USE_ML: bool = True
+
     # Visual Learning Platform (animation script generation) – Gemini
     # Accepts GEMINI_API_KEY or Gemini_API_Key from .env
     GEMINI_API_KEY: str = Field(

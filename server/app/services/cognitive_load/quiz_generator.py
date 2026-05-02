@@ -7,6 +7,7 @@ from beanie import PydanticObjectId
 from app.models.audio_haptics.lesson import Lesson
 from app.models.cognitive_load.quiz import Quiz, QuizResult
 from app.models.user import User
+from app.config import settings
 from app.ml.processors.quiz_generator import generate_quiz_from_content
 from app.ml.processors.cognitive_load_predictor import predict_cognitive_load
 from app.services.cognitive_load.behavior_service import (
@@ -45,7 +46,7 @@ async def generate_quiz_for_lesson(
         content=lesson.content,
         num_questions=10,
         target_load=baseline,
-        use_ml=True
+        use_ml=settings.QUIZ_USE_ML,
     )
 
     quiz = Quiz(
