@@ -47,8 +47,13 @@ class Settings(BaseSettings):
             self.SECRET_KEY = self.JWT_SECRET
         return self
 
-    # CORS
-    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:8081,exp://localhost:8081,http://localhost:5173,http://127.0.0.1:5173"
+    # CORS — comma-separated; must include exact browser origins (scheme+host, no path).
+    # Production Netlify frontend + local dev (override via CORS_ORIGINS on Render).
+    CORS_ORIGINS: str = (
+        "http://localhost:3000,http://localhost:8081,exp://localhost:8081,"
+        "http://localhost:5173,http://127.0.0.1:5173,"
+        "https://edusenseuni.netlify.app"
+    )
     
     @property
     def cors_origins_list(self) -> List[str]:

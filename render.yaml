@@ -21,4 +21,4 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: CORS_ORIGINS
-        sync: false
+        value: "https://edusenseuni.netlify.app"
