@@ -15,6 +15,7 @@ import re
 import random
 import uuid
 import logging
+import threading
 from typing import List, Dict, Optional, Set
 from collections import defaultdict
 
@@ -24,6 +25,17 @@ SENTENCE_TRANSFORMERS_AVAILABLE = False
 import numpy as np
 
 logger = logging.getLogger(__name__)
+
+# One shared QuizGenerator per use_ml flag — avoids reloading SentenceTransformer/spaCy on every request (OOM/502 on Render).
+_quiz_generator_lock = threading.Lock()
+_quiz_generator_instances: Dict[bool, "QuizGenerator"] = {}
+
+
+def _get_quiz_generator(use_ml: bool) -> "QuizGenerator":
+    with _quiz_generator_lock:
+        if use_ml not in _quiz_generator_instances:
+            _quiz_generator_instances[use_ml] = QuizGenerator(use_ml=use_ml)
+        return _quiz_generator_instances[use_ml]
 
 
 class QuizGenerator:
@@ -783,7 +795,7 @@ def generate_quiz_from_content(
     Returns:
         List of question dicts with keys: id, type, question, options, correct_index
     """
-    generator = QuizGenerator(use_ml=use_ml)
+    generator = _get_quiz_generator(use_ml)
     return generator.generate_questions(
         content=content,
         num_questions=num_questions,

@@ -1,0 +1,24 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+# After connect, set MONGODB_URL (or MONGO_URI) and any API keys in the dashboard.
+services:
+  - type: web
+    name: edusense-api
+    runtime: python
+    rootDir: server
+    buildCommand: pip install -r requirements.txt && python -m spacy download en_core_web_sm
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      # Force 3.11.x — Py 3.14 has no torch<2.9 wheels (breaks requirements.txt).
+      - key: PYTHON_VERSION
+        value: "3.11.10"
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: MONGODB_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "https://edusenseuni.netlify.app"

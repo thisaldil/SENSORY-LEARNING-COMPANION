@@ -47,8 +47,13 @@ class Settings(BaseSettings):
             self.SECRET_KEY = self.JWT_SECRET
         return self
 
-    # CORS
-    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:8081,exp://localhost:8081,http://localhost:5173,http://127.0.0.1:5173"
+    # CORS — comma-separated; must include exact browser origins (scheme+host, no path).
+    # Production Netlify frontend + local dev (override via CORS_ORIGINS on Render).
+    CORS_ORIGINS: str = (
+        "http://localhost:3000,http://localhost:8081,exp://localhost:8081,"
+        "http://localhost:5173,http://127.0.0.1:5173,"
+        "https://edusenseuni.netlify.app"
+    )
     
     @property
     def cors_origins_list(self) -> List[str]:
@@ -61,6 +66,9 @@ class Settings(BaseSettings):
 
     # ML Models
     ML_MODELS_DIR: str = "app/ml/models"
+
+    # Quiz generation loads spaCy + SentenceTransformer (high RAM). Set false on small hosts if /api/quizzes/generate returns 502.
+    QUIZ_USE_ML: bool = True
 
     # Visual Learning Platform (animation script generation) – Gemini
     # Accepts GEMINI_API_KEY or Gemini_API_Key from .env
