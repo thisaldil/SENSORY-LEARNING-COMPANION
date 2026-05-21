@@ -1,6 +1,13 @@
 """
 Adaptive Text Engine  - Hybrid NLP + LLM Pipeline.
 
+Flesch-Kincaid	reading difficulty
+Dependency parsing	syntax complexity
+TF-IDF	important keyword extraction
+
+
+
+
 Implements:
 - Phase 1: NLP analysis (readability, dependency distance, TF-IDF keywords)
 - Phase 2: State router -> Tier 1 / Tier 2 / Tier 3
